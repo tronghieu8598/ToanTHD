@@ -1,0 +1,2217 @@
+<!doctype html>
+<html lang="vi" data-visualize-standalone>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Phòng thí nghiệm ảo – Ứng dụng thực tiễn của lượng giác</title>
+<style>:root {
+  color-scheme: light dark;
+  background-color: transparent !important;
+
+  /* Agent-facing contract; keep in sync with SKILL.md. */
+  --background: var(
+    --main-surface-primary,
+    light-dark(rgb(255 255 255), rgb(24 24 24))
+  );
+  --foreground: light-dark(rgb(26 28 31), rgb(255 255 255));
+  --card: color-mix(in oklab, var(--foreground) 5%, transparent);
+  --card-foreground: var(--foreground);
+  --popover: light-dark(rgb(255 255 255), rgb(45 45 45));
+  --popover-foreground: var(--foreground);
+  --primary: light-dark(rgb(51 156 255), rgb(131 195 255));
+  --primary-foreground: light-dark(rgb(255 255 255), rgb(13 13 13));
+  --secondary: light-dark(rgb(255 255 255 / 96%), rgb(54 54 54 / 96%));
+  --secondary-foreground: var(--foreground);
+  --muted: color-mix(in srgb, var(--foreground) 10%, transparent);
+  --muted-foreground: light-dark(
+    rgb(26 28 31 / 49.4%),
+    rgb(255 255 255 / 49.8%)
+  );
+  --accent: light-dark(rgb(229 242 255), rgb(13 39 63));
+  --accent-foreground: var(--primary);
+  --destructive: light-dark(rgb(226 85 7), rgb(255 133 73));
+  --border: light-dark(rgb(26 28 31 / 8%), rgb(255 255 255 / 8.2%));
+  --input: light-dark(
+    rgb(26 28 31 / 11.8%),
+    color-mix(in oklab, rgb(0 0 0) 10%, transparent)
+  );
+  --ring: light-dark(rgb(51 156 255), rgb(131 195 255 / 76%));
+  --font-size-base: 14px;
+  --red: light-dark(rgb(186 38 35), rgb(250 66 62));
+  --green: light-dark(rgb(0 162 64), rgb(64 201 119));
+
+  /* Internal implementation variables; not part of the agent contract. */
+  --font-sans: -apple-system, system-ui, "Segoe UI", sans-serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono",
+    monospace;
+  --font-size-normal: max(11px, var(--font-size-base));
+  --font-size-tooltip: calc(var(--font-size-base) - 1px);
+  --font-size-small: max(11px, calc(var(--font-size-base) - 2px));
+  --font-size-h1: calc(var(--font-size-normal) * 1.7142857143);
+  --font-size-h2: calc(var(--font-size-normal) * 1.4285714286);
+  --font-size-h3: calc(var(--font-size-normal) * 1.2857142857);
+  --font-weight-normal: 430;
+  --font-weight-medium: 500;
+  --line-height-normal: calc(var(--font-size-normal) * 1.5);
+  --line-height-tooltip: calc(var(--font-size-tooltip) * 1.4285714286);
+  --line-height-small: calc(var(--font-size-small) + 4px);
+  --radius: 10px;
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-2xl: calc(var(--radius) * 1.6);
+  --radius-full: 9999px;
+  --shadow-sm: 0 1px 2px -1px rgb(0 0 0 / 8%);
+  --checkmark-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 17 17'%3E%3Cpath d='M12.8961 3.64101C13.1297 3.41418 13.4984 3.37523 13.7779 3.56581C14.0571 3.75635 14.1554 4.11331 14.0299 4.41347L13.9615 4.53847L7.71151 13.7045C7.59411 13.8767 7.4063 13.9877 7.19881 14.0072C6.99136 14.0267 6.78564 13.9533 6.63826 13.806L2.88826 10.056L2.79842 9.9457C2.6192 9.67407 2.64927 9.30496 2.88826 9.06581C3.12738 8.82669 3.49647 8.79676 3.76815 8.97597L3.8785 9.06581L7.03084 12.2182L12.8053 3.74941L12.8961 3.64101Z'/%3E%3C/svg%3E");
+
+  /* Legacy aliases; not part of the current agent contract. */
+  --viz-bg: transparent;
+  --viz-panel: var(--card);
+  --viz-border: var(--border);
+  --viz-text: var(--foreground);
+  --viz-muted: var(--muted-foreground);
+  --viz-accent: var(--primary);
+  --viz-accent-text: var(--primary-foreground);
+  --viz-accent-bg: var(--accent);
+  --viz-font-size: var(--font-size-base);
+  --viz-warning: var(--destructive);
+  --color-background-primary: var(--background);
+  --color-text-primary: var(--foreground);
+  --color-border-secondary: var(--border);
+}
+
+:root[data-visualize-standalone] {
+  background-color: var(--background) !important;
+}
+
+/* Generic mobile code-block hosts provide light/dark mode but no series palette.
+   AppBlock hosts set all six variables themselves. */
+:root:not([data-app-block-surface]) {
+  --viz-series-1: var(--primary);
+  --viz-series-2: light-dark(#f3883b, #f59a56);
+  --viz-series-3: light-dark(#5dc977, #74d58b);
+  --viz-series-4: light-dark(#eb77b1, #f08fc0);
+  --viz-series-5: light-dark(#9b79ec, #aa91ef);
+  --viz-series-6: light-dark(#3ab9b1, #5acbc2);
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html > body {
+  margin: 0;
+  padding: 5px;
+  color: var(--foreground);
+  background: transparent !important;
+  font-family: var(--font-sans);
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+}
+
+:root:not([data-app-block-surface]) > body {
+  padding: 12px;
+}
+
+a {
+  color: color-mix(in srgb, var(--viz-accent) 80%, var(--viz-text) 20%);
+  cursor: pointer;
+  font-weight: var(--font-weight-medium);
+  text-decoration: none;
+  text-underline-offset: 2px;
+}
+
+a:is(:hover, :focus-visible) {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-block: 0;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.3;
+}
+
+b,
+strong,
+th {
+  font-weight: var(--font-weight-medium);
+}
+
+code:not(pre code) {
+  display: inline;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  background: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+  overflow-wrap: anywhere;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  word-break: break-word;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: var(--foreground);
+  font: inherit;
+  text-align: start;
+}
+
+.table :is(th, td) {
+  padding-block: 10px;
+  padding-inline: 0 24px;
+  overflow-wrap: anywhere;
+  border-bottom: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+}
+
+.table-responsive > .table :is(th, td) {
+  overflow-wrap: break-word;
+}
+
+.table :is(th, td):last-child {
+  padding-inline-end: 0;
+}
+
+.table :is(caption, thead th) {
+  font-weight: 600;
+}
+
+.table thead th {
+  padding-block: 8px;
+  border-bottom-color: color-mix(in srgb, var(--foreground) 16%, transparent);
+}
+
+.table tbody tr:last-child :is(th, td) {
+  border-bottom: 0;
+}
+
+.table.table-sm :is(th, td) {
+  padding-block: 6px;
+}
+
+.table.table-sm :is(th, td):not(:last-child) {
+  padding-inline-end: 16px;
+}
+
+.table :is(.text-end, [align="right"]) {
+  text-align: end;
+  font-variant-numeric: tabular-nums;
+}
+
+.table :is(.text-center, [align="center"]) {
+  text-align: center;
+}
+
+.table .text-nowrap {
+  white-space: nowrap;
+}
+
+#widget {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  padding: 0;
+  background: transparent !important;
+}
+
+.card {
+  min-width: 0;
+  padding: 12px;
+  overflow: hidden;
+  overflow-wrap: break-word;
+  border-radius: var(--radius-2xl);
+  color: var(--card-foreground);
+  background: var(--card);
+}
+
+#widget > :not(.card) {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: max-content;
+  max-width: min(
+    20rem,
+    var(--tooltip-available-width, calc(100vw - 10px)),
+    calc(100vw - 10px)
+  );
+  max-height: min(
+    var(--tooltip-available-height, calc(100vh - 10px)),
+    calc(100vh - 10px)
+  );
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  color: var(--popover-foreground);
+  background: var(--popover);
+  box-shadow: none;
+  font-size: var(--font-size-tooltip);
+  line-height: var(--line-height-tooltip);
+  overflow-wrap: break-word;
+  white-space: normal;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* The bundled tooltip runtime owns [data-tooltip]. AppBlock's CSS-only
+   pseudo-tooltip can widen dense grids even while hidden. */
+main [data-tooltip]::after {
+  content: none;
+}
+
+.viz-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(max(180px, 24%), 1fr));
+  gap: 10px;
+}
+
+.viz-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.viz-stat-value {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-medium);
+  line-height: 1.25;
+}
+
+.viz-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.viz-badge {
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  color: var(--accent-foreground);
+  background: var(--accent);
+  font-weight: var(--font-weight-medium);
+}
+
+small,
+.text-small,
+.viz-badge {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+.text-muted {
+  color: var(--muted-foreground);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.viz-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.viz-controls > .form-label {
+  display: grid;
+  min-width: min(100%, 260px);
+  flex: 1 1 280px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 2px 12px;
+  margin-bottom: 0;
+}
+
+.viz-controls > .form-label > :is(.form-control, .form-range, .form-select) {
+  grid-column: 1 / -1;
+}
+
+.btn,
+.form-check-input,
+.form-control,
+.form-range,
+.form-select {
+  font: inherit;
+}
+
+.btn {
+  appearance: button;
+  display: inline-flex;
+  inline-size: fit-content;
+  max-inline-size: 100%;
+  min-height: 28px;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin: 0;
+  padding: 0 8px;
+  -webkit-app-region: no-drag;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: var(--cursor-interaction, pointer);
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+.btn:is(.btn-block, .viz-tile) {
+  inline-size: 100%;
+}
+
+.btn.viz-tile {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+a.btn {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn-primary {
+  border-color: transparent;
+  color: var(--interactive-label-primary-default, var(--primary-foreground));
+  background: var(--interactive-bg-primary-default, var(--foreground));
+  background-clip: padding-box;
+}
+
+.btn-primary .text-muted {
+  color: color-mix(
+    in srgb,
+    var(--interactive-label-primary-default, var(--primary-foreground)) 50%,
+    transparent
+  );
+}
+
+.btn-primary:not(:disabled):hover {
+  background: color-mix(in srgb, var(--foreground) 80%, transparent);
+  background-clip: padding-box;
+}
+
+.btn-ghost {
+  border-color: transparent;
+  color: var(--muted-foreground);
+  background: transparent;
+}
+
+.btn-ghost:not(:disabled):hover {
+  color: var(--foreground);
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+[data-lucide] {
+  stroke-width: 1.6;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--foreground);
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  padding: 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  color: var(--foreground);
+  background: var(--secondary);
+}
+
+.form-control::placeholder {
+  color: var(--muted-foreground);
+}
+
+.form-control[type="file"] {
+  padding: 0;
+  overflow: hidden;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control[type="file"]::file-selector-button {
+  min-height: 26px;
+  margin-right: 8px;
+  padding: 0 8px;
+  border: 0;
+  border-right: 1px solid var(--input);
+  color: var(--secondary-foreground);
+  background: var(--secondary);
+  cursor: inherit;
+  font: inherit;
+}
+
+.form-control[type="file"]:not(:disabled):hover::file-selector-button {
+  background: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-control-color[type="color"] {
+  width: 40px;
+  height: 28px;
+  padding: 3px;
+  cursor: var(--cursor-interaction, pointer);
+}
+
+.form-control-color[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.form-control-color[type="color"]::-webkit-color-swatch {
+  border: 0;
+  border-radius: calc(var(--radius-lg) - 4px);
+}
+
+textarea.form-control {
+  height: auto;
+  min-height: 72px;
+  padding: 8px 10px;
+  resize: vertical;
+}
+
+.form-control:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-control:disabled,
+.form-select:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.form-select {
+  appearance: none;
+  display: block;
+  width: 100%;
+  min-height: 28px;
+  margin: 0;
+  padding: 0 32px 0 8px;
+  outline: none;
+  border: 1px solid var(--input);
+  border-radius: var(--radius-lg);
+  color: var(--foreground);
+  background-color: var(--secondary);
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--muted-foreground) 50%),
+    linear-gradient(135deg, var(--muted-foreground) 50%, transparent 50%);
+  background-position:
+    calc(100% - 14px) 50%,
+    calc(100% - 10px) 50%;
+  background-repeat: no-repeat;
+  background-size: 4px 4px;
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-select:not(:disabled):hover {
+  background-color: color-mix(in srgb, var(--foreground) 6%, var(--secondary));
+}
+
+.form-select:focus-visible {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-check {
+  display: flex;
+  min-height: 20px;
+  align-items: center;
+  gap: 6px;
+}
+
+.form-check-input {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  flex: 0 0 auto;
+  margin: 0;
+  border: 1px solid var(--input);
+  color: var(--primary-foreground);
+  background-color: transparent;
+  cursor: var(--cursor-interaction, default);
+  transition:
+    background-color 150ms,
+    border-color 150ms,
+    box-shadow 150ms;
+}
+
+.form-check:not(.form-switch) .form-check-input[type="checkbox"] {
+  border-color: var(--input);
+  border-radius: var(--radius-sm);
+  background-color: var(--secondary);
+  box-shadow: var(--shadow-sm);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input:not(:disabled):not(:checked):hover {
+  background-color: var(--card);
+}
+
+.form-check:not(.form-switch) .form-check-input[type="checkbox"]:checked {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.form-check:not(.form-switch)
+  .form-check-input[type="checkbox"]:checked::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-foreground);
+  content: "";
+  mask: var(--checkmark-image) center / 12px 12px no-repeat;
+}
+
+.form-check-input[type="radio"] {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-full);
+}
+
+.form-check-input[type="radio"]:checked {
+  border: 2px solid var(--primary);
+  background:
+    radial-gradient(circle, var(--primary-foreground) 0 2.5px, transparent 3px),
+    var(--primary);
+}
+
+.form-check:not(.form-switch) .form-check-input:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.form-check:not(.form-switch) .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+}
+
+.form-switch .form-check-input:disabled,
+.form-switch .form-check-input:disabled + .form-check-label {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.form-check-label {
+  color: var(--foreground);
+  cursor: var(--cursor-interaction, default);
+}
+
+.form-switch .form-check-input {
+  position: relative;
+  width: 32px;
+  height: 20px;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: var(--muted);
+  box-shadow: none;
+  transition: background-color 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+  border: 1px solid light-dark(var(--primary-foreground), var(--foreground));
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+  box-shadow: var(--shadow-sm);
+  content: "";
+  transform: translate(2px, -50%);
+  transition: transform 200ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form-switch .form-check-input:checked {
+  background: var(--primary);
+}
+
+.form-switch .form-check-input:checked::before {
+  transform: translate(14px, -50%);
+}
+
+.form-switch .form-check-input:focus-visible {
+  box-shadow: 0 0 0 2px var(--ring);
+}
+
+.form-range {
+  appearance: none;
+  display: block;
+  width: 100%;
+  height: 28px;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: 0;
+  accent-color: var(--primary);
+  background: linear-gradient(
+      color-mix(in srgb, var(--foreground) 7%, transparent),
+      color-mix(in srgb, var(--foreground) 7%, transparent)
+    )
+    center / 100% 2px no-repeat;
+}
+
+.form-range::-webkit-slider-runnable-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-webkit-slider-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range::-moz-range-track {
+  height: 28px;
+  background: transparent;
+}
+
+.form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  background: light-dark(var(--primary-foreground), var(--foreground));
+}
+
+.form-range:focus-visible::-moz-range-thumb {
+  border-color: var(--ring);
+  box-shadow: inset 0 0 0 1px var(--ring);
+}
+
+.form-range:disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.btn:not(.btn-primary, .viz-tile):is(
+    [aria-pressed="true"],
+    [aria-selected="true"],
+    .is-selected
+  ) {
+  border-color: var(--primary);
+  color: var(--primary-foreground);
+  background: var(--primary);
+}
+
+.btn.viz-tile:is([aria-pressed="true"], [aria-selected="true"], .is-selected) {
+  border-color: var(--primary);
+  box-shadow: inset 0 0 0 1px var(--primary);
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#widget > svg {
+  width: 100%;
+}
+
+.text-warning,
+.text-destructive {
+  color: var(--destructive);
+}
+</style>
+</head>
+<body>
+<div id="trig-lab">
+  <header class="tl-head">
+    <div class="tl-logo" aria-hidden="true">∿</div>
+    <div class="tl-headtext">
+      <h1>Phòng thí nghiệm ảo – Ứng dụng thực tiễn của lượng giác</h1>
+      <p>21 tình huống độc lập · thay đổi dữ liệu trực tiếp · hình minh họa cập nhật theo số liệu</p>
+    </div>
+    <div class="tl-headtags" aria-label="Đặc điểm"><span>21 TÌNH HUỐNG</span><span>HTML OFFLINE</span></div>
+  </header>
+
+  <div class="tl-shell">
+    <aside id="tl-sidebar" class="card tl-sidebar" aria-label="Danh sách tình huống và thông số">
+      <div class="tl-sidehead">
+        <strong>🧪 Tình huống</strong>
+        <button id="tl-collapse" class="btn" type="button" aria-label="Thu gọn danh sách" aria-expanded="true">‹</button>
+      </div>
+      <div id="tl-sidecontent">
+        <section class="tl-selectgroup" aria-label="Chọn tình huống">
+          <label class="sr-only" for="tl-scenarioSelect">Chọn tình huống</label>
+          <select id="tl-scenarioSelect" class="form-select" aria-label="Chọn tình huống"></select>
+          <div class="tl-listactions">
+            <button id="tl-random" class="btn btn-primary" type="button">✨ Tạo tình huống mới</button>
+            <button id="tl-reroll" class="btn" type="button">🎲 Đổi số liệu</button>
+          </div>
+        </section>
+        <section class="tl-controlsection" aria-labelledby="tl-param-title">
+          <h2 id="tl-param-title">🎛️ Thông số tùy chỉnh</h2>
+          <div id="tl-params"></div>
+        </section>
+        <section class="tl-controlsection" aria-labelledby="tl-teacher-title">
+          <h2 id="tl-teacher-title">🔐 Khu vực giáo viên</h2>
+          <div class="tl-teacherbox">
+            <div class="tl-teachrow">
+              <input id="tl-password" class="form-control" type="password" autocomplete="off" placeholder="Nhập mật khẩu giáo viên">
+              <button id="tl-unlock" class="btn" type="button">Mở khóa</button>
+            </div>
+            <div id="tl-teachstatus" class="tl-teachstatus">Nút “Xem lời giải” đang khóa.</div>
+            <div class="tl-teachactions">
+              <button id="tl-solutionbtn" class="btn btn-primary" type="button" disabled>📘 Xem lời giải</button>
+              <button id="tl-lock" class="btn" type="button" disabled>🔒 Khóa lại</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </aside>
+
+    <main class="tl-workspace">
+      <article class="card tl-problem" aria-labelledby="tl-title">
+        <div class="tl-problemtop">
+          <div><div id="tl-category" class="tl-kicker"></div><h2 id="tl-title"></h2></div>
+          <span id="tl-number" class="viz-badge"></span>
+        </div>
+        <div id="tl-problemtext" class="tl-problemtext"></div>
+        <div id="tl-goal" class="tl-goal"></div>
+        <div id="tl-rounding" class="tl-rounding"></div>
+        <section class="tl-answerbox" aria-labelledby="tl-answer-title">
+          <h3 id="tl-answer-title">Tự kiểm tra kết quả</h3>
+          <div id="tl-answerfields" class="tl-answerfields"></div>
+          <div class="tl-answeractions">
+            <button id="tl-check" class="btn btn-primary" type="button">Kiểm tra</button>
+            <button id="tl-hintbtn" class="btn" type="button">Gợi ý</button>
+          </div>
+          <div id="tl-feedback" class="tl-feedback" aria-live="polite"></div>
+          <div id="tl-hint" class="tl-hint"></div>
+        </section>
+      </article>
+
+      <article class="card tl-stage" aria-label="Hình minh họa thực tiễn">
+        <button id="tl-zoom" class="tl-zoom" type="button" aria-label="Phóng to hình minh họa">
+          <span id="tl-svg"></span>
+        </button>
+        <div id="tl-caption" class="tl-caption"></div>
+      </article>
+    </main>
+  </div>
+
+  <div id="tl-solutionmodal" class="tl-modal" role="dialog" aria-modal="true" aria-labelledby="tl-solutiontitle">
+    <div class="card tl-modalbox tl-solutionbox">
+      <div class="tl-modalhead"><h2 id="tl-solutiontitle">📘 Lời giải chi tiết</h2><button class="btn" data-close="tl-solutionmodal" type="button" aria-label="Đóng">×</button></div>
+      <div id="tl-solutionbody" class="tl-modalbody tl-solution"></div>
+    </div>
+  </div>
+  <div id="tl-zoommodal" class="tl-modal" role="dialog" aria-modal="true" aria-label="Hình minh họa phóng to">
+    <div class="card tl-modalbox tl-zoombox">
+      <div class="tl-modalhead"><h2>Hình minh họa</h2><button class="btn" data-close="tl-zoommodal" type="button" aria-label="Đóng">×</button></div>
+      <div id="tl-zoombody" class="tl-zoombody"></div>
+    </div>
+  </div>
+</div>
+
+<style>
+  #trig-lab { color: var(--foreground); width: 100%; display: grid; gap: 10px; }
+  #trig-lab * { box-sizing: border-box; }
+  #trig-lab .tl-head { display: flex; align-items: center; gap: 12px; padding: 11px 15px; border-radius: 16px; background: var(--primary); color: var(--primary-foreground); }
+  #trig-lab .tl-logo { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 12px; background: color-mix(in srgb, var(--primary-foreground) 16%, transparent); font-size: 28px; font-weight: 500; }
+  #trig-lab .tl-headtext { min-width: 0; flex: 1; }
+  #trig-lab .tl-head h1 { margin: 0 0 2px; font-size: clamp(18px, 2vw, 27px); font-weight: 500; line-height: 1.15; }
+  #trig-lab .tl-head p { margin: 0; opacity: .82; }
+  #trig-lab .tl-headtags { display: flex; gap: 7px; flex-wrap: wrap; justify-content: flex-end; }
+  #trig-lab .tl-headtags span { padding: 6px 9px; border: 1px solid color-mix(in srgb, var(--primary-foreground) 28%, transparent); border-radius: 999px; font-size: 12px; white-space: nowrap; }
+  #trig-lab .tl-shell { min-height: 650px; max-height: 790px; display: grid; grid-template-columns: minmax(286px, 326px) minmax(0, 1fr); gap: 10px; transition: grid-template-columns .2s ease; }
+  #trig-lab .tl-shell.is-collapsed { grid-template-columns: 58px minmax(0, 1fr); }
+  #trig-lab .tl-sidebar { min-height: 0; overflow-y: auto; padding: 12px; }
+  #trig-lab .tl-sidehead { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 10px; }
+  #trig-lab .tl-sidehead strong { font-weight: 500; }
+  #trig-lab .tl-sidehead .btn { min-width: 36px; }
+  #trig-lab .tl-shell.is-collapsed .tl-sidehead strong, #trig-lab .tl-shell.is-collapsed #tl-sidecontent { display: none; }
+  #trig-lab .tl-shell.is-collapsed .tl-sidehead { justify-content: center; }
+  #trig-lab .tl-shell.is-collapsed #tl-collapse { transform: rotate(180deg); }
+  #trig-lab .tl-selectgroup { display: grid; gap: 8px; padding-bottom: 10px; }
+  #trig-lab .tl-selectgroup .form-select { width: 100%; }
+  #trig-lab .tl-listactions, #trig-lab .tl-teachactions { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; }
+  #trig-lab .tl-controlsection { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border); }
+  #trig-lab .tl-controlsection h2 { margin: 0 0 7px; font-size: 15px; font-weight: 500; }
+  #trig-lab .tl-field { display: grid; grid-template-columns: minmax(0, 1fr) 104px; gap: 6px 9px; align-items: center; padding: 7px 0; }
+  #trig-lab .tl-field > span:first-child { font-size: 13px; }
+  #trig-lab .tl-field .form-range { grid-column: 1 / -1; width: 100%; }
+  #trig-lab .tl-value { display: flex; align-items: center; gap: 5px; }
+  #trig-lab .tl-value .form-control { width: 72px; min-width: 0; }
+  #trig-lab .tl-value small { color: var(--muted-foreground); }
+  #trig-lab .tl-teacherbox { display: grid; gap: 8px; padding: 10px; background: color-mix(in srgb, var(--viz-series-2) 9%, transparent); border: 1px solid color-mix(in srgb, var(--viz-series-2) 28%, var(--border)); border-radius: 10px; }
+  #trig-lab .tl-teachrow { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 7px; }
+  #trig-lab .tl-teachstatus { color: var(--muted-foreground); font-size: 12px; }
+  #trig-lab .tl-teachstatus.is-ok { color: var(--green); font-weight: 500; }
+  #trig-lab .tl-teachstatus.is-bad { color: var(--destructive); font-weight: 500; }
+  #trig-lab .tl-workspace { min-width: 0; min-height: 0; display: grid; grid-template-columns: minmax(360px, .9fr) minmax(430px, 1.25fr); gap: 10px; }
+  #trig-lab .tl-problem { min-height: 0; overflow-y: auto; padding: 16px; }
+  #trig-lab .tl-problemtop { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; }
+  #trig-lab .tl-kicker { color: var(--primary); text-transform: uppercase; letter-spacing: .07em; font-size: 12px; font-weight: 500; }
+  #trig-lab .tl-problem h2 { margin: 3px 0 9px; font-size: clamp(19px, 1.8vw, 26px); font-weight: 500; }
+  #trig-lab .tl-problemtext { line-height: 1.55; }
+  #trig-lab .tl-problemtext strong { color: var(--primary); font-weight: 500; }
+  #trig-lab .tl-goal { margin-top: 10px; padding: 9px 11px; border-left: 4px solid var(--viz-series-2); background: color-mix(in srgb, var(--viz-series-2) 10%, transparent); border-radius: 8px; font-weight: 500; }
+  #trig-lab .tl-rounding { margin-top: 9px; padding: 8px 10px; border: 1px solid color-mix(in srgb, var(--viz-series-2) 34%, var(--border)); background: color-mix(in srgb, var(--viz-series-2) 8%, transparent); border-radius: 9px; font-size: 13px; }
+  #trig-lab .tl-answerbox { margin-top: 11px; padding-top: 10px; border-top: 1px solid var(--border); }
+  #trig-lab .tl-answerbox h3 { margin: 0 0 8px; font-size: 15px; font-weight: 500; }
+  #trig-lab .tl-answerfields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
+  #trig-lab .tl-answerfield { display: grid; grid-template-columns:minmax(0, 1fr) 86px auto; align-items: center; gap: 5px; font-size: 13px; }
+  #trig-lab .tl-answerfield .form-control, #trig-lab .tl-answerfield .form-select { min-width: 0; }
+  #trig-lab .tl-answeractions { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 9px; }
+  #trig-lab .tl-feedback, #trig-lab .tl-hint { display: none; margin-top: 8px; padding: 8px 10px; border-radius: 9px; font-size: 13px; line-height: 1.45; }
+  #trig-lab .tl-feedback.is-show, #trig-lab .tl-hint.is-show { display: block; }
+  #trig-lab .tl-feedback.is-ok { color: var(--green); background: color-mix(in srgb, var(--green) 10%, transparent); border: 1px solid color-mix(in srgb, var(--green) 30%, var(--border)); }
+  #trig-lab .tl-feedback.is-bad { color: var(--destructive); background: color-mix(in srgb, var(--destructive) 9%, transparent); border: 1px solid color-mix(in srgb, var(--destructive) 30%, var(--border)); }
+  #trig-lab .tl-hint { background: color-mix(in srgb, var(--viz-series-2) 9%, transparent); border: 1px solid color-mix(in srgb, var(--viz-series-2) 28%, var(--border)); }
+  #trig-lab .tl-stage { min-height: 0; padding: 10px; display: grid; grid-template-rows:minmax(0, 1fr) auto; }
+  #trig-lab .tl-zoom { width: 100%; min-height: 0; padding: 0; border: 0; background: transparent; color: inherit; cursor: zoom-in; }
+  #trig-lab #tl-svg, #trig-lab #tl-svg svg { display: block; width: 100%; height: 100%; }
+  #trig-lab #tl-svg svg { max-height: 700px; }
+  #trig-lab .tl-caption { padding-top: 6px; color: var(--muted-foreground); font-size: 12px; }
+  #trig-lab .tl-modal { position: fixed; inset: 0; z-index: 100; display: none; place-items: center; padding: 20px; background: color-mix(in srgb, var(--foreground) 62%, transparent); }
+  #trig-lab .tl-modal.is-open { display: grid; }
+  #trig-lab .tl-modalbox { width: min(920px, 96vw); max-height: 88vh; overflow-y: auto; }
+  #trig-lab .tl-solutionbox { background: var(--popover); color: var(--popover-foreground); opacity: 1; isolation: isolate; backdrop-filter: none; border-radius: 20px; box-shadow: 0 24px 70px color-mix(in srgb, var(--foreground) 34%, transparent); }
+  #trig-lab .tl-solutionbox .tl-modalhead { background: var(--popover); }
+  #trig-lab .tl-zoombox { width: min(1180px, 97vw); }
+  #trig-lab .tl-modalhead { position: sticky; top: 0; z-index: 2; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 12px 15px; background: var(--card); border-bottom: 1px solid var(--border); }
+  #trig-lab .tl-modalhead h2 { margin: 0; font-size: 20px; font-weight: 500; }
+  #trig-lab .tl-modalbody { padding: 15px; line-height: 1.55; }
+  #trig-lab .tl-solution .tl-step { margin: 10px 0; padding: 12px 14px; background: color-mix(in srgb, var(--viz-series-1) 6%, var(--card)); border: 1px solid color-mix(in srgb, var(--viz-series-1) 20%, var(--border)); border-radius: 13px; }
+  #trig-lab .tl-step strong { color: var(--primary); font-weight: 500; }
+  #trig-lab .tl-formula { display: block; margin: 6px 0; padding: 8px 10px; overflow-x: auto; border-radius: 8px; background: var(--muted); font-family: Georgia, 'Times New Roman', serif; }
+  #trig-lab .tl-final { margin-top: 10px; padding: 10px 12px; color: var(--green); background: color-mix(in srgb, var(--green) 10%, transparent); border: 1px solid color-mix(in srgb, var(--green) 30%, var(--border)); border-radius: 10px; font-weight: 500; }
+  #trig-lab .tl-zoombody { padding: 10px; }
+  #trig-lab .tl-zoombody svg { display: block; width: 100%; height: auto; }
+  @media (max-width: 1050px) {
+    #trig-lab .tl-shell { max-height: none; grid-template-columns: minmax(270px, 310px) minmax(0, 1fr); }
+    #trig-lab .tl-workspace { grid-template-columns: 1fr; }
+    #trig-lab .tl-stage { min-height: 480px; }
+  }
+  @media (max-width: 760px) {
+    #trig-lab .tl-headtags { display: none; }
+    #trig-lab .tl-shell, #trig-lab .tl-shell.is-collapsed { grid-template-columns: 1fr; }
+    #trig-lab .tl-sidebar { overflow: visible; }
+    #trig-lab .tl-shell.is-collapsed .tl-sidehead strong { display: block; }
+    #trig-lab .tl-shell.is-collapsed #tl-sidecontent { display: block; }
+    #trig-lab #tl-collapse { display: none; }
+    #trig-lab .tl-answerfields { grid-template-columns: 1fr; }
+    #trig-lab .tl-stage { min-height: 360px; }
+  }
+</style>
+
+<script>
+(function () {
+  const root = document.getElementById('trig-lab');
+  const $ = selector => root.querySelector(selector);
+  const scenarioSelect = $('#tl-scenarioSelect');
+  const paramsNode = $('#tl-params');
+  const svgNode = $('#tl-svg');
+  const captionNode = $('#tl-caption');
+  const answerFieldsNode = $('#tl-answerfields');
+  const NS = 'http://www.w3.org/2000/svg';
+  const rad = d => d * Math.PI / 180;
+  const deg = r => r * 180 / Math.PI;
+  const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
+  const fmt = (x, digits = 1) => Number(x).toLocaleString('vi-VN', { maximumFractionDigits: digits });
+  const p = (key, label, unit, min, max, step, value) => ({ key, label, unit, min, max, step, value });
+  const esc = value => String(value).replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch]);
+  const answer = (key, label, unit, value, type = 'number') => ({ key, label, unit, value, type });
+  const stepHtml = (title, html) => `<div class="tl-step"><strong>${title}</strong>${html}</div>`;
+  const formula = html => `<span class="tl-formula">${html}</span>`;
+  const normalizeAngle = a => ((a % (2 * Math.PI)) + 2 * Math.PI) % (2 * Math.PI);
+  const uniqueSorted = values => values.sort((a, b) => a - b).filter((value, index, arr) => index === 0 || Math.abs(value - arr[index - 1]) > 1e-7);
+  const listValues = (values, digits = 2) => values.map(value => fmt(value, digits)).join('; ');
+  const polar = (cx, cy, r, a) => [cx + r * Math.cos(rad(a)), cy - r * Math.sin(rad(a))];
+  const line = (x1, y1, x2, y2, cls = 'ink', extra = '') => `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" class="${cls}" ${extra}/>`;
+  const dot = (x, y, r = 5, cls = 'dot') => `<circle cx="${x}" cy="${y}" r="${r}" class="${cls}"/>`;
+  const label = (x, y, text, anchor = 'middle', cls = 'lbl') => `<text x="${x}" y="${y}" text-anchor="${anchor}" class="${cls}">${text}</text>`;
+  function arcPath(cx, cy, r, a1, a2, cls = 'accent') {
+    const q1 = polar(cx, cy, r, a1), q2 = polar(cx, cy, r, a2);
+    let span = a2 - a1;
+    while (span < 0) span += 360;
+    return `<path d="M ${q1[0]} ${q1[1]} A ${r} ${r} 0 ${span > 180 ? 1 : 0} 0 ${q2[0]} ${q2[1]}" class="${cls}" fill="none"/>`;
+  }
+  const signedArc = (cx, cy, r, a, cls = 'accent') => a >= 0 ? arcPath(cx, cy, r, 0, a, cls) : arcPath(cx, cy, r, a, 0, cls);
+  function dimV(x, y1, y2, text, side = 1) {
+    const lx = x + side * 14;
+    return `${line(x, y1, x, y2, 'dim', 'marker-start="url(#arrow-open)" marker-end="url(#arrow-open)"')}${line(x - 10, y1, x + 10, y1, 'guide')}${line(x - 10, y2, x + 10, y2, 'guide')}${label(lx, (y1 + y2) / 2 + 5, text, side > 0 ? 'start' : 'end', 'measure')}`;
+  }
+  function dimH(y, x1, x2, text) {
+    return `${line(x1, y, x2, y, 'dim', 'marker-start="url(#arrow-open)" marker-end="url(#arrow-open)"')}${line(x1, y - 10, x1, y + 10, 'guide')}${line(x2, y - 10, x2, y + 10, 'guide')}${label((x1 + x2) / 2, y - 12, text, 'middle', 'measure')}`;
+  }
+  function svgFrame(title, desc, body) {
+    return `<svg viewBox="0 0 1000 600" role="img" aria-labelledby="tfr-title tfr-desc" xmlns="${NS}">
+      <title id="tfr-title">${title}</title><desc id="tfr-desc">${desc}</desc>
+      <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="var(--foreground)"/></marker>
+        <marker id="arrow-series" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="var(--viz-series-1)"/></marker>
+        <marker id="arrow-open" viewBox="0 0 12 12" refX="6" refY="6" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 11 1 L 1 6 L 11 11" fill="none" stroke="var(--foreground)" stroke-width="1.5"/></marker>
+        <pattern id="hatch" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="12" stroke="var(--border)" stroke-width="4"/></pattern>
+        <linearGradient id="water" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--viz-series-1)" stop-opacity=".35"/><stop offset="1" stop-color="var(--viz-series-1)" stop-opacity=".08"/></linearGradient>
+      </defs>
+      <style>
+        .ink{stroke:var(--foreground);stroke-width:2.3;fill:none;stroke-linecap:round;stroke-linejoin:round}.strong{stroke:var(--foreground);stroke-width:5;fill:none;stroke-linecap:round;stroke-linejoin:round}.guide{stroke:var(--muted-foreground);stroke-width:1.5;fill:none;stroke-dasharray:7 7}.fine{stroke:var(--muted-foreground);stroke-width:1.2;fill:none}.dim{stroke:var(--foreground);stroke-width:1.35;fill:none}.accent{stroke:var(--viz-series-1);stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.accent2{stroke:var(--viz-series-2);stroke-width:3;fill:none;stroke-linecap:round;stroke-linejoin:round}.fill1{fill:var(--viz-series-1);fill-opacity:.15;stroke:var(--viz-series-1);stroke-width:2}.fill2{fill:var(--viz-series-2);fill-opacity:.16;stroke:var(--viz-series-2);stroke-width:2}.surface{fill:var(--muted);fill-opacity:.5;stroke:var(--border);stroke-width:1.5}.paper{fill:var(--card)}.dot{fill:var(--foreground)}.dot1{fill:var(--viz-series-1)}.lbl{fill:var(--foreground);font:500 20px ui-sans-serif,system-ui,sans-serif}.small{fill:var(--muted-foreground);font:400 16px ui-sans-serif,system-ui,sans-serif}.measure{fill:var(--foreground);font:500 18px ui-serif,Georgia,serif;font-style:italic}.axis{stroke:var(--foreground);stroke-width:1.8;fill:none}.wave{stroke:var(--viz-series-1);stroke-width:4;fill:none}.waterfill{fill:url(#water)}
+      </style>
+      ${body}
+    </svg>`;
+  }
+  function wheelCabins(cx, cy, r, count, rotation) {
+    let out = '';
+    for (let i = 0; i < count; i++) {
+      const a = rotation + 360 * i / count;
+      const q = polar(cx, cy, r, a);
+      out += line(cx, cy, q[0], q[1], 'fine');
+      out += `<g transform="translate(${q[0]} ${q[1]})"><path d="M-11 -4 L11 -4 L8 12 L-8 12 Z" class="fill1"/><path d="M-8 -11 L8 -11 L11 -4 L-11 -4 Z" class="ink"/></g>`;
+    }
+    return out;
+  }
+  function springPath(x1, x2, y, coils = 10, amp = 15) {
+    const lead = 18, span = Math.max(40, x2 - x1 - 2 * lead), step = span / (coils * 2);
+    let d = `M ${x1} ${y} L ${x1 + lead} ${y}`;
+    for (let i = 0; i < coils * 2; i++) d += ` L ${x1 + lead + (i + .5) * step} ${y + (i % 2 ? amp : -amp)}`;
+    d += ` L ${x2 - lead} ${y} L ${x2} ${y}`;
+    return d;
+  }
+
+  const scenes = [
+    {
+      id: 'ferris', group: 'Chuyển động quay', title: '01 · Cabin trên vòng quay', source: 'Theo Hình 11 trong ảnh mẫu',
+      params: [p('R', 'Bán kính R', 'm', 6, 20, 1, 10), p('h', 'Độ cao tâm O', 'm', 8, 28, 1, 13), p('alpha', 'Góc α', '°', -150, 150, 30, -30), p('beta', 'Góc β từ B đến C', '°', 30, 330, 30, 90)],
+      normalize(v) {
+        v.h = Math.max(v.h, v.R + 1);
+        v.alpha = clamp(Math.round(v.alpha / 30) * 30, -150, 150);
+        v.beta = clamp(Math.round(v.beta / 30) * 30, 30, 330);
+      },
+      draw(v) {
+        const cx = 500, cy = 265, scale = 240 / Math.max(v.h, v.R + 1), r = v.R * scale, ground = cy + v.h * scale;
+        const B = polar(cx, cy, r, v.alpha), C = polar(cx, cy, r, v.alpha - v.beta);
+        let body = `<path d="M100 ${ground} H900" class="strong"/><path d="M410 ${ground} L475 305 L500 ${cy} L525 305 L590 ${ground}" class="strong"/><path d="M455 ${ground} L500 330 L545 ${ground}" class="fill2"/>`;
+        body += `<circle cx="${cx}" cy="${cy}" r="${r}" class="ink"/>${wheelCabins(cx, cy, r, 12, v.alpha)}`;
+        body += `${line(cx - r - 30, cy, cx + r + 45, cy, 'axis', 'marker-end="url(#arrow)"')}${line(cx, cy + r + 30, cx, cy - r - 45, 'axis', 'marker-end="url(#arrow)"')}`;
+        body += `${line(cx, cy, B[0], B[1], 'accent')}${line(cx, cy, C[0], C[1], 'accent2')}${dot(cx, cy, 7)}${dot(B[0], B[1], 7, 'dot1')}${dot(C[0], C[1], 7, 'dot1')}`;
+        body += signedArc(cx, cy, 55, v.alpha, 'accent');
+        body += arcPath(cx, cy, 82, v.alpha - v.beta, v.alpha, 'accent2');
+        const alphaLabel = polar(cx, cy, 68, v.alpha / 2), betaLabel = polar(cx, cy, 99, v.alpha - v.beta / 2);
+        body += `${label(cx + 16, cy - 12, 'O', 'start')}${label(B[0] + 14, B[1] - 10, 'B', 'start')}${label(C[0] - 12, C[1] + 25, 'C', 'end')}${label(alphaLabel[0], alphaLabel[1] + 6, 'α', 'middle', 'measure')}${label(betaLabel[0], betaLabel[1] + 6, 'β', 'middle', 'measure')}`;
+        body += `${dimV(790, cy, ground, `h = ${fmt(v.h, 0)} m`)}${line(cx, cy, cx + r, cy, 'dim')}${label(cx + r / 2, cy - 12, `R = ${fmt(v.R, 0)} m`, 'middle', 'measure')}${label(835, ground + 32, 'Mặt đất', 'middle', 'small')}`;
+        return { svg: svgFrame(this.title, 'Vòng quay, cabin B và C, trục tọa độ cùng các kích thước thay đổi theo dữ liệu.', body), result: `Độ cao cabin B: ${fmt(v.h + v.R * Math.sin(rad(v.alpha)), 2)} m.` };
+      }
+    },
+    {
+      id: 'shadow-rod', group: 'Chuyển động quay', title: '02 · Thanh quay và bóng trên mặt đất', source: 'Theo Hình 12 trong ảnh mẫu',
+      params: [p('L', 'Độ dài OM', 'cm', 8, 25, 1, 15), p('turns', 'Số vòng đã quay', 'vòng', 0, 4, .1, 3.1), p('clearance', 'Độ cao trục O', 'cm', 9, 35, 1, 18)],
+      normalize(v) { v.clearance = Math.max(v.clearance, v.L + 1); },
+      draw(v) {
+        const cx = 570, ground = 485, scale = 390 / (v.clearance + v.L), cy = ground - v.clearance * scale;
+        const a = (v.turns * 360) % 360, M = polar(cx, cy, v.L * scale, a), Mp = [M[0], ground];
+        let body = `<path d="M120 ${ground} H900" class="strong"/>`;
+        for (const x of [410, 500, 590, 680]) body += `${line(x, 70, x, 160, 'accent', 'marker-end="url(#arrow-series)"')}`;
+        body += `${label(710, 94, 'Ánh sáng thẳng đứng', 'start', 'small')}${line(cx, cy, M[0], M[1], 'strong')}${line(M[0], M[1], Mp[0], Mp[1], 'guide')}${line(cx, ground, Mp[0], ground, 'accent')}`;
+        body += `<circle cx="${cx}" cy="${cy}" r="${v.L * scale}" class="guide"/>${dot(cx, cy, 7)}${dot(M[0], M[1], 7)}${dot(Mp[0], Mp[1], 6, 'dot1')}${dot(cx, ground, 5)}`;
+        body += `${line(cx, cy, cx + 115, cy, 'axis')}${arcPath(cx, cy, 58, 0, a, 'accent')}${label(cx + 16, cy - 12, 'O', 'start')}${label(M[0] - 12, M[1] - 14, 'M', 'end')}${label(Mp[0] - 10, ground + 30, 'M′', 'end')}${label(cx + 8, ground + 30, 'O′', 'start')}${label(cx + 66, cy - 17, 'α', 'middle', 'measure')}${label((M[0] + cx) / 2, ground - 14, 'bóng O′M′', 'middle', 'small')}`;
+        return { svg: svgFrame(this.title, 'Thanh OM quay quanh O, tia sáng thẳng đứng và hình chiếu bóng trên mặt đất.', body), result: `Góc ở vị trí hiện tại: ${fmt(a, 1)}°; độ dài bóng: ${fmt(Math.abs(v.L * Math.cos(rad(a))), 1)} cm.` };
+      }
+    },
+    {
+      id: 'bicycle', group: 'Chuyển động quay', title: '03 · Van bánh xe đạp', source: 'Theo Hình 13 trong ảnh mẫu',
+      params: [p('R', 'Bán kính bánh xe', 'cm', 35, 75, 1, 58), p('omega', 'Tốc độ góc', 'rad/s', 2, 15, .5, 11), p('t', 'Thời gian', 's', 0, 60, 1, 60)],
+      draw(v) {
+        const ground = 500, rr = 135, rear = [300, ground - rr], front = [720, ground - rr];
+        const theta = -(v.omega * v.t) * 180 / Math.PI, A = polar(front[0], front[1], rr, theta);
+        let spokes = '';
+        for (let a = 0; a < 360; a += 15) {
+          const q1 = polar(rear[0], rear[1], rr - 10, a), q2 = polar(front[0], front[1], rr - 10, a);
+          spokes += line(rear[0], rear[1], q1[0], q1[1], 'fine') + line(front[0], front[1], q2[0], q2[1], 'fine');
+        }
+        const crank = [475, 395], seat = [430, 255], head = [620, 245], bar = [660, 210];
+        let body = `<path d="M75 ${ground} H925" class="strong"/><circle cx="${rear[0]}" cy="${rear[1]}" r="${rr}" class="strong"/><circle cx="${front[0]}" cy="${front[1]}" r="${rr}" class="strong"/>${spokes}`;
+        body += `<path d="M${rear[0]} ${rear[1]} L${crank[0]} ${crank[1]} L${seat[0]} ${seat[1]} L${rear[0]} ${rear[1]} M${crank[0]} ${crank[1]} L${head[0]} ${head[1]} L${seat[0]} ${seat[1]} M${head[0]} ${head[1]} L${front[0]} ${front[1]} M${crank[0]} ${crank[1]} L${head[0]} ${head[1]}" class="accent"/>`;
+        body += `<path d="M410 245 Q430 225 470 242" class="strong"/><path d="M620 245 L650 195 L685 210 M650 195 L625 170" class="ink"/><circle cx="${crank[0]}" cy="${crank[1]}" r="20" class="ink"/><path d="M455 405 L495 385 M475 395 L500 425" class="ink"/>`;
+        body += `${line(front[0], front[1], front[0] + rr, front[1], 'guide')}${line(front[0], front[1], A[0], A[1], 'accent')}${dot(A[0], A[1], 8, 'dot1')}${dot(front[0], front[1], 6)}${label(A[0] + 14, A[1] - 10, 'V', 'start')}${label(front[0] - 12, front[1] + 26, 'O', 'end')}${dimV(895, A[1], ground, `${fmt(v.R + v.R * Math.sin(rad(theta)), 1)} cm`, -1)}${label(870, ground + 34, 'Mặt đất', 'middle', 'small')}`;
+        return { svg: svgFrame(this.title, 'Xe đạp kỹ thuật với hai bánh, khung xe và van V chuyển động trên vành bánh trước.', body), result: `Sau ${fmt(v.t, 0)} s, van V cách mặt đất khoảng ${fmt(v.R + v.R * Math.sin(rad(theta)), 1)} cm.` };
+      }
+    },
+    {
+      id: 'piston', group: 'Chuyển động quay', title: '04 · Trục khuỷu và pít-tông', source: 'Theo Hình 4 trong ảnh mẫu',
+      params: [p('r', 'Bán kính IA', 'cm', 4, 14, 1, 8), p('rod', 'Độ dài thanh AM', 'cm', 28, 70, 1, 50), p('alpha', 'Góc quay α', '°', -180, 180, 5, 35)],
+      normalize(v) { v.rod = Math.max(v.rod, 3 * v.r); },
+      draw(v) {
+        const I = [230, 320], scale = 5, rr = v.r * scale, L = v.rod * scale, pistonW = 72, A = polar(I[0], I[1], rr, v.alpha);
+        const dx = Math.sqrt(Math.max(0, L * L - Math.pow(A[1] - I[1], 2))), Mx = A[0] + dx, M = [Mx, I[1]];
+        const minCenter = I[0] + (v.rod - v.r) * scale, maxCenter = I[0] + (v.rod + v.r) * scale;
+        const cylinderX = minCenter - pistonW / 2, cylinderRight = maxCenter + pistonW / 2, cylinderW = cylinderRight - cylinderX;
+        let body = `<circle cx="${I[0]}" cy="${I[1]}" r="${rr}" class="ink"/>${line(90, I[1], 925, I[1], 'guide')}`;
+        body += `<rect x="${cylinderX}" y="245" width="${cylinderW}" height="150" rx="8" class="surface"/><rect x="${M[0] - pistonW / 2}" y="260" width="${pistonW}" height="120" class="fill1"/><path d="M${cylinderX + 18} 265 H${cylinderRight - 18} M${cylinderX + 18} 375 H${cylinderRight - 18}" class="ink"/>`;
+        body += `${line(I[0], I[1], A[0], A[1], 'strong')}${line(A[0], A[1], M[0], M[1], 'accent')}${line(A[0], A[1], A[0], I[1], 'guide')}${dot(I[0], I[1], 7)}${dot(A[0], A[1], 7, 'dot1')}${dot(M[0], M[1], 7)}`;
+        const alphaLabel = polar(I[0], I[1], 54, v.alpha / 2);
+        body += `${line(I[0], I[1], I[0] + 90, I[1], 'axis', 'marker-end="url(#arrow)"')}${signedArc(I[0], I[1], 40, v.alpha, 'accent')}${label(I[0] - 12, I[1] + 28, 'I', 'end')}${label(A[0] + 10, A[1] - 14, 'A', 'start')}${label(M[0], M[1] + 36, 'M', 'middle')}${label(alphaLabel[0], alphaLabel[1] + 5, 'α', 'middle', 'measure')}${label((cylinderX + cylinderRight) / 2, 430, 'xi-lanh', 'middle', 'small')}${label(M[0], 235, 'pít-tông', 'middle', 'small')}`;
+        return { svg: svgFrame(this.title, 'Cơ cấu trục khuỷu IA, thanh truyền AM và pít-tông M trượt theo phương ngang.', body), result: `Tọa độ dọc trục của M tính từ I: ${fmt((M[0] - I[0]) / scale, 2)} cm.` };
+      }
+    },
+    {
+      id: 'wind-turbine', group: 'Chuyển động quay', title: '05 · Ba cánh tuabin gió', source: 'Theo Hình 5 trong ảnh mẫu',
+      params: [p('L', 'Độ dài cánh', 'm', 20, 45, 1, 31), p('hub', 'Độ cao tâm O', 'm', 45, 85, 1, 60), p('alpha', 'Góc (OA, OM)', '°', -175, 175, 1, -75)],
+      draw(v) {
+        const O = [520, 255], scale = Math.min(4.7, 190 / v.L, 285 / v.hub), r = v.L * scale, ground = O[1] + v.hub * scale;
+        const tips = [v.alpha, v.alpha + 120, v.alpha + 240].map(a => polar(O[0], O[1], r, a));
+        let body = `<path d="M100 ${ground} H900" class="strong"/><path d="M485 ${ground} L510 ${O[1] + 20} L530 ${O[1] + 20} L555 ${ground} Z" class="fill2"/>`;
+        tips.forEach((q, i) => {
+          const a = [v.alpha, v.alpha + 120, v.alpha + 240][i], rootP = polar(O[0], O[1], 28, a), side1 = polar(rootP[0], rootP[1], 11, a + 90), side2 = polar(rootP[0], rootP[1], 11, a - 90);
+          body += `<path d="M${side1[0]} ${side1[1]} Q${(side1[0] + q[0]) / 2 + 18 * Math.sin(rad(a))} ${(side1[1] + q[1]) / 2 + 18 * Math.cos(rad(a))} ${q[0]} ${q[1]} Q${(side2[0] + q[0]) / 2} ${(side2[1] + q[1]) / 2} ${side2[0]} ${side2[1]} Z" class="fill1"/>`;
+          body += dot(q[0], q[1], 6, 'dot1') + label(q[0] + (i === 2 ? -12 : 12), q[1] - 12, ['M', 'P', 'N'][i], i === 2 ? 'end' : 'start');
+        });
+        body += `<circle cx="${O[0]}" cy="${O[1]}" r="22" class="surface"/>${dot(O[0], O[1], 6)}${line(O[0] - r - 35, O[1], O[0] + r + 40, O[1], 'axis', 'marker-end="url(#arrow)"')}${line(O[0], O[1] + r + 25, O[0], O[1] - r - 40, 'axis', 'marker-end="url(#arrow)"')}${line(O[0], O[1], tips[0][0], tips[0][1], 'accent')}`;
+        const alphaLabel = polar(O[0], O[1], 38, v.alpha / 2);
+        body += `${signedArc(O[0], O[1], 52, v.alpha, 'accent')}${label(O[0] + 14, O[1] + 24, 'O', 'start')}${label(alphaLabel[0], alphaLabel[1] + 6, 'α', 'middle', 'measure')}${dimV(860, O[1], ground, `${fmt(v.hub, 0)} m`, -1)}${dimV(760, tips[0][1], ground, `${fmt(v.hub + v.L * Math.sin(rad(v.alpha)), 1)} m`, -1)}`;
+        const hm = v.hub + v.L * Math.sin(rad(v.alpha)), hp = v.hub + v.L * Math.sin(rad(v.alpha + 120)), hn = v.hub + v.L * Math.sin(rad(v.alpha + 240));
+        return { svg: svgFrame(this.title, 'Tuabin có ba cánh cùng gắn tại tâm O và cách nhau 120 độ; các đầu cánh M, N, P quay đồng bộ.', body), result: `Độ cao M: ${fmt(hm, 1)} m · N: ${fmt(hn, 1)} m · P: ${fmt(hp, 1)} m.` };
+      }
+    },
+    {
+      id: 'water-wheel', group: 'Chuyển động quay', title: '06 · Gầu nước trên guồng quay', source: 'Theo Hình 12 trong ảnh mẫu',
+      params: [p('R', 'Bán kính guồng', 'm', 2, 6, .5, 3), p('period', 'Thời gian một vòng', 's', 15, 60, 1, 30), p('t', 'Thời điểm t', 's', 0, 60, 1, 4)],
+      draw(v) {
+        const O = [500, 290], rr = 205, water = O[1] + rr, a = (360 * v.t / v.period) % 360, G = polar(O[0], O[1], rr, a);
+        let body = `<rect x="70" y="${water}" width="860" height="75" class="waterfill"/>${line(70, water, 930, water, 'wave')}`;
+        body += `<circle cx="${O[0]}" cy="${O[1]}" r="${rr}" class="strong"/><circle cx="${O[0]}" cy="${O[1]}" r="55" class="ink"/>`;
+        for (let i = 0; i < 16; i++) {
+          const bucketAngle = a + i * 22.5, q = polar(O[0], O[1], rr, bucketAngle), q2 = polar(O[0], O[1], rr - 18, bucketAngle);
+          body += `${line(O[0], O[1], q2[0], q2[1], 'fine')}<rect x="${q[0] - 11}" y="${q[1] - 8}" width="22" height="16" rx="3" class="fill2" transform="rotate(${bucketAngle} ${q[0]} ${q[1]})"/>`;
+        }
+        body += `${line(O[0], O[1], G[0], G[1], 'accent')}${dot(O[0], O[1], 7)}${dot(G[0], G[1], 8, 'dot1')}${line(O[0], O[1], O[0] + 230, O[1], 'axis', 'marker-end="url(#arrow)"')}${line(O[0], O[1] + 225, O[0], O[1] - 245, 'axis', 'marker-end="url(#arrow)"')}`;
+        body += `${arcPath(O[0], O[1], 58, 0, a, 'accent')}${label(O[0] + 14, O[1] + 26, 'O', 'start')}${label(G[0] + 14, G[1] - 10, 'G', 'start')}${label(O[0] + 68, O[1] - 14, 'α', 'start', 'measure')}${dimV(815, O[1], water, `${fmt(v.R, 1)} m`, -1)}${label(850, water + 35, 'Mặt nước', 'middle', 'small')}`;
+        return { svg: svgFrame(this.title, 'Guồng nước có tâm O cách mặt nước một bán kính; gầu G quay đều theo thời gian.', body), result: `Gầu G cách mặt nước ${fmt(v.R + v.R * Math.sin(rad(a)), 2)} m tại t = ${fmt(v.t, 0)} s.` };
+      }
+    },
+    {
+      id: 'airplane', group: 'Góc nhìn – hình chiếu', title: '07 · Máy bay và góc nâng', source: 'Theo Hình 13 trong ảnh mẫu',
+      params: [p('alt', 'Độ cao AH', 'm', 300, 900, 50, 500), p('alpha', 'Góc nâng α', '°', 30, 120, 5, 40)],
+      draw(v) {
+        const alpha = v.alpha, xH = v.alt / Math.tan(rad(alpha)), T = [470, 470];
+        const scale = Math.min(.58, 350 / Math.max(Math.abs(xH), 1), 285 / v.alt), H = [T[0] + xH * scale, T[1]], A = [H[0], T[1] - v.alt * scale];
+        let body = `${line(75, T[1], 925, T[1], 'axis', 'marker-end="url(#arrow)"')}${line(T[0], T[1], A[0], A[1], 'accent')}${line(A[0], A[1], H[0], H[1], 'guide')}${line(85, A[1], 915, A[1], 'guide')}`;
+        body += `<g transform="translate(${A[0]} ${A[1]})"><path d="M-54 5 Q-38 -20 -4 -20 H32 Q50 -18 58 -5 L92 2 L88 14 L45 10 Q28 27 -6 24 H-43 Q-58 18 -54 5 Z" class="fill1"/><path d="M-36 -20 L-55 -52 L-39 -55 L-6 -20 M45 -5 L76 -30 L88 -27 L70 2" class="ink"/><path d="M-2 -20 V-47 M-75 -47 H68" class="strong"/><circle cx="-8" cy="29" r="7" class="surface"/><circle cx="40" cy="22" r="7" class="surface"/></g>`;
+        body += `<g transform="translate(${T[0]} ${T[1]})"><circle cx="0" cy="-29" r="9" class="surface"/><path d="M0 -20 L0 9 M0 -10 L22 -22 M0 9 L-13 34 M0 9 L15 34" class="ink"/><path d="M18 -25 L34 -29 L38 -20 L22 -17 Z" class="fill2"/></g>`;
+        const alphaMark = polar(T[0], T[1], 88, alpha / 2);
+        body += `${arcPath(T[0], T[1], 70, 0, alpha, 'accent')}${label(alphaMark[0], alphaMark[1] + 6, 'α', 'middle', 'measure')}${label(T[0] - 14, T[1] + 35, 'T', 'end')}${label(H[0], H[1] + 35, 'H')}${label(A[0] - 14, A[1] - 16, 'A', 'end')}${dimV(H[0] + (xH >= 0 ? 105 : -105), A[1], H[1], `${fmt(v.alt, 0)} m`, xH >= 0 ? -1 : 1)}${dimH(545, T[0], H[0], `xH = ${fmt(xH, 1)} m`)}${label(910, T[1] + 32, 'x (m)', 'end', 'small')}`;
+        return { svg: svgFrame(this.title, 'Máy bay A bay ngang, H là hình chiếu trên trục Tx và alpha là góc lượng giác từ tia Tx đến tia TA.', body), result: `xH = ${fmt(v.alt, 0)}·cot(${fmt(alpha, 0)}°) ≈ ${fmt(xH, 1)} m.` };
+      }
+    },
+    {
+      id: 'spring', group: 'Dao động – hàm tuần hoàn', title: '08 · Vật gắn với lò xo', source: 'Theo Hình 9 trong ảnh mẫu',
+      params: [p('A', 'Biên độ A', 'cm', 4, 16, 1, 10), p('omega', 'Tần số góc ω', 'rad/s', 4, 14, 1, 10), p('phi', 'Pha ban đầu φ', '°', -180, 180, 15, 90), p('t', 'Thời điểm t', 's', 0, 4, .1, .6)],
+      draw(v) {
+        const s = v.A * Math.sin(v.omega * v.t + rad(v.phi)), O = 610, scale = 18, bx = O + s * scale;
+        let body = `<path d="M105 430 H900" class="strong"/><path d="M120 205 V430 M95 220 H120 M95 250 H120 M95 280 H120 M95 310 H120 M95 340 H120 M95 370 H120" class="ink"/>`;
+        body += `<path d="${springPath(120, bx - 55, 330, 12, 18)}" class="accent"/><rect x="${bx - 55}" y="275" width="110" height="110" rx="5" class="fill1"/>`;
+        body += `${line(O, 240, O, 440, 'guide')}${line(O - v.A * scale, 405, O - v.A * scale, 440, 'guide')}${line(O + v.A * scale, 405, O + v.A * scale, 440, 'guide')}${line(O, 470, bx, 470, 'accent', 'marker-end="url(#arrow-series)"')}${label(bx, 258, 'A', 'middle')}${label(O, 465, 'O', 'middle')}${label(bx, 505, `s = ${fmt(s, 1)} cm`, 'middle', 'measure')}${label(O - v.A * scale, 465, '−A', 'middle', 'small')}${label(O + v.A * scale, 465, '+A', 'middle', 'small')}`;
+        return { svg: svgFrame(this.title, 'Lò xo nằm ngang và vật A dao động quanh vị trí cân bằng O.', body), result: `Li độ tại t = ${fmt(v.t, 1)} s: s ≈ ${fmt(s, 2)} cm.` };
+      }
+    },
+    {
+      id: 'lighthouse', group: 'Góc nhìn – hình chiếu', title: '09 · Luồng sáng hải đăng và bờ biển', source: 'Theo Hình 10 trong ảnh mẫu',
+      params: [p('d', 'Khoảng cách HO', 'km', .5, 3, .1, 1), p('omega', 'Tốc độ quay', '°/s', 6, 30, 1, 18), p('t', 'Thời điểm t', 's', -4, 4, .1, 1.5), p('house', 'Tọa độ nhà N', 'km', -3, -.2, .1, -1)],
+      draw(v) {
+        const H = [260, 300], alpha = clamp(v.omega * v.t, -85, 85), yMValue = v.d * Math.tan(rad(alpha));
+        const scale = Math.min(500 / v.d, 180 / Math.max(Math.abs(yMValue), Math.abs(v.house), .2)), O = [H[0] + v.d * scale, H[1]];
+        const M = [O[0], O[1] - yMValue * scale], N = [O[0], O[1] - v.house * scale];
+        let body = `<path d="M${O[0]} 75 V525" class="strong"/>${line(H[0], H[1], M[0], M[1], 'accent')}${line(H[0], H[1], H[0] + 160, H[1], 'guide')}${line(O[0], O[1], H[0], H[1], 'guide')}`;
+        body += `<g transform="translate(${H[0]} ${H[1]})"><path d="M-32 58 L-22 -58 L22 -58 L32 58 Z" class="fill2"/><path d="M-28 -58 L0 -88 L28 -58 Z" class="strong"/><rect x="-18" y="-48" width="36" height="24" class="fill1"/></g>`;
+        body += `<g transform="translate(${N[0] + 66} ${N[1]})"><path d="M-38 30 V-25 H38 V30 M-48 -25 L0 -62 L48 -25" class="ink"/><rect x="-12" y="-2" width="24" height="32" class="fill2"/><rect x="18" y="-12" width="13" height="14" class="fill1"/><path d="M-48 30 H48" class="strong"/></g>`;
+        const alphaLabel = polar(H[0], H[1], 45, alpha / 2);
+        body += `${signedArc(H[0], H[1], 62, alpha, 'accent')}${dot(H[0], H[1], 6)}${dot(O[0], O[1], 6)}${dot(M[0], M[1], 8, 'dot1')}${dot(N[0], N[1], 6)}${label(H[0] - 12, H[1] - 18, 'H', 'end')}${label(O[0] - 14, O[1] + 28, 'O', 'end')}${label(M[0] - 14, M[1] - 12, 'M', 'end')}${label(N[0] - 14, N[1] + 6, 'N', 'end')}${label(alphaLabel[0], alphaLabel[1] + 6, 'α', 'middle', 'measure')}${dimH(555, H[0], O[0], `${fmt(v.d, 1)} km`)}${label(680, 548, 'bờ biển yy′', 'start', 'small')}`;
+        return { svg: svgFrame(this.title, 'Hải đăng H cách bờ thẳng yy phẩy một khoảng HO; M và ngôi nhà tại N luôn nằm trên đoạn bờ được hiển thị.', body), result: `Tọa độ M trên bờ: yM ≈ ${fmt(yMValue, 2)} km.` };
+      }
+    },
+    {
+      id: 'tree-shadow', group: 'Góc nhìn – hình chiếu', title: '10 · Bóng cây theo vị trí Mặt Trời', source: 'Theo Hình 1 trong ảnh mẫu',
+      params: [p('height', 'Chiều cao cây', 'm', 3, 10, .5, 5), p('t', 'Thời điểm trong ngày', 'giờ', 6.5, 17.5, .5, 10), p('wall', 'Tọa độ tường N', 'm', -10, -2, .5, -4)],
+      draw(v) {
+        const B = [545, 470], scale = 42, A = [B[0], B[1] - v.height * scale], theta = Math.PI / 12 * (v.t - 12), xE = v.height * Math.tan(theta), E = [B[0] + xE * scale, B[1]], wallX = B[0] + v.wall * scale;
+        const sun = [B[0] - Math.sign(xE || -1) * 310, 110];
+        const crownH = Math.min(150, v.height * scale * .72), crownW = crownH * .58, top = A[1], bottom = top + crownH;
+        let body = `<path d="M70 ${B[1]} H930" class="strong"/><rect x="${wallX - 20}" y="315" width="40" height="155" fill="url(#hatch)" stroke="var(--viz-series-2)" stroke-width="2"/>`;
+        body += `<g><path d="M${B[0] - 17} ${B[1]} L${B[0] - 10} ${top + crownH * .58} L${B[0] + 10} ${top + crownH * .58} L${B[0] + 17} ${B[1]} Z" class="fill2"/><path d="M${B[0]} ${top} C${B[0] - crownW * .42} ${top - 3},${B[0] - crownW * .82} ${top + crownH * .16},${B[0] - crownW * .66} ${top + crownH * .36} C${B[0] - crownW * 1.03} ${top + crownH * .47},${B[0] - crownW * .92} ${top + crownH * .75},${B[0] - crownW * .55} ${top + crownH * .78} C${B[0] - crownW * .45} ${bottom + 8},${B[0] + crownW * .18} ${bottom + 8},${B[0] + crownW * .28} ${top + crownH * .79} C${B[0] + crownW * .78} ${top + crownH * .83},${B[0] + crownW * .98} ${top + crownH * .55},${B[0] + crownW * .63} ${top + crownH * .37} C${B[0] + crownW * .82} ${top + crownH * .15},${B[0] + crownW * .4} ${top - 5},${B[0]} ${top} Z" class="fill1"/><path d="M${B[0]} ${top + crownH * .62} L${B[0] - crownW * .36} ${top + crownH * .42} M${B[0]} ${top + crownH * .55} L${B[0] + crownW * .4} ${top + crownH * .3} M${B[0]} ${top + crownH * .48} L${B[0] + crownW * .08} ${top + crownH * .18}" class="ink"/></g>`;
+        body += `<circle cx="${sun[0]}" cy="${sun[1]}" r="38" class="fill1"/>`;
+        for (let a = 0; a < 360; a += 45) { const q1 = polar(sun[0], sun[1], 52, a), q2 = polar(sun[0], sun[1], 72, a); body += line(q1[0], q1[1], q2[0], q2[1], 'accent'); }
+        body += `${line(sun[0], sun[1], E[0], E[1], 'guide', 'marker-end="url(#arrow)"')}${line(A[0], A[1], E[0], E[1], 'accent')}${line(B[0], B[1], E[0], E[1], 'strong')}${dimV(B[0] + 55, A[1], B[1], `${fmt(v.height, 1)} m`)}${label(A[0] + 14, A[1] - 12, 'A', 'start')}${label(B[0] + 12, B[1] + 30, 'B', 'start')}${label(E[0], E[1] + 32, 'E', 'middle')}${label(wallX, B[1] + 32, 'N', 'middle')}${label((B[0] + E[0]) / 2, B[1] - 16, `${fmt(Math.abs(xE), 1)} m`, 'middle', 'measure')}`;
+        return { svg: svgFrame(this.title, 'Cây AB thẳng đứng, tia nắng qua ngọn A và đầu bóng E trên mặt đất; tường đặt tại N.', body), result: `Đầu bóng có tọa độ xE ≈ ${fmt(xE, 2)} m so với gốc B.` };
+      }
+    },
+    {
+      id: 'tide-wharf', group: 'Dao động – hàm tuần hoàn', title: '11 · Mực nước ở cảng biển', source: 'Theo bài toán h(t) = 0,8 cos(0,5t) + 4',
+      params: [p('A', 'Biên độ thủy triều', 'm', .4, 1.8, .1, .8), p('mean', 'Độ sâu trung bình', 'm', 3, 7, .2, 4), p('omega', 'Tần số góc', 'rad/h', .2, .9, .05, .5), p('t', 'Thời điểm t', 'giờ', 0, 12, .25, 2)],
+      draw(v) {
+        const depth = v.mean + v.A * Math.cos(v.omega * v.t), bed = 505, scale = 62, surface = bed - depth * scale;
+        let body = `<path d="M70 ${bed} H930" class="strong"/><rect x="70" y="${surface}" width="860" height="${bed - surface}" class="waterfill"/>${line(70, surface, 930, surface, 'wave')}`;
+        body += `<path d="M110 160 V${bed} M155 160 V${bed} M80 175 H185 M80 220 H185" class="strong"/><path d="M750 175 V${bed} M810 175 V${bed} M715 190 H850 M715 235 H850" class="strong"/>`;
+        body += `<g transform="translate(500 ${surface - 12})"><path d="M-145 0 Q-100 60 105 55 Q145 45 165 0 Z" class="fill2"/><rect x="-25" y="-55" width="115" height="55" class="surface"/><path d="M-5 -55 L20 -92 L62 -92 L85 -55" class="ink"/><path d="M-60 -5 V-105 M-60 -105 L35 -60" class="ink"/></g>`;
+        body += `${dimV(895, surface, bed, `h = ${fmt(depth, 2)} m`, -1)}${line(70, bed - v.mean * scale, 930, bed - v.mean * scale, 'guide')}${label(85, bed - v.mean * scale - 12, `mức trung bình ${fmt(v.mean, 1)} m`, 'start', 'small')}${label(510, bed + 34, 'Đáy cảng', 'middle', 'small')}`;
+        return { svg: svgFrame(this.title, 'Mặt cắt cảng biển với mặt nước dao động và độ sâu đo từ đáy cảng.', body), result: `Độ sâu tại t = ${fmt(v.t, 2)} giờ: h ≈ ${fmt(depth, 2)} m.` };
+      }
+    },
+    {
+      id: 'marksman', group: 'Góc nhìn – hình chiếu', title: '12 · Hai góc ngắm trên tường', source: 'Theo bài toán mục tiêu ở độ cao 20 m và 45 m',
+      params: [p('h1', 'Mục tiêu thấp', 'm', 10, 30, 1, 20), p('h2', 'Mục tiêu cao', 'm', 25, 80, 1, 45)],
+      normalize(v) { if (v.h2 <= 2 * v.h1) v.h2 = Math.min(80, 2 * v.h1 + 1); },
+      draw(v) {
+        const k = v.h2 / v.h1, tanT = Math.sqrt(Math.max(1e-9, 1 - 2 / k)), theta = Math.atan(tanT), d = v.h1 / tanT;
+        const S = [205, 500], scale = Math.min(620 / d, 350 / v.h2), wallX = S[0] + d * scale, T1 = [wallX, S[1] - v.h1 * scale], T2 = [wallX, S[1] - v.h2 * scale];
+        let body = `<path d="M55 ${S[1]} H940" class="strong"/><rect x="${wallX}" y="95" width="62" height="${S[1] - 95}" fill="url(#hatch)" stroke="var(--foreground)" stroke-width="2"/>`;
+        body += `${line(S[0], S[1], T1[0], T1[1], 'accent')}${line(S[0], S[1], T2[0], T2[1], 'accent2')}${line(S[0], S[1], wallX, S[1], 'guide')}${dot(S[0], S[1], 6)}`;
+        body += `<circle cx="${T1[0]}" cy="${T1[1]}" r="16" class="fill1"/><circle cx="${T2[0]}" cy="${T2[1]}" r="16" class="fill2"/>${label(T1[0] - 24, T1[1] + 6, `${fmt(v.h1, 0)} m`, 'end', 'measure')}${label(T2[0] - 24, T2[1] + 6, `${fmt(v.h2, 0)} m`, 'end', 'measure')}`;
+        const phiLabel = polar(S[0], S[1], 48, deg(theta) / 2), twoPhiLabel = polar(S[0], S[1], 78, deg(theta));
+        body += `${arcPath(S[0], S[1], 60, 0, deg(theta), 'accent')}${arcPath(S[0], S[1], 92, 0, 2 * deg(theta), 'accent2')}${label(phiLabel[0], phiLabel[1] + 5, 'φ', 'middle', 'measure')}${label(twoPhiLabel[0], twoPhiLabel[1] + 5, '2φ', 'middle', 'measure')}${label(S[0] - 10, S[1] + 30, 'S', 'end')}${dimH(560, S[0], wallX, `d ≈ ${fmt(d, 1)} m`)}`;
+        return { svg: svgFrame(this.title, 'Vận động viên nằm ngắm từ điểm S trên mặt đất đến hai mục tiêu theo các góc phi và hai phi.', body), result: `Khoảng cách đến tường d ≈ ${fmt(d, 2)} m; φ ≈ ${fmt(deg(theta), 1)}°.` };
+      }
+    },
+    {
+      id: 'tide-ship', group: 'Dao động – hàm tuần hoàn', title: '13 · Tàu vào cảng theo thủy triều', source: 'Theo bài toán D(t) = 4 cos(πt/6) + 6',
+      params: [p('A', 'Biên độ', 'm', 2, 5, .5, 4), p('mean', 'Độ sâu trung bình', 'm', 5, 9, .5, 6), p('period', 'Chu kì', 'giờ', 8, 16, 1, 12), p('t', 'Giờ sau nửa đêm', 'giờ', 0, 24, .5, 20)],
+      draw(v) {
+        const depth = Math.max(.2, v.mean + v.A * Math.cos(2 * Math.PI * v.t / v.period)), bed = 500, surface = bed - depth * 48, minDepth = 5, minY = bed - minDepth * 48;
+        let body = `<path d="M65 ${bed} H935" class="strong"/><rect x="65" y="${surface}" width="870" height="${bed - surface}" class="waterfill"/>${line(65, surface, 935, surface, 'wave')}${line(65, minY, 935, minY, 'guide')}`;
+        body += `<g transform="translate(490 ${surface - 8})"><path d="M-190 0 L-145 72 L145 72 L205 0 Z" class="fill2"/><rect x="-70" y="-95" width="170" height="95" class="surface"/><rect x="-35" y="-135" width="75" height="40" class="fill1"/><path d="M55 -95 V-165 M55 -165 L130 -120" class="ink"/><path d="M-130 -8 H145" class="ink"/></g>`;
+        body += `<path d="M120 170 V${bed} H175 V170 M105 170 H190" class="strong"/><path d="M830 170 V${bed} H885 V170 M815 170 H900" class="strong"/>`;
+        body += `${dimV(900, surface, bed, `D = ${fmt(depth, 2)} m`, -1)}${label(85, minY - 12, 'ngưỡng tàu cần: 5 m', 'start', 'small')}${label(500, bed + 34, 'Đáy luồng tàu', 'middle', 'small')}`;
+        return { svg: svgFrame(this.title, 'Tàu trong luồng cảng, mực nước thay đổi và vạch độ sâu tối thiểu 5 mét.', body), result: depth >= 5 ? `D ≈ ${fmt(depth, 2)} m: tàu đủ độ sâu để vào cảng.` : `D ≈ ${fmt(depth, 2)} m: chưa đạt ngưỡng 5 m.` };
+      }
+    },
+    {
+      id: 'conical-swing', group: 'Lực và chuyển động tròn', title: '14 · Xích đu chuyển động tròn', source: 'Theo Hình 1.49 trong ảnh mẫu',
+      params: [p('F', 'Lực đẩy ngang F', 'N', 200, 1000, 20, 692.8), p('m', 'Khối lượng m', 'kg', 20, 70, 1, 40), p('g', 'Gia tốc g', 'm/s²', 9.5, 10, .1, 10)],
+      draw(v) {
+        const theta = deg(Math.atan(v.F / (v.m * v.g))), pivot = [560, 100], L = 320, seat = polar(pivot[0], pivot[1], L, 270 - theta);
+        let body = `<path d="M130 510 H890" class="strong"/><path d="M250 510 L${pivot[0]} ${pivot[1]} L825 510 M220 510 H860" class="strong"/><circle cx="${pivot[0]}" cy="${pivot[1]}" r="10" class="surface"/>`;
+        body += `${line(pivot[0], pivot[1], pivot[0], pivot[1] + 350, 'guide')}${line(pivot[0], pivot[1], seat[0], seat[1], 'strong')}${arcPath(pivot[0], pivot[1], 72, 270 - theta, 270, 'accent')}`;
+        body += `<g transform="translate(${seat[0]} ${seat[1]}) rotate(${-theta / 4})"><path d="M-42 22 H42 L32 42 H-32 Z" class="fill2"/><circle cx="-6" cy="-72" r="19" class="surface"/><path d="M-5 -52 L5 -8 M0 -38 L38 -18 M5 -8 L-25 24 M5 -8 L40 20" class="ink"/></g>`;
+        body += `${line(seat[0], seat[1] - 20, seat[0] + 155, seat[1] - 20, 'accent', 'marker-end="url(#arrow-series)"')}${line(seat[0], seat[1] - 20, seat[0], seat[1] + 115, 'ink', 'marker-end="url(#arrow)"')}${label(seat[0] + 165, seat[1] - 30, `F = ${fmt(v.F, 0)} N`, 'start', 'measure')}${label(seat[0] + 14, seat[1] + 110, 'mg', 'start', 'measure')}${label(pivot[0] - 44, pivot[1] + 96, 'θ', 'middle', 'measure')}`;
+        return { svg: svgFrame(this.title, 'Người chơi lệch bên trái trục quay; lực hướng tâm F hướng ngang vào trục và trọng lực mg hướng xuống.', body), result: `Góc lệch θ ≈ ${fmt(theta, 1)}°.` };
+      }
+    },
+    {
+      id: 'blood-pressure', group: 'Dao động – hàm tuần hoàn', title: '15 · Huyết áp tâm trương trong ngày', source: 'Theo bài toán B(t) = 80 + 6 sin(πt/12)',
+      params: [p('base', 'Mức trung bình', 'mmHg', 65, 95, 1, 80), p('A', 'Biên độ', 'mmHg', 2, 12, 1, 6), p('period', 'Chu kì', 'giờ', 18, 30, 1, 24), p('t', 'Thời điểm', 'giờ', 0, 24, .5, 6)],
+      draw(v) {
+        const B = v.base + v.A * Math.sin(2 * Math.PI * v.t / v.period), cx = 745, cy = 280, r = 120, ang = 210 - clamp((B - (v.base - v.A)) / (2 * v.A), 0, 1) * 240, q = polar(cx, cy, r - 24, ang);
+        let body = `<g transform="translate(155 170)"><path d="M0 80 Q170 -35 360 95 Q250 170 40 155 Z" class="surface"/><rect x="145" y="15" width="135" height="175" rx="28" class="fill1"/><path d="M278 115 C360 120 390 165 430 190" class="accent"/></g>`;
+        body += `<rect x="600" y="120" width="290" height="330" rx="28" class="surface"/><circle cx="${cx}" cy="${cy}" r="${r}" class="paper" stroke="var(--foreground)" stroke-width="3"/>`;
+        for (let i = 0; i <= 12; i++) { const a = 210 - i * 20, q1 = polar(cx, cy, r - 12, a), q2 = polar(cx, cy, r - (i % 3 === 0 ? 32 : 23), a); body += line(q1[0], q1[1], q2[0], q2[1], 'ink'); }
+        body += `${line(cx, cy, q[0], q[1], 'accent', 'marker-end="url(#arrow-series)"')}${dot(cx, cy, 8)}<rect x="675" y="380" width="140" height="45" rx="7" class="paper" stroke="var(--border)"/>${label(745, 412, `${fmt(B, 1)} mmHg`, 'middle', 'measure')}${label(745, 165, 'HUYẾT ÁP', 'middle', 'small')}${label(495, 505, `t = ${fmt(v.t, 1)} giờ`, 'middle', 'measure')}`;
+        return { svg: svgFrame(this.title, 'Băng đo huyết áp và đồng hồ chỉ giá trị tâm trương thay đổi theo thời điểm trong ngày.', body), result: `B(${fmt(v.t, 1)}) ≈ ${fmt(B, 2)} mmHg.` };
+      }
+    },
+    {
+      id: 'sea-wave', group: 'Dao động – hàm tuần hoàn', title: '16 · Sóng biển đi qua cọc ngoài khơi', source: 'Theo bài toán h(t) = 90 cos(πt/10)',
+      params: [p('A', 'Biên độ', 'cm', 40, 140, 5, 90), p('period', 'Chu kì', 's', 10, 30, 1, 20), p('t', 'Thời điểm t', 's', 0, 30, .5, 0)],
+      draw(v) {
+        const meanY = 315, ampPx = v.A * 1.35, phase = 2 * Math.PI * v.t / v.period, pileX = 640, pileH = v.A * Math.cos(phase), currentY = meanY - pileH * 1.35;
+        let wave = '';
+        for (let x = 60; x <= 940; x += 8) {
+          const y = meanY - ampPx * Math.cos((x - pileX) / 150 + phase);
+          wave += `${x === 60 ? 'M' : 'L'} ${x} ${y} `;
+        }
+        let body = `<path d="${wave}" class="wave"/><path d="M60 ${meanY + ampPx + 20} H940 V520 H60 Z" class="waterfill"/>${line(60, meanY, 940, meanY, 'guide')}`;
+        body += `<rect x="${pileX - 22}" y="90" width="44" height="440" rx="6" fill="url(#hatch)" stroke="var(--foreground)" stroke-width="3"/><path d="M${pileX - 44} 90 H${pileX + 44}" class="strong"/>`;
+        body += `${dot(pileX, currentY, 8, 'dot1')}${dimV(pileX + 95, currentY, meanY, `h = ${fmt(pileH, 1)} cm`, -1)}${dimV(160, meanY - ampPx, meanY + ampPx, `${fmt(2 * v.A, 0)} cm`)}${label(175, meanY - ampPx - 18, 'đỉnh', 'start', 'small')}${label(175, meanY + ampPx + 28, 'đáy', 'start', 'small')}${label(660, 78, 'Cọc ngoài khơi', 'start', 'small')}`;
+        return { svg: svgFrame(this.title, 'Mặt nước thật được vẽ quanh cọc ngoài khơi, kèm mực trung bình và chiều cao sóng.', body), result: `Chu kì T = ${fmt(v.period, 0)} s; chiều cao sóng = ${fmt(2 * v.A, 0)} cm; h(t) ≈ ${fmt(pileH, 1)} cm.` };
+      }
+    },
+    {
+      id: 'harmonic-cart', group: 'Dao động – hàm tuần hoàn', title: '17 · Vật dao động điều hòa', source: 'Theo bài toán x = 2 cos(5t − π/6)',
+      params: [p('A', 'Biên độ', 'cm', 1, 6, .5, 2), p('omega', 'Tần số góc', 'rad/s', 2, 9, .5, 5), p('phi', 'Pha ban đầu', '°', -180, 180, 15, -30), p('t', 'Thời điểm t', 's', 0, 6, .1, 1)],
+      draw(v) {
+        const x = v.A * Math.cos(v.omega * v.t + rad(v.phi)), O = 510, scale = 65, cartX = O + x * scale;
+        let body = `<path d="M90 415 H920" class="strong"/><path d="M110 415 V455 H900" class="ink"/>${line(O, 180, O, 470, 'guide')}${line(O - v.A * scale, 365, O - v.A * scale, 465, 'guide')}${line(O + v.A * scale, 365, O + v.A * scale, 465, 'guide')}`;
+        body += `<g transform="translate(${cartX} 360)"><rect x="-75" y="-70" width="150" height="70" rx="8" class="fill1"/><circle cx="-45" cy="15" r="18" class="surface"/><circle cx="45" cy="15" r="18" class="surface"/><path d="M-42 -70 L-20 -110 H20 L42 -70" class="ink"/></g>`;
+        body += `<g transform="translate(130 250)"><rect x="-35" y="-55" width="70" height="110" rx="8" class="surface"/><circle cx="0" cy="0" r="19" class="fill2"/><path d="M35 0 L${cartX - 205} ${360 - 250 - 35}" class="accent"/></g>`;
+        body += `${line(O, 500, cartX, 500, 'accent', 'marker-end="url(#arrow-series)"')}${label(O, 485, 'O', 'middle')}${label(O - v.A * scale, 485, '−A', 'middle', 'small')}${label(O + v.A * scale, 485, '+A', 'middle', 'small')}${label(cartX, 545, `x = ${fmt(x, 2)} cm`, 'middle', 'measure')}${label(130, 180, 'Cảm biến', 'middle', 'small')}`;
+        return { svg: svgFrame(this.title, 'Xe nhỏ dao động qua vị trí cân bằng O giữa hai biên âm A và dương A.', body), result: `Tại t = ${fmt(v.t, 1)} s, x ≈ ${fmt(x, 2)} cm.` };
+      }
+    },
+    {
+      id: 'cables', group: 'Góc nhìn – hình chiếu', title: '18 · Hai sợi cáp neo vào cột', source: 'Theo Hình 18 trong ảnh mẫu',
+      params: [p('hA', 'Độ cao điểm A', 'm', 10, 22, 1, 14), p('hB', 'Độ cao điểm B', 'm', 6, 18, 1, 12), p('d', 'Khoảng cách HO', 'm', 8, 25, 1, 15)],
+      normalize(v) { if (v.hB >= v.hA) v.hB = v.hA - 1; },
+      draw(v) {
+        const ground = 495, wallRight = 280, wallHeight = Math.max(v.hA, v.hB) + 2, scale = Math.min(470 / v.d, 355 / wallHeight), H = [wallRight, ground], O = [H[0] + v.d * scale, ground];
+        const A = [wallRight, ground - v.hA * scale], B = [wallRight, ground - v.hB * scale], wallTop = ground - wallHeight * scale;
+        const beta = deg(Math.atan(v.hB / v.d)), gamma = deg(Math.atan(v.hA / v.d)), alpha = gamma - beta;
+        let body = `<path d="M75 ${ground} H925" class="strong"/><rect x="${wallRight - 52}" y="${wallTop}" width="52" height="${ground - wallTop}" fill="url(#hatch)" stroke="var(--foreground)" stroke-width="2"/>${line(O[0], O[1], A[0], A[1], 'accent')}${line(O[0], O[1], B[0], B[1], 'accent2')}`;
+        for (let y = wallTop + 34; y < ground; y += 38) body += line(wallRight - 52, y, wallRight, y, 'fine');
+        body += `${dot(A[0], A[1], 7, 'dot1')}${dot(B[0], B[1], 7, 'dot1')}${dot(H[0], H[1], 6)}${dot(O[0], O[1], 6)}${arcPath(O[0], O[1], 76, 180 - gamma, 180 - beta, 'accent')}${arcPath(O[0], O[1], 110, 180 - beta, 180, 'accent2')}`;
+        const alphaLabel = polar(O[0], O[1], 56, 180 - (gamma + beta) / 2), betaLabel = polar(O[0], O[1], 91, 180 - beta / 2);
+        body += `${label(A[0] + 14, A[1] - 10, 'A', 'start')}${label(B[0] + 14, B[1] + 22, 'B', 'start')}${label(H[0], H[1] + 32, 'H')}${label(O[0], O[1] + 32, 'O')}${label(alphaLabel[0], alphaLabel[1] + 5, 'α', 'middle', 'measure')}${label(betaLabel[0], betaLabel[1] + 5, 'β', 'middle', 'measure')}${dimV(170, A[1], H[1], `${fmt(v.hA, 0)} m`, -1)}${dimV(210, B[1], H[1], `${fmt(v.hB, 0)} m`)}${dimH(560, H[0], O[0], `${fmt(v.d, 0)} m`)}`;
+        return { svg: svgFrame(this.title, 'Hai dây cáp từ cùng neo O đến hai độ cao A và B trên cột thẳng đứng.', body), result: `Góc giữa hai cáp α ≈ ${fmt(alpha, 1)}°.` };
+      }
+    },
+    {
+      id: 'camera', group: 'Góc nhìn – hình chiếu', title: '19 · Phạm vi quan sát của camera', source: 'Theo Hình 19 trong ảnh mẫu',
+      params: [p('distance', 'Khoảng cách HK', 'm', 12, 35, 1, 20), p('hC', 'Độ cao camera C', 'm', 24, 45, 1, 32), p('hA', 'Điểm thấp A', 'm', 2, 12, 1, 6), p('hB', 'Điểm cao B', 'm', 14, 30, 1, 24)],
+      normalize(v) { v.hB = Math.min(v.hB, v.hC - 1); v.hA = Math.min(v.hA, v.hB - 1); },
+      draw(v) {
+        const ground = 505, leftRight = 300, scale = Math.min(12, 380 / v.distance, 380 / v.hC), rightLeft = leftRight + v.distance * scale;
+        const A = [leftRight, ground - v.hA * scale], B = [leftRight, ground - v.hB * scale], C = [rightLeft, ground - v.hC * scale];
+        const aLow = Math.atan((v.hC - v.hA) / v.distance), aHigh = Math.atan((v.hC - v.hB) / v.distance), view = deg(aLow - aHigh);
+        const leftX = 85, rightW = 220;
+        let body = `<path d="M55 ${ground} H945" class="strong"/><rect x="${leftX}" y="${B[1]}" width="${leftRight - leftX}" height="${ground - B[1]}" class="fill2"/><rect x="${rightLeft}" y="${C[1]}" width="${rightW}" height="${ground - C[1]}" class="fill1"/>`;
+        body += `<path d="M${leftX - 10} ${B[1]} H${leftRight} V${ground} M${rightLeft} ${ground} V${C[1]} H${rightLeft + rightW + 10}" class="strong"/>`;
+        const leftRows = Math.max(1, Math.floor((ground - B[1] - 35) / 55));
+        for (let row = 0; row < leftRows; row++) for (let col = 0; col < 3; col++) body += `<rect x="${leftX + 25 + col * 55}" y="${B[1] + 28 + row * 55}" width="28" height="25" class="paper" stroke="var(--border)"/>`;
+        const rightRows = Math.max(1, Math.floor((ground - C[1] - 35) / 55));
+        for (let row = 0; row < rightRows; row++) for (let col = 0; col < 3; col++) body += `<rect x="${rightLeft + 28 + col * 58}" y="${C[1] + 28 + row * 55}" width="30" height="25" class="paper" stroke="var(--border)"/>`;
+        body += `<path d="M${leftX + 18} ${B[1]} V${B[1] - 24} M${leftX + 18} ${B[1] - 24} L${leftX + 52} ${B[1]} M${rightLeft + rightW - 35} ${C[1]} V${C[1] - 34} M${rightLeft + rightW - 50} ${C[1] - 34} H${rightLeft + rightW - 20}" class="ink"/>`;
+        body += `${line(C[0], C[1], A[0], A[1], 'accent')}${line(C[0], C[1], B[0], B[1], 'accent2')}`;
+        body += `<g transform="translate(${C[0]} ${C[1]})"><path d="M0 0 L18 30 L42 30" class="ink"/><rect x="-58" y="-27" width="52" height="30" rx="6" class="surface"/><path d="M-58 -20 L-78 -12 L-58 -3 Z" class="fill2"/><circle cx="-48" cy="-12" r="7" class="fill1"/></g>`;
+        const angStart = 180 + deg(aHigh), angEnd = 180 + deg(aLow);
+        const angleLabel = polar(C[0], C[1], 49, (angStart + angEnd) / 2);
+        body += `${arcPath(C[0], C[1], 74, angStart, angEnd, 'accent')}${dot(A[0], A[1], 7, 'dot1')}${dot(B[0], B[1], 7, 'dot1')}${dot(C[0], C[1], 6)}${label(A[0] - 14, A[1] + 24, 'A', 'end')}${label(B[0] - 14, B[1] - 12, 'B', 'end')}${label(C[0] + 15, C[1] - 18, 'C', 'start')}${label(angleLabel[0], angleLabel[1] + 6, `${fmt(view, 1)}°`, 'middle', 'measure')}${dimH(560, leftRight, rightLeft, `${fmt(v.distance, 0)} m`)}${dimV(rightLeft + rightW + 48, C[1], ground, `${fmt(v.hC, 0)} m`, -1)}`;
+        return { svg: svgFrame(this.title, 'Camera C trên tòa nhà thứ hai nhìn đến điểm thấp A và điểm cao B của tòa nhà thứ nhất.', body), result: `Phạm vi quan sát ∠ACB ≈ ${fmt(view, 1)}°.` };
+      }
+    },
+    {
+      id: 'festival-swing', group: 'Dao động – hàm tuần hoàn', title: '20 · Đánh đu ở hội Lim', source: 'Theo Hình 39 trong ảnh mẫu',
+      params: [p('A', 'Biên độ ngang', 'm', 2, 5, .5, 3), p('period', 'Chu kì', 's', 2, 5, .25, 3), p('phase', 'Pha ban đầu', '°', -180, 180, 15, -60), p('t', 'Thời điểm t', 's', 0, 6, .1, .5)],
+      draw(v) {
+        const d = v.A * Math.cos(2 * Math.PI * v.t / v.period + rad(v.phase)), pivot = [500, 90], scale = 76, rope = 370, dx = d * scale, dy = Math.sqrt(Math.max(0, rope * rope - dx * dx)), seat = [pivot[0] + dx, pivot[1] + dy], maxDx = v.A * scale;
+        const left = [pivot[0] - maxDx, pivot[1] + Math.sqrt(Math.max(0, rope * rope - maxDx * maxDx))], right = [pivot[0] + maxDx, left[1]];
+        let body = `${line(pivot[0], pivot[1], pivot[0], pivot[1] + rope + 60, 'guide')}${line(pivot[0], pivot[1], left[0], left[1], 'guide')}${line(pivot[0], pivot[1], right[0], right[1], 'guide')}<path d="M${left[0]} ${left[1]} Q${pivot[0]} ${pivot[1] + rope + 115} ${right[0]} ${right[1]}" class="fine"/>`;
+        body += `${line(pivot[0], pivot[1], seat[0], seat[1], 'strong')}${dot(pivot[0], pivot[1], 9)}<g transform="translate(${seat[0]} ${seat[1]})"><path d="M-45 18 H45" class="strong"/><circle cx="-8" cy="-62" r="16" class="surface"/><path d="M-8 -46 L5 -5 M-2 -35 L32 -18 M5 -5 L-25 16 M5 -5 L37 15" class="ink"/></g>`;
+        body += `${line(pivot[0], seat[1] + 48, seat[0], seat[1] + 48, 'accent', 'marker-start="url(#arrow-open)" marker-end="url(#arrow-open)"')}${label((pivot[0] + seat[0]) / 2, seat[1] + 38, `d = ${fmt(d, 2)} m`, 'middle', 'measure')}${label(pivot[0] + 14, pivot[1] + rope + 82, 'Vị trí cân bằng', 'start', 'small')}${label(left[0] - 12, left[1] + 28, '−A', 'end', 'small')}${label(right[0] + 12, right[1] + 28, '+A', 'start', 'small')}`;
+        return { svg: svgFrame(this.title, 'Người chơi đu dao động quanh vị trí cân bằng; khoảng cách ngang d mang dấu.', body), result: `Tại t = ${fmt(v.t, 1)} s: d ≈ ${fmt(d, 2)} m và h = |d| ≈ ${fmt(Math.abs(d), 2)} m.` };
+      }
+    },
+    {
+      id: 'air-pollution', group: 'Dao động – hàm tuần hoàn', title: '21 · Chất ô nhiễm trong không khí', source: 'Theo bài toán 1.38: P(t) = 38 + 12 sin[(2π/7)(t − 37/12)]',
+      params: [p('mean', 'Mức trung bình', 'mg/m³', 30, 50, 1, 38), p('A', 'Biên độ', 'mg/m³', 6, 18, 1, 12), p('period', 'Chu kì', 'ngày', 5, 10, 1, 7), p('t', 'Ngày kể từ thứ Bảy', 'ngày', 0, 30, 1 / 12, 3)],
+      draw(v) {
+        const shift = 37 / 12, P = v.mean + v.A * Math.sin(2 * Math.PI / v.period * (v.t - shift));
+        const low = v.mean - v.A, high = v.mean + v.A, level = clamp((P - low) / Math.max(2 * v.A, 1), 0, 1);
+        const wholeDay = Math.floor(v.t + 1e-8), fraction = Math.max(0, v.t - wholeDay);
+        const dayNames = ['Thứ Bảy', 'Chủ nhật', 'Thứ Hai', 'Thứ Ba', 'Thứ Tư', 'Thứ Năm', 'Thứ Sáu'];
+        const dayName = dayNames[((wholeDay % 7) + 7) % 7];
+        const hazeOpacity = (.05 + .24 * level).toFixed(3), smokeOpacity = (.12 + .4 * level).toFixed(3);
+        let body = `<rect x="55" y="95" width="890" height="390" rx="18" fill="var(--viz-series-2)" fill-opacity="${hazeOpacity}"/>`;
+        body += `<path d="M55 485 H945" class="strong"/><path d="M70 485 V330 H145 V485 M150 485 V285 H235 V485 M245 485 V355 H325 V485 M335 485 V250 H430 V485 M440 485 V315 H535 V485" class="fill2"/>`;
+        body += `<path d="M88 330 V235 H116 V330 M176 285 V195 H207 V285" class="strong"/>`;
+        for (let row = 0; row < 4; row++) for (let col = 0; col < 2; col++) body += `<rect x="${358 + col * 38}" y="${280 + row * 45}" width="19" height="24" class="paper" stroke="var(--border)"/>`;
+        for (let row = 0; row < 3; row++) for (let col = 0; col < 2; col++) body += `<rect x="${462 + col * 38}" y="${345 + row * 43}" width="19" height="22" class="paper" stroke="var(--border)"/>`;
+        body += `<g fill="var(--viz-series-2)" fill-opacity="${smokeOpacity}" stroke="var(--viz-series-2)" stroke-opacity="${smokeOpacity}"><circle cx="101" cy="205" r="22"/><circle cx="125" cy="180" r="28"/><circle cx="105" cy="149" r="35"/><circle cx="192" cy="166" r="22"/><circle cx="215" cy="137" r="31"/><circle cx="198" cy="105" r="37"/></g>`;
+        const bx = 655, by = 185, size = 220, dx = -55, dy = 42;
+        body += `<rect x="${bx + dx}" y="${by + dy}" width="${size}" height="${size}" class="surface" fill-opacity=".12"/><rect x="${bx}" y="${by}" width="${size}" height="${size}" class="paper" fill-opacity=".08" stroke="var(--foreground)" stroke-width="2"/>`;
+        body += `${line(bx, by, bx + dx, by + dy, 'ink')}${line(bx + size, by, bx + size + dx, by + dy, 'ink')}${line(bx, by + size, bx + dx, by + size + dy, 'ink')}${line(bx + size, by + size, bx + size + dx, by + size + dy, 'ink')}`;
+        const particleCount = Math.round(12 + level * 42);
+        for (let i = 0; i < particleCount; i++) {
+          const px = bx + 16 + ((i * 71 + 19) % (size - 32)), py = by + 15 + ((i * 47 + 31) % (size - 30)), pr = 2.5 + (i % 4);
+          body += `<circle cx="${px}" cy="${py}" r="${pr}" fill="var(--viz-series-2)" fill-opacity="${(.32 + .5 * level).toFixed(3)}"/>`;
+        }
+        body += `<g transform="translate(707 298)"><rect x="0" y="0" width="122" height="82" rx="10" class="surface"/><rect x="13" y="13" width="96" height="42" rx="5" class="paper" stroke="var(--border)"/><circle cx="24" cy="68" r="5" class="dot1"/><circle cx="44" cy="68" r="5" class="dot"/>${label(61, 43, fmt(P, 1), 'middle', 'measure')}${label(61, -13, 'MÁY ĐO KHÔNG KHÍ', 'middle', 'small')}</g>`;
+        body += `${label(bx + size / 2, by - 18, 'Mẫu 1 m³ không khí', 'middle', 'small')}${label(300, 530, `t = ${fmt(v.t, 2)} ngày · ${dayName}${fraction > .01 ? ` + ${fmt(fraction, 2)} ngày` : ''}`, 'middle', 'measure')}${label(760, 530, `P(t) = ${fmt(P, 2)} mg/m³`, 'middle', 'measure')}`;
+        return { svg: svgFrame(this.title, 'Không khí tại thành phố công nghiệp được lấy mẫu trong một mét khối; mật độ hạt và chỉ số máy đo thay đổi theo P của t.', body), result: `P(${fmt(v.t, 2)}) ≈ ${fmt(P, 2)} mg/m³ · ${dayName}${fraction > .01 ? ` + ${fmt(fraction, 2)} ngày` : ''}.` };
+      }
+    }
+  ];
+
+  const tasks = [];
+  tasks.push(
+    {
+      id: 'ferris', group: 'Chuyển động quay và cơ cấu', title: 'Cabin trên vòng quay',
+      params: [p('R', 'Bán kính R', 'm', 6, 20, 1, 10), p('h', 'Độ cao tâm O', 'm', 8, 28, 1, 13), p('alpha', 'Góc α', '°', -150, 150, 30, -30), p('beta', 'Góc β từ B đến C', '°', 30, 330, 30, 90)],
+      normalize(s) { s.h = Math.max(s.h, s.R + 1); s.alpha = clamp(Math.round(s.alpha / 30) * 30, -150, 150); s.beta = clamp(Math.round(s.beta / 30) * 30, 30, 330); },
+      calc(s) { return { hB: s.h + s.R * Math.sin(rad(s.alpha)), hC: s.h + s.R * Math.sin(rad(s.alpha - s.beta)) }; },
+      problem: s => `Vòng quay có bán kính <strong>${fmt(s.R)} m</strong>, tâm O cao <strong>${fmt(s.h)} m</strong> so với mặt đất. Cabin B ứng với góc α = <strong>${fmt(s.alpha)}°</strong>; cabin C nằm sau B một góc β = <strong>${fmt(s.beta)}°</strong> theo chiều kim đồng hồ. Hai góc α, β đều là bội số của 30°.`,
+      goal: 'Tính độ cao của hai cabin B và C so với mặt đất.',
+      answers: (s, r) => [answer('hB', 'Độ cao B', 'm', r.hB), answer('hC', 'Độ cao C', 'm', r.hC)],
+      hint: 'Tung độ tương đối của một điểm trên đường tròn bán kính R là R·sin của góc; sau đó cộng độ cao tâm O.',
+      solution: (s, r) => stepHtml('Bước 1. Độ cao cabin B', formula(`hB = h + R·sin α = ${fmt(s.h)} + ${fmt(s.R)}·sin(${fmt(s.alpha)}°) = ${fmt(r.hB, 4)} m`)) + stepHtml('Bước 2. Xác định góc của cabin C', formula(`∠(Ox, OC) = α − β = ${fmt(s.alpha)}° − ${fmt(s.beta)}° = ${fmt(s.alpha - s.beta)}°`)) + stepHtml('Bước 3. Độ cao cabin C', formula(`hC = h + R·sin(α − β) = ${fmt(r.hC, 4)} m`)) + `<div class='tl-final'>B cao khoảng ${fmt(r.hB, 2)} m; C cao khoảng ${fmt(r.hC, 2)} m.</div>`
+    },
+    {
+      id: 'shadow-rod', group: 'Chuyển động quay và cơ cấu', title: 'Thanh quay và bóng trên mặt đất',
+      params: [p('L', 'Độ dài OM', 'cm', 8, 25, 1, 15), p('turns', 'Số vòng đã quay', 'vòng', 0, 4, .1, 3.1), p('clearance', 'Độ cao trục O', 'cm', 9, 35, 1, 18)],
+      normalize(s) { s.clearance = Math.max(s.clearance, s.L + 1); },
+      calc(s) { const angle = ((360 * s.turns) % 360 + 360) % 360; return { angle, shadow: Math.abs(s.L * Math.cos(rad(angle))) }; },
+      problem: s => `Thanh OM dài <strong>${fmt(s.L)} cm</strong> quay ngược chiều kim đồng hồ quanh O. Ánh sáng chiếu thẳng đứng; sau khi thanh quay <strong>${fmt(s.turns)} vòng</strong>, bóng của OM nằm trên mặt đất.`,
+      goal: 'Xác định góc chuẩn của thanh và độ dài bóng O′M′.',
+      answers: (s, r) => [answer('angle', 'Góc chuẩn', '°', r.angle), answer('shadow', 'Độ dài bóng', 'cm', r.shadow)],
+      hint: 'Bóng là hình chiếu vuông góc của thanh lên phương ngang nên có độ dài |OM·cos α|.',
+      solution: (s, r) => stepHtml('Bước 1. Rút gọn góc quay', formula(`α ≡ 360°·${fmt(s.turns)} ≡ ${fmt(r.angle, 3)}° (mod 360°)`)) + stepHtml('Bước 2. Tính hình chiếu', formula(`O′M′ = |${fmt(s.L)}·cos ${fmt(r.angle, 3)}°| = ${fmt(r.shadow, 4)} cm`)) + `<div class='tl-final'>Góc chuẩn ${fmt(r.angle, 2)}°; bóng dài ${fmt(r.shadow, 2)} cm.</div>`
+    },
+    {
+      id: 'bicycle', group: 'Chuyển động quay và cơ cấu', title: 'Van bánh xe đạp',
+      params: [p('R', 'Bán kính bánh xe', 'cm', 35, 75, 1, 58), p('omega', 'Tốc độ góc', 'rad/s', 2, 15, .5, 11), p('t', 'Thời gian', 's', 0, 60, 1, 60)],
+      calc(s) { const theta = -s.omega * s.t; return { height: s.R + s.R * Math.sin(theta), theta }; },
+      problem: s => `Van V ban đầu ở điểm ngoài cùng bên phải của bánh xe bán kính <strong>${fmt(s.R)} cm</strong>. Bánh quay theo chiều kim đồng hồ với tốc độ góc <strong>${fmt(s.omega)} rad/s</strong>.`,
+      goal: `Tính khoảng cách từ van V đến mặt đất sau thời gian đã chọn.`,
+      answers: (s, r) => [answer('height', 'Khoảng cách', 'cm', r.height)],
+      hint: 'Tâm bánh xe cách mặt đất một bán kính. Với chiều quay kim đồng hồ, góc của van là −ωt.',
+      solution: (s, r) => stepHtml('Bước 1. Góc quay', formula(`θ = −ωt = −${fmt(s.omega)}·${fmt(s.t)} = ${fmt(r.theta, 4)} rad`)) + stepHtml('Bước 2. Cộng độ cao tâm và tung độ của van', formula(`d = R + R·sin θ = ${fmt(r.height, 4)} cm`)) + `<div class='tl-final'>Van cách mặt đất khoảng ${fmt(r.height, 2)} cm.</div>`
+    },
+    {
+      id: 'piston', group: 'Chuyển động quay và cơ cấu', title: 'Trục khuỷu và pít-tông',
+      params: [p('r', 'Bán kính IA', 'cm', 4, 14, 1, 8), p('rod', 'Độ dài AM', 'cm', 28, 70, 1, 50), p('alpha', 'Góc quay α', '°', -180, 180, 5, 35)],
+      normalize(s) { s.rod = Math.max(s.rod, 3 * s.r); },
+      calc(s) { const y = s.r * Math.sin(rad(s.alpha)); return { x: s.r * Math.cos(rad(s.alpha)) + Math.sqrt(s.rod * s.rod - y * y), y }; },
+      problem: s => `Cơ cấu có tay quay IA dài <strong>${fmt(s.r)} cm</strong>, thanh truyền AM dài <strong>${fmt(s.rod)} cm</strong> và pít-tông M trượt trên trục ngang qua I. Góc quay hiện tại là <strong>${fmt(s.alpha)}°</strong>.`,
+      goal: 'Tính tọa độ xM của tâm pít-tông M tính từ I.',
+      answers: (s, r) => [answer('x', 'Tọa độ xM', 'cm', r.x)],
+      hint: 'Chiếu A xuống trục pít-tông, rồi dùng định lí Pythagore cho phần ngang của thanh AM.',
+      solution: (s, r) => stepHtml('Bước 1. Tọa độ điểm A', formula(`xA = r·cos α; yA = r·sin α = ${fmt(r.y, 4)} cm`)) + stepHtml('Bước 2. Phần ngang của thanh truyền', formula(`HM = √(AM² − yA²)`)) + stepHtml('Bước 3. Tọa độ pít-tông', formula(`xM = r·cos α + √(AM² − r²sin²α) = ${fmt(r.x, 4)} cm`)) + `<div class='tl-final'>xM ≈ ${fmt(r.x, 2)} cm.</div>`
+    },
+    {
+      id: 'wind-turbine', group: 'Chuyển động quay và cơ cấu', title: 'Ba cánh tuabin gió',
+      params: [p('L', 'Độ dài cánh', 'm', 20, 45, 1, 31), p('hub', 'Độ cao tâm O', 'm', 45, 85, 1, 60), p('alpha', 'Góc (OA, OM)', '°', -175, 175, 5, -105)],
+      normalize(s) { s.hub = Math.max(s.hub, s.L + 1); },
+      calc(s) { return { sinA: Math.sin(rad(s.alpha)), cosA: Math.cos(rad(s.alpha)), hM: s.hub + s.L * Math.sin(rad(s.alpha)), hP: s.hub + s.L * Math.sin(rad(s.alpha + 120)), hN: s.hub + s.L * Math.sin(rad(s.alpha + 240)) }; },
+      problem: s => `Ba cánh tuabin dài <strong>${fmt(s.L)} m</strong>, cách nhau 120°. Tâm O cao <strong>${fmt(s.hub)} m</strong>; đầu cánh M ứng với góc α = <strong>${fmt(s.alpha)}°</strong>.`,
+      goal: 'Tính sin α, cos α và độ cao của ba đầu cánh M, N, P.',
+      answers: (s, r) => [answer('sinA', 'sin α', '', r.sinA), answer('cosA', 'cos α', '', r.cosA), answer('hM', 'Độ cao M', 'm', r.hM), answer('hN', 'Độ cao N', 'm', r.hN), answer('hP', 'Độ cao P', 'm', r.hP)],
+      hint: 'Hai cánh còn lại ứng với các góc α + 120° và α + 240°.',
+      solution: (s, r) => stepHtml('Bước 1. Giá trị lượng giác của α', formula(`sin α = ${fmt(r.sinA, 5)}; cos α = ${fmt(r.cosA, 5)}`)) + stepHtml('Bước 2. Độ cao các đầu cánh', formula(`hM = hO + L·sin α = ${fmt(r.hM, 4)} m`)+formula(`hP = hO + L·sin(α + 120°) = ${fmt(r.hP, 4)} m`)+formula(`hN = hO + L·sin(α + 240°) = ${fmt(r.hN, 4)} m`)) + `<div class='tl-final'>M: ${fmt(r.hM, 2)} m; N: ${fmt(r.hN, 2)} m; P: ${fmt(r.hP, 2)} m.</div>`
+    },
+    {
+      id: 'water-wheel', group: 'Chuyển động quay và cơ cấu', title: 'Gầu nước trên guồng quay',
+      params: [p('R', 'Bán kính guồng', 'm', 2, 6, .5, 3), p('period', 'Thời gian một vòng', 's', 15, 60, 1, 30), p('t', 'Thời điểm quan sát', 's', 0, 60, 1, 4), p('target', 'Độ cao mục tiêu', 'm', .5, 10, .5, 1.5)],
+      normalize(s) { s.target = clamp(s.target, .5, 2 * s.R - .5); },
+      calc(s) { const q = (s.target - s.R) / s.R, a = Math.asin(clamp(q, -1, 1)); const angles = uniqueSorted([normalizeAngle(a), normalizeAngle(Math.PI - a)]); const times = angles.map(x => x * s.period / (2 * Math.PI)).sort((x, y) => x - y); return { height: s.R + s.R * Math.sin(2 * Math.PI * s.t / s.period), q, t1: times[0], t2: times[1] }; },
+      problem: s => `Guồng nước bán kính <strong>${fmt(s.R)} m</strong>, tâm cách mặt nước đúng một bán kính và quay đều một vòng trong <strong>${fmt(s.period)} s</strong>. Gầu G bắt đầu ở điểm ngoài cùng bên phải.`,
+      goal: s => `Tính khoảng cách từ G đến mặt nước tại t = ${fmt(s.t)} s và hai thời điểm trong vòng quay đầu tiên khi khoảng cách bằng ${fmt(s.target)} m.`,
+      answers: (s, r) => [answer('height', 'Độ cao tại t', 'm', r.height), answer('t1', 'Thời điểm thứ nhất', 's', r.t1), answer('t2', 'Thời điểm thứ hai', 's', r.t2)],
+      hint: 'Khoảng cách đến mặt nước là R + R·sin(2πt/T). Giải phương trình sin θ = (mục tiêu − R)/R.',
+      solution: (s, r) => stepHtml('Bước 1. Hàm độ cao', formula(`h(t) = ${fmt(s.R)} + ${fmt(s.R)}sin(2πt/${fmt(s.period)})`)) + stepHtml('Bước 2. Giá trị tại thời điểm quan sát', formula(`h(${fmt(s.t)}) = ${fmt(r.height, 4)} m`)) + stepHtml('Bước 3. Giải phương trình độ cao mục tiêu', formula(`sin(2πt/T) = ${fmt(r.q, 5)}`)+formula(`t1 = ${fmt(r.t1, 4)} s; t2 = ${fmt(r.t2, 4)} s`)) + `<div class='tl-final'>h ≈ ${fmt(r.height, 2)} m; hai thời điểm là ${fmt(r.t1, 2)} s và ${fmt(r.t2, 2)} s.</div>`
+    },
+    {
+      id: 'airplane', group: 'Góc nhìn và đo đạc', title: 'Máy bay và góc nâng',
+      params: [p('alt', 'Độ cao AH', 'm', 300, 900, 50, 500), p('alpha', 'Góc nâng α', '°', 30, 120, 5, 40)],
+      calc(s) { return { x: s.alt / Math.tan(rad(s.alpha)) }; },
+      problem: s => `Máy bay A bay ngang ở độ cao <strong>${fmt(s.alt)} m</strong>. Từ trạm quan sát T, tia TA tạo với chiều dương Tx góc lượng giác <strong>${fmt(s.alpha)}°</strong>; H là hình chiếu của A lên Tx.`,
+      goal: 'Tính tọa độ xH của điểm H trên trục Tx. Kết quả có thể âm khi máy bay ở phía sau T.',
+      answers: (s, r) => [answer('x', 'Tọa độ xH', 'm', r.x)],
+      hint: 'Trong tam giác vuông, tan α = AH/xH nên xH = AH·cot α.',
+      solution: (s, r) => stepHtml('Lập hệ thức lượng giác', formula(`tan α = AH/xH ⇒ xH = AH/tan α`)) + stepHtml('Thay số', formula(`xH = ${fmt(s.alt)}/tan(${fmt(s.alpha)}°) = ${fmt(r.x, 4)} m`)) + `<div class='tl-final'>xH ≈ ${fmt(r.x, 2)} m.</div>`
+    }
+  );
+
+  tasks.push(
+    {
+      id: 'spring', group: 'Dao động và hiện tượng tuần hoàn', title: 'Vật gắn với lò xo',
+      params: [p('A', 'Biên độ A', 'cm', 4, 16, 1, 10), p('omega', 'Tần số góc ω', 'rad/s', 4, 14, 1, 10), p('phi', 'Pha ban đầu φ', '°', -180, 180, 15, 90), p('t', 'Thời điểm minh họa', 's', 0, 4, .1, .6), p('q', 'Tỉ số li độ mục tiêu/A', '', -.9, .9, .1, -Math.sqrt(3) / 2), p('duration', 'Khoảng thời gian xét', 's', 3, 8, .5, 6)],
+      calc(s) { const phase = rad(s.phi), target = s.A * s.q, roots = [], a = Math.asin(clamp(s.q, -1, 1)); for (let k = -20; k <= 60; k++) for (const theta of [a + 2 * Math.PI * k, Math.PI - a + 2 * Math.PI * k]) { const time = (theta - phase) / s.omega; if (time >= -1e-8 && time <= s.duration + 1e-8) roots.push(Math.max(0, time)); } const times = uniqueSorted(roots); return { value: s.A * Math.sin(s.omega * s.t + phase), target, times, first: times[0], count: times.length }; },
+      problem: s => `Vật dao động theo phương trình <strong>s(t) = ${fmt(s.A)}sin(${fmt(s.omega)}t + ${fmt(s.phi)}°)</strong> (cm). Xét khoảng 0 ≤ t ≤ <strong>${fmt(s.duration)} s</strong>; li độ mục tiêu bằng <strong>${fmt(s.A * s.q, 3)} cm</strong>.`,
+      goal: s => `Tính li độ tại t = ${fmt(s.t)} s, thời điểm đầu tiên và số lần vật đạt li độ mục tiêu trong khoảng đã cho.`,
+      answers: (s, r) => [answer('value', 'Li độ tại t', 'cm', r.value), answer('first', 'Thời điểm đầu tiên', 's', r.first), answer('count', 'Số lần đạt mục tiêu', 'lần', r.count)],
+      hint: 'Đưa phương trình về sin(ωt + φ) = q, lấy hai họ nghiệm trong mỗi chu kì rồi lọc theo khoảng thời gian.',
+      solution: (s, r) => stepHtml('Bước 1. Giá trị tại thời điểm quan sát', formula(`s(${fmt(s.t)}) = ${fmt(r.value, 5)} cm`)) + stepHtml('Bước 2. Giải phương trình mục tiêu', formula(`sin(${fmt(s.omega)}t + ${fmt(s.phi)}°) = ${fmt(s.q, 5)}`)+`Các nghiệm trong khoảng: ${listValues(r.times, 4)} s.`) + `<div class='tl-final'>Lần đầu: ${fmt(r.first, 2)} s; tổng cộng ${r.count} lần.</div>`
+    },
+    {
+      id: 'lighthouse', group: 'Góc nhìn và đo đạc', title: 'Luồng sáng hải đăng và bờ biển',
+      params: [p('d', 'Khoảng cách HO', 'km', .5, 3, .1, 1), p('omega', 'Tốc độ quay', 'rad/s', .1, .6, .01, Math.PI / 10), p('t', 'Thời điểm quan sát', 's', 0, 10, .1, 1.5), p('house', 'Tọa độ nhà N', 'km', -3, -.2, .1, -1)],
+      normalize(s) { if (Math.abs(Math.cos(s.omega * s.t)) < .08) s.t = clamp(s.t + .2, 0, 10); },
+      calc(s) { const y = s.d * Math.tan(s.omega * s.t), base = Math.atan(s.house / s.d), full = 2 * Math.PI / s.omega, roots = []; for (let k = -3; k <= 5; k++) { const time = (base + k * Math.PI) / s.omega; if (time >= -1e-8 && time < full - 1e-8) roots.push(Math.max(0, time)); } const times = uniqueSorted(roots); return { y, t1: times[0], t2: times[1], full }; },
+      problem: s => `Hải đăng H cách bờ biển thẳng yy′ một khoảng <strong>${fmt(s.d)} km</strong>. Đèn quay với tốc độ <strong>${fmt(s.omega, 3)} rad/s</strong>, ban đầu luồng sáng trùng HO; nhà N trên bờ có tọa độ <strong>${fmt(s.house)} km</strong>.`,
+      goal: s => `Tính tọa độ điểm sáng M tại t = ${fmt(s.t)} s và hai thời điểm trong vòng quay đầu tiên khi luồng sáng chiếu đến nhà N.`,
+      answers: (s, r) => [answer('y', 'Tọa độ yM', 'km', r.y), answer('t1', 'Lần chiếu thứ nhất', 's', r.t1), answer('t2', 'Lần chiếu thứ hai', 's', r.t2)],
+      hint: 'Tọa độ trên bờ thỏa yM = HO·tan(ωt). Hai luồng sáng đối nhau nên phương trình lặp lại sau π rad.',
+      solution: (s, r) => stepHtml('Bước 1. Tọa độ điểm sáng', formula(`yM(t) = ${fmt(s.d)}tan(${fmt(s.omega, 4)}t)`)+formula(`yM(${fmt(s.t)}) = ${fmt(r.y, 5)} km`)) + stepHtml('Bước 2. Khi M trùng N', formula(`tan(ωt) = ${fmt(s.house / s.d, 5)}`)+formula(`t1 = ${fmt(r.t1, 5)} s; t2 = ${fmt(r.t2, 5)} s`)) + `<div class='tl-final'>yM ≈ ${fmt(r.y, 2)} km; hai lần chiếu sau ${fmt(r.t1, 2)} s và ${fmt(r.t2, 2)} s.</div>`
+    },
+    {
+      id: 'tree-shadow', group: 'Góc nhìn và đo đạc', title: 'Bóng cây theo vị trí Mặt Trời',
+      params: [p('height', 'Chiều cao cây', 'm', 3, 10, .5, 5), p('t', 'Thời điểm trong ngày', 'giờ', 6.5, 17.5, .5, 10), p('wall', 'Tọa độ tường N', 'm', -10, -2, .5, -4)],
+      calc(s) { const theta = Math.PI / 12 * (s.t - 12), xE = s.height * Math.tan(theta); return { theta, xE, covers: xE <= s.wall ? 'yes' : 'no' }; },
+      problem: s => `Cây AB cao <strong>${fmt(s.height)} m</strong> đứng vuông góc mặt đất. Góc thiên đỉnh của Mặt Trời được mô hình bởi θs(t) = π(t − 12)/12, với t tính bằng giờ. Tường N có tọa độ <strong>${fmt(s.wall)} m</strong> trên trục Bx.`,
+      goal: s => `Tính tọa độ đầu bóng E lúc ${fmt(s.t)} giờ và xác định bóng có chạm tới tường N hay không.`,
+      answers: (s, r) => [answer('xE', 'Tọa độ xE', 'm', r.xE), answer('covers', 'Bóng chạm tường', '', r.covers, 'choice')],
+      hint: 'Trong tam giác vuông ABE, xE = AB·tan θs. Buổi sáng xE âm; bóng chạm tường phía âm khi xE ≤ xN.',
+      solution: (s, r) => stepHtml('Bước 1. Góc Mặt Trời', formula(`θs = π(${fmt(s.t)} − 12)/12 = ${fmt(r.theta, 5)} rad`)) + stepHtml('Bước 2. Tọa độ đầu bóng', formula(`xE = ${fmt(s.height)}tan θs = ${fmt(r.xE, 5)} m`)) + stepHtml('Bước 3. So sánh với vị trí tường', `${r.covers === 'yes' ? 'xE ≤ xN nên đoạn bóng đi tới tường.' : 'xE > xN nên bóng chưa đi tới tường.'}`) + `<div class='tl-final'>xE ≈ ${fmt(r.xE, 2)} m; ${r.covers === 'yes' ? 'bóng chạm tường' : 'bóng không chạm tường'}.</div>`
+    },
+    {
+      id: 'tide-wharf', group: 'Dao động và hiện tượng tuần hoàn', title: 'Mực nước ở cảng biển',
+      params: [p('A', 'Biên độ thủy triều', 'm', .4, 1.8, .1, .8), p('mean', 'Độ sâu trung bình', 'm', 3, 7, .2, 4), p('omega', 'Tần số góc', 'rad/h', .2, .9, .05, .5), p('t', 'Thời điểm t', 'giờ', 0, 12, .25, 2), p('need', 'Độ sâu tối thiểu', 'm', 2.5, 7, .1, 3.6)],
+      normalize(s) { s.need = clamp(s.need, s.mean - s.A + .1, s.mean + s.A - .1); },
+      calc(s) { const depth = s.mean + s.A * Math.cos(s.omega * s.t), q = (s.need - s.mean) / s.A; let safe = 0; if (q <= -1) safe = 12; else if (q < 1) { const half = Math.acos(q) / s.omega; for (let k = -5; k <= 5; k++) { const center = 2 * Math.PI * k / s.omega, left = Math.max(0, center - half), right = Math.min(12, center + half); if (right > left) safe += right - left; } } return { depth, q, safe }; },
+      problem: s => `Độ sâu tại cảng được mô hình bởi <strong>h(t) = ${fmt(s.A)}cos(${fmt(s.omega)}t) + ${fmt(s.mean)}</strong> (m), với t tính bằng giờ kể từ lần thủy triều lên đầu tiên. Tàu cần độ sâu ít nhất <strong>${fmt(s.need)} m</strong>.`,
+      goal: s => `Tính h(${fmt(s.t)}) và tổng thời gian tàu có thể qua cảng trong 12 giờ đầu.`,
+      answers: (s, r) => [answer('depth', 'Độ sâu tại t', 'm', r.depth), answer('safe', 'Tổng thời gian đủ sâu', 'giờ', r.safe)],
+      hint: 'Tính trực tiếp h(t). Với cửa sổ an toàn, giải cos(ωt) ≥ (hmin − mức trung bình)/A rồi giao với [0;12].',
+      solution: (s, r) => stepHtml('Bước 1. Độ sâu tại thời điểm đã chọn', formula(`h(${fmt(s.t)}) = ${fmt(r.depth, 5)} m`)) + stepHtml('Bước 2. Điều kiện tàu qua cảng', formula(`cos(${fmt(s.omega)}t) ≥ ${fmt(r.q, 5)}`)+`Tổng độ dài các khoảng nghiệm trong [0;12] là ${fmt(r.safe, 5)} giờ.`) + `<div class='tl-final'>h ≈ ${fmt(r.depth, 2)} m; cảng đủ sâu khoảng ${fmt(r.safe, 2)} giờ.</div>`
+    },
+    {
+      id: 'marksman', group: 'Góc nhìn và đo đạc', title: 'Hai góc ngắm trên tường',
+      params: [p('h1', 'Mục tiêu thấp', 'm', 10, 30, 1, 20), p('h2', 'Mục tiêu cao', 'm', 25, 80, 1, 45)],
+      normalize(s) { if (s.h2 <= 2 * s.h1) s.h2 = Math.min(80, 2 * s.h1 + 1); },
+      calc(s) { const tanPhi = Math.sqrt(1 - 2 * s.h1 / s.h2), d = s.h1 / tanPhi; return { tanPhi, d, phi: deg(Math.atan(tanPhi)) }; },
+      problem: s => `Điểm ngắm S nằm trên mặt đất. Mục tiêu thứ nhất cao <strong>${fmt(s.h1)} m</strong> được nhìn dưới góc φ; khi nâng góc ngắm lên 2φ, mục tiêu thứ hai cao <strong>${fmt(s.h2)} m</strong>.`,
+      goal: 'Tính khoảng cách từ S đến tường và số đo góc φ.',
+      answers: (s, r) => [answer('d', 'Khoảng cách đến tường', 'm', r.d), answer('phi', 'Góc φ', '°', r.phi)],
+      hint: 'Dùng tan φ = h1/d và tan 2φ = h2/d, sau đó áp dụng tan 2φ = 2tanφ/(1−tan²φ).',
+      solution: (s, r) => stepHtml('Bước 1. Đặt x = tan φ', formula(`${fmt(s.h1)}/d = x; ${fmt(s.h2)}/d = 2x/(1 − x²)`)) + stepHtml('Bước 2. Tìm x và d', formula(`x² = 1 − 2·${fmt(s.h1)}/${fmt(s.h2)} ⇒ x = ${fmt(r.tanPhi, 5)}`)+formula(`d = ${fmt(s.h1)}/x = ${fmt(r.d, 5)} m`)) + stepHtml('Bước 3. Tính góc', formula(`φ = arctan x = ${fmt(r.phi, 5)}°`)) + `<div class='tl-final'>d ≈ ${fmt(r.d, 2)} m; φ ≈ ${fmt(r.phi, 2)}°.</div>`
+    },
+    {
+      id: 'tide-ship', group: 'Dao động và hiện tượng tuần hoàn', title: 'Tàu vào cảng theo thủy triều',
+      params: [p('A', 'Biên độ', 'm', 2, 5, .5, 4), p('mean', 'Độ sâu trung bình', 'm', 5, 9, .5, 6), p('period', 'Chu kì', 'giờ', 8, 16, 1, 12), p('t', 'Giờ sau nửa đêm', 'giờ', 0, 24, .5, 20), p('need', 'Độ sâu tàu cần', 'm', 4, 10, .5, 5)],
+      normalize(s) { s.need = clamp(s.need, s.mean - s.A + .5, s.mean + s.A - .5); },
+      calc(s) { const depth = s.mean + s.A * Math.cos(2 * Math.PI * s.t / s.period); return { min: s.mean - s.A, max: s.mean + s.A, depth, can: depth >= s.need ? 'yes' : 'no' }; },
+      problem: s => `Độ sâu ở cảng được mô hình bởi <strong>D(t) = ${fmt(s.A)}cos(2πt/${fmt(s.period)}) + ${fmt(s.mean)}</strong> (m), với 0 ≤ t ≤ 24. Tàu cần độ sâu không nhỏ hơn <strong>${fmt(s.need)} m</strong>.`,
+      goal: s => `Tìm độ sâu lớn nhất, nhỏ nhất; tính D(${fmt(s.t)}) và cho biết tàu có thể vào cảng hay không.`,
+      answers: (s, r) => [answer('max', 'Độ sâu lớn nhất', 'm', r.max), answer('min', 'Độ sâu nhỏ nhất', 'm', r.min), answer('depth', 'Độ sâu tại t', 'm', r.depth), answer('can', 'Tàu có thể vào', '', r.can, 'choice')],
+      hint: 'Vì −1 ≤ cos ≤ 1 nên cực trị là mức trung bình ± biên độ. Sau đó thay t và so sánh với độ sâu tàu cần.',
+      solution: (s, r) => stepHtml('Bước 1. Cực trị', formula(`Dmax = ${fmt(s.mean)} + ${fmt(s.A)} = ${fmt(r.max)} m; Dmin = ${fmt(s.mean)} − ${fmt(s.A)} = ${fmt(r.min)} m`)) + stepHtml('Bước 2. Độ sâu tại thời điểm đã chọn', formula(`D(${fmt(s.t)}) = ${fmt(r.depth, 5)} m`)) + stepHtml('Bước 3. So sánh ngưỡng', `${r.can === 'yes' ? 'Độ sâu đạt yêu cầu nên tàu có thể vào.' : 'Độ sâu chưa đạt yêu cầu nên tàu chưa thể vào.'}`) + `<div class='tl-final'>Dmax = ${fmt(r.max, 2)} m; Dmin = ${fmt(r.min, 2)} m; D(t) ≈ ${fmt(r.depth, 2)} m.</div>`
+    },
+    {
+      id: 'conical-swing', group: 'Chuyển động quay và cơ cấu', title: 'Xích đu chuyển động tròn',
+      params: [p('F', 'Lực hướng tâm F', 'N', 200, 1000, 20, 692.8), p('m', 'Khối lượng m', 'kg', 20, 70, 1, 40), p('g', 'Gia tốc g', 'm/s²', 9.5, 10, .1, 10)],
+      calc(s) { return { theta: deg(Math.atan(s.F / (s.m * s.g))) }; },
+      problem: s => `Người chơi có khối lượng <strong>${fmt(s.m)} kg</strong> chuyển động tròn đều trên xích đu. Lực hướng tâm theo phương ngang có độ lớn <strong>${fmt(s.F)} N</strong>; lấy g = <strong>${fmt(s.g)} m/s²</strong>.`,
+      goal: 'Xác định góc θ mà dây xích tạo với phương thẳng đứng.',
+      answers: (s, r) => [answer('theta', 'Góc θ', '°', r.theta)],
+      hint: 'Từ phân tích lực: F = mg·tan θ.',
+      solution: (s, r) => stepHtml('Lập phương trình lực', formula(`tan θ = F/(mg) = ${fmt(s.F)}/(${fmt(s.m)}·${fmt(s.g)})`)) + stepHtml('Tính góc', formula(`θ = arctan[F/(mg)] = ${fmt(r.theta, 5)}°`)) + `<div class='tl-final'>θ ≈ ${fmt(r.theta, 2)}°.</div>`
+    }
+  );
+
+  tasks.push(
+    {
+      id: 'blood-pressure', group: 'Dao động và hiện tượng tuần hoàn', title: 'Huyết áp tâm trương trong ngày',
+      params: [p('base', 'Mức trung bình', 'mmHg', 65, 95, 1, 80), p('A', 'Biên độ', 'mmHg', 2, 12, 1, 6), p('period', 'Chu kì', 'giờ', 18, 30, 1, 24), p('t', 'Thời điểm', 'giờ', 0, 24, .5, 6)],
+      calc(s) { return { B: s.base + s.A * Math.sin(2 * Math.PI * s.t / s.period), tmin: 3 * s.period / 4 }; },
+      problem: s => `Huyết áp tâm trương được mô hình bởi <strong>B(t) = ${fmt(s.base)} + ${fmt(s.A)}sin(2πt/${fmt(s.period)})</strong> (mmHg), trong đó t là số giờ kể từ nửa đêm.`,
+      goal: s => `Tính B(${fmt(s.t)}) và thời điểm đầu tiên trong một chu kì mà huyết áp đạt giá trị thấp nhất.`,
+      answers: (s, r) => [answer('B', 'Huyết áp tại t', 'mmHg', r.B), answer('tmin', 'Thời điểm thấp nhất', 'giờ', r.tmin)],
+      hint: 'Thay trực tiếp t vào hàm. Hàm sin đạt giá trị nhỏ nhất −1 khi góc bằng 3π/2 trong chu kì đầu tiên.',
+      solution: (s, r) => stepHtml('Bước 1. Huyết áp tại thời điểm đã chọn', formula(`B(${fmt(s.t)}) = ${fmt(s.base)} + ${fmt(s.A)}sin(2π·${fmt(s.t)}/${fmt(s.period)}) = ${fmt(r.B, 5)} mmHg`)) + stepHtml('Bước 2. Thời điểm đạt cực tiểu', formula(`2πt/${fmt(s.period)} = 3π/2 ⇒ t = 3T/4 = ${fmt(r.tmin, 5)} giờ`)) + `<div class='tl-final'>B ≈ ${fmt(r.B, 2)} mmHg; huyết áp thấp nhất lần đầu tại t = ${fmt(r.tmin, 2)} giờ.</div>`
+    },
+    {
+      id: 'sea-wave', group: 'Dao động và hiện tượng tuần hoàn', title: 'Sóng biển đi qua cọc ngoài khơi',
+      params: [p('A', 'Biên độ', 'cm', 40, 140, 5, 90), p('period', 'Chu kì', 's', 10, 30, 1, 20), p('t', 'Thời điểm t', 's', 0, 30, .5, 0)],
+      calc(s) { return { T: s.period, waveHeight: 2 * s.A, h: s.A * Math.cos(2 * Math.PI * s.t / s.period) }; },
+      problem: s => `Độ cao của mặt nước so với mực nước biển trung bình tại một cọc ngoài khơi được mô hình bởi <strong>h(t) = ${fmt(s.A)}cos(2πt/${fmt(s.period)})</strong> (cm).`,
+      goal: s => `Tìm chu kì sóng, chiều cao sóng và độ cao của mặt nước tại t = ${fmt(s.t)} s.`,
+      answers: (s, r) => [answer('T', 'Chu kì sóng', 's', r.T), answer('waveHeight', 'Chiều cao sóng', 'cm', r.waveHeight), answer('h', 'Độ cao tại t', 'cm', r.h)],
+      hint: 'Chu kì đã xuất hiện trong dạng 2πt/T. Chiều cao sóng là khoảng cách từ đáy đến đỉnh, bằng hai lần biên độ.',
+      solution: (s, r) => stepHtml('Bước 1. Chu kì và chiều cao sóng', formula(`T = ${fmt(r.T)} s; H = 2A = 2·${fmt(s.A)} = ${fmt(r.waveHeight)} cm`)) + stepHtml('Bước 2. Độ cao tại thời điểm đã chọn', formula(`h(${fmt(s.t)}) = ${fmt(s.A)}cos(2π·${fmt(s.t)}/${fmt(s.period)}) = ${fmt(r.h, 5)} cm`)) + `<div class='tl-final'>T = ${fmt(r.T, 2)} s; chiều cao sóng ${fmt(r.waveHeight, 2)} cm; h ≈ ${fmt(r.h, 2)} cm.</div>`
+    },
+    {
+      id: 'harmonic-cart', group: 'Dao động và hiện tượng tuần hoàn', title: 'Vật dao động điều hòa',
+      params: [p('A', 'Biên độ A', 'cm', 1, 6, .5, 2), p('omega', 'Tần số góc ω', 'rad/s', 2, 9, .5, 5), p('phi', 'Pha ban đầu φ', '°', -180, 180, 15, -30), p('t', 'Khoảng thời gian xét', 's', 1, 10, .5, 6)],
+      calc(s) { const phase = rad(s.phi), roots = []; for (let k = -30; k <= 60; k++) { const time = (Math.PI / 2 + k * Math.PI - phase) / s.omega; if (time >= -1e-8 && time <= s.t + 1e-8) roots.push(Math.max(0, time)); } return { count: uniqueSorted(roots).length, roots: uniqueSorted(roots) }; },
+      problem: s => `Một vật dao động điều hòa theo phương trình <strong>x = ${fmt(s.A)}cos(${fmt(s.omega)}t ${s.phi < 0 ? '−' : '+'} ${fmt(Math.abs(s.phi))}°)</strong> (cm).`,
+      goal: s => `Cho biết trong khoảng từ 0 đến ${fmt(s.t)} giây, vật đi qua vị trí cân bằng bao nhiêu lần.`,
+      answers: (s, r) => [answer('count', 'Số lần qua cân bằng', 'lần', r.count)],
+      hint: 'Vật qua vị trí cân bằng khi x = 0, tức pha dao động bằng π/2 + kπ. Liệt kê các nghiệm thuộc đoạn thời gian đã cho.',
+      solution: (s, r) => stepHtml('Điều kiện qua vị trí cân bằng', formula(`cos(${fmt(s.omega)}t + ${fmt(s.phi)}°) = 0 ⇒ ${fmt(s.omega)}t + ${fmt(s.phi)}° = π/2 + kπ`)) + stepHtml('Lọc nghiệm trong đoạn thời gian', `Các thời điểm phù hợp: ${listValues(r.roots, 4)} s.`) + `<div class='tl-final'>Vật đi qua vị trí cân bằng ${r.count} lần.</div>`
+    },
+    {
+      id: 'cables', group: 'Góc nhìn và đo đạc', title: 'Hai sợi cáp neo vào cột',
+      params: [p('hA', 'Độ cao điểm A', 'm', 10, 22, 1, 14), p('hB', 'Độ cao điểm B', 'm', 6, 18, 1, 12), p('d', 'Khoảng cách HO', 'm', 8, 25, 1, 15)],
+      normalize(s) { if (s.hB >= s.hA) s.hB = Math.max(6, s.hA - 1); },
+      calc(s) { const beta = Math.atan(s.hB / s.d), gamma = Math.atan(s.hA / s.d), alpha = gamma - beta; return { tanAlpha: Math.tan(alpha), alpha: deg(alpha), beta: deg(beta), gamma: deg(gamma) }; },
+      problem: s => `Hai sợi cáp nối cùng điểm neo O trên mặt đất tới A và B trên một cột thẳng đứng. Biết AH = <strong>${fmt(s.hA)} m</strong>, BH = <strong>${fmt(s.hB)} m</strong> và HO = <strong>${fmt(s.d)} m</strong>.`,
+      goal: 'Tính tan α và số đo góc α tạo bởi hai sợi cáp.',
+      answers: (s, r) => [answer('tanAlpha', 'tan α', '', r.tanAlpha), answer('alpha', 'Góc α', '°', r.alpha)],
+      hint: 'Gọi γ và β là các góc mỗi sợi cáp tạo với mặt đất. Khi đó α = γ − β và dùng công thức tan hiệu.',
+      solution: (s, r) => stepHtml('Bước 1. Tính tang hai góc nghiêng', formula(`tan γ = ${fmt(s.hA)}/${fmt(s.d)}; tan β = ${fmt(s.hB)}/${fmt(s.d)}`)) + stepHtml('Bước 2. Tính góc giữa hai cáp', formula(`tan α = (tan γ − tan β)/(1 + tan γ·tan β) = ${fmt(r.tanAlpha, 6)}`)+formula(`α = γ − β = ${fmt(r.alpha, 6)}°`)) + `<div class='tl-final'>tan α ≈ ${fmt(r.tanAlpha, 3)}; α ≈ ${fmt(r.alpha, 2)}°.</div>`
+    },
+    {
+      id: 'camera', group: 'Góc nhìn và đo đạc', title: 'Phạm vi quan sát của camera',
+      params: [p('distance', 'Khoảng cách HK', 'm', 12, 35, 1, 20), p('hC', 'Độ cao camera C', 'm', 24, 45, 1, 32), p('hA', 'Điểm thấp A', 'm', 2, 12, 1, 6), p('hB', 'Điểm cao B', 'm', 14, 30, 1, 24)],
+      normalize(s) { s.hB = Math.min(s.hB, s.hC - 1); s.hA = Math.min(s.hA, s.hB - 1); },
+      calc(s) { const low = Math.atan((s.hC - s.hA) / s.distance), high = Math.atan((s.hC - s.hB) / s.distance); return { angle: deg(low - high), low: deg(low), high: deg(high) }; },
+      problem: s => `Camera C ở rìa mái tòa nhà thứ hai, cao <strong>${fmt(s.hC)} m</strong>. Hai tòa nhà cách nhau <strong>${fmt(s.distance)} m</strong>; trên mép tòa nhà thứ nhất, A cao <strong>${fmt(s.hA)} m</strong> và B cao <strong>${fmt(s.hB)} m</strong>.`,
+      goal: 'Tính số đo góc ACB, tức phạm vi camera quan sát được trên tòa nhà thứ nhất.',
+      answers: (s, r) => [answer('angle', 'Góc ACB', '°', r.angle)],
+      hint: 'Tính hai góc hạ từ C xuống A và B so với phương ngang, rồi lấy góc lớn trừ góc nhỏ.',
+      solution: (s, r) => stepHtml('Bước 1. Hai góc hạ', formula(`θA = arctan[(${fmt(s.hC)} − ${fmt(s.hA)})/${fmt(s.distance)}] = ${fmt(r.low, 5)}°`)+formula(`θB = arctan[(${fmt(s.hC)} − ${fmt(s.hB)})/${fmt(s.distance)}] = ${fmt(r.high, 5)}°`)) + stepHtml('Bước 2. Phạm vi quan sát', formula(`∠ACB = θA − θB = ${fmt(r.angle, 5)}°`)) + `<div class='tl-final'>Phạm vi quan sát ≈ ${fmt(r.angle, 2)}°.</div>`
+    },
+    {
+      id: 'festival-swing', group: 'Dao động và hiện tượng tuần hoàn', title: 'Đánh đu ở hội Lim',
+      params: [p('A', 'Biên độ ngang', 'm', 2, 5, .5, 3), p('period', 'Chu kì', 's', 2, 5, .25, 3), p('phase', 'Pha ban đầu', '°', -180, 180, 15, -60), p('t', 'Thời điểm t', 's', 0, 6, .1, .5)],
+      calc(s) { const omega = 2 * Math.PI / s.period, phase = rad(s.phase), d = s.A * Math.cos(omega * s.t + phase), maxima = [], zeros = []; for (let k = -20; k <= 40; k++) { const tm = (k * Math.PI - phase) / omega, tz = (Math.PI / 2 + k * Math.PI - phase) / omega; if (tm >= -1e-8) maxima.push(Math.max(0, tm)); if (tz >= -1e-8) zeros.push(Math.max(0, tz)); } return { d, h: Math.abs(d), tMax: Math.min(...maxima), tZero: Math.min(...zeros) }; },
+      problem: s => `Khoảng cách có hướng từ người chơi đu đến vị trí cân bằng được mô hình bởi <strong>d(t) = ${fmt(s.A)}cos(2πt/${fmt(s.period)} ${s.phase < 0 ? '−' : '+'} ${fmt(Math.abs(s.phase))}°)</strong> (m). Khoảng cách thực tế là h = |d|.`,
+      goal: s => `Tính h tại t = ${fmt(s.t)} s; tìm thời điểm sớm nhất h đạt ${fmt(s.A)} m và thời điểm sớm nhất h bằng 0.`,
+      answers: (s, r) => [answer('h', 'Khoảng cách h', 'm', r.h), answer('tMax', 'Lần đầu h cực đại', 's', r.tMax), answer('tZero', 'Lần đầu h = 0', 's', r.tZero)],
+      hint: 'Dùng h = |d|. h đạt cực đại khi pha bằng kπ và bằng 0 khi pha bằng π/2 + kπ.',
+      solution: (s, r) => stepHtml('Bước 1. Khoảng cách tại thời điểm đã chọn', formula(`h(${fmt(s.t)}) = |${fmt(s.A)}cos(2π·${fmt(s.t)}/${fmt(s.period)} + ${fmt(s.phase)}°)| = ${fmt(r.h, 5)} m`)) + stepHtml('Bước 2. Các vị trí đặc biệt', formula(`h = A khi pha = kπ ⇒ t đầu = ${fmt(r.tMax, 5)} s`)+formula(`h = 0 khi pha = π/2 + kπ ⇒ t đầu = ${fmt(r.tZero, 5)} s`)) + `<div class='tl-final'>h ≈ ${fmt(r.h, 2)} m; cực đại lần đầu tại ${fmt(r.tMax, 2)} s; qua cân bằng lần đầu tại ${fmt(r.tZero, 2)} s.</div>`
+    },
+    {
+      id: 'air-pollution', group: 'Dao động và hiện tượng tuần hoàn', title: 'Chất ô nhiễm trong không khí',
+      params: [p('mean', 'Mức trung bình', 'mg/m³', 30, 50, 1, 38), p('A', 'Biên độ', 'mg/m³', 6, 18, 1, 12), p('period', 'Chu kì', 'ngày', 5, 10, 1, 7), p('t', 'Ngày cần tính', 'ngày', 0, 30, 1 / 12, 3), p('monthDays', 'Số ngày trong tháng', 'ngày', 28, 31, 1, 30)],
+      calc(s) { const shift = 37 / 12, omega = 2 * Math.PI / s.period, target = s.mean + s.A, P = s.mean + s.A * Math.sin(omega * (s.t - shift)), roots = []; for (let k = -10; k <= 20; k++) { const time = shift + (Math.PI / 2 + 2 * Math.PI * k) / omega; if (time >= -1e-8 && time <= s.monthDays + 1e-8) roots.push(Math.max(0, time)); } const times = uniqueSorted(roots); return { P, target, times }; },
+      problem: s => `Lượng chất ô nhiễm trong 1 m³ không khí được mô hình bởi <strong>P(t) = ${fmt(s.mean)} + ${fmt(s.A)}sin[(2π/${fmt(s.period)})(t − 37/12)]</strong> (mg), với t là số ngày kể từ thứ Bảy đầu tiên.`,
+      goal: s => `Tính P(${fmt(s.t)}); trong ${fmt(s.monthDays)} ngày, tìm tất cả các ngày mà P(t) = ${fmt(s.mean + s.A)} mg.`,
+      answers: (s, r) => [answer('P', 'Mức ô nhiễm tại t', 'mg/m³', r.P), ...r.times.map((time, index) => answer(`day${index + 1}`, `Ngày nghiệm thứ ${index + 1}`, 'ngày', time))],
+      hint: 'Mức yêu cầu bằng giá trị lớn nhất nên sin u = 1. Khi đó u = π/2 + 2kπ; lọc các nghiệm thuộc số ngày của tháng.',
+      solution: (s, r) => stepHtml('Bước 1. Giá trị tại ngày đã chọn', formula(`P(${fmt(s.t)}) = ${fmt(r.P, 5)} mg/m³`)) + stepHtml('Bước 2. Tìm các ngày đạt mức cực đại', formula(`sin[(2π/${fmt(s.period)})(t − 37/12)] = 1`)+formula(`(2π/${fmt(s.period)})(t − 37/12) = π/2 + 2kπ`)+`Các nghiệm trong tháng: ${listValues(r.times, 4)} ngày.`) + `<div class='tl-final'>P ≈ ${fmt(r.P, 2)} mg/m³; các ngày đạt ${fmt(r.target)} mg là ${listValues(r.times, 2)}.</div>`
+    }
+  );
+
+  const taskById = Object.fromEntries(tasks.map(task => [task.id, task]));
+  const sceneById = Object.fromEntries(scenes.map(scene => [scene.id, scene]));
+  const categoryOrder = ['Chuyển động quay và cơ cấu', 'Góc nhìn và đo đạc', 'Dao động và hiện tượng tuần hoàn'];
+  const state = Object.fromEntries(tasks.map(task => [task.id, Object.fromEntries(task.params.map(item => [item.key, item.value]))]));
+  let currentTask = tasks[0];
+  let currentResult = currentTask.calc(state[currentTask.id]);
+  let teacherUnlocked = false;
+
+  function randomState(task) {
+    const values = {};
+    task.params.forEach(item => {
+      const steps = Math.floor((item.max - item.min) / item.step + 1e-9);
+      values[item.key] = Number((item.min + Math.floor(Math.random() * (steps + 1)) * item.step).toFixed(8));
+    });
+    if (task.normalize) task.normalize(values);
+    return values;
+  }
+
+  function answerRoundRule(value) {
+    const number = Number(value);
+    if (!Number.isFinite(number)) throw new Error('Kết quả không hữu hạn.');
+    const abs = Math.abs(number);
+    let decimals = Number.isInteger(number) ? 0 : abs >= 100 ? 0 : abs >= 10 ? 1 : 2;
+    let rounded = number;
+    let text = '';
+    while (decimals >= 0) {
+      rounded = Number(number.toFixed(decimals));
+      if (Object.is(rounded, -0)) rounded = 0;
+      text = rounded.toFixed(decimals).replace('.', ',');
+      if (text.length <= 4) break;
+      decimals -= 1;
+    }
+    if (decimals < 0) {
+      decimals = 0;
+      rounded = Math.round(number);
+      text = String(rounded);
+    }
+    const place = decimals === 0 ? 'hàng đơn vị' : decimals === 1 ? 'hàng phần mười' : 'hàng phần trăm';
+    return { decimals, rounded, text, place };
+  }
+
+  function roundingInstruction(task, result) {
+    const directions = task.answers(state[task.id], result).filter(item => item.type === 'number').map(item => `${item.label}: ${answerRoundRule(item.value).place}`);
+    return `Làm tròn tự động — ${directions.join('; ')}. Mỗi ô tối đa 4 kí tự; có thể dùng dấu phẩy hoặc dấu chấm thập phân.`;
+  }
+
+  function buildScenarioSelect() {
+    scenarioSelect.replaceChildren();
+    categoryOrder.forEach(group => {
+      const optgroup = document.createElement('optgroup');
+      optgroup.label = group;
+      tasks.filter(task => task.group === group).forEach(task => {
+        const option = document.createElement('option');
+        option.value = task.id;
+        option.textContent = `${String(tasks.indexOf(task) + 1).padStart(2, '0')}. ${task.title}`;
+        optgroup.appendChild(option);
+      });
+      scenarioSelect.appendChild(optgroup);
+    });
+  }
+
+  function syncParamInputs(values) {
+    paramsNode.querySelectorAll('input[data-key]').forEach(input => { input.value = values[input.dataset.key]; });
+  }
+
+  function renderParams() {
+    const values = state[currentTask.id];
+    paramsNode.replaceChildren();
+    currentTask.params.forEach(item => {
+      const field = document.createElement('label');
+      field.className = 'form-label tl-field';
+      const textNode = document.createElement('span');
+      textNode.textContent = item.label;
+      const valueWrap = document.createElement('span');
+      valueWrap.className = 'tl-value';
+      const number = document.createElement('input');
+      number.className = 'form-control';
+      number.type = 'number';
+      number.min = item.min;
+      number.max = item.max;
+      number.step = item.step;
+      number.value = values[item.key];
+      number.dataset.key = item.key;
+      const unit = document.createElement('small');
+      unit.textContent = item.unit;
+      const range = document.createElement('input');
+      range.className = 'form-range';
+      range.type = 'range';
+      range.min = item.min;
+      range.max = item.max;
+      range.step = item.step;
+      range.value = values[item.key];
+      range.dataset.key = item.key;
+      const update = raw => {
+        const value = clamp(Number(raw), item.min, item.max);
+        if (!Number.isFinite(value)) return;
+        values[item.key] = value;
+        if (currentTask.normalize) currentTask.normalize(values);
+        syncParamInputs(values);
+        renderMain();
+      };
+      number.addEventListener('change', event => update(event.target.value));
+      range.addEventListener('input', event => update(event.target.value));
+      valueWrap.append(number, unit);
+      field.append(textNode, valueWrap, range);
+      paramsNode.appendChild(field);
+    });
+  }
+
+  function visualState(task, values) {
+    if (task.id === 'lighthouse') {
+      const beamAngle = deg(Math.atan(Math.tan(values.omega * values.t)));
+      return { ...values, omega: values.t === 0 ? deg(values.omega) : beamAngle / values.t };
+    }
+    return { ...values };
+  }
+
+  function hideOutputs(id, html, values, result) {
+    let output = html;
+    if (id === 'blood-pressure') output = output.replace(`>${fmt(result.B, 1)} mmHg<`, '>? mmHg<');
+    if (id === 'sea-wave') {
+      output = output.replace(`>h = ${fmt(result.h, 1)} cm<`, '>h = ?<');
+      output = output.replace(`>${fmt(result.waveHeight, 0)} cm<`, '>H = ?<');
+    }
+    if (id === 'marksman') output = output.replace(`>d ≈ ${fmt(result.d, 1)} m<`, '>d = ?<');
+    if (id === 'camera') output = output.replace(`>${fmt(result.angle, 1)}°<`, '>∠ACB<');
+    if (id === 'air-pollution') {
+      output = output.replace(`>${fmt(result.P, 1)}<`, '>?<');
+      output = output.replace(`>P(t) = ${fmt(result.P, 2)} mg/m³<`, '>P(t) = ?<');
+    }
+    return output;
+  }
+
+  function renderAnswerFields() {
+    const specs = currentTask.answers(state[currentTask.id], currentResult);
+    answerFieldsNode.innerHTML = specs.map(item => {
+      if (item.type === 'choice') {
+        return `<label class="tl-answerfield"><span>${esc(item.label)}</span><select class="form-select" data-answer="${item.key}"><option value="">Chọn</option><option value="yes">Có</option><option value="no">Không</option></select><small>${esc(item.unit)}</small></label>`;
+      }
+      return `<label class="tl-answerfield"><span>${esc(item.label)}</span><input class="form-control" data-answer="${item.key}" inputmode="decimal" maxlength="4" autocomplete="off"><small>${esc(item.unit)}</small></label>`;
+    }).join('');
+  }
+
+  function clearGuidance() {
+    const feedback = $('#tl-feedback');
+    const hint = $('#tl-hint');
+    feedback.className = 'tl-feedback';
+    feedback.textContent = '';
+    hint.className = 'tl-hint';
+    hint.textContent = '';
+    $('#tl-hintbtn').textContent = 'Gợi ý';
+  }
+
+  function renderMain() {
+    const values = state[currentTask.id];
+    if (currentTask.normalize) currentTask.normalize(values);
+    currentResult = currentTask.calc(values);
+    const taskIndex = tasks.indexOf(currentTask) + 1;
+    $('#tl-category').textContent = currentTask.group;
+    $('#tl-title').textContent = currentTask.title;
+    $('#tl-number').textContent = `Tình huống ${String(taskIndex).padStart(2, '0')}`;
+    $('#tl-problemtext').innerHTML = currentTask.problem(values, currentResult);
+    $('#tl-goal').innerHTML = typeof currentTask.goal === 'function' ? currentTask.goal(values, currentResult) : currentTask.goal;
+    $('#tl-rounding').textContent = roundingInstruction(currentTask, currentResult);
+    const scene = sceneById[currentTask.id];
+    const rendered = scene.draw(visualState(currentTask, values));
+    svgNode.innerHTML = hideOutputs(currentTask.id, rendered.svg, values, currentResult);
+    captionNode.textContent = `Hình minh họa động · ${scene.source}`;
+    scenarioSelect.value = currentTask.id;
+    renderAnswerFields();
+    clearGuidance();
+    if ($('#tl-solutionmodal').classList.contains('is-open') && teacherUnlocked) updateSolutionContent();
+  }
+
+  function selectTask(id, useRandomData = false) {
+    const task = taskById[id];
+    if (!task) return;
+    currentTask = task;
+    if (useRandomData) state[id] = randomState(task);
+    scenarioSelect.value = id;
+    renderParams();
+    renderMain();
+  }
+
+  function checkAnswers() {
+    const specs = currentTask.answers(state[currentTask.id], currentResult);
+    let correct = 0;
+    let missing = false;
+    let invalid = false;
+    specs.forEach(item => {
+      const field = answerFieldsNode.querySelector(`[data-answer="${item.key}"]`);
+      const raw = field ? field.value.trim() : '';
+      if (!raw) { missing = true; return; }
+      if (item.type === 'choice') {
+        if (raw === item.value) correct += 1;
+        return;
+      }
+      if (!/^-?\d+(?:[.,]\d+)?$/.test(raw)) { invalid = true; return; }
+      const entered = Number(raw.replace(',', '.'));
+      const expected = answerRoundRule(item.value).rounded;
+      if (Math.abs(entered - expected) < 1e-9) correct += 1;
+    });
+    const feedback = $('#tl-feedback');
+    feedback.className = 'tl-feedback is-show';
+    if (missing) {
+      feedback.classList.add('is-bad');
+      feedback.textContent = 'Hãy điền đủ các ô kết quả trước khi kiểm tra.';
+    } else if (invalid) {
+      feedback.classList.add('is-bad');
+      feedback.textContent = 'Chỉ nhập số, dấu âm và dấu phẩy hoặc dấu chấm thập phân.';
+    } else if (correct === specs.length) {
+      feedback.classList.add('is-ok');
+      feedback.textContent = 'Chính xác. Tất cả kết quả đều đúng theo quy tắc làm tròn.';
+    } else {
+      feedback.classList.add('is-bad');
+      feedback.textContent = `Đúng ${correct}/${specs.length} kết quả. Hãy kiểm tra lại mô hình và quy tắc làm tròn.`;
+    }
+  }
+
+  function toggleHint() {
+    const hint = $('#tl-hint');
+    const show = !hint.classList.contains('is-show');
+    hint.textContent = show ? currentTask.hint : '';
+    hint.className = show ? 'tl-hint is-show' : 'tl-hint';
+    $('#tl-hintbtn').textContent = show ? 'Ẩn gợi ý' : 'Gợi ý';
+  }
+
+  function openModal(id) {
+    const modal = root.querySelector(`#${id}`);
+    if (modal) modal.classList.add('is-open');
+  }
+
+  function closeModal(id) {
+    const modal = root.querySelector(`#${id}`);
+    if (modal) modal.classList.remove('is-open');
+  }
+
+  function updateSolutionContent() {
+    const values = state[currentTask.id];
+    const specs = currentTask.answers(values, currentResult);
+    const summary = specs.map(item => {
+      const value = item.type === 'choice' ? (item.value === 'yes' ? 'Có' : 'Không') : `${answerRoundRule(item.value).text}${item.unit ? ` ${esc(item.unit)}` : ''}`;
+      return `<li>${esc(item.label)}: <strong>${value}</strong></li>`;
+    }).join('');
+    $('#tl-solutiontitle').textContent = `📘 Lời giải chi tiết · ${currentTask.title}`;
+    $('#tl-solutionbody').innerHTML = currentTask.solution(values, currentResult) + `<div class="tl-step"><strong>Kết quả nhập theo quy tắc làm tròn</strong><ul>${summary}</ul></div>`;
+  }
+
+  function showSolution() {
+    if (!teacherUnlocked) return;
+    updateSolutionContent();
+    openModal('tl-solutionmodal');
+  }
+
+  function safeSession(key, value) {
+    try {
+      if (value === null) sessionStorage.removeItem(key);
+      else sessionStorage.setItem(key, value);
+    } catch (error) {}
+  }
+
+  function readSession(key) {
+    try { return sessionStorage.getItem(key); } catch (error) { return null; }
+  }
+
+  function setTeacherUi(unlocked, message, statusClass = '') {
+    teacherUnlocked = unlocked;
+    $('#tl-teachstatus').textContent = message;
+    $('#tl-teachstatus').className = `tl-teachstatus${statusClass ? ` ${statusClass}` : ''}`;
+    $('#tl-solutionbtn').disabled = !unlocked;
+    $('#tl-lock').disabled = !unlocked;
+  }
+
+  function unlockTeacher() {
+    const expected = atob('QzREM0hMTjJUVg==');
+    if ($('#tl-password').value === expected) {
+      safeSession('trigApplicationsTeacher', '1');
+      setTeacherUi(true, 'Đã mở khóa chế độ giáo viên.', 'is-ok');
+      $('#tl-password').value = '';
+    } else {
+      setTeacherUi(false, 'Mật khẩu chưa đúng.', 'is-bad');
+    }
+  }
+
+  function lockTeacher() {
+    safeSession('trigApplicationsTeacher', null);
+    setTeacherUi(false, 'Nút “Xem lời giải” đang khóa.');
+    closeModal('tl-solutionmodal');
+  }
+
+  buildScenarioSelect();
+  scenarioSelect.addEventListener('change', event => selectTask(event.target.value));
+  $('#tl-reroll').addEventListener('click', () => {
+    state[currentTask.id] = randomState(currentTask);
+    renderParams();
+    renderMain();
+  });
+  $('#tl-random').addEventListener('click', () => {
+    let next = currentTask;
+    if (tasks.length > 1) while (next.id === currentTask.id) next = tasks[Math.floor(Math.random() * tasks.length)];
+    selectTask(next.id, true);
+  });
+  $('#tl-check').addEventListener('click', checkAnswers);
+  $('#tl-hintbtn').addEventListener('click', toggleHint);
+  $('#tl-solutionbtn').addEventListener('click', showSolution);
+  $('#tl-unlock').addEventListener('click', unlockTeacher);
+  $('#tl-password').addEventListener('keydown', event => { if (event.key === 'Enter') unlockTeacher(); });
+  $('#tl-lock').addEventListener('click', lockTeacher);
+  $('#tl-zoom').addEventListener('click', () => {
+    $('#tl-zoombody').innerHTML = svgNode.innerHTML;
+    openModal('tl-zoommodal');
+  });
+  $('#tl-collapse').addEventListener('click', () => {
+    const shell = root.querySelector('.tl-shell');
+    const collapsed = shell.classList.toggle('is-collapsed');
+    $('#tl-collapse').setAttribute('aria-expanded', String(!collapsed));
+    $('#tl-collapse').setAttribute('aria-label', collapsed ? 'Mở danh sách' : 'Thu gọn danh sách');
+  });
+  root.querySelectorAll('[data-close]').forEach(button => button.addEventListener('click', () => closeModal(button.dataset.close)));
+  root.querySelectorAll('.tl-modal').forEach(modal => modal.addEventListener('click', event => { if (event.target === modal) modal.classList.remove('is-open'); }));
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') root.querySelectorAll('.tl-modal.is-open').forEach(modal => modal.classList.remove('is-open'));
+  });
+  if (readSession('trigApplicationsTeacher') === '1') setTeacherUi(true, 'Đã mở khóa chế độ giáo viên.', 'is-ok');
+  renderParams();
+  renderMain();
+})();
+</script>
+
+<script id="codex-visualization-floating-ui-core" src="https://unpkg.com/@floating-ui/core@1.7.3/dist/floating-ui.core.umd.min.js"></script>
+<script id="codex-visualization-floating-ui-dom" src="https://unpkg.com/@floating-ui/dom@1.7.4/dist/floating-ui.dom.umd.min.js"></script>
+<script id="codex-visualization-lucide" async src="https://unpkg.com/lucide@1.17.0/dist/umd/lucide.js"></script>
+<script id="codex-visualization-tooltip">/* oxlint-disable typescript/no-unsafe-argument, typescript/no-unsafe-call, typescript/no-unsafe-return */
+// Runs inside the visualization sandbox, not the host webview.
+(() => {
+  if (window.FloatingUIDOM == null) {
+    return;
+  }
+  const { autoUpdate, computePosition, flip, offset, shift, size } =
+    window.FloatingUIDOM;
+  const tooltipPlacements = new Set(["top", "right", "bottom", "left"]);
+  const tooltipId = `codex-visualization-tooltip-${
+    window.crypto?.randomUUID?.() ?? Date.now().toString(36)
+  }`;
+  const tooltipGap = 5;
+  const hoverDelay = 700;
+  const skipDelay = 300;
+  let activeTrigger = null;
+  let pendingTrigger = null;
+  let tooltip = null;
+  let openTimeout = null;
+  let autoUpdateCleanup = null;
+  let positionRequest = 0;
+  let skipDelayUntil = 0;
+
+  const getTrigger = (target) =>
+    target?.nodeType === Node.ELEMENT_NODE
+      ? target.closest("[data-tooltip]")
+      : null;
+  const containsTarget = (trigger, target) =>
+    target?.nodeType != null && trigger.contains(target);
+  const getContent = (trigger) =>
+    trigger.getAttribute("data-tooltip")?.trim() ?? "";
+  const getPlacement = (trigger) => {
+    const placement = trigger.getAttribute("data-tooltip-placement");
+    return tooltipPlacements.has(placement) ? placement : "top";
+  };
+  const getTooltip = () => {
+    if (tooltip == null) {
+      tooltip = document.createElement("div");
+      tooltip.id = tooltipId;
+      tooltip.className = "tooltip";
+      tooltip.setAttribute("role", "tooltip");
+    }
+    return tooltip;
+  };
+  const setDescribedBy = (trigger, described) => {
+    const ids = new Set(
+      (trigger.getAttribute("aria-describedby") ?? "")
+        .split(/\s+/)
+        .filter(Boolean),
+    );
+    if (described) {
+      ids.add(tooltipId);
+    } else {
+      ids.delete(tooltipId);
+    }
+    if (ids.size === 0) {
+      trigger.removeAttribute("aria-describedby");
+    } else {
+      trigger.setAttribute("aria-describedby", [...ids].join(" "));
+    }
+  };
+  const clearOpenTimeout = () => {
+    if (openTimeout != null) {
+      window.clearTimeout(openTimeout);
+      openTimeout = null;
+    }
+    pendingTrigger = null;
+  };
+  const closeTooltip = (activateSkipDelay = true) => {
+    clearOpenTimeout();
+    positionRequest += 1;
+    autoUpdateCleanup?.();
+    autoUpdateCleanup = null;
+    if (activeTrigger == null) {
+      return;
+    }
+    setDescribedBy(activeTrigger, false);
+    activeTrigger = null;
+    tooltip?.remove();
+    if (activateSkipDelay) {
+      skipDelayUntil = Date.now() + skipDelay;
+    }
+  };
+  const updatePosition = (trigger, floating) => {
+    const request = ++positionRequest;
+    void computePosition(trigger, floating, {
+      middleware: [
+        offset(tooltipGap),
+        flip({ padding: tooltipGap }),
+        shift({ padding: tooltipGap }),
+        size({
+          padding: tooltipGap,
+          apply({ availableHeight, availableWidth, elements }) {
+            elements.floating.style.setProperty(
+              "--tooltip-available-width",
+              `${Math.max(0, availableWidth)}px`,
+            );
+            elements.floating.style.setProperty(
+              "--tooltip-available-height",
+              `${Math.max(0, availableHeight)}px`,
+            );
+          },
+        }),
+      ],
+      placement: getPlacement(trigger),
+      strategy: "fixed",
+    })
+      .then(({ x, y }) => {
+        if (activeTrigger !== trigger || request !== positionRequest) {
+          return;
+        }
+        const scale = window.devicePixelRatio || 1;
+        floating.style.transform = `translate(${Math.round(x * scale) / scale}px, ${Math.round(y * scale) / scale}px)`;
+        floating.style.visibility = "visible";
+      })
+      .catch(() => {
+        if (activeTrigger === trigger && request === positionRequest) {
+          closeTooltip(false);
+        }
+      });
+  };
+  const openTooltip = (trigger) => {
+    const content = getContent(trigger);
+    if (!trigger.isConnected || content.length === 0) {
+      return;
+    }
+    clearOpenTimeout();
+    if (activeTrigger === trigger) {
+      return;
+    }
+    closeTooltip();
+    const floating = getTooltip();
+    floating.textContent = content;
+    floating.style.visibility = "hidden";
+    floating.style.transform = "translate(0, 0)";
+    document.body.appendChild(floating);
+    activeTrigger = trigger;
+    setDescribedBy(trigger, true);
+    autoUpdateCleanup = autoUpdate(trigger, floating, () => {
+      updatePosition(trigger, floating);
+    });
+  };
+  const requestOpen = (trigger, immediate = false) => {
+    if (
+      getContent(trigger).length === 0 ||
+      activeTrigger === trigger ||
+      pendingTrigger === trigger
+    ) {
+      return;
+    }
+    clearOpenTimeout();
+    pendingTrigger = trigger;
+    const delay =
+      immediate || activeTrigger != null || Date.now() < skipDelayUntil
+        ? 0
+        : hoverDelay;
+    if (delay === 0) {
+      openTooltip(trigger);
+      return;
+    }
+    openTimeout = window.setTimeout(() => {
+      openTimeout = null;
+      pendingTrigger = null;
+      openTooltip(trigger);
+    }, delay);
+  };
+  const handlePointerOpen = (event) => {
+    if (event.pointerType === "touch") {
+      return;
+    }
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    requestOpen(trigger);
+  };
+  const handleLeave = (event) => {
+    const trigger = getTrigger(event.target);
+    if (trigger == null || containsTarget(trigger, event.relatedTarget)) {
+      return;
+    }
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const handleFocusIn = (event) => {
+    const trigger = getTrigger(event.target);
+    if (trigger?.matches(":focus-visible")) {
+      requestOpen(trigger, true);
+    }
+  };
+  const handleKeyDown = (event) => {
+    if (event.key === "Escape") {
+      closeTooltip();
+    }
+  };
+  const handleContextMenu = (event) => {
+    const trigger = getTrigger(event.target);
+    if (activeTrigger === trigger || pendingTrigger === trigger) {
+      closeTooltip();
+    }
+  };
+  const destroy = () => {
+    closeTooltip(false);
+    document.removeEventListener("pointerover", handlePointerOpen);
+    document.removeEventListener("pointerout", handleLeave);
+    document.removeEventListener("focusin", handleFocusIn);
+    document.removeEventListener("focusout", handleLeave);
+    document.removeEventListener("keydown", handleKeyDown);
+    document.removeEventListener("contextmenu", handleContextMenu);
+    tooltip = null;
+  };
+
+  document.addEventListener("pointerover", handlePointerOpen);
+  document.addEventListener("pointerout", handleLeave);
+  document.addEventListener("focusin", handleFocusIn);
+  document.addEventListener("focusout", handleLeave);
+  document.addEventListener("keydown", handleKeyDown);
+  document.addEventListener("contextmenu", handleContextMenu);
+  window.addEventListener("pagehide", destroy, { once: true });
+})();
+</script>
+<script id="codex-visualization-lucide-initialization">(() => {
+  const initialize = () => {
+    globalThis.lucide?.createIcons({ attrs: { width: 16, height: 16 } });
+  };
+  if (globalThis.lucide != null) {
+    initialize();
+    return;
+  }
+  document
+    .getElementById("codex-visualization-lucide")
+    ?.addEventListener("load", initialize, { once: true });
+})();
+</script>
+</body>
+</html>

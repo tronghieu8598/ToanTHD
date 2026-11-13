@@ -1,0 +1,11 @@
+{
+  "id": "dc-12-hk2-6D2-q035-v4",
+  "original_number": 35,
+  "kind": "short",
+  "based_on": "65de1db368d744a8c599bc082aae4dfebc685750e7a0baab117d963ecfea31fd",
+  "prompt": "Tỉ lệ người dân đã tiêm vắc-xin phòng bệnh A ở một địa phương là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>65</mn><mi>%</mi></mrow></semantics></math>. Trong số người đã tiêm phòng, tỷ lệ mắc bệnh A là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn><mi>%</mi></mrow></semantics></math>; trong số người chưa tiêm phòng, tỉ lệ người mắc bệnh A là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>17</mn><mi>%</mi></mrow></semantics></math>. Chọn ngẫu nhiên một người ở địa phương đó.\n\t<ul class=\"\"><li>Tính xác suất người được chọn mắc bệnh A.</li><li>Biểt rằng người được chọn mắc bệnh A. Tính xác suất người đó chưa tiêm phòng vắc-xin.</li></ul>",
+  "choices": [],
+  "correct": null,
+  "solution": "Ta có sơ đồ hình cây sau:\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/5148076c19319726ef25a131d0a114ff6d6dddf8d9664668812fea627d1c4e07.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\t<ul class=\"\"><li>Dựa vào sơ đồ hình cây ta có xác suất cần tìm là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mo>=</mo><mn>65</mn><mi>%</mi><mo>⋅</mo><mn>5</mn><mi>%</mi><mo>+</mo><mn>35</mn><mi>%</mi><mo>⋅</mo><mn>17</mn><mi>%</mi><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>092</mn></mrow></semantics></math>.</li><li>Dựa vào sơ đồ hình cây ta có xác suất cần tìm là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mo>=</mo><mn>35</mn><mi>%</mi><mo>⋅</mo><mn>17</mn><mi>%</mi><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>0595</mn></mrow></semantics></math>.</li></ul>",
+  "accepted_answers": []
+}

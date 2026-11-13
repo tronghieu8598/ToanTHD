@@ -1,0 +1,58 @@
+{
+  "id": "dc-12-hk2-6D2-q042-v4",
+  "source_fingerprint": "2abfa56b9a7955f359924d8564bfae4ab4b75f1ad5cbfe436cb2c007386dc934",
+  "variants": [
+    {
+      "id": "dc-12-hk2-6D2-q042-v4--bt01",
+      "number": 1,
+      "kind": "short",
+      "prompt": "Có hai chuồng thỏ, chuồng I có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>6</mn></mrow></semantics></math> thỏ đen và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>9</mn></mrow></semantics></math> thỏ trắng. Chuồng II có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>6</mn></mrow></semantics></math> thỏ đen và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn></mrow></semantics></math> thỏ trắng. Trước tiên, từ chuồng II lấy ra ngẫu nhiên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math> con thỏ rồi cho vào chuồng I. Sau đó, từ chuồng I lấy ra ngẫu nhiên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math> con thỏ. Tính xác suất để con thỏ được lấy ra là con thỏ trắng.",
+      "choices": [],
+      "correct": "0.5875",
+      "solution": "<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/0881aa511e5174197908aab57c39c766fbb64edc763c35d109962887a1082fda.svg\" alt=\"Sơ đồ hình cây chuồng thỏ\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tDựa vào sơ đồ cây ta thấy xác suất cần tìm là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>6</mn></mrow><mrow><mn>10</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>9</mn></mrow><mrow><mn>16</mn></mrow></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn></mrow><mrow><mn>10</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>10</mn></mrow><mrow><mn>16</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>47</mn><mn>80</mn></mfrac><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>5875</mn></mrow></semantics></math>.",
+      "accepted_answers": [
+        "0,5875",
+        "47/80"
+      ]
+    },
+    {
+      "id": "dc-12-hk2-6D2-q042-v4--bt02",
+      "number": 2,
+      "kind": "short",
+      "prompt": "Có hai chuồng thỏ, chuồng I có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>7</mn></mrow></semantics></math> thỏ đen và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>8</mn></mrow></semantics></math> thỏ trắng. Chuồng II có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn></mrow></semantics></math> thỏ đen và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn></mrow></semantics></math> thỏ trắng. Trước tiên, từ chuồng II lấy ra ngẫu nhiên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math> con thỏ rồi cho vào chuồng I. Sau đó, từ chuồng I lấy ra ngẫu nhiên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math> con thỏ. Tính xác suất để con thỏ được lấy ra là con thỏ trắng.",
+      "choices": [],
+      "correct": "0.53125",
+      "solution": "<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/e23872d305cd2e629339b2fbbb792c6e67a596384c81901a8783d4b1dcad85ce.svg\" alt=\"Sơ đồ hình cây chuồng thỏ\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tDựa vào sơ đồ cây ta thấy xác suất cần tìm là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn></mrow><mrow><mn>10</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>8</mn></mrow><mrow><mn>16</mn></mrow></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn></mrow><mrow><mn>10</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>9</mn></mrow><mrow><mn>16</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>17</mn><mn>32</mn></mfrac><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>53125</mn></mrow></semantics></math>.",
+      "accepted_answers": [
+        "0,53125",
+        "17/32"
+      ]
+    },
+    {
+      "id": "dc-12-hk2-6D2-q042-v4--bt03",
+      "number": 3,
+      "kind": "short",
+      "prompt": "Có hai chuồng thỏ, chuồng I có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>8</mn></mrow></semantics></math> thỏ đen và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>11</mn></mrow></semantics></math> thỏ trắng. Chuồng II có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>7</mn></mrow></semantics></math> thỏ đen và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn></mrow></semantics></math> thỏ trắng. Trước tiên, từ chuồng II lấy ra ngẫu nhiên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math> con thỏ rồi cho vào chuồng I. Sau đó, từ chuồng I lấy ra ngẫu nhiên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math> con thỏ. Tính xác suất để con thỏ được lấy ra là con thỏ trắng.",
+      "choices": [],
+      "correct": "0.565",
+      "solution": "<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/1f988feda76a4a20163cb8ed079df4a3f515b980e6212b450afb4335231a2484.svg\" alt=\"Sơ đồ hình cây chuồng thỏ\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tDựa vào sơ đồ cây ta thấy xác suất cần tìm là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>7</mn></mrow><mrow><mn>10</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>11</mn></mrow><mrow><mn>20</mn></mrow></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn></mrow><mrow><mn>10</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>12</mn></mrow><mrow><mn>20</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>113</mn><mn>200</mn></mfrac><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>565</mn></mrow></semantics></math>.",
+      "accepted_answers": [
+        "0,565",
+        "113/200"
+      ]
+    },
+    {
+      "id": "dc-12-hk2-6D2-q042-v4--bt04",
+      "number": 4,
+      "kind": "short",
+      "prompt": "Có hai chuồng thỏ, chuồng I có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn></mrow></semantics></math> thỏ đen và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>14</mn></mrow></semantics></math> thỏ trắng. Chuồng II có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn></mrow></semantics></math> thỏ đen và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>6</mn></mrow></semantics></math> thỏ trắng. Trước tiên, từ chuồng II lấy ra ngẫu nhiên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math> con thỏ rồi cho vào chuồng I. Sau đó, từ chuồng I lấy ra ngẫu nhiên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math> con thỏ. Tính xác suất để con thỏ được lấy ra là con thỏ trắng.",
+      "choices": [],
+      "correct": "0.73",
+      "solution": "<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/10b1f8c31c091b432de4a0457ab6ad3b29f2d6f9739bf2f99b6d9f851c530454.svg\" alt=\"Sơ đồ hình cây chuồng thỏ\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tDựa vào sơ đồ cây ta thấy xác suất cần tìm là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn></mrow><mrow><mn>10</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>14</mn></mrow><mrow><mn>20</mn></mrow></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>6</mn></mrow><mrow><mn>10</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>15</mn></mrow><mrow><mn>20</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>73</mn><mn>100</mn></mfrac><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>73</mn></mrow></semantics></math>.",
+      "accepted_answers": [
+        "0,73",
+        "73/100"
+      ]
+    }
+  ]
+}

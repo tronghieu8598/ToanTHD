@@ -1,0 +1,12 @@
+* text=auto
+*.json text eol=lf
+*.mjs text eol=lf
+*.sh text eol=lf
+*.bat text eol=crlf
+
+# Các tệp nguồn và hình có SHA-256 giữ nguyên từng byte khi checkout.
+/public/hoc-lieu-so/nguon/** -text
+/public/bank-assets/** -text
+/public/variant-assets/** -text
+*.jpg -text
+*.gz -text

@@ -1,0 +1,11 @@
+{
+  "id": "dc-12-hk2-6D2-q039-v4",
+  "original_number": 39,
+  "kind": "short",
+  "based_on": "f00c43f1bdc53f19608f185efdab7687b3c577ba4fdf78f0f08e379711b47ded",
+  "prompt": "Một chiếc hộp có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>20</mn></semantics></math> chiếc thẻ cùng loại, trong đó có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>2</mn></semantics></math> chiếc thẻ màu xanh và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>18</mn></semantics></math> chiếc thẻ màu vàng. Bạn Châu rút thẻ hai lần một cách ngẫu nhiên, mỗi lần rút một thẻ và thẻ được rút ra không bỏ lại hộp. Tính xác suất để cả hai lần bạn Châu đều rút được thẻ màu xanh.",
+  "choices": [],
+  "correct": "0.005263157894736842",
+  "solution": "<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/040e3e348cd45a8b143b2015d1c20b27469d9bef4c2551be4c20506bb4d6898f.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tDựa vào sơ đồ cây ta thấy, xác suất cần tìm là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mo>=</mo><mfrac displaystyle=\"true\"><msubsup><mi mathvariant=\"normal\">C</mi><mn>2</mn><mn>1</mn></msubsup><msubsup><mi mathvariant=\"normal\">C</mi><mn>20</mn><mn>1</mn></msubsup></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><msubsup><mi mathvariant=\"normal\">C</mi><mn>1</mn><mn>1</mn></msubsup><msubsup><mi mathvariant=\"normal\">C</mi><mn>19</mn><mn>1</mn></msubsup></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>190</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

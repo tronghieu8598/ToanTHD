@@ -1,0 +1,86 @@
+import assert from 'node:assert/strict';
+import {readdirSync, readFileSync} from 'node:fs';
+import {test} from 'node:test';
+import {compileContent, frozenLessonInputs} from '../scripts/content-pilot.mjs';
+import {readCourseBank} from '../scripts/course-bank-data.mjs';
+
+const root = new URL('../', import.meta.url);
+const read = file => readFileSync(new URL(file, root));
+const list = folder => readdirSync(new URL(folder + '/', root));
+const id = 'dc-12-hk2-6D2-q013-v4';
+const bankFolder = 'data/course-bank/src/12/C06/B02';
+const bankFile = `${bankFolder}/${id}.json`;
+const variantFile = `data/chapter-variants/src/12/C06/B02/${id}.json`;
+const coverFile = 'data/digital-library/src/12/C06/12-monty-hall-game-577dcd0/cover.jpg';
+const frozen = frozenLessonInputs();
+const withDraft = (files = {}) => file => files[file] ?? frozen[file] ?? read(file);
+const toBytes = value => Buffer.from(JSON.stringify(value));
+
+test('v0.14: a Chapter VI solution and a Monty Hall cover produce independent release files', () => {
+    const [baselineBank, baselineVariants, baselineLibrary] = compileContent('all', withDraft());
+    assert.equal(baselineBank.summary.questions, 118);
+    assert.equal(baselineVariants.summary.available, 436);
+    for (const result of compileContent())
+        for (const [file, bytes] of result.files) assert.deepEqual(read(file), bytes);
+
+    const question = JSON.parse(frozen[bankFile]);
+    question.solution += '<p>Đối chiếu kết quả với các nhánh trong sơ đồ.</p>';
+    const [changedBank, heldVariants, untouchedLibrary] = compileContent('all', withDraft({[bankFile]: toBytes(question)}));
+    assert.deepEqual(changedBank.summary.changed, [id]);
+    assert.notEqual(changedBank.summary.version, baselineBank.summary.version);
+    assert.deepEqual(untouchedLibrary.files, baselineLibrary.files);
+    assert.deepEqual(heldVariants.files, baselineVariants.files);
+    assert.deepEqual(heldVariants.summary.held, [id]);
+    assert.equal(heldVariants.summary.available, 432);
+    const effective = changedBank.effective.get(id);
+    assert.equal(effective.original_number, 13);
+    assert.notEqual(effective.bank_fingerprint, question.based_on);
+
+    const repinned = JSON.parse(frozen[variantFile]);
+    repinned.source_fingerprint = effective.bank_fingerprint;
+    const [approvedVariants] = compileContent('variants', withDraft({
+        [bankFile]: toBytes(question), [variantFile]: toBytes(repinned),
+    }));
+    assert.equal(approvedVariants.summary.available, 436);
+    assert.deepEqual(approvedVariants.summary.changed, [id]);
+    assert.deepEqual(approvedVariants.summary.held, []);
+
+    // An alternate JPEG fixture exercises the same input path as a replacement cover.
+    const alternate = read('public/studio/covers/12-ung-dung-tich-phan-fb504a8.jpg');
+    const [untouchedBank, untouchedVariants, changedLibrary] = compileContent('all', withDraft({[coverFile]: alternate}));
+    assert.deepEqual(untouchedBank.files, baselineBank.files);
+    assert.deepEqual(untouchedVariants.files, baselineVariants.files);
+    assert.notEqual(changedLibrary.summary.cover_sha256, baselineLibrary.summary.cover_sha256);
+    assert.notEqual(changedLibrary.files[0][0], baselineLibrary.files[0][0]);
+    assert.deepEqual(changedLibrary.files[0][1], alternate);
+    assert.equal(readCourseBank().questions.length, 5837);
+});
+
+test('v0.14: content validation rejects active HTML, missing IDs and a variant tied to a stale question', () => {
+    const draft = JSON.parse(frozen[bankFile]);
+    draft.solution += '<script>alert(1)</script>';
+    assert.throws(()=>compileContent('bank',withDraft({[bankFile]:toBytes(draft)})),/script/);
+    draft.id = 'dc-12-hk2-6D2-q014-v4';
+    assert.throws(()=>compileContent('bank',withDraft({[bankFile]:toBytes(draft)})),/khớp tên tệp/);
+    assert.throws(()=>compileContent('bank',withDraft(),folder => folder === bankFolder
+        ? list(folder).filter(file => file !== `${id}.json`) : list(folder)),/Thiếu tệp/);
+    assert.throws(()=>compileContent('bank',withDraft(),folder => folder === bankFolder
+        ? [...list(folder), 'unexpected.json'] : list(folder)),/ngoài danh mục/);
+    const variants = JSON.parse(frozen[variantFile]);
+    variants.source_fingerprint = '1'.repeat(64);
+    assert.throws(()=>compileContent('variants',withDraft({[variantFile]:toBytes(variants)})),/Cập nhật dấu vân tay/);
+});
+
+test('two edits in the same lesson combine by question ID', () => {
+    const secondId = 'dc-12-hk2-6D2-q014-v4';
+    const secondFile = `${bankFolder}/${secondId}.json`;
+    const first = JSON.parse(frozen[bankFile]);
+    const second = JSON.parse(frozen[secondFile]);
+    first.solution += '<p>Đối chiếu câu 13.</p>';
+    second.solution += '<p>Đối chiếu câu 14.</p>';
+
+    const [bank] = compileContent('bank', withDraft({[bankFile]: toBytes(first), [secondFile]: toBytes(second)}));
+    assert.deepEqual(bank.summary.changed, [id, secondId]);
+    assert.equal(bank.effective.get(id).solution, first.solution);
+    assert.equal(bank.effective.get(secondId).solution, second.solution);
+});

@@ -1,0 +1,33 @@
+{
+  "id": "dc-12-hk2-6D2-q026-v4",
+  "original_number": 26,
+  "kind": "tf",
+  "based_on": "8a8e0e265bb0791f4b38c99790fd2176cc3d9bab3240b0673992ca244b6d0aa1",
+  "prompt": "Một hộp có số bi như bảng mô tả sau\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td><span class=\"diagonal-label\"><span>Màu bi</span><span>Dán nhãn</span></span></td><td>Có dán nhãn</td><td>Không dán nhãn</td></tr><tr><td>Đỏ</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>30</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>10</mn></semantics></math></td></tr><tr><td>Xanh</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>30</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>30</mn></semantics></math></td></tr></tbody></table></div></div>\n\tLấy ngẫu nhiên một bi trong hộp trên. \n\tXét tính đúng sai của các khẳng định sau",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Trong hộp có tất cả <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>60</mn></semantics></math> bi"
+    },
+    {
+      "key": "b",
+      "text": "Xác suất viên bi lấy ra có màu đỏ là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>3</mn><mn>5</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Biết viên bi lấy ra có màu đỏ, xác suất viên bi đỏ có dán nhãn bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Xác suất để viên bi được lấy có dán nhãn là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>3</mn><mn>5</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    false,
+    false,
+    true
+  ],
+  "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>A</mi></semantics></math> là biến cố ““ Viên bi lấy ra màu đỏ””&thinsp; và\n\t\t<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>B</mi></semantics></math> là biến cố ““ Viên bi có dán nhãn””.\n\t\t<ol class=\"alpha-list\"><li>Sai.<br>\n\t\t\tTổng số bi trong hộp là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>30</mn><mo>+</mo><mn>10</mn><mo>+</mo><mn>30</mn><mo>+</mo><mn>30</mn><mo>=</mo><mn>100</mn></mrow></semantics></math> viên bi.</li><li>Sai.<br>\n\t\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>40</mn><mn>100</mn></mfrac><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>4</mn></mrow></semantics></math>.</li><li>Sai.<br>\n\t\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"false\" form=\"prefix\">|</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>30</mn><mn>40</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac></mrow></semantics></math>.</li><li>Đúng.<br>\n\t\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>60</mn><mn>100</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>5</mn></mfrac></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

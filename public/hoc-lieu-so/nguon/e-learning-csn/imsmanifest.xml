@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest identifier="TOAN11_CAPSONHAN_2026_V4_4" version="4.4"
+  xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2"
+  xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <metadata><schema>ADL SCORM</schema><schemaversion>1.2</schemaversion></metadata>
+  <organizations default="ORG_CAPSONHAN_V4_4">
+    <organization identifier="ORG_CAPSONHAN_V4_4">
+      <title>Cấp số nhân - Toán 11 - V4.4</title>
+      <item identifier="ITEM_CAPSONHAN_V4_4" identifierref="RES_CAPSONHAN_V4_4" isvisible="true">
+        <title>Bài giảng E-learning: Cấp số nhân - V4.4</title>
+        <adlcp:masteryscore>100</adlcp:masteryscore>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RES_CAPSONHAN_V4_4" type="webcontent" adlcp:scormtype="sco" href="index.html">
+      <file href="index.html" /><file href="styles.css" /><file href="config.js" />
+      <file href="scorm.js" /><file href="app.js" /><file href="HUONG_DAN_SU_DUNG.txt" />
+      <file href="PHIEN_BAN_V4_4.txt" />
+      <file href="vendor/katex/katex.min.css" /><file href="vendor/katex/katex.min.js" />
+      <file href="vendor/katex/fonts/KaTeX_AMS-Regular.ttf" />
+      <file href="vendor/katex/fonts/KaTeX_AMS-Regular.woff" />
+      <file href="vendor/katex/fonts/KaTeX_AMS-Regular.woff2" />
+      <file href="vendor/katex/fonts/KaTeX_Caligraphic-Bold.ttf" />
+      <file href="vendor/katex/fonts/KaTeX_Caligraphic-Bold.woff" />
+      <file href="vendor/katex/fonts/KaTeX_Caligraphic-Bold.woff2" />
+      <file href="vendor/katex/fonts/KaTeX_Caligraphic-Regular.ttf" />
+      <file href="vendor/katex/fonts/KaTeX_Caligraphic-Regular.woff" />
+      <file href="vendor/katex/fonts/KaTeX_Caligraphic-Regular.woff2" />
+      <file href="vendor/katex/fonts/KaTeX_Fraktur-Bold.ttf" />
+      <file href="vendor/katex/fonts/KaTeX_Fraktur-Bold.woff" />
+      <file href="vendor/katex/fonts/KaTeX_Fraktur-Bold.woff2" />
+      <file href="vendor/katex/fonts/KaTeX_Fraktur-Regular.ttf" />
+      <file href="vendor/katex/fonts/KaTeX_Fraktur-Regular.woff" />
+      <file href="vendor/katex/fonts/KaTeX_Fraktur-Regular.woff2" />
+      <file href="vendor/katex/fonts/KaTeX_Main-Bold.ttf" />
+      <file href="vendor/katex/fonts/KaTeX_Main-Bold.woff" />
+      <file href="vendor/katex/fonts/KaTeX_Main-Bold.woff2" />
+      <file href="vendor/katex/fonts/KaTeX_Main-BoldItalic.ttf" />
+      <file href="vendor/katex/fonts/KaTeX_Main-BoldItalic.woff" />
+      <file href="vendor/katex/fonts/KaTeX_Main-BoldItalic.woff2" />
+      <file href="vendor/katex/fonts/KaTeX_Main-Italic.ttf" />
+      <file href="vendor/katex/fonts/KaTeX_Main-Italic.woff" />
+      <file href="vendor/katex/fonts/KaTeX_Main-Italic.woff2" />
+      <file href="vendor/katex/fonts/KaTeX_Main-Regular.ttf" />
+      <file href="vendor/katex/fonts/KaTeX_Main-Regular.woff" />
+      <file href="vendor/katex/fonts/KaTeX_Main-Regular.woff2" />
+      <file href="vendor/katex/fonts/KaTeX_Math-BoldItalic.ttf" />
+      <file href="vendor/katex/fonts/KaTeX_Math-BoldItalic.woff" />
+      <file href="vendor/katex/fonts/KaTeX_Math-BoldItalic.woff2" />
+      <file href="vendor/katex/fonts/KaTeX_Math-Italic.ttf" />
+      <file href="vendor/katex/fonts/KaTeX_Math-Italic.woff" />
+      <file href="vendor/katex/fonts/KaTeX_Math-Italic.woff2" />
+      <file href="vendor/katex/fonts/KaTeX_SansSerif-Bold.ttf" />
+      <file href="vendor/katex/fonts/KaTeX_SansSerif-Bold.woff" />
+      <file href="vendor/katex/fonts/KaTeX_SansSerif-Bold.woff2" />
+      <file href="vendor/katex/fonts/KaTeX_SansSerif-Italic.ttf" />
+      <file href="vendor/katex/fonts/KaTeX_SansSerif-Italic.woff" />
+      <file href="vendor/katex/fonts/KaTeX_SansSerif-Italic.woff2" />
+      <file href="vendor/katex/fonts/KaTeX_SansSerif-Regular.ttf" />
+      <file href="vendor/katex/fonts/KaTeX_SansSerif-Regular.woff" />
+      <file href="vendor/katex/fonts/KaTeX_SansSerif-Regular.woff2" />
+      <file href="vendor/katex/fonts/KaTeX_Script-Regular.ttf" />
+      <file href="vendor/katex/fonts/KaTeX_Script-Regular.woff" />
+      <file href="vendor/katex/fonts/KaTeX_Script-Regular.woff2" />
+      <file href="vendor/katex/fonts/KaTeX_Size1-Regular.ttf" />
+      <file href="vendor/katex/fonts/KaTeX_Size1-Regular.woff" />
+      <file href="vendor/katex/fonts/KaTeX_Size1-Regular.woff2" />
+      <file href="vendor/katex/fonts/KaTeX_Size2-Regular.ttf" />
+      <file href="vendor/katex/fonts/KaTeX_Size2-Regular.woff" />
+      <file href="vendor/katex/fonts/KaTeX_Size2-Regular.woff2" />
+      <file href="vendor/katex/fonts/KaTeX_Size3-Regular.ttf" />
+      <file href="vendor/katex/fonts/KaTeX_Size3-Regular.woff" />
+      <file href="vendor/katex/fonts/KaTeX_Size3-Regular.woff2" />
+      <file href="vendor/katex/fonts/KaTeX_Size4-Regular.ttf" />
+      <file href="vendor/katex/fonts/KaTeX_Size4-Regular.woff" />
+      <file href="vendor/katex/fonts/KaTeX_Size4-Regular.woff2" />
+      <file href="vendor/katex/fonts/KaTeX_Typewriter-Regular.ttf" />
+      <file href="vendor/katex/fonts/KaTeX_Typewriter-Regular.woff" />
+      <file href="vendor/katex/fonts/KaTeX_Typewriter-Regular.woff2" />
+      <file href="audio/slide-01.mp3" /><file href="audio/slide-02.mp3" />
+      <file href="audio/slide-03.mp3" /><file href="audio/slide-04.mp3" />
+      <file href="audio/slide-05.mp3" /><file href="audio/slide-06.mp3" />
+      <file href="audio/slide-07.mp3" /><file href="audio/slide-08.mp3" />
+      <file href="audio/slide-09.mp3" /><file href="audio/slide-10.mp3" />
+      <file href="audio/slide-11.mp3" /><file href="audio/slide-12.mp3" />
+      <file href="audio/slide-13.mp3" /><file href="audio/slide-14.mp3" />
+      <file href="audio/slide-15.mp3" /><file href="audio/slide-16.mp3" />
+      <file href="audio/slide-17.mp3" /><file href="audio/slide-18.mp3" />
+      <file href="audio/slide-19.mp3" /><file href="audio/slide-20.mp3" />
+      <file href="audio/slide-21.mp3" /><file href="audio/slide-22.mp3" />
+      <file href="audio/slide-23.mp3" /><file href="audio/slide-24.mp3" />
+      <file href="audio/slide-25.mp3" /><file href="audio/slide-26.mp3" />
+      <file href="audio/slide-27.mp3" /><file href="audio/slide-28.mp3" />
+      <file href="audio/slide-29.mp3" /><file href="audio/slide-30.mp3" />
+      <file href="audio/slide-31.mp3" /><file href="audio/slide-32.mp3" />
+      <file href="audio/slide-33.mp3" /><file href="audio/slide-34.mp3" />
+      <file href="audio/slide-35.mp3" />
+    </resource>
+  </resources>
+</manifest>

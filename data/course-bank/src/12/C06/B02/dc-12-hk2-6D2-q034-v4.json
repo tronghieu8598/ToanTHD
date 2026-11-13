@@ -1,0 +1,11 @@
+{
+  "id": "dc-12-hk2-6D2-q034-v4",
+  "original_number": 34,
+  "kind": "short",
+  "based_on": "a65f8e2b2986e6ec8b6f52d95dc3381dd69d8574f461f2af5a82c099e69234b2",
+  "prompt": "Trong một trường học, tỷ lệ học sinh nữ là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>52</mn><mi>%</mi></mrow></semantics></math>. Tỷ lệ học sinh nữ và tỷ lệ học sinh nam tham gia câu lạc bộ nghệ thuật lần lượt là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>18</mn><mi>%</mi></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>15</mn><mi>%</mi></mrow></semantics></math>. Chọn ngẫu nhiên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>1</mn></semantics></math> học sinh ở trường.\n\t<ul class=\"\"><li>Tính xác suất học sinh được chọn có tham gia câu lạc bộ.</li><li>Biết rằng học sinh được chọn có tham gia câu lạc bộ nghệ thuật. Tính xác suất học sinh đó là nam.</li></ul>",
+  "choices": [],
+  "correct": null,
+  "solution": "Ta có sơ đồ hình cây sau:\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/185643c68a07aab87d5aee1f3f7104349b28cdacde6500a2d804134420160bee.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\t<ul class=\"\"><li>Dựa vào sơ đồ hình cây ta có xác suất cần tìm là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mo>=</mo><mn>48</mn><mi>%</mi><mo>⋅</mo><mn>15</mn><mi>%</mi><mo>+</mo><mn>52</mn><mi>%</mi><mo>⋅</mo><mn>18</mn><mi>%</mi><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>1656</mn></mrow></semantics></math>.</li><li>Dựa vào sơ đồ hình cây ta có xác suất cần tìm là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mo>=</mo><mn>48</mn><mi>%</mi><mo>⋅</mo><mn>15</mn><mi>%</mi><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>072</mn></mrow></semantics></math>.</li></ul>",
+  "accepted_answers": []
+}

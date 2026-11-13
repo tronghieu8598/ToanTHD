@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mô Phỏng Phép Chiếu Song Song - Pro v3.0</title>
+    <style>
+        body { margin: 0; overflow: hidden; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        #info {
+            position: absolute; top: 10px; left: 10px; z-index: 100;
+            background: rgba(255, 255, 255, 0.95); padding: 15px;
+            border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            pointer-events: none; max-width: 380px;
+        }
+        h1 { margin: 0 0 10px 0; font-size: 18px; color: #2c3e50; }
+        p { margin: 5px 0; font-size: 13px; color: #34495e; line-height: 1.4; }
+        .highlight { color: #e74c3c; font-weight: bold; margin-top: 10px; }
+        .math-text { color: #27ae60; font-weight: bold; }
+    </style>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="info">
+        <h1>🛠 PHÒNG THÍ NGHIỆM 3D</h1>
+        <p><b>Bài: Phép Chiếu Song Song</b></p>
+        <p>- <b>Mặt phẳng kẻ ô:</b> Mặt phẳng chiếu (Cố định)</p>
+        <p>- <b>Mũi tên vàng:</b> Vector phương chiếu</p>
+        <p>- <b>Tia đỏ đứt nét:</b> Các tia chiếu song song</p>
+        <p>- <b class="math-text">Khung dây Xanh lục:</b> Hình chiếu toán học 2D</p>
+        <p class="highlight">💡 Dùng chuột trái xoay không gian, chuột phải di chuyển, con lăn để thu phóng.</p>
+    </div>
+
+    <script type="module">
+        import * as THREE from 'three';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+        import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
+
+        // 1. KHỞI TẠO SCENE & RENDERER
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0xf0f5f9);
+
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.shadowMap.enabled = true; 
+        renderer.shadowMap.type = THREE.BasicShadowMap; 
+        document.body.appendChild(renderer.domElement);
+
+        // 2. CAMERA
+        const aspect = window.innerWidth / window.innerHeight;
+        const frustumSize = 15;
+        
+        const cameraPersp = new THREE.PerspectiveCamera(45, aspect, 0.1, 1000);
+        cameraPersp.position.set(12, 10, 18);
+
+        const cameraOrtho = new THREE.OrthographicCamera(
+            -frustumSize * aspect / 2, frustumSize * aspect / 2, 
+            frustumSize / 2, -frustumSize / 2, 
+            0.1, 1000
+        );
+        cameraOrtho.position.set(12, 10, 18);
+
+        let activeCamera = cameraPersp;
+        const controls = new OrbitControls(activeCamera, renderer.domElement);
+        controls.enableDamping = true;
+
+        // 3. MẶT PHẲNG CHIẾU
+        const planeGeometry = new THREE.PlaneGeometry(30, 30);
+        const planeMaterial = new THREE.MeshStandardMaterial({ 
+            color: 0x95a5a6, side: THREE.DoubleSide, transparent: true, opacity: 0.5 
+        });
+        const plane = new THREE.Mesh(planeGeometry, planeMaterial);
+        plane.rotation.x = -Math.PI / 2;
+        plane.receiveShadow = true; 
+        scene.add(plane);
+
+        const gridHelper = new THREE.GridHelper(30, 30, 0x2c3e50, 0xbdc3c7);
+        scene.add(gridHelper);
+
+        // 4. ÁNH SÁNG & VECTOR TIA CHIẾU
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+        scene.add(ambientLight);
+
+        const dirLight = new THREE.DirectionalLight(0xffaa00, 1.5);
+        dirLight.castShadow = true; 
+        dirLight.shadow.mapSize.width = 2048;
+        dirLight.shadow.mapSize.height = 2048;
+        dirLight.shadow.camera.left = -15;
+        dirLight.shadow.camera.right = 15;
+        dirLight.shadow.camera.top = 15;
+        dirLight.shadow.camera.bottom = -15;
+        scene.add(dirLight);
+
+        const dirHelper = new THREE.ArrowHelper(new THREE.Vector3(0,-1,0), new THREE.Vector3(0,0,0), 8, 0xe67e22, 1, 0.5);
+        scene.add(dirHelper);
+
+        const lineMaterial = new THREE.LineDashedMaterial({ color: 0xe74c3c, dashSize: 0.3, gapSize: 0.15 });
+        const projectionLines = new THREE.LineSegments(new THREE.BufferGeometry(), lineMaterial);
+        scene.add(projectionLines);
+
+        // ĐỐI TƯỢNG VẼ HÌNH CHIẾU TOÁN HỌC DƯỚI ĐẤT (MÀU XANH LỤC)
+        const projOutlineMaterial = new THREE.LineBasicMaterial({ color: 0x27ae60 });
+        const projectedOutline = new THREE.LineSegments(new THREE.BufferGeometry(), projOutlineMaterial);
+        scene.add(projectedOutline);
+
+        // 5. KHO VẬT THỂ
+        const objects = {};
+        const material = new THREE.MeshStandardMaterial({ color: 0x3498db, transparent: true, opacity: 0.8, side: THREE.DoubleSide });
+        const wireMaterial = new THREE.MeshBasicMaterial({ color: 0x2980b9, wireframe: true });
+
+        // Hàm tiện ích vẽ đa giác từ tọa độ đỉnh 2D
+        function createPolyGeom(pts) {
+            const shape = new THREE.Shape();
+            shape.moveTo(pts[0][0], pts[0][1]);
+            for(let i = 1; i < pts.length; i++) {
+                shape.lineTo(pts[i][0], pts[i][1]);
+            }
+            shape.lineTo(pts[0][0], pts[0][1]); // Khép kín đa giác
+            const geom = new THREE.ShapeGeometry(shape);
+            geom.center(); // Tự động căn giữa hình vào gốc tọa độ (0,0,0)
+            return geom;
+        }
+
+        function createObj(geom, yPos = 5) {
+            const mesh = new THREE.Mesh(geom, material);
+            const wire = new THREE.Mesh(geom, wireMaterial);
+            mesh.add(wire);
+            mesh.castShadow = true;
+            mesh.position.y = yPos; 
+            mesh.visible = false;
+            
+            // Lưu giữ lại EdgesGeometry để vẽ hình chiếu
+            mesh.userData.edgesGeom = new THREE.EdgesGeometry(geom);
+            scene.add(mesh);
+            return mesh;
+        }
+
+        // --- NHÓM TAM GIÁC ---
+        objects['Tam Giác Đều'] = createObj(createPolyGeom([[0,0], [3,0], [1.5, 2.598]]));
+        objects['Tam Giác Cân'] = createObj(createPolyGeom([[0,0], [3,0], [1.5, 4]]));
+        objects['Tam Giác Vuông'] = createObj(createPolyGeom([[0,0], [3,0], [0, 4]]));
+        objects['Tam Giác Vuông Cân'] = createObj(createPolyGeom([[0,0], [3,0], [0, 3]]));
+
+        // --- NHÓM TỨ GIÁC ---
+        objects['Hình Vuông'] = createObj(createPolyGeom([[0,0], [3,0], [3,3], [0,3]]));
+        objects['Hình Chữ Nhật'] = createObj(createPolyGeom([[0,0], [4,0], [4,2], [0,2]]));
+        objects['Hình Thoi'] = createObj(createPolyGeom([[2,0], [4,2], [2,4], [0,2]]));
+        objects['Hình Bình Hành'] = createObj(createPolyGeom([[0,0], [3,0], [4.5, 2], [1.5, 2]]));
+        objects['Hình Thang'] = createObj(createPolyGeom([[0,0], [4,0], [3,2], [1,2]]));
+
+        // --- HÌNH TRÒN & KHỐI 3D ---
+        objects['Hình Tròn (2D)'] = createObj(new THREE.CircleGeometry(1.8, 64));
+        objects['Khối Lập Phương (3D)'] = createObj(new THREE.BoxGeometry(3, 3, 3));
+        objects['Khối Chóp (3D)'] = createObj(new THREE.ConeGeometry(2, 4, 4));
+        objects['Khối Cầu (3D)'] = createObj(new THREE.SphereGeometry(2, 32, 16));
+
+        // Vật thể mặc định
+        let currentObj = 'Hình Vuông';
+        objects[currentObj].visible = true;
+
+        // 6. BẢNG ĐIỀU KHIỂN (GUI)
+        const gui = new GUI({ title: '🕹️ BẢNG ĐIỀU KHIỂN', width: 320 });
+        
+        const params = {
+            VatThe: currentObj,
+            LoaiCamera: 'Phối cảnh (3D)',
+            HienTiaChieu: true,
+            HienHinhChieu: true,
+            GocQuayTia: 45,
+            GocNghiengTia: 60,
+            RotX: 0,
+            RotY: 0,
+            RotZ: 0
+        };
+
+        gui.add(params, 'VatThe', Object.keys(objects)).name('📦 Chọn Vật Thể').onChange(val => {
+            objects[currentObj].visible = false;
+            currentObj = val;
+            objects[currentObj].visible = true;
+            
+            // Reset góc quay vật thể khi đổi
+            params.RotX = 0; params.RotY = 0; params.RotZ = 0;
+            gui.controllersRecursive().forEach(c => c.updateDisplay());
+            updateObjectRotation();
+        });
+
+        gui.add(params, 'LoaiCamera', ['Phối cảnh (3D)', 'Trực giao (2D)']).name('🎥 Góc Nhìn').onChange(val => {
+            if (val === 'Trực giao (2D)') {
+                cameraOrtho.position.copy(cameraPersp.position);
+                cameraOrtho.quaternion.copy(cameraPersp.quaternion);
+                activeCamera = cameraOrtho;
+            } else {
+                cameraPersp.position.copy(cameraOrtho.position);
+                cameraPersp.quaternion.copy(cameraOrtho.quaternion);
+                activeCamera = cameraPersp;
+            }
+            controls.object = activeCamera;
+            controls.update();
+        });
+
+        gui.add(params, 'HienTiaChieu').name('📏 Hiện Tia Chiếu Đỏ');
+        gui.add(params, 'HienHinhChieu').name('📐 Hiện Khung Chiếu Xanh');
+
+        // BỘ ĐIỀU KHIỂN XOAY VẬT THỂ
+        const objFolder = gui.addFolder('🔄 Xoay Vật Thể Trực Tiếp');
+        objFolder.add(params, 'RotX', -180, 180).name('Trục X (Gập lên/xuống)').onChange(updateObjectRotation);
+        objFolder.add(params, 'RotY', -180, 180).name('Trục Y (Xoay ngang)').onChange(updateObjectRotation);
+        objFolder.add(params, 'RotZ', -180, 180).name('Trục Z (Nghiêng trái/phải)').onChange(updateObjectRotation);
+        
+        function updateObjectRotation() {
+            const mesh = objects[currentObj];
+            mesh.rotation.set(
+                THREE.MathUtils.degToRad(params.RotX),
+                THREE.MathUtils.degToRad(params.RotY),
+                THREE.MathUtils.degToRad(params.RotZ)
+            );
+        }
+
+        // BỘ ĐIỀU KHIỂN HƯỚNG TIA SÁNG
+        const lightFolder = gui.addFolder('☀️ Hướng Phương Chiếu (Vector V)');
+        lightFolder.add(params, 'GocQuayTia', 0, 360).name('Góc Xoay dọc trục Y');
+        lightFolder.add(params, 'GocNghiengTia', 10, 89).name('Góc Nghiêng chiếu xuống');
+
+        // 7. HÀM TÍNH TOÁN
+        function updateLightAndProjections() {
+            const radQuay = THREE.MathUtils.degToRad(params.GocQuayTia);
+            const radNghieng = THREE.MathUtils.degToRad(params.GocNghiengTia);
+            const radius = 15;
+
+            const x = radius * Math.cos(radNghieng) * Math.sin(radQuay);
+            const y = radius * Math.sin(radNghieng);
+            const z = radius * Math.cos(radNghieng) * Math.cos(radQuay);
+            dirLight.position.set(x, y, z);
+            
+            const dir = new THREE.Vector3().subVectors(new THREE.Vector3(0,0,0), dirLight.position).normalize();
+            dirHelper.position.copy(dirLight.position.clone().multiplyScalar(0.6)); 
+            dirHelper.setDirection(dir);
+
+            const mesh = objects[currentObj];
+            const wMatrix = mesh.matrixWorld;
+
+            // XỬ LÝ VẼ TIA CHIẾU VÀ HÌNH CHIẾU
+            if (params.HienTiaChieu || params.HienHinhChieu) {
+                const edgesAttr = mesh.userData.edgesGeom.attributes.position;
+                const linePts = [];
+                const projPts = [];
+
+                for (let i = 0; i < edgesAttr.count; i++) {
+                    const v = new THREE.Vector3().fromBufferAttribute(edgesAttr, i);
+                    v.applyMatrix4(wMatrix);
+                    
+                    // Giao điểm với mặt phẳng y = 0
+                    const t = -v.y / dir.y;
+                    const vProj = v.clone().add(dir.clone().multiplyScalar(t));
+
+                    // Điểm cho tia chiếu đỏ (chỉ lấy số lượng ít để khỏi rối)
+                    if (params.HienTiaChieu && edgesAttr.count < 100) {
+                        linePts.push(v.x, v.y, v.z);
+                        linePts.push(vProj.x, vProj.y, vProj.z);
+                    }
+
+                    // Điểm cho hình chiếu xanh lục dưới sàn (đẩy y lên 0.02 tránh đè mặt phẳng)
+                    if (params.HienHinhChieu) {
+                        projPts.push(vProj.x, 0.02, vProj.z);
+                    }
+                }
+
+                projectionLines.geometry.setAttribute('position', new THREE.Float32BufferAttribute(linePts, 3));
+                projectionLines.computeLineDistances();
+                projectionLines.visible = params.HienTiaChieu;
+
+                projectedOutline.geometry.setAttribute('position', new THREE.Float32BufferAttribute(projPts, 3));
+                projectedOutline.visible = params.HienHinhChieu;
+            } else {
+                projectionLines.visible = false;
+                projectedOutline.visible = false;
+            }
+        }
+
+        window.addEventListener('resize', () => {
+            const newAspect = window.innerWidth / window.innerHeight;
+            cameraPersp.aspect = newAspect; cameraPersp.updateProjectionMatrix();
+            cameraOrtho.left = -frustumSize * newAspect / 2; cameraOrtho.right = frustumSize * newAspect / 2;
+            cameraOrtho.top = frustumSize / 2; cameraOrtho.bottom = -frustumSize / 2;
+            cameraOrtho.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        function animate() {
+            requestAnimationFrame(animate);
+            controls.update();
+            updateLightAndProjections();
+            renderer.render(scene, activeCamera);
+        }
+        
+        // Khởi tạo mặc định
+        updateObjectRotation();
+        animate();
+    </script>
+</body>
+</html>

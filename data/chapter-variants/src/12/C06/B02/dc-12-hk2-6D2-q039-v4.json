@@ -1,0 +1,58 @@
+{
+  "id": "dc-12-hk2-6D2-q039-v4",
+  "source_fingerprint": "f00c43f1bdc53f19608f185efdab7687b3c577ba4fdf78f0f08e379711b47ded",
+  "variants": [
+    {
+      "id": "dc-12-hk2-6D2-q039-v4--bt01",
+      "number": 1,
+      "kind": "short",
+      "prompt": "Một chiếc hộp có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>25</mn></mrow></semantics></math> chiếc thẻ cùng loại, trong đó có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn></mrow></semantics></math> chiếc thẻ màu xanh và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>21</mn></mrow></semantics></math> chiếc thẻ màu vàng. Bạn Châu rút thẻ hai lần một cách ngẫu nhiên, mỗi lần rút một thẻ và thẻ được rút ra không bỏ lại hộp. Tính xác suất để cả hai lần bạn Châu đều rút được thẻ màu xanh.",
+      "choices": [],
+      "correct": "0.02",
+      "solution": "<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/0be2e74dce31e5d726c2a4c3d198c3f9456db4ec83e3d9c3f0bf415728a54b0e.svg\" alt=\"Sơ đồ hình cây rút thẻ\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tDựa vào sơ đồ cây ta thấy xác suất cần tìm là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn></mrow><mrow><mn>25</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn></mrow><mrow><mn>24</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>50</mn></mfrac><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>02</mn></mrow></semantics></math>.",
+      "accepted_answers": [
+        "0,02",
+        "1/50"
+      ]
+    },
+    {
+      "id": "dc-12-hk2-6D2-q039-v4--bt02",
+      "number": 2,
+      "kind": "short",
+      "prompt": "Một chiếc hộp có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>16</mn></mrow></semantics></math> chiếc thẻ cùng loại, trong đó có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn></mrow></semantics></math> chiếc thẻ màu xanh và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>13</mn></mrow></semantics></math> chiếc thẻ màu vàng. Bạn Châu rút thẻ hai lần một cách ngẫu nhiên, mỗi lần rút một thẻ và thẻ được rút ra không bỏ lại hộp. Tính xác suất để cả hai lần bạn Châu đều rút được thẻ màu xanh.",
+      "choices": [],
+      "correct": "0.025",
+      "solution": "<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/d066404c4a58a07244a1134404e7968fbb03ffeb92847f9e648cf62fd5f4389f.svg\" alt=\"Sơ đồ hình cây rút thẻ\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tDựa vào sơ đồ cây ta thấy xác suất cần tìm là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn></mrow><mrow><mn>16</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn></mrow><mrow><mn>15</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>40</mn></mfrac><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>025</mn></mrow></semantics></math>.",
+      "accepted_answers": [
+        "0,025",
+        "1/40"
+      ]
+    },
+    {
+      "id": "dc-12-hk2-6D2-q039-v4--bt03",
+      "number": 3,
+      "kind": "short",
+      "prompt": "Một chiếc hộp có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>16</mn></mrow></semantics></math> chiếc thẻ cùng loại, trong đó có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn></mrow></semantics></math> chiếc thẻ màu xanh và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>12</mn></mrow></semantics></math> chiếc thẻ màu vàng. Bạn Châu rút thẻ hai lần một cách ngẫu nhiên, mỗi lần rút một thẻ và thẻ được rút ra không bỏ lại hộp. Tính xác suất để cả hai lần bạn Châu đều rút được thẻ màu xanh.",
+      "choices": [],
+      "correct": "0.05",
+      "solution": "<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/87be2e66fe90126864e81c8ea302a4dca83712c891ff4b53723ed9d5bd113566.svg\" alt=\"Sơ đồ hình cây rút thẻ\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tDựa vào sơ đồ cây ta thấy xác suất cần tìm là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn></mrow><mrow><mn>16</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn></mrow><mrow><mn>15</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>20</mn></mfrac><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>05</mn></mrow></semantics></math>.",
+      "accepted_answers": [
+        "0,05",
+        "1/20"
+      ]
+    },
+    {
+      "id": "dc-12-hk2-6D2-q039-v4--bt04",
+      "number": 4,
+      "kind": "short",
+      "prompt": "Một chiếc hộp có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>25</mn></mrow></semantics></math> chiếc thẻ cùng loại, trong đó có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>10</mn></mrow></semantics></math> chiếc thẻ màu xanh và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>15</mn></mrow></semantics></math> chiếc thẻ màu vàng. Bạn Châu rút thẻ hai lần một cách ngẫu nhiên, mỗi lần rút một thẻ và thẻ được rút ra không bỏ lại hộp. Tính xác suất để cả hai lần bạn Châu đều rút được thẻ màu xanh.",
+      "choices": [],
+      "correct": "0.15",
+      "solution": "<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/45c07c72f7a696075067b8e91b659b6c5043de8899bcda4313edd42722d96c9e.svg\" alt=\"Sơ đồ hình cây rút thẻ\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tDựa vào sơ đồ cây ta thấy xác suất cần tìm là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>10</mn></mrow><mrow><mn>25</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>9</mn></mrow><mrow><mn>24</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>20</mn></mfrac><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>15</mn></mrow></semantics></math>.",
+      "accepted_answers": [
+        "0,15",
+        "3/20"
+      ]
+    }
+  ]
+}

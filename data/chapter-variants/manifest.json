@@ -1,0 +1,508 @@
+{
+  "version": "toanthd-chapters-I-VI-20261111",
+  "accepted_on": "2026-11-11",
+  "chapters": [
+    {
+      "id": "12-C01",
+      "title": "Ứng dụng đạo hàm để khảo sát và vẽ đồ thị hàm số",
+      "version": "4cabad029dd3",
+      "source_questions": 230,
+      "generated_sources": 225,
+      "variants": 900,
+      "assets": 386,
+      "source_assets": 424,
+      "kinds": {
+        "mcq": 568,
+        "tf": 172,
+        "short": 156,
+        "free": 4
+      },
+      "source_review_statuses": {
+        "approved": 900
+      },
+      "acceptance": "source_approved",
+      "held": [
+        {
+          "source_id": "dc-12-hk1-1D1-q029-v4",
+          "decision": "hold_missing_data",
+          "reason": "Bản ghi gốc thiếu nội dung đề (missing_prompt=true); giữ hoãn theo đúng quy định không suy đoán đề từ đáp án hoặc lời giải."
+        },
+        {
+          "source_id": "dc-12-hk1-1D1-q030-v4",
+          "decision": "hold_missing_data",
+          "reason": "Bản ghi gốc thiếu nội dung đề (missing_prompt=true); giữ hoãn theo đúng quy định không suy đoán đề từ đáp án hoặc lời giải."
+        },
+        {
+          "source_id": "dc-12-hk1-1D1-q032-v4",
+          "decision": "hold_missing_data",
+          "reason": "Bản ghi gốc thiếu nội dung đề (missing_prompt=true); giữ hoãn theo đúng quy định không suy đoán đề từ đáp án hoặc lời giải."
+        },
+        {
+          "source_id": "dc-12-hk1-1D1-q033-v4",
+          "decision": "hold_missing_data",
+          "reason": "Bản ghi gốc thiếu nội dung đề (missing_prompt=true); giữ hoãn theo đúng quy định không suy đoán đề từ đáp án hoặc lời giải."
+        },
+        {
+          "source_id": "dc-12-hk1-1D3-q038-v4",
+          "decision": "hold_ambiguous",
+          "reason": "Đề gốc và lời giải gốc mâu thuẫn ở nhiều vị trí: đề ghi 'hai đường tiệm cận cắt hai trục tọa độ tại A, B' nhưng lời giải lấy giao điểm của đồ thị với hai trục tọa độ và tính sai A(0;-4) thay vì A(0;-1/4), đồng thời đảo ngược tọa độ giao điểm hai tiệm cận thành (3;4) thay vì (4;3). Giữ hoãn để giáo viên xác nhận."
+        }
+      ]
+    },
+    {
+      "id": "12-C02",
+      "title": "Vectơ và hệ tọa độ trong không gian",
+      "version": "8f5e1b4d6e77",
+      "source_questions": 218,
+      "generated_sources": 175,
+      "variants": 700,
+      "assets": 323,
+      "source_assets": 348,
+      "kinds": {
+        "mcq": 320,
+        "tf": 156,
+        "short": 224
+      },
+      "source_review_statuses": {
+        "approved": 700
+      },
+      "acceptance": "source_approved",
+      "held": [
+        {
+          "source_id": "dc-12-hk1-2H1-q001-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi đếm số véc-tơ tạo bởi các đỉnh cố định của tứ diện ABCD; không có tham số số học hợp lý để thay đổi (chỉ đổi tên đỉnh không được tính là biến thể đổi số)."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q002-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi đếm số véc-tơ bằng véc-tơ AB tạo bởi các đỉnh của hình hộp cố định; không có dữ kiện số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q003-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi đếm số véc-tơ đối của véc-tơ AD trên hình hộp cố định; không có dữ kiện số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q004-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi đồng nhất thức cộng véc-tơ cố định trên hình lăng trụ tam giác; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q005-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi quy tắc hình hộp cố định cho tổng ba véc-tơ xuất phát từ một đỉnh; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q007-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi hiệu hai véc-tơ cố định trên hình chóp có đáy là hình bình hành; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q013-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi tích vô hướng của hai véc-tơ vuông góc trên hình lập phương cố định không có số liệu cạnh; đồng thời phương án gốc ghi đơn vị độ thay vì giá trị tích vô hướng."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q014-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi góc cố định (30°) giữa cạnh bên và đường trung tuyến mặt bên của tứ diện đều cạnh a; không có tham số số học để đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q015-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi nhận diện đẳng thức véc-tơ cố định trên hình hộp ABCD.A'B'C'D'; không có tham số số học hợp lý để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q016-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi nhận diện đẳng thức véc-tơ cố định đối với hình bình hành ABCD và điểm S ngoài mặt phẳng; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q017-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi đếm tổng số véc-tơ khác véc-tơ-không tạo bởi 4 đỉnh của tứ diện ABCD; giá trị cố định bằng A_4^2 = 12."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q018-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi nhận biết hai véc-tơ cùng hướng trên hình lập phương cố định; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q019-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi nhận biết hai véc-tơ bằng nhau trên hình lập phương cố định; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q020-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi rút gọn tổng ba véc-tơ cố định trên hình hộp ABCD.A'B'C'D'; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q021-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi biểu diễn cố định véc-tơ đường chéo mặt bên qua ba véc-tơ cơ sở trên lăng trụ tam giác; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q022-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi đẳng thức véc-tơ cố định SA + SC = SB + SD trên hình chóp đáy hình bình hành; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q025-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi rút gọn biểu thức véc-tơ cố định OA + AB - OC trên tứ diện OABC; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q027-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi biểu diễn véc-tơ cố định trên hình lăng trụ tam giác qua ba véc-tơ cơ sở; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q028-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi biểu diễn véc-tơ trung tuyến cố định AM theo ba véc-tơ cạnh của hình hộp; không có tham số số học hợp lý để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q030-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi tích vô hướng theo tham số chữ a cố định trên hình lập phương ABCD.EFGH; không có dữ kiện số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q035-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi góc cố định (120°) giữa hai véc-tơ trên hình chóp có mặt bên là tam giác đều; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q036-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi góc cố định (60°) giữa hai véc-tơ AD và BC trên tứ diện có cấu hình hình học cố định; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q039-v4",
+          "decision": "hold_ambiguous",
+          "reason": "Đề và hình gốc vẽ đường gấp khúc MNP trong điện trường đều hướng thẳng đứng xuống dưới, với K là hình chiếu của N và H là hình chiếu của P lên đường thẳng đứng qua M; công của lực điện trên cả quãng đường MNP phụ thuộc vào độ dịch chuyển chiếu MH (tức hình chiếu của MP lên phương E), nhưng đề chỉ cho độ dài MK và góc 60° không xác định rõ gắn với đoạn nào nên không đủ dữ kiện xác định duy nhất MH. Tạm hoãn chờ giáo viên làm rõ dữ kiện."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q045-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi Đúng/Sai kiểm tra các quy tắc cộng, trừ và đếm véc-tơ cố định trên tứ diện ABCD; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q046-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi Đúng/Sai kiểm tra các quan hệ véc-tơ cố định trên hình hộp ABCD.A'B'C'D'; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q047-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi Đúng/Sai kiểm tra sự đồng phẳng và véc-tơ bằng nhau/đối nhau cố định trên hình hộp; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q048-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi Đúng/Sai kiểm tra các đẳng thức véc-tơ cố định trên hình lăng trụ tam giác; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q049-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi Đúng/Sai kiểm tra các đẳng thức véc-tơ cố định trên hình hộp ABCD.EFGH; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q054-v4",
+          "decision": "hold_missing_data",
+          "reason": "Ý d của câu gốc ('Góc giữa mặt phẳng (SAB) và (ABCD) bằng') bị khuyết số đo góc và lời giải ý d bị bỏ trống trong dữ liệu nguồn; tạm hoãn chờ giáo viên bổ sung dữ kiện."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q055-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi Đúng/Sai về quan hệ véc-tơ và góc cố định trên hình hộp có đáy hình vuông; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q056-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi Đúng/Sai về các đẳng thức véc-tơ cố định với hình bình hành ABCD và điểm S ngoài mặt phẳng; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q057-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi Đúng/Sai về tính chất trọng tâm và đẳng thức véc-tơ cố định trên tứ diện đều cạnh a; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q058-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi Đúng/Sai về quan hệ véc-tơ cố định trên hình lập phương ABCD.A'B'C'D' (đồng thời có cảnh báo nguồn ở lời giải ý b); không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q059-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi Đúng/Sai về phép cộng, trừ véc-tơ cố định trên hình hộp ABCD.A'B'C'D'; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q060-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi Đúng/Sai về biểu diễn véc-tơ cố định trên hình lăng trụ tam giác; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q061-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi Đúng/Sai về tích vô hướng theo cạnh chữ a cố định trên hình chóp tứ giác đều S.ABCD; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q072-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu trả lời ngắn đếm số véc-tơ bằng véc-tơ AB trên hình hộp cố định; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q073-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu trả lời ngắn đếm số véc-tơ đối của véc-tơ AD trên hình hộp cố định; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q081-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu trả lời ngắn tính tích vô hướng hai véc-tơ vuông góc cố định trên hình lập phương; kết quả luôn bằng 0, không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q083-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu trả lời ngắn về tỉ số đường cao cố định của tứ diện đều cạnh a; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q085-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu trả lời ngắn tính tổng hệ số biểu diễn cố định m+n+k của véc-tơ B'C theo ba véc-tơ cơ sở; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q086-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu trả lời ngắn tính góc cố định giữa cạnh bên AB và trung tuyến DM của tứ diện đều cạnh a; không có tham số số học để thay đổi."
+        },
+        {
+          "source_id": "dc-12-hk1-2H1-q089-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu trả lời ngắn tìm hệ số tỉ lệ cố định k = 1/3 của trọng tâm tam giác AB'D' trên đường chéo A'C của hình hộp; không có tham số số học để thay đổi."
+        }
+      ]
+    },
+    {
+      "id": "12-C03",
+      "title": "Các số đặc trưng đo mức độ phân tán của mẫu số liệu ghép nhóm",
+      "version": "9cd648526db5",
+      "source_questions": 151,
+      "generated_sources": 151,
+      "variants": 604,
+      "assets": 0,
+      "source_assets": 0,
+      "kinds": {
+        "mcq": 212,
+        "tf": 200,
+        "short": 192
+      },
+      "source_review_statuses": {
+        "pending_teacher": 604
+      },
+      "acceptance": "teacher_confirmed_integration",
+      "held": []
+    },
+    {
+      "id": "12-C04",
+      "title": "Nguyên hàm và tích phân",
+      "version": "88356dadfc1d",
+      "source_questions": 153,
+      "generated_sources": 144,
+      "variants": 576,
+      "assets": 106,
+      "source_assets": 112,
+      "kinds": {
+        "mcq": 380,
+        "tf": 80,
+        "short": 116
+      },
+      "source_review_statuses": {
+        "pending_teacher": 576
+      },
+      "acceptance": "teacher_confirmed_integration",
+      "held": [
+        {
+          "source_id": "dc-12-hk2-4D1-q011-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi lý thuyết thuần túy kiểm tra công thức nguyên hàm cơ bản của hàm lượng giác F(x) = cos x, không có tham số số học thực chất để đổi số."
+        },
+        {
+          "source_id": "dc-12-hk2-4D1-q015-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi lý thuyết thuần túy về tính chất tuyến tính của nguyên hàm tổng quát, không chứa tham số số học để tạo biến thể đổi số."
+        },
+        {
+          "source_id": "dc-12-hk2-4D1-q034-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi Đúng/Sai kiểm tra trực tiếp bảng nguyên hàm cơ bản dưới dạng ký hiệu tổng quát, không có dữ kiện số học để đổi số."
+        },
+        {
+          "source_id": "dc-12-hk2-4D1-q035-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi Đúng/Sai kiểm tra tính chất nguyên hàm của tổng, hiệu, tích hai hàm số tổng quát f(x), g(x), không có tham số số học để biến đổi."
+        },
+        {
+          "source_id": "dc-12-hk2-4D2-q010-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi lý thuyết thuần túy về tính chất cơ bản của tích phân xác định trên đoạn [a; b], không có dữ kiện số học để đổi số."
+        },
+        {
+          "source_id": "dc-12-hk2-4D2-q026-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi lý thuyết Đúng/Sai thuần túy kiểm tra tính chất tích phân tổng quát trên đoạn [a; b], không chứa tham số số học để biến đổi."
+        },
+        {
+          "source_id": "dc-12-hk2-4D3-q003-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi công thức tổng quát tính thể tích khối tròn xoay khi quay elip x^2/a^2 + y^2/b^2 = 1 quanh trục Ox theo tham số chữ a, b, không có số liệu cụ thể để đổi số."
+        },
+        {
+          "source_id": "dc-12-hk2-4D3-q019-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi lý thuyết nhận diện công thức diện tích hình phẳng tổng quát trên đoạn [a; b] có nghiệm c thuộc [a; b], không chứa dữ kiện số học để đổi số."
+        },
+        {
+          "source_id": "dc-12-hk2-4D3-q032-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi lý thuyết nhận diện công thức diện tích hình phẳng tổng quát trên đoạn [a; b] với mốc c thuộc [a; b], không có số liệu cụ thể để biến đổi."
+        }
+      ]
+    },
+    {
+      "id": "12-C05",
+      "title": "Phương pháp tọa độ trong không gian",
+      "version": "8ed84df90855",
+      "source_questions": 168,
+      "generated_sources": 159,
+      "variants": 636,
+      "assets": 7,
+      "source_assets": 8,
+      "kinds": {
+        "mcq": 348,
+        "tf": 156,
+        "short": 132
+      },
+      "source_review_statuses": {
+        "pending_teacher": 636
+      },
+      "acceptance": "teacher_confirmed_integration",
+      "held": [
+        {
+          "source_id": "dc-12-hk2-5H2-q004-v4",
+          "decision": "hold_fixed",
+          "reason": "Đề gốc hỏi phương trình tham số của trục tọa độ Ox cố định; việc chỉ đổi điểm đi qua hoặc hệ số tham số trên cùng trục Ox không tạo dữ kiện bài toán mới."
+        },
+        {
+          "source_id": "dc-12-hk2-5H2-q010-v4",
+          "decision": "hold_fixed",
+          "reason": "Đề gốc hỏi phương trình tham số của trục tọa độ Oz cố định; việc chỉ đổi điểm đi qua hoặc hệ số tham số trên cùng trục Oz không tạo dữ kiện bài toán mới."
+        },
+        {
+          "source_id": "dc-12-hk2-5H2-q013-v4",
+          "decision": "hold_ambiguous",
+          "reason": "Đề gốc yêu cầu viết phương trình tham số của đường thẳng d nhưng các phương án A, B, C, D lại là tọa độ điểm và lời giải giải bài toán tìm hình chiếu của điểm khác."
+        },
+        {
+          "source_id": "dc-12-hk2-5H2-q046-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi lý thuyết thuần túy về công thức tính cô-sin góc giữa hai đường thẳng, không có tham số số học để đổi số."
+        },
+        {
+          "source_id": "dc-12-hk2-5H2-q048-v4",
+          "decision": "hold_ambiguous",
+          "reason": "Đề gốc định nghĩa trùng ký hiệu hai mặt phẳng (P) khác nhau và hai điểm M khác nhau trong cùng một câu hỏi, đồng thời lời giải ý b tính sai nghiệm t."
+        },
+        {
+          "source_id": "dc-12-hk2-5H2-q049-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi lý thuyết thuần túy về công thức góc giữa đường thẳng và mặt phẳng, không có tham số số học để đổi số."
+        },
+        {
+          "source_id": "dc-12-hk2-5H2-q050-v4",
+          "decision": "hold_ambiguous",
+          "reason": "Mệnh đề d nêu 'Mặt phẳng (Q) cắt mặt phẳng (P)' nhưng trong đề bài chỉ cho mặt phẳng (P) và (Oxy), hoàn toàn chưa định nghĩa mặt phẳng (Q)."
+        },
+        {
+          "source_id": "dc-12-hk2-5H2-q052-v4",
+          "decision": "hold_fixed",
+          "reason": "Câu hỏi lý thuyết thuần túy về góc giữa đường thẳng, mặt phẳng và hình chiếu vuông góc, không có số liệu để đổi số."
+        },
+        {
+          "source_id": "dc-12-hk2-5H2-q068-v4",
+          "decision": "hold_ambiguous",
+          "reason": "Đề bài cho véc-tơ chỉ phương của BC là (1;b;c) nhưng lại yêu cầu tính a+b+c mà không định nghĩa tham số a (câu 5H2-q071 là bản đầy đủ yêu cầu tính c-b)."
+        }
+      ]
+    },
+    {
+      "id": "12-C06",
+      "title": "Xác suất có điều kiện",
+      "version": "44169fc277d7",
+      "source_questions": 118,
+      "generated_sources": 109,
+      "variants": 436,
+      "assets": 75,
+      "source_assets": 96,
+      "kinds": {
+        "mcq": 200,
+        "tf": 64,
+        "free": 140,
+        "short": 32
+      },
+      "source_review_statuses": {
+        "approved": 436
+      },
+      "acceptance": "source_approved",
+      "held": [
+        {
+          "source_id": "dc-12-hk2-6D1-q048-v4",
+          "decision": "hold_ambiguous",
+          "reason": "Đề gốc và hình vẽ SVG chỉ cho hai xác suất biên p, q (xác suất mỗi linh kiện hỏng) nhưng không nêu giả thiết hai linh kiện hỏng độc lập hoặc xác suất đồng thời r = P(cả hai cùng hỏng). Với r thuộc [max(0, p+q-1); min(p, q)], xác suất mạch nối tiếp hoạt động (1-p-q+r) và mạch song song hoạt động (1-r) nhận nhiều giá trị hợp lệ khác nhau (ví dụ bt01 với p=0,02; q=0,03: mô hình r=0 cho (0,95; 1) còn mô hình độc lập r=0,0006 cho (0,9506; 0,9994)). Trong phạm vi chỉ đổi số (chưa được phép tự thêm giả thiết độc lập), chuyển sang hold_ambiguous chờ giáo viên quyết định."
+        },
+        {
+          "source_id": "dc-12-hk2-6D2-q033-v4",
+          "decision": "hold_ambiguous",
+          "reason": "Câu dạng short nhưng đề bài chứa 2 yêu cầu tính xác suất riêng biệt (xác suất 2 bi đỏ từ hộp II và xác suất hậu nghiệm viên bi từ hộp I là bi đỏ) và correct=null; hoãn theo chính sách hold_ambiguous_non_scalar_short."
+        },
+        {
+          "source_id": "dc-12-hk2-6D2-q034-v4",
+          "decision": "hold_ambiguous",
+          "reason": "Câu dạng short nhưng đề bài chứa 2 yêu cầu tính xác suất riêng biệt (xác suất tham gia CLB và xác suất hậu nghiệm học sinh là nam) và correct=null; hoãn theo chính sách hold_ambiguous_non_scalar_short."
+        },
+        {
+          "source_id": "dc-12-hk2-6D2-q035-v4",
+          "decision": "hold_ambiguous",
+          "reason": "Câu dạng short nhưng đề bài chứa 2 yêu cầu tính xác suất riêng biệt (xác suất mắc bệnh A và xác suất hậu nghiệm chưa tiêm phòng) và correct=null; hoãn theo chính sách hold_ambiguous_non_scalar_short."
+        },
+        {
+          "source_id": "dc-12-hk2-6D2-q036-v4",
+          "decision": "hold_ambiguous",
+          "reason": "Câu dạng short nhưng đề bài yêu cầu tính nhiều đại lượng (P(A), P(B) và xác suất chú lùn luôn nói thật) và correct=null; hoãn theo chính sách hold_ambiguous_non_scalar_short."
+        },
+        {
+          "source_id": "dc-12-hk2-6D2-q037-v4",
+          "decision": "hold_ambiguous",
+          "reason": "Câu dạng short nhưng đề bài chứa 2 yêu cầu tính xác suất riêng biệt (xác suất lấy được bi trắng ở hộp II và xác suất bi trắng đó thuộc hộp I) và correct=null; hoãn theo chính sách hold_ambiguous_non_scalar_short."
+        },
+        {
+          "source_id": "dc-12-hk2-6D2-q038-v4",
+          "decision": "hold_ambiguous",
+          "reason": "Câu dạng short nhưng đề bài gồm 1 câu hỏi tính xác suất và 1 câu hỏi định tính so sánh (nhà máy nào cao hơn) với correct=null; hoãn theo chính sách hold_ambiguous_non_scalar_short."
+        },
+        {
+          "source_id": "dc-12-hk2-6D2-q043-v4",
+          "decision": "hold_ambiguous",
+          "reason": "Câu dạng short nhưng đề bài gồm 2 yêu cầu (tính xác suất đóng dấu OTK và dùng sơ đồ hình cây mô tả cách tính) với correct=null; hoãn theo chính sách hold_ambiguous_non_scalar_short."
+        },
+        {
+          "source_id": "dc-12-hk2-6D2-q069-v4",
+          "decision": "hold_ambiguous",
+          "reason": "Đề gốc chỉ cho xác suất bắn trúng p1, p2 của từng người đi săn nhưng không nêu giả thiết hai người bắn độc lập hoặc xác suất cả hai cùng bắn trúng r = P(B1B2). Khi biết đúng một người bắn trúng, phần của người thứ nhất là (p1-r)/(p1+p2-2r) phụ thuộc vào r nên chưa xác định duy nhất (ví dụ bt01 với p1=0,4; p2=0,5: mô hình r=0 cho phần người thứ nhất là 4/9 [tỉ lệ 4:5], còn mô hình độc lập r=0,2 cho 2/5 [tỉ lệ 2:3]). Trong phạm vi chỉ đổi số (chưa được phép tự thêm giả thiết độc lập), chuyển sang hold_ambiguous chờ giáo viên quyết định."
+        }
+      ]
+    }
+  ]
+}

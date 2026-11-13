@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Phòng thí nghiệm ảo – Giải tam giác trong thực tiễn (27 dạng)</title>
+<style>
+:root{
+  --bg:#eef4fb;--panel:#ffffff;--ink:#152238;--muted:#607089;--line:#d9e3f0;
+  --primary:#0b63ce;--primary2:#174ea6;--accent:#ffb000;--good:#0d8a55;--bad:#c43737;
+  --soft:#f5f9ff;--shadow:0 10px 30px rgba(25,55,95,.12);--radius:18px;
+}
+*{box-sizing:border-box} html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+body{overflow:hidden}.app{height:100vh;display:grid;grid-template-rows:auto 1fr;gap:10px;padding:10px;max-width:1680px;margin:auto}
+header{display:flex;align-items:center;gap:14px;background:linear-gradient(135deg,#0b63ce,#174ea6);color:white;border-radius:18px;padding:12px 18px;box-shadow:var(--shadow)}
+.logo{width:46px;height:46px;border-radius:14px;background:#fff2;display:grid;place-items:center;font-size:26px}
+.headtxt{min-width:0;flex:1}.headtxt h1{font-size:clamp(18px,2vw,28px);margin:0 0 3px;line-height:1.1}.headtxt p{margin:0;color:#dbeaff;font-size:13px}
+.badges{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.badge{font-size:12px;font-weight:700;background:#fff2;border:1px solid #ffffff35;border-radius:999px;padding:7px 10px;white-space:nowrap}
+main{min-height:0;display:grid;grid-template-columns:minmax(300px,360px) 1fr;gap:10px}
+.panel,.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}
+.controls{min-height:0;overflow:auto;padding:14px}.section{border-bottom:1px solid var(--line);padding-bottom:13px;margin-bottom:13px}.section:last-child{border-bottom:0;margin-bottom:0}.section h2{font-size:14px;margin:0 0 9px;display:flex;align-items:center;gap:7px}
+select,input[type=password],input[type=number]{width:100%;border:1px solid #c8d5e6;border-radius:10px;padding:9px 10px;background:#fff;color:var(--ink);font:inherit;outline:none}select:focus,input:focus{border-color:#6aa9f0;box-shadow:0 0 0 3px #6aa9f022}
+.btnrow{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px}.btn{border:0;border-radius:11px;padding:10px 12px;font-weight:800;cursor:pointer;transition:.16s;background:#e9f2ff;color:var(--primary2)}.btn:hover{transform:translateY(-1px);filter:brightness(.98)}.btn.primary{background:var(--primary);color:white}.btn.accent{background:var(--accent);color:#3f2e00}.btn.good{background:var(--good);color:white}.btn:disabled{opacity:.42;cursor:not-allowed;transform:none}
+.param{padding:8px 0}.param-head{display:flex;align-items:flex-end;justify-content:space-between;gap:8px;margin-bottom:5px}.param label{font-size:12px;font-weight:700;line-height:1.25}.numwrap{display:flex;align-items:center;gap:4px;width:112px}.numwrap input{padding:6px 7px;text-align:right}.unit{font-size:11px;color:var(--muted);min-width:22px}.param input[type=range]{width:100%;accent-color:var(--primary)}
+.teacherbox{background:#fff9e8;border:1px solid #ffe09b;border-radius:13px;padding:10px}.teach-row{display:grid;grid-template-columns:1fr auto;gap:7px}.teach-status{font-size:12px;margin-top:7px;color:var(--muted)}.teach-status.ok{color:var(--good);font-weight:800}.teach-status.bad{color:var(--bad);font-weight:800}
+.workspace{min-height:0;display:grid;grid-template-rows:minmax(190px,.42fr) minmax(280px,.58fr);gap:10px}.problem{padding:18px;overflow:auto}.problem-top{display:flex;gap:10px;justify-content:space-between;align-items:flex-start}.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--primary);font-weight:900}.problem h2{font-size:clamp(18px,1.7vw,26px);margin:3px 0 10px}.problem-text{font-size:clamp(15px,1.15vw,18px);line-height:1.55}.problem-text strong{color:#0b4f9f}.goal{margin-top:12px;background:var(--soft);border-left:4px solid var(--accent);padding:9px 12px;border-radius:8px;font-weight:750}.typepill{font-size:12px;color:var(--muted);background:#f1f5fa;border:1px solid var(--line);border-radius:999px;padding:7px 10px;white-space:nowrap}
+.diagram{padding:10px;min-height:0;position:relative;overflow:hidden}.diagram svg{width:100%;height:100%;display:block;border-radius:13px;background:linear-gradient(#fafdff,#eef7ff)}.legend{position:absolute;right:18px;top:18px;background:#ffffffdd;border:1px solid var(--line);backdrop-filter:blur(4px);border-radius:11px;padding:7px 9px;font-size:11px;color:var(--muted);max-width:230px}.legend b{color:var(--ink)}
+footer{background:#fff;border:1px solid var(--line);border-radius:14px;padding:7px 12px;display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12px;color:var(--muted)}.status-dot{width:8px;height:8px;border-radius:50%;display:inline-block;background:var(--good);margin-right:6px}
+.modal{position:fixed;inset:0;background:#11233aaa;display:none;align-items:center;justify-content:center;padding:22px;z-index:50}.modal.open{display:flex}.modalbox{width:min(920px,96vw);max-height:88vh;overflow:auto;background:#fff;border-radius:20px;box-shadow:0 24px 70px #0005}.modalhead{position:sticky;top:0;z-index:2;background:white;border-bottom:1px solid var(--line);padding:14px 18px;display:flex;align-items:center;justify-content:space-between}.modalhead h2{margin:0;font-size:20px}.close{border:0;background:#eef3f9;border-radius:10px;width:36px;height:36px;font-size:20px;cursor:pointer}.solution{padding:18px;line-height:1.55}.solution .step{background:#f8fbff;border:1px solid #deebf8;border-radius:13px;padding:12px 14px;margin:10px 0}.solution .step b{color:var(--primary2)}.formula{font-family:"Cambria Math",Georgia,serif;background:#f4f6f8;border-radius:8px;padding:8px 10px;margin:6px 0;display:block;overflow:auto}.answer{background:#eaf8f1;border:1px solid #b7e5cd;color:#075b38;border-radius:12px;padding:12px 14px;font-weight:900;font-size:17px}.note{font-size:12px;color:var(--muted);margin-top:12px}
+.warn{padding:14px;background:#fff2f2;border:1px solid #ffcaca;color:#9f2626;border-radius:12px;font-weight:700}
+.svg-grid{stroke:#d8e7f6;stroke-width:1}.tri-fill{fill:#75aef022}.tri-edge{stroke:#174ea6;stroke-width:4;fill:none;stroke-linecap:round}.aux{stroke:#6b7c91;stroke-width:2;stroke-dasharray:7 7;fill:none}.angle{stroke:#e68a00;stroke-width:4;fill:none;stroke-linecap:round}.pt{fill:white;stroke:#0b63ce;stroke-width:4}.lab{font-weight:900;fill:#152238}.measure{font-size:16px;font-weight:800;fill:#174ea6;paint-order:stroke;stroke:white;stroke-width:5;stroke-linejoin:round}.angletext{font-size:17px;font-weight:900;fill:#b46800;paint-order:stroke;stroke:white;stroke-width:5}.outercircle{fill:#60a5fa10;stroke:#0c7a9f;stroke-width:3}.incircle{fill:#1fa56a13;stroke:#0d8a55;stroke-width:3}.centerpt{fill:#fff;stroke:#0d8a55;stroke-width:3}.themeLabel{font-size:18px;font-weight:900;fill:#2d4059;paint-order:stroke;stroke:white;stroke-width:4}.water{fill:#7dd3fc33}.ground{stroke:#8a6a3b;stroke-width:7}.road{stroke:#667085;stroke-width:12;stroke-linecap:round}.landfill{fill:#7dbf6730;stroke:#6d9d5a;stroke-width:1}.circleFill{fill:#98612f18}
+.smallcheck{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--muted);margin-top:7px}.smallcheck input{accent-color:var(--primary)}
+.answerbox{margin-top:12px;border:1px solid #cfe0f2;background:#f7fbff;border-radius:13px;padding:10px 12px}.answerbox h3{margin:0 0 8px;font-size:13px;color:var(--primary2)}.answer-fields{display:flex;gap:8px;flex-wrap:wrap}.answer-field{display:grid;grid-template-columns:auto minmax(78px,118px) auto;align-items:center;gap:6px;font-size:12px;font-weight:750}.answer-field input,.answer-field select{border:1px solid #bfd0e4;border-radius:8px;padding:7px 8px;min-width:0}.answer-actions{display:flex;gap:7px;margin-top:9px}.answer-actions .btn{padding:8px 11px}.feedback,.hintbox{display:none;margin-top:8px;padding:8px 10px;border-radius:9px;font-size:12px;line-height:1.45}.feedback.show,.hintbox.show{display:block}.feedback.ok{background:#eaf8f1;color:#075b38;border:1px solid #b7e5cd}.feedback.bad{background:#fff2f2;color:#9f2626;border:1px solid #ffcaca}.hintbox{background:#fff8e5;color:#684b00;border:1px solid #f3d786}
+.rounding-note{margin:10px 0 0;padding:8px 10px;border-radius:9px;background:#fff8e5;border:1px solid #f0d58a;color:#604700;font-size:13px;line-height:1.45}.rounding-note strong{color:#493600}
+.svg-point{fill:#fff;stroke:#155fc5;stroke-width:5}.svg-label{fill:#14243b;font-size:24px;font-weight:900;paint-order:stroke;stroke:#fff;stroke-width:7px;stroke-linejoin:round}.svg-measure{fill:#0f4fa8;font-size:25px;font-weight:900;paint-order:stroke;stroke:#fff;stroke-width:8px;stroke-linejoin:round}.svg-angle-text{fill:#b76200;font-size:26px;font-weight:900;paint-order:stroke;stroke:#fff;stroke-width:8px;stroke-linejoin:round}.svg-caption{fill:#31445f;font-size:18px;font-weight:800;paint-order:stroke;stroke:rgba(255,255,255,.92);stroke-width:7px;stroke-linejoin:round}.actual-line{fill:none;stroke:#155fc5;stroke-width:6;stroke-linecap:round;stroke-linejoin:round}.sight-line{fill:none;stroke:#155fc5;stroke-width:5;stroke-linecap:round}.helper-line{fill:none;stroke:#6a7c91;stroke-width:3;stroke-dasharray:12 11}.angle-line{fill:none;stroke:#ed8b00;stroke-width:6;stroke-linecap:round}
+@media(max-width:900px){body{overflow:auto}.app{height:auto;min-height:100vh}.badges{display:none}main{grid-template-columns:1fr}.controls{overflow:visible}.workspace{grid-template-rows:auto 460px}.diagram{min-height:440px}footer{flex-direction:column;align-items:flex-start}}
+</style>
+</head>
+<body>
+<div class="app">
+<header>
+  <div class="logo">📐</div>
+  <div class="headtxt"><h1>Phòng thí nghiệm ảo – Giải tam giác trong thực tiễn</h1><p>27 dạng đã duyệt • hình SVG theo đúng bối cảnh thực tế • thay đổi số liệu trực tiếp • tự kiểm tra và lời giải giáo viên</p></div>
+  <div class="badges"><span class="badge">27 DẠNG</span><span class="badge">HTML OFFLINE</span><span class="badge">SVG THỰC TẾ</span></div>
+</header>
+<main>
+  <aside class="panel controls">
+    <div class="section">
+      <h2>🧪 Tình huống</h2>
+      <select id="scenarioSelect" aria-label="Chọn dạng bài"></select>
+      <div class="btnrow">
+        <button class="btn primary" id="newBtn">✨ Tạo tình huống mới</button>
+        <button class="btn" id="rerollBtn">🎲 Đổi số liệu</button>
+      </div>
+    </div>
+    <div class="section">
+      <h2>🎛️ Thông số tùy chỉnh</h2>
+      <div id="params"></div>
+      <div class="smallcheck">Hình chỉ hiển thị dữ kiện gốc. Đại lượng cần tìm không xuất hiện dưới dạng số trên hình.</div>
+    </div>
+    <div class="section">
+      <h2>🔐 Khu vực giáo viên</h2>
+      <div class="teacherbox">
+        <div class="teach-row"><input id="password" type="password" autocomplete="off" placeholder="Nhập mật khẩu giáo viên"><button class="btn accent" id="unlockBtn">Mở khóa</button></div>
+        <div id="teachStatus" class="teach-status">Nút “Hiện bài giải” đang khóa.</div>
+        <div class="btnrow"><button class="btn good" id="solutionBtn" disabled>📘 Hiện bài giải</button><button class="btn" id="lockBtn" disabled>🔒 Khóa lại</button></div>
+      </div>
+    </div>
+    <div class="section">
+      <h2>💡 Cách dùng nhanh</h2>
+      <div style="font-size:12px;line-height:1.45;color:var(--muted)">Chọn dạng bài hoặc bấm <b>Tạo tình huống mới</b>. Kéo thanh trượt/nhập số để thay đổi dữ liệu. Hình vẽ và đề bài cập nhật ngay. Với góc lớn hơn 90°, hình tam giác sẽ tự chuyển đúng sang góc tù.</div>
+    </div>
+  </aside>
+  <section class="workspace">
+    <article class="card problem">
+      <div class="problem-top"><div><div class="kicker" id="category"></div><h2 id="title"></h2></div><span class="typepill" id="typePill"></span></div>
+      <div id="problemText" class="problem-text"></div>
+      <div class="goal" id="goal"></div>
+      <div class="answerbox" id="answerBox">
+        <h3>✍️ Tự kiểm tra kết quả</h3>
+        <div class="answer-fields" id="answerFields"></div>
+        <div class="answer-actions"><button class="btn primary" id="checkAnswerBtn">Kiểm tra</button><button class="btn" id="hintBtn">Gợi ý</button></div>
+        <div class="feedback" id="answerFeedback"></div>
+        <div class="hintbox" id="hintBox"></div>
+      </div>
+    </article>
+    <article class="card diagram">
+      <svg id="svg" viewBox="0 0 1280 720" role="img" aria-label="Hình minh họa toán học nằm trực tiếp trên bối cảnh thực tế"></svg>
+      <div id="legend" hidden></div>
+    </article>
+  </section>
+</main>
+<span id="footerStatus" hidden>Sẵn sàng</span>
+</div>
+<div class="modal" id="solutionModal" role="dialog" aria-modal="true">
+  <div class="modalbox"><div class="modalhead"><h2>📘 Lời giải chi tiết</h2><button class="close" id="closeModal">×</button></div><div class="solution" id="solution"></div></div>
+</div>
+<div id="approvedSceneTemplates" hidden>
+<template id="scene-02"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-02 svg-desc-02">
+          <title id="svg-title-02">Đo chiều dài cây bị nghiêng</title>
+          <desc id="svg-desc-02">A là gốc cây, B là người quan sát, C là ngọn cây; AB dài 20 mét, góc A 78 độ và góc B 50 độ.</desc>
+          <defs><linearGradient id="sky02" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dff2ff"/><stop offset="1" stop-color="#fffef7"/></linearGradient></defs>
+          <rect width="1280" height="720" fill="url(#sky02)"/>
+          <path d="M0 555 C250 530 460 560 690 544 C910 529 1082 550 1280 526 L1280 720 L0 720 Z" fill="#acd184"/>
+          <path d="M0 580 L1280 580" stroke="#71985e" stroke-width="7"/>
+
+          <g>
+            <path d="M346 590 C382 481 408 377 426 290 C438 234 447 190 457 171" fill="none" stroke="#70492d" stroke-width="48" stroke-linecap="round"/>
+            <path d="M424 310 L368 253 M441 250 L503 214" fill="none" stroke="#68432b" stroke-width="17" stroke-linecap="round"/>
+            <circle cx="457" cy="171" r="72" fill="#66aa5e"/><circle cx="397" cy="210" r="69" fill="#75b76a"/><circle cx="512" cy="220" r="72" fill="#559d56"/><circle cx="457" cy="251" r="65" fill="#4d9250"/>
+          </g>
+
+          <g>
+            <circle cx="818" cy="492" r="22" fill="#efbd99"/>
+            <path d="M810 514 L797 572 M829 514 L846 572 M818 528 L819 573 M803 528 L775 546" fill="none" stroke="#33475b" stroke-width="11" stroke-linecap="round"/>
+            <path d="M774 543 L751 535" stroke="#33475b" stroke-width="9" stroke-linecap="round"/>
+          </g>
+
+          <path d="M370 580 L800 580" class="actual-line"/>
+          <path d="M370 580 L457 171" class="actual-line" opacity=".72"/>
+          <path d="M800 580 L457 171" class="sight-line"/>
+          <path d="M370 618 L800 618 M370 606 L370 630 M800 606 L800 630" stroke="#0f4fa8" stroke-width="4"/>
+          <text x="585" y="655" text-anchor="middle" class="svg-measure">20 m</text>
+
+          <path d="M440 580 A70 70 0 0 0 385 512" class="angle-line"/><text x="424" y="493" class="svg-angle-text">78°</text>
+          <path d="M730 580 A70 70 0 0 1 755 526" class="angle-line"/><text x="704" y="505" class="svg-angle-text">50°</text>
+
+          <g>
+            <circle cx="370" cy="580" r="8" class="svg-point"/><circle cx="800" cy="580" r="8" class="svg-point"/><circle cx="457" cy="171" r="8" class="svg-point"/>
+            <text x="338" y="612" class="svg-label">A</text><text x="815" y="611" class="svg-label">B</text><text x="468" y="142" class="svg-label">C</text>
+          </g>
+          <text x="54" y="72" class="svg-caption">Độ dài cần tìm chính là chiều dài thật của thân cây AC</text>
+        </svg></template>
+<template id="scene-04"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-04 svg-desc-04">
+          <title id="svg-title-04">Đo vách đá trên sườn dốc</title>
+          <desc id="svg-desc-04">A là chân vách, B là điểm đo trên sườn dốc, C là đỉnh vách; AB dài 55 mét, góc A 72 độ và góc B 44 độ.</desc>
+          <defs>
+            <linearGradient id="sky04" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d8edff"/><stop offset="1" stop-color="#f9fcff"/></linearGradient>
+            <linearGradient id="rock04" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b5aa86"/><stop offset=".55" stop-color="#827c64"/><stop offset="1" stop-color="#5f6858"/></linearGradient>
+          </defs>
+          <rect width="1280" height="720" fill="url(#sky04)"/>
+          <path d="M0 650 C210 620 375 590 520 554 C655 520 810 488 985 475 C1080 467 1172 470 1280 448 L1280 720 L0 720 Z" fill="#8cac6d"/>
+          <path d="M0 647 C205 619 395 579 720 520" fill="none" stroke="#596e4f" stroke-width="16"/>
+
+          <path d="M720 520
+            C680 475 657 427 638 368
+            C620 311 605 251 575 205
+            C560 183 543 160 525 143
+            C598 121 680 137 747 185
+            C818 235 869 304 940 347
+            L1068 720 L682 720 Z" fill="url(#rock04)"/>
+          <path d="M525 143 C572 185 586 239 608 292 C631 349 651 425 720 520" fill="none" stroke="#d0c49c" stroke-width="18" opacity=".5"/>
+          <path d="M615 258 C678 242 735 261 785 301 M659 366 C724 348 791 365 847 407" fill="none" stroke="#5a5b4c" stroke-width="10" stroke-linecap="round" opacity=".38"/>
+          <g fill="#405a3e"><path d="M675 480 C698 440 728 438 751 474 C725 466 701 471 675 480 Z"/><path d="M594 310 C616 278 641 279 664 309 C640 302 617 305 594 310 Z"/></g>
+
+          <g>
+            <path d="M153 610 L180 577 L207 610 Z" fill="#526576"/>
+            <rect x="158" y="565" width="46" height="22" rx="6" fill="#ef9f18" stroke="#965c06" stroke-width="4"/>
+          </g>
+
+          <path d="M180 610 L720 520" class="actual-line"/>
+          <path d="M720 520 L525 143" class="actual-line" opacity=".78"/>
+          <path d="M180 610 L525 143" class="sight-line"/>
+          <text x="448" y="598" text-anchor="middle" transform="rotate(-9.5 448 598)" class="svg-measure">55 m</text>
+          <path d="M651 532 A70 70 0 0 1 688 458" class="angle-line"/><text x="642" y="451" class="svg-angle-text">72°</text>
+          <path d="M249 598 A70 70 0 0 0 222 553" class="angle-line"/><text x="245" y="535" class="svg-angle-text">44°</text>
+
+          <g>
+            <circle cx="720" cy="520" r="8" class="svg-point"/><circle cx="180" cy="610" r="8" class="svg-point"/><circle cx="525" cy="143" r="8" class="svg-point"/>
+            <text x="736" y="548" class="svg-label">A</text><text x="143" y="642" class="svg-label">B</text><text x="535" y="121" class="svg-label">C</text>
+          </g>
+          <text x="52" y="72" class="svg-caption">Ba cạnh đi theo sườn dốc, mặt vách và tia ngắm thực tế</text>
+        </svg></template>
+<template id="scene-06"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-06 svg-desc-06">
+          <title id="svg-title-06">Đo chiều rộng sông từ một bờ</title>
+          <desc id="svg-desc-06">A và B là hai điểm quan sát trên bờ gần, C là mốc ở bờ đối diện, H là chân đường vuông góc từ C xuống AB.</desc>
+          <defs>
+            <linearGradient id="sky06" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9efff"/><stop offset="1" stop-color="#f7fcff"/></linearGradient>
+            <linearGradient id="water06" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6ac4dd"/><stop offset="1" stop-color="#278bb8"/></linearGradient>
+          </defs>
+          <rect width="1280" height="720" fill="url(#sky06)"/>
+          <path d="M0 190 C220 165 430 201 650 181 C870 161 1058 193 1280 168 L1280 245 L0 245 Z" fill="#86b46d"/>
+          <path d="M0 213 C260 188 425 222 653 204 C880 186 1062 216 1280 195 L1280 545 C1040 522 862 551 632 531 C410 512 233 545 0 520 Z" fill="url(#water06)"/>
+          <path d="M0 520 C220 497 414 535 642 515 C874 494 1060 527 1280 502 L1280 720 L0 720 Z" fill="#acd084"/>
+          <path d="M0 535 C260 513 430 548 650 530 C880 512 1072 539 1280 520" fill="none" stroke="#6e9a5a" stroke-width="9"/>
+          <path d="M0 350 C255 328 460 367 685 344 C916 321 1070 356 1280 335 M0 430 C225 408 425 446 655 424 C890 401 1071 438 1280 410" fill="none" stroke="#bfeaf4" stroke-width="7" opacity=".58"/>
+
+          <!-- C is a grey boulder placed exactly on the far waterline -->
+          <path d="M650 219
+            C653 201 663 187 678 179
+            C692 171 708 178 716 190
+            C731 191 742 202 744 219 Z"
+            fill="#7f8990" stroke="#59646b" stroke-width="6"/>
+          <path d="M668 207 C681 195 694 190 709 192 M702 213 C713 205 724 204 735 208" fill="none" stroke="#aeb6bb" stroke-width="5" stroke-linecap="round" opacity=".8"/>
+
+          <path d="M393 535 L858 535" class="actual-line"/>
+          <path d="M393 535 L690 205" class="sight-line"/>
+          <path d="M858 535 L690 205" class="sight-line"/>
+          <path d="M690 205 L690 535" class="helper-line"/>
+          <path d="M690 535 L714 535 L714 511" class="helper-line" stroke-dasharray="none"/>
+          <path d="M393 577 L858 577 M393 565 L393 589 M858 565 L858 589" stroke="#0f4fa8" stroke-width="4"/>
+          <text x="625.5" y="616" text-anchor="middle" class="svg-measure">50 m</text>
+          <path d="M463 535 A70 70 0 0 0 440 483" class="angle-line"/><text x="470" y="468" class="svg-angle-text">48°</text>
+          <path d="M788 535 A70 70 0 0 1 826 473" class="angle-line"/><text x="778" y="453" class="svg-angle-text">63°</text>
+
+          <g>
+            <circle cx="393" cy="535" r="8" class="svg-point"/><circle cx="858" cy="535" r="8" class="svg-point"/><circle cx="690" cy="205" r="8" class="svg-point"/><circle cx="690" cy="535" r="8" class="svg-point"/>
+            <text x="357" y="528" class="svg-label">A</text><text x="875" y="564" class="svg-label">B</text><text x="709" y="196" class="svg-label">C</text><text x="660" y="569" class="svg-label">H</text>
+          </g>
+          <text x="52" y="70" class="svg-caption">CH đi xuyên mặt nước theo phương vuông góc với đường chuẩn AB</text>
+        </svg></template>
+<template id="scene-07"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-07 svg-desc-07">
+          <title id="svg-title-07">Đo khoảng cách qua ao</title>
+          <desc id="svg-desc-07">A và B là hai điểm trên bờ gần, C ở bờ bên kia ao; AB dài 25 mét, góc A 60 độ, góc B 82 độ.</desc>
+          <defs>
+            <linearGradient id="sky07" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e2f3ff"/><stop offset="1" stop-color="#fffef7"/></linearGradient>
+            <radialGradient id="pond07"><stop offset="0" stop-color="#68c5d6"/><stop offset="1" stop-color="#278cb4"/></radialGradient>
+          </defs>
+          <rect width="1280" height="720" fill="url(#sky07)"/>
+          <path d="M0 205 C210 165 410 186 610 168 C830 148 1030 172 1280 142 L1280 720 L0 720 Z" fill="#b8d995"/>
+          <path d="M85 245 C220 165 486 160 748 188 C1010 214 1198 327 1150 460 C1104 587 861 608 602 575 C338 542 104 465 72 346 C60 304 65 272 85 245 Z" fill="url(#pond07)" stroke="#6f9c85" stroke-width="10"/>
+          <path d="M130 345 C360 298 590 371 835 321 C968 294 1073 324 1130 357 M122 425 C344 383 555 448 772 408 C934 378 1040 401 1114 433" fill="none" stroke="#c6eef2" stroke-width="7" opacity=".56"/>
+          <path d="M0 545 C205 521 390 550 615 533 C855 516 1055 548 1280 518 L1280 720 L0 720 Z" fill="#91bd70"/>
+
+          <g>
+            <path d="M484 166 L498 166 L501 211 L481 211 Z" fill="#78502e"/>
+            <circle cx="491" cy="132" r="43" fill="#599e57"/><circle cx="455" cy="151" r="34" fill="#70b367"/><circle cx="526" cy="151" r="35" fill="#4d9552"/>
+          </g>
+          <g fill="#f2f5f6" stroke="#43576b" stroke-width="5"><path d="M243 580 L250 537 L257 580 Z"/><path d="M543 580 L550 537 L557 580 Z"/></g>
+
+          <path d="M250 580 L550 580" class="actual-line"/>
+          <path d="M250 580 L491 162" class="sight-line"/>
+          <path d="M550 580 L491 162" class="sight-line"/>
+          <path d="M250 620 L550 620 M250 608 L250 632 M550 608 L550 632" stroke="#0f4fa8" stroke-width="4"/>
+          <text x="400" y="658" text-anchor="middle" class="svg-measure">25 m</text>
+          <path d="M320 580 A70 70 0 0 0 285 519" class="angle-line"/><text x="322" y="501" class="svg-angle-text">60°</text>
+          <path d="M480 580 A70 70 0 0 1 540 511" class="angle-line"/><text x="470" y="492" class="svg-angle-text">82°</text>
+
+          <g>
+            <circle cx="250" cy="580" r="8" class="svg-point"/><circle cx="550" cy="580" r="8" class="svg-point"/><circle cx="491" cy="162" r="8" class="svg-point"/>
+            <text x="214" y="572" class="svg-label">A</text><text x="566" y="610" class="svg-label">B</text><text x="508" y="153" class="svg-label">C</text>
+          </g>
+          <text x="1220" y="666" text-anchor="end" class="svg-caption">Không cần đặt thước hoặc dựng hình phụ trên mặt ao</text>
+        </svg></template>
+<template id="scene-08"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-08 svg-desc-08">
+          <title id="svg-title-08">Định vị điểm không thể tiếp cận</title>
+          <desc id="svg-desc-08">A và B là hai trạm đo bên ngoài khu vực nguy hiểm, C là mốc bên trong. AB dài 80 mét, góc A 38 độ và góc B 71 độ.</desc>
+          <defs><linearGradient id="ground08" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9d2b4"/><stop offset="1" stop-color="#a99b72"/></linearGradient></defs>
+          <rect width="1280" height="720" fill="#ddecf8"/>
+          <path d="M0 215 C220 170 410 211 610 184 C825 156 1038 195 1280 158 L1280 720 L0 720 Z" fill="url(#ground08)"/>
+          <path d="M0 410 L1280 410 L1280 548 L0 548 Z" fill="#d9bf87" opacity=".7"/>
+          <path d="M0 410 L1280 410" stroke="#7a6148" stroke-width="9"/>
+          <g stroke="#5b6065" stroke-width="6">
+            <path d="M80 366 L80 472 M180 366 L180 472 M280 366 L280 472 M380 366 L380 472 M480 366 L480 472 M580 366 L580 472 M680 366 L680 472 M780 366 L780 472 M880 366 L880 472 M980 366 L980 472 M1080 366 L1080 472 M1180 366 L1180 472"/>
+            <path d="M40 392 L1220 452 M40 452 L1220 392" opacity=".65"/>
+          </g>
+          <g transform="translate(673 240)">
+            <path d="M-12 0 L12 0 L18 128 L-18 128 Z" fill="#8b6e4c" stroke="#59452f" stroke-width="5"/>
+            <path d="M0 -74 L-38 0 L38 0 Z" fill="#d65a3d" stroke="#843927" stroke-width="6"/>
+            <circle cx="0" cy="-19" r="10" fill="#fff4cf"/>
+          </g>
+          <g>
+            <path d="M172 610 L200 575 L228 610 Z" fill="#506477"/><rect x="179" y="561" width="43" height="23" rx="6" fill="#efa11c" stroke="#955c06" stroke-width="4"/>
+            <path d="M772 610 L800 575 L828 610 Z" fill="#506477"/><rect x="779" y="561" width="43" height="23" rx="6" fill="#efa11c" stroke="#955c06" stroke-width="4"/>
+          </g>
+
+          <path d="M200 610 L800 610" class="actual-line"/>
+          <path d="M200 610 L673 240" class="sight-line"/>
+          <path d="M800 610 L673 240" class="sight-line"/>
+          <path d="M200 648 L800 648 M200 636 L200 660 M800 636 L800 660" stroke="#0f4fa8" stroke-width="4"/>
+          <text x="500" y="686" text-anchor="middle" class="svg-measure">80 m</text>
+          <path d="M280 610 A80 80 0 0 0 263 561" class="angle-line"/><text x="292" y="548" class="svg-angle-text">38°</text>
+          <path d="M720 610 A80 80 0 0 1 774 534" class="angle-line"/><text x="713" y="514" class="svg-angle-text">71°</text>
+
+          <g>
+            <circle cx="200" cy="610" r="8" class="svg-point"/><circle cx="800" cy="610" r="8" class="svg-point"/><circle cx="673" cy="240" r="8" class="svg-point"/>
+            <text x="163" y="602" class="svg-label">A</text><text x="817" y="639" class="svg-label">B</text><text x="692" y="231" class="svg-label">C</text>
+          </g>
+          <text x="866" y="304" class="svg-caption">Khu vực không thể đi vào</text>
+        </svg></template>
+<template id="scene-09"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-09 svg-desc-09">
+          <title id="svg-title-09">Định vị đảo từ hai mốc bờ biển</title>
+          <desc id="svg-desc-09">A và B là hai mốc trên bờ cách nhau 600 mét, C là mốc trên đảo; góc A 32 độ và góc B 58 độ.</desc>
+          <defs>
+            <linearGradient id="sky09" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d6edff"/><stop offset="1" stop-color="#f8fdff"/></linearGradient>
+            <linearGradient id="sea09" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#64c3df"/><stop offset="1" stop-color="#177eaf"/></linearGradient>
+          </defs>
+          <rect width="1280" height="720" fill="url(#sky09)"/>
+          <path d="M0 165 L1280 165 L1280 560 L0 560 Z" fill="url(#sea09)"/>
+          <path d="M0 300 C220 278 403 315 626 292 C858 269 1044 307 1280 280 M0 402 C230 378 428 420 652 395 C882 370 1068 412 1280 383" fill="none" stroke="#c8eff7" stroke-width="7" opacity=".55"/>
+          <path d="M0 540 C245 500 430 545 645 526 C875 505 1076 541 1280 512 L1280 720 L0 720 Z" fill="#dfd0a0"/>
+          <path d="M0 575 C260 550 455 590 676 568 C906 545 1082 581 1280 554" fill="none" stroke="#a99665" stroke-width="8"/>
+
+          <g>
+            <path d="M655 227 C689 176 735 151 790 164 C843 176 875 207 898 250 C830 263 746 264 655 227 Z" fill="#83a76c"/>
+            <path d="M735 215 C754 182 773 158 796 138 C814 170 829 195 841 225 Z" fill="#6b7e59"/>
+            <path d="M761 207 L777 207 L782 249 L756 249 Z" fill="#724c2d"/>
+            <circle cx="769" cy="180" r="38" fill="#4f9954"/><circle cx="741" cy="195" r="29" fill="#6bb064"/><circle cx="798" cy="197" r="30" fill="#579f57"/>
+          </g>
+          <g fill="#f2f4f5" stroke="#42586a" stroke-width="5"><path d="M216 548 L223 505 L230 548 Z"/><path d="M975 548 L982 505 L989 548 Z"/></g>
+
+          <path d="M223 548 L982 548" class="actual-line"/>
+          <path d="M223 548 L769 207" class="sight-line"/>
+          <path d="M982 548 L769 207" class="sight-line"/>
+          <path d="M223 589 L982 589 M223 577 L223 601 M982 577 L982 601" stroke="#0f4fa8" stroke-width="4"/>
+          <text x="602.5" y="627" text-anchor="middle" class="svg-measure">600 m</text>
+          <path d="M298 548 A75 75 0 0 0 287 508" class="angle-line"/><text x="305" y="494" class="svg-angle-text">32°</text>
+          <path d="M907 548 A75 75 0 0 1 942 484" class="angle-line"/><text x="897" y="466" class="svg-angle-text">58°</text>
+
+          <g>
+            <circle cx="223" cy="548" r="8" class="svg-point"/><circle cx="982" cy="548" r="8" class="svg-point"/><circle cx="769" cy="207" r="8" class="svg-point"/>
+            <text x="187" y="541" class="svg-label">A</text><text x="999" y="577" class="svg-label">B</text><text x="788" y="198" class="svg-label">C</text>
+          </g>
+          <text x="52" y="72" class="svg-caption">Hai tia ngắm hội tụ tại đúng cột mốc C trên đảo</text>
+        </svg></template>
+<template id="scene-10"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-10 svg-desc-10">
+          <title id="svg-title-10">Đo khoảng cách giữa hai điểm khó tiếp cận</title>
+          <desc id="svg-desc-10">A là trạm đo, B và C nằm trên hai mỏm đá tách nhau bởi khe sâu; AB 70 mét, AC 85 mét và góc A 108 độ.</desc>
+          <defs>
+            <linearGradient id="sky10" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9eeff"/><stop offset="1" stop-color="#fafcff"/></linearGradient>
+            <linearGradient id="rock10" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9d987d"/><stop offset="1" stop-color="#555e52"/></linearGradient>
+          </defs>
+          <rect width="1280" height="720" fill="url(#sky10)"/>
+          <path d="M0 318 C170 247 310 259 455 330 C527 366 557 409 584 478 L430 720 L0 720 Z" fill="url(#rock10)"/>
+          <path d="M1280 274 C1122 245 1008 264 905 331 C829 380 797 424 767 496 L880 720 L1280 720 Z" fill="url(#rock10)"/>
+          <path d="M430 720 C512 563 559 493 642 464 C725 493 790 572 880 720 Z" fill="#263d43"/>
+          <path d="M465 720 C529 603 574 545 642 521 C711 545 760 610 838 720 Z" fill="#2f6170" opacity=".82"/>
+          <path d="M0 315 C176 268 306 284 455 346 M1280 273 C1134 260 1010 286 904 349" fill="none" stroke="#c8bc94" stroke-width="15" opacity=".48"/>
+          <path d="M0 565 C205 532 402 574 607 555 C833 535 1058 572 1280 536 L1280 720 L0 720 Z" fill="#819f68" opacity=".78"/>
+
+          <g fill="#efe9db" stroke="#4b5964" stroke-width="5"><path d="M302 373 L310 325 L318 373 Z"/><path d="M1054 320 L1062 272 L1070 320 Z"/></g>
+          <g><path d="M622 620 L650 585 L678 620 Z" fill="#506477"/><rect x="629" y="571" width="43" height="23" rx="6" fill="#efa11c" stroke="#955c06" stroke-width="4"/></g>
+
+          <path d="M650 620 L310 373" class="actual-line"/>
+          <path d="M650 620 L1062 320" class="actual-line"/>
+          <path d="M310 373 L1062 320" class="sight-line" stroke-dasharray="14 12"/>
+          <text x="472" y="477" text-anchor="middle" transform="rotate(36 472 477)" class="svg-measure">70 m</text>
+          <text x="857" y="456" text-anchor="middle" transform="rotate(-36 857 456)" class="svg-measure">85 m</text>
+          <path d="M719 570 A85 85 0 0 0 581 570" class="angle-line"/>
+          <text x="650" y="520" text-anchor="middle" class="svg-angle-text">108°</text>
+
+          <g>
+            <circle cx="650" cy="620" r="8" class="svg-point"/><circle cx="310" cy="373" r="8" class="svg-point"/><circle cx="1062" cy="320" r="8" class="svg-point"/>
+            <text x="620" y="663" class="svg-label">A</text><text x="275" y="365" class="svg-label">B</text><text x="1079" y="311" class="svg-label">C</text>
+          </g>
+          <text x="465" y="88" class="svg-caption">BC đi qua khe sâu nên chỉ có thể xác định gián tiếp</text>
+        </svg></template>
+<template id="scene-11"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-11 svg-desc-11">
+          <title id="svg-title-11">Hai tàu rời cảng theo hai hướng</title>
+          <desc id="svg-desc-11">A là cảng xuất phát, B và C là vị trí hai tàu; AB 45 kilômét, AC 32 kilômét và góc A 72 độ.</desc>
+          <defs><linearGradient id="sea11" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#68c5df"/><stop offset="1" stop-color="#187da9"/></linearGradient></defs>
+          <rect width="1280" height="720" fill="#dcefff"/>
+          <path d="M0 120 L1280 120 L1280 720 L0 720 Z" fill="url(#sea11)"/>
+          <path d="M0 280 C250 255 430 294 650 272 C880 249 1060 289 1280 260 M0 430 C230 406 432 447 660 422 C894 397 1075 438 1280 410" fill="none" stroke="#c7edf5" stroke-width="7" opacity=".58"/>
+          <path d="M0 545 L250 545 L250 720 L0 720 Z" fill="#a79a7c"/><path d="M0 548 L250 548" stroke="#655f58" stroke-width="14"/>
+
+          <g transform="translate(790 560)"><path d="M-56 -12 L56 -12 L36 20 L-38 20 Z" fill="#f0f3f5" stroke="#354b5d" stroke-width="5"/><rect x="-18" y="-37" width="44" height="25" rx="4" fill="#e26c42"/><path d="M4 -37 L4 -69" stroke="#455b69" stroke-width="5"/><path d="M5 -66 L34 -53 L5 -47 Z" fill="#f5d05e"/></g>
+          <g transform="translate(369 195) rotate(-12)"><path d="M-52 -10 L52 -10 L34 19 L-36 19 Z" fill="#f0f3f5" stroke="#354b5d" stroke-width="5"/><rect x="-17" y="-34" width="40" height="24" rx="4" fill="#ef9341"/><path d="M3 -34 L3 -64" stroke="#455b69" stroke-width="5"/></g>
+
+          <path d="M250 560 L790 560" class="actual-line"/><path d="M250 560 L369 195" class="actual-line"/><path d="M790 560 L369 195" class="sight-line" stroke-dasharray="15 12"/>
+          <text x="520" y="605" text-anchor="middle" class="svg-measure">45 km</text>
+          <text x="301" y="366" text-anchor="middle" transform="rotate(-72 301 366)" class="svg-measure">32 km</text>
+          <path d="M325 560 A75 75 0 0 0 273 489" class="angle-line"/><text x="340" y="488" class="svg-angle-text">72°</text>
+          <g><circle cx="250" cy="560" r="8" class="svg-point"/><circle cx="790" cy="560" r="8" class="svg-point"/><circle cx="369" cy="195" r="8" class="svg-point"/><text x="218" y="594" class="svg-label">A</text><text x="809" y="589" class="svg-label">B</text><text x="385" y="184" class="svg-label">C</text></g>
+          <text x="52" y="72" class="svg-caption">BC là khoảng cách thẳng giữa đúng hai vị trí tàu</text>
+        </svg></template>
+<template id="scene-12"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-12 svg-desc-12">
+          <title id="svg-title-12">Tàu đi hai chặng đổi hướng</title>
+          <desc id="svg-desc-12">Tàu đi từ A đến phao B rồi đến C; dữ kiện là vận tốc, thời gian từng chặng và góc B 105 độ.</desc>
+          <defs><linearGradient id="sea12" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#63c3dc"/><stop offset="1" stop-color="#177ba8"/></linearGradient></defs>
+          <rect width="1280" height="720" fill="#dbeeff"/><rect y="105" width="1280" height="615" fill="url(#sea12)"/>
+          <path d="M0 305 C246 278 444 321 666 296 C893 270 1074 313 1280 286 M0 470 C237 445 437 486 665 460 C895 434 1073 477 1280 450" fill="none" stroke="#c6edf5" stroke-width="7" opacity=".56"/>
+          <path d="M0 530 L220 530 L220 720 L0 720 Z" fill="#b6a47c"/><path d="M0 539 L220 539" stroke="#756a5c" stroke-width="13"/>
+          <g transform="translate(791 242) rotate(-75)"><path d="M-56 -12 L56 -12 L35 20 L-38 20 Z" fill="#f4f5f5" stroke="#354b5d" stroke-width="5"/><rect x="-18" y="-36" width="43" height="24" rx="4" fill="#e27343"/></g>
+          <g transform="translate(700 580)"><circle r="17" fill="#ef9b31" stroke="#8a5415" stroke-width="5"/><path d="M0 -17 L0 -55" stroke="#4b5965" stroke-width="6"/><path d="M0 -52 L30 -39 L0 -26 Z" fill="#f8d85d"/></g>
+
+          <path d="M220 580 L700 580 L791 242" class="actual-line"/><path d="M220 580 L791 242" class="sight-line" stroke="#b52f45" stroke-dasharray="17 13"/>
+          <text x="460" y="621" text-anchor="middle" class="svg-measure">30 km/h · 90 phút</text>
+          <text x="770" y="411" text-anchor="middle" transform="rotate(-75 770 411)" class="svg-measure">28 km/h · 75 phút</text>
+          <path d="M625 580 A75 75 0 0 1 719 508" class="angle-line"/><text x="638" y="493" class="svg-angle-text">105°</text>
+          <g><circle cx="220" cy="580" r="8" class="svg-point"/><circle cx="700" cy="580" r="8" class="svg-point"/><circle cx="791" cy="242" r="8" class="svg-point"/><text x="187" y="613" class="svg-label">A</text><text x="714" y="615" class="svg-label">B</text><text x="809" y="230" class="svg-label">C</text></g>
+          <text x="52" y="70" class="svg-caption">Đường gạch đỏ AC là độ dời thẳng, không ghi giá trị</text>
+        </svg></template>
+<template id="scene-13"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-13 svg-desc-13">
+          <title id="svg-title-13">Máy bay bay hai chặng</title>
+          <desc id="svg-desc-13">Máy bay cất cánh từ A, chuyển hướng tại B và đến C; góc trong tại B bằng 68 độ.</desc>
+          <defs><linearGradient id="sky13" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#bfe4ff"/><stop offset="1" stop-color="#f6fbff"/></linearGradient></defs>
+          <rect width="1280" height="720" fill="url(#sky13)"/>
+          <g fill="#fff" opacity=".82"><ellipse cx="220" cy="176" rx="92" ry="34"/><ellipse cx="300" cy="191" rx="75" ry="27"/><ellipse cx="975" cy="250" rx="108" ry="38"/><ellipse cx="1060" cy="265" rx="68" ry="25"/></g>
+          <path d="M0 610 C220 568 420 602 626 580 C850 556 1058 594 1280 560 L1280 720 L0 720 Z" fill="#91b27d"/>
+          <path d="M145 590 L255 590 L280 618 L120 618 Z" fill="#6d7882"/><path d="M174 602 L232 602" stroke="#f2cf52" stroke-width="5" stroke-dasharray="14 9"/>
+          <!-- The same aircraft is shown faintly at the airborne turning point B and solid at C -->
+          <g transform="translate(620 380) rotate(-28)" opacity=".5"><path d="M-48 0 L-10 -8 L11 -43 L24 -41 L16 -8 L51 0 L16 8 L24 41 L11 43 L-10 8 L-48 0 Z" fill="#f1f4f6" stroke="#40566a" stroke-width="5"/></g>
+          <g transform="translate(316 120) rotate(-140)"><path d="M-62 0 L-12 -10 L15 -58 L30 -55 L20 -10 L66 0 L20 10 L30 55 L15 58 L-12 10 L-62 0 Z" fill="#f1f4f6" stroke="#40566a" stroke-width="5"/></g>
+
+          <path d="M200 600 L620 380 L316 120" class="actual-line"/><path d="M200 600 L316 120" class="sight-line" stroke="#b52f45" stroke-dasharray="17 13"/>
+          <text x="410" y="514" text-anchor="middle" transform="rotate(-27.6 410 514)" class="svg-measure">520 km/h · 35 phút</text>
+          <text x="468" y="250" text-anchor="middle" transform="rotate(40.5 468 250)" class="svg-measure">480 km/h · 40 phút</text>
+          <path d="M558 412 A70 70 0 0 1 567 334" class="angle-line"/><text x="505" y="367" class="svg-angle-text">68°</text>
+          <g><circle cx="200" cy="600" r="8" class="svg-point"/><circle cx="620" cy="380" r="8" class="svg-point"/><circle cx="316" cy="120" r="8" class="svg-point"/><text x="166" y="635" class="svg-label">A</text><text x="637" y="408" class="svg-label">B</text><text x="335" y="110" class="svg-label">C</text></g>
+          <text x="52" y="72" class="svg-caption">AC là độ dời thẳng từ sân bay đến vị trí cuối</text>
+        </svg></template>
+<template id="scene-14"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-14 svg-desc-14">
+          <title id="svg-title-14">Định vị drone từ hai trạm</title>
+          <desc id="svg-desc-14">A và B là hai trạm mặt đất, C là drone và H là hình chiếu của drone trên AB.</desc>
+          <defs><linearGradient id="sky14" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cce9ff"/><stop offset="1" stop-color="#f8fcff"/></linearGradient></defs>
+          <rect width="1280" height="720" fill="url(#sky14)"/>
+          <path d="M0 475 C205 413 394 456 585 426 C793 393 1006 445 1280 390 L1280 720 L0 720 Z" fill="#a8cc84"/>
+          <path d="M0 590 C250 567 448 601 650 582 C870 561 1068 596 1280 570" fill="none" stroke="#668c56" stroke-width="8"/>
+          <g transform="translate(690 119)" stroke="#344d61" stroke-width="7" stroke-linecap="round"><path d="M-58 0 L58 0 M0 -20 L0 28"/><circle cx="-60" cy="0" r="27" fill="none"/><circle cx="60" cy="0" r="27" fill="none"/><rect x="-26" y="-17" width="52" height="34" rx="9" fill="#4d6578"/><circle cy="2" r="9" fill="#75c9ed"/></g>
+          <g><path d="M222 590 L250 555 L278 590 Z" fill="#526679"/><rect x="229" y="541" width="43" height="23" rx="6" fill="#eda01b" stroke="#965c06" stroke-width="4"/><path d="M922 590 L950 555 L978 590 Z" fill="#526679"/><rect x="929" y="541" width="43" height="23" rx="6" fill="#eda01b" stroke="#965c06" stroke-width="4"/></g>
+
+          <path d="M250 590 L950 590" class="actual-line"/><path d="M250 590 L690 119" class="sight-line"/><path d="M950 590 L690 119" class="sight-line"/><path d="M690 119 L690 590" class="helper-line"/><path d="M690 590 L714 590 L714 566" class="helper-line" stroke-dasharray="none"/>
+          <path d="M250 630 L950 630 M250 618 L250 642 M950 618 L950 642" stroke="#0f4fa8" stroke-width="4"/><text x="600" y="669" text-anchor="middle" class="svg-measure">120 m</text>
+          <path d="M325 590 A75 75 0 0 0 301 535" class="angle-line"/><text x="333" y="518" class="svg-angle-text">47°</text>
+          <path d="M875 590 A75 75 0 0 1 914 525" class="angle-line"/><text x="866" y="506" class="svg-angle-text">61°</text>
+          <g><circle cx="250" cy="590" r="8" class="svg-point"/><circle cx="950" cy="590" r="8" class="svg-point"/><circle cx="690" cy="119" r="8" class="svg-point"/><circle cx="690" cy="590" r="8" class="svg-point"/><text x="214" y="582" class="svg-label">A</text><text x="968" y="620" class="svg-label">B</text><text x="708" y="109" class="svg-label">C</text><text x="660" y="624" class="svg-label">H</text></g>
+          <text x="52" y="72" class="svg-caption">Hai tia ngắm hội tụ tại đúng tâm drone C</text>
+        </svg></template>
+<template id="scene-15"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-15 svg-desc-15">
+          <title id="svg-title-15">Định vị tàu cứu hộ</title>
+          <desc id="svg-desc-15">A và B là hai trạm ven bờ, C là tàu cứu hộ; AB 800 mét, góc A 42 độ, góc B 67 độ.</desc>
+          <defs><linearGradient id="sea15" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#69c5dd"/><stop offset="1" stop-color="#1a81ad"/></linearGradient></defs>
+          <rect width="1280" height="720" fill="#dbefff"/><rect y="120" width="1280" height="470" fill="url(#sea15)"/>
+          <path d="M0 290 C226 266 421 305 645 280 C876 254 1066 299 1280 270 M0 420 C240 396 432 438 660 412 C889 386 1078 428 1280 400" fill="none" stroke="#c7edf5" stroke-width="7" opacity=".58"/>
+          <path d="M0 530 C238 505 430 544 649 523 C879 501 1063 539 1280 510 L1280 720 L0 720 Z" fill="#dfcf9e"/>
+          <g transform="translate(735 174)"><path d="M-66 -12 L66 -12 L42 24 L-45 24 Z" fill="#f1f5f6" stroke="#364d5f" stroke-width="5"/><rect x="-24" y="-42" width="55" height="30" rx="5" fill="#ef7045"/><path d="M6 -42 L6 -76" stroke="#415866" stroke-width="6"/><path d="M8 -73 L42 -58 L8 -42 Z" fill="#f4d658"/></g>
+          <g fill="#f5f7f7" stroke="#4c5964" stroke-width="5"><rect x="278" y="517" width="44" height="48" rx="5"/><rect x="878" y="517" width="44" height="48" rx="5"/></g>
+
+          <path d="M300 565 L900 565" class="actual-line"/><path d="M300 565 L735 174" class="sight-line"/><path d="M900 565 L735 174" class="sight-line"/>
+          <path d="M300 607 L900 607 M300 595 L300 619 M900 595 L900 619" stroke="#0f4fa8" stroke-width="4"/><text x="600" y="646" text-anchor="middle" class="svg-measure">800 m</text>
+          <path d="M375 565 A75 75 0 0 0 356 515" class="angle-line"/><text x="387" y="500" class="svg-angle-text">42°</text>
+          <path d="M825 565 A75 75 0 0 1 871 496" class="angle-line"/><text x="814" y="477" class="svg-angle-text">67°</text>
+          <g><circle cx="300" cy="565" r="8" class="svg-point"/><circle cx="900" cy="565" r="8" class="svg-point"/><circle cx="735" cy="174" r="8" class="svg-point"/><text x="264" y="557" class="svg-label">A</text><text x="918" y="595" class="svg-label">B</text><text x="753" y="163" class="svg-label">C</text></g>
+          <text x="52" y="72" class="svg-caption">C là vị trí thật của tàu cứu hộ trên mặt biển</text>
+        </svg></template>
+<template id="scene-16"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="bridge-svg-title bridge-svg-desc">
+          <title id="bridge-svg-title">Nguyên mẫu cáp cầu treo</title>
+          <desc id="bridge-svg-desc">A và C là hai neo cáp, B là điểm thấp nhất, H là hình chiếu của B lên đường ngang nối hai neo.</desc>
+          <defs>
+            <linearGradient id="bridgeSky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#d7efff"/>
+              <stop offset="1" stop-color="#f4fbff"/>
+            </linearGradient>
+            <linearGradient id="bridgeWater" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#55b9de"/>
+              <stop offset="1" stop-color="#2786bd"/>
+            </linearGradient>
+          </defs>
+
+          <rect width="1280" height="720" fill="url(#bridgeSky)"/>
+          <path d="M0 385 L155 250 L285 390 L430 292 L590 410 L790 285 L955 392 L1130 265 L1280 405 L1280 720 L0 720 Z" fill="#acc7b0" opacity=".65"/>
+          <path d="M0 535 C250 510 405 550 650 523 C865 500 1035 548 1280 520 L1280 720 L0 720 Z" fill="url(#bridgeWater)"/>
+          <path d="M0 590 C260 565 470 615 690 582 C900 552 1080 602 1280 575" fill="none" stroke="#bce9f7" stroke-width="7" opacity=".55"/>
+
+          <!-- Bridge deck -->
+          <path d="M110 470 L1170 470" stroke="#465667" stroke-width="32"/>
+          <path d="M110 463 L1170 463" stroke="#e9edf1" stroke-width="7"/>
+          <path d="M130 478 L1150 478" stroke="#f2b938" stroke-width="4" stroke-dasharray="20 18"/>
+
+          <!-- Towers -->
+          <g fill="#657587" stroke="#3b4b5b" stroke-width="5">
+            <path d="M195 470 L215 190 L245 190 L265 470 Z"/>
+            <path d="M1015 470 L1035 190 L1065 190 L1085 470 Z"/>
+            <rect x="184" y="230" width="92" height="20" rx="4"/>
+            <rect x="1004" y="230" width="92" height="20" rx="4"/>
+          </g>
+
+          <!-- Actual cable segments AB and BC -->
+          <path d="M230 190 L640 340 L1050 190" fill="none" stroke="#155fc5" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <g stroke="#7f93a8" stroke-width="4">
+            <path d="M312 220 L312 470"/>
+            <path d="M394 250 L394 470"/>
+            <path d="M476 280 L476 470"/>
+            <path d="M558 310 L558 470"/>
+            <path d="M722 310 L722 470"/>
+            <path d="M804 280 L804 470"/>
+            <path d="M886 250 L886 470"/>
+            <path d="M968 220 L968 470"/>
+          </g>
+
+          <!-- Horizontal reference and hidden sag location -->
+          <path d="M230 190 L1050 190" class="helper-line"/>
+          <path d="M640 190 L640 340" class="helper-line"/>
+
+          <!-- Span dimension: given -->
+          <path d="M230 130 L1050 130 M230 116 L230 145 M1050 116 L1050 145" stroke="#0f4fa8" stroke-width="4"/>
+          <text x="640" y="105" text-anchor="middle" class="svg-measure">240 m</text>
+
+          <!-- Given angle at A -->
+          <path d="M300 190 A70 70 0 0 1 296 214" class="angle-line"/>
+          <text x="315" y="239" class="svg-angle-text">20°</text>
+
+          <!-- Points -->
+          <g>
+            <circle cx="230" cy="190" r="8" class="svg-point"/>
+            <circle cx="640" cy="340" r="8" class="svg-point"/>
+            <circle cx="1050" cy="190" r="8" class="svg-point"/>
+            <circle cx="640" cy="190" r="8" class="svg-point"/>
+            <text x="200" y="178" class="svg-label">A</text>
+            <text x="652" y="372" class="svg-label">B</text>
+            <text x="1068" y="178" class="svg-label">C</text>
+            <text x="650" y="180" class="svg-label">H</text>
+          </g>
+
+          <text x="55" y="665" class="svg-caption">BH xác định vị trí độ võng nhưng không hiển thị giá trị</text>
+        </svg></template>
+<template id="scene-17"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-17 svg-desc-17">
+          <title id="svg-title-17">Thiết kế đường đi tắt</title>
+          <desc id="svg-desc-17">A là nút giao, B và C nằm trên hai đường hiện hữu; AB 180 mét, AC 240 mét, góc A 74 độ.</desc>
+          <defs><linearGradient id="field17" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cce3a3"/><stop offset="1" stop-color="#83ad66"/></linearGradient></defs>
+          <rect width="1280" height="720" fill="url(#field17)"/>
+          <path d="M0 200 C240 170 440 215 650 190 C875 164 1060 210 1280 180 M0 390 C245 360 430 408 660 380 C890 353 1078 397 1280 370" fill="none" stroke="#a7c985" stroke-width="10" opacity=".72"/>
+          <path d="M308 430 L620 610" stroke="#4e5a63" stroke-width="58" stroke-linecap="round"/><path d="M620 610 L736 144" stroke="#4e5a63" stroke-width="58" stroke-linecap="round"/>
+          <path d="M308 430 L620 610 M620 610 L736 144" stroke="#f0cf5b" stroke-width="5" stroke-dasharray="22 17" stroke-linecap="round"/>
+          <g fill="#f2e5cc" stroke="#6c5c4d" stroke-width="5"><path d="M260 418 L308 380 L356 418 L356 459 L260 459 Z"/><path d="M688 136 L736 98 L784 136 L784 177 L688 177 Z"/></g>
+
+          <path d="M620 610 L308 430" class="actual-line"/><path d="M620 610 L736 144" class="actual-line"/><path d="M308 430 L736 144" class="sight-line" stroke="#b52f45" stroke-dasharray="17 13"/>
+          <text x="455" y="501" text-anchor="middle" transform="rotate(30 455 501)" class="svg-measure">180 m</text>
+          <text x="688" y="370" text-anchor="middle" transform="rotate(-76 688 370)" class="svg-measure">240 m</text>
+          <path d="M639 532 A80 80 0 0 0 551 570" class="angle-line"/><text x="568" y="516" class="svg-angle-text">74°</text>
+          <g><circle cx="620" cy="610" r="8" class="svg-point"/><circle cx="308" cy="430" r="8" class="svg-point"/><circle cx="736" cy="144" r="8" class="svg-point"/><text x="631" y="648" class="svg-label">A</text><text x="274" y="460" class="svg-label">B</text><text x="751" y="129" class="svg-label">C</text></g>
+          <text x="52" y="70" class="svg-caption">Đường gạch đỏ BC đi trực tiếp giữa hai điểm cuối</text>
+        </svg></template>
+<template id="scene-18"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-18 svg-desc-18">
+          <title id="svg-title-18">Mảnh đất tam giác</title>
+          <desc id="svg-desc-18">A, B, C là ba cọc địa chính; AB 65 mét, BC 92 mét và CA 78 mét.</desc>
+          <defs><linearGradient id="land18" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#bad98a"/><stop offset="1" stop-color="#679554"/></linearGradient></defs>
+          <rect width="1280" height="720" fill="#d8c89e"/>
+          <path d="M0 120 C250 90 430 135 650 108 C880 80 1060 125 1280 96 M0 335 C250 305 430 348 650 324 C880 298 1060 340 1280 312 M0 560 C250 528 430 574 650 548 C880 520 1065 567 1280 535" fill="none" stroke="#b29f70" stroke-width="12" opacity=".55"/>
+          <path d="M340 590 L730 590 L425 130 Z" fill="url(#land18)" stroke="#416b42" stroke-width="14" stroke-linejoin="round"/>
+          <g fill="none" stroke="#d8e8ad" stroke-width="8" opacity=".62"><path d="M370 528 L676 528"/><path d="M382 466 L635 466"/><path d="M394 404 L594 404"/><path d="M406 342 L553 342"/><path d="M418 280 L512 280"/></g>
+          <g fill="#f3e6cc" stroke="#665847" stroke-width="4"><circle cx="340" cy="590" r="13"/><circle cx="730" cy="590" r="13"/><circle cx="425" cy="130" r="13"/></g>
+
+          <path d="M340 590 L730 590 L425 130 Z" class="actual-line"/>
+          <text x="535" y="634" text-anchor="middle" class="svg-measure">65 m</text>
+          <text x="370" y="360" text-anchor="middle" transform="rotate(-79.5 370 360)" class="svg-measure">78 m</text>
+          <text x="592" y="350" text-anchor="middle" transform="rotate(56.4 592 350)" class="svg-measure">92 m</text>
+          <g><circle cx="340" cy="590" r="8" class="svg-point"/><circle cx="730" cy="590" r="8" class="svg-point"/><circle cx="425" cy="130" r="8" class="svg-point"/><text x="303" y="622" class="svg-label">A</text><text x="747" y="622" class="svg-label">B</text><text x="441" y="119" class="svg-label">C</text></g>
+          <text x="1220" y="670" text-anchor="end" class="svg-caption">Phần tô xanh là toàn bộ mảnh đất cần tính diện tích</text>
+        </svg></template>
+<template id="scene-19"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-19 svg-desc-19">
+          <title id="svg-title-19">Thửa đất tứ giác chia thành hai tam giác</title>
+          <desc id="svg-desc-19">A, B, C, D là bốn cọc địa chính; đường chéo AC dài 76 mét chia thửa đất thành tam giác ABC và ACD.</desc>
+          <defs>
+            <linearGradient id="land19a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b9d88f"/><stop offset="1" stop-color="#75a765"/></linearGradient>
+            <linearGradient id="land19b" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#a5cb7f"/><stop offset="1" stop-color="#5f9157"/></linearGradient>
+          </defs>
+          <rect width="1280" height="720" fill="#d8c89e"/>
+          <path d="M0 115 C245 82 432 132 650 105 C885 76 1060 126 1280 92 M0 342 C242 307 438 354 656 328 C886 300 1068 345 1280 315 M0 585 C238 548 434 596 658 568 C891 539 1070 586 1280 552" fill="none" stroke="#b29f70" stroke-width="12" opacity=".5"/>
+
+          <!-- Hai phần đất thật nằm hai phía của đường đo AC -->
+          <path d="M320 360 L487.2 125.5 L776 360 Z" fill="url(#land19a)"/>
+          <path d="M320 360 L776 360 L622 651.9 Z" fill="url(#land19b)"/>
+          <g fill="none" stroke="#dcebb8" stroke-width="8" opacity=".55">
+            <path d="M365 318 L712 318"/><path d="M399 270 L650 270"/><path d="M435 220 L585 220"/>
+            <path d="M382 414 L748 414"/><path d="M435 470 L719 470"/><path d="M493 528 L688 528"/>
+          </g>
+          <path d="M320 360 L487.2 125.5 L776 360 L622 651.9 Z" fill="none" stroke="#416b42" stroke-width="16" stroke-linejoin="round"/>
+          <g fill="#f3e6cc" stroke="#665847" stroke-width="4"><circle cx="320" cy="360" r="13"/><circle cx="487.2" cy="125.5" r="13"/><circle cx="776" cy="360" r="13"/><circle cx="622" cy="651.9" r="13"/></g>
+
+          <!-- Hình học bám đúng đường ranh và đường đo trong thửa đất -->
+          <path d="M320 360 L487.2 125.5 L776 360 L622 651.9 Z" class="actual-line"/>
+          <path d="M320 360 L776 360" class="sight-line" stroke="#b52f45" stroke-dasharray="17 13"/>
+          <text x="389" y="236" text-anchor="middle" transform="rotate(-54.5 389 236)" class="svg-measure">48 m</text>
+          <text x="647" y="226" text-anchor="middle" transform="rotate(39.1 647 226)" class="svg-measure">62 m</text>
+          <text x="725" y="516" text-anchor="middle" transform="rotate(-62.2 725 516)" class="svg-measure">55 m</text>
+          <text x="458" y="520" text-anchor="middle" transform="rotate(44 458 520)" class="svg-measure">70 m</text>
+          <text x="548" y="341" text-anchor="middle" class="svg-measure">76 m</text>
+          <g><circle cx="320" cy="360" r="8" class="svg-point"/><circle cx="487.2" cy="125.5" r="8" class="svg-point"/><circle cx="776" cy="360" r="8" class="svg-point"/><circle cx="622" cy="651.9" r="8" class="svg-point"/><text x="282" y="375" class="svg-label">A</text><text x="500" y="108" class="svg-label">B</text><text x="793" y="376" class="svg-label">C</text><text x="638" y="682" class="svg-label">D</text></g>
+          <text x="1220" y="78" text-anchor="end" class="svg-caption">AC chia trực tiếp thửa đất thành hai tam giác ABC và ACD</text>
+        </svg></template>
+<template id="scene-20"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-20 svg-desc-20">
+          <title id="svg-title-20">Thanh giằng chéo của cầu</title>
+          <desc id="svg-desc-20">A, B, C là ba nút kết cấu cầu; AB 18 mét, AC 14 mét và góc A 126 độ.</desc>
+          <defs><linearGradient id="water20" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#62bdd9"/><stop offset="1" stop-color="#247fac"/></linearGradient></defs>
+          <rect width="1280" height="720" fill="#dcefff"/><rect y="480" width="1280" height="240" fill="url(#water20)"/>
+          <path d="M0 585 C235 558 430 604 650 578 C881 551 1068 594 1280 567 M0 665 C250 637 441 682 665 656 C892 629 1078 673 1280 645" fill="none" stroke="#bfe8f2" stroke-width="7" opacity=".55"/>
+          <path d="M110 590 L1170 590" stroke="#404f5b" stroke-width="45"/><path d="M110 580 L1170 580" stroke="#e8edf0" stroke-width="7"/>
+          <g fill="none" stroke="#4d5c67" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"><path d="M190 560 L640 560"/><path d="M640 560 L846 277"/><path d="M846 277 L1080 560"/></g>
+          <path d="M190 560 L846 277" stroke="#6c7a84" stroke-width="23" stroke-dasharray="25 16" stroke-linecap="round"/>
+          <g fill="#c2cbd1" stroke="#394a57" stroke-width="6"><circle cx="190" cy="560" r="20"/><circle cx="640" cy="560" r="20"/><circle cx="846" cy="277" r="20"/></g>
+
+          <path d="M640 560 L190 560" class="actual-line"/><path d="M640 560 L846 277" class="actual-line"/><path d="M190 560 L846 277" class="sight-line" stroke-dasharray="16 12"/>
+          <text x="415" y="607" text-anchor="middle" class="svg-measure">18 m</text>
+          <text x="760" y="410" text-anchor="middle" transform="rotate(-54 760 410)" class="svg-measure">14 m</text>
+          <path d="M560 560 A80 80 0 0 1 687 495" class="angle-line"/><text x="572" y="475" class="svg-angle-text">126°</text>
+          <g><circle cx="640" cy="560" r="8" class="svg-point"/><circle cx="190" cy="560" r="8" class="svg-point"/><circle cx="846" cy="277" r="8" class="svg-point"/><text x="651" y="599" class="svg-label">A</text><text x="154" y="551" class="svg-label">B</text><text x="862" y="264" class="svg-label">C</text></g>
+          <text x="52" y="72" class="svg-caption">BC là thanh giằng nét đứt trong đúng khoang cầu</text>
+        </svg></template>
+<template id="scene-21"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-21 svg-desc-21">
+          <title id="svg-title-21">Tuyến cáp treo lên núi</title>
+          <desc id="svg-desc-21">A là ga dưới ở chân núi, B là mốc khảo sát, C là ga trên đúng đỉnh núi; AB 300 mét, góc A 68 độ và góc B 46 độ.</desc>
+          <defs><linearGradient id="mount21" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9aae78"/><stop offset="1" stop-color="#506b4a"/></linearGradient></defs>
+          <rect width="1280" height="720" fill="#dcefff"/>
+          <path d="M0 500 C150 420 255 425 340 350 C379 315 404 219 427 152 C474 202 535 250 610 286 C700 329 766 357 848 385 C955 422 1068 424 1280 364 L1280 720 L0 720 Z" fill="url(#mount21)"/>
+          <path d="M0 500 C150 420 255 425 340 350 C379 315 404 219 427 152 C394 286 362 430 315 612 L0 720 Z" fill="#a7bb82" opacity=".5"/>
+          <path d="M0 590 C235 560 430 604 650 577 C880 549 1070 595 1280 565" fill="none" stroke="#638455" stroke-width="10"/>
+          <g fill="#e4e8ea" stroke="#4d5963" stroke-width="6"><path d="M212 590 L250 548 L288 590 Z"/><path d="M389 178 L427 136 L465 178 Z"/></g>
+          <path d="M250 590 L427 152" stroke="#384c5b" stroke-width="13"/>
+          <g transform="translate(345 355) rotate(-68)"><rect x="-28" y="-19" width="56" height="38" rx="10" fill="#e66d42" stroke="#70402d" stroke-width="5"/><path d="M0 -19 L0 -42" stroke="#455864" stroke-width="5"/></g>
+
+          <path d="M250 590 L850 590" class="actual-line"/><path d="M250 590 L427 152" class="actual-line"/><path d="M850 590 L427 152" class="sight-line"/>
+          <path d="M250 630 L850 630 M250 618 L250 642 M850 618 L850 642" stroke="#0f4fa8" stroke-width="4"/><text x="550" y="669" text-anchor="middle" class="svg-measure">300 m</text>
+          <path d="M325 590 A75 75 0 0 0 278 520" class="angle-line"/><text x="312" y="505" class="svg-angle-text">68°</text>
+          <path d="M775 590 A75 75 0 0 1 798 536" class="angle-line"/><text x="758" y="519" class="svg-angle-text">46°</text>
+          <g><circle cx="250" cy="590" r="8" class="svg-point"/><circle cx="850" cy="590" r="8" class="svg-point"/><circle cx="427" cy="152" r="8" class="svg-point"/><text x="214" y="622" class="svg-label">A</text><text x="868" y="620" class="svg-label">B</text><text x="445" y="140" class="svg-label">C</text></g>
+          <text x="768" y="78" class="svg-caption">AC bám đúng dây cáp nối hai ga</text>
+        </svg></template>
+<template id="scene-22"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-22 svg-desc-22">
+          <title id="svg-title-22">Quan sát cột ăng-ten trên mái tòa nhà</title>
+          <desc id="svg-desc-22">A là điểm quan sát cao 7 mét; C là chân và B là đỉnh cột ăng-ten cao 5 mét; góc nâng đến B, C lần lượt là 50 và 40 độ.</desc>
+          <defs><linearGradient id="sky22" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d7efff"/><stop offset="1" stop-color="#fbfdff"/></linearGradient><linearGradient id="wall22" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8ea8ba"/><stop offset="1" stop-color="#50697c"/></linearGradient></defs>
+          <rect width="1280" height="720" fill="url(#sky22)"/>
+          <path d="M0 660 L1280 660 L1280 720 L0 720 Z" fill="#9fbe7a"/><path d="M0 660 L1280 660" stroke="#617b58" stroke-width="8"/>
+
+          <!-- Tòa nhà cao tầng mái bằng và cột ăng-ten -->
+          <rect x="310" y="174.1" width="330" height="485.9" rx="4" fill="url(#wall22)" stroke="#354f62" stroke-width="8"/>
+          <path d="M300 174.1 L650 174.1" stroke="#2f4657" stroke-width="18"/>
+          <g fill="#dff2f8" stroke="#344f61" stroke-width="5">
+            <rect x="340" y="202" width="66" height="50"/><rect x="442" y="202" width="66" height="50"/><rect x="544" y="202" width="66" height="50"/>
+            <rect x="340" y="280" width="66" height="50"/><rect x="442" y="280" width="66" height="50"/><rect x="544" y="280" width="66" height="50"/>
+            <rect x="340" y="358" width="66" height="50"/><rect x="442" y="358" width="66" height="50"/><rect x="544" y="358" width="66" height="50"/>
+            <rect x="340" y="436" width="66" height="50"/><rect x="442" y="436" width="66" height="50"/><rect x="544" y="436" width="66" height="50"/>
+            <rect x="340" y="514" width="66" height="50"/><rect x="442" y="514" width="66" height="50"/><rect x="544" y="514" width="66" height="50"/>
+            <rect x="340" y="592" width="66" height="50"/><rect x="442" y="592" width="66" height="50"/><rect x="544" y="592" width="66" height="50"/>
+          </g>
+          <path d="M615.4 174.1 L615.4 45.5" stroke="#4b5966" stroke-width="14" stroke-linecap="round"/>
+          <g fill="none" stroke="#4b5966" stroke-width="6"><path d="M615.4 61 L570 27 M615.4 61 L661 27"/><path d="M584 37 L647 37"/></g>
+
+          <!-- Sàn quan sát cao 7 m tại A -->
+          <g stroke="#526574" fill="none"><path d="M950 538 L920 660 M1010 538 L1040 660" stroke-width="12"/><path d="M937 582 L1023 582 M928 620 L1032 620" stroke-width="8"/></g>
+          <rect x="935" y="520" width="90" height="18" rx="4" fill="#687a88"/>
+          <g><circle cx="980" cy="480" r="20" fill="#efbd99"/><path d="M980 500 L980 520 M980 505 L955 520 M980 505 L1002 489" fill="none" stroke="#354a5d" stroke-width="9" stroke-linecap="round"/></g>
+
+          <!-- Hai tia nhìn và cạnh ăng-ten nằm trực tiếp trên vật thể -->
+          <path d="M980 480 L615.4 45.5" class="sight-line" stroke-dasharray="17 12"/>
+          <path d="M980 480 L615.4 174.1" class="sight-line" stroke-dasharray="11 10"/>
+          <path d="M615.4 45.5 L615.4 174.1" class="actual-line"/>
+          <path d="M560 480 L1030 480" class="helper-line" stroke-dasharray="12 10"/>
+          <text x="660" y="116" class="svg-measure">5 m</text>
+
+          <!-- Góc nâng được đo tại A so với phương ngang -->
+          <path d="M910 480 A70 70 0 0 1 926.4 435" class="angle-line"/><text x="872" y="444" class="svg-angle-text">40°</text>
+          <path d="M865 480 A115 115 0 0 1 906.1 391.9" class="angle-line"/><text x="838" y="388" class="svg-angle-text">50°</text>
+
+          <!-- Chiều cao điểm quan sát là dữ kiện gốc -->
+          <path d="M1058 480 L1058 660 M1046 480 L1070 480 M1046 660 L1070 660" stroke="#0f4fa8" stroke-width="4"/>
+          <text x="1094" y="582" class="svg-measure">7 m</text>
+          <g><circle cx="980" cy="480" r="8" class="svg-point"/><circle cx="615.4" cy="45.5" r="8" class="svg-point"/><circle cx="615.4" cy="174.1" r="8" class="svg-point"/><text x="995" y="511" class="svg-label">A</text><text x="631" y="38" class="svg-label">B</text><text x="631" y="201" class="svg-label">C</text></g>
+          <text x="1220" y="700" text-anchor="end" class="svg-caption">Chiều cao tòa nhà là đoạn thẳng đứng từ mặt đất đến mái bằng tại C</text>
+        </svg></template>
+<template id="scene-23"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-23 svg-desc-23">
+          <title id="svg-title-23">Đo đường kính miệng hố</title>
+          <desc id="svg-desc-23">B, A, C nằm gần nhau trên cùng một cung ngắn của vành hố; AB 10 mét, AC 13 mét và góc tù A bằng 132 độ.</desc>
+          <defs><radialGradient id="pit23"><stop offset="0" stop-color="#1f2930"/><stop offset=".72" stop-color="#37454a"/><stop offset="1" stop-color="#11191d"/></radialGradient></defs>
+          <rect width="1280" height="720" fill="#b7a982"/>
+          <circle cx="500" cy="330" r="270" fill="#8d8068" stroke="#6e6253" stroke-width="18"/><circle cx="500" cy="330" r="250" fill="url(#pit23)"/>
+          <g fill="#a99b80"><circle cx="286" cy="150" r="22"/><circle cx="714" cy="174" r="26"/><circle cx="224" cy="358" r="24"/><circle cx="792" cy="405" r="21"/></g>
+
+          <!-- Cung ngắn có thể tiếp cận: ba mốc B–A–C nằm gần nhau -->
+          <path d="M334.8 517.7 A250 250 0 0 0 703.9 474.6" fill="none" stroke="#d9b45f" stroke-width="12" stroke-linecap="round" opacity=".9"/>
+          <path d="M500 580 L334.8 517.7 L703.9 474.6 Z" class="actual-line"/>
+          <text x="410" y="558" text-anchor="middle" transform="rotate(20.7 410 558)" class="svg-measure">10 m</text>
+          <text x="608" y="535" text-anchor="middle" transform="rotate(-27.3 608 535)" class="svg-measure">13 m</text>
+          <path d="M429.9 553.5 A75 75 0 0 1 566.6 545.6" class="angle-line"/><text x="500" y="492" text-anchor="middle" class="svg-angle-text">132°</text>
+          <g><circle cx="500" cy="580" r="8" class="svg-point"/><circle cx="334.8" cy="517.7" r="8" class="svg-point"/><circle cx="703.9" cy="474.6" r="8" class="svg-point"/><text x="486" y="621" class="svg-label">A</text><text x="300" y="538" class="svg-label">B</text><text x="721" y="488" class="svg-label">C</text></g>
+          <text x="1220" y="650" text-anchor="end" class="svg-caption">Chỉ khảo sát trên cung ngắn B–A–C; không phải đi vòng quanh miệng hố</text>
+        </svg></template>
+<template id="scene-24"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-24 svg-desc-24">
+          <title id="svg-title-24">So sánh khoảng cách từ hai bồn nước đến điểm cháy</title>
+          <desc id="svg-desc-24">T là tháp canh, A và B là hai bồn nước, F là điểm cháy; TA 1800 mét, TB 900 mét và ba góc đã cho là 34, 35, 125 độ.</desc>
+          <defs><linearGradient id="forest24" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dff1cf"/><stop offset="1" stop-color="#7ca56b"/></linearGradient><radialGradient id="fire24"><stop offset="0" stop-color="#ffe56b"/><stop offset=".55" stop-color="#f58a2d"/><stop offset="1" stop-color="#c83d25"/></radialGradient></defs>
+          <rect width="1280" height="720" fill="url(#forest24)"/>
+          <path d="M0 565 C220 515 392 562 610 527 C835 491 1045 545 1280 500 L1280 720 L0 720 Z" fill="#60895a" opacity=".62"/>
+          <g fill="#47784c" opacity=".8"><circle cx="80" cy="170" r="48"/><circle cx="112" cy="195" r="54"/><circle cx="1080" cy="160" r="58"/><circle cx="1150" cy="194" r="72"/><circle cx="990" cy="210" r="48"/></g>
+
+          <!-- Tháp canh tại T -->
+          <g stroke="#4b5d67" fill="none"><path d="M210 380 L158 682 M210 380 L262 682" stroke-width="13"/><path d="M172 570 L248 570 M163 620 L257 620 M155 670 L265 670" stroke-width="8"/></g>
+          <path d="M150 377 L210 330 L270 377 Z" fill="#a54738" stroke="#6b3431" stroke-width="6"/><rect x="166" y="377" width="88" height="55" fill="#b9e3e6" stroke="#47616a" stroke-width="6"/>
+
+          <!-- Bồn nước A và B -->
+          <g transform="translate(658 78)"><ellipse cx="0" cy="22" rx="50" ry="25" fill="#a9bac2" stroke="#546570" stroke-width="6"/><path d="M-50 22 Q-42 86 0 98 Q42 86 50 22" fill="#bcc9ce" stroke="#546570" stroke-width="6"/><path d="M-30 96 L-48 250 M30 96 L48 250 M-45 190 L45 190" fill="none" stroke="#596a73" stroke-width="8"/></g>
+          <g transform="translate(431 535)"><ellipse cx="0" cy="18" rx="48" ry="23" fill="#a9bac2" stroke="#546570" stroke-width="6"/><path d="M-48 18 Q-40 72 0 84 Q40 72 48 18" fill="#bcc9ce" stroke="#546570" stroke-width="6"/><path d="M-27 82 L-38 178 M27 82 L38 178" fill="none" stroke="#596a73" stroke-width="8"/></g>
+
+          <!-- Điểm cháy F -->
+          <g transform="translate(857 380)"><path d="M-82 52 C-105 5 -60 -20 -68 -63 C-34 -47 -35 -18 -19 -7 C-15 -58 14 -83 30 -112 C44 -64 73 -46 62 -10 C92 -26 118 12 83 52 Z" fill="url(#fire24)"/><path d="M-25 52 C-45 17 -16 0 -9 -34 C8 -15 20 0 18 21 C36 7 50 29 40 52 Z" fill="#ffe276"/></g>
+
+          <!-- Các đoạn hình học trùng với khoảng cách thật -->
+          <path d="M210 380 L657.7 78.1" class="actual-line"/><path d="M210 380 L431.2 534.9" class="actual-line"/><path d="M210 380 L856.7 380" class="actual-line" opacity=".72"/>
+          <path d="M657.7 78.1 L856.7 380" fill="none" stroke="#b52f45" stroke-width="5" stroke-dasharray="17 12"/>
+          <path d="M431.2 534.9 L856.7 380" fill="none" stroke="#b52f45" stroke-width="5" stroke-dasharray="17 12"/>
+          <text x="414" y="205" text-anchor="middle" transform="rotate(-34 414 205)" class="svg-measure">1800 m</text>
+          <text x="308" y="474" text-anchor="middle" transform="rotate(35 308 474)" class="svg-measure">900 m</text>
+
+          <path d="M290 380 A80 80 0 0 0 276.3 335.3" class="angle-line"/><text x="290" y="319" class="svg-angle-text">34°</text>
+          <path d="M290 380 A80 80 0 0 1 275.5 425.9" class="angle-line"/><text x="289" y="454" class="svg-angle-text">35°</text>
+          <path d="M373.9 494.7 A70 70 0 0 1 497 510.9" class="angle-line"/><text x="447" y="470" class="svg-angle-text">125°</text>
+          <g><circle cx="210" cy="380" r="8" class="svg-point"/><circle cx="657.7" cy="78.1" r="8" class="svg-point"/><circle cx="431.2" cy="534.9" r="8" class="svg-point"/><circle cx="856.7" cy="380" r="8" class="svg-point"/><text x="178" y="367" class="svg-label">T</text><text x="675" y="69" class="svg-label">A</text><text x="390" y="563" class="svg-label">B</text><text x="878" y="369" class="svg-label">F</text></g>
+          <text x="1220" y="675" text-anchor="end" class="svg-caption">Hai đoạn đỏ AF và BF là quãng đường đưa nước cần so sánh</text>
+        </svg></template>
+<template id="scene-25"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-25 svg-desc-25">
+          <title id="svg-title-25">Khảo sát đường hầm xuyên núi từ một trạm đo</title>
+          <desc id="svg-desc-25">A và B là hai cửa hầm, C là trạm khảo sát; CA 388 mét, CB 212 mét và góc ACB 82,4 độ.</desc>
+          <defs>
+            <linearGradient id="sky25" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dcefff"/><stop offset="1" stop-color="#fff7df"/></linearGradient>
+            <linearGradient id="mount25" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#aab47e"/><stop offset=".45" stop-color="#7b8b61"/><stop offset="1" stop-color="#465a44"/></linearGradient>
+            <linearGradient id="rock25" x1="0" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#b2a17b"/><stop offset=".55" stop-color="#81785d"/><stop offset="1" stop-color="#586348"/></linearGradient>
+            <clipPath id="mountClip25"><path d="M300 430 C340 394 360 354 402 326 C438 301 449 249 483 206 C516 164 535 120 575 102 C610 86 638 116 662 154 C691 200 704 234 736 274 C765 310 781 365 800 430 Z"/></clipPath>
+          </defs>
+          <rect width="1280" height="720" fill="url(#sky25)"/>
+          <path d="M0 430 C210 412 390 448 620 423 C850 398 1060 443 1280 414 L1280 720 L0 720 Z" fill="#d3b370"/>
+
+          <!-- Khối núi hữu cơ có sườn sáng, vách đá, khe xói và chân núi rõ ràng -->
+          <g clip-path="url(#mountClip25)">
+            <rect x="286" y="82" width="535" height="370" fill="url(#mount25)"/>
+            <path d="M286 440 C342 390 371 347 402 326 C438 301 449 249 483 206 C516 164 535 120 575 102 C549 224 503 340 430 440 Z" fill="#b5bd88" opacity=".78"/>
+            <path d="M575 102 C610 86 638 116 662 154 C633 226 621 296 632 354 C637 387 655 416 681 440 L430 440 C498 320 536 201 575 102 Z" fill="url(#rock25)" opacity=".94"/>
+            <path d="M662 154 C691 200 704 234 736 274 C765 310 781 365 814 438 L681 440 C668 357 673 272 662 154 Z" fill="#4c6449"/>
+            <path d="M334 424 C390 382 448 381 500 414 C545 377 603 376 650 411 C703 385 754 402 806 436 L806 456 L320 456 Z" fill="#526f4b" opacity=".92"/>
+            <path d="M545 138 C556 118 567 106 575 102 C592 94 610 107 625 127 C609 122 596 129 584 145 C572 133 560 134 545 138 Z" fill="#e8e8dc" opacity=".92"/>
+            <g fill="none" stroke-linecap="round">
+              <path d="M483 206 C465 264 469 317 443 369 C432 392 423 416 421 438" stroke="#6e805b" stroke-width="8" opacity=".46"/>
+              <path d="M575 102 C596 185 583 252 595 319 C603 359 619 396 650 425" stroke="#5c664f" stroke-width="9" opacity=".48"/>
+              <path d="M663 168 C676 222 693 263 718 300 C741 334 751 377 759 418" stroke="#3f5743" stroke-width="8" opacity=".55"/>
+              <path d="M370 376 C410 355 442 358 473 380" stroke="#94a470" stroke-width="10" opacity=".5"/>
+            </g>
+            <g fill="#35583d" opacity=".8"><path d="M347 410 C367 379 389 378 411 407 C389 400 368 404 347 410 Z"/><path d="M695 375 C716 343 740 345 762 378 C738 369 716 371 695 375 Z"/><path d="M470 421 C493 389 518 392 540 424 C515 415 492 416 470 421 Z"/></g>
+          </g>
+
+          <!-- Hai cửa hầm nằm đúng tại hai rìa trái, phải của chân núi -->
+          <g fill="#2f393d" stroke="#deb78f" stroke-width="8"><path d="M264 463 L264 430 Q300 387 336 430 L336 463 Z"/><path d="M764 463 L764 430 Q800 387 836 430 L836 463 Z"/></g>
+
+          <!-- AB là tuyến hầm; CA và CB là hai đường khảo sát -->
+          <path d="M300 430 L800 430" fill="none" stroke="#b52f45" stroke-width="6" stroke-dasharray="18 13"/>
+          <path d="M702.1 664.7 L300 430" class="actual-line"/><path d="M702.1 664.7 L800 430" class="actual-line"/>
+          <text x="501" y="532" text-anchor="middle" transform="rotate(30.3 501 532)" class="svg-measure">388 m</text>
+          <text x="762" y="544" text-anchor="middle" transform="rotate(-67.4 762 544)" class="svg-measure">212 m</text>
+          <path d="M637.3 626.9 A75 75 0 0 1 731 595.5" class="angle-line"/><text x="682" y="574" class="svg-angle-text">82,4°</text>
+
+          <!-- Máy toàn đạc tại C ở phía trước ngọn núi -->
+          <g transform="translate(702.1 664.7)"><path d="M0 0 L-34 45 M0 0 L34 45 M0 0 L0 45" stroke="#455967" stroke-width="8" stroke-linecap="round"/><rect x="-32" y="-24" width="64" height="29" rx="6" fill="#e89c2c" stroke="#805418" stroke-width="5"/></g>
+          <g><circle cx="300" cy="430" r="8" class="svg-point"/><circle cx="800" cy="430" r="8" class="svg-point"/><circle cx="702.1" cy="664.7" r="8" class="svg-point"/><text x="264" y="418" class="svg-label">A</text><text x="816" y="418" class="svg-label">B</text><text x="716" y="696" class="svg-label">C</text></g>
+          <text x="1220" y="72" text-anchor="end" class="svg-caption">AB nối đúng hai cửa hầm ở hai rìa chân núi và không ghi chiều dài</text>
+        </svg></template>
+<template id="scene-26"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-26 svg-desc-26">
+          <title id="svg-title-26">Đo chiều cao núi từ hai điểm quan sát</title>
+          <desc id="svg-desc-26">C, D, B thẳng hàng; CD 1 kilômét; góc nâng đến đỉnh A tại C là 32 độ, tại D là 40 độ và AB vuông góc mặt đất.</desc>
+          <defs><linearGradient id="sky26" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#dcedff"/><stop offset="1" stop-color="#fbfdff"/></linearGradient><linearGradient id="mount26" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b9855f"/><stop offset=".55" stop-color="#8b6046"/><stop offset="1" stop-color="#5b6d4b"/></linearGradient></defs>
+          <rect width="1280" height="720" fill="url(#sky26)"/><path d="M0 590 L1280 590 L1280 720 L0 720 Z" fill="#9dbd78"/>
+          <path d="M600 590 C680 520 735 450 788 365 C842 277 896 219 950 198 C1010 246 1045 340 1090 424 C1128 494 1170 548 1240 590 Z" fill="url(#mount26)"/>
+          <path d="M950 198 C931 302 895 412 824 502 C776 562 726 580 665 590 L600 590 C680 520 735 450 788 365 C842 277 896 219 950 198 Z" fill="#c99a6d" opacity=".55"/>
+          <path d="M919 230 C932 210 942 201 950 198 C966 211 978 229 990 251 C974 245 961 247 949 259 C941 245 930 237 919 230 Z" fill="#ece6d6"/>
+
+          <!-- Các tia ngắm và đường cao bám đúng địa hình -->
+          <path d="M323 590 L950 198" class="sight-line"/><path d="M483 590 L950 198" class="sight-line"/>
+          <path d="M950 198 L950 590" class="actual-line" opacity=".78"/>
+          <path d="M323 590 L950 590" class="helper-line" stroke-dasharray="none"/>
+          <path d="M398 590 A75 75 0 0 0 386.6 550.2" class="angle-line"/><text x="396" y="533" class="svg-angle-text">32°</text>
+          <path d="M558 590 A75 75 0 0 0 540.5 541.8" class="angle-line"/><text x="552" y="522" class="svg-angle-text">40°</text>
+          <path d="M323 636 L483 636 M323 624 L323 648 M483 624 L483 648" stroke="#0f4fa8" stroke-width="4"/><text x="403" y="678" text-anchor="middle" class="svg-measure">1 km</text>
+          <path d="M926 590 L926 566 L950 566" class="helper-line" stroke-dasharray="none"/>
+
+          <!-- Hai trạm quan sát -->
+          <g transform="translate(323 590)"><path d="M0 0 L-25 44 M0 0 L25 44" stroke="#536675" stroke-width="7"/><rect x="-24" y="-16" width="48" height="20" rx="5" fill="#e99b2d" stroke="#865718" stroke-width="4"/></g>
+          <g transform="translate(483 590)"><path d="M0 0 L-25 44 M0 0 L25 44" stroke="#536675" stroke-width="7"/><rect x="-24" y="-16" width="48" height="20" rx="5" fill="#e99b2d" stroke="#865718" stroke-width="4"/></g>
+          <g><circle cx="950" cy="198" r="8" class="svg-point"/><circle cx="950" cy="590" r="8" class="svg-point"/><circle cx="323" cy="590" r="8" class="svg-point"/><circle cx="483" cy="590" r="8" class="svg-point"/><text x="965" y="185" class="svg-label">A</text><text x="967" y="622" class="svg-label">B</text><text x="286" y="622" class="svg-label">C</text><text x="493" y="622" class="svg-label">D</text></g>
+          <text x="1220" y="72" text-anchor="end" class="svg-caption">AB là chiều cao thẳng đứng của ngọn núi, không hiển thị giá trị</text>
+        </svg></template>
+<template id="scene-27"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-27 svg-desc-27">
+          <title id="svg-title-27">Đo chiều cao hải đăng từ hai tàu</title>
+          <desc id="svg-desc-27">P, Q, B thẳng hàng; PQ 300 mét; góc nâng đến A tại P là 35 độ, tại Q là 48 độ và AB vuông góc mặt biển.</desc>
+          <defs><linearGradient id="sky27" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfeaff"/><stop offset="1" stop-color="#fbfdff"/></linearGradient><linearGradient id="sea27" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#64c4df"/><stop offset="1" stop-color="#197da9"/></linearGradient></defs>
+          <rect width="1280" height="720" fill="url(#sky27)"/><rect y="520" width="1280" height="200" fill="url(#sea27)"/>
+          <path d="M0 620 C230 596 430 635 650 610 C885 582 1072 628 1280 600" fill="none" stroke="#c7edf5" stroke-width="7" opacity=".58"/>
+          <path d="M930 560 C995 530 1050 529 1120 560 L1280 560 L1280 720 L930 720 Z" fill="#9f9878"/>
+
+          <!-- Hải đăng đặt tại B -->
+          <path d="M960 560 L1000 219 L1040 560 Z" fill="#f3f1e8" stroke="#3e4c58" stroke-width="8"/>
+          <path d="M977 418 L1023 418 M968 492 L1032 492" stroke="#cf4f42" stroke-width="28"/>
+          <rect x="965" y="190" width="70" height="38" rx="5" fill="#e8edf0" stroke="#3e4c58" stroke-width="6"/><path d="M954 190 L1046 190 L1000 154 Z" fill="#b64c42" stroke="#673a37" stroke-width="6"/><circle cx="1000" cy="205" r="13" fill="#ffe175"/>
+
+          <!-- Hai tàu tại P và Q -->
+          <g transform="translate(513 560)"><path d="M-55 -10 L55 -10 L38 20 L-38 20 Z" fill="#f1f4f5" stroke="#384e5d" stroke-width="5"/><rect x="-16" y="-34" width="38" height="24" rx="4" fill="#e47743"/></g>
+          <g transform="translate(693 560)"><path d="M-52 -10 L52 -10 L35 19 L-36 19 Z" fill="#f1f4f5" stroke="#384e5d" stroke-width="5"/><rect x="-15" y="-33" width="36" height="23" rx="4" fill="#e89a3b"/></g>
+
+          <!-- Tia nhìn và chiều cao nằm trực tiếp trên bối cảnh -->
+          <path d="M513 560 L1000 219" class="sight-line"/><path d="M693 560 L1000 219" class="sight-line"/>
+          <path d="M1000 219 L1000 560" class="actual-line" opacity=".78"/><path d="M513 560 L1000 560" class="helper-line" stroke-dasharray="none"/>
+          <path d="M588 560 A75 75 0 0 0 574.4 517" class="angle-line"/><text x="590" y="500" class="svg-angle-text">35°</text>
+          <path d="M768 560 A75 75 0 0 0 743.2 504.3" class="angle-line"/><text x="762" y="486" class="svg-angle-text">48°</text>
+          <path d="M513 622 L693 622 M513 610 L513 634 M693 610 L693 634" stroke="#0f4fa8" stroke-width="4"/><text x="603" y="664" text-anchor="middle" class="svg-measure">300 m</text>
+          <path d="M976 560 L976 536 L1000 536" class="helper-line" stroke-dasharray="none"/>
+          <g><circle cx="513" cy="560" r="8" class="svg-point"/><circle cx="693" cy="560" r="8" class="svg-point"/><circle cx="1000" cy="560" r="8" class="svg-point"/><circle cx="1000" cy="219" r="8" class="svg-point"/><text x="478" y="600" class="svg-label">P</text><text x="705" y="600" class="svg-label">Q</text><text x="1018" y="590" class="svg-label">B</text><text x="1018" y="205" class="svg-label">A</text></g>
+          <text x="1220" y="72" text-anchor="end" class="svg-caption">AB là chiều cao tháp hải đăng; chỉ hiện vị trí, không ghi giá trị</text>
+        </svg></template>
+<template id="scene-28"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-28 svg-desc-28">
+          <title id="svg-title-28">Đài phun nước trong quảng trường</title>
+          <desc id="svg-desc-28">Quảng trường tam giác có ba cạnh 70, 95 và 80 mét; đài phun nước tròn tiếp xúc cả ba cạnh.</desc>
+          <rect width="1280" height="720" fill="#aab891"/>
+          <path d="M330 590 L680 590 L411.25 198.4 Z" fill="#d8cfbb" stroke="#786f64" stroke-width="16" stroke-linejoin="round"/>
+          <path d="M365 552 L640 552 M375 500 L604 500 M386 448 L568 448 M397 396 L533 396 M407 344 L497 344" stroke="#ece7dc" stroke-width="7" opacity=".75"/>
+          <circle cx="467.5" cy="478.1" r="111.9" fill="#4eb3cf" stroke="#e6f3f5" stroke-width="12"/><circle cx="467.5" cy="478.1" r="62" fill="#247fa7" opacity=".65"/>
+          <path d="M467.5 448 C444 417 452 392 467.5 357 C483 392 491 417 467.5 448 Z" fill="#d8f4fa" opacity=".9"/>
+          <path d="M330 590 L680 590 L411.25 198.4 Z" class="actual-line"/>
+          <text x="505" y="634" text-anchor="middle" class="svg-measure">70 m</text><text x="374" y="393" text-anchor="middle" transform="rotate(-78.3 374 393)" class="svg-measure">80 m</text><text x="558" y="385" text-anchor="middle" transform="rotate(55.5 558 385)" class="svg-measure">95 m</text>
+          <g><circle cx="330" cy="590" r="8" class="svg-point"/><circle cx="680" cy="590" r="8" class="svg-point"/><circle cx="411.25" cy="198.4" r="8" class="svg-point"/><text x="294" y="622" class="svg-label">A</text><text x="697" y="622" class="svg-label">B</text><text x="428" y="187" class="svg-label">C</text></g>
+          <text x="1220" y="650" text-anchor="end" class="svg-caption">Đài phun nước nằm gọn và tiếp xúc ba mép quảng trường</text>
+        </svg></template>
+<template id="scene-29"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="svg-title-29 svg-desc-29">
+          <title id="svg-title-29">Tính quãng đường tàu còn cách chân hải đăng</title>
+          <desc id="svg-desc-29">Tàu đi từ P đến Q được 300 mét về phía chân hải đăng B; góc nâng đến đỉnh A tại P là 35 độ và tại Q là 48 độ. Đoạn QB là đại lượng cần tìm nên không ghi giá trị.</desc>
+          <defs><linearGradient id="sky29" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfeaff"/><stop offset="1" stop-color="#fbfdff"/></linearGradient><linearGradient id="sea29" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#64c4df"/><stop offset="1" stop-color="#197da9"/></linearGradient></defs>
+          <rect width="1280" height="720" fill="url(#sky29)"/><rect y="520" width="1280" height="200" fill="url(#sea29)"/>
+          <path d="M0 620 C230 596 430 635 650 610 C885 582 1072 628 1280 600" fill="none" stroke="#c7edf5" stroke-width="7" opacity=".58"/>
+          <path d="M930 560 C995 530 1050 529 1120 560 L1280 560 L1280 720 L930 720 Z" fill="#9f9878"/>
+
+          <!-- Hải đăng đặt tại B -->
+          <path d="M960 560 L1000 219 L1040 560 Z" fill="#f3f1e8" stroke="#3e4c58" stroke-width="8"/>
+          <path d="M977 418 L1023 418 M968 492 L1032 492" stroke="#cf4f42" stroke-width="28"/>
+          <rect x="965" y="190" width="70" height="38" rx="5" fill="#e8edf0" stroke="#3e4c58" stroke-width="6"/><path d="M954 190 L1046 190 L1000 154 Z" fill="#b64c42" stroke="#673a37" stroke-width="6"/><circle cx="1000" cy="205" r="13" fill="#ffe175"/>
+
+          <!-- Hai vị trí liên tiếp của cùng một tàu -->
+          <g transform="translate(513 560)"><path d="M-55 -10 L55 -10 L38 20 L-38 20 Z" fill="#f1f4f5" stroke="#384e5d" stroke-width="5"/><rect x="-16" y="-34" width="38" height="24" rx="4" fill="#e47743"/></g>
+          <g transform="translate(693 560)"><path d="M-52 -10 L52 -10 L35 19 L-36 19 Z" fill="#f1f4f5" stroke="#384e5d" stroke-width="5"/><rect x="-15" y="-33" width="36" height="23" rx="4" fill="#e89a3b"/></g>
+
+          <!-- Tia nhìn và đoạn đường cần tìm nằm trực tiếp trên mặt biển -->
+          <path d="M513 560 L1000 219" class="sight-line"/><path d="M693 560 L1000 219" class="sight-line"/>
+          <path d="M1000 219 L1000 560" class="actual-line" opacity=".78"/><path d="M513 560 L1000 560" class="helper-line" stroke-dasharray="none"/>
+          <path d="M693 560 L1000 560" fill="none" stroke="#b52f45" stroke-width="8" stroke-dasharray="18 13"/>
+          <path d="M588 560 A75 75 0 0 0 574.4 517" class="angle-line"/><text x="590" y="500" class="svg-angle-text">35°</text>
+          <path d="M768 560 A75 75 0 0 0 743.2 504.3" class="angle-line"/><text x="762" y="486" class="svg-angle-text">48°</text>
+          <path d="M513 622 L693 622 M513 610 L513 634 M693 610 L693 634" stroke="#0f4fa8" stroke-width="4"/><text x="603" y="664" text-anchor="middle" class="svg-measure">300 m</text>
+          <path d="M976 560 L976 536 L1000 536" class="helper-line" stroke-dasharray="none"/>
+          <g><circle cx="513" cy="560" r="8" class="svg-point"/><circle cx="693" cy="560" r="8" class="svg-point"/><circle cx="1000" cy="560" r="8" class="svg-point"/><circle cx="1000" cy="219" r="8" class="svg-point"/><text x="478" y="600" class="svg-label">P</text><text x="705" y="600" class="svg-label">Q</text><text x="1018" y="590" class="svg-label">B</text><text x="1018" y="205" class="svg-label">A</text></g>
+          <text x="1220" y="72" text-anchor="end" class="svg-caption">Đoạn đỏ QB là quãng đường tàu còn phải đi; không ghi giá trị</text>
+        </svg></template>
+<template id="scene-30"><svg viewBox="0 0 1280 720" role="img" aria-labelledby="tunnel-svg-title tunnel-svg-desc">
+          <title id="tunnel-svg-title">Nguyên mẫu đường hầm xuyên núi</title>
+          <desc id="tunnel-svg-desc">D và A là hai cửa hầm ở hai mép chân núi phía xa. C và B nằm ở phần chân núi gần người xem, tạo tuyến đường vòng D C B A có chiều sâu phối cảnh.</desc>
+          <defs>
+            <linearGradient id="tunnelSky" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#dceeff"/>
+              <stop offset="1" stop-color="#fbfdff"/>
+            </linearGradient>
+            <linearGradient id="groundDepth" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#dceac4"/>
+              <stop offset="1" stop-color="#91b76f"/>
+            </linearGradient>
+            <linearGradient id="mountainFront" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#7e9467"/>
+              <stop offset=".52" stop-color="#627a54"/>
+              <stop offset="1" stop-color="#435c42"/>
+            </linearGradient>
+            <linearGradient id="mountainSun" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#a9b887"/>
+              <stop offset="1" stop-color="#748d5f"/>
+            </linearGradient>
+            <linearGradient id="mountainRock" x1="0" y1="0" x2=".8" y2="1">
+              <stop offset="0" stop-color="#a39c72"/>
+              <stop offset=".55" stop-color="#7d805b"/>
+              <stop offset="1" stop-color="#5b694a"/>
+            </linearGradient>
+            <clipPath id="mainMountainClip">
+              <path d="M160 370
+                C218 344 260 325 304 299
+                C344 276 373 240 410 252
+                C447 264 468 284 493 268
+                C521 208 552 134 590 104
+                C616 83 642 98 665 132
+                C691 171 706 210 738 233
+                C768 254 793 246 823 269
+                C865 301 909 329 984 371
+                C974 445 950 530 920 610
+                C836 594 760 563 683 552
+                C594 540 502 586 400 610
+                C329 535 266 444 160 370 Z"/>
+            </clipPath>
+          </defs>
+
+          <rect width="1280" height="720" fill="url(#tunnelSky)"/>
+
+          <!-- Ground plane runs from the far mountain foot toward the viewer -->
+          <path d="M0 370 L1280 370 L1280 720 L0 720 Z" fill="url(#groundDepth)"/>
+          <path d="M0 492 Q320 450 640 490 T1280 484" fill="none" stroke="#b9d39a" stroke-width="5" opacity=".7"/>
+          <path d="M0 626 Q310 566 640 624 T1280 614" fill="none" stroke="#719a60" stroke-width="7" opacity=".38"/>
+
+          <!-- Organic mountain mass: irregular ridge, layered slopes and a broad foreground foot -->
+          <g clip-path="url(#mainMountainClip)">
+            <rect x="145" y="82" width="860" height="540" fill="url(#mountainFront)"/>
+
+            <!-- Sunlit western slope -->
+            <path d="M130 376
+              C248 348 337 286 410 252
+              C472 272 505 246 590 104
+              C556 238 520 400 399 630
+              C306 552 228 455 130 376 Z" fill="url(#mountainSun)"/>
+
+            <!-- Rocky central face, bounded by natural gullies -->
+            <path d="M590 104
+              C618 155 636 215 624 276
+              C610 344 574 404 581 472
+              C586 519 624 544 682 552
+              C590 548 492 589 399 630
+              C481 480 512 324 590 104 Z" fill="url(#mountainRock)" opacity=".94"/>
+
+            <!-- Shaded eastern slope -->
+            <path d="M590 104
+              C650 186 686 232 738 233
+              C771 255 798 249 824 270
+              C870 307 919 336 1008 374
+              C991 471 959 549 920 625
+              C832 600 758 564 682 552
+              C693 453 663 299 590 104 Z" fill="#4f6b49"/>
+
+            <!-- Rounded foothills make the mountain extend toward the viewer -->
+            <path d="M260 554
+              C346 502 427 500 503 535
+              C562 487 638 478 705 523
+              C778 492 870 527 972 594
+              L972 646 L319 646 Z" fill="#526f49" opacity=".9"/>
+            <path d="M348 622
+              C431 549 510 533 591 559
+              C665 521 757 531 842 579
+              C882 600 920 612 964 624
+              L964 651 L348 651 Z" fill="#668151"/>
+
+            <!-- Snow and exposed rock near the summit -->
+            <path d="M548 164
+              C561 139 576 116 590 104
+              C609 91 627 110 642 138
+              C650 154 659 171 671 188
+              C650 178 633 166 620 170
+              C604 176 594 195 579 190
+              C566 186 558 174 548 164 Z" fill="#eef1e8" opacity=".9"/>
+            <path d="M572 185
+              C589 175 600 164 614 145
+              C619 174 624 196 640 223
+              C622 213 610 212 598 223
+              C589 211 581 199 572 185 Z" fill="#c7c8b3" opacity=".76"/>
+
+            <!-- Curved ridges, ravines and vegetation texture -->
+            <g fill="none" stroke-linecap="round">
+              <path d="M410 252 C444 312 446 370 423 435 C406 483 394 530 399 590" stroke="#b7c695" stroke-width="8" opacity=".38"/>
+              <path d="M501 236 C485 302 495 353 472 409 C454 452 436 493 431 543" stroke="#637952" stroke-width="7" opacity=".34"/>
+              <path d="M624 195 C650 260 646 326 671 383 C692 430 704 482 698 530" stroke="#465f43" stroke-width="9" opacity=".48"/>
+              <path d="M738 257 C750 312 786 350 821 383 C852 413 873 459 879 514" stroke="#38563d" stroke-width="8" opacity=".48"/>
+              <path d="M294 401 C344 382 384 388 425 412" stroke="#9bac79" stroke-width="10" opacity=".34"/>
+              <path d="M715 467 C768 444 824 452 875 484" stroke="#76905d" stroke-width="11" opacity=".36"/>
+            </g>
+
+            <g fill="#35583c" opacity=".72">
+              <path d="M298 483 C319 452 342 448 364 476 C341 472 319 479 298 483 Z"/>
+              <path d="M338 526 C363 493 390 490 414 521 C390 515 365 521 338 526 Z"/>
+              <path d="M752 384 C776 350 803 351 827 382 C802 376 779 380 752 384 Z"/>
+              <path d="M815 452 C840 420 866 423 889 455 C865 446 841 449 815 452 Z"/>
+            </g>
+          </g>
+
+          <!-- Proposed tunnel AD crosses the mountain mass from side to side -->
+          <path d="M160 370 L984 371" fill="none" stroke="#7a263c" stroke-width="20" stroke-linecap="round" opacity=".18"/>
+          <path d="M160 370 L984 371" fill="none" stroke="#b52f45" stroke-width="6" stroke-dasharray="18 14" stroke-linecap="round"/>
+
+          <!-- Portals sit exactly on the left and right edges of the mountain foot -->
+          <g fill="#544744" stroke="#e4c29f" stroke-width="7">
+            <path d="M120 405 L120 368 Q160 322 200 368 L200 405 Z"/>
+            <path d="M944 406 L944 369 Q984 323 1024 369 L1024 406 Z"/>
+          </g>
+          <g fill="#29343b">
+            <path d="M135 402 L135 372 Q160 342 185 372 L185 402 Z"/>
+            <path d="M959 403 L959 373 Q984 343 1009 373 L1009 403 Z"/>
+          </g>
+
+          <!-- Three perspective road slabs: narrow at the portals, wide near the viewer -->
+          <g fill="#56626d" stroke="#3f4b55" stroke-width="4" stroke-linejoin="round">
+            <path d="M153 377 L167 363 L418 592 L382 628 Z"/>
+            <path d="M400 585 L920 585 L920 635 L400 635 Z"/>
+            <path d="M944 616 L994 374 L974 368 L896 604 Z"/>
+          </g>
+          <g fill="none" stroke="#f5d66f" stroke-width="5" stroke-dasharray="23 17" stroke-linecap="round">
+            <path d="M160 370 L400 610"/>
+            <path d="M400 610 L920 610"/>
+            <path d="M920 610 L984 371"/>
+          </g>
+
+          <!-- Given side labels lie on the three real road segments -->
+          <text x="278" y="482" text-anchor="middle" transform="rotate(45 278 482)" class="svg-measure">12 km</text>
+          <text x="660" y="659" text-anchor="middle" class="svg-measure">6 km</text>
+          <text x="958" y="490" text-anchor="middle" transform="rotate(-75 958 490)" class="svg-measure">8 km</text>
+
+          <!-- Given angles remain at the two foreground bends -->
+          <path d="M480 610 A80 80 0 0 0 343 553" class="angle-line"/>
+          <text x="408" y="523" text-anchor="middle" class="svg-angle-text">135°</text>
+          <path d="M840 610 A80 80 0 0 1 941 533" class="angle-line"/>
+          <text x="882" y="525" text-anchor="middle" class="svg-angle-text">105°</text>
+
+          <!-- Physical points: D/A far, C/B near the viewer -->
+          <g>
+            <circle cx="984" cy="371" r="8" class="svg-point"/>
+            <circle cx="920" cy="610" r="8" class="svg-point"/>
+            <circle cx="400" cy="610" r="8" class="svg-point"/>
+            <circle cx="160" cy="370" r="8" class="svg-point"/>
+            <text x="1005" y="355" class="svg-label">A</text>
+            <text x="936" y="650" class="svg-label">B</text>
+            <text x="372" y="650" class="svg-label">C</text>
+            <text x="124" y="354" class="svg-label">D</text>
+          </g>
+
+          <g transform="translate(900 32)">
+            <rect width="330" height="65" rx="15" fill="#ffffff" fill-opacity=".9" stroke="#d8e2eb"/>
+            <path d="M18 22 L70 22" stroke="#58636d" stroke-width="12" stroke-linecap="round"/>
+            <text x="86" y="29" class="svg-caption" style="font-size:16px">Đường cũ</text>
+            <path d="M18 48 L70 48" stroke="#b52f45" stroke-width="6" stroke-dasharray="12 8"/>
+            <text x="86" y="55" class="svg-caption" style="font-size:15px">Hầm dự kiến (ẩn độ dài)</text>
+          </g>
+
+          <text x="48" y="432" class="svg-caption" style="font-size:15px;fill:#5f715f">phía xa</text>
+          <text x="48" y="682" class="svg-caption" style="font-size:16px;fill:#405842">phía gần người xem</text>
+        </svg></template>
+</div>
+<script>
+const D=Math.PI/180;
+const $=s=>document.querySelector(s);
+const fmt=(x,d=1)=>Number(x).toLocaleString('vi-VN',{maximumFractionDigits:d,minimumFractionDigits:0});
+const clamp=(x,a,b)=>Math.max(a,Math.min(b,x));
+const acosd=x=>Math.acos(clamp(x,-1,1))/D;
+const dist=(P,Q)=>Math.hypot(P.x-Q.x,P.y-Q.y);
+const esc=s=>String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
+function p(key,label,unit,min,max,step,def){return{key,label,unit,min,max,step,def}}
+function solveSAS(b,c,A){
+  const ar=A*D,a=Math.sqrt(Math.max(0,b*b+c*c-2*b*c*Math.cos(ar)));
+  const B=acosd((a*a+c*c-b*b)/(2*a*c)); const C=180-A-B;
+  const K=.5*b*c*Math.sin(ar),s=(a+b+c)/2,R=a/(2*Math.sin(ar)),r=K/s;
+  return {a,b,c,A,B,C,K,s,R,r,h:b*Math.sin(ar),vertices:{A:{x:0,y:0},B:{x:c,y:0},C:{x:b*Math.cos(ar),y:b*Math.sin(ar)}}};
+}
+function solveASA(c,A,B){
+  const C=180-A-B;if(C<=0)throw Error('Tổng hai góc phải nhỏ hơn 180°');
+  const sr=Math.sin(C*D);if(Math.abs(sr)<1e-9)throw Error('Tam giác suy biến');
+  const a=c*Math.sin(A*D)/sr,b=c*Math.sin(B*D)/sr;
+  const K=.5*b*c*Math.sin(A*D),s=(a+b+c)/2,R=c/(2*sr),r=K/s;
+  return {a,b,c,A,B,C,K,s,R,r,h:b*Math.sin(A*D),vertices:{A:{x:0,y:0},B:{x:c,y:0},C:{x:b*Math.cos(A*D),y:b*Math.sin(A*D)}}};
+}
+function solveSSS(a,b,c){
+  if(a+b<=c||a+c<=b||b+c<=a)throw Error('Ba độ dài hiện tại không thỏa mãn bất đẳng thức tam giác.');
+  const A=acosd((b*b+c*c-a*a)/(2*b*c)),B=acosd((a*a+c*c-b*b)/(2*a*c)),C=180-A-B;
+  const s=(a+b+c)/2,K=Math.sqrt(Math.max(0,s*(s-a)*(s-b)*(s-c))),R=a*b*c/(4*K),r=K/s;
+  return {a,b,c,A,B,C,K,s,R,r,h:b*Math.sin(A*D),vertices:{A:{x:0,y:0},B:{x:c,y:0},C:{x:b*Math.cos(A*D),y:b*Math.sin(A*D)}}};
+}
+function compute(t,s){
+  if(t.mode==='rightHeight'||t.mode==='rightHyp'){
+    const d=s.d,A=s.A,h=d*Math.tan(A*D),b=Math.hypot(d,h),a=h,c=d,K=.5*d*h,sp=(a+b+c)/2,R=b/2,r=K/sp;
+    return {a,b,c,A,B:90,C:90-A,K,s:sp,R,r,h,vertices:{A:{x:0,y:0},B:{x:d,y:0},C:{x:d,y:h}}};
+  }
+  if(t.mode==='asa') return solveASA(s.c,s.A,s.B);
+  if(t.mode==='sas') return solveSAS(s.b,s.c,s.A);
+  if(t.mode==='sss') return solveSSS(s.a,s.b,s.c);
+  if(t.mode==='twoLeg'){
+    const b=s.v1*s.t1/60,c=s.v2*s.t2/60; const g=solveSAS(b,c,s.A); g.leg1=b;g.leg2=c;return g;
+  }
+  throw Error('Chưa có bộ giải cho dạng này.');
+}
+// Bộ 27 dạng đã được duyệt. Các số 01, 03 và 05 được giữ trống theo quyết định biên tập.
+const APPROVED_T=[
+{id:2,scene:'02',cat:'Chiều cao và đo đạc',title:'Đo chiều dài một cây bị nghiêng',theme:'tree',mode:'asa',params:[p('c','Khoảng cách AB','m',12,35,1,20),p('A','Góc cây với mặt đất tại A','°',60,95,1,78),p('B','Góc nhìn tại B','°',35,65,1,50)],problem:s=>`A là gốc cây, B là điểm quan sát và C là ngọn cây. Đo được AB = <strong>${fmt(s.c)} m</strong>, góc cây với mặt đất tại A là <strong>${fmt(s.A)}°</strong> và góc nhìn tại B là <strong>${fmt(s.B)}°</strong>.`,goal:'Tính chiều dài AC của thân cây.',answers:[['AC','Chiều dài AC','m']],hint:'Tính góc C = 180° − A − B, rồi áp dụng định lí sin: AC/sin B = AB/sin C.',bindings:[['20 m',(s,g)=>`${fmt(s.c)} m`],['78°',(s,g)=>`${fmt(s.A)}°`],['50°',(s,g)=>`${fmt(s.B)}°`]]},
+{id:4,scene:'04',cat:'Chiều cao và đo đạc',title:'Đo độ cao vách đá trên sườn dốc',theme:'cliff',mode:'asa',params:[p('c','Đoạn AB trên sườn dốc','m',35,80,1,55),p('A','Góc tại chân vách A','°',55,90,1,72),p('B','Góc ngắm tại B','°',30,60,1,44)],problem:s=>`A là chân vách, B là điểm đo thấp hơn trên sườn dốc và C là đỉnh vách. Đo được AB = <strong>${fmt(s.c)} m</strong>, góc tại A bằng <strong>${fmt(s.A)}°</strong> và góc ngắm tại B bằng <strong>${fmt(s.B)}°</strong>.`,goal:'Tính khoảng cách AC từ chân đến đỉnh vách.',answers:[['AC','Khoảng cách AC','m']],hint:'Tính góc C, sau đó dùng định lí sin với cặp AC đối diện góc B và AB đối diện góc C.',bindings:[['55 m',(s,g)=>`${fmt(s.c)} m`],['72°',(s,g)=>`${fmt(s.A)}°`],['44°',(s,g)=>`${fmt(s.B)}°`]]},
+{id:6,scene:'06',cat:'Trắc địa và định vị',title:'Đo chiều rộng sông từ một bờ',theme:'river',mode:'asa',params:[p('c','Đoạn chuẩn AB dọc bờ','m',30,80,1,50),p('A','Góc ngắm tại A','°',35,60,1,48),p('B','Góc ngắm tại B','°',50,75,1,63)],problem:s=>`Chọn hai điểm quan sát A, B trên cùng một bờ sông với AB = <strong>${fmt(s.c)} m</strong>. Ngắm mốc C ở bờ đối diện dưới các góc trong tam giác <strong>${fmt(s.A)}°</strong> tại A và <strong>${fmt(s.B)}°</strong> tại B.`,goal:'Tính chiều rộng sông CH, với CH vuông góc AB.',answers:[['CH','Chiều rộng CH','m']],hint:'Dùng định lí sin để tính AC, sau đó lấy CH = AC·sin A.',bindings:[['50 m',(s,g)=>`${fmt(s.c)} m`],['48°',(s,g)=>`${fmt(s.A)}°`],['63°',(s,g)=>`${fmt(s.B)}°`]]},
+{id:7,scene:'07',cat:'Trắc địa và định vị',title:'Đo khoảng cách qua một ao',theme:'pond',mode:'asa',params:[p('c','Đoạn chuẩn AB','m',18,40,1,25),p('A','Góc CAB','°',45,75,1,60),p('B','Góc ABC','°',70,88,1,82)],problem:s=>`Hai điểm đo A, B nằm trên bờ có thể tiếp cận, AB = <strong>${fmt(s.c)} m</strong>. Điểm C ở bờ bên kia; góc CAB = <strong>${fmt(s.A)}°</strong> và góc ABC = <strong>${fmt(s.B)}°</strong>.`,goal:'Tính khoảng cách AC qua ao.',answers:[['AC','Khoảng cách AC','m']],hint:'Tính C = 180° − A − B rồi dùng AC/sin B = AB/sin C.',bindings:[['25 m',(s,g)=>`${fmt(s.c)} m`],['60°',(s,g)=>`${fmt(s.A)}°`],['82°',(s,g)=>`${fmt(s.B)}°`]]},
+{id:8,scene:'08',cat:'Trắc địa và định vị',title:'Khoảng cách đến điểm không thể tiếp cận',theme:'target',mode:'asa',params:[p('c','Đường chuẩn AB','m',55,110,1,80),p('A','Góc ngắm tại A','°',28,50,1,38),p('B','Góc ngắm tại B','°',58,80,1,71)],problem:s=>`A và B là hai trạm đo tiếp cận được, AB = <strong>${fmt(s.c)} m</strong>. Mốc C nằm trong khu vực nguy hiểm; góc ngắm tại A bằng <strong>${fmt(s.A)}°</strong> và tại B bằng <strong>${fmt(s.B)}°</strong>.`,goal:'Tính khoảng cách BC từ B đến mốc nguy hiểm.',answers:[['BC','Khoảng cách BC','m']],hint:'Tính góc C rồi dùng BC/sin A = AB/sin C.',bindings:[['80 m',(s,g)=>`${fmt(s.c)} m`],['38°',(s,g)=>`${fmt(s.A)}°`],['71°',(s,g)=>`${fmt(s.B)}°`]]},
+{id:9,scene:'09',cat:'Trắc địa và định vị',title:'Định vị một hòn đảo từ hai mốc bờ biển',theme:'island',mode:'asa',params:[p('c','Khoảng cách AB','m',400,850,10,600),p('A','Góc ngắm tại A','°',22,45,1,32),p('B','Góc ngắm tại B','°',48,70,1,58)],problem:s=>`Hai mốc bờ biển A, B cách nhau <strong>${fmt(s.c)} m</strong>. Một điểm C trên đảo được ngắm dưới góc <strong>${fmt(s.A)}°</strong> tại A và <strong>${fmt(s.B)}°</strong> tại B.`,goal:'Tính khoảng cách AC từ mốc A đến đảo.',answers:[['AC','Khoảng cách AC','m']],hint:'Tính góc C rồi dùng định lí sin: AC/sin B = AB/sin C.',bindings:[['600 m',(s,g)=>`${fmt(s.c)} m`],['32°',(s,g)=>`${fmt(s.A)}°`],['58°',(s,g)=>`${fmt(s.B)}°`]]},
+{id:10,scene:'10',cat:'Khoảng cách gián tiếp',title:'Khoảng cách giữa hai điểm khó tiếp cận',theme:'target',mode:'sas',params:[p('c','Khoảng cách AB','m',50,95,1,70),p('b','Khoảng cách AC','m',65,110,1,85),p('A','Góc BAC','°',95,125,1,108)],problem:s=>`Để xây một cây cầu treo từ điểm B qua điểm C bắt qua một khe núi sâu người ta cần đo khoảng cách giữa B và C. Từ trạm A đo được AB = <strong>${fmt(s.c)} m</strong>, AC = <strong>${fmt(s.b)} m</strong> và góc BAC = <strong>${fmt(s.A)}°</strong>. Hai mốc B, C nằm ở hai bờ khe sâu nên không thể đo trực tiếp BC.`,goal:'Tính khoảng cách BC qua khe sâu.',answers:[['BC','Khoảng cách BC','m']],hint:'Áp dụng định lí côsin trực tiếp: BC² = AB² + AC² − 2·AB·AC·cos A.',bindings:[['70 m',(s,g)=>`${fmt(s.c)} m`],['85 m',(s,g)=>`${fmt(s.b)} m`],['108°',(s,g)=>`${fmt(s.A)}°`]]},
+{id:11,scene:'11',cat:'Hàng hải',title:'Hai tàu rời cảng theo hai hướng',theme:'boats',mode:'sas',params:[p('c','Quãng đường AB của tàu 2','km',30,60,1,45),p('b','Quãng đường AC của tàu 1','km',20,45,1,32),p('A','Góc giữa hai hướng','°',55,90,1,72)],problem:s=>`Hai tàu cùng rời cảng A. Tàu thứ nhất đến C, cách cảng <strong>${fmt(s.b)} km</strong>; tàu thứ hai đến B, cách cảng <strong>${fmt(s.c)} km</strong>. Góc giữa hai hướng đi tại A bằng <strong>${fmt(s.A)}°</strong>.`,goal:'Tính khoảng cách BC giữa hai tàu.',answers:[['BC','Khoảng cách BC','km']],hint:'Dùng định lí côsin với hai cạnh AC, AB và góc xen giữa A.',bindings:[['45 km',(s,g)=>`${fmt(s.c)} km`],['32 km',(s,g)=>`${fmt(s.b)} km`],['72°',(s,g)=>`${fmt(s.A)}°`]]},
+{id:12,scene:'12',cat:'Hàng hải',title:'Tàu đổi hướng sau chặng thứ nhất',theme:'boat',mode:'twoLegB',params:[p('v1','Vận tốc chặng AB','km/h',22,38,1,30),p('t1','Thời gian chặng AB','phút',60,120,5,90),p('v2','Vận tốc chặng BC','km/h',20,36,1,28),p('t2','Thời gian chặng BC','phút',55,100,5,75),p('B','Góc trong tại B','°',90,125,1,105)],problem:s=>`Tàu đi từ A đến B với vận tốc <strong>${fmt(s.v1)} km/h</strong> trong <strong>${fmt(s.t1)} phút</strong>, rồi đổi hướng đi đến C với vận tốc <strong>${fmt(s.v2)} km/h</strong> trong <strong>${fmt(s.t2)} phút</strong>. Góc trong của tam giác hành trình tại B bằng <strong>${fmt(s.B)}°</strong>.`,goal:'Tính khoảng cách thẳng AC từ vị trí xuất phát đến vị trí cuối.',answers:[['AC','Khoảng cách AC','km']],hint:'Đổi phút ra giờ để tính AB và BC; sau đó áp dụng định lí côsin trong tam giác ABC tại góc B.',bindings:[['30 km/h · 90 phút',(s,g)=>`${fmt(s.v1)} km/h · ${fmt(s.t1)} phút`],['28 km/h · 75 phút',(s,g)=>`${fmt(s.v2)} km/h · ${fmt(s.t2)} phút`],['105°',(s,g)=>`${fmt(s.B)}°`]]},
+{id:13,scene:'13',cat:'Hàng không',title:'Máy bay bay theo hai chặng đổi hướng',theme:'plane',mode:'twoLegB',params:[p('v1','Vận tốc chặng AB','km/h',430,620,10,520),p('t1','Thời gian chặng AB','phút',25,50,5,35),p('v2','Vận tốc chặng BC','km/h',400,580,10,480),p('t2','Thời gian chặng BC','phút',30,55,5,40),p('B','Góc trong tại B','°',52,85,1,68)],problem:s=>`Máy bay đi từ A đến B với <strong>${fmt(s.v1)} km/h</strong> trong <strong>${fmt(s.t1)} phút</strong>, rồi bay từ B đến C với <strong>${fmt(s.v2)} km/h</strong> trong <strong>${fmt(s.t2)} phút</strong>. Góc trong của tam giác hành trình tại B bằng <strong>${fmt(s.B)}°</strong>.`,goal:'Tính độ dời thẳng AC từ sân bay đến vị trí cuối.',answers:[['AC','Độ dời AC','km']],hint:'Tính độ dài AB, BC từ vận tốc và thời gian, rồi dùng định lí côsin tại B.',bindings:[['520 km/h · 35 phút',(s,g)=>`${fmt(s.v1)} km/h · ${fmt(s.t1)} phút`],['480 km/h · 40 phút',(s,g)=>`${fmt(s.v2)} km/h · ${fmt(s.t2)} phút`],['68°',(s,g)=>`${fmt(s.B)}°`]]},
+{id:14,scene:'14',cat:'Trắc địa và định vị',title:'Định vị drone từ hai trạm mặt đất',theme:'drone',mode:'asa',params:[p('c','Khoảng cách AB','m',80,170,5,120),p('A','Góc ngắm tại A','°',35,58,1,47),p('B','Góc ngắm tại B','°',50,72,1,61)],problem:s=>`Hai trạm A, B trên mặt đất cách nhau <strong>${fmt(s.c)} m</strong>. Drone ở C được quan sát dưới góc <strong>${fmt(s.A)}°</strong> tại A và <strong>${fmt(s.B)}°</strong> tại B.`,goal:'Tính độ cao CH của drone so với đường chuẩn AB.',answers:[['CH','Độ cao CH','m']],hint:'Tính AC bằng định lí sin rồi lấy CH = AC·sin A.',bindings:[['120 m',(s,g)=>`${fmt(s.c)} m`],['47°',(s,g)=>`${fmt(s.A)}°`],['61°',(s,g)=>`${fmt(s.B)}°`]]},
+{id:15,scene:'15',cat:'Cứu hộ và định vị',title:'Định vị tàu cứu hộ từ hai trạm ven bờ',theme:'rescue',mode:'asa',params:[p('c','Khoảng cách AB','m',550,1050,10,800),p('A','Góc ngắm tại A','°',30,55,1,42),p('B','Góc ngắm tại B','°',55,78,1,67)],problem:s=>`Hai trạm cứu hộ ven bờ A, B cách nhau <strong>${fmt(s.c)} m</strong>. Tàu cứu hộ ở C; góc ngắm tại A bằng <strong>${fmt(s.A)}°</strong> và tại B bằng <strong>${fmt(s.B)}°</strong>.`,goal:'Tính khoảng cách BC từ trạm B đến tàu.',answers:[['BC','Khoảng cách BC','m']],hint:'Tính góc C rồi áp dụng BC/sin A = AB/sin C.',bindings:[['800 m',(s,g)=>`${fmt(s.c)} m`],['42°',(s,g)=>`${fmt(s.A)}°`],['67°',(s,g)=>`${fmt(s.B)}°`]]},
+{id:16,scene:'16',cat:'Kết cấu kỹ thuật',title:'Độ võng cáp cầu treo',theme:'bridge',mode:'cableSag',params:[p('span','Khoảng cách hai điểm neo AC','m',180,320,10,240),p('A','Góc cáp với phương ngang tại A','°',12,30,1,20)],problem:s=>`Hai điểm neo cáp A và C cùng độ cao, cách nhau <strong>${fmt(s.span)} m</strong>. Mỗi nửa cáp được mô hình hóa bằng một đoạn thẳng; tại A, cáp tạo với phương ngang góc <strong>${fmt(s.A)}°</strong>.`,goal:'Tính độ võng BH của cáp tại giữa nhịp.',answers:[['BH','Độ võng BH','m']],hint:'Do đối xứng, AH = AC/2. Trong tam giác vuông AHB, dùng BH = AH·tan A.',bindings:[['240 m',(s,g)=>`${fmt(s.span)} m`],['20°',(s,g)=>`${fmt(s.A)}°`]]},
+{id:17,scene:'17',cat:'Giao thông',title:'Thiết kế một đường đi tắt',theme:'road',mode:'sas',params:[p('c','Đoạn đường AB','m',130,230,5,180),p('b','Đoạn đường AC','m',180,300,5,240),p('A','Góc giao tại A','°',58,92,1,74)],problem:s=>`Hai đoạn đường AB và AC gặp nhau tại nút A. Biết AB = <strong>${fmt(s.c)} m</strong>, AC = <strong>${fmt(s.b)} m</strong> và góc BAC = <strong>${fmt(s.A)}°</strong>. Dự kiến mở đường đi tắt nối B với C.`,goal:'Tính chiều dài BC của đường đi tắt.',answers:[['BC','Chiều dài BC','m']],hint:'Đường đi tắt là cạnh đối diện góc A; dùng định lí côsin.',bindings:[['180 m',(s,g)=>`${fmt(s.c)} m`],['240 m',(s,g)=>`${fmt(s.b)} m`],['74°',(s,g)=>`${fmt(s.A)}°`]]},
+{id:18,scene:'18',cat:'Địa chính',title:'Tính diện tích mảnh đất tam giác',theme:'land',mode:'sss',params:[p('c','Cạnh AB','m',50,80,1,65),p('a','Cạnh BC','m',75,110,1,92),p('b','Cạnh CA','m',62,96,1,78)],problem:s=>`Mảnh đất có ba mốc ranh giới A, B, C. Đo được AB = <strong>${fmt(s.c)} m</strong>, BC = <strong>${fmt(s.a)} m</strong> và CA = <strong>${fmt(s.b)} m</strong>.`,goal:'Tính diện tích mảnh đất bằng công thức Heron.',answers:[['area','Diện tích','m²']],hint:'Tính nửa chu vi p = (AB + BC + CA)/2 rồi dùng S = √[p(p−a)(p−b)(p−c)].',bindings:[['65 m',(s,g)=>`${fmt(s.c)} m`],['78 m',(s,g)=>`${fmt(s.b)} m`],['92 m',(s,g)=>`${fmt(s.a)} m`]]},
+{id:19,scene:'19',cat:'Địa chính',title:'Tính diện tích thửa đất hình tứ giác',theme:'land',mode:'quadArea',params:[p('AB','Cạnh AB','m',38,58,1,48),p('BC','Cạnh BC','m',52,72,1,62),p('CD','Cạnh CD','m',45,65,1,55),p('DA','Cạnh DA','m',60,80,1,70),p('AC','Đường chéo AC','m',68,84,1,76)],problem:s=>`Thửa đất có bốn mốc ranh giới A, B, C, D. Đo được AB = <strong>${fmt(s.AB)} m</strong>, BC = <strong>${fmt(s.BC)} m</strong>, CD = <strong>${fmt(s.CD)} m</strong>, DA = <strong>${fmt(s.DA)} m</strong> và đường chéo AC = <strong>${fmt(s.AC)} m</strong>. Hãy chia thửa đất thành hai tam giác ABC và ACD để tính diện tích.`,goal:'Tính tổng diện tích thửa đất ABCD.',answers:[['totalArea','Diện tích ABCD','m²']],hint:'Dùng công thức Heron riêng cho tam giác ABC và ACD, rồi cộng hai diện tích.',bindings:[['48 m',(s,g)=>`${fmt(s.AB)} m`],['62 m',(s,g)=>`${fmt(s.BC)} m`],['55 m',(s,g)=>`${fmt(s.CD)} m`],['70 m',(s,g)=>`${fmt(s.DA)} m`],['76 m',(s,g)=>`${fmt(s.AC)} m`]]},
+{id:20,scene:'20',cat:'Xây dựng',title:'Tính thanh giằng chéo của cầu',theme:'bridge',mode:'sas',params:[p('c','Thanh AB','m',13,23,1,18),p('b','Thanh AC','m',10,19,1,14),p('A','Góc giữa hai thanh','°',108,142,1,126)],problem:s=>`Tại nút A của kết cấu cầu, hai thanh AB = <strong>${fmt(s.c)} m</strong> và AC = <strong>${fmt(s.b)} m</strong> tạo góc <strong>${fmt(s.A)}°</strong>. Cần bố trí thanh giằng nối B với C.`,goal:'Tính chiều dài thanh giằng BC.',answers:[['BC','Chiều dài BC','m']],hint:'Dùng định lí côsin với hai cạnh AB, AC và góc xen giữa A.',bindings:[['18 m',(s,g)=>`${fmt(s.c)} m`],['14 m',(s,g)=>`${fmt(s.b)} m`],['126°',(s,g)=>`${fmt(s.A)}°`]]},
+{id:21,scene:'21',cat:'Kỹ thuật',title:'Tính chiều dài tuyến cáp treo',theme:'cable',mode:'asa',params:[p('c','Đường chuẩn AB','m',220,380,5,300),p('A','Góc CAB','°',55,80,1,68),p('B','Góc ABC','°',35,58,1,46)],problem:s=>`Do địa hình núi phức tạp, nhiều vật cản nên không thể đo trực tiếp khoảng cách từ điểm A ở chân núi đến điểm C trên đỉnh núi nên ta phải tính khoảng cách từ A đến C gián tiếp. Hai mốc khảo sát A, B có AB = <strong>${fmt(s.c)} m</strong>; góc CAB = <strong>${fmt(s.A)}°</strong> và góc ABC = <strong>${fmt(s.B)}°</strong>.`,goal:'Tính chiều dài AC của tuyến cáp dự kiến.',answers:[['AC','Chiều dài AC','m']],hint:'Tính góc C rồi áp dụng định lí sin với AC đối diện góc B.',bindings:[['300 m',(s,g)=>`${fmt(s.c)} m`],['68°',(s,g)=>`${fmt(s.A)}°`],['46°',(s,g)=>`${fmt(s.B)}°`]]},
+{id:22,scene:'22',cat:'Chiều cao và đo đạc',title:'Đo chiều cao tòa nhà cao tầng có cột ăng-ten',theme:'building',mode:'antenna',params:[p('antenna','Chiều cao cột ăng-ten BC','m',3,8,.5,5),p('observer','Độ cao điểm quan sát A','m',4,10,.5,7),p('topAngle','Góc nâng đến đỉnh B','°',46,56,1,50),p('baseAngle','Góc nâng đến chân C','°',34,44,1,40)],problem:s=>`Trên mái bằng của một tòa nhà cao tầng có cột ăng-ten BC cao <strong>${fmt(s.antenna)} m</strong>. Từ điểm quan sát A cao <strong>${fmt(s.observer)} m</strong> so với mặt đất, góc nâng đến đỉnh B bằng <strong>${fmt(s.topAngle)}°</strong> và đến chân cột C bằng <strong>${fmt(s.baseAngle)}°</strong>. Hãy xác định các góc của tam giác ABC và chiều cao tòa nhà.`,goal:'Tính ba góc của tam giác ABC và chiều cao từ mặt đất đến mái bằng tại C.',answers:[['triA','Góc A','°'],['triB','Góc B','°'],['triC','Góc C','°'],['buildingHeight','Chiều cao tòa nhà','m']],hint:'Góc A là hiệu hai góc nâng. Gọi x là khoảng cách ngang đến tòa nhà; dùng BC = x(tan góc đến B − tan góc đến C).',bindings:[['5 m',(s,g)=>`${fmt(s.antenna)} m`],['40°',(s,g)=>`${fmt(s.baseAngle)}°`],['50°',(s,g)=>`${fmt(s.topAngle)}°`],['7 m',(s,g)=>`${fmt(s.observer)} m`]]},
+{id:23,scene:'23',cat:'Đường tròn ngoại tiếp',title:'Đo đường kính miệng hố tròn',theme:'pit',mode:'sas',params:[p('c','Dây AB','m',7,14,.5,10),p('b','Dây AC','m',10,17,.5,13),p('A','Góc tù BAC','°',112,148,1,132)],problem:s=>`Miệng hố tròn rất lớn nên việc đi vòng quanh toàn bộ vành hố để đo đạc vừa xa vừa nguy hiểm. Chọn ba điểm B, A, C gần nhau trên cùng một đoạn vành hố; đo được AB = <strong>${fmt(s.c)} m</strong>, AC = <strong>${fmt(s.b)} m</strong> và góc tù BAC = <strong>${fmt(s.A)}°</strong> để tính gián tiếp đường kính miệng hố.`,goal:'Tính đường kính miệng hố tròn.',answers:[['diameter','Đường kính','m']],hint:'Tính BC bằng định lí côsin, rồi dùng định lí sin mở rộng: D = BC/sin A.',bindings:[['10 m',(s,g)=>`${fmt(s.c)} m`],['13 m',(s,g)=>`${fmt(s.b)} m`],['132°',(s,g)=>`${fmt(s.A)}°`]]},
+{id:24,scene:'24',cat:'Cứu hộ và định vị',title:'Chọn bồn nước gần điểm cháy hơn',theme:'fire',mode:'fireChoice',params:[p('TA','Khoảng cách TA','m',1500,2100,50,1800),p('TB','Khoảng cách TB','m',700,1100,50,900),p('ATF','Góc ATF','°',28,40,1,34),p('FTB','Góc FTB','°',30,42,1,35),p('TBF','Góc TBF','°',115,135,1,125)],problem:s=>`Từ tháp canh T trong khu bảo tồn, người quan sát phát hiện điểm cháy F. Hai bồn nước đặt tại A, B; biết TA = <strong>${fmt(s.TA)} m</strong>, TB = <strong>${fmt(s.TB)} m</strong>, góc ATF = <strong>${fmt(s.ATF)}°</strong>, góc FTB = <strong>${fmt(s.FTB)}°</strong> và góc TBF = <strong>${fmt(s.TBF)}°</strong>. Hãy tính độ dài AF và BF, rồi từ đó lựa chọn lấy nước từ bồn A hay bồn B để chữa cháy.`,goal:'Tính AF, BF và chọn bồn có quãng đường đưa nước ngắn hơn.',answers:[['AF','Khoảng cách AF','m'],['BF','Khoảng cách BF','m'],['choice','Chọn bồn','', 'choice']],hint:'Giải tam giác TBF bằng định lí sin để có TF và BF; sau đó dùng định lí côsin trong tam giác ATF để tính AF.',bindings:[['1800 m',(s,g)=>`${fmt(s.TA)} m`],['900 m',(s,g)=>`${fmt(s.TB)} m`],['34°',(s,g)=>`${fmt(s.ATF)}°`],['35°',(s,g)=>`${fmt(s.FTB)}°`],['125°',(s,g)=>`${fmt(s.TBF)}°`]]},
+{id:25,scene:'25',cat:'Địa hình và xây dựng',title:'Ước tính chiều dài đường hầm xuyên núi',theme:'mountain',mode:'tunnelSurvey',params:[p('CA','Khoảng cách CA','m',320,450,2,388),p('CB','Khoảng cách CB','m',170,260,2,212),p('C','Góc ACB','°',70,96,.2,82.4)],problem:s=>`Hai cửa hầm dự kiến đặt tại A, B. Từ trạm khảo sát C, đo được CA = <strong>${fmt(s.CA)} m</strong>, CB = <strong>${fmt(s.CB)} m</strong> và góc ACB = <strong>${fmt(s.C)}°</strong>. Hãy tính chiều dài đường hầm thẳng AB.`,goal:'Tính chiều dài đường hầm AB.',answers:[['AB','Chiều dài AB','m']],hint:'AB đối diện góc C; áp dụng AB² = CA² + CB² − 2·CA·CB·cos C.',bindings:[['388 m',(s,g)=>`${fmt(s.CA)} m`],['212 m',(s,g)=>`${fmt(s.CB)} m`],['82,4°',(s,g)=>`${fmt(s.C)}°`]]},
+{id:26,scene:'26',cat:'Chiều cao và đo đạc',title:'Đo chiều cao núi từ hai vị trí',theme:'mountain',mode:'twoObs',params:[p('baseline','Khoảng cách CD','km',.5,1.8,.1,1),p('farAngle','Góc nâng tại C','°',25,36,1,32),p('nearAngle','Góc nâng tại D','°',38,50,1,40)],problem:s=>`Hai điểm quan sát C, D nằm trên cùng đường thẳng với chân núi B và CD = <strong>${fmt(s.baseline)} km</strong>. Góc nâng đến đỉnh A tại C bằng <strong>${fmt(s.farAngle)}°</strong>, tại D bằng <strong>${fmt(s.nearAngle)}°</strong>. Biết AB vuông góc với mặt đất, hãy tính chiều cao núi AB.`,goal:'Tính chiều cao núi AB.',answers:[['height','Chiều cao AB','km']],hint:'Đặt DB = x. Khi đó AB = x·tan(góc tại D) = (x + CD)·tan(góc tại C).',bindings:[['32°',(s,g)=>`${fmt(s.farAngle)}°`],['40°',(s,g)=>`${fmt(s.nearAngle)}°`],['1 km',(s,g)=>`${fmt(s.baseline)} km`]]},
+{id:27,scene:'27',cat:'Hàng hải và đo đạc',title:'Đo chiều cao hải đăng từ hai vị trí của tàu',theme:'lighthouse',mode:'twoObs',params:[p('baseline','Quãng đường PQ','m',180,420,10,300),p('farAngle','Góc nâng tại P','°',28,40,1,35),p('nearAngle','Góc nâng tại Q','°',43,56,1,48)],problem:s=>`Tàu đang ở vị trí P thì nhìn thấy đỉnh A của ngọn hải đăng dưới góc nâng <strong>${fmt(s.farAngle)}°</strong>. Khi tàu di chuyển thẳng hướng đến chân B của ngọn hải đăng được <strong>${fmt(s.baseline)} m</strong> đến vị trí Q thì nhìn thấy đỉnh A dưới góc nâng <strong>${fmt(s.nearAngle)}°</strong>. Hãy tính chiều cao ngọn hải đăng AB.`,goal:'Tính chiều cao ngọn hải đăng AB.',answers:[['height','Chiều cao AB','m']],hint:'Đặt QB = x. Ta có AB = x·tan(góc tại Q) = (x + PQ)·tan(góc tại P).',bindings:[['35°',(s,g)=>`${fmt(s.farAngle)}°`],['48°',(s,g)=>`${fmt(s.nearAngle)}°`],['300 m',(s,g)=>`${fmt(s.baseline)} m`]]},
+{id:28,scene:'28',cat:'Đường tròn nội tiếp',title:'Đài phun nước trong quảng trường tam giác',theme:'fountain',mode:'sss',params:[p('c','Cạnh AB','m',55,85,1,70),p('a','Cạnh BC','m',80,110,1,95),p('b','Cạnh CA','m',65,95,1,80)],problem:s=>`Quảng trường tam giác có AB = <strong>${fmt(s.c)} m</strong>, BC = <strong>${fmt(s.a)} m</strong> và CA = <strong>${fmt(s.b)} m</strong>. Cần đặt một đài phun nước tròn lớn nhất tiếp xúc với cả ba cạnh.`,goal:'Tính bán kính lớn nhất của đài phun nước.',answers:[['radius','Bán kính','m']],hint:'Tính diện tích tam giác bằng Heron và nửa chu vi p, sau đó dùng r = S/p.',bindings:[['70 m',(s,g)=>`${fmt(s.c)} m`],['80 m',(s,g)=>`${fmt(s.b)} m`],['95 m',(s,g)=>`${fmt(s.a)} m`]]},
+{id:29,scene:'29',cat:'Hàng hải và đo đạc',title:'Khoảng cách còn lại đến chân hải đăng',theme:'lighthouse',mode:'twoObs',params:[p('baseline','Quãng đường PQ','m',180,420,10,300),p('farAngle','Góc nâng tại P','°',28,40,1,35),p('nearAngle','Góc nâng tại Q','°',43,56,1,48)],problem:s=>`Tàu đang ở vị trí P thì nhìn thấy đỉnh A của ngọn hải đăng dưới góc nâng <strong>${fmt(s.farAngle)}°</strong>. Khi tàu di chuyển thẳng hướng đến chân B của ngọn hải đăng được <strong>${fmt(s.baseline)} m</strong> đến vị trí Q thì nhìn thấy đỉnh A dưới góc nâng <strong>${fmt(s.nearAngle)}°</strong>. Hãy tính quãng đường QB mà tàu còn phải đi để đến chân hải đăng.`,goal:'Tính quãng đường còn lại QB.',answers:[['QB','Khoảng cách QB','m']],hint:'Đặt QB = x. Từ hai góc nâng: x·tan Q = (x + PQ)·tan P; giải phương trình theo x.',bindings:[['35°',(s,g)=>`${fmt(s.farAngle)}°`],['48°',(s,g)=>`${fmt(s.nearAngle)}°`],['300 m',(s,g)=>`${fmt(s.baseline)} m`]]},
+{id:30,scene:'30',cat:'Bài toán tổng hợp',title:'Đường hầm xuyên núi',theme:'mountainRoad',mode:'polylineTunnel',params:[p('AB','Đoạn đường AB','km',5,11,.5,8),p('BC','Đoạn đường BC','km',4,9,.5,6),p('CD','Đoạn đường CD','km',9,15,.5,12),p('B','Góc ABC','°',95,118,1,105),p('C','Góc BCD','°',125,148,1,135)],problem:s=>`Đường cũ đi theo tuyến A–B–C–D. Ba đoạn đường dài <strong>${fmt(s.AB)} km</strong>, <strong>${fmt(s.BC)} km</strong>, <strong>${fmt(s.CD)} km</strong>; hai góc tại B và C lần lượt là <strong>${fmt(s.B)}°</strong> và <strong>${fmt(s.C)}°</strong>. Dự kiến mở hầm nối thẳng A với D.`,goal:'Tính chiều dài đường hầm AD và số kilômét rút ngắn so với đường cũ.',answers:[['AD','Chiều dài AD','km'],['saved','Rút ngắn','km']],hint:'Tính đường chéo AC trong tam giác ABC, suy ra góc ACB. Sau đó góc ACD = góc BCD − góc ACB và dùng định lí côsin trong tam giác ACD.',bindings:[['12 km',(s,g)=>`${fmt(s.CD)} km`],['6 km',(s,g)=>`${fmt(s.BC)} km`],['8 km',(s,g)=>`${fmt(s.AB)} km`],['135°',(s,g)=>`${fmt(s.C)}°`],['105°',(s,g)=>`${fmt(s.B)}°`]]}
+];
+
+const CATEGORY_GROUPS=[
+  ['Chiều cao và đo đạc',[2,4,22,26]],
+  ['Trắc địa và định vị',[6,7,8,9,10,14,15,24]],
+  ['Giao thông và vận tải',[11,12,13,17,25,27,29,30]],
+  ['Địa chính và xây dựng',[16,18,19,20,21,23,28]]
+];
+for(const [category,ids] of CATEGORY_GROUPS){
+  for(const id of ids){const item=APPROVED_T.find(t=>t.id===id);if(item)item.cat=category}
+}
+
+let current=APPROVED_T[0], state={}, geo=null, teacherUnlocked=false;
+function randStep(min,max,step){const n=Math.floor((max-min)/step);return +(min+Math.floor(Math.random()*(n+1))*step).toFixed(4)}
+function generateState(t,useDefault=false){
+  const s={}; for(const q of t.params)s[q.key]=useDefault?q.def:randStep(q.min,q.max,q.step);
+  if(t.mode==='asa'){
+    const A=t.params.find(x=>x.key==='A'),B=t.params.find(x=>x.key==='B');
+    let tries=0;while(s.A+s.B>=172&&tries++<20){s.B=randStep(B.min,Math.min(B.max,168-s.A),B.step)}
+    if(s.A+s.B>=175)s.B=Math.max(B.min,170-s.A);
+  }
+  if(t.mode==='sss'){
+    const pa=t.params.find(x=>x.key==='a'),pb=t.params.find(x=>x.key==='b'),pc=t.params.find(x=>x.key==='c');
+    s.b=useDefault?pb.def:randStep(pb.min,pb.max,pb.step);s.c=useDefault?pc.def:randStep(pc.min,pc.max,pc.step);
+    const lo=Math.max(pa.min,Math.abs(s.b-s.c)+pa.step*2),hi=Math.min(pa.max,s.b+s.c-pa.step*2);
+    s.a=useDefault?clamp(pa.def,lo,hi):randStep(lo,hi,pa.step);
+  }
+  return s;
+}
+function buildSelect(){
+  const sel=$('#scenarioSelect');sel.innerHTML='';
+  const cats=CATEGORY_GROUPS.map(x=>x[0]);
+  cats.forEach(cat=>{const og=document.createElement('optgroup');og.label=cat;APPROVED_T.filter(x=>x.cat===cat).forEach(t=>{const o=document.createElement('option');o.value=t.id;o.textContent=t.title;og.appendChild(o)});sel.appendChild(og)});
+}
+function renderParams(){
+  const box=$('#params');box.innerHTML='';
+  current.params.forEach(q=>{
+    const row=document.createElement('div');row.className='param';
+    row.innerHTML=`<div class="param-head"><label>${esc(q.label)}</label><div class="numwrap"><input type="number" id="num_${q.key}" min="${q.min}" max="${q.max}" step="${q.step}" value="${state[q.key]}"><span class="unit">${esc(q.unit)}</span></div></div><input id="rng_${q.key}" type="range" min="${q.min}" max="${q.max}" step="${q.step}" value="${state[q.key]}">`;
+    box.appendChild(row);
+    const rn=row.querySelector(`#rng_${q.key}`),nu=row.querySelector(`#num_${q.key}`);
+    rn.addEventListener('input',()=>{nu.value=rn.value;state[q.key]=+rn.value;updateAll()});
+    nu.addEventListener('input',()=>{let v=+nu.value;if(Number.isFinite(v)){state[q.key]=v;rn.value=clamp(v,q.min,q.max);updateAll()}});
+  });
+}
+function circumcenter(A,B,C){
+  const d=2*(A.x*(B.y-C.y)+B.x*(C.y-A.y)+C.x*(A.y-B.y));if(Math.abs(d)<1e-9)return null;
+  const aa=A.x*A.x+A.y*A.y,bb=B.x*B.x+B.y*B.y,cc=C.x*C.x+C.y*C.y;
+  return {x:(aa*(B.y-C.y)+bb*(C.y-A.y)+cc*(A.y-B.y))/d,y:(aa*(C.x-B.x)+bb*(A.x-C.x)+cc*(B.x-A.x))/d};
+}
+function incenter(g){const {A,B,C}=g.vertices,P=g.a+g.b+g.c;return{x:(g.a*A.x+g.b*B.x+g.c*C.x)/P,y:(g.a*A.y+g.b*B.y+g.c*C.y)/P}}
+function arcPath(vertex,start,end,r,project){let pts=[];let delta=end-start;while(delta<0)delta+=Math.PI*2;if(delta>Math.PI*1.98)delta=Math.PI*1.98;for(let i=0;i<=28;i++){const th=start+delta*i/28;pts.push(project({x:vertex.x+r*Math.cos(th),y:vertex.y+r*Math.sin(th)}))}return 'M'+pts.map(p=>`${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(' L')}
+function themeLayer(theme,P,g){
+  const A=P(g.vertices.A),B=P(g.vertices.B),C=P(g.vertices.C);let s='';
+  if(['river','pond','lake'].includes(theme))s+=`<rect x="0" y="265" width="900" height="295" class="water"/>`;
+  if(['road'].includes(theme))s+=`<line x1="${A.x}" y1="${A.y}" x2="${B.x}" y2="${B.y}" class="road" opacity=".35"/>`;
+  if(theme==='land'||theme==='irrigation')s+=`<polygon points="${A.x},${A.y} ${B.x},${B.y} ${C.x},${C.y}" class="landfill"/>`;
+  const icon={tree:'🌳',building:'🏢',cliff:'⛰️',tower:'📡',river:'🌊',pond:'💧',target:'📍',island:'🏝️',boats:'⛵',boat:'🚢',plane:'✈️',drone:'🚁',rescue:'🚤',road:'🛣️',land:'🌱',roof:'🏠',bridge:'🌉',cable:'🚡',pit:'🕳️',lake:'🌊',tank:'🛢️',sheet:'⚙️',landmarks:'📍',fountain:'⛲',irrigation:'💦'}[theme]||'📍';
+  s+=`<text x="${C.x+18}" y="${C.y-18}" font-size="34">${icon}</text>`;
+  return s;
+}
+function renderSVG(){
+  const svg=$('#svg'); if(!geo){svg.innerHTML='<text x="40" y="70" class="lab">Dữ liệu chưa hợp lệ.</text>';return}
+  const V=geo.vertices;let pts=[V.A,V.B,V.C]; let outer=null,inner=null;
+  if(current.circle==='outer'){const O=circumcenter(V.A,V.B,V.C);if(O)outer={O,R:dist(O,V.A)}}
+  if(current.circle==='inner')inner={I:incenter(geo),r:geo.r};
+  let xs=pts.map(p=>p.x),ys=pts.map(p=>p.y);
+  if(outer){xs.push(outer.O.x-outer.R,outer.O.x+outer.R);ys.push(outer.O.y-outer.R,outer.O.y+outer.R)}
+  if(inner){xs.push(inner.I.x-inner.r,inner.I.x+inner.r);ys.push(inner.I.y-inner.r,inner.I.y+inner.r)}
+  let minX=Math.min(...xs),maxX=Math.max(...xs),minY=Math.min(...ys),maxY=Math.max(...ys);let w=maxX-minX||1,h=maxY-minY||1;const pad=.18*Math.max(w,h)+1;minX-=pad;maxX+=pad;minY-=pad;maxY+=pad;w=maxX-minX;h=maxY-minY;
+  const scale=Math.min(820/w,480/h),ox=450-scale*(minX+maxX)/2,oy=290+scale*(minY+maxY)/2;
+  const P=q=>({x:ox+scale*q.x,y:oy-scale*q.y});
+  const A=P(V.A),B=P(V.B),C=P(V.C); const maxSide=Math.max(geo.a,geo.b,geo.c);
+  let out='';
+  for(let x=60;x<900;x+=60)out+=`<line x1="${x}" y1="0" x2="${x}" y2="560" class="svg-grid" opacity=".45"/>`;
+  for(let y=50;y<560;y+=50)out+=`<line x1="0" y1="${y}" x2="900" y2="${y}" class="svg-grid" opacity=".45"/>`;
+  out+=themeLayer(current.theme,P,geo);
+  if(outer){const O=P(outer.O);out+=`<circle cx="${O.x}" cy="${O.y}" r="${outer.R*scale}" class="outercircle"/>`;if($('#showCenters').checked){out+=`<line x1="${O.x}" y1="${O.y}" x2="${A.x}" y2="${A.y}" class="aux"/><circle cx="${O.x}" cy="${O.y}" r="6" class="centerpt"/><text x="${O.x+10}" y="${O.y-10}" class="lab">O</text><text x="${(O.x+A.x)/2+8}" y="${(O.y+A.y)/2-8}" class="measure">R=${fmt(geo.R)}</text>`}}
+  if(inner){const I=P(inner.I);out+=`<circle cx="${I.x}" cy="${I.y}" r="${inner.r*scale}" class="incircle"/>`;if($('#showCenters').checked){out+=`<circle cx="${I.x}" cy="${I.y}" r="6" class="centerpt"/><text x="${I.x+10}" y="${I.y-10}" class="lab">I</text><text x="${I.x+12}" y="${I.y+20}" class="measure">r=${fmt(geo.r)}</text>`}}
+  out+=`<polygon points="${A.x},${A.y} ${B.x},${B.y} ${C.x},${C.y}" class="tri-fill"/><path d="M${A.x},${A.y} L${B.x},${B.y} L${C.x},${C.y} Z" class="tri-edge"/>`;
+  if($('#showAux').checked){
+    const r=.14*maxSide;out+=`<path d="${arcPath(V.A,0,geo.A*D,r,P)}" class="angle"/>`;
+    const midAng=geo.A*D/2,at=P({x:V.A.x+r*1.35*Math.cos(midAng),y:V.A.y+r*1.35*Math.sin(midAng)});out+=`<text x="${at.x}" y="${at.y}" text-anchor="middle" class="angletext">${fmt(geo.A)}°</text>`;
+    if(current.mode==='asa'){const th1=Math.PI,th2=Math.atan2(V.C.y-V.B.y,V.C.x-V.B.x);let e=th2;while(e<th1)e+=Math.PI*2;const path=arcPath(V.B,th1,e,.12*maxSide,P);out+=`<path d="${path}" class="angle"/>`}
+    if(['rightHeight','rightHyp'].includes(current.mode))out+=`<path d="M${B.x-18},${B.y} L${B.x-18},${B.y-18} L${B.x},${B.y-18}" class="aux"/>`;
+  }
+  const sideLabel=(P1,P2,txt,offx=0,offy=0)=>`<text x="${(P1.x+P2.x)/2+offx}" y="${(P1.y+P2.y)/2+offy}" text-anchor="middle" class="measure">${txt}</text>`;
+  out+=sideLabel(B,C,`a=${fmt(geo.a)}`,18,-4)+sideLabel(C,A,`b=${fmt(geo.b)}`,-16,-7)+sideLabel(A,B,`c=${fmt(geo.c)}`,0,22);
+  out+=`<circle cx="${A.x}" cy="${A.y}" r="7" class="pt"/><circle cx="${B.x}" cy="${B.y}" r="7" class="pt"/><circle cx="${C.x}" cy="${C.y}" r="7" class="pt"/><text x="${A.x-18}" y="${A.y+24}" class="lab">A</text><text x="${B.x+12}" y="${B.y+23}" class="lab">B</text><text x="${C.x+12}" y="${C.y-8}" class="lab">C</text>`;
+  if(geo.A>90)out+=`<text x="30" y="40" class="themeLabel">Góc A hiện là góc tù (${fmt(geo.A)}°)</text>`;
+  svg.innerHTML=out;
+}
+function targetText(t,g){
+  const unit=t.params.find(x=>['a','b','c','d'].includes(x.key))?.unit || (t.mode==='twoLeg'?'km':'m');
+  const u=unit==='°'?'':unit;
+  if(t.target==='h')return `Kết quả cần tìm: h ≈ ${fmt(g.h,2)} ${u}`;
+  if(t.target==='a')return `Kết quả cần tìm: BC = a ≈ ${fmt(g.a,2)} ${u}`;
+  if(t.target==='b')return `Kết quả cần tìm: AC = b ≈ ${fmt(g.b,2)} ${u}`;
+  if(t.target==='K')return `Kết quả cần tìm: S ≈ ${fmt(g.K,2)} ${u}²`;
+  if(t.target==='R')return `Kết quả cần tìm: R ≈ ${fmt(g.R,2)} ${u}`;
+  if(t.target==='D')return `Kết quả cần tìm: D = 2R ≈ ${fmt(2*g.R,2)} ${u}`;
+  if(t.target==='r')return `Kết quả cần tìm: r ≈ ${fmt(g.r,2)} ${u}`;
+  return '';
+}
+function solutionHtml(t,g,s){
+  const unit=t.params.find(x=>['a','b','c','d'].includes(x.key))?.unit || (t.mode==='twoLeg'?'km':'m');
+  let h=`<div class="step"><b>Bước 1. Mô hình hóa</b><br>Quy ước a = BC, b = CA, c = AB; A, B, C là các góc đối diện tương ứng.</div>`;
+  if(t.mode==='rightHeight'||t.mode==='rightHyp'){
+    h+=`<div class="step"><b>Bước 2. Dùng hệ thức trong tam giác vuông</b><span class="formula">tan A = BC/AB ⇒ BC = AB·tan A = ${fmt(s.d)}·tan(${fmt(s.A)}°) ≈ ${fmt(g.h,3)} ${unit}</span>`;
+    if(t.mode==='rightHyp')h+=`<span class="formula">cos A = AB/AC ⇒ AC = AB/cos A = ${fmt(s.d)}/cos(${fmt(s.A)}°) ≈ ${fmt(g.b,3)} ${unit}</span>`;
+    h+='</div>';
+  } else if(t.mode==='asa'){
+    h+=`<div class="step"><b>Bước 2. Tính góc còn lại</b><span class="formula">C = 180° − A − B = 180° − ${fmt(s.A)}° − ${fmt(s.B)}° = ${fmt(g.C)}°.</span></div>`;
+    h+=`<div class="step"><b>Bước 3. Áp dụng định lí sin</b><span class="formula">a/sin A = b/sin B = c/sin C</span><span class="formula">a = ${fmt(g.c)}·sin(${fmt(g.A)}°)/sin(${fmt(g.C)}°) ≈ ${fmt(g.a,3)} ${unit}</span><span class="formula">b = ${fmt(g.c)}·sin(${fmt(g.B)}°)/sin(${fmt(g.C)}°) ≈ ${fmt(g.b,3)} ${unit}</span>`;
+    if(t.target==='h')h+=`<span class="formula">h = b·sin A ≈ ${fmt(g.b,3)}·sin(${fmt(g.A)}°) ≈ ${fmt(g.h,3)} ${unit}</span>`;
+    if(t.target==='R'||t.target==='D')h+=`<span class="formula">2R = c/sin C = ${fmt(g.c)}/sin(${fmt(g.C)}°) ≈ ${fmt(2*g.R,3)} ${unit}</span>`;
+    h+='</div>';
+  } else if(t.mode==='sas'){
+    h+=`<div class="step"><b>Bước 2. Áp dụng định lí côsin</b><span class="formula">a² = b² + c² − 2bc·cos A</span><span class="formula">a = √(${fmt(g.b)}² + ${fmt(g.c)}² − 2·${fmt(g.b)}·${fmt(g.c)}·cos(${fmt(g.A)}°)) ≈ ${fmt(g.a,3)} ${unit}</span></div>`;
+    if(t.target==='D'||t.target==='R')h+=`<div class="step"><b>Bước 3. Dùng định lí sin với bán kính ngoại tiếp</b><span class="formula">a/sin A = 2R ⇒ R = a/(2sin A) ≈ ${fmt(g.R,3)} ${unit}</span>${t.target==='D'?`<span class="formula">D = 2R = a/sin A ≈ ${fmt(2*g.R,3)} ${unit}</span>`:''}</div>`;
+    if(t.target==='r')h+=`<div class="step"><b>Bước 3. Tính diện tích và nửa chu vi</b><span class="formula">S = 1/2·bc·sin A ≈ ${fmt(g.K,3)} ${unit}²</span><span class="formula">p = (a+b+c)/2 ≈ ${fmt(g.s,3)} ${unit}</span><span class="formula">r = S/p ≈ ${fmt(g.r,3)} ${unit}</span></div>`;
+  } else if(t.mode==='sss'){
+    h+=`<div class="step"><b>Bước 2. Tính nửa chu vi và diện tích Heron</b><span class="formula">p = (a+b+c)/2 = (${fmt(g.a)}+${fmt(g.b)}+${fmt(g.c)})/2 ≈ ${fmt(g.s,3)} ${unit}</span><span class="formula">S = √[p(p−a)(p−b)(p−c)] ≈ ${fmt(g.K,3)} ${unit}²</span></div>`;
+    if(t.target==='R')h+=`<div class="step"><b>Bước 3. Bán kính đường tròn ngoại tiếp</b><span class="formula">R = abc/(4S) ≈ ${fmt(g.R,3)} ${unit}</span></div>`;
+    if(t.target==='r')h+=`<div class="step"><b>Bước 3. Bán kính đường tròn nội tiếp</b><span class="formula">S = p·r ⇒ r = S/p ≈ ${fmt(g.r,3)} ${unit}</span></div>`;
+    if(t.target==='K')h+=`<div class="step"><b>Bước 3. Kết luận diện tích</b><span class="formula">S ≈ ${fmt(g.K,3)} ${unit}²</span></div>`;
+  } else if(t.mode==='twoLeg'){
+    h+=`<div class="step"><b>Bước 2. Đổi thời gian và tính hai chặng đường</b><span class="formula">b = v₁t₁ = ${fmt(s.v1)}·${fmt(s.t1)}/60 ≈ ${fmt(g.leg1,3)} km</span><span class="formula">c = v₂t₂ = ${fmt(s.v2)}·${fmt(s.t2)}/60 ≈ ${fmt(g.leg2,3)} km</span></div>`;
+    h+=`<div class="step"><b>Bước 3. Định lí côsin</b><span class="formula">a = √(b²+c²−2bc·cos A) ≈ ${fmt(g.a,3)} km</span></div>`;
+  }
+  h+=`<div class="answer">${esc(targetText(t,g))}</div><div class="note">Kết quả được cập nhật từ đúng bộ số liệu đang hiển thị. Khi thay đổi tham số, hãy đóng/mở lại lời giải hoặc lời giải sẽ được tính lại khi mở.</div>`;
+  return h;
+}
+function updateAll(){
+  $('#category').textContent=current.cat;$('#title').textContent=current.title;$('#typePill').textContent=`Dạng ${current.id}/30`;
+  $('#problemText').innerHTML=current.problem(state);$('#goal').textContent=current.goal;
+  try{geo=compute(current,state);$('#footerStatus').textContent='Dữ liệu hợp lệ • hình vẽ đã cập nhật';$('#goal').classList.remove('warn');renderSVG();
+    $('#legend').innerHTML=`<b>${current.cat}</b><br>A = ${fmt(geo.A)}°, B = ${fmt(geo.B)}°, C = ${fmt(geo.C)}°<br>a = ${fmt(geo.a)}, b = ${fmt(geo.b)}, c = ${fmt(geo.c)}${current.circle==='outer'?`<br>R = ${fmt(geo.R,2)} • D = ${fmt(2*geo.R,2)}`:''}${current.circle==='inner'?`<br>r = ${fmt(geo.r,2)}`:''}`;if($('#solutionModal').classList.contains('open')&&teacherUnlocked)$('#solution').innerHTML=solutionHtml(current,geo,state);
+  }catch(e){geo=null;$('#footerStatus').textContent='Dữ liệu chưa tạo thành một tam giác hợp lệ';$('#legend').innerHTML=`<b>Cần điều chỉnh số liệu</b><br>${esc(e.message)}`;$('#svg').innerHTML=`<foreignObject x="70" y="160" width="760" height="180"><div xmlns="http://www.w3.org/1999/xhtml" class="warn">${esc(e.message)} Hãy điều chỉnh các cạnh/góc trong bảng thông số.</div></foreignObject>`}
+}
+function selectScenario(id,randomize=true){current=APPROVED_T.find(x=>x.id===+id)||APPROVED_T[0];$('#scenarioSelect').value=current.id;state=generateState(current,!randomize);renderParams();updateAll()}
+function safeStore(k,v){try{if(v===null)sessionStorage.removeItem(k);else sessionStorage.setItem(k,v)}catch(e){}}
+function safeGet(k){try{return sessionStorage.getItem(k)}catch(e){return null}}
+function unlock(){const val=$('#password').value;const expected=atob('QzREM0hMTjJUVg==');if(val===expected){teacherUnlocked=true;safeStore('triLabTeacher','1');$('#teachStatus').textContent='Đã mở khóa chế độ giáo viên.';$('#teachStatus').className='teach-status ok';$('#solutionBtn').disabled=false;$('#lockBtn').disabled=false;$('#password').value=''}else{$('#teachStatus').textContent='Mật khẩu chưa đúng.';$('#teachStatus').className='teach-status bad';$('#solutionBtn').disabled=true}}
+function lock(){teacherUnlocked=false;safeStore('triLabTeacher',null);$('#teachStatus').textContent='Nút “Hiện bài giải” đang khóa.';$('#teachStatus').className='teach-status';$('#solutionBtn').disabled=true;$('#lockBtn').disabled=true;$('#solutionModal').classList.remove('open')}
+function openSolution(){if(!teacherUnlocked||!geo)return;$('#solution').innerHTML=solutionHtml(current,geo,state);$('#solutionModal').classList.add('open')}
+
+// Bộ tính toán và hiển thị cho các hình thực tế đã duyệt.
+function heronArea(a,b,c){
+  if(a+b<=c||a+c<=b||b+c<=a)throw Error('Ba cạnh chưa tạo thành tam giác hợp lệ.');
+  const p=(a+b+c)/2;return{p,area:Math.sqrt(Math.max(0,p*(p-a)*(p-b)*(p-c)))};
+}
+function addTriangleAliases(g){
+  g.AB=g.c;g.AC=g.b;g.BC=g.a;g.CH=g.h;g.area=g.K;g.radius=g.r;g.diameter=2*g.R;return g;
+}
+function compute(t,s){
+  let g;
+  if(t.mode==='asa')return addTriangleAliases(solveASA(s.c,s.A,s.B));
+  if(t.mode==='sas')return addTriangleAliases(solveSAS(s.b,s.c,s.A));
+  if(t.mode==='sss')return addTriangleAliases(solveSSS(s.a,s.b,s.c));
+  if(t.mode==='twoLegB'){
+    const AB=s.v1*s.t1/60,BC=s.v2*s.t2/60,B=s.B,AC=Math.sqrt(AB*AB+BC*BC-2*AB*BC*Math.cos(B*D));
+    const A=acosd((AB*AB+AC*AC-BC*BC)/(2*AB*AC)),C=180-A-B;
+    return{AB,BC,AC,A,B,C};
+  }
+  if(t.mode==='cableSag'){
+    const AH=s.span/2,BH=AH*Math.tan(s.A*D),cable=Math.hypot(AH,BH);return{AH,BH,cable,AC:s.span};
+  }
+  if(t.mode==='quadArea'){
+    const q1=heronArea(s.AB,s.BC,s.AC),q2=heronArea(s.AC,s.CD,s.DA);
+    return{areaABC:q1.area,areaACD:q2.area,pABC:q1.p,pACD:q2.p,totalArea:q1.area+q2.area};
+  }
+  if(t.mode==='antenna'){
+    if(s.topAngle<=s.baseAngle)throw Error('Góc nâng đến đỉnh ăng-ten phải lớn hơn góc nâng đến chân cột.');
+    const horizontal=s.antenna/(Math.tan(s.topAngle*D)-Math.tan(s.baseAngle*D));
+    const triA=s.topAngle-s.baseAngle,triB=90-s.topAngle,triC=180-triA-triB;
+    const buildingHeight=s.observer+horizontal*Math.tan(s.baseAngle*D);
+    return{horizontal,triA,triB,triC,buildingHeight,AB:horizontal/Math.cos(s.topAngle*D),AC:horizontal/Math.cos(s.baseAngle*D)};
+  }
+  if(t.mode==='fireChoice'){
+    const F=180-s.FTB-s.TBF;if(F<=2)throw Error('Hai góc của tam giác TBF đang quá lớn.');
+    const TF=s.TB*Math.sin(s.TBF*D)/Math.sin(F*D),BF=s.TB*Math.sin(s.FTB*D)/Math.sin(F*D);
+    const AF=Math.sqrt(s.TA*s.TA+TF*TF-2*s.TA*TF*Math.cos(s.ATF*D));
+    return{F,TF,BF,AF,choice:AF<BF?'A':'B'};
+  }
+  if(t.mode==='tunnelSurvey'){
+    const AB=Math.sqrt(s.CA*s.CA+s.CB*s.CB-2*s.CA*s.CB*Math.cos(s.C*D));
+    const A=acosd((s.CA*s.CA+AB*AB-s.CB*s.CB)/(2*s.CA*AB)),B=180-s.C-A;return{AB,A,B,C:s.C};
+  }
+  if(t.mode==='twoObs'){
+    if(s.nearAngle<=s.farAngle)throw Error('Góc ở vị trí gần phải lớn hơn góc ở vị trí xa.');
+    const tf=Math.tan(s.farAngle*D),tn=Math.tan(s.nearAngle*D),QB=s.baseline*tf/(tn-tf),height=QB*tn;
+    return{QB,height,farDistance:QB+s.baseline,nearDistance:QB};
+  }
+  if(t.mode==='polylineTunnel'){
+    const AC=Math.sqrt(s.AB*s.AB+s.BC*s.BC-2*s.AB*s.BC*Math.cos(s.B*D));
+    const ACB=acosd((s.BC*s.BC+AC*AC-s.AB*s.AB)/(2*s.BC*AC)),ACD=s.C-ACB;
+    if(ACD<=0)throw Error('Góc ACD chưa dương; hãy tăng góc tại C.');
+    const AD=Math.sqrt(AC*AC+s.CD*s.CD-2*AC*s.CD*Math.cos(ACD*D));
+    const oldRoute=s.AB+s.BC+s.CD;return{AC,ACB,ACD,AD,oldRoute,saved:oldRoute-AD};
+  }
+  throw Error('Chưa có bộ giải cho dạng này.');
+}
+function generateState(t,useDefault=false){
+  const s={};for(const q of t.params)s[q.key]=useDefault?q.def:randStep(q.min,q.max,q.step);
+  if(t.mode==='asa'&&s.A+s.B>=172)s.B=Math.max(t.params.find(x=>x.key==='B').min,168-s.A);
+  if(t.mode==='sss'){
+    const pa=t.params.find(x=>x.key==='a'),pb=t.params.find(x=>x.key==='b'),pc=t.params.find(x=>x.key==='c');
+    s.b=useDefault?pb.def:randStep(pb.min,pb.max,pb.step);s.c=useDefault?pc.def:randStep(pc.min,pc.max,pc.step);
+    const lo=Math.max(pa.min,Math.abs(s.b-s.c)+pa.step*2),hi=Math.min(pa.max,s.b+s.c-pa.step*2);s.a=useDefault?clamp(pa.def,lo,hi):randStep(lo,hi,pa.step);
+  }
+  if(t.mode==='fireChoice'&&s.FTB+s.TBF>170)s.TBF=170-s.FTB;
+  return s;
+}
+function renderSVG(){
+  const svg=$('#svg'),tpl=document.querySelector(`#scene-${current.scene}`),source=tpl?.content?.querySelector('svg');
+  if(!source){svg.innerHTML='<text x="40" y="70" class="svg-label">Chưa nạp được hình minh họa.</text>';return}
+  svg.setAttribute('viewBox',source.getAttribute('viewBox')||'0 0 1280 720');
+  let markup=source.innerHTML;
+  for(const [oldText,valueFn] of current.bindings||[]){
+    const value=esc(valueFn(state,geo)),token=`>${oldText}<`;markup=markup.replace(token,`>${value}<`);
+  }
+  svg.innerHTML=markup;
+}
+function answerRoundRule(value){
+  const number=Number(value);if(!Number.isFinite(number))throw Error('Kết quả không phải là số hữu hạn.');
+  let decimals=Math.abs(number-Math.round(number))<1e-10?0:(Math.abs(number)>=100?0:Math.abs(number)>=10?1:2);
+  let rounded,text;
+  while(decimals>=0){
+    rounded=Number(number.toFixed(decimals));text=rounded.toFixed(decimals).replace('.',',');
+    if(text.length<=4)break;decimals--;
+  }
+  if(decimals<0||text.length>4)throw Error('Kết quả vượt quá giới hạn 4 ký tự của ô đáp án.');
+  const place=decimals===0?'hàng đơn vị':decimals===1?'hàng phần mười':'hàng phần trăm';
+  return{decimals,rounded,text,place};
+}
+function roundingInstruction(t,g){
+  const groups=new Map();
+  for(const [key,label,unit,type] of t.answers){
+    if(type==='choice')continue;const rule=answerRoundRule(g[key]);
+    const naturalLabel=label.charAt(0).toLowerCase()+label.slice(1);
+    if(!groups.has(rule.place))groups.set(rule.place,[]);groups.get(rule.place).push(naturalLabel);
+  }
+  const parts=[...groups.entries()].map(([place,labels])=>`${labels.join(', ')} đến ${place}`);
+  return `<p class="rounding-note"><strong>Yêu cầu làm tròn:</strong> Tính gần đúng ${parts.join('; ')}. Mỗi đáp án số không quá 4 ký tự; có thể dùng dấu phẩy hoặc dấu chấm làm dấu thập phân.</p>`;
+}
+function renderAnswerFields(){
+  const box=$('#answerFields');box.innerHTML='';
+  for(const spec of current.answers){
+    const [key,label,unit,type]=spec,wrap=document.createElement('label');wrap.className='answer-field';
+    if(type==='choice')wrap.innerHTML=`<span>${esc(label)}</span><select id="ans_${key}"><option value="">— Chọn —</option><option value="A">Bồn A</option><option value="B">Bồn B</option></select><span></span>`;
+    else wrap.innerHTML=`<span>${esc(label)}</span><input id="ans_${key}" inputmode="decimal" autocomplete="off" maxlength="4" placeholder="≤ 4 ký tự" aria-label="${esc(label)}"><span>${esc(unit)}</span>`;
+    box.appendChild(wrap);
+  }
+  $('#answerFeedback').className='feedback';$('#answerFeedback').textContent='';$('#hintBox').className='hintbox';$('#hintBox').textContent='';
+}
+function checkStudentAnswer(){
+  if(!geo)return;let ok=true,filled=true,formatOk=true;
+  for(const [key,label,unit,type] of current.answers){
+    const el=$(`#ans_${key}`);if(!el||!el.value.trim()){filled=false;ok=false;continue}
+    if(type==='choice'){if(el.value!==String(geo[key]))ok=false;continue}
+    const raw=el.value.trim();
+    if(raw.length>4||!/^\d+(?:[.,]\d+)?$/.test(raw)){formatOk=false;ok=false;continue}
+    const user=Number(raw.replace(',','.')),rule=answerRoundRule(geo[key]);
+    if(!Number.isFinite(user)){formatOk=false;ok=false;continue}
+    if(Math.abs(user-rule.rounded)>1e-9)ok=false;
+  }
+  const fb=$('#answerFeedback');fb.className=`feedback show ${ok?'ok':'bad'}`;
+  fb.textContent=ok?'Chính xác. Kết quả đã được làm tròn đúng theo yêu cầu.':!filled?'Hãy nhập đủ các kết quả trước khi kiểm tra.':!formatOk?'Mỗi đáp án số chỉ được dùng tối đa 4 ký tự, gồm các chữ số và tối đa một dấu phẩy hoặc dấu chấm.':'Chưa chính xác. Hãy kiểm tra lại phép tính và hàng làm tròn ghi trong đề bài.';
+}
+function showHint(){const h=$('#hintBox');h.textContent=current.hint;h.classList.add('show')}
+function targetText(t,g){
+  return t.answers.map(([key,label,unit,type])=>type==='choice'?`${label}: bồn ${g[key]}`:(()=>{const rule=answerRoundRule(g[key]);return`${label} ≈ ${rule.text} ${unit}`})()).join(' • ');
+}
+function solutionHtml(t,g,s){
+  let steps=`<div class="step"><b>Bước 1. Mô hình hóa</b><br>Các điểm, đoạn thẳng và góc được dùng đúng như trên hình minh họa; chỉ các dữ kiện gốc mới xuất hiện ở chế độ học sinh.</div>`;
+  if(t.mode==='asa'){
+    steps+=`<div class="step"><b>Bước 2. Tính góc còn lại và dùng định lí sin</b><span class="formula">C = 180° − A − B = ${fmt(g.C)}°</span><span class="formula">BC = AB·sin A/sin C ≈ ${fmt(g.BC,3)}; &nbsp; AC = AB·sin B/sin C ≈ ${fmt(g.AC,3)}</span>${t.answers.some(x=>x[0]==='CH')?`<span class="formula">CH = AC·sin A ≈ ${fmt(g.CH,3)}</span>`:''}</div>`;
+  }else if(t.mode==='sas'){
+    steps+=`<div class="step"><b>Bước 2. Áp dụng định lí côsin</b><span class="formula">BC² = AB² + AC² − 2·AB·AC·cos A</span><span class="formula">BC ≈ ${fmt(g.BC,3)}</span>${t.answers.some(x=>x[0]==='diameter')?`<span class="formula">D = BC/sin A ≈ ${fmt(g.diameter,3)}</span>`:''}</div>`;
+  }else if(t.mode==='sss'){
+    steps+=`<div class="step"><b>Bước 2. Công thức Heron</b><span class="formula">p = (a+b+c)/2 ≈ ${fmt(g.s,3)}</span><span class="formula">S = √[p(p−a)(p−b)(p−c)] ≈ ${fmt(g.area,3)}</span>${t.answers.some(x=>x[0]==='radius')?`<span class="formula">r = S/p ≈ ${fmt(g.radius,3)}</span>`:''}</div>`;
+  }else if(t.mode==='twoLegB'){
+    steps+=`<div class="step"><b>Bước 2. Tính hai chặng bay/đi</b><span class="formula">AB = v₁t₁ = ${fmt(g.AB,3)} km; &nbsp; BC = v₂t₂ = ${fmt(g.BC,3)} km</span></div><div class="step"><b>Bước 3. Định lí côsin tại B</b><span class="formula">AC² = AB² + BC² − 2·AB·BC·cos B ⇒ AC ≈ ${fmt(g.AC,3)} km</span></div>`;
+  }else if(t.mode==='cableSag'){
+    steps+=`<div class="step"><b>Bước 2. Dùng tính đối xứng</b><span class="formula">AH = AC/2 = ${fmt(g.AH,3)} m</span><span class="formula">BH = AH·tan A ≈ ${fmt(g.BH,3)} m</span><span class="formula">AB = BC = AH/cos A ≈ ${fmt(g.cable,3)} m</span></div>`;
+  }else if(t.mode==='quadArea'){
+    steps+=`<div class="step"><b>Bước 2. Chia thửa đất theo đường chéo AC</b><span class="formula">S₍ABC₎ ≈ ${fmt(g.areaABC,3)} m²</span><span class="formula">S₍ACD₎ ≈ ${fmt(g.areaACD,3)} m²</span></div><div class="step"><b>Bước 3. Cộng hai phần</b><span class="formula">S₍ABCD₎ = S₍ABC₎ + S₍ACD₎ ≈ ${fmt(g.totalArea,3)} m²</span></div>`;
+  }else if(t.mode==='antenna'){
+    steps+=`<div class="step"><b>Bước 2. Xác định các góc của tam giác ABC</b><span class="formula">A = ${fmt(s.topAngle)}° − ${fmt(s.baseAngle)}° = ${fmt(g.triA)}°; &nbsp; B = 90° − ${fmt(s.topAngle)}° = ${fmt(g.triB)}°; &nbsp; C = ${fmt(g.triC)}°</span></div><div class="step"><b>Bước 3. Tính khoảng cách ngang và chiều cao tòa nhà</b><span class="formula">x = BC/(tan ${fmt(s.topAngle)}° − tan ${fmt(s.baseAngle)}°) ≈ ${fmt(g.horizontal,3)} m</span><span class="formula">H = ${fmt(s.observer)} + x·tan ${fmt(s.baseAngle)}° ≈ ${fmt(g.buildingHeight,3)} m</span></div>`;
+  }else if(t.mode==='fireChoice'){
+    steps+=`<div class="step"><b>Bước 2. Giải tam giác TBF</b><span class="formula">∠TFB = 180° − ${fmt(s.FTB)}° − ${fmt(s.TBF)}° = ${fmt(g.F)}°</span><span class="formula">TF = TB·sin B/sin F ≈ ${fmt(g.TF,3)} m; &nbsp; BF = TB·sin T/sin F ≈ ${fmt(g.BF,3)} m</span></div><div class="step"><b>Bước 3. Giải tam giác ATF</b><span class="formula">AF² = TA² + TF² − 2·TA·TF·cos(∠ATF) ⇒ AF ≈ ${fmt(g.AF,3)} m</span><span class="formula">${g.choice==='A'?'AF < BF nên chọn bồn A.':'BF < AF nên chọn bồn B.'}</span></div>`;
+  }else if(t.mode==='tunnelSurvey'){
+    steps+=`<div class="step"><b>Bước 2. Định lí côsin tại C</b><span class="formula">AB² = CA² + CB² − 2·CA·CB·cos C</span><span class="formula">AB ≈ ${fmt(g.AB,3)} m</span></div>`;
+  }else if(t.mode==='twoObs'){
+    steps+=`<div class="step"><b>Bước 2. Lập hai hệ thức tang</b><span class="formula">h = QB·tan(${fmt(s.nearAngle)}°) = (QB + ${fmt(s.baseline)})·tan(${fmt(s.farAngle)}°)</span><span class="formula">QB ≈ ${fmt(g.QB,3)}; &nbsp; h ≈ ${fmt(g.height,3)}</span></div>`;
+  }else if(t.mode==='polylineTunnel'){
+    steps+=`<div class="step"><b>Bước 2. Giải tam giác ABC</b><span class="formula">AC ≈ ${fmt(g.AC,3)} km; &nbsp; ∠ACB ≈ ${fmt(g.ACB,3)}°</span></div><div class="step"><b>Bước 3. Giải tam giác ACD</b><span class="formula">∠ACD = ${fmt(s.C)}° − ${fmt(g.ACB)}° ≈ ${fmt(g.ACD,3)}°</span><span class="formula">AD² = AC² + CD² − 2·AC·CD·cos(∠ACD) ⇒ AD ≈ ${fmt(g.AD,3)} km</span><span class="formula">Rút ngắn = AB + BC + CD − AD ≈ ${fmt(g.saved,3)} km</span></div>`;
+  }
+  return steps+`<div class="answer">${esc(targetText(t,g))}</div><div class="note">Kết quả được tính lại theo đúng bộ số liệu hiện đang hiển thị.</div>`;
+}
+function updateAll(){
+  $('#category').textContent=current.cat;$('#title').textContent=current.title;$('#typePill').textContent=`Dạng ${String(current.id).padStart(2,'0')} • bộ 27 dạng`;
+  $('#problemText').innerHTML=current.problem(state);$('#goal').textContent=current.goal;
+  try{
+    geo=compute(current,state);$('#problemText').innerHTML=current.problem(state)+roundingInstruction(current,geo);$('#footerStatus').textContent='Dữ liệu hợp lệ • hình thực tế đã cập nhật';$('#goal').classList.remove('warn');renderSVG();renderAnswerFields();
+    $('#legend').innerHTML=`<b>${esc(current.cat)}</b><br>Chỉ hiện dữ kiện gốc.<br>Ẩn số và kết quả trung gian đang được khóa.`;
+    if($('#solutionModal').classList.contains('open')&&teacherUnlocked)$('#solution').innerHTML=solutionHtml(current,geo,state);
+  }catch(e){
+    geo=null;$('#footerStatus').textContent='Dữ liệu chưa hợp lệ';$('#legend').innerHTML=`<b>Cần điều chỉnh số liệu</b><br>${esc(e.message)}`;$('#svg').innerHTML=`<foreignObject x="90" y="220" width="1100" height="160"><div xmlns="http://www.w3.org/1999/xhtml" class="warn">${esc(e.message)} Hãy điều chỉnh các thông số.</div></foreignObject>`;renderAnswerFields();
+  }
+}
+buildSelect();
+$('#scenarioSelect').addEventListener('change',e=>selectScenario(e.target.value,true));
+$('#newBtn').addEventListener('click',()=>selectScenario(APPROVED_T[Math.floor(Math.random()*APPROVED_T.length)].id,true));
+$('#rerollBtn').addEventListener('click',()=>{state=generateState(current,false);renderParams();updateAll()});
+$('#checkAnswerBtn').addEventListener('click',checkStudentAnswer);$('#hintBtn').addEventListener('click',showHint);
+$('#unlockBtn').addEventListener('click',unlock);$('#password').addEventListener('keydown',e=>{if(e.key==='Enter')unlock()});$('#lockBtn').addEventListener('click',lock);$('#solutionBtn').addEventListener('click',openSolution);$('#closeModal').addEventListener('click',()=>$('#solutionModal').classList.remove('open'));$('#solutionModal').addEventListener('click',e=>{if(e.target.id==='solutionModal')$('#solutionModal').classList.remove('open')});
+if(safeGet('triLabTeacher')==='1'){teacherUnlocked=true;$('#teachStatus').textContent='Đã mở khóa chế độ giáo viên.';$('#teachStatus').className='teach-status ok';$('#solutionBtn').disabled=false;$('#lockBtn').disabled=false}
+selectScenario(2,false);
+</script>
+</body>
+</html>

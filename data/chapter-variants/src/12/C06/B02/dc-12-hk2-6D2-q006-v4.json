@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk2-6D2-q006-v4",
+  "source_fingerprint": "22f57fb142201d51f5b850bcfb49460e21da098c829a103b1dca608e84eacd42",
+  "variants": [
+    {
+      "id": "dc-12-hk2-6D2-q006-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Một lớp có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>20</mn></mrow></semantics></math> bạn nữ, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>15</mn></mrow></semantics></math> bạn nam biết rằng học sinh nữ quê Bình Dương chiếm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>30</mn><mi>%</mi></mrow></semantics></math>, học sinh nam quê Bình Dương chiếm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>40</mn><mi>%</mi></mrow></semantics></math>. Chọn ngẫu nhiên một bạn trong lớp. Xác suất bạn được chọn quê Bình Dương là",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>12</mn><mn>35</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>4</mn><mn>7</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>3</mn><mn>7</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": "A",
+      "solution": "Theo công thức xác suất toàn phần: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>20</mn></mrow><mrow><mn>35</mn></mrow></mfrac><mo>⋅</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>3</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>15</mn></mrow><mrow><mn>35</mn></mrow></mfrac><mo>⋅</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>4</mn><mo>=</mo><mfrac displaystyle=\"true\"><mn>12</mn><mn>35</mn></mfrac></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-6D2-q006-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Một lớp có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>25</mn></mrow></semantics></math> bạn nữ, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>18</mn></mrow></semantics></math> bạn nam biết rằng học sinh nữ quê Bình Dương chiếm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>40</mn><mi>%</mi></mrow></semantics></math>, học sinh nam quê Bình Dương chiếm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>50</mn><mi>%</mi></mrow></semantics></math>. Chọn ngẫu nhiên một bạn trong lớp. Xác suất bạn được chọn quê Bình Dương là",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>25</mn><mn>43</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>19</mn><mn>43</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>18</mn><mn>43</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>9</mn><mn>19</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Theo công thức xác suất toàn phần: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>25</mn></mrow><mrow><mn>43</mn></mrow></mfrac><mo>⋅</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>4</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>18</mn></mrow><mrow><mn>43</mn></mrow></mfrac><mo>⋅</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn><mo>=</mo><mfrac displaystyle=\"true\"><mn>19</mn><mn>43</mn></mfrac></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-6D2-q006-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Một lớp có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>30</mn></mrow></semantics></math> bạn nữ, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>14</mn></mrow></semantics></math> bạn nam biết rằng học sinh nữ quê Bình Dương chiếm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>50</mn><mi>%</mi></mrow></semantics></math>, học sinh nam quê Bình Dương chiếm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>50</mn><mi>%</mi></mrow></semantics></math>. Chọn ngẫu nhiên một bạn trong lớp. Xác suất bạn được chọn quê Bình Dương là",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>15</mn><mn>22</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>7</mn><mn>22</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>11</mn><mn>20</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": "D",
+      "solution": "Theo công thức xác suất toàn phần: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>30</mn></mrow><mrow><mn>44</mn></mrow></mfrac><mo>⋅</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>14</mn></mrow><mrow><mn>44</mn></mrow></mfrac><mo>⋅</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-6D2-q006-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Một lớp có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>20</mn></mrow></semantics></math> bạn nữ, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>22</mn></mrow></semantics></math> bạn nam biết rằng học sinh nữ quê Bình Dương chiếm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>60</mn><mi>%</mi></mrow></semantics></math>, học sinh nam quê Bình Dương chiếm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>50</mn><mi>%</mi></mrow></semantics></math>. Chọn ngẫu nhiên một bạn trong lớp. Xác suất bạn được chọn quê Bình Dương là",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>10</mn><mn>21</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>11</mn><mn>21</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>23</mn><mn>42</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>11</mn><mn>23</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Theo công thức xác suất toàn phần: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>20</mn></mrow><mrow><mn>42</mn></mrow></mfrac><mo>⋅</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>6</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>22</mn></mrow><mrow><mn>42</mn></mrow></mfrac><mo>⋅</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn><mo>=</mo><mfrac displaystyle=\"true\"><mn>23</mn><mn>42</mn></mfrac></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

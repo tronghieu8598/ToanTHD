@@ -1,0 +1,26 @@
+/* Connect the presentation frame to a live Toán THĐ session. */
+body { margin: 0; }
+#projection-status { margin: 2rem; text-align: center; color: #173c48; }
+#modal-layer .q-settings select { max-width: 70%; padding: 5px 8px; border: 1px solid #c4d6c8; border-radius: 7px; color: #173c48; background: white; }
+#modal-layer .q-settings #q-fullscreen { border: 1px solid #c4d6c8; border-radius: 7px; }
+#modal-layer .session-projection-note { margin: 0 0 1em; padding: .6em .8em; border: 1px solid #dec99c; border-radius: 8px; background: #f9f4e6; color: #73592c; font-size: clamp(13px, calc(var(--question-font) * .65), 22px); }
+#modal-layer #q-body .math-scroll { max-width: 100%; overflow-x: auto; overflow-y: hidden; padding-block: .1em .25em; }
+#modal-layer #q-body .math-scroll-block { display: block; }
+#modal-layer #q-body .math-scroll-inline { display: inline-block; vertical-align: middle; }
+#modal-layer #q-body math mtext { font-family: "Segoe UI", Arial, sans-serif; }
+#modal-layer #q-body math [data-math-letter="vi"] { font-family: "Times New Roman", serif; font-style: italic; }
+#modal-layer #q-body math annotation { display: none; }
+#modal-layer .answer-options .option-content { min-width: 0; }
+#modal-layer .figure-button { max-width: 100%; }
+#modal-layer .session-tf-label { color: #17584e; font-size: clamp(13px, calc(var(--question-font) * .66), 22px); font-weight: 700; }
+#modal-layer .session-distribution { margin-top: 1em; padding: .75em 1em; background: #eef5f0; border: 1px solid #d5e4d8; border-radius: 12px; font-size: clamp(14px, calc(var(--question-font) * .68), 24px); line-height: 1.55; }
+.session-distribution h3 { margin: 0 0 .45em; color: #173c48; font-size: 1.1em; }
+.session-distribution p { margin: .25em 0 .7em; }
+.session-distribution ul { padding: 0; margin: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13em), 1fr)); gap: .55em 1em; }
+.session-distribution li { min-width: 0; padding: .45em .6em; border: 1px solid #d5e4d8; border-radius: 8px; background: #fcfcf9; overflow-wrap: anywhere; }
+.session-distribution progress { display: block; width: 100%; height: .45em; margin-top: .35em; accent-color: #188273; }
+#modal-layer.is-presenting .question-modal { width: 100%; height: 100%; }
+@media (max-width: 560px) {
+  #modal-layer .q-tools { flex-shrink: 0; }
+  #modal-layer .q-tools > button { min-width: 27px; }
+}

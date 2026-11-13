@@ -1,0 +1,1802 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phần mềm Dạy học: XÁC SUẤT & THỐNG KÊ</title>
+    <style>
+        :root {
+            /* Biến màu sắc chung và Tabs 1-5 */
+            --primary-bg: #f5f7f9;
+            --sidebar-border: #dee2e6;
+            --btn-start: #27ae60;
+            --btn-result: #8e44ad;
+            --btn-hide: #c0392b;
+            --border-blue: #2980b9;
+            --border-green: #27ae60;
+            --border-purple: #8e44ad;
+            --btn-orange: #d35400;
+            --btn-dark: #34495e;
+
+            /* Biến cho Tab 6 */
+            --coin-heads: #c0392b;
+            --coin-tails: #2980b9;
+            --path-active: #f1c40f; 
+
+            /* Biến cho Lý Thuyết */
+            --sidebar-bg: #2c3e50;
+            --sidebar-active: #1abc9c;
+            --sidebar-hover: #34495e;
+            --text-main: #333;
+            --heading-color: #2c3e50;
+            --sub-heading: #d35400; 
+            --box-def-bg: #edf2f7;
+            --box-def-border: #2980b9;
+            --box-ex-bg: #eafaf1;
+            --box-ex-border: #27ae60;
+            --box-warn-bg: #fef9e7;
+            --box-warn-border: #f1c40f;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+        body { background-color: #ffffff; display: flex; flex-direction: column; height: 100vh; overflow: hidden; }
+
+        /* Tabs Navigation */
+        .tabs {
+            display: flex; background-color: #f8f9fa; border-bottom: 2px solid #dee2e6;
+            padding-top: 10px; padding-left: 10px; flex-shrink: 0;
+            flex-wrap: wrap; /* Cho phép rớt dòng nếu màn hình nhỏ */
+        }
+        .tab {
+            padding: 8px 20px; margin-right: 5px; font-weight: bold; font-size: 14px;
+            color: #555; cursor: pointer; border-bottom: 3px solid transparent; transition: 0.2s;
+        }
+        .tab.active { color: #d9534f; border-bottom: 3px solid #d9534f; }
+        .tab:hover:not(.active) { background-color: #eee; }
+
+        /* Main Layout */
+        .container { display: flex; flex: 1; overflow: hidden; }
+        .tab-content { display: none; width: 100%; height: 100%; }
+        .tab-content.active { display: flex; }
+
+        /* Sidebar Styling (Chung) */
+        .sidebar {
+            width: 420px; min-width: 420px; padding: 20px;
+            border-right: 1px solid var(--sidebar-border);
+            display: flex; flex-direction: column; gap: 20px; overflow-y: auto; background: #fff;
+        }
+
+        .box-panel {
+            border: 1px solid var(--border-blue); border-radius: 6px;
+            padding: 15px; position: relative;
+        }
+        .box-panel.green-border { border-color: var(--border-green); }
+        .box-panel.green-border::before { color: var(--border-green); }
+        .box-panel.purple-border { border-color: var(--border-purple); }
+        .box-panel.purple-border::before { color: var(--border-purple); }
+        .box-panel.orange-border { border-color: var(--btn-orange); }
+        .box-panel.orange-border::before { color: var(--btn-orange); }
+
+        .box-panel::before {
+            content: attr(data-title); position: absolute; top: -11px; left: 10px;
+            background: white; padding: 0 5px; font-weight: bold; color: var(--border-blue); font-size: 14px;
+        }
+
+        .problem-desc { line-height: 1.6; font-size: 15px; color: #333; }
+        
+        .control-group { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; margin-top: 5px;}
+        .input-item { display: flex; align-items: center; gap: 5px; font-size: 14px; }
+        .input-item input { width: 50px; padding: 4px; border: 1px solid #ccc; border-radius: 4px; text-align: center; }
+
+        .btn-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        button {
+            padding: 10px; border: none; border-radius: 4px; color: white;
+            font-weight: bold; cursor: pointer; transition: 0.2s; font-size: 13px;
+        }
+        .btn-gieo { background-color: var(--btn-start); }
+        .btn-gieo:hover { filter: brightness(0.9); }
+        .btn-kq { background-color: var(--btn-result); }
+        .btn-kq.hidden-state { background-color: var(--btn-hide); } 
+        
+        /* Math Results Area (Chung) */
+        .math-results { margin-top: 15px; border-top: 1px solid #eee; padding-top: 15px; }
+        .math-section { margin-bottom: 15px; }
+        .math-title { font-weight: bold; font-size: 14px; margin-bottom: 5px; color: #333; }
+        .math-set { color: #2980b9; font-size: 14px; margin-bottom: 5px; font-family: 'Times New Roman', Times, serif; font-style: italic; line-height: 1.5; }
+        .math-count { color: #e74c3c; font-size: 14px; font-weight: bold; font-family: 'Times New Roman', Times, serif;}
+        i.math { font-family: 'Times New Roman', Times, serif; font-style: italic; }
+
+        /* Main Display Area (Chung) */
+        .main-display { flex: 1; background-color: var(--primary-bg); display: flex; flex-direction: column; padding: 10px; overflow: auto; }
+        
+        /* Tab 1-5 Top View & Tree */
+        .top-view { height: auto; min-height: 160px; display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap; flex-shrink: 0; }
+        .tree-view {
+            flex: 1; margin: 0 10px 10px 10px; background: white; border: 1px solid var(--border-green);
+            border-radius: 4px; position: relative; overflow: auto; display: flex; justify-content: center; align-items: flex-start;
+        }
+        .tree-view.purple-tree { border-color: var(--border-purple); }
+        .tree-view.orange-tree { border-color: var(--btn-orange); flex-direction: row; flex-wrap: wrap; align-content: flex-start; justify-content: center; gap: 8px; padding: 30px; }
+
+        /* Coin Elements */
+        .coin {
+            width: 75px; height: 75px; border-radius: 50%; border: 2px solid #333;
+            display: flex; justify-content: center; align-items: center;
+            color: white; font-size: 36px; font-weight: bold; position: relative;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-family: Arial, sans-serif;
+        }
+        .coin::after {
+            content: ''; position: absolute; width: 63px; height: 63px;
+            border-radius: 50%; border: 1.5px dashed rgba(255,255,255,0.6);
+        }
+        .coin.heads { background-color: #cb4335; border-color: #7b241c; }
+        .coin.tails { background-color: #2980b9; border-color: #154360; }
+
+        /* Dice Elements */
+        .dice-box {
+            width: 65px; height: 65px; background-color: #fdfdfd;
+            border-radius: 12px; border: 2px solid #bdc3c7;
+            display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr);
+            padding: 8px; gap: 3px; box-shadow: inset 0 -2px 5px rgba(0,0,0,0.05), 0 3px 6px rgba(0,0,0,0.1);
+        }
+        .dice-dot { width: 11px; height: 11px; border-radius: 50%; background-color: transparent; justify-self: center; align-self: center; }
+        .dice-dot.active { background-color: #2c3e50; }
+        
+        @keyframes shakeRoll {
+            0% { transform: rotate(0deg) scale(1) translateY(0); }
+            25% { transform: rotate(-15deg) scale(1.05) translateY(-5px); }
+            50% { transform: rotate(15deg) scale(0.95) translateY(5px); }
+            75% { transform: rotate(-15deg) scale(1.05) translateY(-2px); }
+            100% { transform: rotate(0deg) scale(1) translateY(0); }
+        }
+        .rolling { animation: shakeRoll 0.15s infinite; filter: blur(0.5px); }
+
+        /* Table */
+        .result-table-container { flex: 1; overflow-y: auto; margin-top: 10px; }
+        table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+        th { background: #f8f9fa; }
+
+        /* SVG Tree Styling */
+        .tree-svg { width: 100%; height: 100%; display: block; min-width: 600px;}
+        .node-circle { stroke: #555; stroke-width: 1.2; }
+        .node-text { fill: white; font-size: 13px; font-family: Arial; font-weight: bold; text-anchor: middle; dominant-baseline: middle; }
+        .link-line { stroke: #d0d3d4; stroke-width: 2; transition: stroke 0.3s, stroke-width 0.3s; }
+        .link-line.active-path { stroke: #e74c3c; stroke-width: 4.5; }
+        .leaf-label { font-size: 13px; font-weight: normal; fill: #7f8c8d; font-family: Arial; }
+        .leaf-label.highlight { fill: #c0392b; font-size: 14.5px; font-weight: bold; } 
+
+        /* Tab 4 Specific: Toggle Switch */
+        .toggle-group { display: flex; border: 1px solid #ccc; border-radius: 4px; overflow: hidden; margin-bottom: 15px; }
+        .toggle-btn { flex: 1; padding: 8px; text-align: center; font-size: 14px; cursor: pointer; background: #ecf0f1; color: #7f8c8d; user-select: none;}
+        .toggle-btn.active { background: var(--border-purple); color: white; font-weight: bold; }
+
+        /* Tab 4 & 5 Specific: Animation Area */
+        .cb-animation-area { height: 250px; background: transparent; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px; flex-shrink: 0; }
+        .cb-squares { display: flex; gap: 15px; }
+        .cb-square { width: 50px; height: 50px; border: 2px dashed #bdc3c7; border-radius: 4px; display: flex; justify-content: center; align-items: center; position: relative; }
+        .cb-square-label { position: absolute; bottom: -25px; color: #95a5a6; font-size: 14px; font-weight: bold; }
+        .cb-box-container { width: 250px; height: 120px; border: 4px solid #95a5a6; border-radius: 8px; background: #eef2f5; position: relative; }
+        
+        .cb-ball {
+            width: 40px; height: 40px; border-radius: 50%; border: 2px solid #2c3e50; display: flex; justify-content: center; align-items: center;
+            font-size: 18px; font-weight: bold; font-family: Arial; color: #333; position: absolute; transition: all 0.5s ease-in-out;
+            box-shadow: inset -3px -3px 6px rgba(0,0,0,0.2), 0 3px 5px rgba(0,0,0,0.2); z-index: 10;
+        }
+        
+        .fraction { display: inline-block; vertical-align: middle; margin: 0 0.2em 0.4ex; text-align: center; font-size: 15px;}
+        .fraction > span { display: block; padding-top: 0.15em; }
+        .fraction span.fdn { border-top: 1px solid #333; }
+        
+        /* Math Fraction cho Tab Lý thuyết */
+        .fraction-th { display: inline-flex; flex-direction: column; vertical-align: middle; text-align: center; font-size: 16px; margin: 0 4px;}
+        .fraction-th > span:first-child { border-bottom: 1px solid currentColor; padding: 0 2px; }
+        .fraction-th > span:last-child { padding: 0 2px; }
+
+        /* Tab 5 (Bốc hoàn lại) Specific */
+        .bhl-recorded-balls { min-height: 40px; display: flex; gap: 8px; justify-content: center; align-items: flex-end; margin-bottom: 5px; }
+        .bhl-small-ball { width: 32px; height: 32px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-weight: bold; font-size: 14px; border: 1px solid #2c3e50; box-shadow: 0 2px 4px rgba(0,0,0,0.2); animation: popIn 0.3s ease-out;}
+        .bhl-active-square { width: 50px; height: 50px; border: 2px dashed #d35400; border-radius: 4px; display: flex; justify-content: center; align-items: center; margin-bottom: 15px; position: relative; }
+        
+        .bhl-card { border: 1px solid #ccc; border-radius: 4px; padding: 12px 18px; background: white; font-size: 15px; font-weight: bold; color: #2c3e50; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .bhl-card.identical { color: #d35400; }
+        .bhl-card.drawn { border: 2px solid #e74c3c; background-color: #fdedec; transform: scale(1.08); transition: 0.3s; box-shadow: 0 4px 8px rgba(231,76,60,0.2); z-index: 5; }
+
+        @keyframes popIn { 0% { transform: scale(0); } 100% { transform: scale(1); } }
+
+        /* Tab 6 (Gieo mặt ngửa) Specific */
+        #tab-gieomatngua .math-set { font-size: 15px; line-height: 1.6; color: #2c3e50; font-family: inherit; font-style: normal;}
+        #tab-gieomatngua .main-display { padding: 0; background: #fff;}
+        .toss-area {
+            height: 220px; background-color: var(--primary-bg); border-bottom: 1px solid var(--sidebar-border);
+            display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 15px; flex-shrink: 0;
+        }
+        .toss-title { font-size: 14px; font-weight: bold; color: #555; text-transform: uppercase; letter-spacing: 1px; }
+        .coin-container { perspective: 1000px; width: 80px; height: 80px; }
+        .coin-3d { 
+            width: 100%; height: 100%; position: relative; 
+            transform-style: preserve-3d; transition: transform 0.1s linear; 
+        }
+        .coin-face { 
+            position: absolute; width: 100%; height: 100%; backface-visibility: hidden; 
+            border-radius: 50%; display: flex; justify-content: center; align-items: center; 
+            font-size: 40px; font-weight: bold; color: white; border: 3px solid #333; 
+            box-shadow: inset 0 0 0 4px rgba(255,255,255,0.2), 0 4px 6px rgba(0,0,0,0.15);
+            font-family: Arial, sans-serif;
+        }
+        .coin-face::after {
+            content: ''; position: absolute; width: 66px; height: 66px;
+            border-radius: 50%; border: 1.5px dashed rgba(255,255,255,0.7);
+        }
+        .coin-front { background-color: var(--coin-heads); } 
+        .coin-back { background-color: var(--coin-tails); transform: rotateY(180deg); } 
+        .toss-result-text { font-size: 16px; font-weight: bold; color: #2c3e50; min-height: 24px; }
+        .tree-area { flex: 1; position: relative; overflow: auto; display: flex; justify-content: center; align-items: flex-start; padding: 20px; }
+        
+        /* Tab Lý Thuyết Specific */
+        .theory-sidebar {
+            width: 250px; min-width: 250px; background: var(--sidebar-bg);
+            display: flex; flex-direction: column; padding-top: 10px; flex-shrink: 0;
+        }
+        .menu-item {
+            padding: 15px 20px; color: #ecf0f1; font-size: 15px; font-weight: bold;
+            cursor: pointer; border-left: 4px solid transparent; transition: 0.2s;
+        }
+        .menu-item:hover { background: var(--sidebar-hover); }
+        .menu-item.active { background: var(--sidebar-active); border-left-color: #fff; }
+
+        .theory-content { flex: 1; padding: 40px 60px; overflow-y: auto; background: #fff; scroll-behavior: smooth; }
+        .theory-section { display: none; animation: fadeIn 0.4s ease-in-out; }
+        .theory-section.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        .page-title {
+            font-size: 32px; font-weight: 800; color: var(--heading-color);
+            margin-bottom: 10px; position: relative;
+        }
+        .page-title::after {
+            content: ''; display: block; width: 100%; height: 3px;
+            background: #f1c40f; margin-top: 15px; margin-bottom: 30px;
+        }
+        
+        .sub-title { font-size: 24px; font-weight: bold; color: var(--sub-heading); margin: 25px 0 15px 0; }
+        .sub-title-2 { font-size: 20px; font-weight: bold; color: var(--heading-color); margin: 20px 0 10px 0; }
+        
+        .theory-content p { font-size: 16px; line-height: 1.6; color: var(--text-main); margin-bottom: 15px; }
+        .theory-content ul { margin-left: 25px; margin-bottom: 15px; }
+        .theory-content li { font-size: 16px; line-height: 1.6; color: var(--text-main); margin-bottom: 8px; }
+
+        .box { padding: 20px; border-radius: 4px; margin-bottom: 20px; position: relative; box-shadow: 0 2px 5px rgba(0,0,0,0.02);}
+        .box-def { background: var(--box-def-bg); border-left: 5px solid var(--box-def-border); }
+        .box-def strong { color: #c0392b; } 
+        .box-ex { background: var(--box-ex-bg); border: 2px dashed var(--box-ex-border); }
+        .box-ex .ex-title { font-weight: bold; color: #c0392b; font-size: 16px; margin-bottom: 10px; display: inline-block;}
+        .box-warn { background: var(--box-warn-bg); border-left: 5px solid var(--box-warn-border); }
+        
+        .math-th { font-family: 'Times New Roman', Times, serif; font-size: 18px; font-style: italic; color: #2980b9; font-weight: bold; }
+        .math-red { color: #c0392b; }
+
+        .reveal-btn {
+            background: var(--box-ex-border); color: white; border: none; padding: 6px 12px;
+            border-radius: 4px; cursor: pointer; font-size: 14px; font-weight: bold; transition: 0.2s; margin-top: 10px;
+        }
+        .reveal-btn:hover { background: #219653; }
+        .answer-content { display: none; margin-top: 15px; padding-top: 15px; border-top: 1px dashed #ccc; animation: fadeIn 0.3s;}
+
+        /* CSS Venn Diagram */
+        .venn-container { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; margin: 30px 0; }
+        .venn-wrapper { 
+            text-align: center; width: 220px; padding: 20px 10px; border-radius: 8px; 
+            transition: 0.3s; border: 1px solid transparent; cursor: pointer; 
+        }
+        .venn-wrapper:hover { background: #fdfdfd; border-color: #eee; box-shadow: 0 5px 15px rgba(0,0,0,0.06); transform: translateY(-3px); }
+        .venn { position: relative; width: 140px; height: 100px; margin: 0 auto 15px auto; display: flex; justify-content: center; }
+        .circle { 
+            width: 80px; height: 80px; border-radius: 50%; position: absolute; top: 0; border: 2px solid #333; 
+            display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 16px; color: #333; 
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
+        }
+
+        .venn-union .circle.A { left: 10px; background: rgba(52, 152, 219, 0.1); }
+        .venn-union .circle.B { right: 10px; background: rgba(52, 152, 219, 0.1); }
+        .venn-wrapper.venn-union:hover .circle.A,
+        .venn-wrapper.venn-union:hover .circle.B { 
+            background: rgba(52, 152, 219, 0.8); border-color: #2980b9; color: white; box-shadow: 0 0 15px rgba(52, 152, 219, 0.5); 
+        }
+        .venn-wrapper.venn-union:hover .circle.A { transform: scale(1.05) translateX(3px); z-index: 1;}
+        .venn-wrapper.venn-union:hover .circle.B { transform: scale(1.05) translateX(-3px); z-index: 0;}
+
+        .venn-intersect .circle.A { left: 10px; background: transparent; transition: 0.4s; }
+        .venn-intersect .circle.B { right: 10px; background: transparent; transition: 0.4s; }
+        .intersect-clip { position: absolute; width: 80px; height: 80px; border-radius: 50%; left: 10px; top: 0; overflow: hidden; z-index: 2; pointer-events: none; }
+        .intersect-fill { position: absolute; width: 80px; height: 80px; border-radius: 50%; left: 40px; top: -2px; background: rgba(155, 89, 182, 0.2); transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .venn-wrapper.venn-intersect:hover .intersect-fill { background: rgba(155, 89, 182, 0.95); transform: scale(1.15); box-shadow: inset 0 0 10px rgba(0,0,0,0.3); }
+        .venn-wrapper.venn-intersect:hover .circle.A { border-color: rgba(0,0,0,0.1); color: rgba(0,0,0,0.2); transform: translateX(-5px); }
+        .venn-wrapper.venn-intersect:hover .circle.B { border-color: rgba(0,0,0,0.1); color: rgba(0,0,0,0.2); transform: translateX(5px); }
+
+        .venn-disjoint .circle.A { left: -20px; background: rgba(231, 76, 60, 0.1); }
+        .venn-disjoint .circle.B { right: -20px; background: rgba(26, 188, 156, 0.1); }
+        .venn-wrapper.venn-disjoint:hover .circle.A { animation: collideA 0.35s infinite alternate ease-in; background: rgba(231, 76, 60, 0.6); border-color: #c0392b; color: white; }
+        .venn-wrapper.venn-disjoint:hover .circle.B { animation: collideB 0.35s infinite alternate ease-in; background: rgba(26, 188, 156, 0.6); border-color: #16a085; color: white; }
+        @keyframes collideA { 0% { transform: translateX(-10px); } 100% { transform: translateX(10px); } }
+        @keyframes collideB { 0% { transform: translateX(10px); } 100% { transform: translateX(-10px); } }
+
+        .venn-label { font-size: 15px; font-weight: bold; color: var(--heading-color); }
+        .venn-formula { font-size: 14px; color: #7f8c8d; margin-top: 5px; font-family: monospace; }
+        
+        .flashcard-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px; }
+        .flashcard { background-color: transparent; height: 150px; perspective: 1000px; cursor: pointer; }
+        .flashcard-inner { position: relative; width: 100%; height: 100%; text-align: center; transition: transform 0.6s; transform-style: preserve-3d; }
+        .flashcard:hover .flashcard-inner { transform: rotateY(180deg); }
+        .flashcard-front, .flashcard-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; border-radius: 8px; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .flashcard-front { background: linear-gradient(135deg, #3498db, #2980b9); color: white; font-size: 18px; font-weight: bold; }
+        .flashcard-back { background-color: #fff; color: #333; transform: rotateY(180deg); border: 2px solid #3498db; }
+        .flashcard-back .math-th { font-size: 22px; color: #c0392b; }
+    </style>
+</head>
+<body>
+
+    <div class="tabs">
+        <div class="tab active" onclick="switchTab(0)">Khởi động</div>
+        <div class="tab" onclick="switchTab(1)">Gieo đồng tiền</div>
+        <div class="tab" onclick="switchTab(2)">Gieo xúc xắc</div>
+        <div class="tab" onclick="switchTab(3)">Chọn Bóng đánh số</div>
+        <div class="tab" onclick="switchTab(4)">Bốc hoàn lại</div>
+        <div class="tab" onclick="switchTab(5)">Gieo mặt ngửa</div>
+        <div class="tab" onclick="switchTab(6)">Lý thuyết</div>
+    </div>
+
+    <div class="container">
+        
+        <div id="tab-khoidong" class="tab-content active">
+            <div class="sidebar">
+                <div class="box-panel" data-title="Điều khiển Thí nghiệm">
+                    <div class="input-item" style="justify-content: space-between; margin-bottom:10px;">
+                        <label>Chọn vật thể:</label>
+                        <select id="kd-type" style="padding:5px; width:120px;">
+                            <option value="coin">Đồng xu</option>
+                            <option value="dice">Xúc xắc</option>
+                        </select>
+                    </div>
+                    <div class="input-item" style="justify-content: space-between; margin-bottom:10px;">
+                        <label>Số lượng (<i class="math">n</i>):</label>
+                        <input type="number" id="kd-n" value="2" min="1" max="10">
+                    </div>
+                    <button class="btn-gieo" style="width:100%" onclick="runKhởiĐộng()">BẮT ĐẦU GIEO</button>
+                    <button style="width:100%; background:#f8f9fa; color:#333; border: 1px solid #ccc; margin-top:5px;" onclick="clearHistory()">Xóa lịch sử</button>
+                </div>
+                <div class="box-panel" data-title="Kết quả" style="flex:1; display:flex; flex-direction:column; padding: 0;">
+                    <div class="result-table-container">
+                        <table>
+                            <thead><tr><th>Lần</th><th>Kết quả</th></tr></thead>
+                            <tbody id="kd-history"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="main-display" id="kd-display" style="flex-direction:row; flex-wrap:wrap; justify-content:center; align-items:center; gap:20px; padding:40px;">
+            </div>
+        </div>
+
+        <div id="tab-gieodongtien" class="tab-content">
+            <div class="sidebar">
+                <div class="box-panel" data-title="Đề toán">
+                    <div class="problem-desc" id="gt-problem-text"></div>
+                </div>
+                <div class="box-panel" data-title="Điều khiển">
+                    <div class="control-group">
+                        <div class="input-item">
+                            <label>Số xu (<i class="math">n</i>):</label>
+                            <input type="number" id="gt-n" value="3" min="1" max="4" onchange="resetGieo()">
+                        </div>
+                        <div class="input-item">
+                            <label>Số Ngửa (<i class="math">k</i>):</label>
+                            <input type="number" id="gt-k" value="2" min="0" max="4" onchange="resetGieo()">
+                        </div>
+                    </div>
+                    <div class="btn-row">
+                        <button class="btn-gieo" onclick="gieoNgay()">GIEO NGAY</button>
+                        <button class="btn-kq" id="btn-hien-kq" onclick="toggleKetQua()">HIỆN KẾT QUẢ</button>
+                    </div>
+                    <div class="math-results" id="gt-math-results" style="display:none;">
+                        <div class="math-section">
+                            <div class="math-title">1. Không gian mẫu (&Omega;):</div>
+                            <div class="math-set" id="gt-text-omega"></div>
+                            <div class="math-count" id="gt-count-omega"></div>
+                        </div>
+                        <div class="math-section" style="border-top: 1px solid #eee; padding-top: 15px;">
+                            <div class="math-title" id="gt-title-eventA"></div>
+                            <div class="math-set" id="gt-text-eventA"></div>
+                            <div class="math-count" id="gt-count-eventA"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-display">
+                <div class="top-view" id="gt-coin-display"></div>
+                <div class="tree-view" id="gt-tree-display">
+                    <svg id="gt-tree-svg" class="tree-svg" preserveAspectRatio="xMidYMin meet"></svg>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-gieoxucxac" class="tab-content">
+            <div class="sidebar">
+                <div class="box-panel green-border" data-title="Đề toán">
+                    <div class="problem-desc" id="gx-problem-text"></div>
+                </div>
+                <div class="box-panel green-border" data-title="Điều khiển">
+                    <div class="control-group">
+                        <div class="input-item">
+                            <label>Số xúc xắc (<i class="math">n</i>):</label>
+                            <input type="number" id="gx-n" value="2" min="1" max="5" onchange="resetGieoXX()">
+                        </div>
+                        <div class="input-item">
+                            <label>Tổng điểm (<i class="math">S</i>):</label>
+                            <input type="number" id="gx-k" value="2" min="1" max="30" onchange="resetGieoXX()">
+                        </div>
+                    </div>
+                    <div class="btn-row">
+                        <button class="btn-gieo" style="background-color: #e67e22;" onclick="gieoNgayXX()" id="btn-gieo-xx">GIEO NGAY</button>
+                        <button class="btn-kq" id="btn-hien-kq-xx" onclick="toggleKetQuaXX()">HIỆN KẾT QUẢ</button>
+                    </div>
+                    
+                    <div class="math-results" id="gx-math-results" style="display:none;">
+                        <div class="math-section">
+                            <div class="math-title">1. Không gian mẫu (&Omega;):</div>
+                            <div class="math-set" id="gx-text-omega"></div>
+                            <div class="math-count" id="gx-count-omega"></div>
+                        </div>
+                        <div class="math-section" style="border-top: 1px solid #eee; padding-top: 15px;">
+                            <div class="math-title" id="gx-title-eventA"></div>
+                            <div class="math-set" id="gx-text-eventA"></div>
+                            <div class="math-count" id="gx-count-eventA"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-display">
+                <div class="top-view" id="gx-dice-display"></div>
+                <div class="tree-view" id="gx-tree-display">
+                    <svg id="gx-tree-svg" class="tree-svg" preserveAspectRatio="xMidYMin meet"></svg>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-chonbong" class="tab-content">
+            <div class="sidebar">
+                <div class="box-panel purple-border" data-title="Đề toán">
+                    <div class="problem-desc" id="cb-problem-text"></div>
+                </div>
+                <div class="box-panel purple-border" data-title="Điều khiển">
+                    <div class="control-group">
+                        <div class="input-item">
+                            <label>Số bóng (<i class="math">n</i>):</label>
+                            <input type="number" id="cb-n" value="3" min="2" max="6" onchange="resetCB()">
+                        </div>
+                        <div class="input-item">
+                            <label>Số bóng lấy (<i class="math">k</i>):</label>
+                            <input type="number" id="cb-k" value="3" min="1" max="6" onchange="resetCB()">
+                        </div>
+                    </div>
+                    
+                    <label style="font-size: 14px; margin-bottom: 5px; display: block; color: #333;">Chọn cách lấy:</label>
+                    <div class="toggle-group">
+                        <div class="toggle-btn active" id="cb-btn-lanluot" onclick="setPickMode('lanluot')">Lấy Lần lượt</div>
+                        <div class="toggle-btn" id="cb-btn-cungluc" onclick="setPickMode('cungluc')">Lấy Cùng lúc</div>
+                    </div>
+
+                    <div class="btn-row">
+                        <button style="background-color: var(--btn-orange);" onclick="bocBong()" id="btn-boc-bong">BỐC BÓNG</button>
+                        <button style="background-color: var(--btn-hide);" id="btn-hien-kgm-cb" onclick="toggleKetQuaCB()">ẨN KGM</button>
+                    </div>
+                    
+                    <div class="math-results" id="cb-math-results" style="display: block;">
+                        <div class="math-title" style="margin-bottom:10px;">Kết quả:</div>
+                        <div class="problem-desc" id="cb-math-formula" style="margin-bottom: 15px; font-family: 'Times New Roman';"></div>
+                        <div class="math-section" style="border-top: 1px solid #eee; padding-top: 15px;">
+                            <div class="math-title">Liệt kê &Omega;:</div>
+                            <div class="math-set" id="cb-text-omega"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-display">
+                <div class="cb-animation-area" id="cb-anim-area">
+                    <div class="cb-squares" id="cb-squares"></div>
+                    <div class="cb-box-container" id="cb-ball-box"></div>
+                </div>
+                <div class="tree-view purple-tree" id="cb-tree-display">
+                    <svg id="cb-tree-svg" class="tree-svg" preserveAspectRatio="xMidYMin meet"></svg>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-bochoanlai" class="tab-content">
+            <div class="sidebar">
+                <div class="box-panel orange-border" data-title="Đề toán">
+                    <div class="problem-desc" id="bhl-problem-text"></div>
+                </div>
+                <div class="box-panel orange-border" data-title="Điều khiển">
+                    <div class="control-group">
+                        <div class="input-item">
+                            <label>Số bóng (<i class="math">n</i>):</label>
+                            <input type="number" id="bhl-n" value="3" min="1" max="6" onchange="resetBHL()">
+                        </div>
+                        <div class="input-item">
+                            <label>Số lần bốc (<i class="math">k</i>):</label>
+                            <input type="number" id="bhl-k" value="2" min="1" max="5" onchange="resetBHL()">
+                        </div>
+                    </div>
+                    
+                    <div class="btn-row">
+                        <button style="background-color: var(--btn-orange);" onclick="bocHoanLai()" id="btn-boc-hoan-lai">BỐC VÀ HOÀN LẠI</button>
+                        <button style="background-color: var(--btn-dark);" id="btn-hien-kgm-bhl" onclick="toggleKetQuaBHL()">HIỆN KGM</button>
+                    </div>
+                    
+                    <div class="math-results" id="bhl-math-results" style="display: none;">
+                        <div class="math-title" style="margin-bottom:10px;">Toán học:</div>
+                        <div class="problem-desc" id="bhl-math-formula" style="margin-bottom: 5px; font-family: 'Times New Roman';"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-display">
+                <div class="cb-animation-area" id="bhl-anim-area" style="gap: 5px; padding-top: 10px;">
+                    <div class="bhl-recorded-balls" id="bhl-recorded-balls"></div>
+                    <div style="font-size:12px; font-weight:bold; color:#7f8c8d; margin-bottom:5px;">KHU VỰC GHI NHẬN</div>
+                    <div class="bhl-active-square" id="bhl-active-square"></div>
+                    <div class="cb-box-container" id="bhl-ball-box" style="margin-top: 10px;"></div>
+                </div>
+                <div class="tree-view orange-tree" id="bhl-grid-display"></div>
+            </div>
+        </div>
+
+        <div id="tab-gieomatngua" class="tab-content">
+            <div class="sidebar">
+                <div class="box-panel" data-title="Đề toán">
+                    <div class="problem-desc">
+                        <b>Bài toán:</b> Gieo đồng tiền cân đối.<br>
+                        <b>Quy tắc:</b> Dừng nếu gặp <b>Ngửa (N)</b> HOẶC đủ <b><span id="txt-k-val-gmn">2</span></b> lần.<br>
+                        Hỏi Không gian mẫu &Omega; có bao nhiêu phần tử?
+                    </div>
+                </div>
+
+                <div class="box-panel" data-title="Điều khiển">
+                    <div class="control-group">
+                        <div class="input-item">
+                            <label>Giới hạn gieo (<i class="math">k</i>):</label>
+                            <input type="number" id="input-k-gmn" value="2" min="1" max="8" onchange="resetGMN()">
+                        </div>
+                    </div>
+                    <div class="btn-row">
+                        <button class="btn-gieo" style="background-color: #e67e22;" onclick="batDauGieoGMN()" id="btn-gieo-gmn">BẮT ĐẦU GIEO</button>
+                        <button class="btn-kq" style="background-color: #c0392b;" onclick="toggleKGM_GMN()" id="btn-kgm-gmn">ẨN KGM</button>
+                    </div>
+                </div>
+
+                <div class="math-results" id="math-box-gmn" style="display:block;">
+                    <div class="math-title">Lý thuyết:</div>
+                    <div class="math-set">
+                        Cây xác suất dạng bậc thang (Staircase).<br>
+                        Số phần tử: |&Omega;| = <b id="val-omega-count-gmn">3</b><br>
+                        &Omega; = { <span id="val-omega-set-gmn">N, SN, SS</span> }
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-display">
+                <div class="toss-area">
+                    <div class="toss-title">Khu vực gieo</div>
+                    <div class="coin-container">
+                        <div class="coin-3d" id="animated-coin-gmn">
+                            <div class="coin-face coin-front">N</div>
+                            <div class="coin-face coin-back">S</div>
+                        </div>
+                    </div>
+                    <div class="toss-result-text" id="toss-result-text-gmn">Chưa gieo</div>
+                </div>
+
+                <div class="tree-area">
+                    <svg id="gmn-tree-svg" class="tree-svg" preserveAspectRatio="xMidYMin meet"></svg>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-lythuyet" class="tab-content">
+            <div class="theory-sidebar">
+                <div class="menu-item active" onclick="showSection('sec-1', this)">1. Khái niệm cơ bản</div>
+                <div class="menu-item" onclick="showSection('sec-2', this)">2. Các loại Biến cố</div>
+                <div class="menu-item" onclick="showSection('sec-3', this)">3. Phép toán Biến cố</div>
+                <div class="menu-item" onclick="showSection('sec-4', this)">4. ⚠️ Chú ý Quan trọng</div>
+            </div>
+
+            <div class="theory-content">
+                <div id="sec-1" class="theory-section active">
+                    <div class="page-title">1. Phép thử & Không gian mẫu</div>
+                    
+                    <div class="sub-title">Phép thử ngẫu nhiên</div>
+                    <p>Là một thí nghiệm hay hành động mà:</p>
+                    <ul>
+                        <li>Ta không đoán trước được kết quả chính xác.</li>
+                        <li>Ta biết được tập hợp tất cả các kết quả có thể xảy ra.</li>
+                    </ul>
+
+                    <div class="sub-title">Không gian mẫu (<span class="math-th">&Omega;</span>)</div>
+                    <div class="box box-def">
+                        <p><strong>Định nghĩa:</strong> Tập hợp tất cả các kết quả có thể xảy ra của phép thử được gọi là <strong>Không gian mẫu</strong>.</p>
+                        <p>Ký hiệu: <span class="math-th math-red">&Omega;</span> (đọc là Omega).</p>
+                        <p>Số phần tử của không gian mẫu ký hiệu là: <span class="math-th math-red">n(&Omega;)</span> hoặc <span class="math-th math-red">|&Omega;|</span>.</p>
+                    </div>
+
+                    <div class="box box-ex">
+                        <div class="ex-title">Ví dụ 1: Gieo một đồng xu cân đối 1 lần.</div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ans-1', this)">Xem phân tích</button>
+                        <div class="answer-content" id="ans-1">
+                            <p>Ký hiệu: N (mặt Ngửa), S (mặt Sấp).</p>
+                            <p>Không gian mẫu: <span class="math-th">&Omega; = {N, S}</span></p>
+                            <p>Số phần tử: <span class="math-th">n(&Omega;) = 2</span></p>
+                        </div>
+                    </div>
+
+                    <div class="box box-ex">
+                        <div class="ex-title">Ví dụ 2: Gieo một con xúc xắc cân đối đồng chất 1 lần.</div>
+                        <button class="reveal-btn" onclick="toggleAnswer('ans-2', this)">Xem phân tích</button>
+                        <div class="answer-content" id="ans-2">
+                            <p>Tập hợp các mặt xuất hiện (từ 1 đến 6 chấm).</p>
+                            <p>Không gian mẫu: <span class="math-th">&Omega; = {1, 2, 3, 4, 5, 6}</span></p>
+                            <p>Số phần tử: <span class="math-th">n(&Omega;) = 6</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="sec-2" class="theory-section">
+                    <div class="page-title">2. Các loại Biến cố</div>
+                    
+                    <p><strong>Biến cố</strong> (thường ký hiệu là <span class="math-th">A, B, C...</span>) là một tập con của Không gian mẫu <span class="math-th">&Omega;</span>.</p>
+
+                    <div class="box box-def">
+                        <p><strong>1. Biến cố chắc chắn:</strong> Là biến cố luôn xảy ra khi thực hiện phép thử. Ký hiệu là <span class="math-th math-red">&Omega;</span>.</p>
+                        <p><strong>2. Biến cố không thể:</strong> Là biến cố không bao giờ xảy ra. Ký hiệu là tập rỗng <span class="math-th math-red">&empty;</span>.</p>
+                        <p><strong>3. Biến cố ngẫu nhiên:</strong> Là biến cố có thể xảy ra hoặc không xảy ra (Tập con thực sự của &Omega;).</p>
+                    </div>
+
+                    <div class="box box-ex">
+                        <div class="ex-title">Ví dụ: Phép thử gieo con xúc xắc 1 lần.</div>
+                        <ul>
+                            <li>Biến cố A: "Mặt xuất hiện có số chấm nhỏ hơn 7" &rarr; <strong>Biến cố chắc chắn</strong>.</li>
+                            <li>Biến cố B: "Mặt xuất hiện có 8 chấm" &rarr; <strong>Biến cố không thể</strong>.</li>
+                            <li>Biến cố C: "Mặt xuất hiện là số chẵn" &rarr; <strong>Biến cố ngẫu nhiên</strong> (<span class="math-th">C = {2, 4, 6}</span>).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="sec-3" class="theory-section">
+                    <div class="page-title">3. Phép toán & Quan hệ Biến cố</div>
+                    <p>Việc kết hợp các biến cố sinh ra các biến cố mới. Ta sử dụng ngôn ngữ Tập hợp để minh họa bằng sơ đồ Venn.</p>
+
+                    <div class="venn-container">
+                        <div class="venn-wrapper venn-union">
+                            <div class="venn">
+                                <div class="circle A">A</div>
+                                <div class="circle B">B</div>
+                            </div>
+                            <div class="venn-label">Biến cố Hợp</div>
+                            <div class="venn-formula"><span class="math-th">A &cup; B</span></div>
+                            <p style="font-size: 13px; margin-top:5px; color:#555;">(Rê chuột vào)<br>A xảy ra <b>HOẶC</b> B xảy ra.</p>
+                        </div>
+
+                        <div class="venn-wrapper venn-intersect">
+                            <div class="venn">
+                                <div class="circle A">A</div>
+                                <div class="circle B">B</div>
+                                <div class="intersect-clip">
+                                    <div class="intersect-fill"></div>
+                                </div>
+                            </div>
+                            <div class="venn-label">Biến cố Giao</div>
+                            <div class="venn-formula"><span class="math-th">A &cap; B</span> (hay <span class="math-th">AB</span>)</div>
+                            <p style="font-size: 13px; margin-top:5px; color:#555;">(Rê chuột vào)<br>Cả A <b>VÀ</b> B cùng xảy ra.</p>
+                        </div>
+
+                        <div class="venn-wrapper venn-disjoint">
+                            <div class="venn">
+                                <div class="circle A">A</div>
+                                <div class="circle B">B</div>
+                            </div>
+                            <div class="venn-label">Hai biến cố Xung khắc</div>
+                            <div class="venn-formula"><span class="math-th">A &cap; B = &empty;</span></div>
+                            <p style="font-size: 13px; margin-top:5px; color:#555;">(Rê chuột vào)<br>Chạm nhau là dội ngược, không thể cùng xảy ra.</p>
+                        </div>
+                    </div>
+
+                    <div class="box box-def">
+                        <p><strong>Biến cố đối:</strong> Biến cố "Không xảy ra A" được gọi là biến cố đối của A. Ký hiệu: <span class="math-th math-red" style="text-decoration: overline;">A</span> (đọc là A ngang).</p>
+                        <p>Tính chất: <span class="math-th">A &cup; <span style="text-decoration: overline;">A</span> = &Omega;</span> và <span class="math-th">A &cap; <span style="text-decoration: overline;">A</span> = &empty;</span></p>
+                    </div>
+                </div>
+
+                <div id="sec-4" class="theory-section">
+                    <div class="page-title">4. ⚠️ Công thức Xác suất cốt lõi</div>
+                    
+                    <div class="box box-warn">
+                        <div class="sub-title-2" style="margin-top:0;">Định nghĩa Cổ điển của Xác suất</div>
+                        <p>Giả sử các kết quả của phép thử là đồng khả năng. Xác suất của biến cố A được tính bằng:</p>
+                        <div style="text-align: center; margin: 20px 0;">
+                            <span class="math-th math-red" style="font-size: 24px; background: white; padding: 10px 20px; border: 2px solid #e74c3c; border-radius: 8px;">
+                                P(A) = <span class="fraction-th"><span>n(A)</span><span>n(&Omega;)</span></span>
+                            </span>
+                        </div>
+                        <p style="text-align: center; color: #555;">(Số kết quả thuận lợi cho A chia cho Tổng số kết quả có thể xảy ra)</p>
+                    </div>
+
+                    <div class="sub-title-2">Ghi nhớ nhanh (Lật thẻ)</div>
+                    <div class="flashcard-grid">
+                        <div class="flashcard">
+                            <div class="flashcard-inner">
+                                <div class="flashcard-front">Miền giá trị của Xác suất</div>
+                                <div class="flashcard-back">
+                                    <div>Luôn nằm trong đoạn [0, 1]</div>
+                                    <div class="math-th">0 &le; P(A) &le; 1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flashcard">
+                            <div class="flashcard-inner">
+                                <div class="flashcard-front">Xác suất Biến cố đối</div>
+                                <div class="flashcard-back">
+                                    <div>Tổng xác suất luôn bằng 1</div>
+                                    <div class="math-th">P(<span style="text-decoration: overline;">A</span>) = 1 &minus; P(A)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flashcard">
+                            <div class="flashcard-inner">
+                                <div class="flashcard-front">Quy tắc cộng (Xung khắc)</div>
+                                <div class="flashcard-back">
+                                    <div>Nếu A, B xung khắc:</div>
+                                    <div class="math-th">P(A &cup; B) = P(A) + P(B)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flashcard">
+                            <div class="flashcard-inner">
+                                <div class="flashcard-front">Quy tắc cộng (Mở rộng)</div>
+                                <div class="flashcard-back">
+                                    <div>Với mọi A, B:</div>
+                                    <div style="font-size:16px" class="math-th">P(A&cup;B) = P(A) + P(B) &minus; P(AB)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /* ========================================================
+           CÁC HÀM TIỆN ÍCH DÙNG CHUNG VÀ TABS LOGIC
+        ======================================================== */
+        const ballColors = ['#f1948a', '#abebc6', '#85c1e9', '#f9e79f', '#d7bde2', '#f5cba7'];
+        const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+        function fact(num) {
+            if (num <= 1) return 1;
+            return num * fact(num - 1);
+        }
+
+        function createDiceDOM(val) {
+            const dice = document.createElement('div');
+            dice.className = 'dice-box';
+            const patterns = {
+                1: [4], 2: [0, 8], 3: [0, 4, 8], 4: [0, 2, 6, 8], 5: [0, 2, 4, 6, 8], 6: [0, 3, 6, 2, 5, 8]
+            };
+            for (let i = 0; i < 9; i++) {
+                const dot = document.createElement('div');
+                dot.className = 'dice-dot';
+                if (patterns[val] && patterns[val].includes(i)) dot.classList.add('active');
+                dice.appendChild(dot);
+            }
+            return dice;
+        }
+
+        function switchTab(index) {
+            const tabs = document.querySelectorAll('.tab');
+            const contents = document.querySelectorAll('.tab-content');
+            tabs.forEach(t => t.classList.remove('active'));
+            contents.forEach(c => c.classList.remove('active'));
+            
+            tabs[index].classList.add('active');
+            if(index === 0) document.getElementById('tab-khoidong').classList.add('active');
+            if(index === 1) { document.getElementById('tab-gieodongtien').classList.add('active'); resetGieo(); }
+            if(index === 2) { document.getElementById('tab-gieoxucxac').classList.add('active'); resetGieoXX(); }
+            if(index === 3) { document.getElementById('tab-chonbong').classList.add('active'); resetCB(); }
+            if(index === 4) { document.getElementById('tab-bochoanlai').classList.add('active'); resetBHL(); }
+            if(index === 5) { document.getElementById('tab-gieomatngua').classList.add('active'); resetGMN(); }
+            if(index === 6) { document.getElementById('tab-lythuyet').classList.add('active'); }
+        }
+
+        /* ========================================================
+           TAB 1: KHỞI ĐỘNG
+        ======================================================== */
+        let kdCount = 0;
+        function runKhởiĐộng() {
+            const type = document.getElementById('kd-type').value;
+            const n = document.getElementById('kd-n').value;
+            const display = document.getElementById('kd-display');
+            display.innerHTML = '';
+            let results = [];
+
+            for(let i=0; i<n; i++) {
+                if(type === 'coin') {
+                    const isN = Math.random() > 0.5;
+                    results.push(isN ? 'N' : 'S');
+                    const coinDiv = document.createElement('div');
+                    coinDiv.className = `coin ${isN?'heads':'tails'}`;
+                    coinDiv.style.width = '65px'; coinDiv.style.height = '65px'; coinDiv.style.fontSize = '30px';
+                    coinDiv.textContent = isN ? 'N' : 'S';
+                    display.appendChild(coinDiv);
+                } else {
+                    const val = Math.floor(Math.random() * 6) + 1;
+                    results.push(val);
+                    const dice = createDiceDOM(val);
+                    dice.style.width = '60px'; dice.style.height = '60px';
+                    display.appendChild(dice);
+                }
+            }
+            kdCount++;
+            const row = `<tr><td>${kdCount}</td><td>${results.join(', ')}</td></tr>`;
+            document.getElementById('kd-history').insertAdjacentHTML('afterbegin', row);
+        }
+        function clearHistory() {
+            document.getElementById('kd-history').innerHTML = '';
+            document.getElementById('kd-display').innerHTML = '';
+            kdCount = 0;
+        }
+
+        /* ========================================================
+           TAB 2: GIEO ĐỒNG TIỀN
+        ======================================================== */
+        let currentTossResult = ""; 
+        let isResultShown = false;  
+
+        function resetGieo() {
+            const n = parseInt(document.getElementById('gt-n').value);
+            const k = parseInt(document.getElementById('gt-k').value);
+            
+            document.getElementById('gt-problem-text').innerHTML = `
+                <b>Thí nghiệm:</b> Gieo ${n} đồng xu cân đối.<br>
+                <b>Yêu cầu:</b><br>
+                1) Xác định Không gian mẫu &Omega;.<br>
+                2) Xác định Biến cố <i class="math">A</i>: "Có đúng ${k} mặt Ngửa".
+            `;
+            
+            currentTossResult = ""; 
+            document.getElementById('gt-coin-display').innerHTML = ""; 
+            isResultShown = false;
+            const btn = document.getElementById('btn-hien-kq');
+            const mathDiv = document.getElementById('gt-math-results');
+            btn.textContent = "HIỆN KẾT QUẢ"; btn.classList.remove('hidden-state'); mathDiv.style.display = 'none';
+            
+            updateMathContentGT(n, k); 
+            drawTreeGT(); 
+        }
+
+        function generateCombinationsGT(n) {
+            if (n === 0) return [""];
+            const prev = generateCombinationsGT(n - 1);
+            const res = [];
+            for (let p of prev) res.push(p + "N");
+            for (let p of prev) res.push(p + "S");
+            return res;
+        }
+
+        function updateMathContentGT(n, k) {
+            const combos = generateCombinationsGT(n);
+            const eventA = combos.filter(c => (c.match(/N/g) || []).length === k);
+            
+            document.getElementById('gt-text-omega').innerHTML = `&Omega; = { ${combos.join(', ')} }`;
+            document.getElementById('gt-count-omega').innerHTML = `Số phần tử: <i class="math">n</i>(&Omega;) = ${combos.length}`;
+            document.getElementById('gt-title-eventA').innerHTML = `2. Biến cố <i class="math">A</i> (<i class="math">k</i> = ${k} Ngửa):`;
+            document.getElementById('gt-text-eventA').innerHTML = `A = { ${eventA.length > 0 ? eventA.join(', ') : '&empty;'} }`;
+            document.getElementById('gt-count-eventA').innerHTML = `Số phần tử: <i class="math">n</i>(A) = ${eventA.length}`;
+        }
+
+        function toggleKetQua() {
+            isResultShown = !isResultShown;
+            const btn = document.getElementById('btn-hien-kq');
+            const mathDiv = document.getElementById('gt-math-results');
+            if(isResultShown) {
+                btn.textContent = "ẨN KẾT QUẢ"; btn.classList.add('hidden-state'); mathDiv.style.display = 'block';
+            } else {
+                btn.textContent = "HIỆN KẾT QUẢ"; btn.classList.remove('hidden-state'); mathDiv.style.display = 'none';
+            }
+            drawTreeGT();
+        }
+
+        function gieoNgay() {
+            const n = parseInt(document.getElementById('gt-n').value);
+            const display = document.getElementById('gt-coin-display');
+            display.innerHTML = '';
+            currentTossResult = "";
+
+            for(let i=0; i<n; i++) {
+                const isN = Math.random() > 0.5;
+                const char = isN ? 'N' : 'S';
+                currentTossResult += char;
+                display.innerHTML += `<div class="coin ${isN?'heads':'tails'}">${char}</div>`;
+            }
+            drawTreeGT();
+        }
+
+        function drawTreeGT() {
+            const n = parseInt(document.getElementById('gt-n').value) || 1;
+            const k = parseInt(document.getElementById('gt-k').value) || 0;
+            const svg = document.getElementById('gt-tree-svg');
+            
+            const requiredWidth = Math.pow(2, n) * 80;
+            const svgWidth = Math.max(1000, requiredWidth); 
+            const svgHeight = 550; 
+            svg.setAttribute('viewBox', `0 0 ${svgWidth} ${svgHeight}`);
+            svg.innerHTML = '';
+
+            const startY = 60;
+            const levelHeight = (svgHeight - 160) / n; 
+
+            let linesHTML = ""; let nodesHTML = ""; let textsHTML = "";
+
+            function buildTreeData(level, x, y, currentPath, parentX, parentY) {
+                if (level > 0) {
+                    const isLineActive = currentTossResult.startsWith(currentPath) && currentTossResult !== "";
+                    const lineClass = isLineActive ? "link-line active-path" : "link-line";
+                    linesHTML += `<line x1="${parentX}" y1="${parentY}" x2="${x}" y2="${y}" class="${lineClass}" />`;
+                }
+
+                if (level > n) {
+                    const numHeads = (currentPath.match(/N/g) || []).length;
+                    const isMatchA = numHeads === k && isResultShown; 
+                    const isPathResult = currentTossResult === currentPath; 
+                    
+                    let txtClass = "leaf-label";
+                    if (isMatchA || isPathResult) txtClass += " highlight";
+
+                    textsHTML += `<text x="${x}" y="${y + 30}" class="${txtClass}" text-anchor="middle">${currentPath}</text>`;
+                    return;
+                }
+
+                const r = level === 0 ? 20 : 16;
+                let fillCol = "#95a5a6";
+                let label = "Start";
+                
+                if (level > 0) {
+                    const type = currentPath[currentPath.length - 1];
+                    fillCol = type === 'N' ? '#e74c3c' : '#3498db';
+                    label = type;
+                }
+
+                nodesHTML += `<circle cx="${x}" cy="${y}" r="${r}" fill="${fillCol}" class="node-circle" />`;
+                let fontSize = level === 0 ? "11px" : "14px";
+                textsHTML += `<text x="${x}" y="${y}" class="node-text" style="font-size:${fontSize};">${label}</text>`;
+
+                const dx = svgWidth / Math.pow(2, level + 2);
+                buildTreeData(level + 1, x - dx, y + levelHeight, currentPath + "N", x, y);
+                buildTreeData(level + 1, x + dx, y + levelHeight, currentPath + "S", x, y);
+            }
+
+            buildTreeData(0, svgWidth / 2, startY, "", 0, 0);
+            svg.innerHTML = linesHTML + nodesHTML + textsHTML;
+        }
+
+        /* ========================================================
+           TAB 3: GIEO XÚC XẮC
+        ======================================================== */
+        let currentTossResultXX = []; 
+        let isResultShownXX = false;
+
+        function resetGieoXX() {
+            let nInput = document.getElementById('gx-n');
+            let n = parseInt(nInput.value);
+            if (n < 1) { n = 1; nInput.value = 1; }
+            if (n > 5) { n = 5; nInput.value = 5; }
+
+            let kInput = document.getElementById('gx-k');
+            let k = parseInt(kInput.value);
+            let minK = n; let maxK = n * 6;
+            kInput.min = minK; kInput.max = maxK;
+            if (k < minK) { k = minK; kInput.value = minK; }
+            if (k > maxK) { k = maxK; kInput.value = maxK; }
+
+            document.getElementById('gx-problem-text').innerHTML = `
+                <b>Thí nghiệm:</b> Gieo ${n} con xúc xắc cân đối.<br>
+                <b>Yêu cầu:</b><br>
+                1) Xác định Không gian mẫu &Omega;.<br>
+                2) Xác định Biến cố <i class="math">A</i>: "Tổng số chấm bằng ${k}".
+            `;
+            
+            currentTossResultXX = []; 
+            document.getElementById('gx-dice-display').innerHTML = ""; 
+            isResultShownXX = false;
+            
+            const btn = document.getElementById('btn-hien-kq-xx');
+            const mathDiv = document.getElementById('gx-math-results');
+            btn.textContent = "HIỆN KẾT QUẢ"; btn.classList.remove('hidden-state'); mathDiv.style.display = 'none';
+            
+            updateMathContentXX(n, k); 
+            drawDiceTree(); 
+        }
+
+        function generateDiceCombos(n) {
+            if (n === 1) return Array.from({length: 6}, (_, i) => [i + 1]);
+            const prev = generateDiceCombos(n - 1);
+            const res = [];
+            for (let p of prev) {
+                for (let i = 1; i <= 6; i++) {
+                    res.push([...p, i]);
+                }
+            }
+            return res;
+        }
+
+        function formatMathSetXX(arr, limit = 60) {
+            if(arr.length === 0) return '&empty;';
+            if(arr.length <= limit) return arr.map(c => `(${c.join(',')})`).join(', ');
+            const firstPart = arr.slice(0, limit).map(c => `(${c.join(',')})`).join(', ');
+            return `${firstPart}, ... <br><span style="color:#e74c3c; font-size:13px;"><i>[Còn ẩn ${arr.length - limit} kết quả khác]</i></span>`;
+        }
+
+        function updateMathContentXX(n, k) {
+            const combos = generateDiceCombos(n);
+            const eventA = combos.filter(c => c.reduce((a,b)=>a+b,0) === k);
+
+            document.getElementById('gx-text-omega').innerHTML = `&Omega; = { ${formatMathSetXX(combos)} }`;
+            document.getElementById('gx-count-omega').innerHTML = `Số phần tử: <i class="math">n</i>(&Omega;) = ${combos.length}`;
+            document.getElementById('gx-title-eventA').innerHTML = `2. Biến cố <i class="math">A</i> (Tổng = ${k}):`;
+            document.getElementById('gx-text-eventA').innerHTML = `A = { ${formatMathSetXX(eventA)} }`;
+            document.getElementById('gx-count-eventA').innerHTML = `Số phần tử: <i class="math">n</i>(A) = ${eventA.length}`;
+        }
+
+        function toggleKetQuaXX() {
+            isResultShownXX = !isResultShownXX;
+            const btn = document.getElementById('btn-hien-kq-xx');
+            const mathDiv = document.getElementById('gx-math-results');
+            if(isResultShownXX) {
+                btn.textContent = "ẨN KẾT QUẢ"; btn.classList.add('hidden-state'); mathDiv.style.display = 'block';
+            } else {
+                btn.textContent = "HIỆN KẾT QUẢ"; btn.classList.remove('hidden-state'); mathDiv.style.display = 'none';
+            }
+            drawDiceTree();
+        }
+
+        function gieoNgayXX() {
+            const n = parseInt(document.getElementById('gx-n').value);
+            const display = document.getElementById('gx-dice-display');
+            const btn = document.getElementById('btn-gieo-xx');
+            
+            btn.disabled = true; btn.style.opacity = '0.7';
+            display.innerHTML = '';
+            currentTossResultXX = [];
+
+            // Animation lắc xúc xắc
+            for(let i=0; i<n; i++) {
+                const dice = createDiceDOM(6); 
+                dice.classList.add('rolling');
+                display.appendChild(dice);
+            }
+
+            // Dừng lắc và hiện kết quả
+            setTimeout(() => {
+                display.innerHTML = '';
+                for(let i=0; i<n; i++) {
+                    const val = Math.floor(Math.random() * 6) + 1;
+                    currentTossResultXX.push(val);
+                    display.appendChild(createDiceDOM(val));
+                }
+                drawDiceTree();
+                btn.disabled = false; btn.style.opacity = '1';
+            }, 500);
+        }
+
+        function drawDiceTree() {
+            const n = parseInt(document.getElementById('gx-n').value) || 1;
+            const k = parseInt(document.getElementById('gx-k').value) || 2;
+            const svg = document.getElementById('gx-tree-svg');
+            
+            // CHỐNG LAG: Chỉ vẽ sơ đồ nếu n <= 2
+            if (n > 2) {
+                svg.setAttribute('viewBox', `0 0 800 400`);
+                svg.innerHTML = `
+                    <rect x="0" y="0" width="100%" height="100%" fill="#fdfdfd"></rect>
+                    <text x="50%" y="45%" text-anchor="middle" fill="#e74c3c" font-size="20px" font-weight="bold" font-family="Arial">
+                        Sơ đồ cây quá lớn (${Math.pow(6,n)} nhánh)!
+                    </text>
+                    <text x="50%" y="55%" text-anchor="middle" fill="#7f8c8d" font-size="16px" font-family="Arial">
+                        Hệ thống chỉ hỗ trợ vẽ sơ đồ cây với tối đa 2 xúc xắc để tránh giật lag màn hình.
+                    </text>
+                    <text x="50%" y="65%" text-anchor="middle" fill="#7f8c8d" font-size="16px" font-family="Arial">
+                        Dữ liệu Không gian mẫu và Biến cố đã được tính toán đầy đủ ở bảng bên trái.
+                    </text>
+                `;
+                return;
+            }
+
+            const svgWidth = Math.max(1000, Math.pow(6, n) * 40); 
+            const svgHeight = n === 1 ? 300 : 550; 
+            svg.setAttribute('viewBox', `0 0 ${svgWidth} ${svgHeight}`);
+            svg.innerHTML = '';
+
+            const startY = 40;
+            const levelHeight = (svgHeight - 100) / n; 
+
+            let gxLinesHTML = ""; let gxNodesHTML = ""; let gxTextsHTML = "";
+
+            function buildDiceTreeData(level, x, y, currentPathArr, parentX, parentY, allocatedWidth) {
+                if (level > 0) {
+                    let isLineActive = false;
+                    if (currentTossResultXX.length > 0) {
+                        isLineActive = true;
+                        for(let i=0; i<level; i++){
+                            if(currentPathArr[i] !== currentTossResultXX[i]) { isLineActive = false; break; }
+                        }
+                    }
+                    const lineClass = isLineActive ? "link-line active-path" : "link-line";
+                    gxLinesHTML += `<line x1="${parentX}" y1="${parentY}" x2="${x}" y2="${y}" class="${lineClass}" />`;
+                }
+
+                const r = level === 0 ? 10 : 13;
+                let fillCol = level === 0 ? "#95a5a6" : "#3498db";
+                let label = level === 0 ? "" : currentPathArr[level-1];
+
+                gxNodesHTML += `<circle cx="${x}" cy="${y}" r="${r}" fill="${fillCol}" class="node-circle" />`;
+                if (level > 0) {
+                    gxTextsHTML += `<text x="${x}" y="${y}" class="node-text">${label}</text>`;
+                }
+
+                if (level === n) {
+                    const sum = currentPathArr.reduce((a,b)=>a+b, 0);
+                    const isMatchA = sum === k && isResultShownXX;
+                    const isPathResult = currentTossResultXX.length === n && currentTossResultXX.every((val, i) => val === currentPathArr[i]);
+
+                    let txtClass = "leaf-label";
+                    if (isMatchA || isPathResult) txtClass += " highlight";
+
+                    gxTextsHTML += `<text x="${x}" y="${y + 25}" class="${txtClass}" text-anchor="middle">${sum}</text>`;
+                    return; 
+                }
+
+                if (level < n) {
+                    const step = allocatedWidth / 6;
+                    let childX = x - allocatedWidth / 2 + step / 2;
+                    for (let i = 1; i <= 6; i++) {
+                        buildDiceTreeData(level + 1, childX, y + levelHeight, [...currentPathArr, i], x, y, step);
+                        childX += step;
+                    }
+                }
+            }
+
+            buildDiceTreeData(0, svgWidth / 2, startY, [], 0, 0, svgWidth);
+            svg.innerHTML = gxLinesHTML + gxNodesHTML + gxTextsHTML;
+        }
+
+        /* ========================================================
+           TAB 4: CHỌN BÓNG ĐÁNH SỐ (KHÔNG HOÀN LẠI)
+        ======================================================== */
+        let cbMode = 'lanluot'; 
+        let cbBallsData = []; 
+        let currentPickCB = []; 
+        let isResultShownCB = true;
+
+        function setPickMode(mode) {
+            cbMode = mode;
+            document.getElementById('cb-btn-lanluot').classList.toggle('active', mode === 'lanluot');
+            document.getElementById('cb-btn-cungluc').classList.toggle('active', mode === 'cungluc');
+            resetCB();
+        }
+
+        function getPermutations(arr, k) {
+            if (k === 1) return arr.map(x => [x]);
+            let res = [];
+            for (let i = 0; i < arr.length; i++) {
+                let rest = arr.slice(0, i).concat(arr.slice(i + 1));
+                let sub = getPermutations(rest, k - 1);
+                for (let s of sub) res.push([arr[i], ...s]);
+            }
+            return res;
+        }
+
+        function getCombinations(arr, k) {
+            if (k === 1) return arr.map(x => [x]);
+            let res = [];
+            for (let i = 0; i < arr.length - k + 1; i++) {
+                let sub = getCombinations(arr.slice(i + 1), k - 1);
+                for (let s of sub) res.push([arr[i], ...s]);
+            }
+            return res;
+        }
+
+        function resetCB() {
+            let nInput = document.getElementById('cb-n');
+            let kInput = document.getElementById('cb-k');
+            let n = parseInt(nInput.value);
+            let k = parseInt(kInput.value);
+
+            if (n < 2) { n = 2; nInput.value = 2; }
+            if (n > 6) { n = 6; nInput.value = 6; } 
+            
+            kInput.max = n;
+            if (k > n) { k = n; kInput.value = n; }
+            if (k < 1) { k = 1; kInput.value = 1; }
+
+            let reqText = cbMode === 'lanluot' ? `Lấy ngẫu nhiên <b>lần lượt</b> ${k} quả (xếp thứ tự).` : `Lấy ngẫu nhiên <b>cùng lúc</b> ${k} quả (không thứ tự).`;
+            document.getElementById('cb-problem-text').innerHTML = `
+                <b>Bài toán:</b> Có ${n} quả bóng được đánh số từ <b>1 đến ${n}</b>.<br>
+                <b>Yêu cầu:</b> ${reqText}<br>
+                Hỏi Không gian mẫu &Omega; có bao nhiêu phần tử? Biểu diễn KGM?
+            `;
+
+            currentPickCB = [];
+            initBallAnimationArea(n, k);
+            updateMathCB(n, k);
+            drawTreeCB(n, k);
+        }
+
+        function toggleKetQuaCB() {
+            isResultShownCB = !isResultShownCB;
+            const btn = document.getElementById('btn-hien-kgm-cb');
+            const mathDiv = document.getElementById('cb-math-results');
+            if(isResultShownCB) {
+                btn.textContent = "ẨN KGM"; btn.style.backgroundColor = 'var(--btn-hide)'; mathDiv.style.display = 'block';
+            } else {
+                btn.textContent = "HIỆN KGM"; btn.style.backgroundColor = 'var(--border-purple)'; mathDiv.style.display = 'none';
+            }
+        }
+
+        function updateMathCB(n, k) {
+            let arr = Array.from({length: n}, (_, i) => i + 1);
+            let omega = [];
+            let mathHTML = ""; let methodStr = "";
+
+            if (cbMode === 'lanluot') {
+                omega = getPermutations(arr, k);
+                let total = fact(n) / fact(n - k);
+                methodStr = `Đây là bài toán <b>Chỉnh hợp (Có thứ tự)</b> chập ${k} của ${n}.`;
+                mathHTML = `|&Omega;| = A<sub style="font-size:11px">${n}</sub><sup style="font-size:11px; margin-left:-8px">${k}</sup> = 
+                            <div class="fraction"><span>${n}!</span><span class="fdn">(${n} &minus; ${k})!</span></div> = ${total}`;
+            } else {
+                omega = getCombinations(arr, k);
+                let total = fact(n) / (fact(k) * fact(n - k));
+                methodStr = `Đây là bài toán <b>Tổ hợp (Không thứ tự)</b> chập ${k} của ${n}.`;
+                mathHTML = `|&Omega;| = C<sub style="font-size:11px">${n}</sub><sup style="font-size:11px; margin-left:-8px">${k}</sup> = 
+                            <div class="fraction"><span>${n}!</span><span class="fdn">${k}!(${n} &minus; ${k})!</span></div> = ${total}`;
+            }
+
+            document.getElementById('cb-math-formula').innerHTML = `${methodStr}<br><br><div style="text-align:center; font-size:16px;">${mathHTML}</div>`;
+            
+            let limit = 40; let omegaStr = "";
+            if (omega.length <= limit) {
+                omegaStr = omega.map(c => `(${c.join(',')})`).join(', ');
+            } else {
+                omegaStr = omega.slice(0, limit).map(c => `(${c.join(',')})`).join(', ') + `, ... <br><span style="color:#e74c3c; font-size:13px;"><i>[Còn ẩn ${omega.length - limit} kết quả khác]</i></span>`;
+            }
+            document.getElementById('cb-text-omega').innerHTML = `&Omega; = { ${omegaStr} }`;
+        }
+
+        function initBallAnimationArea(n, k) {
+            const squareContainer = document.getElementById('cb-squares');
+            const ballBox = document.getElementById('cb-ball-box');
+            
+            squareContainer.innerHTML = '';
+            ballBox.innerHTML = '';
+            cbBallsData = [];
+
+            for (let i = 1; i <= k; i++) {
+                squareContainer.innerHTML += `
+                    <div class="cb-square" id="sq-${i}">
+                        <div class="cb-square-label">${i}</div>
+                    </div>`;
+            }
+
+            const boxW = 250, boxH = 120, ballR = 40;
+            for (let i = 1; i <= n; i++) {
+                let randX = Math.random() * (boxW - ballR - 10) + 5;
+                let randY = Math.random() * (boxH - ballR - 10) + 5;
+                
+                const ball = document.createElement('div');
+                ball.className = 'cb-ball';
+                ball.id = `ball-${i}`;
+                ball.textContent = i;
+                ball.style.backgroundColor = ballColors[(i-1) % ballColors.length];
+                ball.style.left = `${randX}px`;
+                ball.style.top = `${randY}px`;
+                
+                ballBox.appendChild(ball);
+                cbBallsData.push({ id: i, initX: randX, initY: randY, el: ball });
+            }
+        }
+
+        function bocBong() {
+            let n = parseInt(document.getElementById('cb-n').value);
+            let k = parseInt(document.getElementById('cb-k').value);
+            const btn = document.getElementById('btn-boc-bong');
+            btn.disabled = true; btn.style.opacity = '0.7';
+
+            cbBallsData.forEach(b => {
+                b.el.style.left = `${b.initX}px`;
+                b.el.style.top = `${b.initY}px`;
+            });
+
+            let arr = Array.from({length: n}, (_, i) => i + 1);
+            let space = cbMode === 'lanluot' ? getPermutations(arr, k) : getCombinations(arr, k);
+            currentPickCB = space[Math.floor(Math.random() * space.length)];
+            
+            drawTreeCB(n, k);
+
+            const ballBoxRect = document.getElementById('cb-ball-box').getBoundingClientRect();
+            
+            currentPickCB.forEach((ballNum, index) => {
+                setTimeout(() => {
+                    let targetSq = document.getElementById(`sq-${index + 1}`);
+                    let targetRect = targetSq.getBoundingClientRect();
+                    let ball = document.getElementById(`ball-${ballNum}`);
+                    
+                    let animAreaRect = document.getElementById('cb-anim-area').getBoundingClientRect();
+                    
+                    let targetRelX = targetRect.left - animAreaRect.left;
+                    let targetRelY = targetRect.top - animAreaRect.top;
+                    
+                    let boxRelX = ballBoxRect.left - animAreaRect.left;
+                    let boxRelY = ballBoxRect.top - animAreaRect.top;
+
+                    let newLeft = targetRelX - boxRelX + 3;
+                    let newTop = targetRelY - boxRelY + 3;
+
+                    ball.style.left = `${newLeft}px`;
+                    ball.style.top = `${newTop}px`;
+
+                }, index * 600);
+            });
+
+            setTimeout(() => {
+                drawTreeCB(n, k);
+                btn.disabled = false; btn.style.opacity = '1';
+            }, k * 600 + 300);
+        }
+
+        function drawTreeCB(n, k) {
+            const svg = document.getElementById('cb-tree-svg');
+            
+            let space = cbMode === 'lanluot' ? getPermutations(Array.from({length: n}, (_, i) => i+1), k) : getCombinations(Array.from({length: n}, (_, i) => i+1), k);
+            if (space.length > 120) {
+                svg.setAttribute('viewBox', `0 0 800 200`);
+                svg.innerHTML = `<text x="400" y="100" text-anchor="middle" fill="#7f8c8d" font-size="16px">Sơ đồ cây quá lớn để hiển thị trực quan.</text>`;
+                return;
+            }
+
+            const svgWidth = Math.max(800, space.length * 50); 
+            const svgHeight = k * 120 + 80;
+            svg.setAttribute('viewBox', `0 0 ${svgWidth} ${svgHeight}`);
+            svg.innerHTML = '';
+
+            let lH = ""; let nH = ""; let tH = "";
+
+            function build(level, x, y, currentPath, parentX, parentY, widthConstraint) {
+                if (level > 0) {
+                    let isLineActive = false;
+                    if (currentPickCB.length > 0) {
+                        isLineActive = true;
+                        for(let i=0; i<level; i++){
+                            if(currentPath[i] !== currentPickCB[i]) { isLineActive = false; break; }
+                        }
+                    }
+                    lH += `<line x1="${parentX}" y1="${parentY}" x2="${x}" y2="${y}" class="link-line ${isLineActive?'active-path':''}" />`;
+                }
+
+                const r = level === 0 ? 0 : 15; 
+                
+                if (level === 0) {
+                    tH += `<text x="${x}" y="${y}" class="node-text" style="fill:#333; font-size:14px;">Start</text>`;
+                } else {
+                    let v = currentPath[level-1];
+                    nH += `<circle cx="${x}" cy="${y}" r="${r}" fill="#fff" stroke="#bdc3c7" stroke-width="2" class="node-circle" />`;
+                    tH += `<text x="${x}" y="${y}" class="node-text" style="fill:#333; font-weight:normal;">${v}</text>`;
+                }
+
+                if (level === k) {
+                    const isMatch = currentPickCB.length === k && currentPickCB.every((val, i) => val === currentPath[i]);
+                    let txtClass = isMatch ? "leaf-label highlight" : "leaf-label";
+                    tH += `<text x="${x+35}" y="${y}" class="${txtClass}" text-anchor="start" dominant-baseline="middle">(${currentPath.join(',')})</text>`;
+                    return; 
+                }
+
+                let availableNodes = [];
+                for (let i = 1; i <= n; i++) {
+                    if (cbMode === 'lanluot') {
+                        if (!currentPath.includes(i)) availableNodes.push(i);
+                    } else {
+                        let lastNode = currentPath.length > 0 ? currentPath[currentPath.length - 1] : 0;
+                        if (i > lastNode) availableNodes.push(i);
+                    }
+                }
+
+                let numChildren = availableNodes.length;
+                if (numChildren > 0) {
+                    let step = widthConstraint / numChildren;
+                    let startX = x - widthConstraint / 2 + step / 2;
+                    availableNodes.forEach((val) => {
+                        build(level + 1, startX, y + 100, [...currentPath, val], x, level===0 ? y+10 : y+r, step);
+                        startX += step;
+                    });
+                }
+            }
+
+            build(0, svgWidth / 2, 30, [], 0, 0, svgWidth - 100);
+            svg.innerHTML = lH + nH + tH;
+        }
+
+        /* ========================================================
+           TAB 5: BỐC HOÀN LẠI
+        ======================================================== */
+        let bhlBallsData = [];
+        let isResultShownBHL = true;
+
+        function getCartesianProduct(arr, k) {
+            if (k === 1) return arr.map(x => [x]);
+            let res = [];
+            let prev = getCartesianProduct(arr, k - 1);
+            for (let p of prev) {
+                for (let x of arr) {
+                    res.push([...p, x]);
+                }
+            }
+            return res;
+        }
+
+        function resetBHL() {
+            let nInput = document.getElementById('bhl-n');
+            let kInput = document.getElementById('bhl-k');
+            let n = parseInt(nInput.value);
+            let k = parseInt(kInput.value);
+
+            if (n < 1) { n = 1; nInput.value = 1; }
+            if (n > 6) { n = 6; nInput.value = 6; } 
+            if (k < 1) { k = 1; kInput.value = 1; }
+            if (k > 5) { k = 5; kInput.value = 5; }
+
+            document.getElementById('bhl-problem-text').innerHTML = `
+                <b>Bài toán:</b> Có ${n} quả bóng số 1..${n}.<br>
+                <b>Thao tác:</b> Bốc ngẫu nhiên 1 quả, ghi lại số, sau đó <b>trả lại vào thùng</b>.<br>
+                Lặp lại ${k} lần.<br>
+                Hỏi Không gian mẫu &Omega; có bao nhiêu phần tử?
+            `;
+
+            document.getElementById('bhl-math-formula').innerHTML = `
+                Số phần tử của &Omega; là: |&Omega;| = ${n}<sup style="font-size:12px">${k}</sup> = <b>${Math.pow(n, k)}</b> phần tử.
+            `;
+
+            initBHLBox(n);
+            renderBHLGrid(n, k);
+        }
+
+        function toggleKetQuaBHL() {
+            isResultShownBHL = !isResultShownBHL;
+            const btn = document.getElementById('btn-hien-kgm-bhl');
+            const mathDiv = document.getElementById('bhl-math-results');
+            if(isResultShownBHL) {
+                btn.textContent = "ẨN KGM"; btn.style.backgroundColor = 'var(--btn-hide)'; mathDiv.style.display = 'block';
+            } else {
+                btn.textContent = "HIỆN KGM"; btn.style.backgroundColor = 'var(--btn-dark)'; mathDiv.style.display = 'none';
+            }
+        }
+
+        function initBHLBox(n) {
+            const ballBox = document.getElementById('bhl-ball-box');
+            document.getElementById('bhl-recorded-balls').innerHTML = ''; 
+            ballBox.innerHTML = '';
+            bhlBallsData = [];
+
+            const boxW = 250, boxH = 120, ballR = 40;
+            for (let i = 1; i <= n; i++) {
+                let randX = Math.random() * (boxW - ballR - 10) + 5;
+                let randY = Math.random() * (boxH - ballR - 10) + 5;
+                
+                const ball = document.createElement('div');
+                ball.className = 'cb-ball';
+                ball.id = `bhl-ball-${i}`;
+                ball.textContent = i;
+                ball.style.backgroundColor = ballColors[(i-1) % ballColors.length];
+                ball.style.left = `${randX}px`;
+                ball.style.top = `${randY}px`;
+                
+                ballBox.appendChild(ball);
+                bhlBallsData.push({ id: i, initX: randX, initY: randY, el: ball });
+            }
+        }
+
+        function renderBHLGrid(n, k) {
+            const grid = document.getElementById('bhl-grid-display');
+            grid.innerHTML = '';
+            
+            let arr = Array.from({length: n}, (_, i) => i + 1);
+            let omega = getCartesianProduct(arr, k);
+
+            if (omega.length > 250) {
+                grid.innerHTML = `<div style="width:100%; text-align:center; color:#7f8c8d; font-size:15px; margin-top:20px;">
+                    Không gian mẫu quá lớn (${omega.length} phần tử). Dữ liệu đã được rút gọn hiển thị để tránh treo máy.
+                </div>`;
+                omega = omega.slice(0, 200);
+            }
+
+            omega.forEach((combo, idx) => {
+                const card = document.createElement('div');
+                card.className = 'bhl-card';
+                card.id = `bhl-card-${combo.join('-')}`;
+                card.textContent = `(${combo.join(',')})`;
+
+                let isIdentical = combo.every(val => val === combo[0]);
+                if(isIdentical) {
+                    card.classList.add('identical');
+                }
+                
+                grid.appendChild(card);
+            });
+        }
+
+        async function bocHoanLai() {
+            let n = parseInt(document.getElementById('bhl-n').value);
+            let k = parseInt(document.getElementById('bhl-k').value);
+            
+            const btn = document.getElementById('btn-boc-hoan-lai');
+            btn.disabled = true; btn.style.opacity = '0.7';
+
+            const recordArea = document.getElementById('bhl-recorded-balls');
+            recordArea.innerHTML = '';
+
+            document.querySelectorAll('.bhl-card').forEach(el => el.classList.remove('drawn'));
+
+            const animAreaRect = document.getElementById('bhl-anim-area').getBoundingClientRect();
+            const targetSqRect = document.getElementById('bhl-active-square').getBoundingClientRect();
+            const boxRect = document.getElementById('bhl-ball-box').getBoundingClientRect();
+
+            let currentResult = [];
+
+            for (let i = 0; i < k; i++) {
+                let pick = Math.floor(Math.random() * n) + 1;
+                currentResult.push(pick);
+
+                let ballData = bhlBallsData.find(b => b.id === pick);
+                let ballEl = ballData.el;
+
+                let targetRelX = targetSqRect.left - boxRect.left + 3;
+                let targetRelY = targetSqRect.top - boxRect.top + 3;
+                
+                ballEl.style.left = `${targetRelX}px`;
+                ballEl.style.top = `${targetRelY}px`;
+                
+                await sleep(550);
+
+                recordArea.innerHTML += `
+                    <div class="bhl-small-ball" style="background-color:${ballEl.style.backgroundColor}">
+                        ${pick}
+                    </div>
+                `;
+
+                await sleep(400); 
+                ballEl.style.left = `${ballData.initX}px`;
+                ballEl.style.top = `${ballData.initY}px`;
+
+                await sleep(550); 
+            }
+
+            let resultId = `bhl-card-${currentResult.join('-')}`;
+            let targetCard = document.getElementById(resultId);
+            if(targetCard) {
+                targetCard.classList.add('drawn');
+                targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+
+            btn.disabled = false; btn.style.opacity = '1';
+        }
+
+        /* ========================================================
+           TAB 6: GIEO MẶT NGỬA (KGM)
+        ======================================================== */
+        let currentK_GMN = 2;
+        let isKGMVisible_GMN = true;
+        let currentResultStr_GMN = ""; 
+        let flipInterval_GMN;
+
+        function resetGMN() {
+            let inputK = parseInt(document.getElementById('input-k-gmn').value);
+            if (isNaN(inputK) || inputK < 1) inputK = 1;
+            if (inputK > 10) inputK = 10; 
+            document.getElementById('input-k-gmn').value = inputK;
+            currentK_GMN = inputK;
+
+            document.getElementById('txt-k-val-gmn').innerText = currentK_GMN;
+
+            let omega = [];
+            for (let i = 0; i < currentK_GMN; i++) {
+                omega.push('S'.repeat(i) + 'N');
+            }
+            omega.push('S'.repeat(currentK_GMN)); 
+
+            document.getElementById('val-omega-count-gmn').innerText = omega.length;
+            document.getElementById('val-omega-set-gmn').innerText = omega.join(', ');
+
+            currentResultStr_GMN = "";
+            document.getElementById('toss-result-text-gmn').innerText = "Sẵn sàng gieo";
+            document.getElementById('animated-coin-gmn').style.transform = 'rotateY(0deg)'; 
+
+            drawStaircaseTreeGMN();
+        }
+
+        function toggleKGM_GMN() {
+            isKGMVisible_GMN = !isKGMVisible_GMN;
+            const btn = document.getElementById('btn-kgm-gmn');
+            const mathBox = document.getElementById('math-box-gmn');
+            
+            if (isKGMVisible_GMN) {
+                btn.innerText = "ẨN KGM";
+                mathBox.style.display = "block";
+            } else {
+                btn.innerText = "HIỆN KGM";
+                mathBox.style.display = "none";
+            }
+        }
+
+        function simulateTossesGMN(k) {
+            let result = "";
+            for (let i = 0; i < k; i++) {
+                let isHeads = Math.random() > 0.5;
+                if (isHeads) {
+                    result += "N";
+                    break; 
+                } else {
+                    result += "S";
+                }
+            }
+            return result;
+        }
+
+        function batDauGieoGMN() {
+            const btn = document.getElementById('btn-gieo-gmn');
+            const coin = document.getElementById('animated-coin-gmn');
+            const resultText = document.getElementById('toss-result-text-gmn');
+
+            btn.disabled = true;
+            btn.style.opacity = '0.7';
+            resultText.innerText = "Đang gieo...";
+            
+            currentResultStr_GMN = simulateTossesGMN(currentK_GMN);
+            
+            drawStaircaseTreeGMN();
+
+            let angle = 0;
+            flipInterval_GMN = setInterval(() => {
+                angle += 45; 
+                coin.style.transform = `rotateY(${angle}deg)`;
+            }, 30);
+
+            setTimeout(() => {
+                clearInterval(flipInterval_GMN);
+                
+                const lastChar = currentResultStr_GMN.slice(-1);
+                
+                if (lastChar === 'N') {
+                    coin.style.transform = 'rotateY(720deg)'; 
+                } else {
+                    coin.style.transform = 'rotateY(900deg)'; 
+                }
+
+                resultText.innerHTML = `Kết thúc: <span style="color:var(--coin-heads)">${currentResultStr_GMN}</span>`;
+                drawStaircaseTreeGMN();
+
+                btn.disabled = false;
+                btn.style.opacity = '1';
+
+                setTimeout(() => {
+                    coin.style.transition = 'none';
+                    coin.style.transform = lastChar === 'N' ? 'rotateY(0deg)' : 'rotateY(180deg)';
+                    setTimeout(() => coin.style.transition = 'transform 0.1s linear', 50);
+                }, 300);
+
+            }, 1000);
+        }
+
+        function drawStaircaseTreeGMN() {
+            const svg = document.getElementById('gmn-tree-svg');
+            
+            const svgWidth = Math.max(600, 200 + currentK_GMN * 80);
+            const svgHeight = Math.max(400, 150 + currentK_GMN * 80);
+            svg.setAttribute('viewBox', `0 0 ${svgWidth} ${svgHeight}`);
+            
+            let linesHTML = ''; let nodesHTML = ''; let textsHTML = '';
+
+            let cx = svgWidth / 2 - (currentK_GMN * 30); 
+            let cy = 60;
+            
+            const dx_N = 80; const dy_N = 0;  
+            const dx_S = 40; const dy_S = 80; 
+
+            for (let i = 0; i <= currentK_GMN; i++) {
+                let isNodeStart = (i === 0);
+                let fillCol = isNodeStart ? '#95a5a6' : 'var(--coin-tails)';
+                let label = isNodeStart ? '' : 'S';
+                
+                nodesHTML += `<circle cx="${cx}" cy="${cy}" r="16" fill="${fillCol}" class="node-circle" />`;
+                if (!isNodeStart) {
+                    textsHTML += `<text x="${cx}" y="${cy}" class="node-text">${label}</text>`;
+                } else {
+                    textsHTML += `<text x="${cx}" y="${cy - 25}" style="fill:#555; font-size:14px; text-anchor:middle;">Start</text>`;
+                }
+
+                if (i < currentK_GMN) {
+                    let nx = cx + dx_N;
+                    let ny = cy + dy_N;
+                    
+                    let pathMatchesN = (currentResultStr_GMN.length > i && currentResultStr_GMN[i] === 'N');
+                    
+                    linesHTML += `<line x1="${cx}" y1="${cy}" x2="${nx}" y2="${ny}" class="link-line ${pathMatchesN ? 'active-path' : ''}" />`;
+                    nodesHTML += `<circle cx="${nx}" cy="${ny}" r="16" fill="var(--coin-heads)" class="node-circle" />`;
+                    textsHTML += `<text x="${nx}" y="${ny}" class="node-text">N</text>`;
+                    
+                    let leafStrN = 'S'.repeat(i) + 'N';
+                    let isLeafActiveN = (currentResultStr_GMN === leafStrN);
+                    textsHTML += `<text x="${nx + 28}" y="${ny}" class="leaf-label ${isLeafActiveN ? 'highlight' : ''}" text-anchor="start" dominant-baseline="middle">${leafStrN}</text>`;
+
+                    let sx = cx + dx_S;
+                    let sy = cy + dy_S;
+                    
+                    let pathMatchesS = (currentResultStr_GMN.length > i && currentResultStr_GMN[i] === 'S');
+                    
+                    linesHTML += `<line x1="${cx}" y1="${cy}" x2="${sx}" y2="${sy}" class="link-line ${pathMatchesS ? 'active-path' : ''}" />`;
+
+                    cx = sx;
+                    cy = sy;
+
+                } else {
+                    let leafStrS = 'S'.repeat(currentK_GMN);
+                    let isLeafActiveS = (currentResultStr_GMN === leafStrS);
+                    textsHTML += `<text x="${cx + 28}" y="${cy}" class="leaf-label ${isLeafActiveS ? 'highlight' : ''}" text-anchor="start" dominant-baseline="middle">${leafStrS}</text>`;
+                }
+            }
+            svg.innerHTML = linesHTML + nodesHTML + textsHTML;
+        }
+
+        /* ========================================================
+           TAB 7: LÝ THUYẾT 
+        ======================================================== */
+        function showSection(sectionId, element) {
+            document.querySelectorAll('.menu-item').forEach(item => {
+                item.classList.remove('active');
+            });
+            element.classList.add('active');
+
+            document.querySelectorAll('.theory-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+            
+            document.querySelector('.theory-content').scrollTop = 0;
+        }
+
+        function toggleAnswer(answerId, btnElement) {
+            const answerBox = document.getElementById(answerId);
+            if (answerBox.style.display === 'block') {
+                answerBox.style.display = 'none';
+                btnElement.innerText = 'Xem phân tích';
+                btnElement.style.background = 'var(--box-ex-border)';
+            } else {
+                answerBox.style.display = 'block';
+                btnElement.innerText = 'Ẩn phân tích';
+                btnElement.style.background = '#e74c3c';
+            }
+        }
+
+        /* Khởi tạo khi load trang */
+        window.onload = () => { 
+            setTimeout(() => switchTab(0), 100); 
+        };
+    </script>
+</body>
+</html>

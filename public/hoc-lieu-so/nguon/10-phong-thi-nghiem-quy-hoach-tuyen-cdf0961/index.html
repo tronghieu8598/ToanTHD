@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Phòng thí nghiệm Quy hoạch tuyến tính (2 biến)</title>
+  <style>
+    :root{
+      --bg:#f7fafc; --panel:#ffffff; --ink:#0f172a; --muted:#64748b;
+      --brand:#2563eb; --accent:#10b981; --warn:#f59e0b; --bad:#ef4444;
+      --line1:#ef4444; --line2:#22c55e; --line3:#06b6d4; --line4:#f97316; --line5:#a855f7; --line6:#94a3b8;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(135deg,#eef2ff,#fff)}
+    header{position:sticky;top:0;z-index:10;background:linear-gradient(90deg,var(--brand),#60a5fa);color:#fff;box-shadow:0 6px 24px rgba(2,6,23,.2)}
+    header .in{max-width:1200px;margin:auto;display:flex;gap:14px;align-items:center;justify-content:space-between;padding:12px 16px}
+    header h1{margin:0;font-weight:800;font-size:clamp(18px,2.6vw,22px)}
+    .badge{background:rgba(255,255,255,.18);padding:6px 10px;border-radius:999px;font-weight:700}
+
+    .wrap{max-width:1200px;margin:16px auto;padding:0 12px;display:grid;grid-template-columns:1.1fr 1fr;gap:14px}
+    @media (max-width:980px){.wrap{grid-template-columns:1fr}}
+    .card{background:var(--panel); border-radius:16px; box-shadow:0 10px 28px rgba(2,6,23,.08); padding:14px}
+
+    .tabs{display:flex;gap:8px;flex-wrap:wrap}
+    .tab{border:none;background:#e2e8f0;color:#0f172a;padding:10px 14px;border-radius:12px;font-weight:700;cursor:pointer}
+    .tab.active{background:var(--brand);color:#fff}
+
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media (max-width:700px){.grid{grid-template-columns:1fr}}
+    label{font-size:12px;color:var(--muted)}
+    input[type="number"], select{width:100%;padding:10px;border-radius:10px;border:1px solid #e5e7eb}
+    .row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+    .btn{border:none;padding:10px 14px;border-radius:12px;font-weight:800;color:#fff;background:var(--brand);cursor:pointer;box-shadow:0 8px 18px rgba(37,99,235,.25)}
+    .btn.alt{background:var(--accent);box-shadow:0 8px 18px rgba(16,185,129,.25)}
+    .btn.ghost{background:#eef2ff;color:#1e293b;box-shadow:none}
+    .btn.warn{background:var(--warn)}
+
+    .legend{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+    .tag{display:inline-flex;gap:6px;align-items:center;background:#f1f5f9;border:1px solid #e2e8f0;padding:6px 8px;border-radius:999px;font-size:12px}
+    .dot{width:12px;height:12px;border-radius:3px}
+
+    .status{margin-top:8px;padding:10px;border-radius:12px;background:#f1f5f9;color:#0f172a}
+
+    .board{position:relative;display:grid;place-items:center;min-height:360px}
+    #plot{width:min(640px,92vw);height:min(520px,72vw);background:#fff;border-radius:12px;box-shadow:inset 0 0 0 1px #e5e7eb}
+    canvas{touch-action:none}
+    .tooltip{position:absolute;pointer-events:none;background:#0f172a;color:#fff;padding:6px 8px;border-radius:8px;font-size:12px;transform:translate(-50%,-120%);white-space:nowrap}
+
+    table{width:100%;border-collapse:collapse;margin-top:8px}
+    th,td{border-bottom:1px solid #e5e7eb;padding:8px 6px;text-align:right}
+    th{background:#f8fafc;color:#0f172a;position:sticky;top:0}
+    td:first-child,th:first-child{text-align:left}
+    tr.hit{background:#ecfeff; font-weight:800}
+    .small{font-size:12px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="in">
+      <h1>🧪 Phòng thí nghiệm Quy hoạch tuyến tính (2 biến)</h1>
+      <div class="badge">HTML • CSS • Canvas • Không thư viện ngoài</div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- LEFT: Controls -->
+    <section class="card">
+      <div class="tabs" id="tabs">
+        <button class="tab active" data-prob="prod">1) Tối ưu Sản xuất</button>
+        <button class="tab" data-prob="stream">2) Lưỡng nan của Streamer</button>
+      </div>
+
+      <div style="margin-top:10px" class="grid">
+        <div>
+          <label>Hàm mục tiêu Z = c1·x + c2·y</label>
+          <div class="row">
+            <input type="number" id="c1" step="any" placeholder="c1">
+            <input type="number" id="c2" step="any" placeholder="c2">
+            <select id="sense"><option value="max">Tối đa hóa</option><option value="min">Tối thiểu hóa</option></select>
+          </div>
+          <div class="small">Chọn Max/Min theo bài toán</div>
+        </div>
+        <div>
+          <label>Miền khả thi (mặc định thêm x ≥ 0, y ≥ 0)</label>
+          <div class="legend" id="legend"></div>
+        </div>
+      </div>
+
+      <div id="ineqBox" style="margin-top:10px"></div>
+
+      <div class="row" style="margin-top:8px">
+        <button class="btn alt" id="solveBtn">▶️ Vẽ & Giải</button>
+        <button class="btn ghost" id="resetBtn">🔄 Đặt lại</button>
+        <button class="btn" id="dragBtn">🖐️ Rê hàm mục tiêu</button>
+        <span class="small" id="msg">Sẵn sàng. Bạn có thể chỉnh hệ số để khám phá.</span>
+      </div>
+
+      <!-- Ràng buộc biên & nhanh cho Streamer -->
+      <div id="boundsBox" class="card" style="margin-top:10px; display:none; padding:10px">
+        <b>Biên (Streamer):</b>
+        <div class="row" style="margin-top:6px; gap:12px">
+          <div>0 ≤ x ≤ <input type="number" id="xmax" step="any" style="width:100px"></div>
+          <div>0 ≤ y ≤ <input type="number" id="ymax" step="any" style="width:100px"></div>
+        </div>
+        <div class="small">Điều chỉnh nhanh giới hạn x, y. Tự động cập nhật ràng buộc x ≤ xmax, y ≤ ymax.</div>
+        <hr style="margin:10px 0;border:none;border-top:1px dashed #e5e7eb">
+        <b>Ràng buộc 1–4 (Streamer):</b>
+        <div id="quickC" class="small" style="margin-top:6px"></div>
+      </div>
+    </section>
+
+    <!-- RIGHT: Plot + Results -->
+    <section class="card">
+      <div class="board">
+        <canvas id="plot"></canvas>
+        <div class="tooltip" id="tip" style="display:none"></div>
+      </div>
+      <div class="status" id="status">Chưa vẽ. Nhấn <b>Vẽ & Giải</b> để hiển thị đồ thị, miền nghiệm và đỉnh tối ưu.</div>
+      <div id="results"></div>
+    </section>
+  </main>
+
+  <script>
+  // ===== Cấu hình chung =====
+  const config={
+    axes:{color:'#94a3b8'}, grid:{color:'#e2e8f0'}, feasibleFill:'rgba(16,185,129,.15)', vertex:{r:5, color:'#111'}, optimal:{r:7, color:'#2563eb'},
+    colors:['var(--line1)','var(--line2)','var(--line3)','var(--line4)','var(--line5)','var(--line6)'],
+    objLine:'#111', objLineDash:[8,6]
+  };
+
+  // ===== Hai bài toán mẫu =====
+  // Ràng buộc: a*x + b*y <= c ; thêm enabled để bật/tắt
+  const problems={
+    prod:{
+      title:'Tối ưu Sản xuất', sense:'max', c:[5,4],
+      constraints:[
+        {a:2,b:1,c:100,label:'2x + y ≤ 100',enabled:true},
+        {a:1,b:2,c:100,label:'x + 2y ≤ 100',enabled:true},
+        {a:1,b:0,c:60,label:'x ≤ 60',enabled:true},
+        {a:0,b:1,c:70,label:'y ≤ 70',enabled:true},
+      ], note:'x,y ≥ 0. Ví dụ: x = nến thơm, y = vòng tay. Mục tiêu: tối đa lợi nhuận Z = 5x + 4y.'
+    },
+    stream:{
+      title:'Lưỡng nan của Streamer', sense:'max', c:[8,5],
+      constraints:[
+        {a:3,b:2,c:24,label:'3x + 2y ≤ 24 (thời lượng)',enabled:true},
+        {a:1,b:4,c:20,label:'x + 4y ≤ 20 (ngân sách)',enabled:true},
+        {a:1,b:0,c:6,label:'x ≤ 6 (giới hạn phiên A)',enabled:true},
+        {a:0,b:1,c:6,label:'y ≤ 6 (giới hạn phiên B)',enabled:true}
+      ], note:'x,y ≥ 0. Ví dụ: x = phiên nội dung A, y = phiên nội dung B. Z ~ lượt xem kỳ vọng.'
+    }
+  };
+
+  // ===== DOM helpers =====
+  const $=s=>document.querySelector(s);
+  const plot=$('#plot'); const ctx=plot.getContext('2d');
+  const tip=$('#tip');
+
+  // ===== Trạng thái hiện tại =====
+  let curKey='prod';
+  let cur=JSON.parse(JSON.stringify(problems[curKey]));
+  let dragEnabled=false; let dragZ=null; // Z hiện tại khi rê
+
+  // ===== Khởi tạo UI ràng buộc (thẻ chi tiết) =====
+  function renderConstraints(){
+    const box=$('#ineqBox'); box.innerHTML='';
+    const wrap=document.createElement('div'); wrap.className='grid';
+    cur.constraints.forEach((cn,i)=>{
+      const color=getColor(i);
+      const card=document.createElement('div');
+      card.className='card'; card.style.padding='10px';
+      card.innerHTML=`<div class="row" style="justify-content:space-between;align-items:center">
+        <div class="row" style="gap:6px">
+          <div class="dot" style="background:${color}"></div>
+          <b>Ràng buộc ${i+1}</b>
+        </div>
+        <div class="row" style="gap:8px">
+          <label class="small">Bật</label><input type="checkbox" ${cn.enabled!==false?'checked':''} data-k="en-${i}">
+          <button class="btn warn" data-del="${i}" title="Xóa">×</button>
+        </div>
+      </div>
+      <div class="row" style="margin-top:6px">
+        <label>a</label><input type="number" step="any" value="${cn.a}" data-k="a-${i}">
+        <label>b</label><input type="number" step="any" value="${cn.b}" data-k="b-${i}">
+        <span style="align-self:center">x +</span>
+        <span style="align-self:center"></span>
+        <span style="align-self:center">y ≤</span>
+        <input type="number" step="any" value="${cn.c}" data-k="c-${i}">
+      </div>
+      <input type="text" value="${cn.label||''}" data-k="label-${i}" placeholder="ghi chú (tùy chọn)" />`;
+      wrap.appendChild(card);
+    });
+
+    // Thêm mới
+    const add=document.createElement('div'); add.className='row'; add.style.marginTop='8px';
+    add.innerHTML=`<button class="btn ghost" id="addC">+ Thêm ràng buộc</button>`;
+    box.appendChild(wrap); box.appendChild(add);
+
+    // Legend
+    const leg=$('#legend'); leg.innerHTML='';
+    cur.constraints.forEach((cn,i)=>{
+      const t=document.createElement('span'); t.className='tag';
+      t.innerHTML=`<span class="dot" style="background:${getColor(i)}"></span>${escapeHtml(cn.label||('Ràng buộc '+(i+1)))}`;
+      leg.appendChild(t);
+    });
+  }
+
+  // Mục tiêu & sense
+  function renderObjective(){
+    $('#c1').value=cur.c[0]; $('#c2').value=cur.c[1]; $('#sense').value=cur.sense;
+  }
+
+  // Đồng bộ input → state
+  function bindInputs(){
+    $('#ineqBox').addEventListener('input',e=>{
+      const k=e.target.getAttribute('data-k'); if(!k) return; const [field,idx]=k.split('-'); const i=+idx;
+      if(field==='a'||field==='b'||field==='c'){ cur.constraints[i][field]=parseFloat(e.target.value||'0'); }
+      if(field==='label'){ cur.constraints[i].label=e.target.value; }
+    });
+    $('#ineqBox').addEventListener('change',e=>{
+      const k=e.target.getAttribute('data-k'); if(!k) return; const [field,idx]=k.split('-'); const i=+idx;
+      if(field==='en'){ cur.constraints[i].enabled = e.target.checked; }
+    });
+    $('#ineqBox').addEventListener('click',e=>{
+      if(e.target.matches('[data-del]')){ const i=+e.target.getAttribute('data-del'); cur.constraints.splice(i,1); renderConstraints(); renderBoundsBox(); }
+    });
+    document.addEventListener('click',e=>{ if(e.target && e.target.id==='addC'){ cur.constraints.push({a:1,b:1,c:10,label:'a·x + b·y ≤ c',enabled:true}); renderConstraints(); renderBoundsBox(); } });
+
+    $('#c1').addEventListener('input',()=>{ cur.c[0]=parseFloat($('#c1').value||'0'); if(dragEnabled) redrawWithDrag(); });
+    $('#c2').addEventListener('input',()=>{ cur.c[1]=parseFloat($('#c2').value||'0'); if(dragEnabled) redrawWithDrag(); });
+    $('#sense').addEventListener('change',()=>{ cur.sense=$('#sense').value; if(dragEnabled) redrawWithDrag(); });
+  }
+
+  // ===== Toán học: tìm đỉnh miền khả thi =====
+  function feasibleVertices(cons){
+    const enabled = cons.filter(L=>L.enabled!==false);
+    const all=[...enabled,{a:-1,b:0,c:0,label:'x ≥ 0',enabled:true},{a:0,b:-1,c:0,label:'y ≥ 0',enabled:true}];
+    const verts=[];
+    for(let i=0;i<all.length;i++){
+      for(let j=i+1;j<all.length;j++){
+        const L1=all[i], L2=all[j];
+        const det = L1.a*L2.b - L2.a*L1.b;
+        if(Math.abs(det)<1e-9) continue; // song song
+        const x=(L1.c*L2.b - L2.c*L1.b)/det;
+        const y=(L1.a*L2.c - L2.a*L1.c)/det;
+        if(Number.isFinite(x)&&Number.isFinite(y)){
+          if(isFeasible(x,y,all)) verts.push({x,y});
+        }
+      }
+    }
+    const uniq=[]; verts.forEach(p=>{ if(!uniq.some(q=>Math.hypot(p.x-q.x,p.y-q.y)<1e-6)) uniq.push(p); });
+    const cx=avg(uniq.map(p=>p.x)||[0]), cy=avg(uniq.map(p=>p.y)||[0]);
+    uniq.sort((p,q)=>Math.atan2(p.y-cy,p.x-cx)-Math.atan2(q.y-cy,q.x-cx));
+    return uniq;
+  }
+  function isFeasible(x,y,cons){ return cons.every(L=> L.a*x + L.b*y <= L.c + 1e-9 ); }
+  const avg=a=>a.length? a.reduce((s,v)=>s+v,0)/a.length : 0;
+
+  // ===== Tối ưu trên tập đỉnh =====
+  function optimize(verts,c1,c2,sense){
+    if(!verts.length) return null;
+    let best=verts[0], bestZ=c1*best.x+c2*best.y;
+    for(const p of verts){ const z=c1*p.x+c2*p.y; if((sense==='max' && z>bestZ+1e-9) || (sense==='min' && z<bestZ-1e-9)) { best=p; bestZ=z; } }
+    return {point:best, value:bestZ};
+  }
+
+  // ===== Khung nhìn & chuyển đổi toạ độ =====
+  function worldBounds(cons){
+    const enabled = cons.filter(L=>L.enabled!==false);
+    const vs=feasibleVertices(cons);
+    let maxX=0,maxY=0; enabled.forEach(L=>{ if(L.a!==0) maxX=Math.max(maxX, L.c/Math.max(1e-9,Math.abs(L.a))); if(L.b!==0) maxY=Math.max(maxY, L.c/Math.max(1e-9,Math.abs(L.b))); });
+    vs.forEach(p=>{ maxX=Math.max(maxX,p.x); maxY=Math.max(maxY,p.y); });
+    maxX=Math.max(10,maxX*1.15); maxY=Math.max(10,maxY*1.15);
+    return {xmin:0,ymin:0,xmax:maxX,ymax:maxY};
+  }
+  function setCanvasSize(){ const w=Math.min(640, window.innerWidth*0.92); const h=Math.min(520, window.innerWidth*0.72); plot.width=w*2; plot.height=h*2; plot.style.width=w+'px'; plot.style.height=h+'px'; }
+  function sx(x){return padL + (x-ub.xmin)/(ub.xmax-ub.xmin) * (plot.width - padL - padR)}
+  function sy(y){return plot.height - padB - (y-ub.ymin)/(ub.ymax-ub.ymin) * (plot.height - padT - padB)}
+  function wx(X){return ub.xmin + (X - padL)/(plot.width - padL - padR)*(ub.xmax-ub.xmin)}
+  function wy(Y){return ub.ymin + (plot.height - padB - Y)/(plot.height - padT - padB)*(ub.ymax-ub.ymin)}
+
+  let ub={xmin:0,ymin:0,xmax:10,ymax:10};
+  const padL=70,padR=20,padT=20,padB=60;
+
+  // ===== Vẽ đồ thị =====
+  function draw(cons, verts, best){
+    ctx.clearRect(0,0,plot.width,plot.height);
+    drawGridAxes();
+
+    const enabled = cons.filter(L=>L.enabled!==false);
+    enabled.forEach((L,i)=>{
+      const col=getColor(i);
+      ctx.save(); ctx.strokeStyle=col; ctx.lineWidth=3;
+      const pts=[]; for(let k=0;k<=80;k++){
+        const x=ub.xmin + (ub.xmax-ub.xmin)*k/80;
+        const y = L.b!==0 ? (L.c - L.a*x)/L.b : (Math.abs(L.a)>1e-9? (L.c/L.a) : NaN);
+        if(Number.isFinite(y)) pts.push([sx(x), sy(y)]);
+      }
+      ctx.beginPath(); if(pts.length){ ctx.moveTo(pts[0][0],pts[0][1]); for(const p of pts) ctx.lineTo(p[0],p[1]); }
+      ctx.stroke();
+      ctx.fillStyle=col; ctx.font='bold 22px system-ui';
+      const lx=sx(ub.xmin+(i+1)/(enabled.length+1)*(ub.xmax-ub.xmin)); const ly=sy(ub.ymax*0.92);
+      ctx.fillText(L.label||`Ràng buộc`, lx-10, ly);
+      ctx.restore();
+    });
+
+    if(verts.length>=3){
+      ctx.save(); ctx.fillStyle=config.feasibleFill; ctx.beginPath(); ctx.moveTo(sx(verts[0].x), sy(verts[0].y)); for(let i=1;i<verts.length;i++){ ctx.lineTo(sx(verts[i].x), sy(verts[i].y)); } ctx.closePath(); ctx.fill(); ctx.restore();
+    }
+
+    ctx.save();
+    for(const p of verts){ ctx.fillStyle=config.vertex.color; ctx.beginPath(); ctx.arc(sx(p.x), sy(p.y), config.vertex.r, 0, 2*Math.PI); ctx.fill(); }
+    if(best){ ctx.fillStyle=config.optimal.color; ctx.beginPath(); ctx.arc(sx(best.point.x), sy(best.point.y), config.optimal.r, 0, 2*Math.PI); ctx.fill(); }
+    ctx.restore();
+
+    if(dragEnabled && dragZ!=null){ drawObjectiveLine(dragZ); }
+  }
+
+  function getColor(i){ const d=document.createElement('div'); d.style.color=config.colors[i%config.colors.length]; document.body.appendChild(d); const col=getComputedStyle(d).color; d.remove(); return col; }
+
+  function drawGridAxes(){
+    ctx.save(); ctx.lineWidth=1; ctx.strokeStyle='#e5e7eb';
+    ctx.fillStyle='#ffffff'; ctx.fillRect(0,0,plot.width,plot.height);
+    ctx.fillStyle='#fff'; ctx.strokeStyle='#e5e7eb'; ctx.strokeRect(padL,padT, plot.width-padL-padR, plot.height-padT-padB);
+
+    const nx=10, ny=10; ctx.strokeStyle=config.grid.color;
+    for(let i=0;i<=nx;i++){ const X=padL + i*(plot.width-padL-padR)/nx; ctx.beginPath(); ctx.moveTo(X,padT); ctx.lineTo(X, plot.height-padB); ctx.stroke(); }
+    for(let j=0;j<=ny;j++){ const Y=padT + j*(plot.height-padT-padB)/ny; ctx.beginPath(); ctx.moveTo(padL,Y); ctx.lineTo(plot.width-padR, Y); ctx.stroke(); }
+
+    ctx.strokeStyle=config.axes.color; ctx.lineWidth=2; ctx.beginPath();
+    ctx.moveTo(padL, sy(0)); ctx.lineTo(plot.width-padR, sy(0));
+    ctx.moveTo(sx(0), padT); ctx.lineTo(sx(0), plot.height-padB);
+    ctx.stroke();
+
+    ctx.fillStyle='#0f172a'; ctx.font='700 22px system-ui'; ctx.fillText('x', plot.width-padR-16, sy(0)-8);
+    ctx.fillText('y', sx(0)+10, padT+18);
+    ctx.restore();
+  }
+
+  // ===== Bảng kết quả =====
+  function renderResults(verts, best){
+    const box=$('#results'); if(!verts.length){ box.innerHTML=''; return; }
+    let html=`<div style="overflow:auto;max-height:280px"><table><thead><tr><th>#</th><th>x</th><th>y</th><th>Z = ${fmt(cur.c[0])}·x + ${fmt(cur.c[1])}·y</th></tr></thead><tbody>`;
+    const bz=best? cur.c[0]*best.point.x + cur.c[1]*best.point.y : null;
+    verts.forEach((p,i)=>{ const z=cur.c[0]*p.x + cur.c[1]*p.y; const hit=best && Math.abs(z-bz)<1e-6 && Math.hypot(p.x-best.point.x,p.y-best.point.y)<1e-6; html+=`<tr class="${hit?'hit':''}"><td>${i+1}</td><td>${fmt(p.x)}</td><td>${fmt(p.y)}</td><td>${fmt(z)}</td></tr>`; });
+    html+='</tbody></table></div>';
+    if(best){ const senseTxt = cur.sense==='max'? 'tối đa' : 'tối thiểu'; html+=`<div class="status">⭐ <b>Đỉnh ${senseTxt}</b>: (x*, y*) = (<b>${fmt(best.point.x)}</b>, <b>${fmt(best.point.y)}</b>) → Z* = <b>${fmt(best.value)}</b>.`+(dragEnabled && dragZ!=null? ` <br>🔎 Đường đẳng mức hiện tại: Z = <b>${fmt(dragZ)}</b>.`:``)+`</div>`; }
+    box.innerHTML=html;
+  }
+
+  const fmt=(v)=> (Math.abs(v)<1e-9? '0' : (+v).toLocaleString('vi-VN',{maximumFractionDigits:4}));
+  const escapeHtml=s=>s.replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]));
+
+  // ===== Hover + Rê hàm mục tiêu =====
+  let hoverPts=[];
+  plot.addEventListener('mousemove', e=>{
+    const rect=plot.getBoundingClientRect(); const X=(e.clientX-rect.left)*2; const Y=(e.clientY-rect.top)*2;
+    if(!hoverPts.length && !dragEnabled){ tip.style.display='none'; return; }
+
+    // Nếu đang rê hàm mục tiêu
+    if(dragEnabled){
+      const xw=wx(X), yw=wy(Y); dragZ = cur.c[0]*xw + cur.c[1]*yw;
+      if($('#results').innerHTML){ const cons=cur.constraints.slice(); ub=worldBounds(cons); const verts=feasibleVertices(cons); const best=optimize(verts, +cur.c[0], +cur.c[1], cur.sense); draw(cons, verts, best); renderResults(verts, best); }
+      const feasTxt = (function(){ const all=[...cur.constraints.filter(L=>L.enabled!==false),{a:-1,b:0,c:0},{a:0,b:-1,c:0}]; return all.every(L=> L.a*xw+L.b*yw <= L.c + 1e-9) ? '✅ Trong miền' : '⛔ Ngoài miền'; })();
+      tip.style.display='block'; tip.textContent=`x=${fmt(xw)}, y=${fmt(yw)}, Z=${fmt(dragZ)} ${feasTxt}`; tip.style.left=(X/2)+'px'; tip.style.top=(Y/2)+'px';
+      return;
+    }
+
+    // Tooltip đỉnh
+    let found=null; for(const p of hoverPts){ const d=Math.hypot(sx(p.x)-X, sy(p.y)-Y); if(d<12){ found=p; break; } }
+    if(found){ tip.style.display='block'; tip.textContent=`(${fmt(found.x)}, ${fmt(found.y)})`; tip.style.left=(X/2)+'px'; tip.style.top=(Y/2)+'px'; }
+    else tip.style.display='none';
+  });
+  plot.addEventListener('mouseleave', ()=> tip.style.display='none');
+
+  // ===== Hành động chính =====
+  function solveAndDraw(){
+    setCanvasSize();
+    const cons=cur.constraints.slice();
+    const verts=feasibleVertices(cons);
+    if(!verts.length){ $('#status').innerHTML='⛔ Không có miền nghiệm (rỗng). Hãy điều chỉnh ràng buộc.'; ctx.clearRect(0,0,plot.width,plot.height); drawGridAxes(); $('#results').innerHTML=''; hoverPts=[]; return; }
+    ub=worldBounds(cons); const best=optimize(verts, +cur.c[0], +cur.c[1], cur.sense);
+    draw(cons, verts, best); renderResults(verts, best); hoverPts=verts; $('#status').innerHTML='Đã vẽ miền nghiệm (tô xanh), đánh dấu các đỉnh và bôi đậm đỉnh tối ưu.';
+    dragZ = best ? best.value : null; if(dragEnabled && dragZ!=null) drawObjectiveLine(dragZ);
+  }
+
+  function resetProblem(){ cur=JSON.parse(JSON.stringify(problems[curKey])); renderObjective(); renderConstraints(); renderBoundsBox(); $('#status').textContent='Đã đặt lại dữ liệu mặc định.'; $('#results').innerHTML=''; ctx.clearRect(0,0,plot.width,plot.height); drawGridAxes(); }
+
+  function initTabs(){
+    $('#tabs').addEventListener('click', e=>{ const t=e.target.closest('.tab'); if(!t) return; document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active')); t.classList.add('active'); curKey=t.getAttribute('data-prob'); resetProblem(); $('#msg').textContent = problems[curKey].note; });
+  }
+
+  // ===== Khởi động =====
+  function boot(){
+    setCanvasSize(); renderObjective(); renderConstraints(); renderBoundsBox(); bindInputs(); initTabs(); drawGridAxes();
+    $('#msg').textContent = problems[curKey].note;
+    $('#solveBtn').addEventListener('click', solveAndDraw);
+    $('#resetBtn').addEventListener('click', resetProblem);
+    $('#dragBtn').addEventListener('click', ()=>{ dragEnabled=!dragEnabled; $('#dragBtn').classList.toggle('alt', dragEnabled); $('#dragBtn').textContent = dragEnabled? '🖐️ Đang rê hàm mục tiêu' : '🖐️ Rê hàm mục tiêu'; if($('#results').innerHTML) solveAndDraw(); });
+    window.addEventListener('resize', ()=>{ if($('#results').innerHTML) solveAndDraw(); else { setCanvasSize(); drawGridAxes(); } });
+  }
+  boot();
+
+  // ===== Vẽ đường đẳng mức Z =====
+  function drawObjectiveLine(Z){
+    const c1=+cur.c[0], c2=+cur.c[1]; if(Math.abs(c1)<1e-9 && Math.abs(c2)<1e-9) return;
+    const pts=[]; for(let k=0;k<=200;k++){ const x=ub.xmin + (ub.xmax-ub.xmin)*k/200; const y=(Math.abs(c2)>1e-9)? (Z - c1*x)/c2 : NaN; if(Number.isFinite(y) && y>=ub.ymin-1 && y<=ub.ymax+1) pts.push([sx(x), sy(y)]); }
+    if(pts.length>=2){ ctx.save(); ctx.setLineDash(config.objLineDash); ctx.strokeStyle=config.objLine; ctx.lineWidth=2.5; ctx.beginPath(); ctx.moveTo(pts[0][0], pts[0][1]); for(const p of pts) ctx.lineTo(p[0],p[1]); ctx.stroke(); ctx.setLineDash([]); ctx.restore(); }
+  }
+
+  // ===== Bảng nhanh Ràng buộc 1–4 + Biên cho Streamer =====
+  function renderBoundsBox(){
+    const box=$('#boundsBox'); if(curKey!=='stream'){ box.style.display='none'; return; }
+    box.style.display='block';
+    const ix = cur.constraints.findIndex(L=>L.a===1 && L.b===0);
+    const iy = cur.constraints.findIndex(L=>L.a===0 && L.b===1);
+    if(ix>=0) $('#xmax').value = cur.constraints[ix].c; if(iy>=0) $('#ymax').value = cur.constraints[iy].c;
+    $('#xmax').oninput = ()=>{ if(ix>=0){ cur.constraints[ix].c = parseFloat($('#xmax').value||'0'); renderConstraints(); renderQuickConstraints(); } };
+    $('#ymax').oninput = ()=>{ if(iy>=0){ cur.constraints[iy].c = parseFloat($('#ymax').value||'0'); renderConstraints(); renderQuickConstraints(); } };
+    renderQuickConstraints();
+  }
+
+  function renderQuickConstraints(){
+    const box=$('#quickC'); if(!box) return; const n=Math.min(4, cur.constraints.length);
+    let html='<table style="width:100%;border-collapse:collapse">';
+    html+='<tr><th style="text-align:left">#</th><th>a</th><th>b</th><th>c</th><th>Bật</th><th style="text-align:left">Ghi chú</th></tr>';
+    for(let i=0;i<n;i++){
+      const L=cur.constraints[i]; const en = (L.enabled!==false);
+      html+=`<tr>
+        <td>${i+1}</td>
+        <td><input type="number" step="any" style="width:80px" value="${L.a}" data-qc="a-${i}"></td>
+        <td><input type="number" step="any" style="width:80px" value="${L.b}" data-qc="b-${i}"></td>
+        <td><input type="number" step="any" style="width:100px" value="${L.c}" data-qc="c-${i}"></td>
+        <td style="text-align:center"><input type="checkbox" ${en?'checked':''} data-qc="en-${i}"></td>
+        <td><input type="text" style="width:100%" value="${L.label||''}" data-qc="label-${i}"></td>
+      </tr>`;
+    }
+    html+='</table>';
+    box.innerHTML=html;
+
+    box.querySelectorAll('[data-qc]').forEach(el=>{
+      el.oninput = el.onchange = ()=>{
+        const [k,idx] = el.getAttribute('data-qc').split('-'); const i=+idx; const L=cur.constraints[i];
+        if(k==='a'||k==='b'||k==='c'){ L[k]=parseFloat(el.value||'0'); }
+        else if(k==='label'){ L.label=el.value; }
+        else if(k==='en'){ L.enabled = el.checked; }
+        renderConstraints();
+      };
+    });
+  }
+  </script>
+</body>
+</html>

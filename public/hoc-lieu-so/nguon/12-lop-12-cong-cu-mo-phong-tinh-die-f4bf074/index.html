@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công Cụ Toán Học Pro: Đa Miền Cận & Tương Tác 2D</title>
+    <style>
+        body { margin: 0; overflow: hidden; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f9fa; display: flex; }
+        
+        /* BẢNG ĐIỀU KHIỂN */
+        #control-panel {
+            width: 460px; height: 100vh; background: #ffffff;
+            padding: 20px; box-sizing: border-box; box-shadow: 3px 0 15px rgba(0,0,0,0.08);
+            overflow-y: auto; z-index: 10; border-right: 1px solid #e9ecef;
+        }
+        h2 { margin-top: 0; font-size: 15px; color: #2c3e50; text-transform: uppercase; border-bottom: 2px solid #3498db; padding-bottom: 8px;}
+        
+        .func-card {
+            background: #fdfdfd; border: 1px solid #e0e0e0; border-radius: 8px;
+            padding: 10px 12px; margin-bottom: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            display: flex; align-items: center; gap: 10px;
+        }
+        .func-label { font-weight: bold; font-size: 14px; width: 35px; text-align: center;}
+        
+        input[type="text"] {
+            flex: 1; padding: 8px; box-sizing: border-box;
+            border: 1px solid #ced4da; border-radius: 4px; font-size: 15px; font-family: monospace; font-weight: bold; color: #2c3e50;
+        }
+        input[type="number"] {
+            width: 100%; padding: 8px; box-sizing: border-box;
+            border: 1px solid #ced4da; border-radius: 4px; font-size: 14px; font-family: monospace; font-weight: bold; text-align: center;
+            transition: background-color 0.4s ease;
+        }
+        select { width: 100%; padding: 8px; border-radius: 4px; border: 1px solid #ced4da; font-size: 13px; color: #2c3e50; font-weight: bold; cursor: pointer;}
+        
+        .highlight-scan { background-color: #fff3cd !important; border-color: #ffc107 !important; color: #d35400 !important; }
+
+        .math-keyboard { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 15px; }
+        .math-keyboard button {
+            flex: 1 1 12%; padding: 6px; background: #f8f9fa; border: 1px solid #ced4da; 
+            border-radius: 4px; cursor: pointer; font-size: 13px; font-family: monospace; color: #495057; font-weight: bold;
+        }
+        .math-keyboard button:hover { background: #e2e6ea; }
+        
+        /* KHU VỰC CẬN ĐA MIỀN */
+        .limit-section { background: #f8f9fa; padding: 15px; border-radius: 8px; border: 1px solid #dee2e6; margin-bottom: 15px;}
+        .limit-grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr 35px; gap: 6px; margin-bottom: 8px; align-items: center;}
+        .btn-remove { background: #ff7675; color: white; border: none; border-radius: 4px; height: 35px; cursor: pointer; font-size: 12px; display: flex; justify-content: center; align-items: center; transition: 0.2s;}
+        .btn-remove:hover { background: #d63031; }
+        .btn-add-limit { background: #0984e3; color: white; border: none; border-radius: 4px; padding: 6px 12px; cursor: pointer; font-size: 12px; font-weight: bold; width: 100%; margin-bottom: 10px; transition: 0.2s;}
+        .btn-add-limit:hover { background: #74b9ff; }
+        
+        .root-btn { background: #ffc107; border: none; padding: 4px 8px; border-radius: 4px; margin: 2px 2px 0 0; cursor: pointer; font-size: 11px; font-weight: bold; color: #423000; box-shadow: 0 2px 0 #d39e00;}
+        .root-btn:hover { background: #ffca2c; transform: translateY(1px); box-shadow: 0 1px 0 #d39e00;}
+
+        .input-group { margin-bottom: 12px; }
+        label { display: block; font-weight: bold; margin-bottom: 4px; font-size: 12px; color: #34495e; }
+        input[type="range"] { width: 100%; cursor: pointer; accent-color: #3498db;}
+        
+        .btn-main {
+            width: 100%; padding: 12px; background-color: #27ae60; color: white;
+            border: none; border-radius: 6px; font-size: 14px; cursor: pointer; font-weight: bold;
+            margin-top: 8px; transition: 0.2s; box-shadow: 0 4px 6px rgba(39, 174, 96, 0.2); text-transform: uppercase;
+        }
+        .btn-main:hover { background-color: #2ecc71; }
+        .btn-update { background-color: #3498db; box-shadow: 0 4px 6px rgba(52, 152, 219, 0.2); }
+        .btn-update:hover { background-color: #2980b9; }
+
+        #result-box {
+            background: #ffffff; padding: 15px; border-radius: 8px; margin-top: 15px;
+            border: 1px solid #e9ecef; border-left: 5px solid #2ecc71; display: none; box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .result-val { font-size: 20px; font-weight: bold; color: #27ae60; margin-bottom: 5px; letter-spacing: 1px;}
+
+        #workspace { flex: 1; display: flex; flex-direction: row; height: 100vh; background: #e9ecef; gap: 2px;}
+        #plot-2d-container { flex: 1; background: #ffffff; position: relative; box-shadow: -2px 0 10px rgba(0,0,0,0.05); z-index: 2;}
+        #plot-3d-container { flex: 1; background: #fdfdfd; position: relative; }
+        .panel-title {
+            position: absolute; top: 12px; left: 12px; background: rgba(255,255,255,0.9);
+            color: #2c3e50; padding: 6px 15px; border-radius: 20px; font-size: 13px; font-weight: bold; z-index: 5;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); border: 1px solid #e0e0e0;
+        }
+
+
+        /* NHẬP CÔNG THỨC TRỰC QUAN */
+        .func-editor { flex: 1; min-width: 0; }
+        .math-preview {
+            min-height: 30px; margin-top: 6px; padding: 6px 8px; box-sizing: border-box;
+            border: 1px solid #e9ecef; border-radius: 6px; background: #f8fbff;
+            color: #1f2d3d; display: flex; align-items: center; overflow-x: auto; white-space: nowrap;
+        }
+        .math-preview.invalid { color: #c0392b; background: #fff5f5; border-color: #f5b7b1; font-size: 12px; }
+        .math-help { font-size: 11px; color: #6c757d; line-height: 1.45; margin: -8px 0 12px; }
+        .math-keyboard button { min-width: 43px; }
+        .scan-options {
+            display: grid; grid-template-columns: 1.25fr 0.8fr 0.8fr; gap: 6px;
+            padding: 8px; margin: 7px 0; background: #fff; border: 1px solid #e2e3e5; border-radius: 6px;
+        }
+        .scan-options label { margin: 0 0 3px; font-size: 10px; color: #6c757d; }
+        .scan-options input, .scan-options select { height: 32px; padding: 5px 7px; font-size: 12px; }
+        .root-summary { margin-top: 5px; color: #7f8c8d; font-size: 11px; }
+
+        /* ĐIỀU KHIỂN 3D */
+        .controls-3d {
+            position: absolute; right: 12px; top: 12px; z-index: 8; display: flex; gap: 5px;
+            background: rgba(255,255,255,0.92); border: 1px solid #dfe6e9; border-radius: 10px;
+            padding: 5px; box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+        }
+        .controls-3d button {
+            width: 34px; height: 32px; border: 1px solid #ced4da; border-radius: 7px;
+            background: #fff; cursor: pointer; font-weight: bold; color: #2c3e50; font-size: 15px;
+        }
+        .controls-3d button:hover { background: #eef6ff; border-color: #74b9ff; }
+        .controls-3d .wide { width: auto; min-width: 48px; padding: 0 8px; font-size: 11px; }
+
+    </style>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script type="importmap">
+        { "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js", "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/" } }
+    </script>
+</head>
+<body>
+    <div id="control-panel">
+        <h2>🛠 Biểu thức Hàm số</h2>
+        
+        <div class="math-keyboard">
+            <button onclick="insertMath('x')">x</button><button onclick="insertMath('^2')">x²</button>
+            <button onclick="insertMath('^3')">x³</button><button onclick="insertMath('sqrt(')">√</button>
+            <button onclick="insertMath('pi')">π</button><button onclick="insertMath('sin(')">sin</button>
+            <button onclick="insertMath('cos(')">cos</button><button onclick="insertMath('tan(')">tan</button>
+            <button onclick="insertMath('ln(')" title="Logarit tự nhiên: ln(x)">ln</button>
+            <button onclick="insertMath('log10(')" title="Logarit cơ số 10">log₁₀</button>
+            <button onclick="insertMath('log(x,a)')" title="Logarit cơ số a: log(x,a)">logₐ</button>
+            <button onclick="insertMath('exp(')" title="Hàm mũ e^x">eˣ</button>
+            <button onclick="insertMath('abs(')">|x|</button><button onclick="insertMath('(')">(</button>
+            <button onclick="insertMath(')')">)</button><button onclick="insertMath('/')">÷</button>
+        </div>
+        <div class="math-help">Có thể gõ tự nhiên: <b>x^2</b>, <b>sqrt(x)</b>, <b>sin(x)</b>, <b>ln(x)</b>, <b>log10(x)</b>, <b>log(x,a)</b>, <b>exp(x)</b>, <b>abs(x)</b>. Công thức đẹp sẽ hiện ngay bên dưới.</div>
+
+        <div class="func-card" style="border-left: 4px solid #3498db;">
+            <div class="func-label" style="color: #2980b9;">f(x)</div>
+            <div class="func-editor">
+                <input type="text" id="func-f" value="" placeholder="Nhập f(x)" onfocus="currentInput='func-f'" oninput="updateMathPreview('func-f')" autocomplete="off" spellcheck="false">
+                <div class="math-preview" id="preview-f"></div>
+            </div>
+        </div>
+        <div class="func-card" style="border-left: 4px solid #e74c3c;">
+            <div class="func-label" style="color: #c0392b;">g(x)</div>
+            <div class="func-editor">
+                <input type="text" id="func-g" value="" placeholder="Nhập g(x)" onfocus="currentInput='func-g'" oninput="updateMathPreview('func-g')" autocomplete="off" spellcheck="false">
+                <div class="math-preview" id="preview-g"></div>
+            </div>
+        </div>
+        <div class="func-card" style="border-left: 4px solid #9b59b6;">
+            <div class="func-label" style="color: #8e44ad;">h(x)</div>
+            <div class="func-editor">
+                <input type="text" id="func-h" value="" placeholder="Nhập h(x)" onfocus="currentInput='func-h'" oninput="updateMathPreview('func-h')" autocomplete="off" spellcheck="false">
+                <div class="math-preview" id="preview-h"></div>
+            </div>
+        </div>
+
+        <div class="limit-section">
+            <label style="color: #d35400; font-size: 14px;">📍 Các khoảng Cận Tích Phân & Hàm Số:</label>
+            
+            <div id="limits-container">
+                <div class="limit-grid limit-item">
+                    <div>
+                        <label>Tích phân hàm:</label>
+                        <select class="limit-curves">
+                            <option value="f-g" selected>f(x) & g(x)</option>
+                            <option value="f-h">f(x) & h(x)</option>
+                            <option value="g-h">g(x) & h(x)</option>
+                            <option value="f-0">f(x) & Ox</option>
+                            <option value="g-0">g(x) & Ox</option>
+                            <option value="h-0">h(x) & Ox</option>
+                        </select>
+                    </div>
+                    <div><label>Cận a:</label><input type="number" class="limit-a" value="-1.73" step="0.01"></div>
+                    <div><label>Cận b:</label><input type="number" class="limit-b" value="1.73" step="0.01"></div>
+                    <div style="display:flex; align-items:flex-end;"><button class="btn-remove" onclick="removeLimitRow(this)" title="Xóa khoảng này">❌</button></div>
+                </div>
+            </div>
+            <button class="btn-add-limit" onclick="addLimitRow()">➕ Thêm khoảng cận mới</button>
+            
+            <div class="scan-options">
+                <div>
+                    <label>Chế độ quét</label>
+                    <select id="scan-mode">
+                        <option value="active" selected>Chỉ cặp đang chọn</option>
+                        <option value="all">Tất cả cặp hàm</option>
+                    </select>
+                </div>
+                <div><label>x từ</label><input type="number" id="scan-min" value="-10" step="1"></div>
+                <div><label>x đến</label><input type="number" id="scan-max" value="10" step="1"></div>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin: 5px 0 5px 0;">
+                <label style="margin:0; font-size: 12px; color: #7f8c8d;">Giao điểm chính xác:</label>
+                <button onclick="findIntersections()" style="font-size:11px; padding:4px 9px; cursor: pointer; border-radius: 4px; border: 1px solid #adb5bd;">🔍 Quét nghiệm</button>
+            </div>
+            <div id="root-results" style="font-size: 12px; color: #6c757d; background: #fff; padding: 8px; border-radius: 4px; border: 1px solid #e2e3e5;">Chọn cặp hàm rồi quét. Hệ thống loại nghiệm trùng và điểm gián đoạn; nút Gán sẽ đưa nghiệm vào dòng cận cuối.</div>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid #e9ecef; margin: 15px 0;">
+        <h2>🔄 Thiết lập Khối 3D</h2>
+        
+        <div style="display: flex; flex-direction: column; gap: 8px; margin-bottom: 15px; padding: 10px; background: #fdfdfd; border: 1px solid #e9ecef; border-radius: 6px;">
+            <div style="display: flex; gap: 10px;">
+                <label style="flex: 1; margin: 0; cursor: pointer; display: flex; align-items: center; gap: 5px; font-size: 13px; font-weight: bold; color: #34495e;">
+                    <input type="checkbox" id="check-outer" checked> Hiện mặt ngoài hàm 1
+                </label>
+                <label style="flex: 1; margin: 0; cursor: pointer; display: flex; align-items: center; gap: 5px; font-size: 13px; font-weight: bold; color: #34495e;">
+                    <input type="checkbox" id="check-inner" checked> Hiện mặt trong hàm 2
+                </label>
+            </div>
+            <label style="margin: 0; cursor: pointer; display: flex; align-items: center; gap: 5px; font-size: 13px; font-weight: bold; color: #d35400;">
+                <input type="checkbox" id="check-caps" checked> Hiện nắp cắt tại a, b
+            </label>
+        </div>
+
+        <div class="input-group">
+            <label>Góc xoay quanh Ox (α): <span id="angle-val" style="color: #e67e22;">360</span>°</label>
+            <input type="range" id="angle-alpha" min="1" max="360" value="360">
+        </div>
+
+        <button class="btn-main btn-update" id="btn-draw">1. VẼ ĐỒ THỊ 2D & MÔ PHỎNG 3D</button>
+        <button class="btn-main" id="btn-calc">2. TÍNH TỔNG DIỆN TÍCH S & THỂ TÍCH V</button>
+
+        <div id="result-box">
+            <div style="font-size: 12px; color:#7f8c8d; font-weight: bold;">Tổng Diện tích S (Các vùng 2D):</div>
+            <div class="result-val" id="res-area">...</div>
+            <div style="font-size: 12px; color:#7f8c8d; font-weight: bold; margin-top: 10px;">Tổng Thể tích V (Khối 3D quanh Ox):</div>
+            <div class="result-val" id="res-volume">...</div>
+        </div>
+    </div>
+
+    <div id="workspace">
+        <div id="plot-2d-container">
+            <div class="panel-title">Mặt Phẳng 2D</div>
+            <div id="plot-2d" style="width: 100%; height: 100%;"></div>
+        </div>
+        <div id="plot-3d-container">
+            <div class="panel-title">Không Gian 3D (Oxyz)</div>
+            <div class="controls-3d">
+                <button onclick="zoom3D(0.78)" title="Phóng to">＋</button>
+                <button onclick="zoom3D(1.28)" title="Thu nhỏ">−</button>
+                <button class="wide" onclick="fit3D()" title="Đưa toàn bộ khối vào khung">Vừa hình</button>
+                <button class="wide" onclick="reset3DView()" title="Góc nhìn mặc định">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import * as THREE from 'three';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+        // --- QUẢN LÝ NHẬP LIỆU & CẬN ĐA MIỀN ---
+        window.currentInput = 'func-f';
+
+        function normalizeExpression(raw) {
+            return String(raw || '')
+                .replace(/π/g, 'pi')
+                .replace(/²/g, '^2').replace(/³/g, '^3')
+                .replace(/√\s*\(/g, 'sqrt(')
+                .replace(/\bln\s*\(/gi, 'log(')
+                .replace(/\blg\s*\(/gi, 'log10(')
+                .replace(/\btg\s*\(/gi, 'tan(')
+                .replace(/\bctg\s*\(/gi, 'cot(')
+                .trim();
+        }
+
+        window.insertMath = function(val) {
+            const input = document.getElementById(window.currentInput);
+            if(!input) return;
+            const start = Number.isInteger(input.selectionStart) ? input.selectionStart : input.value.length;
+            const end = Number.isInteger(input.selectionEnd) ? input.selectionEnd : start;
+            input.value = input.value.slice(0, start) + val + input.value.slice(end);
+            const pos = start + val.length;
+            input.setSelectionRange(pos, pos);
+            input.focus();
+            window.updateMathPreview(window.currentInput);
+        }
+
+        window.updateMathPreview = function(inputId) {
+            const input = document.getElementById(inputId);
+            const letter = inputId.split('-')[1];
+            const preview = document.getElementById('preview-' + letter);
+            if(!input || !preview) return;
+            try {
+                const normalized = normalizeExpression(input.value);
+                if(!normalized) {
+                    preview.classList.remove('invalid');
+                    preview.innerHTML = '';
+                    return;
+                }
+                const node = math.parse(normalized);
+                let tex = node.toTex({parenthesis: 'keep', implicit: 'show'});
+                // Math.js dùng log(x) cho logarit tự nhiên; giao diện hiển thị chuẩn THPT là ln(x).
+                tex = tex.replace(/\\log(?=\\left)/g, '\\ln');
+                preview.classList.remove('invalid');
+                if(window.katex) katex.render(`${letter}(x)=${tex}`, preview, {throwOnError:false, displayMode:false});
+                else preview.textContent = `${letter}(x) = ${input.value}`;
+            } catch(err) {
+                preview.classList.add('invalid');
+                preview.textContent = '⚠ Chưa nhận dạng được biểu thức';
+            }
+        }
+
+        window.addLimitRow = function() {
+            const container = document.getElementById('limits-container');
+            const div = document.createElement('div');
+            div.className = 'limit-grid limit-item';
+            div.innerHTML = `
+                <div>
+                    <select class="limit-curves">
+                        <option value="f-g" selected>f(x) & g(x)</option>
+                        <option value="f-h">f(x) & h(x)</option>
+                        <option value="g-h">g(x) & h(x)</option>
+                        <option value="f-0">f(x) & Ox</option>
+                        <option value="g-0">g(x) & Ox</option>
+                        <option value="h-0">h(x) & Ox</option>
+                    </select>
+                </div>
+                <div><input type="number" class="limit-a" value="0" step="0.01"></div>
+                <div><input type="number" class="limit-b" value="0" step="0.01"></div>
+                <div style="display:flex; align-items:flex-end;"><button class="btn-remove" onclick="removeLimitRow(this)" title="Xóa khoảng này">❌</button></div>
+            `;
+            container.appendChild(div);
+        }
+
+        window.removeLimitRow = function(btn) {
+            btn.parentElement.parentElement.remove();
+            if(document.querySelectorAll('.limit-item').length === 0) window.addLimitRow();
+        }
+
+        let compF, compG, compH;
+        function compileMath() {
+            try { compF = math.compile(normalizeExpression(document.getElementById('func-f').value)); } catch(e){ compF = null; }
+            try { compG = math.compile(normalizeExpression(document.getElementById('func-g').value)); } catch(e){ compG = null; }
+            try { compH = math.compile(normalizeExpression(document.getElementById('func-h').value)); } catch(e){ compH = null; }
+        }
+        function toRealNumber(value) {
+            if(typeof value === 'number') return Number.isFinite(value) ? value : NaN;
+            if(value && typeof value === 'object' && 're' in value && 'im' in value) {
+                const re = Number(value.re), im = Number(value.im);
+                return Number.isFinite(re) && Number.isFinite(im) && Math.abs(im) < 1e-10 ? re : NaN;
+            }
+            const n = Number(value);
+            return Number.isFinite(n) ? n : NaN;
+        }
+        function evaluate(fn, x) {
+            if(fn === '0') return 0;
+            try {
+                if(fn === 'f' && compF) return toRealNumber(compF.evaluate({x}));
+                if(fn === 'g' && compG) return toRealNumber(compG.evaluate({x}));
+                if(fn === 'h' && compH) return toRealNumber(compH.evaluate({x}));
+            } catch(e) { return NaN; }
+            return NaN;
+        }
+
+        window.flashInputTarget = function(el) {
+            el.classList.add('highlight-scan');
+            setTimeout(() => el.classList.remove('highlight-scan'), 800);
+        }
+
+        // Tự động chọn đúng hàm tương ứng khi giáo viên nhấn gán nghiệm từ bảng Quét
+        window.assignLimit = function(val, type, curvePair) {
+            const rows = document.querySelectorAll('.limit-item');
+            if(rows.length > 0) {
+                const targetRow = rows[rows.length - 1]; 
+                const targetInput = targetRow.querySelector(type === 'a' ? '.limit-a' : '.limit-b');
+                targetInput.value = val;
+                
+                if (curvePair) {
+                    const selectEl = targetRow.querySelector('.limit-curves');
+                    if (selectEl) selectEl.value = curvePair;
+                }
+                
+                flashInputTarget(targetInput);
+            }
+        }
+
+        window.findIntersections = function() {
+            compileMath();
+            const resultBox = document.getElementById('root-results');
+            const mode = document.getElementById('scan-mode').value;
+            let scanMin = parseFloat(document.getElementById('scan-min').value);
+            let scanMax = parseFloat(document.getElementById('scan-max').value);
+            if(!Number.isFinite(scanMin)) scanMin = -10;
+            if(!Number.isFinite(scanMax)) scanMax = 10;
+            if(scanMin > scanMax) [scanMin, scanMax] = [scanMax, scanMin];
+            if(Math.abs(scanMax - scanMin) < 1e-9) scanMax = scanMin + 1;
+
+            const lastRow = [...document.querySelectorAll('.limit-item')].pop();
+            const activePair = lastRow ? lastRow.querySelector('.limit-curves').value : 'f-g';
+            const allPairs = ['f-g','f-h','g-h','f-0','g-0','h-0'];
+            const pairList = mode === 'all' ? allPairs : [activePair];
+
+            resultBox.innerHTML = '⏳ Đang kiểm tra nghiệm thực và loại điểm gián đoạn...';
+
+            const diffAt = (fn1, fn2, x) => {
+                const y1 = evaluate(fn1, x), y2 = evaluate(fn2, x);
+                return (Number.isFinite(y1) && Number.isFinite(y2)) ? y1 - y2 : NaN;
+            };
+            const addUnique = (roots, r) => {
+                if(!Number.isFinite(r)) return;
+                if(r < scanMin - 1e-6 || r > scanMax + 1e-6) return;
+                if(!roots.some(v => Math.abs(v-r) < 1e-3)) roots.push(r);
+            };
+            const verifyRoot = (fn1, fn2, r, step) => {
+                const val = diffAt(fn1, fn2, r);
+                if(!Number.isFinite(val) || Math.abs(val) > 1e-5) return false;
+                const eps = Math.max(step * 0.08, 1e-5);
+                const left = diffAt(fn1, fn2, r-eps), right = diffAt(fn1, fn2, r+eps);
+                return Number.isFinite(left) && Number.isFinite(right);
+            };
+            const bisect = (fn1, fn2, a, b) => {
+                let fa = diffAt(fn1, fn2, a), fb = diffAt(fn1, fn2, b);
+                if(!Number.isFinite(fa) || !Number.isFinite(fb) || fa*fb > 0) return NaN;
+                for(let i=0;i<55;i++) {
+                    const mid=(a+b)/2, fm=diffAt(fn1, fn2, mid);
+                    if(!Number.isFinite(fm)) return NaN;
+                    if(Math.abs(fm) < 1e-12) return mid;
+                    if(fa*fm <= 0) { b=mid; fb=fm; } else { a=mid; fa=fm; }
+                }
+                return (a+b)/2;
+            };
+            const refineTouch = (fn1, fn2, a, b) => {
+                // Tối thiểu hóa |f-g| để bắt nghiệm tiếp xúc (không đổi dấu).
+                let l=a, r=b;
+                for(let i=0;i<45;i++) {
+                    const m1=l+(r-l)/3, m2=r-(r-l)/3;
+                    const v1=Math.abs(diffAt(fn1,fn2,m1)), v2=Math.abs(diffAt(fn1,fn2,m2));
+                    if(!Number.isFinite(v1) || !Number.isFinite(v2)) return NaN;
+                    if(v1 <= v2) r=m2; else l=m1;
+                }
+                return (l+r)/2;
+            };
+            const scanRoots = (fn1, fn2) => {
+                const width = scanMax - scanMin;
+                const step = Math.max(0.01, Math.min(0.05, width/500));
+                const xs=[], ys=[];
+                for(let x=scanMin; x<=scanMax+step*0.25; x+=step) {
+                    const xx=Math.min(x,scanMax);
+                    xs.push(xx); ys.push(diffAt(fn1,fn2,xx));
+                    if(xx===scanMax) break;
+                }
+                const roots=[];
+                for(let i=0;i<xs.length;i++) {
+                    const y=ys[i];
+                    if(Number.isFinite(y) && Math.abs(y)<1e-7 && verifyRoot(fn1,fn2,xs[i],step)) addUnique(roots,xs[i]);
+                    if(i<xs.length-1) {
+                        const y2=ys[i+1];
+                        if(Number.isFinite(y) && Number.isFinite(y2) && y*y2<0) {
+                            const r=bisect(fn1,fn2,xs[i],xs[i+1]);
+                            if(verifyRoot(fn1,fn2,r,step)) addUnique(roots,r);
+                        }
+                    }
+                    if(i>0 && i<xs.length-1 && Number.isFinite(y) && Number.isFinite(ys[i-1]) && Number.isFinite(ys[i+1])) {
+                        const ay=Math.abs(y), ap=Math.abs(ys[i-1]), an=Math.abs(ys[i+1]);
+                        if(ay<=ap && ay<=an && ay<0.02) {
+                            const r=refineTouch(fn1,fn2,xs[i-1],xs[i+1]);
+                            if(verifyRoot(fn1,fn2,r,step)) addUnique(roots,r);
+                        }
+                    }
+                }
+                roots.sort((a,b)=>a-b);
+                return roots;
+            };
+            const fmt = r => {
+                if(Math.abs(r)<5e-8) return '0';
+                const v=Math.round(r*10000)/10000;
+                return String(v);
+            };
+
+            let html=''; let total=0;
+            pairList.forEach(pairKey => {
+                const [fn1,fn2]=pairKey.split('-');
+                const roots=scanRoots(fn1,fn2); total += roots.length;
+                const displayPair = fn2 === '0' ? `${fn1}(x) ∩ Ox` : `${fn1}(x) ∩ ${fn2}(x)`;
+                html += `<div style="margin-bottom:7px;padding-bottom:7px;border-bottom:1px dashed #ced4da;">`;
+                html += `<strong style="color:#2c3e50;">${displayPair}:</strong> `;
+                if(!roots.length) html += `<span style="color:#7f8c8d;">không tìm thấy nghiệm thực trong [${fmt(scanMin)}, ${fmt(scanMax)}]</span>`;
+                else {
+                    html += `x ≈ ${roots.map(fmt).join(', ')}<br>`;
+                    roots.forEach(r => {
+                        const val=fmt(r);
+                        html += `<button class="root-btn" onclick="assignLimit(${r}, 'a', '${pairKey}')">Gán a = ${val}</button>`;
+                        html += `<button class="root-btn" onclick="assignLimit(${r}, 'b', '${pairKey}')">Gán b = ${val}</button>`;
+                    });
+                }
+                html += `</div>`;
+            });
+            html += `<div class="root-summary">Đã xác nhận ${total} nghiệm thực • loại nghiệm trùng • bỏ điểm không liên tục/tiệm cận.</div>`;
+            resultBox.innerHTML = html;
+        }
+
+        const colorMap = {
+            'f': { line: '#3498db', fill: 'rgba(52, 152, 219, 0.25)' }, 
+            'g': { line: '#e74c3c', fill: 'rgba(231, 76, 60, 0.25)' },  
+            'h': { line: '#9b59b6', fill: 'rgba(155, 89, 182, 0.25)' }, 
+            '0': { line: '#95a5a6', fill: 'rgba(149, 165, 166, 0.25)' } 
+        };
+
+        // Hàm trích xuất mảng các cặp cận độc lập kèm theo cặp hàm được chọn
+        function getActiveLimits() {
+            const limitItems = document.querySelectorAll('.limit-item');
+            const pairs = [];
+            limitItems.forEach(item => {
+                const a = parseFloat(item.querySelector('.limit-a').value);
+                const b = parseFloat(item.querySelector('.limit-b').value);
+                const curves = item.querySelector('.limit-curves').value;
+                const [outId, inId] = curves.split('-');
+                if(!isNaN(a) && !isNaN(b)) {
+                    pairs.push({ a: Math.min(a, b), b: Math.max(a, b), outerId: outId, innerId: inId });
+                }
+            });
+            return pairs;
+        }
+
+        // --- 1. VẼ 2D BẰNG PLOTLY ---
+        function draw2D() {
+            compileMath();
+            const limitPairs = getActiveLimits();
+            
+            let viewMin = Infinity; let viewMax = -Infinity;
+            limitPairs.forEach(pair => {
+                viewMin = Math.min(viewMin, pair.a - 1.5);
+                viewMax = Math.max(viewMax, pair.b + 1.5);
+            });
+            if(limitPairs.length === 0 || viewMin === Infinity) { viewMin = -4; viewMax = 4; }
+
+            const data = [];
+            const createTrace = (id, name) => {
+                const x = [], y = [];
+                for (let xi = viewMin; xi <= viewMax; xi += 0.05) { x.push(xi); y.push(evaluate(id, xi)); }
+                return { x: x, y: y, name: name, type: 'scatter', mode: 'lines', line: {color: colorMap[id].line, width: 2.5} };
+            };
+            data.push(createTrace('f', 'f(x)')); data.push(createTrace('g', 'g(x)')); data.push(createTrace('h', 'h(x)'));
+
+            let shapesArr = [];
+
+            // Lặp qua từng khoảng cận để tô màu dựa trên hàm số được chọn riêng biệt
+            limitPairs.forEach((pair, idx) => {
+                const outerId = pair.outerId;
+                const innerId = pair.innerId;
+
+                let fillColor = 'rgba(46, 204, 113, 0.35)';
+                if((outerId==='f' && innerId==='h') || (outerId==='h' && innerId==='f')) fillColor = 'rgba(155, 89, 182, 0.35)';
+                if((outerId==='g' && innerId==='h') || (outerId==='h' && innerId==='g')) fillColor = 'rgba(230, 126, 34, 0.35)';
+                if((outerId==='f' && innerId=='0') || (outerId==='0' && innerId==='f')) fillColor = 'rgba(52, 152, 219, 0.25)';
+                if((outerId==='g' && innerId=='0') || (outerId==='0' && innerId==='g')) fillColor = 'rgba(231, 76, 60, 0.25)';
+                if((outerId==='h' && innerId=='0') || (outerId==='0' && innerId==='h')) fillColor = 'rgba(155, 89, 182, 0.25)';
+
+                if(pair.a < pair.b) {
+                    const xFill = [], yOuter = [], yInner = [];
+                    for (let x = pair.a; x <= pair.b; x += 0.02) {
+                        xFill.push(x); yOuter.push(evaluate(outerId, x)); yInner.push(evaluate(innerId, x));
+                    }
+                    data.push({ x: xFill, y: yInner, type: 'scatter', mode: 'lines', line: {width: 0}, showlegend: false, hoverinfo: 'skip' });
+                    
+                    const nameDisplay = innerId === '0' ? `${outerId}(x) & Ox` : `${outerId}(x) & ${innerId}(x)`;
+                    data.push({ x: xFill, y: yOuter, type: 'scatter', mode: 'lines', line: {width: 0}, fill: 'tonexty', fillcolor: fillColor, name: `Miền S${idx+1} (${nameDisplay})`, showlegend: true, hoverinfo: 'skip' });
+                }
+
+                if(document.getElementById('check-caps').checked) {
+                    shapesArr.push({ type: 'line', x0: pair.a, x1: pair.a, y0: -15, y1: 15, line: { color: '#d35400', dash: 'dot', width: 2 } });
+                    shapesArr.push({ type: 'line', x0: pair.b, x1: pair.b, y0: -15, y1: 15, line: { color: '#d35400', dash: 'dot', width: 2 } });
+                }
+            });
+
+            const layout = { 
+                margin: {t: 40, l: 30, r: 15, b: 30}, 
+                xaxis: {range: [viewMin, viewMax], gridcolor: '#e9ecef', zerolinecolor: '#adb5bd'}, 
+                yaxis: {range: [-2, 6], gridcolor: '#e9ecef', zerolinecolor: '#adb5bd'},
+                plot_bgcolor: '#ffffff', paper_bgcolor: '#ffffff',
+                legend: { orientation: "h", y: 1.1 },
+                dragmode: 'pan',
+                shapes: shapesArr
+            };
+            
+            Plotly.newPlot('plot-2d', data, layout, {
+                responsive: true,
+                displayModeBar: true,
+                scrollZoom: true,
+                modeBarButtons: [
+                    ['pan2d', 'zoom2d'],
+                    ['zoomIn2d', 'zoomOut2d', 'resetScale2d']
+                ],
+                displaylogo: false
+            });
+        }
+
+        // --- 2. DỰNG HÌNH 3D ĐA MIỀN ---
+        const container3D = document.getElementById('plot-3d-container');
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0xf4f6f8); 
+
+        const camera = new THREE.PerspectiveCamera(45, container3D.clientWidth / container3D.clientHeight, 0.1, 100);
+        camera.position.set(6, 4, 8);
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(container3D.clientWidth, container3D.clientHeight);
+        renderer.toneMapping = THREE.ACESFilmicToneMapping; 
+        container3D.appendChild(renderer.domElement);
+        
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.08;
+        controls.enableZoom = true;
+        controls.zoomSpeed = 1.15;
+        controls.enablePan = true;
+        controls.screenSpacePanning = true;
+        controls.minDistance = 0.65;
+        controls.maxDistance = 80;
+        if('zoomToCursor' in controls) controls.zoomToCursor = true;
+
+        const defaultCameraPosition = new THREE.Vector3(6,4,8);
+        const defaultTarget = new THREE.Vector3(0,0,0);
+        window.zoom3D = function(factor) {
+            const dir = camera.position.clone().sub(controls.target);
+            let dist = dir.length() * factor;
+            dist = THREE.MathUtils.clamp(dist, controls.minDistance, controls.maxDistance);
+            dir.normalize().multiplyScalar(dist);
+            camera.position.copy(controls.target).add(dir);
+            controls.update();
+        };
+        window.reset3DView = function() {
+            camera.position.copy(defaultCameraPosition);
+            controls.target.copy(defaultTarget);
+            camera.updateProjectionMatrix();
+            controls.update();
+        };
+        window.fit3D = function() {
+            if(groupSolids.children.length === 0) return window.reset3DView();
+            groupSolids.updateMatrixWorld(true);
+            const box = new THREE.Box3().setFromObject(groupSolids);
+            if(box.isEmpty()) return;
+            const center = box.getCenter(new THREE.Vector3());
+            const size = box.getSize(new THREE.Vector3());
+            const maxDim = Math.max(size.x, size.y, size.z, 0.5);
+            const fov = THREE.MathUtils.degToRad(camera.fov);
+            let distance = (maxDim / (2*Math.tan(fov/2))) * 1.35;
+            distance = THREE.MathUtils.clamp(distance, 1.5, 60);
+            let dir = camera.position.clone().sub(controls.target);
+            if(dir.lengthSq()<1e-6) dir.set(1,0.7,1);
+            dir.normalize();
+            controls.target.copy(center);
+            camera.position.copy(center).add(dir.multiplyScalar(distance));
+            camera.near = Math.max(0.01, distance/1000);
+            camera.far = Math.max(100, distance*20);
+            camera.updateProjectionMatrix();
+            controls.update();
+        };
+
+        scene.add(new THREE.AxesHelper(4));
+        const gridHelper = new THREE.GridHelper(10, 10, 0xced4da, 0xe9ecef); 
+        gridHelper.position.y = -2.5; scene.add(gridHelper);
+
+        scene.add(new THREE.AmbientLight(0xffffff, 0.8));
+        const dirLight1 = new THREE.DirectionalLight(0xffffff, 1.5); dirLight1.position.set(5, 10, 5); scene.add(dirLight1);
+        const dirLight2 = new THREE.DirectionalLight(0xf1c40f, 0.5); dirLight2.position.set(-5, -2, -5); scene.add(dirLight2);
+
+        const groupSolids = new THREE.Group();
+        groupSolids.rotation.z = -Math.PI / 2;
+        scene.add(groupSolids);
+
+        function draw3D(autoFit = false) {
+            // Giải phóng hình học cũ cho cả Mesh và Line (viền nắp)
+            groupSolids.traverse((child) => { if (child.geometry) child.geometry.dispose(); });
+            groupSolids.clear();
+            compileMath();
+
+            const limitPairs = getActiveLimits();
+            const angleRad = THREE.MathUtils.degToRad(parseFloat(document.getElementById('angle-alpha').value));
+
+            const getMaterial = (colorHex) => new THREE.MeshPhysicalMaterial({ 
+                color: colorHex, transparent: true, opacity: 0.7, 
+                roughness: 0.1, transmission: 0.4, side: THREE.DoubleSide 
+            });
+
+            // Nắp cắt dùng màu đặc + viền đậm để luôn nổi rõ trên khối trong suốt
+            const matCap = new THREE.MeshPhysicalMaterial({
+                color: 0xffa000,
+                emissive: 0x5a2600,
+                emissiveIntensity: 0.18,
+                transparent: true,
+                opacity: 0.96,
+                roughness: 0.48,
+                metalness: 0.02,
+                transmission: 0,
+                side: THREE.DoubleSide,
+                polygonOffset: true,
+                polygonOffsetFactor: -2,
+                polygonOffsetUnits: -2
+            });
+            const matCapEdge = new THREE.LineBasicMaterial({
+                color: 0x7a2f00,
+                transparent: false,
+                depthTest: false
+            });
+
+            function addCap(innerRadius, outerRadius, yPos) {
+                if(!Number.isFinite(innerRadius) || !Number.isFinite(outerRadius)) return;
+                const rIn = Math.max(0, Math.min(innerRadius, outerRadius));
+                const rOut = Math.max(innerRadius, outerRadius);
+                if(rOut <= 1e-8) return;
+
+                const capGeometry = new THREE.RingGeometry(rIn, rOut, 96, 1, 0, angleRad);
+                const cap = new THREE.Mesh(capGeometry, matCap);
+                cap.rotation.x = -Math.PI / 2;
+                cap.position.y = yPos;
+                cap.renderOrder = 20;
+                cap.userData.type = 'cap';
+                cap.visible = document.getElementById('check-caps').checked;
+                groupSolids.add(cap);
+
+                // Chỉ lấy đường biên thật của nắp, không hiện các đường chia tam giác bên trong
+                const edgeGeometry = new THREE.EdgesGeometry(capGeometry, 25);
+                const edge = new THREE.LineSegments(edgeGeometry, matCapEdge);
+                edge.rotation.copy(cap.rotation);
+                edge.position.copy(cap.position);
+                edge.renderOrder = 21;
+                edge.userData.type = 'cap';
+                edge.visible = cap.visible;
+                groupSolids.add(edge);
+            }
+
+            limitPairs.forEach(pair => {
+                const a = pair.a, b = pair.b;
+                if(a >= b) return;
+
+                const outerId = pair.outerId;
+                const innerId = pair.innerId;
+
+                const matOut = getMaterial(colorMap[outerId] ? colorMap[outerId].line : 0x3498db);
+                const matIn = getMaterial(colorMap[innerId] ? colorMap[innerId].line : 0xe74c3c);
+
+                const ptsOuter = [], ptsInner = [];
+                for (let x = a; x <= b; x += (b-a)/64) {
+                    let yO = evaluate(outerId, x); if(!isNaN(yO)) ptsOuter.push(new THREE.Vector2(yO, x));
+                    let yI = evaluate(innerId, x); if(!isNaN(yI)) ptsInner.push(new THREE.Vector2(yI, x));
+                }
+
+                if(ptsOuter.length > 0 && outerId !== '0') {
+                    const mO = new THREE.Mesh(new THREE.LatheGeometry(ptsOuter, 64, 0, angleRad), matOut);
+                    mO.userData.type = 'outer';
+                    mO.visible = document.getElementById('check-outer').checked;
+                    groupSolids.add(mO);
+                }
+                if(ptsInner.length > 0 && innerId !== '0') {
+                    const mI = new THREE.Mesh(new THREE.LatheGeometry(ptsInner, 64, 0, angleRad), matIn);
+                    mI.userData.type = 'inner';
+                    mI.visible = document.getElementById('check-inner').checked;
+                    groupSolids.add(mI);
+                }
+
+                let yO_a = Math.abs(evaluate(outerId, a)); let yI_a = Math.abs(evaluate(innerId, a));
+                let yO_b = Math.abs(evaluate(outerId, b)); let yI_b = Math.abs(evaluate(innerId, b));
+                
+                if(yO_a < yI_a) [yO_a, yI_a] = [yI_a, yO_a]; 
+                if(yO_b < yI_b) [yO_b, yI_b] = [yI_b, yO_b];
+
+                if(Number.isFinite(yO_a) && Number.isFinite(yI_a)) addCap(yI_a, yO_a, a);
+                if(Number.isFinite(yO_b) && Number.isFinite(yI_b)) addCap(yI_b, yO_b, b);
+            });
+            if(autoFit) setTimeout(() => window.fit3D(), 0);
+        }
+
+        // --- 3. TÍNH TOÁN THEO HÀM SỐ RIÊNG BIỆT TỪNG MIỀN CẬN ---
+        function calculateResults() {
+            compileMath();
+            const limitPairs = getActiveLimits();
+            const angleRatio = parseFloat(document.getElementById('angle-alpha').value) / 360;
+
+            let totalArea = 0, totalVolume = 0;
+            
+            limitPairs.forEach(pair => {
+                const outerId = pair.outerId;
+                const innerId = pair.innerId;
+                if(pair.a < pair.b) {
+                    const n = 1500; const dx = (pair.b - pair.a) / n;
+                    let area = 0, volume = 0;
+                    for (let i = 0; i < n; i++) {
+                        let x = pair.a + i * dx + dx / 2;
+                        let yO = evaluate(outerId, x) || 0; let yI = evaluate(innerId, x) || 0;
+                        area += Math.abs(yO - yI) * dx;
+                        volume += angleRatio * Math.PI * Math.abs(Math.pow(yO, 2) - Math.pow(yI, 2)) * dx;
+                    }
+                    totalArea += area; totalVolume += volume;
+                }
+            });
+
+            document.getElementById('res-area').innerText = `${totalArea.toFixed(4)}`;
+            document.getElementById('res-volume').innerText = `${totalVolume.toFixed(4)}`;
+            document.getElementById('result-box').style.display = 'block';
+        }
+
+        // --- GẮN SỰ KIỆN TƯƠNG TÁC TỨC THÌ ---
+        document.getElementById('btn-draw').addEventListener('click', () => { document.getElementById('result-box').style.display = 'none'; draw2D(); draw3D(true); });
+        document.getElementById('btn-calc').addEventListener('click', calculateResults);
+        document.getElementById('angle-alpha').addEventListener('input', (e) => { document.getElementById('angle-val').innerText = e.target.value; draw3D(); });
+        
+        document.getElementById('check-outer').addEventListener('change', (e) => {
+            groupSolids.children.forEach(c => { if(c.userData.type === 'outer') c.visible = e.target.checked; });
+        });
+        document.getElementById('check-inner').addEventListener('change', (e) => {
+            groupSolids.children.forEach(c => { if(c.userData.type === 'inner') c.visible = e.target.checked; });
+        });
+        document.getElementById('check-caps').addEventListener('change', (e) => {
+            groupSolids.children.forEach(c => { if(c.userData.type === 'cap') c.visible = e.target.checked; });
+            draw2D(); 
+        });
+
+        window.addEventListener('resize', () => { 
+            draw2D(); camera.aspect = container3D.clientWidth / container3D.clientHeight; camera.updateProjectionMatrix(); renderer.setSize(container3D.clientWidth, container3D.clientHeight);
+        });
+
+        ['func-f','func-g','func-h'].forEach(id => window.updateMathPreview(id));
+        draw2D(); draw3D(true);
+        function animate() { requestAnimationFrame(animate); controls.update(); renderer.render(scene, camera); } animate();
+    </script>
+</body>
+</html>

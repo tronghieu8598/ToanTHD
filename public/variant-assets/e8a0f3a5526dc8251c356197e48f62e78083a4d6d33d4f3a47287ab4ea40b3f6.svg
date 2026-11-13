@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="290" height="230" viewBox="0 0 290 230">
+  <rect x="0" y="0" width="290" height="230" fill="#ffffff"/>
+  <!-- L-shaped road: outer corner O(195, 45), inner corner M(115, 125) -->
+  <polygon points="35,45 195,45 195,205 115,205 115,125 35,125" fill="#f3f4f6" stroke="none"/>
+  <polyline points="35,45 195,45 195,205" fill="none" stroke="#111111" stroke-width="2.0"/>
+  <polyline points="35,125 115,125 115,205" fill="none" stroke="#111111" stroke-width="2.0"/>
+  <!-- Tilted car rectangle ABCD touching top wall at B(105,45), right wall at A(195,112), passing through M(115,125) -->
+  <polygon points="105,45 195,112 171,144 81,77" fill="#dbeafe" stroke="#111111" stroke-width="1.5"/>
+  <circle cx="115" cy="125" r="2.5" fill="#000000"/>
+  <line x1="60" y1="45" x2="60" y2="125" stroke="#444444" stroke-width="1.0" stroke-dasharray="3,3"/>
+  <line x1="115" y1="180" x2="195" y2="180" stroke="#444444" stroke-width="1.0" stroke-dasharray="3,3"/>
+  <text x="48" y="90" font-family="DejaVu Serif, Georgia, serif" font-size="13" font-style="italic" text-anchor="middle" fill="#000000">a</text>
+  <text x="155" y="173" font-family="DejaVu Serif, Georgia, serif" font-size="12.5" text-anchor="middle" fill="#000000">2,8 m</text>
+  <text x="155" y="34" font-family="DejaVu Serif, Georgia, serif" font-size="12" text-anchor="middle" fill="#000000">Garage (5m × 2,15m)</text>
+  <text x="204" y="42" font-family="DejaVu Serif, Georgia, serif" font-size="12.5" font-style="italic" fill="#000000">O</text>
+  <text x="103" y="139" font-family="DejaVu Serif, Georgia, serif" font-size="12.5" font-style="italic" fill="#000000">M</text>
+</svg>
