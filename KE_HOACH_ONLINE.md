@@ -1,6 +1,6 @@
 # Kế hoạch đưa Toán THĐ Studio vào sử dụng
 
-Cập nhật theo v0.14 ngày 13/11/2026.
+Cập nhật theo v0.14 ngày 18/11/2026.
 
 Đích đến là **một địa chỉ HTTPS cho web tổ**. Giáo viên có thể chuẩn bị tiết dạy ở Hôm nay, dùng và chia sẻ học liệu, soạn đề và xem kết quả. Quản trị quản lý tài khoản, quyền và lớp. Học sinh mở phiên bằng QR. Mốc đầu tiên là **chạy các chức năng trên cùng bản cài Windows**, với điện thoại cùng Wi-Fi để thử phần học sinh. Bản LAN có thể dùng cho những buổi tổ chức tại lớp.
 
@@ -49,6 +49,8 @@ Thứ tự bàn giao là **gói cài Windows và biên bản thử LAN → link 
 5. **Sao lưu và khôi phục.** Dừng web và dùng `Sao_luu_toan_bo.bat`. Phục hồi bằng `Phuc_hoi_tu_thu_muc.bat` trong bản cài thử khác. Đối chiếu tài khoản, lớp, đề, học liệu đăng tải và kết quả. Kiểm kế hoạch của v0.14 bằng tải lại trên trình duyệt đang dùng. Đính kết quả vào PR rồi xử lý lỗi ảnh hưởng các luồng trên trước khi duyệt bản nền.
 
 Biên bản mốc 1 ghi mã phiên bản, thiết bị, kết quả đạt hoặc lỗi của từng luồng và đường dẫn đến lỗi còn mở. Với đề và điểm, ghi cả kết quả dự kiến và thực tế. Dùng dữ liệu giả trong ảnh, tệp Excel và biên bản chia sẻ trên GitHub.
+
+Kết quả chạy trên bản cài Windows, Excel, phục hồi và bước thử QR còn chờ được ghi tại [Biên bản thử mốc 1](docs/NGHIEM_THU_MOC_1.md).
 
 ## Việc kỹ thuật để mở link HTTPS
 

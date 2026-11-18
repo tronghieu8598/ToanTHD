@@ -670,4 +670,27 @@ export async function handleApi(request: Request) {
         console.error('API failure:', e instanceof Error ? e.message : e);
         return json({ error: 'Không thực hiện được. Kiểm tra dữ liệu cục bộ và cửa sổ chạy web.' }, 500);
     }
+    finally {
+        // The local proxy can drop responses when a handler leaves the upload unread.
+        const body = request.body;
+        if (body && !request.bodyUsed && !body.locked) {
+            const reader = body.getReader();
+            let received = 0;
+            try {
+                for (;;) {
+                    const {done, value} = await reader.read();
+                    if (done) break;
+                    received += value.byteLength;
+                    if (received > 5_100_000) {
+                        await reader.cancel();
+                        break;
+                    }
+                }
+            } catch {
+                // Preserve the API response if the client disconnects.
+            } finally {
+                reader.releaseLock();
+            }
+        }
+    }
 }

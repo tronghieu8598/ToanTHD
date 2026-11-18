@@ -309,11 +309,13 @@ test('v0.13: library privacy covers the list, original file, permission, and tra
  }
  const fileBytes = '<!doctype html><title>Minh họa</title><p>' + 'Kiểm thử.'.repeat(40_000) + '</p>';
  async function upload(status, {chapter = 6, bytes = fileBytes, filename = 'Minh họa.html', origin = 'http://test.local'} = {}) {
-  const response = await handleApi(new Request(`http://test.local/api/teacher/library?grade=12&chapter=${chapter}&visibility=private`,{
+  const request = new Request(`http://test.local/api/teacher/library?grade=12&chapter=${chapter}&visibility=private`,{
    method:'POST',headers:{cookie,Origin:origin,'X-File-Name':encodeURIComponent(filename),'X-Title':encodeURIComponent('Học liệu thử')},body:bytes,
-  }));
+  });
+  const response = await handleApi(request);
   const data = await response.json();
   assert.equal(response.status,status,JSON.stringify(data));
+  if (status === 403) assert.equal(request.bodyUsed,true,'Consume a denied upload before returning the response');
   return data.item;
  }
  async function view(item, status, method = 'GET', auth = cookie) {
