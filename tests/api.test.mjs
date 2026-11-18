@@ -28,6 +28,26 @@ async function call(route,{method='GET',body,token,status=200,auth=true,origin}=
 }
 // Legacy scenarios still inspect the entire small fixture, now through the paged bank API.
 async function loadBank(){const d=(await call('teacher/bootstrap')).data;d.questions=[];let page=1,total=Infinity;while(d.questions.length<total){const r=(await call('teacher/bank?page='+page++)).data;total=r.total;d.questions.push(...r.questions);if(!r.questions.length)break;}return d;}
+
+test('the configured HTTPS origin protects cookies and writes behind an HTTP reverse proxy',async()=>{
+ const origin='https://library-test.example';
+ env.THD_PUBLIC_ORIGIN=origin;
+ const request=(path,from)=>handleApi(new Request('http://internal.test/api/teacher/'+path,{
+  method:'POST',headers:{'Content-Type':'application/json',Origin:from},body:JSON.stringify({password:'test-password'}),
+ }));
+ try{
+  const login=await request('login',origin);
+  assert.equal(login.status,200);
+  const header=login.headers.get('Set-Cookie')||'';
+  assert.ok(header.includes('; Secure')&&header.includes('; HttpOnly')&&header.includes('; SameSite=Strict'));
+  assert.equal((await request('login','http://internal.test')).status,403);
+  const logout=await request('logout',origin);
+  assert.equal(logout.status,200);
+  const expired=logout.headers.get('Set-Cookie')||'';
+  assert.ok(expired.includes('Max-Age=0')&&expired.includes('; Secure'));
+ }finally{delete env.THD_PUBLIC_ORIGIN;}
+});
+
 test('API: teacher access, three answer types, original numbers, save/resume, duplicate guards, scoring, closing and export',async()=>{
  await call('teacher/bootstrap',{status:401});
  assert.equal((await call('health')).data.questions,30);
