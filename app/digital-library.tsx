@@ -6,7 +6,9 @@ import {
 } from 'lucide-react';
 import { libraryResources, libraryById, chapterRoman, mathChapters, mathGrades, resourceKinds, normalizeLibraryText, type LibraryResource, type LibraryVisibility, type MathGrade, type ResourceKind } from '../lib/client/library-catalog';
 import { StudioCover, resourceMeta } from './studio-cover';
-import { StudioRoomPicker, resourceFitsRoom, type StudioPlan } from './studio-plan';
+import { resourceFitsRoom } from '../lib/library-resources.mjs';
+import { StudioPlanStatus, StudioRoomPicker } from './studio-plan';
+import type { StudioPlan } from './use-studio-plan';
 import { LibraryUploadDialog, type LibraryUploads, type UploadAction } from './library-uploads';
 
 type Kind = 'all' | ResourceKind;
@@ -232,7 +234,7 @@ export function DigitalLibrary({ initialKind = 'all', embedded = false, plan, on
       {plan?.room && preview.kind !== 'archive' && (alreadyAdded ? <>
         <p className="studio-in-plan" role="status"><Check size={15} /> Đã có trong tiết {plan.room.label}</p>
         <button type="button" className="btn secondary" onClick={onPlan}>Xem kế hoạch <ArrowRight size={15} /></button>
-      </> : canAdd ? <button type="button" className="btn secondary" onClick={() => onAddToPlan?.(preview)}><Plus size={15} /> Thêm vào tiết {plan.room.label}</button>
+      </> : canAdd ? <button type="button" className="btn secondary" disabled={!plan.canEdit} onClick={() => onAddToPlan?.(preview)}><Plus size={15} /> Thêm vào tiết {plan.room.label}</button>
         : <p>Chọn lớp khối {preview.grades.join(' hoặc ')} để thêm vào tiết học.</p>)}
       {upload?.canManage && <details className="studio-resource-manage">
         <summary>Quản lý học liệu</summary>
@@ -254,6 +256,7 @@ export function DigitalLibrary({ initialKind = 'all', embedded = false, plan, on
         {canUpload && uploads && <button type="button" className="btn primary" onClick={() => setUploadOpen(true)}><Plus size={17} /> Đăng học liệu</button>}
       </div>
     </header>
+    {plan && <StudioPlanStatus plan={plan} />}
     {uploads && (canUpload || uploads.items.some(item => item.upload?.canManage)) && <nav className="studio-library-scopes" aria-label="Khu vực học liệu">
       <button type="button" aria-pressed={scope === 'team'} onClick={() => chooseScope('team')}><BookOpen size={16} /> Kho học liệu</button>
       <button type="button" aria-pressed={scope === 'mine'} onClick={() => chooseScope('mine')}><LockKeyhole size={15} /> Của tôi</button>
