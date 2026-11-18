@@ -16,7 +16,7 @@ Mỗi phần có một đầu việc riêng trên GitHub với người phụ tr
 
 | Phần | Việc cần làm | Cách nghiệm thu | Người nghiệm thu đề xuất |
 | --- | --- | --- | --- |
-| **Hôm nay và kế hoạch tiết dạy** | Giữ trang đầu gọn, tập trung vào lớp đang chọn, học liệu trong tiết và thao tác mở. Rà các trạng thái chưa có lớp, chưa có kế hoạch và học liệu đã gỡ. V0.14 lưu kế hoạch trong trình duyệt. Đưa kế hoạch của bản HTTPS vào database theo giáo viên và lớp để mở trên nhiều thiết bị. | Giáo viên thêm, mở và bỏ học liệu ở hai lớp. Tải lại trang vẫn thấy đúng kế hoạch. Trên bản HTTPS, đăng nhập cùng tài khoản trên máy khác thấy đúng kế hoạch, tài khoản khác chỉ thấy của mình. Kiểm tra bố cục trên laptop và điện thoại. | Giáo viên trực tiếp chuẩn bị tiết dạy |
+| **Hôm nay và kế hoạch tiết dạy** | Giữ trang đầu gọn, tập trung vào lớp đang chọn, học liệu trong tiết và thao tác mở. Bản thử mốc 2 lưu kế hoạch trong cơ sở dữ liệu theo tài khoản và lớp, có bước chuyển kế hoạch cũ từ trình duyệt. | Giáo viên thêm, mở và bỏ học liệu ở hai lớp. Hai trình duyệt đăng nhập cùng tài khoản mở được cùng kế hoạch. Tài khoản khác chỉ thấy kế hoạch của mình. Chạy lại trên hai thiết bị khi có bản HTTPS thử. | Giáo viên trực tiếp chuẩn bị tiết dạy |
 | **Học liệu chuẩn của tổ** | Soát danh mục theo khối và chương Kết nối tri thức. Ưu tiên mỗi học liệu có mã, thông tin, bìa và tệp gốc xác định rõ như Monty Hall. Rà quyền chia sẻ và đường dẫn cho các học liệu đưa lên HTTPS. | Tìm theo chương và từ khóa. Xem trước, mở và thêm vào tiết. Đổi bìa hoặc mô tả của một mục bằng PR riêng. Bìa, chương, liên kết và các thao tác của tệp HTML được kiểm tra trên máy tính và điện thoại. | Người phụ trách kho học liệu |
 | **Học liệu giáo viên** | Hoàn thiện luồng đăng, thử riêng tư, chia sẻ toàn tổ, đưa vào thùng rác và khôi phục. Rà giới hạn dung lượng, loại tệp và thông báo tải lỗi. Quy định thời hạn giữ trong thùng rác trước khi bổ sung chức năng dọn vĩnh viễn. | Dùng hai giáo viên và một quản trị để kiểm danh mục lẫn đường dẫn mở tệp. Chia sẻ thì đồng nghiệp trong tổ mở được. Đưa vào thùng rác thì đường dẫn ngừng hoạt động. Giáo viên khôi phục mục do quản trị gỡ thì mục trở về riêng tư. Tệp khôi phục mở đúng. | Giáo viên đăng học liệu và quản trị |
 | **Tài khoản, phân quyền và cài đặt** | Rà cấp tài khoản, đổi mật khẩu lần đầu, chọn lớp đang dạy, cấp hoặc thu hồi từng quyền, khóa, đặt lại mật khẩu và nhật ký. Thử các quyền soạn đề, sửa ngân hàng, nhập danh sách và đăng học liệu riêng. | Quản trị cấp hai giáo viên với phạm vi khác nhau. Mỗi người vào đúng lớp và thao tác đúng quyền. Thu hồi quyền có hiệu lực trong phiên đang đăng nhập. Khóa tài khoản chặn truy cập. Nhật ký phản ánh đúng thay đổi. | Người phụ trách quản trị tổ |
@@ -56,7 +56,9 @@ Kết quả chạy trên bản cài Windows, Excel, phục hồi và phép thử
 
 ### Đồng bộ kế hoạch tiết dạy
 
-Lưu kế hoạch theo tài khoản và lớp, tham chiếu học liệu bằng mã. API kiểm tra lớp được cấp và quyền mở học liệu khi đọc hoặc ghi. Khi học liệu bị gỡ hoặc đổi quyền, kế hoạch chỉ hiện những mục còn truy cập được. Thử lưu từ hai thiết bị để việc cập nhật một lớp giữ được dữ liệu của lớp khác. Dùng bản sao lưu của môi trường HTTPS để thử phục hồi kế hoạch. [Cách lưu hiện tại](app/studio-plan.tsx)
+Kế hoạch lưu theo tài khoản và lớp, tham chiếu học liệu bằng mã. API kiểm tra lớp được cấp và quyền mở học liệu khi đọc hoặc ghi. Khi học liệu bị gỡ hoặc đổi quyền, kế hoạch chỉ hiện những mục còn truy cập được. Chạy lại phép thử trên hai thiết bị và sao lưu D1 khi có bản HTTPS thử. [Giao diện Hôm nay](app/studio-plan.tsx) · [API kế hoạch](lib/studio-plan.mjs) · [Cấu trúc lưu](docs/KIEN_TRUC.md#kế-hoạch-tiết-dạy)
+
+Bản thử Windows đã chuyển kế hoạch Monty Hall từ trình duyệt v0.14, đọc lại và chỉnh sửa ở hai phiên đăng nhập, rồi đối chiếu quyền của giáo viên khác cùng lớp. Bản sao lưu phục hồi được cả kế hoạch trống của lớp A, kế hoạch Monty Hall của lớp B và điểm mẫu cũ.
 
 ### Đăng nhập, QR và quyền xem
 

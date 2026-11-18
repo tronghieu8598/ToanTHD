@@ -18,7 +18,7 @@ Nguyễn Trọng Hiếu — THPT Trịnh Hoài Đức. Bản tích hợp ngày 1
 - Nội dung đã chọn được chụp lại khi lưu đề hoặc mở phiên. Các đề và mã biến thể từ v0.9/v0.10 vẫn dùng được. Biến thể được chấp nhận riêng không thay đổi đáp án hoặc trạng thái duyệt của câu gốc.
 - Trang **Học liệu số** có 34 tài nguyên: 28 bài giảng tương tác, 1 thư viện SGK Toán 10–11–12 Tập 1, 1 bài E-learning, 2 tài liệu và 2 gói ZIP. Toàn bộ 138 tệp nguồn đã đóng gói; không cần chạy lại công cụ nhập học liệu.
 - **Học liệu** nhóm theo 24 chương Toán 10–12 của bộ Kết nối tri thức với cuộc sống, có số học liệu ở từng chương và một nhóm **Tài liệu dùng chung**. Tìm kiếm không dấu trong toàn khối; mở từng chương khi duyệt. Bìa gồm 31 ảnh chụp học liệu HTML gốc, trang đầu giáo án PDF và bìa E-learning dùng chung với hai gói đi kèm. Các tệp gốc giữ nguyên. **/hoc-lieu-so** chỉ hiển thị danh mục đi kèm web.
-- Chọn **Học liệu**, bấm một thẻ để xem nhanh, rồi chọn **Thêm vào tiết**. Trang **Hôm nay** hiển thị kế hoạch của lớp đang chọn. Kế hoạch lưu theo tài khoản và lớp trên trình duyệt đang dùng.
+- Chọn **Học liệu**, bấm một thẻ để xem nhanh, rồi chọn **Thêm vào tiết**. Trang **Hôm nay** hiển thị kế hoạch của lớp đang chọn. Tài khoản giáo viên và quản trị có mật khẩu riêng lưu kế hoạch theo tài khoản và lớp trong cơ sở dữ liệu. Mở cùng tài khoản và cùng lớp trong trình duyệt khác để đọc lại. Chế độ minh họa lưu kế hoạch trong trình duyệt.
 - Mục **Công cụ và tài khoản** có Phiên kiểm tra, Kết nối LAN / QR, Sao lưu & Phục hồi và các công cụ theo quyền tài khoản.
 
 | Chương | Câu gốc có biến thể | Biến thể | Câu giữ lại |
@@ -143,7 +143,7 @@ Giới hạn JSON: **10 MB, 12.000 bản ghi** (tính cả lịch sử câu và 
 3. Giữ nguyên toàn bộ thư mục, gồm `snapshot.json`; từng file được kiểm tra SHA-256. Sao chép thư mục hoàn tất sang ổ dự phòng khi cần.
 4. Phục hồi: giải nén source v0.10 vào thư mục mới **chưa chạy bộ cài**, chạy **Phuc_hoi_tu_thu_muc.bat**, nhập đường dẫn thư mục sao lưu. Script kiểm tra trước, từ chối ghi đè dữ liệu đã có, rồi tiếp tục cài và dựng web.
 
-Bản toàn thư mục giữ cả DB, WAL, mật khẩu và khóa máy. Giữ riêng, không gửi cho người khác khi báo lỗi. Đây là khôi phục nguyên trạng: soát và đóng phiên cũ trước khi mở LAN cho buổi mới; thời hạn phiên không được gia hạn.
+Bản toàn thư mục giữ cả DB, WAL, mật khẩu và khóa máy. Kế hoạch **Hôm nay** đã đồng bộ nằm trong DB của bản sao này. Giữ riêng, không gửi cho người khác khi báo lỗi. Đây là khôi phục nguyên trạng: soát và đóng phiên cũ trước khi mở LAN cho buổi mới; thời hạn phiên không được gia hạn.
 
 ### Phiếu thử tại lớp
 
@@ -198,6 +198,10 @@ Bấm **Xuất Excel**. Ứng dụng lấy lại toàn phiên tại thời đi�
 5. Chọn **Mở nhanh · đề cương & lớp minh họa** để thử, hoặc đăng nhập mật khẩu ban đầu `toanthd-demo`.
 
 Sau khi cài và dựng xong, ứng dụng, công thức và cơ sở dữ liệu chạy tại máy. Không cần tải công thức, phông chữ hoặc thư viện từ CDN khi sử dụng. Chạy `Chay_web.bat` chỉ mở trên laptop. Chạy `Mo_lop_LAN.bat` để cho điện thoại trong mạng nội bộ kết nối.
+
+### Chuyển kế hoạch Hôm nay từ bản cũ
+
+Áp dụng migration bằng `node scripts/setup-local.mjs`, rồi chạy `npm run build` trong bản nguồn đã cập nhật. Mở web ở cùng địa chỉ và trình duyệt từng dùng, đăng nhập đúng tài khoản rồi chọn từng lớp có kế hoạch cũ. Web chuyển học liệu còn phù hợp vào lớp chưa có bản lưu trên máy chủ. Các trình duyệt khác đọc kế hoạch đã lưu từ máy chủ khi mở cùng tài khoản và lớp.
 
 ## Nâng cấp từ v0.1–v0.8
 
