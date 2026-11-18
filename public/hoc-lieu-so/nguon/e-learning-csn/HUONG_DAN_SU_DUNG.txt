@@ -1,0 +1,56 @@
+BÀI GIẢNG E-LEARNING: CẤP SỐ NHÂN - TOÁN 11
+================================================
+PHIÊN BẢN: V4.4 - 28/07/2026
+
+Đây là bản có định danh SCORM mới để tránh LMS hiển thị nhầm bộ nhớ đệm của bản cũ.
+
+1. CHẠY ĐỘC LẬP
+- Giải nén toàn bộ gói và mở index.html bằng Chrome, Edge hoặc Firefox.
+- Không di chuyển riêng index.html khỏi thư mục.
+
+2. ĐƯA LÊN LMS
+- Tải nguyên tệp baigiang_sp1_V4_4.zip lên chức năng nhập học liệu SCORM.
+- Chuẩn đóng gói: SCORM 1.2; ngưỡng LMS: 100%; bài quy định hoàn thành đúng 7/7 câu.
+- Bài giảng ghi vị trí học, điểm, trạng thái hoàn thành và dữ liệu tạm dừng.
+
+3. CẬP NHẬT THÔNG TIN TÁC GIẢ TRƯỚC KHI NỘP
+- Mở config.js bằng Notepad.
+- Thay author, email, organization và date; giữ nguyên dấu ngoặc kép và dấu phẩy.
+- Nén lại sao cho imsmanifest.xml nằm ngay ở cấp đầu tiên của tệp ZIP.
+
+4. ĐIỀU KHIỂN
+- Mũi tên trái/phải: chuyển màn hình; M: mục lục; F: toàn màn hình.
+- Cụm điều khiển MP3 nằm cùng hàng với Trang trước/Tiếp tục ở cuối mỗi slide:
+  Nghe hoặc Tiếp tục, Tạm dừng, Nghe lại từ đầu, thanh tiến độ và thời lượng.
+- Phím Space: nghe/tạm dừng; phím R: nghe lại từ đầu.
+- Mỗi slide dùng một bản thu riêng trong thư mục audio. Khi bấm Bắt đầu hoặc Tiếp tục, bản thu của slide vừa mở sẽ phát ngay từ đầu.
+- Cài đặt hỗ trợ bật/tắt tự phát MP3, phụ đề, cỡ chữ lớn và giảm chuyển động.
+- Nếu trình duyệt chặn tự phát âm thanh, bấm nút Nghe một lần để cấp quyền phát.
+
+5. CHẾ ĐỘ GIÁO VIÊN
+- Nút bật chế độ giáo viên được ẩn trong biểu tượng q ở đầu thanh bên trái.
+- Bấm biểu tượng q một lần để kích hoạt. Trên điện thoại, mở nút ☰ rồi bấm biểu tượng q.
+- Khi chế độ giáo viên hoạt động, phía trên xuất hiện thanh GV và danh sách đủ 35 slide.
+- Giáo viên có thể chọn trực tiếp bất kì slide nào, dùng Trang trước/Slide sau hoặc chọn học phần mà không cần nghe đủ audio hay hoàn thành hoạt động.
+- Khi chuyển slide trong chế độ giáo viên, audio của slide vừa mở cũng tự động phát.
+- Bấm Thoát trên thanh GV hoặc bấm lại biểu tượng q để trở về chế độ học sinh.
+- Mọi thao tác trong chế độ giáo viên chỉ dùng để trình chiếu; khi thoát, hệ thống khôi phục tiến độ học sinh trước đó.
+
+6. CƠ CHẾ MỞ KHÓA
+- Ở mọi slide, học sinh phải nghe hết bản MP3 ít nhất một lần thì nút Tiếp tục mới xuất hiện.
+- Các câu hỏi trắc nghiệm vừa phải trả lời đúng, vừa phải nghe hết thuyết minh của slide; học sinh được thử lại không giới hạn.
+- Các nhiệm vụ chọn quy luật, điền số và phân loại phải đúng toàn bộ, đồng thời thuyết minh phải được nghe hết.
+- Slide 13 yêu cầu chạy mô phỏng bóng nảy và chọn đúng quy luật truy hồi.
+- Slide 14 yêu cầu đếm đúng số lần nhân q và chọn số mũ n − 1.
+- Slide 17 yêu cầu chọn đúng số mũ; slide 18 yêu cầu xác định đúng q và số thời đoạn.
+- Slide 21 là hoạt động kéo–thả bốn tình huống; phải phân loại đúng 4/4. Trên màn hình cảm ứng, chạm thẻ rồi chạm vùng đích.
+- Slide 24 yêu cầu khảo sát đủ ba dãy và chọn đúng tính chất đối xứng.
+- Khi chưa đạt, nút Tiếp tục được ẩn và thay bằng hướng dẫn ngắn ở cuối màn hình.
+
+7. TƯƠNG THÍCH VÀ BẢN QUYỀN
+- Chuẩn HTML5, chạy trên máy tính, máy tính bảng, điện thoại và không cần Internet.
+- Toàn bộ công thức dùng KaTeX ngoại tuyến trong thư mục vendor/katex; không đổi tên hoặc di chuyển thư mục này.
+- Chỉ số, số mũ và phân số được dựng bằng phông toán chuyên dụng. Công thức dài cuộn ngang trong khung trên màn hình hẹp, không tự bẻ dòng.
+- Không đổi tên hoặc di chuyển thư mục audio và các tệp slide-01.mp3 đến slide-35.mp3.
+- Hình minh họa, biểu đồ, mô phỏng được dựng mới bằng HTML/CSS/Canvas.
+- Học liệu phát hành theo CC BY-SA 4.0; tài liệu tham khảo ghi ở màn hình cuối.

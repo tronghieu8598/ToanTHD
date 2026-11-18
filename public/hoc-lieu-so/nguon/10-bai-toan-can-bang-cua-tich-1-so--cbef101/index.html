@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thí Nghiệm Ảo: Khối Tâm Tự Động Chia Thước (m + n)</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #1e293b;
+            --primary: #f59e0b;
+            --blue-ball: #0ea5e9;
+            --orange-ball: #f97316;
+            --text: #f8fafc;
+            --success: #10b981;
+            --accent: #a855f7;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: var(--bg-color);
+            color: var(--text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: var(--primary);
+            margin: 0 0 5px 0;
+            font-size: 24px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .intro {
+            max-width: 850px;
+            text-align: center;
+            color: #94a3b8;
+            font-size: 14px;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .workspace {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            width: 100%;
+            max-width: 850px;
+            box-sizing: border-box;
+        }
+
+        canvas {
+            background: linear-gradient(to bottom, #020617, #0f172a);
+            border-radius: 10px;
+            border: 2px solid #334155;
+        }
+
+        .challenge-box {
+            width: 100%;
+            margin-top: 15px;
+            background-color: #0f172a;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px dashed var(--accent);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            box-sizing: border-box;
+        }
+
+        .challenge-box label {
+            font-weight: 600;
+            color: #e2e8f0;
+        }
+
+        .challenge-box input[type=number] {
+            width: 70px;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #475569;
+            background-color: #1e293b;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            outline: none;
+        }
+
+        .challenge-box button {
+            background-color: var(--accent);
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .challenge-box button:hover {
+            background-color: #c084fc;
+            transform: translateY(-1px);
+        }
+
+        .controls {
+            width: 100%;
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            border-top: 1px solid #334155;
+            padding-top: 20px;
+        }
+
+        .control-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .control-group label {
+            font-weight: 600;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .label-blue { color: var(--blue-ball); }
+        .label-orange { color: var(--orange-ball); }
+        .label-m { color: #c084fc; }
+
+        input[type=range] {
+            -webkit-appearance: none;
+            width: 100%;
+            height: 6px;
+            background: #475569;
+            border-radius: 3px;
+            outline: none;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+
+        #weightA::-webkit-slider-thumb { background: var(--blue-ball); }
+        #weightB::-webkit-slider-thumb { background: var(--orange-ball); }
+        #posStepM::-webkit-slider-thumb { background: #c084fc; }
+
+        input[type=range]::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+        }
+
+        .status-bar {
+            margin-top: 15px;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .balanced { background-color: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid #10b981; animation: pulse 1.5s infinite;}
+        .unbalanced { background-color: rgba(239, 68, 68, 0.2); color: #ef4444; border: 1px solid #ef4444;}
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+
+        .math-box {
+            margin-top: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #020617;
+            padding: 15px;
+            border-radius: 6px;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 14px;
+            border-left: 4px solid var(--primary);
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>📐 Khối Tâm Thông Minh: Tự Động Chia Thước (m + n)</h1>
+    <div class="intro">
+        <b>Thuật toán thông minh:</b> Khi vật A nặng $m$ kg và vật B nặng $n$ kg, thanh đòn sẽ lập tức <b>tự động chia thành đúng $m + n$ nấc bằng nhau</b>. Hãy dịch chuyển trục đỡ M hoặc tự tính toán và nhập vạch để tìm vị trí khối tâm giúp hệ thống cân bằng!
+    </div>
+
+    <div class="workspace">
+        <canvas id="leverCanvas" width="800" height="350"></canvas>
+
+        <div class="challenge-box">
+            <label for="inputStep">🎯 Nhập số vạch cần đặt trục M:</label>
+            <input type="number" id="inputStep" min="0" value="0">
+            <button id="checkBtn">Kiểm tra ngay</button>
+        </div>
+
+        <div id="status" class="status-bar unbalanced">ĐANG TÌM VỊ TRÍ PHÙ HỢP...</div>
+
+        <div class="controls">
+            <div class="control-group">
+                <label class="label-blue">🔵 Khối lượng Vật A ($m$): <span id="valA">3 kg</span></label>
+                <input type="range" id="weightA" min="1" max="10" step="1" value="3">
+            </div>
+            <div class="control-group">
+                <label class="label-orange">🟠 Khối lượng Vật B ($n$): <span id="valB">5 kg</span></label>
+                <input type="range" id="weightB" min="1" max="10" step="1" value="5">
+            </div>
+            <div class="control-group">
+                <label class="label-m">🔺 Vị trí đặt giá đỡ M: <span id="valM">Nấc số 0</span></label>
+                <input type="range" id="posStepM" min="0" max="8" step="1" value="1">
+            </div>
+        </div>
+
+        <div class="math-box" id="mathBox">
+            Đang tải dữ liệu mô phỏng...
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('leverCanvas');
+        const ctx = canvas.getContext('2d');
+
+        const weightAInput = document.getElementById('weightA');
+        const weightBInput = document.getElementById('weightB');
+        const posStepMInput = document.getElementById('posStepM');
+        const inputStep = document.getElementById('inputStep');
+        const checkBtn = document.getElementById('checkBtn');
+
+        const valA = document.getElementById('valA');
+        const valB = document.getElementById('valB');
+        const valM = document.getElementById('valM');
+        const statusDiv = document.getElementById('status');
+        const mathBox = document.getElementById('mathBox');
+
+        // Định vị hình học
+        const ax = 150; 
+        const bx = 650; 
+        const barY = 200; 
+        const barLength = bx - ax; // 500 pixels
+
+        function updateSlidersLimit() {
+            const m = parseInt(weightAInput.value);
+            const n = parseInt(weightBInput.value);
+            const totalSteps = m + n;
+            
+            const currentVal = parseInt(posStepMInput.value);
+            posStepMInput.max = totalSteps;
+            inputStep.max = totalSteps;
+            
+            if (currentVal > totalSteps) {
+                posStepMInput.value = totalSteps;
+            }
+        }
+
+        function drawScene() {
+            updateSlidersLimit();
+
+            const m = parseInt(weightAInput.value);
+            const n = parseInt(weightBInput.value);
+            const totalSteps = m + n; 
+            const stepWidth = barLength / totalSteps; 
+
+            const stepM = parseInt(posStepMInput.value); 
+            const mx = ax + stepM * stepWidth; 
+
+            const distMA = stepM;          
+            const distMB = totalSteps - stepM; 
+
+            valA.innerText = m + " kg";
+            valB.innerText = n + " kg";
+            valM.innerText = `Nấc thứ ${stepM} / ${totalSteps} (Đoạn MA: ${distMA} vạch | Đoạn MB: ${distMB} vạch)`;
+
+            const momentA = m * distMA;
+            const momentB = n * distMB;
+            const isBalanced = (momentA === momentB);
+
+            let angle = 0;
+            if (!isBalanced) {
+                const diff = momentA - momentB;
+                angle = Math.max(-12, Math.min(12, diff * 0.4)) * Math.PI / 180;
+            }
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            // 1. Vẽ Mặt đất
+            ctx.fillStyle = '#090d16';
+            ctx.fillRect(0, 260, canvas.width, canvas.height - 260);
+            ctx.strokeStyle = '#334155';
+            ctx.lineWidth = 2;
+            ctx.beginPath(); ctx.moveTo(0, 260); ctx.lineTo(canvas.width, 260); ctx.stroke();
+
+            // 2. Vẽ Trụ đỡ tam giác gỗ M
+            ctx.fillStyle = '#78350f';
+            ctx.strokeStyle = '#d97706';
+            ctx.lineWidth = 3;
+            ctx.beginPath();
+            ctx.moveTo(mx, barY);
+            ctx.lineTo(mx - 20, 260);
+            ctx.lineTo(mx + 20, 260);
+            ctx.closePath();
+            ctx.fill(); ctx.stroke();
+            
+            ctx.fillStyle = '#c084fc';
+            ctx.font = 'bold 16px Segoe UI';
+            ctx.fillText("M", mx - 7, 282);
+
+            // 3. Xoay hệ trục tọa độ
+            ctx.save();
+            ctx.translate(mx, barY);
+            ctx.rotate(angle);
+
+            ctx.strokeStyle = '#b45309';
+            ctx.lineWidth = 10;
+            ctx.lineCap = 'round';
+            ctx.beginPath();
+            ctx.moveTo(ax - mx, 0);
+            ctx.lineTo(bx - mx, 0);
+            ctx.stroke();
+
+            // --- VẼ CÁC VẠCH CHIA ĐỘNG ---
+            ctx.lineWidth = 1.5;
+            ctx.font = '10px Consolas';
+            ctx.textAlign = 'center';
+
+            for (let i = 0; i <= totalSteps; i++) {
+                const vachX = (ax + i * stepWidth) - mx;
+
+                ctx.strokeStyle = 'rgba(254, 243, 199, 0.8)';
+                ctx.beginPath();
+                ctx.moveTo(vachX, -8);
+                ctx.lineTo(vachX, 8);
+                ctx.stroke();
+
+                ctx.fillStyle = '#94a3b8';
+                ctx.fillText(i, vachX, 22);
+            }
+
+            ctx.fillStyle = '#f8fafc';
+            ctx.font = 'bold 13px Segoe UI';
+            ctx.fillText(`A (0)`, (ax - mx), -25);
+            ctx.fillText(`B (${totalSteps})`, (bx - mx), -25);
+
+            // 4. Vẽ hai khối vật nặng
+            const radiusA = 12 + m * 2;
+            const radiusB = 12 + n * 2;
+
+            ctx.fillStyle = 'var(--blue-ball)';
+            ctx.beginPath(); ctx.arc(ax - mx, -radiusA, radiusA, 0, Math.PI * 2); ctx.fill();
+
+            ctx.fillStyle = 'var(--orange-ball)';
+            ctx.beginPath(); ctx.arc(bx - mx, -radiusB, radiusB, 0, Math.PI * 2); ctx.fill();
+
+            // 5. Vẽ mũi tên Vector trọng lực
+            ctx.lineWidth = 2.5;
+            ctx.strokeStyle = '#38bdf8'; 
+            ctx.beginPath(); ctx.moveTo(ax - mx, -radiusA); ctx.lineTo(ax - mx, -radiusA + m * 8 + 10); ctx.stroke();
+            
+            ctx.strokeStyle = '#fb923c'; 
+            ctx.beginPath(); ctx.moveTo(bx - mx, -radiusB); ctx.lineTo(bx - mx, -radiusB + n * 8 + 10); ctx.stroke();
+
+            ctx.restore(); 
+
+            // 6. Xử lý Logic đáp án
+            if (isBalanced) {
+                statusDiv.innerText = `🎉 THĂNG BẰNG HOÀN HẢO! TRỤ M ĐẶT ĐÚNG KHỐI TÂM.`;
+                statusDiv.className = "status-bar balanced";
+                mathBox.style.borderLeftColor = "var(--success)";
+                
+                mathBox.innerHTML = `
+                    <span style="color: var(--success); font-weight:bold;">🌟 KHÁM PHÁ QUY LUẬT PHÂN SỐ THẦN KỲ:</span><br>
+                    • Vật A = <b>${m} kg</b> ➔ Chiếm đoạn đối diện MB = <b>${distMB} vạch</b> (Đúng bằng số kg vật B!)<br>
+                    • Vật B = <b>${n} kg</b> ➔ Chiếm đoạn đối diện MA = <b>${distMA} vạch</b> (Đúng bằng số kg vật A!)<br>
+                    <span style="color: #60a5fa;">➔ Kết luận của học sinh:</span> Thước chia làm <b>${m} + ${n} = ${totalSteps}</b> phần.<br>
+                    Để thăng bằng, vị trí khối tâm $M$ bắt buộc phải cách đầu A chính xác bằng <b>${n} vạch</b>! Vế tính: ${m} × ${distMA} = ${n} × ${distMB} (${momentA} = ${momentB}).
+                `;
+            } else {
+                statusDiv.innerText = `❌ MẤT CÂN BẰNG! (Cánh tay đòn đang bị nghiêng lệch)`;
+                statusDiv.className = "status-bar unbalanced";
+                mathBox.style.borderLeftColor = "var(--primary)";
+                
+                mathBox.innerHTML = `
+                    <span style="color: #cbd5e1; font-weight:bold;">⏳ HỆ THỐNG CHƯA ĐẠT CÂN BẰNG:</span><br>
+                    Hệ thống đang bị nghiêng lệch do mô-men lực hai bên chưa bằng nhau. Học sinh hãy chủ động dịch chuyển thanh trượt vị trí, nhập số vạch vào ô thử thách hoặc click trực tiếp lên các vạch chia số để tìm nấc đặt điểm M giúp bập bênh thăng bằng nằm ngang!
+                `;
+            }
+        }
+
+        checkBtn.addEventListener('click', () => {
+            const m = parseInt(weightAInput.value);
+            const n = parseInt(weightBInput.value);
+            const totalSteps = m + n;
+            
+            let val = parseInt(inputStep.value);
+            
+            if (isNaN(val) || val < 0) val = 0;
+            if (val > totalSteps) val = totalSteps;
+            
+            inputStep.value = val;
+            posStepMInput.value = val; 
+            drawScene();
+        });
+
+        inputStep.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                checkBtn.click();
+            }
+        });
+
+        weightAInput.addEventListener('input', drawScene);
+        weightBInput.addEventListener('input', drawScene);
+        posStepMInput.addEventListener('input', () => {
+            inputStep.value = posStepMInput.value;
+            drawScene();
+        });
+
+        canvas.addEventListener('click', (e) => {
+            const m = parseInt(weightAInput.value);
+            const n = parseInt(weightBInput.value);
+            const totalSteps = m + n;
+            const stepWidth = barLength / totalSteps;
+
+            const rect = canvas.getBoundingClientRect();
+            const clickX = e.clientX - rect.left;
+            
+            const calculatedStep = Math.round((clickX - ax) / stepWidth);
+            if (calculatedStep >= 0 && calculatedStep <= totalSteps) {
+                posStepMInput.value = calculatedStep;
+                inputStep.value = calculatedStep; 
+                drawScene();
+            }
+        });
+
+        drawScene();
+    </script>
+</body>
+</html>

@@ -1,0 +1,2022 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toán 11 • Công Thức Cộng Lượng Giác & Ứng Dụng Sóng Âm</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- KaTeX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+    .font-mono-code {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    /* Button animations */
+    .btn-choice {
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .btn-choice:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px -4px rgba(0, 0, 0, 0.08);
+    }
+    .svg-grid line {
+      stroke: #f1f5f9;
+      stroke-width: 1.2;
+    }
+    .svg-axis {
+      stroke: #64748b;
+      stroke-width: 1.8;
+    }
+    .grab-cursor {
+      cursor: grab;
+    }
+    .grab-cursor:active {
+      cursor: grabbing;
+    }
+    .custom-shadow {
+      box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.04), 0 8px 10px -6px rgba(15, 23, 42, 0.04);
+    }
+    /* Pulse animation for node rings */
+    @keyframes pulse-ring {
+      0% { transform: scale(0.92); opacity: 0.75; }
+      50% { transform: scale(1.28); opacity: 0.2; }
+      100% { transform: scale(0.92); opacity: 0.75; }
+    }
+    .pulse-point {
+      transform-origin: center;
+      animation: pulse-ring 2.4s infinite ease-in-out;
+    }
+    /* Custom scrollbar */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #f8fafc; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col bg-slate-50 text-slate-900 antialiased selection:bg-blue-100 selection:text-blue-900">
+
+  <!-- ================= TOP NAVIGATION BAR ================= -->
+  <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+    <div class="max-w-[1720px] mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-16">
+        
+        <!-- Brand & Title -->
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-purple-600 flex items-center justify-center text-white font-extrabold shadow-md shadow-blue-500/20 text-base">
+            $$\sin$$
+          </div>
+          <div>
+            <div class="flex items-center space-x-2">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-blue-600 bg-blue-50 px-2 py-0.5 rounded-md border border-blue-100">Toán 11 • GDPT Mới</span>
+              <h1 class="text-base sm:text-lg font-bold text-slate-900 leading-tight">Công Thức Cộng & Ứng Dụng Sóng Âm</h1>
+            </div>
+            <p class="text-xs text-slate-500 hidden sm:block">Từ tích vô hướng vectơ đến mô hình thiết bị trễ tín hiệu số</p>
+          </div>
+        </div>
+
+        <!-- 3 MAIN NAVIGATION TABS -->
+        <div class="flex items-center p-1 bg-slate-100 rounded-2xl border border-slate-200 text-xs sm:text-sm">
+          <!-- Tab 1 -->
+          <button id="tab-btn-quiz" onclick="switchMainTab('quiz')" 
+                  class="flex items-center space-x-1.5 sm:space-x-2 px-3 sm:px-4 py-2 rounded-xl font-bold transition-all duration-200 bg-white text-blue-700 shadow-sm">
+            <span class="w-5 h-5 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center text-xs font-extrabold">1</span>
+            <span class="hidden md:inline">Khởi động:</span> <span>Ôn Tích vô hướng</span>
+          </button>
+          
+          <!-- Tab 2 -->
+          <button id="tab-btn-explore" onclick="switchMainTab('explore')" 
+                  class="flex items-center space-x-1.5 sm:space-x-2 px-3 sm:px-4 py-2 rounded-xl font-bold transition-all duration-200 text-slate-600 hover:text-slate-900">
+            <span class="w-5 h-5 rounded-lg bg-slate-200 text-slate-700 flex items-center justify-center text-xs font-extrabold">2</span>
+            <span class="hidden md:inline">Khám phá:</span> <span>Vectơ & Công thức cộng</span>
+          </button>
+
+          <!-- Tab 3 -->
+          <button id="tab-btn-app" onclick="switchMainTab('app')" 
+                  class="flex items-center space-x-1.5 sm:space-x-2 px-3 sm:px-4 py-2 rounded-xl font-bold transition-all duration-200 text-slate-600 hover:text-slate-900">
+            <span class="w-5 h-5 rounded-lg bg-slate-200 text-slate-700 flex items-center justify-center text-xs font-extrabold">3</span>
+            <span class="hidden md:inline">Ứng dụng:</span> <span>Thiết Bị Trễ & Sóng Âm</span>
+            <span class="hidden lg:inline-flex px-1.5 py-0.2 bg-emerald-100 text-emerald-800 text-[10px] rounded-md font-extrabold">Thực tế</span>
+          </button>
+        </div>
+
+        <!-- Fullscreen Mode Button -->
+        <div class="flex items-center space-x-2">
+          <button onclick="toggleFullScreen()" title="Toàn màn hình trình duyệt" class="p-2 rounded-xl border border-slate-200 hover:bg-slate-100 text-slate-600 transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MAIN CONTAINER ================= -->
+  <main class="flex-1 max-w-[1720px] w-full mx-auto px-4 sm:px-6 py-5">
+
+    <!-- ========================================================================= -->
+    <!-- TAB 1: KHỞI ĐỘNG - TRẮC NGHIỆM TÍCH VÔ HƯỚNG LỚP 10 (CHIẾU TỪNG CÂU KHỔ LỚN)-->
+    <!-- ========================================================================= -->
+    <section id="pane-quiz" class="space-y-6">
+      
+      <!-- Quiz Progress Header -->
+      <div class="bg-white border border-slate-200 rounded-2xl p-5 custom-shadow flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div>
+          <div class="flex items-center space-x-3">
+            <span class="px-3 py-1 bg-amber-50 text-amber-700 border border-amber-200 text-xs font-bold rounded-full uppercase tracking-wider">
+              Kiến thức nền tảng Lớp 10
+            </span>
+            <span id="quiz-badge-step" class="text-sm font-semibold text-slate-500">Câu hỏi 1 / 5</span>
+          </div>
+          <p class="text-sm text-slate-500 mt-1">Ôn lại các tính chất cốt lõi của tích vô hướng để chuẩn bị thiết lập công thức $\cos(a - b)$.</p>
+        </div>
+
+        <div class="flex items-center space-x-2" id="quiz-stepper"></div>
+      </div>
+
+      <!-- Question Card -->
+      <div class="bg-white border border-slate-200 rounded-3xl p-6 sm:p-12 custom-shadow relative min-h-[480px] flex flex-col justify-between">
+        <div>
+          <!-- Question Title -->
+          <div class="flex items-start space-x-4 mb-6">
+            <span id="q-number-circle" class="flex-shrink-0 w-12 h-12 rounded-2xl bg-blue-600 text-white font-extrabold text-xl flex items-center justify-center shadow-lg shadow-blue-500/25">
+              1
+            </span>
+            <div class="flex-1 pt-1">
+              <span id="q-tag" class="text-xs font-bold uppercase tracking-wider text-blue-600 block mb-1">Định nghĩa tích vô hướng</span>
+              <div id="q-content" class="text-xl sm:text-2xl lg:text-3xl font-bold text-slate-900 leading-snug"></div>
+            </div>
+          </div>
+
+          <!-- Answer Options Grid -->
+          <div id="q-options" class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mt-6"></div>
+        </div>
+
+        <!-- Explanation & Insight Box -->
+        <div id="q-explanation-box" class="hidden mt-8 p-6 rounded-2xl border transition-all duration-300">
+          <div class="flex items-start space-x-3">
+            <div id="q-exp-icon" class="w-8 h-8 rounded-xl flex items-center justify-center font-bold flex-shrink-0 mt-0.5">
+              ✓
+            </div>
+            <div class="flex-1">
+              <h4 id="q-exp-title" class="font-bold text-base mb-1">Giải thích & Nhận xét sư phạm</h4>
+              <div id="q-exp-text" class="text-slate-700 leading-relaxed text-base"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Navigation Controls -->
+        <div class="flex items-center justify-between pt-8 mt-8 border-t border-slate-100">
+          <button id="quiz-btn-prev" onclick="changeQuizQuestion(-1)" 
+                  class="flex items-center space-x-2 px-6 py-3.5 rounded-xl border border-slate-200 font-bold text-slate-600 hover:bg-slate-50 transition disabled:opacity-40 disabled:cursor-not-allowed">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M15 19l-7-7 7-7"/></svg>
+            <span>Câu trước</span>
+          </button>
+
+          <div class="flex items-center space-x-3">
+            <button id="quiz-btn-next" onclick="changeQuizQuestion(1)" 
+                    class="flex items-center space-x-2 px-8 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold transition shadow-md shadow-blue-500/20">
+              <span>Câu kế tiếp</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M9 5l7 7-7 7"/></svg>
+            </button>
+            <button id="quiz-btn-finish" onclick="switchMainTab('explore')" 
+                    class="hidden items-center space-x-2 px-8 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold transition shadow-md shadow-emerald-600/20 animate-pulse">
+              <span>Khám Phá Công Thức (Tab 2) ➔</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Callout -->
+      <div class="bg-gradient-to-r from-blue-50 via-indigo-50 to-purple-50 border border-blue-100 rounded-2xl p-5 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div class="flex items-center space-x-4">
+          <div class="w-12 h-12 rounded-xl bg-blue-600/10 text-blue-600 flex items-center justify-center font-bold text-xl flex-shrink-0">
+            💡
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900">Mục tiêu của phần khởi động:</h4>
+            <p class="text-sm text-slate-600">
+              Nhắc lại rằng tích vô hướng $\vec{OM} \cdot \vec{ON}$ vừa có thể tính bằng <strong>hình học</strong>: $|\vec{OM}| \cdot |\vec{ON}| \cos(a-b) = \cos(a-b)$, vừa tính được bằng <strong>toạ độ</strong>: $x_M x_N + y_M y_N = \cos a \cos b + \sin a \sin b$. Đồng nhất hai kết quả chính là chìa khóa chứng minh!
+            </p>
+          </div>
+        </div>
+        <button onclick="switchMainTab('explore')" class="px-5 py-2.5 rounded-xl bg-white border border-blue-200 text-blue-700 font-bold hover:bg-blue-50 whitespace-nowrap shadow-sm text-sm">
+          Chuyển sang Tab 2 ➔
+        </button>
+      </div>
+
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 2: KHÁM PHÁ - MÔ HÌNH VECTƠ & CÂY SUY DIỄN CÔNG THỨC CỘNG (LỚP 11)   -->
+    <!-- ========================================================================= -->
+    <section id="pane-explore" class="hidden space-y-5">
+      
+      <!-- Controls Topbar -->
+      <div class="flex flex-wrap items-center justify-between gap-3 bg-white border border-slate-200 rounded-2xl p-3.5 custom-shadow">
+        <div class="flex items-center space-x-3">
+          <span class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span class="font-bold text-slate-800 text-sm">Đường Tròn Đơn Vị ($R = 1$) & Tích Vô Hướng Vectơ</span>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-2">
+          <!-- Angle Presets -->
+          <div class="flex items-center space-x-1.5 bg-slate-100 p-1 rounded-xl text-xs font-semibold">
+            <span class="text-slate-500 px-2">Góc mẫu:</span>
+            <button onclick="setAnglePreset(60, 45)" class="px-2.5 py-1 rounded-lg bg-white shadow-xs hover:text-blue-600">60°, 45°</button>
+            <button onclick="setAnglePreset(45, 30)" class="px-2.5 py-1 rounded-lg bg-white shadow-xs hover:text-blue-600">45°, 30°</button>
+            <button onclick="setAnglePreset(120, 30)" class="px-2.5 py-1 rounded-lg bg-white shadow-xs hover:text-blue-600">120°, 30° (Tù)</button>
+            <button onclick="setAnglePreset(60, -30)" class="px-2.5 py-1 rounded-lg bg-white shadow-xs hover:text-blue-600">60°, -30° (Âm)</button>
+          </div>
+
+          <!-- Concrete Values Toggle -->
+          <div class="flex items-center space-x-2 bg-blue-50 border border-blue-200 px-3 py-1.5 rounded-xl">
+            <label class="text-xs font-bold text-blue-900 cursor-pointer flex items-center space-x-2 select-none">
+              <span>Hiện số liệu cụ thể:</span>
+              <input type="checkbox" id="toggle-concrete-values" onchange="toggleValueMode()" class="w-4 h-4 rounded text-blue-600 focus:ring-blue-500 cursor-pointer">
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Exploration Grid (Collapsible to Theater Mode) -->
+      <div id="tab2Grid" class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+        
+        <!-- LEFT: Canvas Section (7 Cols Default -> 12 Cols Theater Mode) -->
+        <div id="tab2ColLeft" class="lg:col-span-7 bg-white border border-slate-200 rounded-3xl p-5 custom-shadow flex flex-col transition-all duration-300">
+          
+          <!-- On-Canvas Toggle Toolbar (Bao gồm nút PHÓNG TO KHỔ LỚN) -->
+          <div class="flex flex-wrap items-center justify-between pb-3 mb-2 border-b border-slate-100 gap-2 text-xs">
+            <div class="flex items-center space-x-1 text-slate-500 font-semibold">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+              <span>Bật/Tắt hiển thị:</span>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-1.5">
+              <button id="btn-toggle-arca" onclick="toggleLayer('arcA')" class="px-2.5 py-1 rounded-lg border font-semibold text-blue-700 bg-blue-50 border-blue-200 transition">Góc a</button>
+              <button id="btn-toggle-arcb" onclick="toggleLayer('arcB')" class="px-2.5 py-1 rounded-lg border font-semibold text-amber-700 bg-amber-50 border-amber-200 transition">Góc b</button>
+              <button id="btn-toggle-arcdiff" onclick="toggleLayer('arcDiff')" class="px-2.5 py-1 rounded-lg border font-semibold text-purple-700 bg-purple-50 border-purple-200 transition">Góc |a - b|</button>
+              <button id="btn-toggle-projections" onclick="toggleLayer('projections')" class="px-2.5 py-1 rounded-lg border font-semibold text-slate-700 bg-slate-100 border-slate-300 transition">Đường gióng</button>
+              
+              <!-- Coordinates toggle (Points M & N are always visible) -->
+              <button id="btn-toggle-coords" onclick="toggleLayer('coords')" class="px-2.5 py-1 rounded-lg border font-semibold text-emerald-700 bg-emerald-50 border-emerald-300 transition" title="Đỉnh M, N luôn hiện. Bấm để thu gọn/mở rộng tọa độ">Tọa độ: Đầy đủ</button>
+
+              <div class="h-4 w-[1px] bg-slate-200 mx-0.5 hidden sm:block"></div>
+
+              <!-- NÚT PHÓNG TO / KHỔ LỚN TAB 2 -->
+              <button id="btn-theater-tab2" onclick="toggleTheaterTab2()" 
+                      class="px-3 py-1 rounded-lg border border-indigo-200 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-bold transition flex items-center space-x-1.5 shadow-xs" 
+                      title="Phóng to khung đường tròn để trình chiếu máy chiếu">
+                <svg id="icon-theater-tab2" class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/>
+                </svg>
+                <span id="text-theater-tab2">Khổ lớn</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- SVG Canvas (Spacious 760x700 with anti-collision) -->
+          <div id="tab2CanvasContainer" class="relative w-full bg-slate-50/50 rounded-2xl border border-slate-100 overflow-hidden flex items-center justify-center p-2 transition-all duration-300">
+            <svg id="unitCircleSVG" viewBox="0 0 760 700" class="w-full h-auto max-h-[640px] select-none transition-all duration-300">
+              <defs>
+                <marker id="arrow-blue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 1 L 10 5 L 0 9 z" fill="#2563eb" />
+                </marker>
+                <marker id="arrow-amber" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                  <path d="M 0 1 L 10 5 L 0 9 z" fill="#d97706" />
+                </marker>
+                <marker id="axis-arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+                  <path d="M 0 1 L 10 5 L 0 9 z" fill="#64748b" />
+                </marker>
+              </defs>
+
+              <g class="svg-grid" id="svgGrid"></g>
+
+              <!-- Axes Ox & Oy -->
+              <g id="svgAxes">
+                <line x1="60" y1="350" x2="700" y2="350" class="svg-axis" marker-end="url(#axis-arrow)" />
+                <text x="708" y="355" class="fill-slate-600 text-sm font-bold">x</text>
+                <line x1="380" y1="640" x2="380" y2="60" class="svg-axis" marker-end="url(#axis-arrow)" />
+                <text x="385" y="52" class="fill-slate-600 text-sm font-bold">y</text>
+                <text x="365" y="370" class="fill-slate-500 text-sm font-semibold">O</text>
+                <text x="595" y="372" class="fill-slate-400 text-xs font-semibold">1</text>
+                <text x="155" y="372" class="fill-slate-400 text-xs font-semibold">-1</text>
+                <text x="390" y="145" class="fill-slate-400 text-xs font-semibold">1</text>
+                <text x="390" y="565" class="fill-slate-400 text-xs font-semibold">-1</text>
+              </g>
+
+              <!-- Unit Circle -->
+              <circle cx="380" cy="350" r="210" fill="none" stroke="#cbd5e1" stroke-width="2.5" stroke-dasharray="6 4"/>
+
+              <!-- Dynamic Arcs & Projections -->
+              <g id="layer-arc-diff"></g>
+              <g id="layer-arc-a"></g>
+              <g id="layer-arc-b"></g>
+              <g id="layer-projections"></g>
+
+              <!-- Vectors OM & ON -->
+              <line id="vec-om" x1="380" y1="350" x2="528" y2="201" stroke="#2563eb" stroke-width="3.5" marker-end="url(#arrow-blue)" />
+              <line id="vec-on" x1="380" y1="350" x2="528" y2="498" stroke="#d97706" stroke-width="3.5" marker-end="url(#arrow-amber)" />
+
+              <!-- Points M & N (Always Visible & Draggable) -->
+              <g id="dots-layer">
+                <circle id="dot-m-halo" cx="528" cy="201" r="20" fill="#2563eb" fill-opacity="0.15" class="grab-cursor" />
+                <circle id="dot-m" cx="528" cy="201" r="7.5" fill="#2563eb" stroke="#ffffff" stroke-width="2.5" class="grab-cursor" />
+                <circle id="dot-n-halo" cx="528" cy="498" r="20" fill="#d97706" fill-opacity="0.15" class="grab-cursor" />
+                <circle id="dot-n" cx="528" cy="498" r="7.5" fill="#d97706" stroke="#ffffff" stroke-width="2.5" class="grab-cursor" />
+              </g>
+
+              <!-- Labels Overlay -->
+              <g id="labels-layer"></g>
+            </svg>
+          </div>
+
+          <!-- Bottom Status Coordinates (Never blocked) -->
+          <div class="mt-4 grid grid-cols-2 gap-3 pt-3 border-t border-slate-100 text-sm">
+            <div class="bg-blue-50/70 border border-blue-200/80 rounded-xl p-3 flex items-center justify-between">
+              <div class="flex items-center space-x-2">
+                <span class="w-3 h-3 rounded-full bg-blue-600"></span>
+                <span class="font-bold text-blue-900">Điểm M:</span>
+              </div>
+              <span id="status-coords-m" class="font-mono-code font-bold text-blue-800 text-xs sm:text-sm">
+                (\cos a; \sin a)
+              </span>
+            </div>
+
+            <div class="bg-amber-50/70 border border-amber-200/80 rounded-xl p-3 flex items-center justify-between">
+              <div class="flex items-center space-x-2">
+                <span class="w-3 h-3 rounded-full bg-amber-600"></span>
+                <span class="font-bold text-amber-900">Điểm N:</span>
+              </div>
+              <span id="status-coords-n" class="font-mono-code font-bold text-amber-800 text-xs sm:text-sm">
+                (\cos b; \sin b)
+              </span>
+            </div>
+          </div>
+
+          <!-- Slider Controllers -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 bg-slate-50 p-4 rounded-2xl border border-slate-200/70">
+            <div>
+              <div class="flex justify-between items-center mb-1.5">
+                <span class="text-xs font-bold text-blue-700 uppercase">Góc a (Tia OM)</span>
+                <span id="slider-val-a" class="font-mono-code font-bold text-blue-600 text-sm">60°</span>
+              </div>
+              <input type="range" id="slider-a" min="-180" max="360" value="60" 
+                     oninput="onSliderAngleChange()" class="w-full h-2 bg-blue-200 rounded-lg appearance-none cursor-pointer accent-blue-600">
+            </div>
+
+            <div>
+              <div class="flex justify-between items-center mb-1.5">
+                <span class="text-xs font-bold text-amber-700 uppercase">Góc b (Tia ON)</span>
+                <span id="slider-val-b" class="font-mono-code font-bold text-amber-600 text-sm">45°</span>
+              </div>
+              <input type="range" id="slider-b" min="-180" max="360" value="45" 
+                     oninput="onSliderAngleChange()" class="w-full h-2 bg-amber-200 rounded-lg appearance-none cursor-pointer accent-amber-600">
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT: Proof & Deduction Tree (5 Cols Default -> 12 Cols Theater Mode) -->
+        <div id="tab2ColRight" class="lg:col-span-5 space-y-4 transition-all duration-300">
+          
+          <!-- Core 4-Step Proof Card -->
+          <div class="bg-white border border-slate-200 rounded-3xl p-5 custom-shadow">
+            <div class="flex items-center justify-between pb-3 mb-3 border-b border-slate-100">
+              <h3 class="font-bold text-slate-900 text-sm flex items-center space-x-2">
+                <span class="w-6 h-6 rounded-lg bg-blue-600 text-white flex items-center justify-center text-xs font-extrabold">★</span>
+                <span>Chứng minh cốt lõi: $\cos(a - b)$</span>
+              </h3>
+              <span class="text-xs font-semibold px-2 py-0.5 bg-slate-100 text-slate-600 rounded-full">4 Bước Sư Phạm</span>
+            </div>
+
+            <div class="space-y-3">
+              <!-- Step 1 -->
+              <div class="p-3 rounded-2xl border border-slate-200 bg-slate-50/70">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-xs font-extrabold text-blue-700 uppercase tracking-wide">Bước 1: Tọa độ hai điểm</span>
+                  <span class="text-[11px] font-bold text-slate-400">R = 1</span>
+                </div>
+                <div class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                  <p>Do $M, N$ thuộc đường tròn lượng giác:</p>
+                  <p class="font-semibold text-slate-900">$\vec{OM} = (\cos a; \sin a), \quad \vec{ON} = (\cos b; \sin b)$</p>
+                </div>
+              </div>
+
+              <!-- Step 2 -->
+              <div class="p-3 rounded-2xl border border-slate-200 bg-slate-50/70">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-xs font-extrabold text-purple-700 uppercase tracking-wide">Bước 2: Định nghĩa Hình học</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-purple-100 text-purple-700">Cách 1</span>
+                </div>
+                <div class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                  <p>Góc hình học giữa hai tia là $|a - b|$:</p>
+                  <div class="my-1.5 p-2 rounded-xl bg-purple-50/60 border border-purple-200 font-semibold text-purple-950">
+                    $$\vec{OM} \cdot \vec{ON} = 1 \cdot 1 \cdot \cos(|a - b|) = \cos(a - b)$$
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 3 -->
+              <div class="p-3 rounded-2xl border border-slate-200 bg-slate-50/70">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-xs font-extrabold text-amber-700 uppercase tracking-wide">Bước 3: Biểu thức Tọa độ (Lớp 10)</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-amber-100 text-amber-700">Cách 2</span>
+                </div>
+                <div class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                  <div class="my-1.5 p-2 rounded-xl bg-amber-50/60 border border-amber-200 font-semibold text-amber-950">
+                    $$\vec{OM} \cdot \vec{ON} = \cos a \cos b + \sin a \sin b$$
+                  </div>
+                </div>
+              </div>
+
+              <!-- Step 4 -->
+              <div class="p-3 rounded-2xl border-2 border-emerald-300 bg-emerald-50/50">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="text-xs font-extrabold text-emerald-800 uppercase tracking-wide">Bước 4: Đồng nhất Kết quả</span>
+                  <span class="px-2 py-0.5 rounded text-[10px] font-extrabold bg-emerald-200 text-emerald-900">ĐPCM</span>
+                </div>
+                <div class="text-xs sm:text-sm text-slate-800 leading-relaxed">
+                  <div class="my-1 p-2 rounded-xl bg-white border border-emerald-200 text-center font-bold text-emerald-700 shadow-sm text-sm sm:text-base">
+                    $$\cos(a - b) = \cos a \cos b + \sin a \sin b$$
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Deduction Accordion -->
+          <div class="bg-white border border-slate-200 rounded-3xl p-5 custom-shadow">
+            <h3 class="font-bold text-slate-900 text-sm mb-1 flex items-center space-x-2">
+              <span class="w-5 h-5 rounded-lg bg-indigo-100 text-indigo-700 flex items-center justify-center text-xs font-extrabold">🌿</span>
+              <span>Cây suy diễn 5 công thức còn lại</span>
+            </h3>
+            <p class="text-xs text-slate-500 mb-3">Từ công thức mẹ $\cos(a - b)$, thay đổi số đo góc:</p>
+
+            <div class="space-y-2 text-xs sm:text-sm">
+              <details class="group border border-slate-200 rounded-xl p-2.5 bg-slate-50 open:bg-white">
+                <summary class="font-bold text-slate-800 cursor-pointer flex items-center justify-between">
+                  <span>1. Công thức $\cos(a + b)$</span>
+                  <span class="text-xs text-blue-600 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <div class="mt-2 pt-2 border-t border-slate-100 text-slate-600 text-xs space-y-1">
+                  <p>Thay $b$ bằng $(-b)$: $\cos(a + b) = \cos[a - (-b)]$</p>
+                  <p class="font-bold text-slate-900 bg-slate-100 p-2 rounded-lg">$$\cos(a + b) = \cos a \cos b - \sin a \sin b$$</p>
+                </div>
+              </details>
+
+              <details class="group border border-slate-200 rounded-xl p-2.5 bg-slate-50 open:bg-white">
+                <summary class="font-bold text-slate-800 cursor-pointer flex items-center justify-between">
+                  <span>2. Công thức $\sin(a - b)$</span>
+                  <span class="text-xs text-blue-600 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <div class="mt-2 pt-2 border-t border-slate-100 text-slate-600 text-xs space-y-1">
+                  <p>Dùng góc phụ: $\sin(a - b) = \cos\left[\left(\frac{\pi}{2} - a\right) + b\right]$</p>
+                  <p class="font-bold text-slate-900 bg-slate-100 p-2 rounded-lg">$$\sin(a - b) = \sin a \cos b - \cos a \sin b$$</p>
+                </div>
+              </details>
+
+              <details class="group border border-slate-200 rounded-xl p-2.5 bg-slate-50 open:bg-white">
+                <summary class="font-bold text-slate-800 cursor-pointer flex items-center justify-between">
+                  <span>3. Công thức $\sin(a + b)$</span>
+                  <span class="text-xs text-blue-600 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <div class="mt-2 pt-2 border-t border-slate-100 text-slate-600 text-xs space-y-1">
+                  <p class="font-bold text-slate-900 bg-slate-100 p-2 rounded-lg">$$\sin(a + b) = \sin a \cos b + \cos a \sin b$$</p>
+                </div>
+              </details>
+
+              <details class="group border border-slate-200 rounded-xl p-2.5 bg-slate-50 open:bg-white">
+                <summary class="font-bold text-slate-800 cursor-pointer flex items-center justify-between">
+                  <span>4. Công thức $\tan(a \pm b)$</span>
+                  <span class="text-xs text-blue-600 group-open:rotate-180 transition-transform">▼</span>
+                </summary>
+                <div class="mt-2 pt-2 border-t border-slate-100 text-slate-600 text-xs space-y-1">
+                  <p class="font-bold text-slate-900 bg-slate-100 p-2 rounded-lg">$$\tan(a \pm b) = \frac{\tan a \pm \tan b}{1 \mp \tan a \tan b}$$</p>
+                </div>
+              </details>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Forward Banner to Tab 3 -->
+      <div class="bg-indigo-50/70 border border-indigo-200 rounded-2xl p-4 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+          <span class="text-2xl">📻</span>
+          <div>
+            <h4 class="font-bold text-indigo-950 text-sm">Ứng dụng thực tế: Tại sao cần công thức cộng lượng giác?</h4>
+            <p class="text-xs text-indigo-700">Xem cách các kỹ sư âm thanh giải bài toán tổng hợp sóng của thiết bị trễ kỹ thuật số ở Tab 3.</p>
+          </div>
+        </div>
+        <button onclick="switchMainTab('app')" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl text-xs shadow-sm transition">
+          Mở Thẻ Ứng Dụng Sóng Âm ➔
+        </button>
+      </div>
+
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 3: ỨNG DỤNG - THIẾT BỊ TRỄ KỸ THUẬT SỐ & TỔNG HỢP SÓNG ÂM (SGK TOÁN 11)-->
+    <!-- ========================================================================= -->
+    <section id="pane-app" class="hidden space-y-5">
+      
+      <!-- Banner: SGK Textbook Problem Statement -->
+      <div class="bg-white rounded-3xl border-l-4 border-l-indigo-600 border border-slate-200 p-5 custom-shadow">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3 mb-3">
+          <div class="flex items-center space-x-2.5">
+            <span class="px-2.5 py-1 bg-indigo-100 text-indigo-800 text-xs font-extrabold rounded-lg uppercase tracking-wider">
+              Bài toán thực tế SGK Toán 11
+            </span>
+            <h2 class="text-base font-extrabold text-slate-900">
+              Thiết bị trễ kỹ thuật số lặp lại tín hiệu âm thanh
+            </h2>
+          </div>
+          <div class="flex items-center space-x-2 text-xs text-slate-500 font-medium">
+            <span>Dạng phương trình:</span>
+            <code class="px-2 py-0.5 bg-slate-100 rounded text-indigo-700 font-bold font-mono-code">a sin t + b cos t = k sin(t + φ)</code>
+          </div>
+        </div>
+
+        <div class="text-xs sm:text-sm text-slate-700 leading-relaxed bg-indigo-50/50 p-4 rounded-2xl border border-indigo-100">
+          <p class="italic mb-2">
+            "Một thiết bị trễ kĩ thuật số lặp lại tín hiệu đầu vào bằng cách lặp lại tín hiệu đó trong một khoảng thời gian cố định sau khi nhận được tín hiệu. 
+            Nếu một thiết bị như vậy nhận được nốt thuần <strong class="text-blue-700">\(f_1(t) = 5 \sin t\)</strong> 
+            và phát lại được nốt thuần <strong class="text-amber-700">\(f_2(t) = 5 \cos t\)</strong> 
+            thì âm kết hợp là \(f(t) = f_1(t) + f_2(t)\), trong đó \(t\) là biến thời gian. 
+            Chứng tỏ rằng âm kết hợp viết được dưới dạng <strong class="text-purple-700">\(f(t) = k \sin(t + \varphi)\)</strong>, tức là âm kết hợp là một sóng âm hình sin. 
+            Hãy xác định biên độ âm \(k\) và pha ban đầu \(\varphi\) (\(-\pi \le \varphi \le \pi\)) của sóng âm."
+          </p>
+          <div class="flex flex-wrap gap-2 text-xs font-semibold pt-1">
+            <span class="inline-flex items-center px-2 py-0.5 rounded-lg bg-blue-100 text-blue-800">
+              Tín hiệu gốc: $f_1(t) = 5\sin t$
+            </span>
+            <span class="inline-flex items-center px-2 py-0.5 rounded-lg bg-amber-100 text-amber-800">
+              Tín hiệu trễ: $f_2(t) = 5\cos t = 5\sin(t + \frac{\pi}{2})$
+            </span>
+            <span class="inline-flex items-center px-2 py-0.5 rounded-lg bg-purple-100 text-purple-800">
+              Âm kết hợp: $f(t) = 5\sqrt{2}\sin(t + \frac{\pi}{4})$
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Interactive Grid: Oscilloscope + Synthesizer + Fresnel (Supports Theater Mode) -->
+      <div id="tab3Grid" class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+        
+        <!-- LEFT SUB-COLUMN: OSCILLOSCOPE & SYNTHESIZER (7 COLS Default -> 12 COLS Theater Mode) -->
+        <div id="tab3ColLeft" class="lg:col-span-7 flex flex-col space-y-4 transition-all duration-300">
+          
+          <!-- 1. Real-time Oscilloscope Card -->
+          <div class="bg-white rounded-3xl border border-slate-200 shadow-sm overflow-hidden flex flex-col">
+            
+            <!-- Oscilloscope Toolbar (Có NÚT PHÓNG TO ĐỒ THỊ) -->
+            <div class="bg-slate-50 border-b border-slate-200 px-4 py-3 flex flex-wrap items-center justify-between gap-2">
+              <div class="flex items-center space-x-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-purple-600 animate-pulse"></span>
+                <span class="text-xs font-extrabold text-slate-800 uppercase tracking-wide">Máy hiện sóng số (Oscilloscope)</span>
+              </div>
+
+              <!-- Filter Toggles & Theater Mode Button -->
+              <div class="flex items-center flex-wrap gap-1.5 text-xs">
+                <button id="toggleWave1" onclick="toggleWave('wave1')" class="px-2.5 py-1 rounded-lg font-bold transition flex items-center space-x-1.5 bg-blue-600 text-white shadow-sm">
+                  <span class="w-2 h-2 rounded-full bg-white"></span>
+                  <span>$f_1$: Gốc ($5\sin t$)</span>
+                </button>
+                <button id="toggleWave2" onclick="toggleWave('wave2')" class="px-2.5 py-1 rounded-lg font-bold transition flex items-center space-x-1.5 bg-amber-500 text-white shadow-sm">
+                  <span class="w-2 h-2 rounded-full bg-white"></span>
+                  <span>$f_2$: Trễ ($5\cos t$)</span>
+                </button>
+                <button id="toggleWaveSum" onclick="toggleWave('waveSum')" class="px-2.5 py-1 rounded-lg font-bold transition flex items-center space-x-1.5 bg-purple-600 text-white shadow-sm">
+                  <span class="w-2 h-2 rounded-full bg-white"></span>
+                  <span>$f$: Tổng hợp</span>
+                </button>
+
+                <div class="h-4 w-[1px] bg-slate-200 mx-0.5 hidden sm:block"></div>
+
+                <!-- NÚT PHÓNG TO ĐỒ THỊ TAB 3 -->
+                <button id="btn-theater-tab3" onclick="toggleTheaterTab3()" 
+                        class="px-3 py-1 rounded-lg border border-purple-200 bg-purple-50 hover:bg-purple-100 text-purple-700 font-bold transition flex items-center space-x-1.5 shadow-xs" 
+                        title="Phóng to máy hiện sóng toàn màn hình">
+                  <svg id="icon-theater-tab3" class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/>
+                  </svg>
+                  <span id="text-theater-tab3">Khổ lớn</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Canvas Display Area -->
+            <div id="oscCanvasContainer" class="relative w-full aspect-[16/9] bg-slate-900 overflow-hidden transition-all duration-300">
+              <canvas id="oscilloscopeCanvas" class="w-full h-full block cursor-crosshair"></canvas>
+              
+              <div class="absolute top-2.5 left-3 text-[11px] font-mono-code text-slate-400 bg-slate-900/80 backdrop-blur px-2.5 py-1 rounded border border-slate-700/60 pointer-events-none">
+                Trục tung: Biên độ $A$ &nbsp;|&nbsp; Trục hoành: Thời gian $t$ (rad)
+              </div>
+            </div>
+
+            <!-- Instant Readout Bar -->
+            <div class="bg-slate-50 border-t border-slate-200 px-4 py-2.5 flex flex-wrap items-center justify-between gap-2 text-xs font-mono-code">
+              <div class="flex items-center space-x-2">
+                <span class="text-slate-500 font-semibold">Thời điểm:</span>
+                <span id="oscTimeReadout" class="font-bold text-slate-900 bg-white px-2 py-0.5 rounded border border-slate-200">t = 0.00 rad</span>
+              </div>
+
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="text-blue-700 font-bold" id="oscF1Val">f₁ = 0.00</span>
+                <span class="text-slate-400">+</span>
+                <span class="text-amber-700 font-bold" id="oscF2Val">f₂ = 5.00</span>
+                <span class="text-slate-400">=</span>
+                <span class="text-purple-700 font-black bg-purple-100 px-2 py-0.5 rounded" id="oscFSumVal">f = 5.00</span>
+              </div>
+            </div>
+
+            <!-- Speed & Playback Controls -->
+            <div class="p-3 bg-white border-t border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs">
+              <div class="flex items-center space-x-2">
+                <button onclick="toggleOscPlay()" id="oscPlayBtn" class="px-3.5 py-1.5 bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-xl shadow-sm transition flex items-center space-x-1.5">
+                  <svg id="playIconSvg" class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
+                  <span id="playBtnLabel">Tạm dừng</span>
+                </button>
+                <button onclick="rewindOsc()" class="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 font-semibold rounded-xl border border-slate-300 transition">
+                  Tua về 0
+                </button>
+              </div>
+
+              <div class="flex items-center space-x-2">
+                <span class="text-slate-500 font-medium">Tốc độ:</span>
+                <input id="oscSpeedSlider" type="range" min="0.2" max="2.5" step="0.1" value="1.0" class="w-24 sm:w-32 h-2 bg-slate-200 rounded-lg accent-purple-600">
+                <span id="oscSpeedLabel" class="font-mono-code text-slate-700 font-bold w-10 text-right">1.0x</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- 2. Web Audio Synthesizer Card -->
+          <div class="bg-white rounded-3xl border border-slate-200 p-5 shadow-sm flex flex-col space-y-3">
+            <div class="flex items-center justify-between border-b border-slate-100 pb-2.5">
+              <div class="flex items-center space-x-2">
+                <div class="w-7 h-7 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-sm">
+                  🔊
+                </div>
+                <div>
+                  <h3 class="text-sm font-extrabold text-slate-900">Bộ Thử Nghiệm Âm Thanh Thực Tế (Web Audio API)</h3>
+                  <p class="text-[11px] text-slate-500">Nghe và so sánh trực tiếp âm lượng giữa tín hiệu đơn lẻ và âm kết hợp</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
+                Tần số chuẩn $262\text{ Hz}$ (Nốt Đô C4)
+              </span>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-1">
+              <button onclick="playAcousticSample('f1')" id="btnAudioF1" class="p-3 rounded-2xl border border-blue-200 bg-blue-50/70 hover:bg-blue-100 transition flex flex-col items-center text-center space-y-1">
+                <span class="text-base">🎵</span>
+                <span class="text-xs font-extrabold text-blue-900">1. Phát nốt gốc $f_1(t)$</span>
+                <span class="text-[11px] text-slate-500">Biên độ: $5$ (Âm chuẩn)</span>
+              </button>
+
+              <button onclick="playAcousticSample('f2')" id="btnAudioF2" class="p-3 rounded-2xl border border-amber-200 bg-amber-50/70 hover:bg-amber-100 transition flex flex-col items-center text-center space-y-1">
+                <span class="text-base">⏳</span>
+                <span class="text-xs font-extrabold text-amber-900">2. Phát nốt trễ $f_2(t)$</span>
+                <span class="text-[11px] text-slate-500">Biên độ: $5$ (Lệch pha $\frac{\pi}{2}$)</span>
+              </button>
+
+              <button onclick="playAcousticSample('sum')" id="btnAudioSum" class="p-3 rounded-2xl border border-purple-300 bg-purple-50 hover:bg-purple-100 transition flex flex-col items-center text-center space-y-1 shadow-sm">
+                <span class="text-base">📢</span>
+                <span class="text-xs font-extrabold text-purple-900">3. Phát âm kết hợp $f(t)$</span>
+                <span class="text-[11px] font-bold text-purple-700">Biên độ: $5\sqrt{2} \approx 7.07$ (+3dB)</span>
+              </button>
+            </div>
+
+            <div class="flex items-center justify-between text-xs text-slate-500 px-1 pt-1">
+              <span id="audioStatusText" class="font-medium text-emerald-700 flex items-center space-x-1">
+                <span>● Sẵn sàng phát âm thanh</span>
+              </span>
+              <button onclick="stopAllAudio()" class="text-xs text-rose-600 hover:text-rose-800 font-semibold underline">
+                Dừng âm thanh
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RIGHT SUB-COLUMN: FRESNEL PHASOR & 4-STEP SOLUTION (5 COLS Default -> 12 COLS Theater Mode) -->
+        <div id="tab3ColRight" class="lg:col-span-5 transition-all duration-300">
+          
+          <div id="tab3RightSubGrid" class="space-y-4 transition-all duration-300">
+            <!-- 1. Fresnel Rotating Phasor Diagram -->
+            <div class="bg-white rounded-3xl border border-slate-200 p-5 shadow-sm space-y-3">
+              <div class="flex items-center justify-between border-b border-slate-100 pb-2.5">
+                <div class="flex items-center space-x-2">
+                  <div class="w-7 h-7 rounded-lg bg-purple-100 text-purple-700 flex items-center justify-center font-black text-sm">
+                    $$\vec{A}$$
+                  </div>
+                  <div>
+                    <h3 class="text-sm font-extrabold text-slate-900">Giản Đồ Vectơ Quay (Fresnel)</h3>
+                    <p class="text-[11px] text-slate-500">Mối liên hệ hình học trực giác với phương pháp Vectơ ở Tab 2</p>
+                  </div>
+                </div>
+                <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200">
+                  Quy tắc hình bình hành
+                </span>
+              </div>
+
+              <div class="w-full aspect-[4/3] bg-slate-50 rounded-2xl border border-slate-200 flex items-center justify-center overflow-hidden">
+                <svg id="fresnelSvg" viewBox="0 0 380 300" class="w-full h-full"></svg>
+              </div>
+
+              <!-- Parameters Modifier -->
+              <div class="p-3 bg-slate-50/80 rounded-2xl border border-slate-200 space-y-2 text-xs">
+                <div class="flex justify-between items-center font-bold text-slate-700">
+                  <span>Điều chỉnh hệ số:</span>
+                  <button onclick="setParamsToDefault()" class="text-indigo-600 hover:text-indigo-800 text-[11px] font-semibold underline">
+                    Khôi phục đề SGK (5; 5)
+                  </button>
+                </div>
+
+                <!-- Slider A1 -->
+                <div class="flex items-center justify-between space-x-2">
+                  <span class="w-20 text-blue-700 font-semibold font-mono-code">A₁ (sin): <span id="labelA1">5</span></span>
+                  <input id="sliderA1" type="range" min="1" max="10" step="1" value="5" oninput="handleParamChange()" class="flex-1 h-1.5 bg-blue-100 rounded-lg accent-blue-600">
+                </div>
+
+                <!-- Slider A2 -->
+                <div class="flex items-center justify-between space-x-2">
+                  <span class="w-20 text-amber-700 font-semibold font-mono-code">A₂ (cos): <span id="labelA2">5</span></span>
+                  <input id="sliderA2" type="range" min="1" max="10" step="1" value="5" oninput="handleParamChange()" class="flex-1 h-1.5 bg-amber-100 rounded-lg accent-amber-600">
+                </div>
+              </div>
+            </div>
+
+            <!-- 2. Detailed Pedagogical Solution -->
+            <div class="bg-white rounded-3xl border border-slate-200 p-5 shadow-sm space-y-3">
+              <div class="flex items-center justify-between border-b border-slate-100 pb-2.5">
+                <div class="flex items-center space-x-2">
+                  <div class="w-7 h-7 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-black text-sm">
+                    ✓
+                  </div>
+                  <h3 class="text-sm font-extrabold text-slate-900">Lời Giải Mẫu Chuẩn Sư Phạm (4 Bước)</h3>
+                </div>
+                <span class="text-[11px] text-blue-700 font-bold bg-blue-50 px-2 py-0.5 rounded-full border border-blue-200">
+                  Công thức cộng
+                </span>
+              </div>
+
+              <div id="solutionContainer" class="text-xs sm:text-sm text-slate-700 space-y-2.5 leading-relaxed"></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ================= CORE LOGIC JAVASCRIPT ================= -->
+  <script>
+    /* =========================================================================
+       1. GLOBAL TAB ROUTER
+       ========================================================================= */
+    let currentMainTab = 'quiz';
+
+    function switchMainTab(tabName) {
+      currentMainTab = tabName;
+      
+      const pQuiz = document.getElementById("pane-quiz");
+      const pExplore = document.getElementById("pane-explore");
+      const pApp = document.getElementById("pane-app");
+
+      const bQuiz = document.getElementById("tab-btn-quiz");
+      const bExplore = document.getElementById("tab-btn-explore");
+      const bApp = document.getElementById("tab-btn-app");
+
+      [pQuiz, pExplore, pApp].forEach(p => p.classList.add("hidden"));
+      [bQuiz, bExplore, bApp].forEach(b => {
+        b.className = "flex items-center space-x-1.5 sm:space-x-2 px-3 sm:px-4 py-2 rounded-xl font-bold transition-all duration-200 text-slate-600 hover:text-slate-900";
+        b.querySelector("span:first-child").className = "w-5 h-5 rounded-lg bg-slate-200 text-slate-700 flex items-center justify-center text-xs font-extrabold";
+      });
+
+      const activeBtnClass = "flex items-center space-x-1.5 sm:space-x-2 px-3 sm:px-4 py-2 rounded-xl font-bold transition-all duration-200 bg-white text-blue-700 shadow-sm";
+      const activeBadgeClass = "w-5 h-5 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center text-xs font-extrabold";
+
+      if (tabName === 'quiz') {
+        pQuiz.classList.remove("hidden");
+        bQuiz.className = activeBtnClass;
+        bQuiz.querySelector("span:first-child").className = activeBadgeClass;
+        renderQuizQuestion();
+      } else if (tabName === 'explore') {
+        pExplore.classList.remove("hidden");
+        bExplore.className = activeBtnClass;
+        bExplore.querySelector("span:first-child").className = activeBadgeClass;
+        setTimeout(() => { updateVisualization(); triggerKaTeX(); }, 50);
+      } else if (tabName === 'app') {
+        pApp.classList.remove("hidden");
+        bApp.className = activeBtnClass;
+        bApp.querySelector("span:first-child").className = activeBadgeClass;
+        setTimeout(() => {
+          resizeOscilloscope();
+          drawFresnelDiagram();
+          updateSolutionContent();
+          triggerKaTeX();
+        }, 50);
+      }
+      triggerKaTeX();
+    }
+
+    /* =========================================================================
+       2. TAB 1: LOGIC TRẮC NGHIỆM TÍCH VÔ HƯỚNG
+       ========================================================================= */
+    const QUIZ_DATA = [
+      {
+        tag: "Định nghĩa hình học tích vô hướng",
+        question: "Cho hai vectơ $\\vec{u}$ và $\\vec{v}$ khác $\\vec{0}$. Tích vô hướng $\\vec{u} \\cdot \\vec{v}$ được xác định bởi biểu thức nào sau đây?",
+        options: [
+          "$\\vec{u} \\cdot \\vec{v} = |\\vec{u}| \\cdot |\\vec{v}| \\cdot \\sin(\\vec{u}, \\vec{v})$",
+          "$\\vec{u} \\cdot \\vec{v} = |\\vec{u}| \\cdot |\\vec{v}| \\cdot \\cos(\\vec{u}, \\vec{v})$",
+          "$\\vec{u} \\cdot \\vec{v} = |\\vec{u}| + |\\vec{v}| + \\cos(\\vec{u}, \\vec{v})$",
+          "$\\vec{u} \\cdot \\vec{v} = |\\vec{u} \\cdot \\vec{v}| \\cdot \\cos(\\vec{u}, \\vec{v})$"
+        ],
+        correct: 1,
+        explanation: "Theo định nghĩa SGK Toán 10: Tích vô hướng của hai vectơ là một <strong>số thực</strong>: $$\\vec{u} \\cdot \\vec{v} = |\\vec{u}| \\cdot |\\vec{v}| \\cdot \\cos(\\vec{u}, \\vec{v})$$ <br><span class='text-blue-700 font-semibold'>Ứng dụng vào bài mới:</span> Do hai bán kính trên đường tròn đơn vị có $|\\vec{OM}| = |\\vec{ON}| = 1$, tích vô hướng rút gọn thành cosin của góc giữa hai vectơ!"
+      },
+      {
+        tag: "Biểu thức toạ độ của tích vô hướng",
+        question: "Trong mặt phẳng toạ độ $Oxy$, cho $\\vec{u} = (x_1; y_1)$ và $\\vec{v} = (x_2; y_2)$. Tích vô hướng $\\vec{u} \\cdot \\vec{v}$ được tính theo toạ độ là:",
+        options: [
+          "$\\vec{u} \\cdot \\vec{v} = x_1 y_1 + x_2 y_2$",
+          "$\\vec{u} \\cdot \\vec{v} = x_1 x_2 - y_1 y_2$",
+          "$\\vec{u} \\cdot \\vec{v} = x_1 x_2 + y_1 y_2$",
+          "$\\vec{u} \\cdot \\vec{v} = x_1 y_2 + x_2 y_1$"
+        ],
+        correct: 2,
+        explanation: "Biểu thức tọa độ chuẩn: Tích vô hướng bằng <strong>hoành nhân hoành cộng tung nhân tung</strong>: $$\\vec{u} \\cdot \\vec{v} = x_1 x_2 + y_1 y_2$$ <br><span class='text-blue-700 font-semibold'>Ứng dụng vào bài mới:</span> Ta tính được tích vô hướng trực tiếp từ tọa độ điểm $M, N$."
+      },
+      {
+        tag: "Tọa độ điểm trên đường tròn lượng giác",
+        question: "Trên đường tròn lượng giác tâm $O$ bán kính $R = 1$, nếu góc lượng giác $(Ox, OM) = a$ thì tọa độ của điểm $M$ và độ dài vectơ $\\vec{OM}$ là:",
+        options: [
+          "$M(\\sin a; \\cos a)$ và $|\\vec{OM}| = 1$",
+          "$M(\\cos a; \\sin a)$ và $|\\vec{OM}| = 1$",
+          "$M(\\cos a; \\sin a)$ và $|\\vec{OM}| = a$",
+          "$M(\\tan a; \\cot a)$ và $|\\vec{OM}| = 1$"
+        ],
+        correct: 1,
+        explanation: "Theo định nghĩa giá trị lượng giác: Hoành độ của $M$ là $\\cos a$, tung độ của $M$ là $\\sin a$. Bán kính $R=1 \\implies |\\vec{OM}| = 1$. <br><span class='text-blue-700 font-semibold'>Do đó:</span> $M(\\cos a; \\sin a)$ và $N(\\cos b; \\sin b)$."
+      },
+      {
+        tag: "Góc giữa hai vectơ bán kính",
+        question: "Với hai điểm $M(\\cos a; \\sin a)$ và $N(\\cos b; \\sin b)$, góc giữa hai vectơ $\\vec{OM}$ và $\\vec{ON}$ có cosin bằng bao nhiêu?",
+        options: [
+          "$\\cos(\\vec{OM}, \\vec{ON}) = \\cos(a + b)$",
+          "$\\cos(\\vec{OM}, \\vec{ON}) = \\sin(a - b)$",
+          "$\\cos(\\vec{OM}, \\vec{ON}) = \\cos(a - b)$",
+          "$\\cos(\\vec{OM}, \\vec{ON}) = \\cos a - \\cos b$"
+        ],
+        correct: 2,
+        explanation: "Góc hình học giữa hai tia có số đo là $|a - b|$. Do hàm số cosin là hàm chẵn $\\cos(-x) = \\cos(x)$: $$\\cos(|a - b|) = \\cos(a - b)$$"
+      },
+      {
+        tag: "Tổng hợp & Dẫn dắt công thức cộng",
+        question: "Đồng nhất hai cách tính $\\vec{OM} \\cdot \\vec{ON}$ (theo hình học và theo toạ độ), ta thu được công thức lượng giác nào?",
+        options: [
+          "$\\cos(a - b) = \\cos a \\cos b - \\sin a \\sin b$",
+          "$\\cos(a - b) = \\cos a \\cos b + \\sin a \\sin b$",
+          "$\\sin(a - b) = \\sin a \\cos b - \\cos a \\sin b$",
+          "$\\cos(a - b) = \\cos a \\sin b + \\sin a \\cos b$"
+        ],
+        correct: 1,
+        explanation: "Đồng nhất 2 vế của cùng một tích vô hướng: <br>• Hình học: $\\vec{OM} \\cdot \\vec{ON} = 1 \\cdot 1 \\cdot \\cos(a - b) = \\cos(a - b)$ <br>• Toạ độ: $\\vec{OM} \\cdot \\vec{ON} = x_M x_N + y_M y_N = \\cos a \\cos b + \\sin a \\sin b$ <br>$$\\implies \\cos(a - b) = \\cos a \\cos b + \\sin a \\sin b$$"
+      }
+    ];
+
+    let currentQuizIndex = 0;
+    let userAnswers = {};
+
+    function initQuiz() {
+      renderQuizStepper();
+      renderQuizQuestion();
+    }
+
+    function renderQuizStepper() {
+      const stepper = document.getElementById("quiz-stepper");
+      stepper.innerHTML = QUIZ_DATA.map((q, idx) => {
+        const isCurrent = idx === currentQuizIndex;
+        const isAnswered = userAnswers[idx] !== undefined;
+        let bgClass = "bg-slate-100 text-slate-600";
+        if (isCurrent) bgClass = "bg-blue-600 text-white ring-2 ring-blue-300";
+        else if (isAnswered) bgClass = "bg-emerald-100 text-emerald-800 font-bold";
+
+        return `
+          <button onclick="goToQuizQuestion(${idx})" class="w-8 h-8 rounded-xl text-xs font-bold transition flex items-center justify-center ${bgClass}">
+            ${idx + 1}
+          </button>
+        `;
+      }).join('');
+      document.getElementById("quiz-badge-step").innerText = `Câu hỏi ${currentQuizIndex + 1} / ${QUIZ_DATA.length}`;
+    }
+
+    function renderQuizQuestion() {
+      const data = QUIZ_DATA[currentQuizIndex];
+      document.getElementById("q-number-circle").innerText = currentQuizIndex + 1;
+      document.getElementById("q-tag").innerText = data.tag;
+      document.getElementById("q-content").innerHTML = data.question;
+
+      const optContainer = document.getElementById("q-options");
+      const letters = ["A", "B", "C", "D"];
+      const answered = userAnswers[currentQuizIndex] !== undefined;
+
+      optContainer.innerHTML = data.options.map((opt, i) => {
+        let btnStyle = "bg-white border-slate-200 text-slate-800 hover:border-blue-400";
+        let badgeStyle = "bg-slate-100 text-slate-700 group-hover:bg-blue-600 group-hover:text-white";
+
+        if (answered) {
+          const chosen = userAnswers[currentQuizIndex];
+          if (i === data.correct) {
+            btnStyle = "bg-emerald-50 border-emerald-400 text-emerald-900 ring-2 ring-emerald-300";
+            badgeStyle = "bg-emerald-600 text-white";
+          } else if (i === chosen) {
+            btnStyle = "bg-red-50 border-red-300 text-red-900";
+            badgeStyle = "bg-red-600 text-white";
+          } else {
+            btnStyle = "bg-slate-50 border-slate-200 text-slate-400 opacity-60";
+          }
+        }
+
+        return `
+          <button onclick="selectQuizAnswer(${i})" ${answered ? "disabled" : ""} 
+                  class="btn-choice group flex items-center space-x-4 p-5 rounded-2xl border-2 text-left transition-all ${btnStyle}">
+            <span class="w-10 h-10 rounded-xl flex items-center justify-center font-bold text-base transition flex-shrink-0 ${badgeStyle}">
+              ${letters[i]}
+            </span>
+            <div class="flex-1 text-lg sm:text-xl font-medium">
+              ${opt}
+            </div>
+          </button>
+        `;
+      }).join('');
+
+      const expBox = document.getElementById("q-explanation-box");
+      if (answered) {
+        expBox.classList.remove("hidden");
+        const isCorrect = userAnswers[currentQuizIndex] === data.correct;
+        if (isCorrect) {
+          expBox.className = "mt-8 p-6 rounded-2xl border border-emerald-200 bg-emerald-50/70 text-emerald-950";
+          document.getElementById("q-exp-icon").className = "w-8 h-8 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold";
+          document.getElementById("q-exp-icon").innerText = "✓";
+          document.getElementById("q-exp-title").innerText = "Chính xác! Lời giải & Kết nối bài học:";
+        } else {
+          expBox.className = "mt-8 p-6 rounded-2xl border border-amber-200 bg-amber-50/70 text-amber-950";
+          document.getElementById("q-exp-icon").className = "w-8 h-8 rounded-xl bg-amber-600 text-white flex items-center justify-center font-bold";
+          document.getElementById("q-exp-icon").innerText = "!";
+          document.getElementById("q-exp-title").innerText = "Chưa đúng. Hãy lưu ý lời giải sau:";
+        }
+        document.getElementById("q-exp-text").innerHTML = data.explanation;
+      } else {
+        expBox.classList.add("hidden");
+      }
+
+      document.getElementById("quiz-btn-prev").disabled = (currentQuizIndex === 0);
+      const isLast = (currentQuizIndex === QUIZ_DATA.length - 1);
+      if (isLast && answered) {
+        document.getElementById("quiz-btn-next").classList.add("hidden");
+        document.getElementById("quiz-btn-finish").classList.remove("hidden");
+        document.getElementById("quiz-btn-finish").classList.add("flex");
+      } else {
+        document.getElementById("quiz-btn-next").classList.remove("hidden");
+        document.getElementById("quiz-btn-finish").classList.add("hidden");
+        document.getElementById("quiz-btn-finish").classList.remove("flex");
+      }
+
+      triggerKaTeX();
+    }
+
+    function selectQuizAnswer(index) {
+      if (userAnswers[currentQuizIndex] !== undefined) return;
+      userAnswers[currentQuizIndex] = index;
+      renderQuizStepper();
+      renderQuizQuestion();
+    }
+
+    function changeQuizQuestion(delta) {
+      const nextIdx = currentQuizIndex + delta;
+      if (nextIdx >= 0 && nextIdx < QUIZ_DATA.length) {
+        currentQuizIndex = nextIdx;
+        renderQuizStepper();
+        renderQuizQuestion();
+      }
+    }
+
+    function goToQuizQuestion(idx) {
+      currentQuizIndex = idx;
+      renderQuizStepper();
+      renderQuizQuestion();
+    }
+
+    /* =========================================================================
+       3. TAB 2: LOGIC MÔ HÌNH VECTƠ & ĐƯỜNG TRÒN
+       ========================================================================= */
+    const CX = 380, CY = 350, R = 210;
+    let angleA = 60;
+    let angleB = 45;
+    let isTheaterTab2 = false;
+
+    const layers = {
+      arcA: true,
+      arcB: true,
+      arcDiff: true,
+      projections: true,
+      coords: true
+    };
+    let showConcreteNumbers = false;
+
+    function toggleTheaterTab2() {
+      isTheaterTab2 = !isTheaterTab2;
+      const colLeft = document.getElementById("tab2ColLeft");
+      const colRight = document.getElementById("tab2ColRight");
+      const btn = document.getElementById("btn-theater-tab2");
+      const btnText = document.getElementById("text-theater-tab2");
+      const icon = document.getElementById("icon-theater-tab2");
+      const svgEl = document.getElementById("unitCircleSVG");
+
+      if (isTheaterTab2) {
+        colLeft.classList.remove("lg:col-span-7");
+        colLeft.classList.add("lg:col-span-12");
+        colRight.classList.remove("lg:col-span-5");
+        colRight.classList.add("lg:col-span-12");
+        svgEl.classList.remove("max-h-[640px]");
+        svgEl.classList.add("max-h-[820px]");
+
+        btnText.textContent = "Thu nhỏ";
+        btn.className = "px-3 py-1 rounded-lg border border-indigo-500 bg-indigo-600 text-white font-bold transition flex items-center space-x-1.5 shadow-md";
+        icon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M9 9L4 4m0 0h4m-4 0v4m11 5l5 5m0 0h-4m4 0v-4M9 15l-5 5m0 0h4m-4 0v-4m11-5l5-5m0 0h-4m4 0v4"/>`;
+      } else {
+        colLeft.classList.remove("lg:col-span-12");
+        colLeft.classList.add("lg:col-span-7");
+        colRight.classList.remove("lg:col-span-12");
+        colRight.classList.add("lg:col-span-5");
+        svgEl.classList.remove("max-h-[820px]");
+        svgEl.classList.add("max-h-[640px]");
+
+        btnText.textContent = "Khổ lớn";
+        btn.className = "px-3 py-1 rounded-lg border border-indigo-200 bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-bold transition flex items-center space-x-1.5 shadow-xs";
+        icon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/>`;
+      }
+
+      setTimeout(() => {
+        updateVisualization();
+      }, 60);
+    }
+
+    function initSVGGrid() {
+      const grid = document.getElementById("svgGrid");
+      if (!grid) return;
+      let html = "";
+      for (let x = 60; x <= 700; x += 35) html += `<line x1="${x}" y1="60" x2="${x}" y2="640" />`;
+      for (let y = 60; y <= 640; y += 35) html += `<line x1="60" y1="${y}" x2="700" y2="${y}" />`;
+      grid.innerHTML = html;
+    }
+
+    function toggleLayer(layerKey) {
+      layers[layerKey] = !layers[layerKey];
+      const btn = document.getElementById(`btn-toggle-${layerKey.toLowerCase()}`);
+      if (btn) {
+        if (layerKey === 'coords') {
+          btn.innerText = layers.coords ? "Tọa độ: Đầy đủ" : "Tọa độ: Gọn (M, N)";
+          btn.className = layers.coords 
+            ? "px-2.5 py-1 rounded-lg border font-semibold text-emerald-700 bg-emerald-50 border-emerald-300 transition"
+            : "px-2.5 py-1 rounded-lg border font-semibold text-slate-500 bg-slate-100 border-slate-200 transition";
+        } else {
+          if (layers[layerKey]) {
+            btn.classList.add("bg-opacity-100", "border-opacity-100");
+            btn.classList.remove("opacity-40");
+          } else {
+            btn.classList.add("opacity-40");
+          }
+        }
+      }
+      updateVisualization();
+    }
+
+    function toggleValueMode() {
+      showConcreteNumbers = document.getElementById("toggle-concrete-values").checked;
+      updateVisualization();
+    }
+
+    function setAnglePreset(a, b) {
+      angleA = a;
+      angleB = b;
+      document.getElementById("slider-a").value = a;
+      document.getElementById("slider-b").value = b;
+      updateVisualization();
+    }
+
+    function onSliderAngleChange() {
+      angleA = parseFloat(document.getElementById("slider-a").value);
+      angleB = parseFloat(document.getElementById("slider-b").value);
+      updateVisualization();
+    }
+
+    const toRad = deg => (deg * Math.PI) / 180;
+    const toDeg = rad => (rad * 180) / Math.PI;
+
+    function getCoords(deg, radius = R) {
+      const rad = toRad(deg);
+      return { x: CX + radius * Math.cos(rad), y: CY - radius * Math.sin(rad) };
+    }
+
+    function describeArc(startAngleDeg, endAngleDeg, radius) {
+      const start = getCoords(startAngleDeg, radius);
+      const end = getCoords(endAngleDeg, radius);
+      let diff = endAngleDeg - startAngleDeg;
+      while (diff < 0) diff += 360;
+      const largeArcFlag = diff > 180 ? 1 : 0;
+      return `M ${start.x} ${start.y} A ${radius} ${radius} 0 ${largeArcFlag} 0 ${end.x} ${end.y}`;
+    }
+
+    function updateVisualization() {
+      const sliderValA = document.getElementById("slider-val-a");
+      const sliderValB = document.getElementById("slider-val-b");
+      if (sliderValA) sliderValA.innerText = `${Math.round(angleA)}°`;
+      if (sliderValB) sliderValB.innerText = `${Math.round(angleB)}°`;
+
+      const ptM = getCoords(angleA, R);
+      const ptN = getCoords(angleB, R);
+
+      const vecM = document.getElementById("vec-om");
+      const vecN = document.getElementById("vec-on");
+      if (vecM) { vecM.setAttribute("x2", ptM.x); vecM.setAttribute("y2", ptM.y); }
+      if (vecN) { vecN.setAttribute("x2", ptN.x); vecN.setAttribute("y2", ptN.y); }
+
+      // Vertices M & N are always visible
+      const dotM = document.getElementById("dot-m");
+      const haloM = document.getElementById("dot-m-halo");
+      if (dotM) { dotM.setAttribute("cx", ptM.x); dotM.setAttribute("cy", ptM.y); }
+      if (haloM) { haloM.setAttribute("cx", ptM.x); haloM.setAttribute("cy", ptM.y); }
+
+      const dotN = document.getElementById("dot-n");
+      const haloN = document.getElementById("dot-n-halo");
+      if (dotN) { dotN.setAttribute("cx", ptN.x); dotN.setAttribute("cy", ptN.y); }
+      if (haloN) { haloN.setAttribute("cx", ptN.x); haloN.setAttribute("cy", ptN.y); }
+
+      renderArcs();
+      renderProjections(ptM, ptN);
+      renderSmartLabels(ptM, ptN);
+      updateBottomStatus();
+    }
+
+    function renderArcs() {
+      const gArcA = document.getElementById("layer-arc-a");
+      const gArcB = document.getElementById("layer-arc-b");
+      const gArcDiff = document.getElementById("layer-arc-diff");
+      if (!gArcA || !gArcB || !gArcDiff) return;
+
+      gArcA.innerHTML = "";
+      gArcB.innerHTML = "";
+      gArcDiff.innerHTML = "";
+
+      if (layers.arcA && Math.abs(angleA) > 1) {
+        const rA = 55;
+        const d = (angleA >= 0) ? describeArc(0, angleA, rA) : describeArc(angleA, 0, rA);
+        gArcA.innerHTML = `<path d="${d}" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-dasharray="3 3"/>`;
+      }
+
+      if (layers.arcB && Math.abs(angleB) > 1) {
+        const rB = 40;
+        const d = (angleB >= 0) ? describeArc(0, angleB, rB) : describeArc(angleB, 0, rB);
+        gArcB.innerHTML = `<path d="${d}" fill="none" stroke="#d97706" stroke-width="2.5" stroke-dasharray="3 3"/>`;
+      }
+
+      if (layers.arcDiff) {
+        const rDiff = 75;
+        const minA = Math.min(angleA, angleB);
+        const maxA = Math.max(angleA, angleB);
+        if (maxA - minA > 2 && maxA - minA < 358) {
+          const d = describeArc(minA, maxA, rDiff);
+          gArcDiff.innerHTML = `
+            <path d="${d}" fill="none" stroke="#9333ea" stroke-width="3" />
+            <text x="${getCoords((minA + maxA)/2, rDiff + 18).x}" y="${getCoords((minA + maxA)/2, rDiff + 18).y}" 
+                  fill="#9333ea" font-size="13" font-weight="bold" text-anchor="middle">|a - b|</text>
+          `;
+        }
+      }
+    }
+
+    function renderProjections(ptM, ptN) {
+      const gProj = document.getElementById("layer-projections");
+      if (!gProj) return;
+      if (!layers.projections) {
+        gProj.innerHTML = "";
+        return;
+      }
+
+      const cosA = Math.cos(toRad(angleA));
+      const sinA = Math.sin(toRad(angleA));
+      const cosB = Math.cos(toRad(angleB));
+      const sinB = Math.sin(toRad(angleB));
+
+      const diffX = Math.abs(ptM.x - ptN.x);
+      const diffY = Math.abs(ptM.y - ptN.y);
+
+      const offsetCosA = (diffX < 32) ? 18 : 14;
+      const offsetCosB = (diffX < 32) ? 32 : 14;
+      const offsetSinA = (diffY < 24) ? -14 : -10;
+      const offsetSinB = (diffY < 24) ? -28 : -10;
+
+      const labelCosA = showConcreteNumbers ? cosA.toFixed(2) : "cos a";
+      const labelSinA = showConcreteNumbers ? sinA.toFixed(2) : "sin a";
+      const labelCosB = showConcreteNumbers ? cosB.toFixed(2) : "cos b";
+      const labelSinB = showConcreteNumbers ? sinB.toFixed(2) : "sin b";
+
+      gProj.innerHTML = `
+        <line x1="${ptM.x}" y1="${ptM.y}" x2="${ptM.x}" y2="${CY}" stroke="#2563eb" stroke-width="1.75" stroke-dasharray="4 4" />
+        <line x1="${ptM.x}" y1="${ptM.y}" x2="${CX}" y2="${ptM.y}" stroke="#2563eb" stroke-width="1.75" stroke-dasharray="4 4" />
+        <circle cx="${ptM.x}" cy="${CY}" r="4" fill="#2563eb" />
+        <circle cx="${CX}" cy="${ptM.y}" r="4" fill="#2563eb" />
+        <text x="${ptM.x}" y="${CY + (sinA >= 0 ? offsetCosA : -offsetCosA)}" fill="#2563eb" font-size="12" font-weight="bold" text-anchor="middle">${labelCosA}</text>
+        <text x="${CX + (cosA >= 0 ? offsetSinA : -offsetSinA)}" y="${ptM.y + 4}" fill="#2563eb" font-size="12" font-weight="bold" text-anchor="${cosA >= 0 ? 'end' : 'start'}">${labelSinA}</text>
+
+        <line x1="${ptN.x}" y1="${ptN.y}" x2="${ptN.x}" y2="${CY}" stroke="#d97706" stroke-width="1.75" stroke-dasharray="4 4" />
+        <line x1="${ptN.x}" y1="${ptN.y}" x2="${CX}" y2="${ptN.y}" stroke="#d97706" stroke-width="1.75" stroke-dasharray="4 4" />
+        <circle cx="${ptN.x}" cy="${CY}" r="4" fill="#d97706" />
+        <circle cx="${CX}" cy="${ptN.y}" r="4" fill="#d97706" />
+        <text x="${ptN.x}" y="${CY + (sinB >= 0 ? offsetCosB : -offsetCosB)}" fill="#d97706" font-size="12" font-weight="bold" text-anchor="middle">${labelCosB}</text>
+        <text x="${CX + (cosB >= 0 ? offsetSinB : -offsetSinB)}" y="${ptN.y + 4}" fill="#d97706" font-size="12" font-weight="bold" text-anchor="${cosB >= 0 ? 'end' : 'start'}">${labelSinB}</text>
+      `;
+    }
+
+    function renderSmartLabels(ptM, ptN) {
+      const gLabels = document.getElementById("labels-layer");
+      if (!gLabels) return;
+      gLabels.innerHTML = "";
+
+      let angleDiff = Math.abs(angleA - angleB) % 360;
+      if (angleDiff > 180) angleDiff = 360 - angleDiff;
+
+      const baseDistM = R + 26;
+      let baseDistN = R + 26;
+
+      const isTooClose = angleDiff < 22;
+      if (isTooClose) {
+        baseDistN = R + 60;
+      }
+
+      const posM = getCoords(angleA, baseDistM);
+      const posN = getCoords(angleB, baseDistN);
+
+      const radM = toRad(angleA);
+      const radN = toRad(angleB);
+
+      const cosA = Math.cos(radM).toFixed(2);
+      const sinA = Math.sin(radM).toFixed(2);
+      const cosB = Math.cos(radN).toFixed(2);
+      const sinB = Math.sin(radN).toFixed(2);
+
+      let contentM = layers.coords ? (showConcreteNumbers ? `M(${cosA}; ${sinA})` : `M(cos a; sin a)`) : "M";
+      let contentN = layers.coords ? (showConcreteNumbers ? `N(${cosB}; ${sinB})` : `N(cos b; sin b)`) : "N";
+
+      let connectorLineN = "";
+      if (isTooClose && layers.coords) {
+        connectorLineN = `<line x1="${ptN.x}" y1="${ptN.y}" x2="${posN.x}" y2="${posN.y}" stroke="#d97706" stroke-width="1.5" stroke-dasharray="3 3"/>`;
+      }
+
+      gLabels.innerHTML = `
+        ${connectorLineN}
+        <g transform="translate(${posM.x}, ${posM.y})">
+          <rect x="-56" y="-15" width="112" height="30" rx="8" fill="#eff6ff" stroke="#93c5fd" stroke-width="1.5" />
+          <text x="0" y="5" fill="#1e40af" font-size="12" font-weight="bold" text-anchor="middle" font-family="JetBrains Mono, monospace">
+            ${contentM}
+          </text>
+        </g>
+        <g transform="translate(${posN.x}, ${posN.y})">
+          <rect x="-56" y="-15" width="112" height="30" rx="8" fill="#fffbeb" stroke="#fcd34d" stroke-width="1.5" />
+          <text x="0" y="5" fill="#b45309" font-size="12" font-weight="bold" text-anchor="middle" font-family="JetBrains Mono, monospace">
+            ${contentN}
+          </text>
+        </g>
+      `;
+    }
+
+    function updateBottomStatus() {
+      const cosA = Math.cos(toRad(angleA)).toFixed(2);
+      const sinA = Math.sin(toRad(angleA)).toFixed(2);
+      const cosB = Math.cos(toRad(angleB)).toFixed(2);
+      const sinB = Math.sin(toRad(angleB)).toFixed(2);
+
+      const elM = document.getElementById("status-coords-m");
+      const elN = document.getElementById("status-coords-n");
+
+      if (elM && elN) {
+        if (showConcreteNumbers) {
+          elM.innerText = `(${cosA}; ${sinA})`;
+          elN.innerText = `(${cosB}; ${sinB})`;
+        } else {
+          elM.innerText = `(\\cos a; \\sin a)`;
+          elN.innerText = `(\\cos b; \\sin b)`;
+        }
+      }
+    }
+
+    let isDraggingM = false;
+    let isDraggingN = false;
+
+    function setupDragAndDrop() {
+      const svg = document.getElementById("unitCircleSVG");
+      const haloM = document.getElementById("dot-m-halo");
+      const haloN = document.getElementById("dot-n-halo");
+      if (!svg || !haloM || !haloN) return;
+
+      const onStartM = (e) => { e.preventDefault(); isDraggingM = true; };
+      const onStartN = (e) => { e.preventDefault(); isDraggingN = true; };
+
+      haloM.addEventListener("mousedown", onStartM);
+      haloM.addEventListener("touchstart", onStartM, {passive: false});
+
+      haloN.addEventListener("mousedown", onStartN);
+      haloN.addEventListener("touchstart", onStartN, {passive: false});
+
+      const onMove = (e) => {
+        if (!isDraggingM && !isDraggingN) return;
+        const rect = svg.getBoundingClientRect();
+        const clientX = e.clientX || (e.touches && e.touches[0].clientX);
+        const clientY = e.clientY || (e.touches && e.touches[0].clientY);
+        if (!clientX || !clientY) return;
+
+        const scaleX = 760 / rect.width;
+        const scaleY = 700 / rect.height;
+        const mouseX = (clientX - rect.left) * scaleX;
+        const mouseY = (clientY - rect.top) * scaleY;
+
+        const dx = mouseX - CX;
+        const dy = -(mouseY - CY);
+        let deg = Math.round(toDeg(Math.atan2(dy, dx)));
+
+        if (isDraggingM) {
+          angleA = deg;
+          document.getElementById("slider-a").value = deg;
+          updateVisualization();
+        } else if (isDraggingN) {
+          angleB = deg;
+          document.getElementById("slider-b").value = deg;
+          updateVisualization();
+        }
+      };
+
+      const onEnd = () => {
+        isDraggingM = false;
+        isDraggingN = false;
+      };
+
+      window.addEventListener("mousemove", onMove);
+      window.addEventListener("touchmove", onMove, {passive: false});
+      window.addEventListener("mouseup", onEnd);
+      window.addEventListener("touchend", onEnd);
+    }
+
+    /* =========================================================================
+       4. TAB 3: LOGIC THIẾT BỊ TRỄ, SÓNG ÂM, FRESNEL & SYNTHESIZER
+       ========================================================================= */
+    let paramA1 = 5;
+    let paramA2 = 5;
+    let oscTime = 0;
+    let isOscPlaying = true;
+    let oscSpeed = 1.0;
+    let oscAnimId = null;
+    let isTheaterTab3 = false;
+
+    const oscWaves = {
+      wave1: true,
+      wave2: true,
+      waveSum: true
+    };
+
+    let audioCtx = null;
+    let currentAudioSource = null;
+
+    function toggleTheaterTab3() {
+      isTheaterTab3 = !isTheaterTab3;
+      const colLeft = document.getElementById("tab3ColLeft");
+      const colRight = document.getElementById("tab3ColRight");
+      const btn = document.getElementById("btn-theater-tab3");
+      const btnText = document.getElementById("text-theater-tab3");
+      const icon = document.getElementById("icon-theater-tab3");
+      const oscContainer = document.getElementById("oscCanvasContainer");
+      const rightSubGrid = document.getElementById("tab3RightSubGrid");
+
+      if (isTheaterTab3) {
+        colLeft.classList.remove("lg:col-span-7");
+        colLeft.classList.add("lg:col-span-12");
+        colRight.classList.remove("lg:col-span-5");
+        colRight.classList.add("lg:col-span-12");
+        
+        oscContainer.classList.remove("aspect-[16/9]");
+        oscContainer.classList.add("h-[460px]");
+
+        // Dàn 2 cột song song bên dưới khi bung rộng
+        rightSubGrid.classList.remove("space-y-4");
+        rightSubGrid.classList.add("grid", "grid-cols-1", "lg:grid-cols-2", "gap-4");
+
+        btnText.textContent = "Thu nhỏ";
+        btn.className = "px-3 py-1 rounded-lg border border-purple-500 bg-purple-600 text-white font-bold transition flex items-center space-x-1.5 shadow-md";
+        icon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M9 9L4 4m0 0h4m-4 0v4m11 5l5 5m0 0h-4m4 0v-4M9 15l-5 5m0 0h4m-4 0v-4m11-5l5-5m0 0h-4m4 0v4"/>`;
+      } else {
+        colLeft.classList.remove("lg:col-span-12");
+        colLeft.classList.add("lg:col-span-7");
+        colRight.classList.remove("lg:col-span-12");
+        colRight.classList.add("lg:col-span-5");
+
+        oscContainer.classList.add("aspect-[16/9]");
+        oscContainer.classList.remove("h-[460px]");
+
+        rightSubGrid.classList.add("space-y-4");
+        rightSubGrid.classList.remove("grid", "grid-cols-1", "lg:grid-cols-2", "gap-4");
+
+        btnText.textContent = "Khổ lớn";
+        btn.className = "px-3 py-1 rounded-lg border border-purple-200 bg-purple-50 hover:bg-purple-100 text-purple-700 font-bold transition flex items-center space-x-1.5 shadow-xs";
+        icon.innerHTML = `<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"/>`;
+      }
+
+      setTimeout(() => {
+        resizeOscilloscope();
+        drawFresnelDiagram();
+        updateOscilloscopeFrame();
+      }, 60);
+    }
+
+    function resizeOscilloscope() {
+      const canvas = document.getElementById("oscilloscopeCanvas");
+      if (!canvas) return;
+      const rect = canvas.getBoundingClientRect();
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = rect.width * dpr;
+      canvas.height = rect.height * dpr;
+    }
+
+    function toggleWave(waveId) {
+      oscWaves[waveId] = !oscWaves[waveId];
+      const btnMap = {
+        wave1: { id: 'toggleWave1', activeClass: 'px-2.5 py-1 rounded-lg font-bold transition flex items-center space-x-1.5 bg-blue-600 text-white shadow-sm' },
+        wave2: { id: 'toggleWave2', activeClass: 'px-2.5 py-1 rounded-lg font-bold transition flex items-center space-x-1.5 bg-amber-500 text-white shadow-sm' },
+        waveSum: { id: 'toggleWaveSum', activeClass: 'px-2.5 py-1 rounded-lg font-bold transition flex items-center space-x-1.5 bg-purple-600 text-white shadow-sm' }
+      };
+
+      const item = btnMap[waveId];
+      const btn = document.getElementById(item.id);
+      if (btn) {
+        if (oscWaves[waveId]) {
+          btn.className = item.activeClass;
+        } else {
+          btn.className = 'px-2.5 py-1 rounded-lg font-bold transition flex items-center space-x-1.5 bg-slate-700 text-slate-400 hover:bg-slate-600';
+        }
+      }
+    }
+
+    function toggleOscPlay() {
+      isOscPlaying = !isOscPlaying;
+      const btnLabel = document.getElementById("playBtnLabel");
+      const icon = document.getElementById("playIconSvg");
+      if (isOscPlaying) {
+        btnLabel.textContent = "Tạm dừng";
+        icon.innerHTML = '<path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zM7 8a1 1 0 012 0v4a1 1 0 11-2 0V8zm5-1a1 1 0 00-1 1v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"/>';
+      } else {
+        btnLabel.textContent = "Chạy sóng";
+        icon.innerHTML = '<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 102 0V8a1 1 0 00-1-1z" clip-rule="evenodd"/>';
+      }
+    }
+
+    function rewindOsc() {
+      oscTime = 0;
+      updateOscilloscopeFrame();
+    }
+
+    document.getElementById("oscSpeedSlider")?.addEventListener("input", (e) => {
+      oscSpeed = parseFloat(e.target.value);
+      document.getElementById("oscSpeedLabel").textContent = `${oscSpeed.toFixed(1)}x`;
+    });
+
+    function startOscilloscopeLoop() {
+      let lastTimestamp = performance.now();
+
+      function loop(now) {
+        const delta = (now - lastTimestamp) / 1000;
+        lastTimestamp = now;
+
+        if (isOscPlaying && currentMainTab === 'app') {
+          oscTime += delta * 1.8 * oscSpeed;
+          if (oscTime > 4 * Math.PI) {
+            oscTime = 0;
+          }
+        }
+
+        if (currentMainTab === 'app') {
+          updateOscilloscopeFrame();
+        }
+
+        oscAnimId = requestAnimationFrame(loop);
+      }
+      oscAnimId = requestAnimationFrame(loop);
+    }
+
+    function updateOscilloscopeFrame() {
+      const canvas = document.getElementById("oscilloscopeCanvas");
+      if (!canvas) return;
+      const ctx = canvas.getContext("2d");
+      const dpr = window.devicePixelRatio || 1;
+      const W = canvas.width;
+      const H = canvas.height;
+
+      ctx.clearRect(0, 0, W, H);
+
+      const tMax = 4 * Math.PI;
+      const ampMax = 11;
+      const leftPad = 48 * dpr;
+      const rightPad = 24 * dpr;
+      const topPad = 24 * dpr;
+      const botPad = 32 * dpr;
+      const plotW = W - leftPad - rightPad;
+      const plotH = H - topPad - botPad;
+      const centerY = topPad + plotH / 2;
+
+      function mapX(t) { return leftPad + (t / tMax) * plotW; }
+      function mapY(val) { return centerY - (val / ampMax) * (plotH / 2); }
+
+      // Grid
+      ctx.strokeStyle = "rgba(51, 65, 85, 0.4)";
+      ctx.lineWidth = 1 * dpr;
+
+      const kVal = Math.sqrt(paramA1 * paramA1 + paramA2 * paramA2);
+      const ampSteps = [-10, -5, 0, 5, 10];
+
+      ctx.font = `${11 * dpr}px JetBrains Mono`;
+      ctx.textAlign = "right";
+      ctx.textBaseline = "middle";
+
+      ampSteps.forEach(yVal => {
+        const py = mapY(yVal);
+        ctx.beginPath();
+        ctx.moveTo(leftPad, py);
+        ctx.lineTo(W - rightPad, py);
+        ctx.stroke();
+
+        ctx.fillStyle = yVal === 0 ? "#94a3b8" : "#64748b";
+        ctx.fillText(yVal.toString(), leftPad - 8 * dpr, py);
+      });
+
+      // Highlight ±k
+      if (kVal > 0.1 && kVal <= 10.8) {
+        ctx.save();
+        ctx.setLineDash([3 * dpr, 3 * dpr]);
+        ctx.strokeStyle = "rgba(168, 85, 247, 0.5)";
+        ctx.beginPath();
+        ctx.moveTo(leftPad, mapY(kVal));
+        ctx.lineTo(W - rightPad, mapY(kVal));
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(leftPad, mapY(-kVal));
+        ctx.lineTo(W - rightPad, mapY(-kVal));
+        ctx.stroke();
+        ctx.fillStyle = "#c084fc";
+        ctx.fillText(`+${kVal.toFixed(2)}`, leftPad - 6 * dpr, mapY(kVal));
+        ctx.fillText(`-${kVal.toFixed(2)}`, leftPad - 6 * dpr, mapY(-kVal));
+        ctx.restore();
+      }
+
+      // Vertical Ticks
+      const tTicks = [
+        { t: 0, label: "0" },
+        { t: Math.PI / 2, label: "π/2" },
+        { t: Math.PI, label: "π" },
+        { t: (3 * Math.PI) / 2, label: "3π/2" },
+        { t: 2 * Math.PI, label: "2π" },
+        { t: (5 * Math.PI) / 2, label: "5π/2" },
+        { t: 3 * Math.PI, label: "3π" },
+        { t: (7 * Math.PI) / 2, label: "7π/2" },
+        { t: 4 * Math.PI, label: "4π" }
+      ];
+
+      ctx.textAlign = "center";
+      ctx.textBaseline = "top";
+      tTicks.forEach(tick => {
+        const px = mapX(tick.t);
+        ctx.beginPath();
+        ctx.moveTo(px, topPad);
+        ctx.lineTo(px, H - botPad);
+        ctx.stroke();
+        ctx.fillStyle = "#94a3b8";
+        ctx.fillText(tick.label, px, H - botPad + 7 * dpr);
+      });
+
+      // Wave 1: f1(t) = A1 sin(t)
+      const samples = 350;
+      if (oscWaves.wave1) {
+        ctx.strokeStyle = "#3b82f6";
+        ctx.lineWidth = 2.2 * dpr;
+        ctx.beginPath();
+        for (let i = 0; i <= samples; i++) {
+          const t = (i / samples) * tMax;
+          const val = paramA1 * Math.sin(t);
+          const x = mapX(t);
+          const y = mapY(val);
+          if (i === 0) ctx.moveTo(x, y);
+          else ctx.lineTo(x, y);
+        }
+        ctx.stroke();
+      }
+
+      // Wave 2: f2(t) = A2 cos(t)
+      if (oscWaves.wave2) {
+        ctx.strokeStyle = "#f59e0b";
+        ctx.lineWidth = 2.2 * dpr;
+        ctx.beginPath();
+        for (let i = 0; i <= samples; i++) {
+          const t = (i / samples) * tMax;
+          const val = paramA2 * Math.cos(t);
+          const x = mapX(t);
+          const y = mapY(val);
+          if (i === 0) ctx.moveTo(x, y);
+          else ctx.lineTo(x, y);
+        }
+        ctx.stroke();
+      }
+
+      // Combined Wave: f(t) = f1 + f2
+      if (oscWaves.waveSum) {
+        ctx.strokeStyle = "#a855f7";
+        ctx.lineWidth = 3.6 * dpr;
+        ctx.beginPath();
+        for (let i = 0; i <= samples; i++) {
+          const t = (i / samples) * tMax;
+          const val = paramA1 * Math.sin(t) + paramA2 * Math.cos(t);
+          const x = mapX(t);
+          const y = mapY(val);
+          if (i === 0) ctx.moveTo(x, y);
+          else ctx.lineTo(x, y);
+        }
+        ctx.stroke();
+      }
+
+      // Sweep Cursor & Dots
+      const sweepX = mapX(oscTime);
+      ctx.save();
+      ctx.setLineDash([4 * dpr, 3 * dpr]);
+      ctx.strokeStyle = "#e2e8f0";
+      ctx.lineWidth = 1.5 * dpr;
+      ctx.beginPath();
+      ctx.moveTo(sweepX, topPad);
+      ctx.lineTo(sweepX, H - botPad);
+      ctx.stroke();
+      ctx.restore();
+
+      const curValF1 = paramA1 * Math.sin(oscTime);
+      const curValF2 = paramA2 * Math.cos(oscTime);
+      const curValSum = curValF1 + curValF2;
+
+      if (oscWaves.wave1) {
+        ctx.fillStyle = "#3b82f6";
+        ctx.beginPath();
+        ctx.arc(sweepX, mapY(curValF1), 5.5 * dpr, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.strokeStyle = "#ffffff";
+        ctx.lineWidth = 1.5 * dpr;
+        ctx.stroke();
+      }
+      if (oscWaves.wave2) {
+        ctx.fillStyle = "#f59e0b";
+        ctx.beginPath();
+        ctx.arc(sweepX, mapY(curValF2), 5.5 * dpr, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.strokeStyle = "#ffffff";
+        ctx.lineWidth = 1.5 * dpr;
+        ctx.stroke();
+      }
+      if (oscWaves.waveSum) {
+        ctx.fillStyle = "#a855f7";
+        ctx.beginPath();
+        ctx.arc(sweepX, mapY(curValSum), 7.5 * dpr, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.strokeStyle = "#ffffff";
+        ctx.lineWidth = 2 * dpr;
+        ctx.stroke();
+      }
+
+      document.getElementById("oscTimeReadout").textContent = `t = ${(oscTime).toFixed(2)} rad (${((oscTime * 180) / Math.PI).toFixed(0)}°)`;
+      document.getElementById("oscF1Val").textContent = `f₁ = ${curValF1.toFixed(2)}`;
+      document.getElementById("oscF2Val").textContent = `f₂ = ${curValF2.toFixed(2)}`;
+      document.getElementById("oscFSumVal").textContent = `f = ${curValSum.toFixed(2)}`;
+    }
+
+    function drawFresnelDiagram() {
+      const svg = document.getElementById("fresnelSvg");
+      if (!svg) return;
+
+      const ox = 70;
+      const oy = 230;
+      const scale = 18;
+
+      const A1 = paramA1;
+      const A2 = paramA2;
+      const k = Math.sqrt(A1 * A1 + A2 * A2);
+      const phiRad = Math.atan2(A2, A1);
+      const phiDeg = (phiRad * 180) / Math.PI;
+
+      const pA1x = ox + A1 * scale;
+      const pA1y = oy;
+      const pA2x = ox;
+      const pA2y = oy - A2 * scale;
+      const pSumX = ox + A1 * scale;
+      const pSumY = oy - A2 * scale;
+
+      const arcRadius = 40;
+      const arcEndX = ox + arcRadius * Math.cos(phiRad);
+      const arcEndY = oy - arcRadius * Math.sin(phiRad);
+
+      let html = `
+        <defs>
+          <marker id="frArrowBlue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 z" fill="#2563eb" />
+          </marker>
+          <marker id="frArrowAmber" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L0,6 L8,3 z" fill="#d97706" />
+          </marker>
+          <marker id="frArrowPurple" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto">
+            <path d="M0,0 L0,7 L9,3.5 z" fill="#7c3aed" />
+          </marker>
+        </defs>
+
+        <line x1="30" y1="${oy}" x2="350" y2="${oy}" stroke="#cbd5e1" stroke-width="1.5" />
+        <line x1="${ox}" y1="270" x2="${ox}" y2="30" stroke="#cbd5e1" stroke-width="1.5" />
+        <text x="345" y="${oy + 16}" fill="#64748b" font-size="12" font-weight="bold">Trục pha (Pha 0)</text>
+        <text x="${ox + 6}" y="24" fill="#64748b" font-size="12" font-weight="bold">+π/2</text>
+        <text x="${ox - 14}" y="${oy + 16}" fill="#64748b" font-size="12" font-weight="bold">O</text>
+
+        <line x1="${pA1x}" y1="${pA1y}" x2="${pSumX}" y2="${pSumY}" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4" />
+        <line x1="${pA2x}" y1="${pA2y}" x2="${pSumX}" y2="${pSumY}" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4" />
+
+        <path d="M ${ox + arcRadius} ${oy} A ${arcRadius} ${arcRadius} 0 0 0 ${arcEndX} ${arcEndY}" fill="none" stroke="#7c3aed" stroke-width="2.2" />
+        <text x="${ox + arcRadius + 8}" y="${oy - 12}" fill="#7c3aed" font-size="12" font-weight="bold">φ = ${phiDeg.toFixed(1)}°</text>
+
+        <line x1="${ox}" y1="${oy}" x2="${pA1x}" y2="${pA1y}" stroke="#2563eb" stroke-width="3.2" marker-end="url(#frArrowBlue)" />
+        <text x="${(ox + pA1x)/2}" y="${oy + 18}" text-anchor="middle" fill="#1d4ed8" font-size="12" font-weight="bold">A₁ = ${A1}</text>
+
+        <line x1="${ox}" y1="${oy}" x2="${pA2x}" y2="${pA2y}" stroke="#d97706" stroke-width="3.2" marker-end="url(#frArrowAmber)" />
+        <text x="${ox - 22}" y="${(oy + pA2y)/2 + 4}" text-anchor="middle" fill="#b45309" font-size="12" font-weight="bold">A₂=${A2}</text>
+
+        <line x1="${ox}" y1="${oy}" x2="${pSumX}" y2="${pSumY}" stroke="#7c3aed" stroke-width="4.2" marker-end="url(#frArrowPurple)" />
+        
+        <g transform="translate(${pSumX + 6}, ${pSumY - 6})">
+          <rect width="112" height="26" rx="6" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5" />
+          <text x="56" y="17" text-anchor="middle" fill="#6d28d9" font-size="11" font-weight="bold" font-family="JetBrains Mono">
+            k = ${k.toFixed(2)}
+          </text>
+        </g>
+      `;
+
+      svg.innerHTML = html;
+    }
+
+    function handleParamChange() {
+      paramA1 = parseInt(document.getElementById("sliderA1").value);
+      paramA2 = parseInt(document.getElementById("sliderA2").value);
+      document.getElementById("labelA1").textContent = paramA1;
+      document.getElementById("labelA2").textContent = paramA2;
+
+      drawFresnelDiagram();
+      updateSolutionContent();
+      triggerKaTeX();
+    }
+
+    function setParamsToDefault() {
+      paramA1 = 5;
+      paramA2 = 5;
+      document.getElementById("sliderA1").value = 5;
+      document.getElementById("sliderA2").value = 5;
+      document.getElementById("labelA1").textContent = 5;
+      document.getElementById("labelA2").textContent = 5;
+
+      drawFresnelDiagram();
+      updateSolutionContent();
+      triggerKaTeX();
+    }
+
+    function updateSolutionContent() {
+      const container = document.getElementById("solutionContainer");
+      if (!container) return;
+
+      const A1 = paramA1;
+      const A2 = paramA2;
+      const k = Math.sqrt(A1 * A1 + A2 * A2);
+      const isDefault = (A1 === 5 && A2 === 5);
+
+      if (isDefault) {
+        container.innerHTML = `
+          <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200">
+            <span class="font-bold text-blue-900">Bước 1: Thiết lập biểu thức âm kết hợp</span>
+            <div class="my-1">$$f(t) = f_1(t) + f_2(t) = 5\sin t + 5\cos t$$</div>
+          </div>
+          <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200">
+            <span class="font-bold text-indigo-900">Bước 2: Rút thừa số chuẩn hóa $\\sqrt{a^2 + b^2}$</span>
+            <p class="text-slate-600 mt-0.5">Với $a = 5, b = 5 \\implies \\sqrt{a^2 + b^2} = \\sqrt{50} = \\mathbf{5\\sqrt{2}}$:</p>
+            <div class="my-1">$$f(t) = 5\\sqrt{2}\\left(\\frac{\\sqrt{2}}{2}\\sin t + \\frac{\\sqrt{2}}{2}\\cos t\\right)$$</div>
+          </div>
+          <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200">
+            <span class="font-bold text-purple-900">Bước 3: Xác định pha ban đầu $\\varphi$</span>
+            <div class="my-1">$$\\begin{cases} \\cos\\varphi = \\frac{\\sqrt{2}}{2} \\\\ \\sin\\varphi = \\frac{\\sqrt{2}}{2} \\end{cases} \\implies \\mathbf{\\varphi = \\frac{\\pi}{4}}$$</div>
+          </div>
+          <div class="p-3 bg-gradient-to-r from-purple-50 via-indigo-50 to-blue-50 rounded-xl border border-purple-200">
+            <span class="font-bold text-purple-950">Bước 4: Áp dụng công thức cộng lượng giác sin</span>
+            <div class="my-1 font-bold">$$f(t) = 5\\sqrt{2}\\sin\\left(t + \\frac{\\pi}{4}\\right)$$</div>
+            <div class="mt-2 text-xs font-semibold text-emerald-800 bg-white/90 p-2 rounded-lg border border-emerald-200">
+              ✓ <strong>Biên độ âm:</strong> $k = 5\\sqrt{2} \\approx 7{,}071$ <br>
+              ✓ <strong>Pha ban đầu:</strong> $\\varphi = \\frac{\\pi}{4}$ (rad)
+            </div>
+          </div>
+        `;
+      } else {
+        const cosPhi = (A1 / k).toFixed(3);
+        const sinPhi = (A2 / k).toFixed(3);
+        const phiRad = Math.atan2(A2, A1);
+
+        container.innerHTML = `
+          <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200">
+            <span class="font-bold text-blue-900">1. Biểu thức tổng quát:</span>
+            <div class="my-1">$$f(t) = ${A1}\\sin t + ${A2}\\cos t$$</div>
+          </div>
+          <div class="p-2.5 bg-slate-50 rounded-xl border border-slate-200">
+            <span class="font-bold text-indigo-900">2. Rút thừa số biên độ:</span>
+            <div class="my-1">
+              $$k = \\sqrt{${A1}^2 + ${A2}^2} = \\mathbf{${k.toFixed(3)}}$$
+              $$f(t) = ${k.toFixed(3)}\\left(${cosPhi}\\sin t + ${sinPhi}\\cos t\\right)$$
+            </div>
+          </div>
+          <div class="p-3 bg-purple-50 rounded-xl border border-purple-200">
+            <span class="font-bold text-purple-950">3. Kết luận sóng âm hình sin:</span>
+            <div class="my-1 font-bold">$$f(t) = ${k.toFixed(3)}\\sin(t + ${phiRad.toFixed(3)})$$</div>
+            <p class="text-xs text-purple-900">Biên độ $k = ${k.toFixed(3)}$ | Pha ban đầu $\\varphi = ${phiRad.toFixed(3)}\\text{ rad} = ${((phiRad*180)/Math.PI).toFixed(1)}^\\circ$.</p>
+          </div>
+        `;
+      }
+    }
+
+    function initAudioContext() {
+      if (!audioCtx) {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        audioCtx = new AudioContextClass();
+      }
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+    }
+
+    function stopAllAudio() {
+      if (currentAudioSource) {
+        try {
+          currentAudioSource.stop();
+          currentAudioSource.disconnect();
+        } catch (e) {}
+        currentAudioSource = null;
+      }
+      const status = document.getElementById("audioStatusText");
+      if (status) {
+        status.innerHTML = `<span>● Đã dừng âm thanh</span>`;
+        status.className = "font-medium text-slate-500 flex items-center space-x-1";
+      }
+    }
+
+    function playAcousticSample(type) {
+      initAudioContext();
+      stopAllAudio();
+
+      const duration = 2.0;
+      const sampleRate = audioCtx.sampleRate;
+      const frameCount = sampleRate * duration;
+      const buffer = audioCtx.createBuffer(1, frameCount, sampleRate);
+      const data = buffer.getChannelData(0);
+
+      const freq = 261.63; // C4 Middle C
+      const omega = 2 * Math.PI * freq;
+      const masterGain = 0.22;
+
+      for (let i = 0; i < frameCount; i++) {
+        const t = i / sampleRate;
+        let sampleVal = 0;
+
+        if (type === 'f1') {
+          sampleVal = (paramA1 / 10) * Math.sin(omega * t);
+        } else if (type === 'f2') {
+          sampleVal = (paramA2 / 10) * Math.cos(omega * t);
+        } else if (type === 'sum') {
+          sampleVal = ((paramA1 * Math.sin(omega * t) + paramA2 * Math.cos(omega * t)) / 10);
+        }
+
+        let envelope = 1;
+        if (i < sampleRate * 0.05) {
+          envelope = i / (sampleRate * 0.05);
+        } else if (i > frameCount - sampleRate * 0.1) {
+          envelope = (frameCount - i) / (sampleRate * 0.1);
+        }
+
+        data[i] = sampleVal * masterGain * envelope;
+      }
+
+      const source = audioCtx.createBufferSource();
+      source.buffer = buffer;
+      source.connect(audioCtx.destination);
+      source.start();
+      currentAudioSource = source;
+
+      const status = document.getElementById("audioStatusText");
+      const names = {
+        f1: "Đang phát nốt gốc f₁(t) [Biên độ 5]",
+        f2: "Đang phát nốt trễ f₂(t) [Biên độ 5, lệch pha 90°]",
+        sum: "Đang phát âm kết hợp f(t) [Biên độ 5√2 ≈ 7.07, to hơn +3dB]"
+      };
+      if (status) {
+        status.innerHTML = `<span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-ping mr-1"></span> ${names[type]}`;
+        status.className = "font-semibold text-emerald-700 flex items-center";
+      }
+
+      source.onended = () => {
+        if (status) {
+          status.innerHTML = `<span>● Hoàn thành lượt phát (2 giây)</span>`;
+          status.className = "font-medium text-slate-500 flex items-center";
+        }
+      };
+    }
+
+    function toggleFullScreen() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(err => console.log(err));
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    function triggerKaTeX() {
+      if (window.renderMathInElement) {
+        try {
+          renderMathInElement(document.body, {
+            delimiters: [
+              { left: "$$", right: "$$", display: true },
+              { left: "$", right: "$", display: false }
+            ],
+            throwOnError: false
+          });
+        } catch (e) {}
+      }
+    }
+
+    /* =========================================================================
+       INITIALIZATION
+       ========================================================================= */
+    window.addEventListener("DOMContentLoaded", () => {
+      // Tab 1 Init
+      initQuiz();
+
+      // Tab 2 Init
+      initSVGGrid();
+      setupDragAndDrop();
+      updateVisualization();
+
+      // Tab 3 Init
+      resizeOscilloscope();
+      startOscilloscopeLoop();
+      drawFresnelDiagram();
+      updateSolutionContent();
+
+      setTimeout(triggerKaTeX, 150);
+      setTimeout(triggerKaTeX, 500);
+    });
+
+    window.addEventListener("resize", () => {
+      if (currentMainTab === 'explore') {
+        updateVisualization();
+      } else if (currentMainTab === 'app') {
+        resizeOscilloscope();
+        drawFresnelDiagram();
+      }
+    });
+  </script>
+</body>
+</html>

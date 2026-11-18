@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Phòng thí nghiệm ảo - Hàm chẵn, hàm lẻ và hàm tuần hoàn</title>
+  <style>
+    :root{--navy:#0b2447;--blue:#1464c0;--cyan:#16a6c9;--orange:#f59e0b;--red:#ef4444;--green:#059669;--ink:#17324d;--muted:#60758a;--panel:#fff;--line:#d7e4f0;--soft:#eef7ff}
+    *{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;overflow:hidden;font-family:Inter,"Segoe UI",Arial,sans-serif;color:var(--ink);background:#eaf3fb}
+    body{display:grid;place-items:center}.app{width:min(100vw,177.78vh);height:min(100vh,56.25vw);min-width:800px;min-height:450px;background:linear-gradient(135deg,#f8fcff,#edf6fd);display:grid;grid-template-rows:8% 1fr 5%;box-shadow:0 15px 60px #0b244733;position:relative}
+    .tabs{display:flex;gap:.65vw;padding:.55% 2.2% 0;background:#fff;border-bottom:1px solid var(--line)}
+    .tab{border:0;border-radius:12px 12px 0 0;padding:.55em 1.45em;font-weight:800;font-size:clamp(13px,.82vw,18px);color:#49647c;background:#e8f0f7;cursor:pointer}.tab.active{background:var(--blue);color:white}
+    main{min-height:0;padding:.65% 1.15%;}.lab{height:100%;display:none;grid-template-rows:43% 1fr;gap:1%}.lab.active{display:grid}.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:0 5px 18px #184c7b12;min-height:0;overflow:hidden}
+    .controls{padding:1%;display:grid;grid-template-columns:1.05fr 1.25fr 1.8fr;gap:1%;overflow:visible;align-items:stretch}.controlGroup{min-width:0;display:flex;flex-direction:column;justify-content:center;gap:.55vh}.controls h2{font-size:clamp(30px,2vw,42px);margin:0;color:var(--navy);line-height:1.05}.hint{font-size:clamp(22px,1.22vw,28px);color:var(--muted);line-height:1.2;margin:0}
+    .btnrow{display:grid;grid-template-columns:1fr 1fr;gap:.55vw}.btn{border:0;border-radius:8px;padding:.38em .4em;color:white;background:var(--blue);font-weight:800;font-size:clamp(11px,.63vw,14px);cursor:pointer;box-shadow:0 2px 0 #0d4d98;transition:.15s;line-height:1.12;min-height:2.2em}.btn:hover{filter:brightness(1.07);transform:translateY(-1px)}.btn:active{transform:translateY(2px);box-shadow:none}.btn.orange{background:#ea8507;box-shadow:0 2px 0 #b96200}.btn.green{background:var(--green);box-shadow:0 2px 0 #047857}.btn.purple{background:#7c3aed;box-shadow:0 2px 0 #5b21b6}.btn.full{width:100%}
+    .card{border:1px solid #cfe1ef;background:linear-gradient(135deg,#f9fdff,#eef8ff);border-radius:12px;padding:1.8%;font-size:clamp(22px,1.25vw,28px);min-width:0;overflow:visible}.label{font-weight:800;color:#426079;font-size:.75em;text-transform:uppercase;letter-spacing:.6px}.formula{font-family:"Cambria Math","STIX Two Math",serif;color:#0d4f91;font-size:clamp(32px,2.15vw,46px);font-weight:500;margin:.08em 0;min-height:1.45em;display:flex;align-items:center;white-space:nowrap}.domain{font-family:"Cambria Math","STIX Two Math",serif;font-size:clamp(25px,1.55vw,34px);font-weight:500;white-space:nowrap}.property{margin:.1em 0 0;padding:.3em .5em;border-left:5px solid var(--orange);background:#fff8e7;border-radius:6px;line-height:1.18;font-size:.86em}
+    .formula math,.domain math{font-family:"Cambria Math","STIX Two Math","Times New Roman",serif;font-size:1em;color:inherit}.formula math{display:block}.mi{font-style:italic}
+    .numberline{width:100%;height:5.2vh;display:block;margin-top:0}.graphPanel{position:relative;padding:.5%;display:flex;flex-direction:column}.graphTitle{height:7%;display:flex;align-items:center;justify-content:space-between;padding:0 1%;font-weight:800;color:var(--navy);font-size:clamp(13px,.8vw,18px)}.legend{font-weight:600;color:var(--muted);font-size:.78em}.canvasWrap{position:relative;flex:1;min-height:0;border-radius:12px;overflow:hidden;background:#fff;border:1px solid #dce8f2}.graph{width:100%;height:100%;display:block;touch-action:none;cursor:crosshair}.overlayHint{position:absolute;right:1.2%;bottom:1.8%;background:#ffffffdd;border:1px solid #cfe1ef;border-radius:8px;padding:.45em .7em;color:#4d687e;font-size:clamp(11px,.62vw,14px);pointer-events:none}
+    .periodButtons{display:grid;grid-template-columns:1.25fr 1fr;gap:.5vw}.krow{display:grid;grid-template-columns:.65fr 1.4fr;gap:.5vw;align-items:center}.krow input{min-width:0;border:3px solid #b8d3e8;border-radius:9px;padding:.38em;text-align:center;font-weight:800;color:var(--navy);font-size:clamp(24px,1.35vw,31px)}.answer{min-height:1.75em;display:flex;align-items:center;justify-content:center;white-space:nowrap;background:#fff4d7;border:2px dashed #e89a0e;border-radius:10px;color:#9a5600;font-weight:900;font-family:"Cambria Math",Cambria,serif;font-size:clamp(27px,1.65vw,36px);visibility:hidden}.answer.show{visibility:visible}
+    footer{display:flex;justify-content:space-between;align-items:center;padding:0 2%;background:#dfeef9;color:#4f6b82;font-size:clamp(11px,.62vw,14px)}
+    .toast{position:absolute;left:50%;bottom:6%;transform:translate(-50%,15px);opacity:0;background:#102f50;color:#fff;border-radius:10px;padding:.7em 1.1em;font-size:clamp(12px,.72vw,16px);pointer-events:none;transition:.25s;z-index:5}.toast.show{opacity:1;transform:translate(-50%,0)}
+    @media(max-width:900px), (orientation:portrait){html,body{height:auto;min-height:100%;overflow:auto}body{display:block}.app{width:100%;height:auto;min-width:0;min-height:100vh;grid-template-rows:auto 1fr auto}.tabs{position:sticky;top:0;z-index:10;padding:.5rem;background:#fff}.tab{flex:1;padding:.8em .35em}.lab{height:auto;grid-template-rows:auto 58vh;gap:.7rem}.controls{grid-template-columns:1fr;padding:.7rem;overflow:visible}.controlGroup,.card{padding:.65rem}.controls h2{font-size:30px}.hint{font-size:22px}.btn{font-size:11px;padding:.42em}.formula{font-size:34px;white-space:normal}.domain{font-size:25px;white-space:normal}.numberline{height:75px}.graphPanel{min-height:58vh}.graphTitle{height:auto;min-height:44px;gap:.5rem}.legend{display:none}main{padding:.55rem}footer{min-height:42px;gap:1rem;flex-wrap:wrap}.toast{position:fixed;bottom:1rem;width:90%;text-align:center}}
+  </style>
+</head>
+<body>
+<div class="app">
+  <nav class="tabs"><button class="tab active" data-tab="parity">Tính chẵn - lẻ của hàm số</button><button class="tab" data-tab="periodic">Hàm số tuần hoàn và chu kì</button></nav>
+  <main>
+    <section id="parity" class="lab active">
+      <aside class="panel controls">
+        <div class="controlGroup"><h2>Thí nghiệm đối xứng</h2><p class="hint">Tạo hàm ngẫu nhiên rồi kéo <b>M</b> để quan sát <b>M′</b>.</p><div class="btnrow"><button id="evenBtn" class="btn">Ngẫu nhiên hàm chẵn</button><button id="oddBtn" class="btn orange">Ngẫu nhiên hàm lẻ</button></div><p class="hint">Tập xác định đối xứng qua 0 là điều kiện cần để xét tính chẵn, lẻ.</p></div>
+        <div class="card"><div class="label">Công thức hàm số</div><div id="pFormula" class="formula"></div><div class="label">Tập xác định</div><div id="pDomain" class="domain"></div></div>
+        <div class="card"><div class="label">Biểu diễn tập xác định trên trục số</div><canvas id="pNumber" class="numberline"></canvas><div id="pProperty" class="property">D đối xứng qua 0 và f(−x)=f(x). Đồ thị đối xứng qua trục Oy.</div></div>
+      </aside>
+      <section class="panel graphPanel"><div class="graphTitle"><span id="pTitle">Đồ thị hàm chẵn</span><span class="legend">● M &nbsp; ● M′ &nbsp; ┄ đường đối xứng</span></div><div class="canvasWrap"><canvas id="parityCanvas" class="graph"></canvas><div class="overlayHint">Kéo điểm M theo đồ thị</div></div></section>
+    </section>
+    <section id="periodic" class="lab">
+      <aside class="panel controls">
+        <div class="controlGroup"><h2>Thí nghiệm chu kì</h2><p class="hint">Kéo <b>M, N</b> để chọn đoạn đồ thị cần khảo sát.</p><button id="randomPeriodic" class="btn full">Hàm tuần hoàn ngẫu nhiên</button></div>
+        <div class="card"><div class="label">Công thức hàm số</div><div id="tFormula" class="formula"></div><div class="label">Tập xác định</div><div id="tDomain" class="domain"></div><canvas id="tNumber" class="numberline"></canvas></div>
+        <div class="controlGroup"><div class="periodButtons"><button id="extractBtn" class="btn purple">Lấy phần đồ thị đã đánh dấu</button><button id="oneBtn" class="btn green">Lấy một phần</button></div><div class="krow"><input id="kInput" type="number" min="1" max="6" step="1" value="2" aria-label="Số chu kì k"><button id="kBtn" class="btn orange">Lấy k phần</button></div><button id="periodBtn" class="btn full">Lấy chu kì</button><div id="periodAnswer" class="answer">T = 2π</div><p class="hint">Sau khi lấy phần đồ thị, kéo tay nắm <b>⇆</b> để dịch ngang.</p></div>
+      </aside>
+      <section class="panel graphPanel"><div class="graphTitle"><span>Đồ thị hàm tuần hoàn</span><span class="legend">Đoạn màu cam: phần giữa M và N • Mẫu tím: bản sao kéo được</span></div><div class="canvasWrap"><canvas id="periodCanvas" class="graph"></canvas><div class="overlayHint">Kéo M, N hoặc tay nắm ⇆</div></div></section>
+    </section>
+  </main>
+  <footer><span>TOÁN 11 • Bài 3: Hàm số lượng giác</span><span>HTML5 độc lập • Không cần kết nối Internet</span></footer>
+  <div id="toast" class="toast"></div>
+</div>
+<script>
+(() => {
+  const $=s=>document.querySelector(s), TAU=2*Math.PI;
+  const parityCanvas=$('#parityCanvas'), periodCanvas=$('#periodCanvas');
+  const PC=parityCanvas.getContext('2d'), TC=periodCanvas.getContext('2d');
+  const colors={grid:'#dce8f2',axis:'#567188',curve:'#0878c9',orange:'#f59e0b',red:'#ef4444',green:'#059669',purple:'#7c3aed'};
+  let toastTimer; function toast(s){const e=$('#toast');e.textContent=s;e.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>e.classList.remove('show'),1900)}
+  function fit(canvas){const r=canvas.getBoundingClientRect(),d=Math.min(devicePixelRatio||1,2);if(canvas.width!==Math.round(r.width*d)||canvas.height!==Math.round(r.height*d)){canvas.width=Math.round(r.width*d);canvas.height=Math.round(r.height*d);canvas.getContext('2d').setTransform(d,0,0,d,0,0)}return {w:r.width,h:r.height}}
+  function rr(a,b){return a+Math.random()*(b-a)} function choose(a){return a[Math.floor(Math.random()*a.length)]}
+  const evenFns=[
+    {formula:'y = x²/4 − 1',f:x=>x*x/4-1,domain:'D = ℝ',kind:'R'},
+    {formula:'y = 2cos(x)',f:x=>2*Math.cos(x),domain:'D = ℝ',kind:'R'},
+    {formula:'y = |x| − 2',f:x=>Math.abs(x)-2,domain:'D = ℝ',kind:'R'},
+    {formula:'y = √(9 − x²)',f:x=>Math.sqrt(Math.max(0,9-x*x)),domain:'D = [−3; 3]',kind:'closed',a:-3,b:3},
+    {formula:'y = 4/(x² + 1) − 2',f:x=>4/(x*x+1)-2,domain:'D = ℝ',kind:'R'},
+    {formula:'y = 1/(x² − 4)',f:x=>1/(x*x-4),domain:'D = ℝ \\ {−2; 2}',kind:'exclude',points:[-2,2],minX:.15},
+    {formula:'y = √(x² − 4)',f:x=>Math.abs(x)>=2?Math.sqrt(x*x-4):NaN,domain:'D = (−∞; −2] ∪ [2; +∞)',kind:'outerClosed',c:2,minX:2},
+    {formula:'y = 1/√(x² − 1)',f:x=>Math.abs(x)>1?1/Math.sqrt(x*x-1):NaN,domain:'D = (−∞; −1) ∪ (1; +∞)',kind:'outerOpen',c:1,minX:1.08}];
+  const oddFns=[
+    {formula:'y = x³/12',f:x=>x*x*x/12,domain:'D = ℝ',kind:'R'},
+    {formula:'y = 2sin(x)',f:x=>2*Math.sin(x),domain:'D = ℝ',kind:'R'},
+    {formula:'y = x/2',f:x=>x/2,domain:'D = ℝ',kind:'R'},
+    {formula:'y = x√(9 − x²)/3',f:x=>x*Math.sqrt(Math.max(0,9-x*x))/3,domain:'D = [−3; 3]',kind:'closed',a:-3,b:3},
+    {formula:'y = 3x/(x² + 1)',f:x=>3*x/(x*x+1),domain:'D = ℝ',kind:'R'},
+    {formula:'y = x/(x² − 4)',f:x=>x/(x*x-4),domain:'D = ℝ \\ {−2; 2}',kind:'exclude',points:[-2,2],minX:.15},
+    {formula:'y = 1/x',f:x=>1/x,domain:'D = (−∞; 0) ∪ (0; +∞)',kind:'exclude',points:[0],minX:.15},
+    {formula:'y = tan(x)',f:x=>Math.tan(x),domain:'D = ℝ \\ {π/2 + kπ | k ∈ ℤ}',kind:'tanDomain',minX:.08,initialX:.72},
+    {formula:'y = cot(x)',f:x=>1/Math.tan(x),domain:'D = ℝ \\ {kπ | k ∈ ℤ}',kind:'cotDomain',minX:.08,initialX:1.05}];
+  let pState={type:'even',fn:evenFns[0],mx:2.3,drag:false};
+  const periodicFns=[
+    {formula:'y = 2sin(x)',f:x=>2*Math.sin(x),T:TAU,Ttext:'2π',domain:'D = ℝ'},
+    {formula:'y = 1,5cos(2x)',f:x=>1.5*Math.cos(2*x),T:Math.PI,Ttext:'π',domain:'D = ℝ'},
+    {formula:'y = sin(x/2) + 0,5',f:x=>Math.sin(x/2)+.5,T:4*Math.PI,Ttext:'4π',domain:'D = ℝ'},
+    {formula:'y = 1,4sin(3x)',f:x=>1.4*Math.sin(3*x),T:TAU/3,Ttext:'2π/3',domain:'D = ℝ'},
+    {formula:'y = cos(x) + 0,5cos(2x)',f:x=>Math.cos(x)+.5*Math.cos(2*x),T:TAU,Ttext:'2π',domain:'D = ℝ'},
+    {formula:'y = {x} = x − ⌊x⌋',f:x=>x-Math.floor(x),T:1,Ttext:'1',domain:'D = ℝ',breakJump:.6},
+    {formula:'y = tan(x)',f:x=>Math.tan(x),T:Math.PI,Ttext:'π',domain:'D = ℝ \\ {π/2 + kπ | k ∈ ℤ}',kind:'tanDomain'},
+    {formula:'y = cot(x)',f:x=>1/Math.tan(x),T:Math.PI,Ttext:'π',domain:'D = ℝ \\ {kπ | k ∈ ℤ}',kind:'cotDomain'}];
+  const M=x=>`<math xmlns="http://www.w3.org/1998/Math/MathML" display="inline"><mrow>${x}</mrow></math>`, mi=x=>`<mi>${x}</mi>`, mn=x=>`<mn>${x}</mn>`, mo=x=>`<mo>${x}</mo>`, F=(n,d)=>`<mfrac><mrow>${n}</mrow><mrow>${d}</mrow></mfrac>`, P=(a,b)=>`<msup><mrow>${a}</mrow><mn>${b}</mn></msup>`, S=x=>`<msqrt><mrow>${x}</mrow></msqrt>`, fun=(n,x)=>`<mi mathvariant="normal">${n}</mi><mo>⁡</mo><mo>(</mo>${x}<mo>)</mo>`, X=mi('x'), X2=P(X,2), PI=mi('π');
+  const formulaHTML={
+    'y = x²/4 − 1':M(`${mi('y')}${mo('=')}${F(X2,mn(4))}${mo('−')}${mn(1)}`),
+    'y = 2cos(x)':M(`${mi('y')}${mo('=')}${mn(2)}${fun('cos',X)}`),
+    'y = |x| − 2':M(`${mi('y')}${mo('=')}${mo('|')}${X}${mo('|')}${mo('−')}${mn(2)}`),
+    'y = √(9 − x²)':M(`${mi('y')}${mo('=')}${S(`${mn(9)}${mo('−')}${X2}`)}`),
+    'y = 4/(x² + 1) − 2':M(`${mi('y')}${mo('=')}${F(mn(4),`${X2}${mo('+')}${mn(1)}`)}${mo('−')}${mn(2)}`),
+    'y = 1/(x² − 4)':M(`${mi('y')}${mo('=')}${F(mn(1),`${X2}${mo('−')}${mn(4)}`)}`),
+    'y = √(x² − 4)':M(`${mi('y')}${mo('=')}${S(`${X2}${mo('−')}${mn(4)}`)}`),
+    'y = 1/√(x² − 1)':M(`${mi('y')}${mo('=')}${F(mn(1),S(`${X2}${mo('−')}${mn(1)}`))}`),
+    'y = x³/12':M(`${mi('y')}${mo('=')}${F(P(X,3),mn(12))}`),
+    'y = 2sin(x)':M(`${mi('y')}${mo('=')}${mn(2)}${fun('sin',X)}`),
+    'y = x/2':M(`${mi('y')}${mo('=')}${F(X,mn(2))}`),
+    'y = x√(9 − x²)/3':M(`${mi('y')}${mo('=')}${F(`${X}${S(`${mn(9)}${mo('−')}${X2}`)}`,mn(3))}`),
+    'y = 3x/(x² + 1)':M(`${mi('y')}${mo('=')}${F(`${mn(3)}${X}`,`${X2}${mo('+')}${mn(1)}`)}`),
+    'y = x/(x² − 4)':M(`${mi('y')}${mo('=')}${F(X,`${X2}${mo('−')}${mn(4)}`)}`),
+    'y = 1/x':M(`${mi('y')}${mo('=')}${F(mn(1),X)}`),
+    'y = tan(x)':M(`${mi('y')}${mo('=')}${fun('tan',X)}`),
+    'y = cot(x)':M(`${mi('y')}${mo('=')}${fun('cot',X)}`),
+    'y = 1,5cos(2x)':M(`${mi('y')}${mo('=')}<mn>1,5</mn>${fun('cos',`${mn(2)}${X}`)}`),
+    'y = sin(x/2) + 0,5':M(`${mi('y')}${mo('=')}${fun('sin',F(X,mn(2)))}${mo('+')}<mn>0,5</mn>`),
+    'y = 1,4sin(3x)':M(`${mi('y')}${mo('=')}<mn>1,4</mn>${fun('sin',`${mn(3)}${X}`)}`),
+    'y = cos(x) + 0,5cos(2x)':M(`${mi('y')}${mo('=')}${fun('cos',X)}${mo('+')}<mn>0,5</mn>${fun('cos',`${mn(2)}${X}`)}`),
+    'y = {x} = x − ⌊x⌋':M(`${mi('y')}${mo('=')}${mo('{')}${X}${mo('}')}${mo('=')}${X}${mo('−')}${mo('⌊')}${X}${mo('⌋')}`)};
+  const domainHTML={
+    'D = ℝ':M(`${mi('D')}${mo('=')}<mi mathvariant="double-struck">R</mi>`),
+    'D = [−3; 3]':M(`${mi('D')}${mo('=')}<mtext>[−3; 3]</mtext>`),
+    'D = ℝ \\ {−2; 2}':M(`${mi('D')}${mo('=')}<mi mathvariant="double-struck">R</mi>${mo('∖')}<mtext>{−2; 2}</mtext>`),
+    'D = (−∞; −2] ∪ [2; +∞)':M(`${mi('D')}${mo('=')}<mtext>(−∞; −2]</mtext>${mo('∪')}<mtext>[2; +∞)</mtext>`),
+    'D = (−∞; −1) ∪ (1; +∞)':M(`${mi('D')}${mo('=')}<mtext>(−∞; −1)</mtext>${mo('∪')}<mtext>(1; +∞)</mtext>`),
+    'D = (−∞; 0) ∪ (0; +∞)':M(`${mi('D')}${mo('=')}<mtext>(−∞; 0)</mtext>${mo('∪')}<mtext>(0; +∞)</mtext>`),
+    'D = ℝ \\ {π/2 + kπ | k ∈ ℤ}':M(`${mi('D')}${mo('=')}<mi mathvariant="double-struck">R</mi>${mo('∖')}${mo('{')}${F(PI,mn(2))}${mo('+')}${mi('k')}${PI}${mo('|')}${mi('k')}${mo('∈')}<mi mathvariant="double-struck">Z</mi>${mo('}')}`),
+    'D = ℝ \\ {kπ | k ∈ ℤ}':M(`${mi('D')}${mo('=')}<mi mathvariant="double-struck">R</mi>${mo('∖')}${mo('{')}${mi('k')}${PI}${mo('|')}${mi('k')}${mo('∈')}<mi mathvariant="double-struck">Z</mi>${mo('}')}`)};
+  function showMath(el,text,map){el.innerHTML=map[text]||M(`<mtext>${text}</mtext>`)}
+  let tState={fn:periodicFns[0],mx:-1,nx:2,drag:null,copy:false,shift:0,autoBranches:false,branchCount:0};
+  function scale(sz,xmin=-7,xmax=7,ymin=-4,ymax=4){const m={l:45,r:18,t:20,b:34};return {m,xmin,xmax,ymin,ymax,X:x=>m.l+(x-xmin)*(sz.w-m.l-m.r)/(xmax-xmin),Y:y=>m.t+(ymax-y)*(sz.h-m.t-m.b)/(ymax-ymin),x:px=>xmin+(px-m.l)*(xmax-xmin)/(sz.w-m.l-m.r),y:py=>ymax-(py-m.t)*(ymax-ymin)/(sz.h-m.t-m.b)}}
+  function grid(ctx,sz,s){ctx.clearRect(0,0,sz.w,sz.h);ctx.lineWidth=1;ctx.font='13px Segoe UI';ctx.textAlign='center';ctx.textBaseline='top';for(let x=Math.ceil(s.xmin);x<=s.xmax;x++){ctx.strokeStyle=x===0?colors.axis:colors.grid;ctx.beginPath();ctx.moveTo(s.X(x),s.m.t);ctx.lineTo(s.X(x),sz.h-s.m.b);ctx.stroke();if(x&&x%2===0){ctx.fillStyle='#668097';ctx.fillText(x,s.X(x),s.Y(0)+6)}}ctx.textAlign='right';ctx.textBaseline='middle';for(let y=Math.ceil(s.ymin);y<=s.ymax;y++){ctx.strokeStyle=y===0?colors.axis:colors.grid;ctx.beginPath();ctx.moveTo(s.m.l,s.Y(y));ctx.lineTo(sz.w-s.m.r,s.Y(y));ctx.stroke();if(y){ctx.fillStyle='#668097';ctx.fillText(y,s.X(0)-7,s.Y(y))}}ctx.fillStyle=colors.axis;ctx.font='bold 15px Segoe UI';ctx.textAlign='right';ctx.fillText('x',sz.w-s.m.r,s.Y(0)-12);ctx.textAlign='left';ctx.fillText('y',s.X(0)+7,s.m.t)}
+  function plot(ctx,s,fn,color=colors.curve,width=3,x1=s.xmin,x2=s.xmax,dash=[],breakJump=Infinity){ctx.save();ctx.strokeStyle=color;ctx.lineWidth=width;ctx.setLineDash(dash);ctx.beginPath();let started=false,prevY=null;for(let px=s.X(x1);px<=s.X(x2)+1;px+=1.5){let x=s.x(px),y=fn(x);if(Number.isFinite(y)&&y>=s.ymin-1&&y<=s.ymax+1){if(!started||prevY===null||Math.abs(y-prevY)>breakJump){ctx.moveTo(px,s.Y(y));started=true}else ctx.lineTo(px,s.Y(y));prevY=y}else{started=false;prevY=null}}ctx.stroke();ctx.restore()}
+  function point(ctx,s,x,y,name,color,side=1){const px=s.X(x),py=s.Y(y);ctx.fillStyle='#fff';ctx.strokeStyle=color;ctx.lineWidth=3;ctx.beginPath();ctx.arc(px,py,7,0,TAU);ctx.fill();ctx.stroke();ctx.fillStyle=color;ctx.font='bold 15px Segoe UI';ctx.textAlign=side>0?'left':'right';ctx.textBaseline='bottom';const tx=px+side*10,ty=py-9;ctx.fillText(name,tx,ty);ctx.font='14px Cambria Math';ctx.fillStyle='#17324d';ctx.textBaseline='top';ctx.fillText(`(${fmt(x)}; ${fmt(y)})`,tx,py+8)}
+  function fmt(v){if(Math.abs(v)<.005)return'0';return (Math.round(v*100)/100).toString().replace('.',',')}
+  function drawNumber(canvas,kind,a,b,fn={}){const sz=fit(canvas),c=canvas.getContext('2d'),w=sz.w,h=sz.h,y=h*.54,mid=w/2;c.clearRect(0,0,w,h);c.strokeStyle='#486780';c.lineWidth=2;c.beginPath();c.moveTo(18,y);c.lineTo(w-18,y);c.stroke();c.fillStyle='#486780';c.beginPath();c.moveTo(w-18,y);c.lineTo(w-27,y-5);c.lineTo(w-27,y+5);c.fill();c.textAlign='center';c.font='bold 14px Segoe UI';c.fillText('0',mid,y+18);c.strokeStyle='#ef4444';c.fillStyle='#ef4444';c.lineWidth=5;const X=x=>mid+x*w*.055;
+    if(kind==='R'){c.beginPath();c.moveTo(25,y);c.lineTo(w-25,y);c.stroke();c.font='bold 16px Segoe UI';c.fillText('ℝ',w-12,y-10)}
+    else if(kind==='closed'){const S=x=>mid+x*(w*.41/Math.max(Math.abs(a),Math.abs(b)));c.beginPath();c.moveTo(S(a),y);c.lineTo(S(b),y);c.stroke();[a,b].forEach(x=>{c.beginPath();c.arc(S(x),y,5,0,TAU);c.fill();c.fillText(fmt(x),S(x),y+18)})}
+    else if(kind==='outerClosed'||kind==='outerOpen'){const q=fn.c,ql=X(-q),qr=X(q);c.beginPath();c.moveTo(25,y);c.lineTo(ql,y);c.moveTo(qr,y);c.lineTo(w-25,y);c.stroke();[[-q,ql],[q,qr]].forEach(([v,px])=>{c.beginPath();c.arc(px,y,5,0,TAU);if(kind==='outerOpen'){c.fillStyle='#fff';c.fill();c.strokeStyle='#ef4444';c.lineWidth=3;c.stroke();c.fillStyle='#ef4444'}else c.fill();c.fillText(fmt(v),px,y+18)})}
+    else if(kind==='exclude'){c.beginPath();c.moveTo(25,y);c.lineTo(w-25,y);c.stroke();(fn.points||[]).forEach(v=>{c.fillStyle='#fff';c.beginPath();c.arc(X(v),y,5,0,TAU);c.fill();c.strokeStyle='#ef4444';c.lineWidth=3;c.stroke();c.fillStyle='#ef4444';c.fillText(fmt(v),X(v),y+18)})}
+    else if(kind==='tanDomain'||kind==='cotDomain'){c.beginPath();c.moveTo(25,y);c.lineTo(w-25,y);c.stroke();const vals=[];if(kind==='tanDomain'){for(let k=-3;k<=3;k++)vals.push(Math.PI/2+k*Math.PI)}else{for(let k=-3;k<=3;k++)vals.push(k*Math.PI)}vals.filter(v=>X(v)>25&&X(v)<w-25).forEach(v=>{c.fillStyle='#fff';c.beginPath();c.arc(X(v),y,5,0,TAU);c.fill();c.strokeStyle='#ef4444';c.lineWidth=3;c.stroke();c.fillStyle='#ef4444'});c.font='bold 13px Cambria Math';c.fillText(kind==='tanDomain'?'π/2 + kπ':'kπ',w-75,y+19)}
+    c.strokeStyle='#f59e0b';c.setLineDash([4,3]);c.beginPath();c.moveTo(mid,5);c.lineTo(mid,h-5);c.stroke();c.setLineDash([]);c.fillStyle='#f59e0b';c.font='bold 12px Segoe UI';c.fillText('tâm đối xứng',mid,11)}
+  function setParity(type){const list=type==='even'?evenFns:oddFns,old=pState.fn;let fn=choose(list);if(list.length>1)while(fn===old)fn=choose(list);const low=fn.minX??.4,high=fn.kind==='closed'?fn.b-.25:Math.max(low+.7,3.1);pState={type,fn,mx:fn.initialX??rr(low,high),drag:false};showMath($('#pFormula'),fn.formula,formulaHTML);showMath($('#pDomain'),fn.domain,domainHTML);$('#pTitle').textContent=type==='even'?'Đồ thị hàm chẵn':'Đồ thị hàm lẻ';$('#pProperty').innerHTML=type==='even'?'D đối xứng qua 0 và <b>f(−x) = f(x)</b>.<br>Đồ thị đối xứng qua trục <b>Oy</b>.':'D đối xứng qua 0 và <b>f(−x) = −f(x)</b>.<br>Đồ thị đối xứng qua gốc <b>O</b>.';drawNumber($('#pNumber'),fn.kind,fn.a,fn.b,fn);drawParity();toast(type==='even'?'Đã tạo một hàm chẵn ngẫu nhiên':'Đã tạo một hàm lẻ ngẫu nhiên')}
+  function drawParity(){const sz=fit(parityCanvas),s=scale(sz),ctx=PC,fn=pState.fn;grid(ctx,sz,s);if(fn.kind==='closed')plot(ctx,s,fn.f,colors.curve,3,fn.a,fn.b);else plot(ctx,s,fn.f);const x=pState.mx,y=fn.f(x),x2=-x,y2=fn.f(x2);ctx.save();ctx.strokeStyle=pState.type==='even'?colors.red:colors.orange;ctx.lineWidth=2;ctx.setLineDash([7,5]);ctx.beginPath();ctx.moveTo(s.X(x),s.Y(y));ctx.lineTo(s.X(x2),s.Y(y2));ctx.stroke();ctx.restore();point(ctx,s,x,y,'M',colors.green,1);point(ctx,s,x2,y2,'M′',pState.type==='even'?colors.red:colors.orange,-1);pState.s=s}
+  function pointer(e,canvas){const r=canvas.getBoundingClientRect();return{x:e.clientX-r.left,y:e.clientY-r.top}}
+  parityCanvas.addEventListener('pointerdown',e=>{const p=pointer(e,parityCanvas),s=pState.s,y=pState.fn.f(pState.mx);if(Math.hypot(p.x-s.X(pState.mx),p.y-s.Y(y))<22){pState.drag=true;parityCanvas.setPointerCapture(e.pointerId)}});parityCanvas.addEventListener('pointermove',e=>{if(!pState.drag)return;let x=pState.s.x(pointer(e,parityCanvas).x),min=pState.fn.minX??.12;x=Math.max(min,Math.min(pState.fn.kind==='closed'?pState.fn.b:6.5,x));if(pState.fn.kind==='exclude'&&pState.fn.points.some(q=>Math.abs(x-q)<.08))x+=.1;const y=pState.fn.f(x);if(!Number.isFinite(y)||Math.abs(y)>3.65)return;pState.mx=x;drawParity()});parityCanvas.addEventListener('pointerup',()=>pState.drag=false);parityCanvas.addEventListener('pointercancel',()=>pState.drag=false);
+  function randomPeriodic(){let fn=choose(periodicFns);if(periodicFns.length>1)while(fn===tState.fn)fn=choose(periodicFns);let mx=(fn.kind==='tanDomain'||fn.kind==='cotDomain')?-fn.T*.25:-fn.T*.42;tState={fn,mx,nx:mx+fn.T,drag:null,copy:false,shift:0,autoBranches:false,branchCount:0};showMath($('#tFormula'),fn.formula,formulaHTML);showMath($('#tDomain'),fn.domain,domainHTML);$('#periodAnswer').classList.remove('show');drawNumber($('#tNumber'),fn.kind||'R',null,null,fn);drawPeriodic();toast('Đã tạo một hàm tuần hoàn ngẫu nhiên')}
+  function drawPeriodic(){const sz=fit(periodCanvas),st=tState;let lo=Math.min(-4*Math.PI,st.mx,st.nx),hi=Math.max(4*Math.PI,st.mx,st.nx);if(st.copy){lo=Math.min(lo,Math.min(st.mx,st.nx)+st.shift);hi=Math.max(hi,Math.max(st.mx,st.nx)+st.shift)}const span=hi-lo,pad=Math.max(.5,span*.045),s=scale(sz,lo-pad,hi+pad,-3.5,3.5),ctx=TC,jump=st.fn.breakJump??Infinity;grid(ctx,sz,s);plot(ctx,s,st.fn.f,colors.curve,2.6,s.xmin,s.xmax,[],jump);let a=Math.min(st.mx,st.nx),b=Math.max(st.mx,st.nx);plot(ctx,s,st.fn.f,colors.orange,5,a,b,[],jump);if(st.fn.breakJump){ctx.save();ctx.strokeStyle=colors.curve;ctx.lineWidth=2;for(let n=Math.ceil(s.xmin);n<=Math.floor(s.xmax);n++){ctx.fillStyle='#fff';ctx.beginPath();ctx.arc(s.X(n),s.Y(1),4.5,0,TAU);ctx.fill();ctx.stroke();ctx.fillStyle=colors.curve;ctx.beginPath();ctx.arc(s.X(n),s.Y(0),4.5,0,TAU);ctx.fill()}ctx.restore()}if(st.autoBranches){ctx.save();ctx.strokeStyle='#ef444499';ctx.lineWidth=1.5;ctx.setLineDash([6,5]);for(let j=0;j<=st.branchCount;j++){const bx=a+j*st.fn.T;ctx.beginPath();ctx.moveTo(s.X(bx),s.m.t);ctx.lineTo(s.X(bx),sz.h-s.m.b);ctx.stroke()}ctx.restore()}if(st.copy){plot(ctx,s,x=>st.fn.f(x-st.shift),colors.purple,4,a+st.shift,b+st.shift,[8,4],jump);const base=st.autoBranches?a+st.fn.T/2:(a+b)/2,hx=s.X(base+st.shift),hy=s.Y(st.fn.f(base));ctx.fillStyle=colors.purple;ctx.beginPath();ctx.roundRect(hx-25,hy-17,50,30,8);ctx.fill();ctx.fillStyle='#fff';ctx.font='bold 19px Segoe UI';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('⇆',hx,hy-2);st.handle={x:hx,y:hy}}
+    if(!st.autoBranches){point(ctx,s,st.mx,st.fn.f(st.mx),'M',colors.green,st.mx<st.nx?-1:1);point(ctx,s,st.nx,st.fn.f(st.nx),'N',colors.red,st.nx>st.mx?1:-1)}st.s=s}
+  periodCanvas.addEventListener('pointerdown',e=>{const p=pointer(e,periodCanvas),s=tState.s,near=x=>Math.hypot(p.x-s.X(x),p.y-s.Y(tState.fn.f(x)))<24;if(tState.copy&&tState.handle&&Math.hypot(p.x-tState.handle.x,p.y-tState.handle.y)<30)tState.drag='copy';else if(!tState.autoBranches&&near(tState.mx))tState.drag='m';else if(!tState.autoBranches&&near(tState.nx))tState.drag='n';if(tState.drag)periodCanvas.setPointerCapture(e.pointerId)});
+  periodCanvas.addEventListener('pointermove',e=>{if(!tState.drag)return;const x=Math.max(tState.s.xmin,Math.min(tState.s.xmax,tState.s.x(pointer(e,periodCanvas).x)));if(tState.drag==='m'||tState.drag==='n'){const y=tState.fn.f(x);if(!Number.isFinite(y)||Math.abs(y)>3.2)return;if(tState.drag==='m')tState.mx=x;else tState.nx=x}else{const mid=(Math.min(tState.mx,tState.nx)+Math.max(tState.mx,tState.nx))/2;tState.shift=x-mid}drawPeriodic()});periodCanvas.addEventListener('pointerup',()=>tState.drag=null);periodCanvas.addEventListener('pointercancel',()=>tState.drag=null);
+  $('#evenBtn').onclick=()=>setParity('even');$('#oddBtn').onclick=()=>setParity('odd');$('#randomPeriodic').onclick=randomPeriodic;
+  $('#extractBtn').onclick=()=>{if(Math.abs(tState.nx-tState.mx)<.15){toast('Hãy kéo M và N cách xa nhau hơn');return}tState.copy=true;tState.shift=tState.fn.T;drawPeriodic();toast('Đã tạo bản sao - kéo tay nắm ⇆ để di chuyển')};
+  function selectParts(k){const branch=tState.fn.kind==='tanDomain'||tState.fn.kind==='cotDomain';tState.copy=false;tState.branchCount=branch?k:0;tState.autoBranches=branch;if(branch){tState.mx=tState.fn.kind==='tanDomain'?-Math.PI/2:0;tState.nx=tState.mx+k*tState.fn.T;toast(k===1?'Đã lấy một nhánh ứng với một chu kì':`Đã lấy ${k} nhánh ứng với ${k} chu kì`)}else{tState.nx=tState.mx+k*tState.fn.T;toast(k===1?'Đã chọn đúng một chu kì':`Đã chọn chính xác ${k} chu kì`)}drawPeriodic()}
+  $('#oneBtn').onclick=()=>selectParts(1);
+  $('#kBtn').onclick=()=>{let k=Math.round(Number($('#kInput').value));if(!Number.isFinite(k)||k<1){k=1;$('#kInput').value=1}if(k>6){k=6;$('#kInput').value=6}selectParts(k)};
+  $('#periodBtn').onclick=()=>{const e=$('#periodAnswer');e.innerHTML=`<span>Chu kì <span class="mi">T</span> = ${tState.fn.Ttext}</span>`;e.classList.add('show');toast('Đã xác định chu kì của hàm số')};
+  document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tab,.lab').forEach(e=>e.classList.remove('active'));b.classList.add('active');$('#'+b.dataset.tab).classList.add('active');requestAnimationFrame(()=>{const fn=b.dataset.tab==='parity'?pState.fn:tState.fn;drawNumber(b.dataset.tab==='parity'?$('#pNumber'):$('#tNumber'),fn.kind||'R',fn.a,fn.b,fn);b.dataset.tab==='parity'?drawParity():drawPeriodic()})});
+  const redraw=()=>{if($('#parity').classList.contains('active')){drawNumber($('#pNumber'),pState.fn.kind,pState.fn.a,pState.fn.b,pState.fn);drawParity()}else{drawNumber($('#tNumber'),tState.fn.kind||'R',null,null,tState.fn);drawPeriodic()}};new ResizeObserver(redraw).observe($('.app'));window.addEventListener('resize',redraw);
+  requestAnimationFrame(()=>{showMath($('#pFormula'),pState.fn.formula,formulaHTML);showMath($('#pDomain'),pState.fn.domain,domainHTML);showMath($('#tFormula'),tState.fn.formula,formulaHTML);showMath($('#tDomain'),tState.fn.domain,domainHTML);drawNumber($('#pNumber'),'R');drawParity()});
+})();
+</script>
+</body>
+</html>

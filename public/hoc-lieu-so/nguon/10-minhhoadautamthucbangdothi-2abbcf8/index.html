@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Minh họa dấu tam thức bậc hai bằng đồ thị</title>
+<style>
+  *{box-sizing:border-box}
+  :root{
+    --bg:#eef4ff;--panel:#ffffff;--panel-soft:#f7faff;--ink:#172033;--muted:#667085;
+    --primary:#2563eb;--primary-dark:#1d4ed8;--accent:#f59e0b;--success:#16a34a;
+    --danger:#dc2626;--line:#d9e2f1;--axis:#334155;--curve:#2563eb;--guide:#f59e0b;
+    --shadow:0 14px 36px rgba(43,68,120,.14)
+  }
+  html,body{height:100%;margin:0;background:linear-gradient(135deg,#edf4ff,#f8fbff);color:var(--ink);font-family:Inter,Segoe UI,Arial,sans-serif}
+  body{overflow:hidden}
+  .app{height:100vh;display:grid;grid-template-columns:minmax(470px,56%) minmax(430px,44%);gap:16px;padding:16px;min-width:980px}
+  .left,.right{position:relative;min-width:0;overflow:hidden;background:rgba(255,255,255,.96);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow)}
+  .left{padding:22px 24px 18px;display:flex;flex-direction:column}
+  .right{display:flex;flex-direction:column;padding:10px 12px 12px}
+  .controls{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:14px}
+  .coef{display:flex;align-items:center;gap:9px;background:var(--panel-soft);border:1px solid #dce6f5;border-radius:14px;padding:10px 12px;font-size:18px;font-weight:700;color:#344054}
+  .coef input{min-width:0;width:100%;height:40px;border:1.5px solid #cbd5e1;border-radius:9px;font:600 19px/1 Arial,sans-serif;padding:6px 10px;background:#fff;color:var(--ink);outline:none;transition:.18s}
+  .coef input:focus{border-color:var(--primary);box-shadow:0 0 0 4px rgba(37,99,235,.12)}
+  .formula{min-height:62px;display:flex;align-items:center;justify-content:center;text-align:center;font:25px Georgia,'Times New Roman',serif;background:linear-gradient(90deg,#eff6ff,#f8fbff);border:1px solid #dbeafe;border-radius:16px;padding:12px 16px;margin-bottom:12px}
+  .formula .label{font:700 17px Inter,Segoe UI,Arial,sans-serif;color:var(--primary);margin-right:8px;text-transform:uppercase;letter-spacing:.02em}
+  .delta-row{display:grid;grid-template-columns:1fr auto;align-items:center;gap:12px;margin-bottom:12px}
+  .delta{font:24px Georgia,'Times New Roman',serif;background:#fff8e8;border:1px solid #fde3a7;border-radius:14px;padding:13px 16px;color:#7c4a03}
+  .actions{display:flex;gap:10px;align-items:center}
+  button{border:0;padding:12px 15px;font-size:14px;font-weight:700;border-radius:11px;cursor:pointer;transition:.18s;box-shadow:0 6px 14px rgba(37,99,235,.16)}
+  #drawBtn{background:var(--primary);color:#fff}
+  #drawBtn:hover{background:var(--primary-dark);transform:translateY(-1px)}
+  #signBtn{background:#eaf2ff;color:#1d4ed8;border:1px solid #c7d8ff;box-shadow:none}
+  #signBtn:hover{background:#dce9ff;transform:translateY(-1px)}
+  .c-slider{display:grid;grid-template-columns:auto 1fr 54px;align-items:center;gap:12px;background:var(--panel-soft);border:1px solid #dde7f4;border-radius:14px;padding:12px 14px;font-size:14px;font-weight:700;color:#475467}
+  .c-slider input{width:100%;accent-color:var(--primary)}
+  #cValue{display:inline-flex;justify-content:center;align-items:center;min-height:34px;border-radius:9px;background:#fff;border:1px solid #d7e0ec;color:var(--primary);font-size:16px}
+  .sign-area{flex:1;display:flex;align-items:center;justify-content:center;min-height:250px;padding-top:14px}
+  .sign-wrap{width:100%;background:#fbfdff;border:1px solid #dfe8f3;border-radius:18px;padding:22px 20px;box-shadow:inset 0 1px 0 #fff}
+  .sign-table{width:100%;border-collapse:collapse;table-layout:fixed;font:21px Georgia,'Times New Roman',serif;text-align:center;color:#172033}
+  .sign-table th{font-weight:normal;width:28%;background:#f1f6ff}
+  .sign-table td,.sign-table th{height:46px;padding:0 7px}
+  .sign-table tr:first-child{border-bottom:2px solid #64748b}
+  .sign-table th{border-right:2px solid #64748b}
+  .sign-table .fx{font:700 16px Inter,Segoe UI,Arial,sans-serif;white-space:nowrap;color:#1e3a8a}
+  .summary{font:15px/1.5 Inter,Segoe UI,Arial,sans-serif;text-align:center;margin-top:16px;color:#475467;background:#fff;border-radius:10px;padding:10px 12px}
+  .hidden{display:none!important}
+  .plot-shell{flex:1;min-height:0;position:relative;border-radius:16px;overflow:hidden;background:linear-gradient(#ffffff,#fbfdff);border:1px solid #dce5f1}
+  #plot{width:100%;height:100%;display:block;touch-action:none;cursor:default;user-select:none}
+  .instruction{min-height:54px;display:flex;align-items:center;justify-content:center;margin-top:10px;padding:10px 14px;border-radius:14px;background:#fff7e8;color:#b45309;font-size:16px;font-weight:700;text-align:center;border:1px solid #fde1a8}
+  .axis{stroke:var(--axis);stroke-width:1.35}
+  .tick{stroke:#64748b;stroke-width:1}
+  .tick-label{font-size:14px;fill:#475569;font-family:Inter,Segoe UI,Arial,sans-serif}
+  .curve{fill:none;stroke:var(--curve);stroke-width:3.2;stroke-linecap:round}
+  .guide{stroke:var(--guide);stroke-width:2.2;stroke-dasharray:7 5}
+  .point{fill:var(--accent);stroke:#fff;stroke-width:3;cursor:ew-resize;filter:drop-shadow(0 3px 4px rgba(0,0,0,.25))}
+  .xhandle{fill:#7c3aed;stroke:#fff;stroke-width:2.5;cursor:ew-resize;filter:drop-shadow(0 3px 4px rgba(0,0,0,.22))}
+  .drag-hit{fill:transparent;cursor:ew-resize}
+  .root{fill:#0f766e;stroke:#fff;stroke-width:2}
+  .graph-label{font-size:20px;fill:#172033;font-style:italic}
+  .coord-label{font-size:18px;fill:#172033;font-weight:700;font-family:Inter,Segoe UI,Arial,sans-serif;paint-order:stroke;stroke:#fff;stroke-width:5;stroke-linejoin:round}
+  .root-label{font-size:18px;fill:#0f172a;font-family:Georgia,'Times New Roman',serif;paint-order:stroke;stroke:#fff;stroke-width:4}
+  .arrow{fill:var(--axis)}
+  @media(max-width:1000px){body{overflow:auto}.app{min-width:0;height:auto;grid-template-columns:1fr;padding:10px}.left,.right{min-height:520px}.plot-shell{height:500px}.controls{gap:8px}.delta-row{grid-template-columns:1fr}.actions{justify-content:center}}
+</style>
+</head>
+<body>
+<div class="app">
+  <section class="left">
+    <div class="controls">
+      <label class="coef">a=<input id="a" value="-1" inputmode="decimal" aria-label="Hệ số a"></label>
+      <label class="coef">b=<input id="b" value="2" inputmode="decimal" aria-label="Hệ số b"></label>
+      <label class="coef">c=<input id="c" value="3" inputmode="decimal" aria-label="Hệ số c"></label>
+    </div>
+    <div id="formula" class="formula"><span class="label">Tam thức:</span> y = −x² + 2x + 3</div>
+    <div class="delta-row">
+      <div id="delta" class="delta">Δ = b² − 4ac = 16</div>
+      <div class="actions">
+        <button id="drawBtn">Hiển thị đồ thị</button>
+        <button id="signBtn">Bảng xét dấu</button>
+      </div>
+    </div>
+    <div class="c-slider"><span>Điều chỉnh c:</span><input id="cSlider" type="range" min="-10" max="10" step="0.1" value="3"><span id="cValue">3</span></div>
+    <div id="signArea" class="sign-area hidden">
+      <div class="sign-wrap">
+        <div id="signTable"></div>
+        <div id="summary" class="summary"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="right">
+    <div class="plot-shell"><svg id="plot" viewBox="0 0 580 500" role="img" aria-label="Đồ thị parabol tương tác"></svg></div>
+    <div class="instruction">Kéo&nbsp; x &nbsp;để quan sát sự thay đổi của&nbsp; y &nbsp;tương ứng</div>
+  </section>
+</div>
+<script>
+const $=s=>document.querySelector(s);
+const state={a:-1,b:2,c:3,probeX:2,drawn:true,signShown:false};
+let plotMap=null;
+let draggingProbe=false;
+const EPS=1e-9;
+function parseNum(v){const n=Number(String(v).trim().replace(/\s+/g,'').replace(',','.'));return Number.isFinite(n)?n:null}
+function fmt(n,d=3){if(Math.abs(n)<EPS)n=0;return Number(n.toFixed(d)).toString().replace('.',',')}
+function coefTerm(k,variable,first=false){
+  if(Math.abs(k)<EPS)return '';
+  const neg=k<0, abs=Math.abs(k), sign=neg?'−':(first?'':'+');
+  const mag=(abs===1&&variable)?'':fmt(abs);
+  return sign+mag+variable;
+}
+function polynomialText(){return (coefTerm(state.a,'x²',true)+coefTerm(state.b,'x')+coefTerm(state.c,'')).replace(/^\+/,'')||'0'}
+function f(x){return state.a*x*x+state.b*x+state.c}
+function roots(){
+  const D=state.b*state.b-4*state.a*state.c;
+  if(D>EPS){const s=Math.sqrt(D);return {D,values:[(-state.b-s)/(2*state.a),(-state.b+s)/(2*state.a)].sort((m,n)=>m-n)}}
+  if(Math.abs(D)<=EPS)return {D:0,values:[-state.b/(2*state.a)]};
+  return {D,values:[]};
+}
+function read(){
+  const a=parseNum($('#a').value),b=parseNum($('#b').value),c=parseNum($('#c').value);
+  if(a===null||b===null||c===null||Math.abs(a)<EPS){alert('Vui lòng nhập a, b, c hợp lệ và a khác 0.');return false}
+  Object.assign(state,{a,b,c});
+  $('#formula').innerHTML='<span class="label">Tam thức:</span> y = '+polynomialText();
+  const {D}=roots(); $('#delta').textContent='Δ = b² − 4ac = '+fmt(D);
+  return true;
+}
+function syncFormula(){
+  const a=parseNum($('#a').value),b=parseNum($('#b').value),c=parseNum($('#c').value);
+  if(a===null||b===null||c===null)return;
+  Object.assign(state,{a,b,c});
+  $('#formula').innerHTML='<span class="label">Tam thức:</span> y = '+polynomialText();
+}
+['a','b','c'].forEach(id=>$('#'+id).addEventListener('input',()=>{syncFormula();if(id==='c'){const v=parseNum($('#c').value);if(v!==null){$('#cSlider').value=Math.max(-10,Math.min(10,v));$('#cValue').textContent=fmt(v)}}}));
+$('#cSlider').addEventListener('input',e=>{
+  const v=Number(e.target.value);$('#c').value=fmt(v);$('#cValue').textContent=fmt(v);syncFormula();
+  if(state.drawn){read();drawPlot(); if(state.signShown)renderSign();}
+});
+$('#drawBtn').addEventListener('click',()=>{
+  if(!read())return;
+  state.drawn=true;
+  state.signShown=false;
+  $('#signArea').classList.add('hidden');
+  drawPlot();
+});
+$('#signBtn').addEventListener('click',()=>{
+  if(!read())return;
+  state.signShown=true;
+  renderSign();
+  $('#signArea').classList.remove('hidden');
+});
+function renderSign(){
+  const {D,values}=roots(),same=state.a>0?'+':'−',opp=state.a>0?'−':'+';
+  let h='',s='';
+  if(D>EPS){
+    const [x1,x2]=values;
+    h=`<table class="sign-table"><tr><th><i>x</i></th><td>−∞</td><td><i>x</i><sub>1</sub></td><td><i>x</i><sub>2</sub></td><td>+∞</td></tr><tr><th class="fx">y = ${polynomialText()}</th><td>${same}</td><td>0</td><td>${opp}&nbsp;&nbsp;&nbsp;&nbsp;0</td><td>${same}</td></tr></table>`;
+    s=`x₁ = ${fmt(x1)}, x₂ = ${fmt(x2)}. Tam thức ${same==='+'?'dương':'âm'} ngoài khoảng hai nghiệm và ${opp==='+'?'dương':'âm'} trong khoảng hai nghiệm.`;
+  }else if(Math.abs(D)<=EPS){
+    const x0=values[0];
+    h=`<table class="sign-table"><tr><th><i>x</i></th><td>−∞</td><td><i>x</i><sub>0</sub></td><td>+∞</td></tr><tr><th class="fx">y = ${polynomialText()}</th><td>${same}</td><td>0</td><td>${same}</td></tr></table>`;
+    s=`x₀ = ${fmt(x0)} là nghiệm kép. Tam thức cùng dấu với a ở mọi x ≠ x₀.`;
+  }else{
+    h=`<table class="sign-table"><tr><th><i>x</i></th><td>−∞</td><td>+∞</td></tr><tr><th class="fx">y = ${polynomialText()}</th><td colspan="2">${same}</td></tr></table>`;
+    s=`Δ < 0 nên tam thức không có nghiệm thực và luôn cùng dấu với a.`;
+  }
+  $('#signTable').innerHTML=h;$('#summary').textContent=s;
+}
+function drawPlot(){
+  const svg=$('#plot'),W=580,H=500;
+  const {D,values}=roots();
+  let xmin=-6,xmax=5;
+  const xv=-state.b/(2*state.a),yv=f(xv);
+  if(values.length===2){xmin=Math.min(xmin,values[0]-2);xmax=Math.max(xmax,values[1]+2)}
+  xmin=Math.floor(xmin);xmax=Math.ceil(xmax);
+  const samples=[];for(let i=0;i<=500;i++){const x=xmin+(xmax-xmin)*i/500;samples.push(f(x))}
+  let ymin=Math.min(-2,...samples),ymax=Math.max(5,...samples);
+  if(ymax-ymin<7){const mid=(ymax+ymin)/2;ymin=mid-3.5;ymax=mid+3.5}
+  const cap=18;ymin=Math.max(-cap,Math.floor(ymin-1));ymax=Math.min(cap,Math.ceil(ymax+1));
+  const L=40,R=14,T=20,B=42;
+  const X=x=>L+(x-xmin)/(xmax-xmin)*(W-L-R);
+  const Y=y=>H-B-(y-ymin)/(ymax-ymin)*(H-T-B);
+  const xAxis=Y(0),yAxis=X(0);
+  let h='';
+  h+=`<line class="axis" x1="${L}" y1="${xAxis}" x2="${W-6}" y2="${xAxis}"/><polygon class="arrow" points="${W-6},${xAxis} ${W-14},${xAxis-5} ${W-14},${xAxis+5}"/>`;
+  h+=`<line class="axis" x1="${yAxis}" y1="${H-B}" x2="${yAxis}" y2="6"/><polygon class="arrow" points="${yAxis},6 ${yAxis-5},14 ${yAxis+5},14"/>`;
+  for(let x=Math.ceil(xmin);x<=Math.floor(xmax);x++){
+    if(x===0)continue;h+=`<line class="tick" x1="${X(x)}" y1="${xAxis-3}" x2="${X(x)}" y2="${xAxis+3}"/><text class="tick-label" x="${X(x)-5}" y="${xAxis+18}">${x}</text>`;
+  }
+  const yStep=(ymax-ymin>12)?2:1;
+  for(let y=Math.ceil(ymin/yStep)*yStep;y<=ymax;y+=yStep){
+    if(y===0)continue;h+=`<line class="tick" x1="${yAxis-3}" y1="${Y(y)}" x2="${yAxis+3}" y2="${Y(y)}"/><text class="tick-label" x="${yAxis-18}" y="${Y(y)+5}">${y}</text>`;
+  }
+  h+=`<text class="tick-label" x="${yAxis-17}" y="${xAxis+18}">0</text>`;
+  let d='',started=false;
+  for(let i=0;i<=900;i++){
+    const x=xmin+(xmax-xmin)*i/900,y=f(x);
+    if(y<ymin-1||y>ymax+1){started=false;continue}
+    d+=(started?'L':'M')+X(x).toFixed(2)+' '+Y(y).toFixed(2)+' ';started=true;
+  }
+  h+=`<path class="curve" d="${d}"/>`;
+  values.forEach((r,i)=>{if(r>=xmin&&r<=xmax){h+=`<circle class="root" cx="${X(r)}" cy="${xAxis}" r="4.8"/><text class="root-label" x="${X(r)-28}" y="${xAxis-10}">x<tspan baseline-shift="sub" font-size="14">${values.length===1?'0':i+1}</tspan></text>`}});
+  state.probeX=Math.max(xmin,Math.min(xmax,state.probeX));
+  const px=state.probeX,py=f(px),cx=X(px),cy=Y(Math.max(ymin,Math.min(ymax,py)));
+  if(py>=ymin&&py<=ymax){
+    h+=`<line class="guide" x1="${cx}" y1="${xAxis}" x2="${cx}" y2="${cy}"/><line class="guide" x1="${yAxis}" y1="${cy}" x2="${cx}" y2="${cy}"/>`;
+    h+=`<circle id="probePoint" class="point" cx="${cx}" cy="${cy}" r="6"/>`;
+    h+=`<text class="coord-label" x="${yAxis+8}" y="${cy-14}">y = ${fmt(py)}</text>`;
+  }
+  h+=`<circle id="xHandle" class="xhandle" cx="${cx}" cy="${xAxis}" r="5"/><text class="coord-label" x="${cx+8}" y="${xAxis-8}">x = ${fmt(px)}</text>`;
+  h+=`<rect id="dragHit" class="drag-hit" x="${Math.max(L,cx-18)}" y="${Math.min(xAxis,cy)-18}" width="36" height="${Math.abs(xAxis-cy)+36}" rx="12"/>`;
+  svg.innerHTML=h;
+  plotMap={W,L,R,xmin,xmax};
+}
+function pointerToProbeX(e){
+  if(!plotMap)return;
+  const svg=$('#plot'),r=svg.getBoundingClientRect();
+  const vx=(e.clientX-r.left)/r.width*plotMap.W;
+  const clamped=Math.max(plotMap.L,Math.min(plotMap.W-plotMap.R,vx));
+  state.probeX=plotMap.xmin+(clamped-plotMap.L)/(plotMap.W-plotMap.L-plotMap.R)*(plotMap.xmax-plotMap.xmin);
+  drawPlot();
+}
+$('#plot').addEventListener('pointerdown',e=>{
+  const id=e.target.id;
+  if(id==='probePoint'||id==='xHandle'||id==='dragHit'){
+    draggingProbe=true;
+    e.preventDefault();
+    pointerToProbeX(e);
+  }
+});
+window.addEventListener('pointermove',e=>{if(draggingProbe){e.preventDefault();pointerToProbeX(e)}},{passive:false});
+window.addEventListener('pointerup',()=>draggingProbe=false);
+window.addEventListener('pointercancel',()=>draggingProbe=false);
+read();renderSign();drawPlot();
+</script>
+</body>
+</html>

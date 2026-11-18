@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk2-6D2-q009-v4",
+  "source_fingerprint": "da378cf1d0dd7c12cb804aa7fe7c307542477c7606834d2c2793bde8fd01844c",
+  "variants": [
+    {
+      "id": "dc-12-hk2-6D2-q009-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Giả sử có một loại bệnh mà tỉ lệ người mắc bệnh là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>2</mn><mi>%</mi></mrow></semantics></math>. Giả sử có một loại xét nghiệm, mà ai mắc bệnh khi xét nghiệm cũng có phản ứng dương tính, nhưng tỉ lệ phản ứng dương tính giả là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn><mi>%</mi></mrow></semantics></math> (tức là trong số những người không bị bệnh có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn><mi>%</mi></mrow></semantics></math> số người xét nghiệm lại có phản ứng dương tính). Chọn ngẫu nhiên một người xét nghiệm. Giả sử người được chọn có phản ứng dương tính, xác suất người đó bị bệnh là bao nhiêu phần trăm?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>77</mn><mi>%</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>77</mn><mi>%</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn><mi>%</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>20</mn><mi>%</mi></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>002</mn><mo>⋅</mo><mn>1</mn><mo>+</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>998</mn><mo>⋅</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>04</mn><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>04192</mn></mrow></semantics></math>.<br>Theo công thức Bayes: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mi>B</mi></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>002</mn></mrow><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>04192</mn></mrow></mfrac><mo>≈</mo><mn>4</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>77</mn><mi>%</mi></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-6D2-q009-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Giả sử có một loại bệnh mà tỉ lệ người mắc bệnh là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn><mi>%</mi></mrow></semantics></math>. Giả sử có một loại xét nghiệm, mà ai mắc bệnh khi xét nghiệm cũng có phản ứng dương tính, nhưng tỉ lệ phản ứng dương tính giả là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mi>%</mi></mrow></semantics></math> (tức là trong số những người không bị bệnh có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mi>%</mi></mrow></semantics></math> số người xét nghiệm lại có phản ứng dương tính). Chọn ngẫu nhiên một người xét nghiệm. Giả sử người được chọn có phản ứng dương tính, xác suất người đó bị bệnh là bao nhiêu phần trăm?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>21</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>08</mn><mi>%</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mi>%</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>20</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>08</mn><mi>%</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>10</mn><mi>%</mi></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>005</mn><mo>⋅</mo><mn>1</mn><mo>+</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>995</mn><mo>⋅</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>02</mn><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>0249</mn></mrow></semantics></math>.<br>Theo công thức Bayes: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mi>B</mi></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>005</mn></mrow><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>0249</mn></mrow></mfrac><mo>≈</mo><mn>20</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>08</mn><mi>%</mi></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-6D2-q009-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Giả sử có một loại bệnh mà tỉ lệ người mắc bệnh là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>4</mn><mi>%</mi></mrow></semantics></math>. Giả sử có một loại xét nghiệm, mà ai mắc bệnh khi xét nghiệm cũng có phản ứng dương tính, nhưng tỉ lệ phản ứng dương tính giả là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn><mi>%</mi></mrow></semantics></math> (tức là trong số những người không bị bệnh có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn><mi>%</mi></mrow></semantics></math> số người xét nghiệm lại có phản ứng dương tính). Chọn ngẫu nhiên một người xét nghiệm. Giả sử người được chọn có phản ứng dương tính, xác suất người đó bị bệnh là bao nhiêu phần trăm?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>8</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>43</mn><mi>%</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn><mi>%</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>25</mn><mi>%</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>7</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>43</mn><mi>%</mi></mrow></semantics></math>"
+        }
+      ],
+      "correct": "D",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>004</mn><mo>⋅</mo><mn>1</mn><mo>+</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>996</mn><mo>⋅</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>05</mn><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>0538</mn></mrow></semantics></math>.<br>Theo công thức Bayes: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mi>B</mi></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>004</mn></mrow><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>0538</mn></mrow></mfrac><mo>≈</mo><mn>7</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>43</mn><mi>%</mi></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-6D2-q009-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Giả sử có một loại bệnh mà tỉ lệ người mắc bệnh là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>2</mn><mi>%</mi></mrow></semantics></math>. Giả sử có một loại xét nghiệm, mà ai mắc bệnh khi xét nghiệm cũng có phản ứng dương tính, nhưng tỉ lệ phản ứng dương tính giả là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn><mi>%</mi></mrow></semantics></math> (tức là trong số những người không bị bệnh có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn><mi>%</mi></mrow></semantics></math> số người xét nghiệm lại có phản ứng dương tính). Chọn ngẫu nhiên một người xét nghiệm. Giả sử người được chọn có phản ứng dương tính, xác suất người đó bị bệnh là bao nhiêu phần trăm?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>85</mn><mi>%</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>85</mn><mi>%</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn><mi>%</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>25</mn><mi>%</mi></mrow></semantics></math>"
+        }
+      ],
+      "correct": "A",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>002</mn><mo>⋅</mo><mn>1</mn><mo>+</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>998</mn><mo>⋅</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>05</mn><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>0519</mn></mrow></semantics></math>.<br>Theo công thức Bayes: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mi>B</mi></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>002</mn></mrow><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>0519</mn></mrow></mfrac><mo>≈</mo><mn>3</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>85</mn><mi>%</mi></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

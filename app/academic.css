@@ -1,0 +1,31 @@
+/* Shared academic palette for the library and teaching workspace. */
+:root{--bg:#f6f8fa;--ink:#18374e;--muted:#596c79;--line:#dfe7ed;--teal:#16675d;--teal-dark:#105248;--soft:#edf6f3;--shadow:0 1px 3px #173c4808}
+.brand-mark,.btn.primary{background:#16675d}
+.brand b,.page-heading h1,.section-top h2{color:#18374e}
+.sidebar{border-right-color:var(--line)}
+.sidebar nav button.active{background:#edf6f3;color:#16675d;box-shadow:inset 3px 0 #16675d}
+.page-heading h1{font-size:clamp(26px,2.5vw,34px);letter-spacing:-.025em}
+.eyebrow{color:#16675d}
+.dl-overview-section{margin-top:0;box-shadow:none}
+.stat-grid{margin:20px 0}
+.stat-card{padding:20px;box-shadow:none;border-radius:9px}
+.stat-card strong{font-size:28px}
+.stat-card b{font-size:12px}.stat-card small{font-size:11px}
+.stat-icon{background:#f0f4f7;color:#426276}
+.chapter-overview{border:1px solid var(--line);border-radius:10px;background:#fff;padding:21px 23px;margin:0 0 22px}
+.chapter-overview>header{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:16px}
+.chapter-overview h2{margin:0 0 6px;font-size:19px}.chapter-overview p{margin:0;color:var(--muted);font-size:12px}
+.chapter-overview-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;border-top:1px solid var(--line)}
+.chapter-overview-grid>div{padding:16px 15px 0 0;min-width:0}
+.chapter-overview-grid span{display:block;font-size:11px;color:#16675d;font-weight:700;margin-bottom:7px}
+.chapter-overview-grid b{display:block;font-size:12px;line-height:1.55;min-height:3.1em}
+.chapter-overview-grid small{display:block;font-size:11px;color:var(--muted);margin-top:10px}
+.variant-picker{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.variant-picker button{border:1px solid var(--line);padding:9px 13px;background:#fff;color:var(--ink);border-radius:6px;font-size:12px;cursor:pointer}
+.variant-picker button[aria-pressed=true]{background:#16675d;border-color:#16675d;color:white}
+.variant-picker button:disabled{opacity:.65;cursor:wait}
+.dl-dialog-backdrop{width:100vw;max-width:none;height:100dvh;max-height:none;margin:0;border:0;background:transparent}
+.dl-dialog-backdrop::backdrop{background:#081b28bc}
+.dl-dialog-backdrop:not([open]){display:none}
+@media(max-width:1000px){.chapter-overview-grid{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:10px}}
+@media(max-width:720px){.chapter-overview{padding:17px}.chapter-overview>header{align-items:flex-start;flex-direction:column}.chapter-overview-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.stat-card small{font-size:10px}.stat-card b{font-size:11px}.dl-heading p{font-size:13px}}

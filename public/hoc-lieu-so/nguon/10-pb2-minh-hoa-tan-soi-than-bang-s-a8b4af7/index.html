@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống Thử Nghiệm Số Cao Cấp: Nguyên Lý Tán Sỏi Thận (Elip 2D & 3D)</title>
+    <style>
+        body { margin: 0; overflow: hidden; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f6f9; display: flex; }
+        
+        /* BẢNG ĐIỀU KHIỂN SIDEBAR */
+        #control-panel {
+            width: 500px; height: 100vh; background: #ffffff;
+            padding: 20px; box-sizing: border-box; box-shadow: 4px 0 20px rgba(0,0,0,0.1);
+            overflow-y: auto; z-index: 10; border-right: 1px solid #e2e8f0;
+            display: flex; flex-direction: column; gap: 15px;
+        }
+        
+        .app-title { margin: 0; font-size: 18px; color: #1e293b; text-align: center; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase; color: #3b82f6; border-bottom: 2px dashed #e2e8f0; padding-bottom: 10px; }
+        
+        /* HỆ THỐNG TABS */
+        .tab-container { display: flex; gap: 5px; border-bottom: 2px solid #e2e8f0; margin-bottom: 5px; }
+        .tab-btn { flex: 1; padding: 10px; background: #f1f5f9; border: none; border-radius: 6px 6px 0 0; font-weight: bold; font-size: 13px; color: #64748b; cursor: pointer; transition: 0.2s; }
+        .tab-btn.active { background: #3b82f6; color: white; }
+        .tab-content { display: none; flex-direction: column; gap: 12px; }
+        .tab-content.active { display: flex; }
+
+        h3 { margin: 0; font-size: 14px; color: #334155; text-transform: uppercase; border-left: 4px solid #3b82f6; padding-left: 8px; }
+        
+        .section-card {
+            background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        
+        .input-group { margin-bottom: 10px; }
+        .input-group:last-child { margin-bottom: 0; }
+        .header-label { display: flex; justify-content: space-between; font-weight: bold; margin-bottom: 5px; font-size: 13px; color: #475569; }
+        .val-badge { color: #d97706; font-family: monospace; font-size: 14px; font-weight: bold; }
+        
+        input[type="range"] { width: 100%; cursor: pointer; accent-color: #3b82f6; }
+        input[type="number"] { width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 6px; box-sizing: border-box; font-family: monospace; font-size: 15px; font-weight: bold; color: #1e293b;}
+        
+        /* ĐỒ THỊ ĐO NĂNG LƯỢNG */
+        .energy-container { margin-top: 5px; }
+        .energy-bar-bg { width: 100%; height: 20px; background: #e2e8f0; border-radius: 10px; overflow: hidden; position: relative; border: 1px solid #cbd5e1; }
+        .energy-bar-fill { width: 0%; height: 100%; background: linear-gradient(90deg, #f59e0b, #ef4444); transition: width 0.3s ease; }
+        .energy-text { position: absolute; width: 100%; text-align: center; top: 0; font-size: 12px; font-weight: bold; color: #1e293b; line-height: 20px; }
+        .energy-100 { background: linear-gradient(90deg, #10b981, #059669) !important; color: white !important;} /* Hiệu ứng xanh khi đạt 100% */
+
+        /* NÚT LỆNH ĐIỀU KHIỂN */
+        .btn-action { width: 100%; padding: 12px; font-size: 14px; font-weight: bold; border: none; border-radius: 6px; cursor: pointer; transition: 0.2s; text-transform: uppercase; letter-spacing: 0.5px;}
+        .btn-pulse { background: #10b981; color: white; box-shadow: 0 4px 6px rgba(16, 185, 129, 0.2); }
+        .btn-pulse:hover { background: #059669; }
+        .btn-challenge { background: #3b82f6; color: white; box-shadow: 0 4px 6px rgba(59, 130, 246, 0.2); }
+        .btn-challenge:hover { background: #2563eb; }
+        
+        .alert-box { padding: 12px; border-radius: 6px; font-size: 13px; font-weight: bold; text-align: center; display: none; margin-top: 5px; line-height: 1.4; }
+        .alert-success { background: #dcfce7; color: #166534; border: 1px solid #bbf7d0; display: block;}
+        .alert-error { background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; display: block;}
+
+        /* BẢNG SỐ LIỆU */
+        .math-table { width: 100%; border-collapse: collapse; margin-top: 5px; font-size: 12px; font-family: monospace; }
+        .math-table th, .math-table td { border: 1px solid #e2e8f0; padding: 6px; text-align: center; }
+        .math-table th { background: #f1f5f9; color: #475569; }
+        .math-table tr:nth-child(even) { background: #f8fafc; }
+        .math-highlight { color: #2563eb; font-weight: bold; }
+
+        /* KHÔNG GIAN LÀM VIỆC CHIA ĐÔI */
+        #workspace { flex: 1; display: flex; flex-direction: column; background: #cbd5e1; gap: 2px; }
+        
+        .workspace-pane { flex: 1; position: relative; background: #ffffff; width: 100%; height: 50%; }
+        
+        .panel-title {
+            position: absolute; top: 10px; left: 10px; background: rgba(255,255,255,0.95);
+            color: #1e293b; padding: 6px 15px; border-radius: 20px; font-size: 13px; font-weight: bold; z-index: 5;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); border: 1px solid #e2e8f0;
+        }
+    </style>
+    
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <script type="importmap">
+        { "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js", "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/" } }
+    </script>
+</head>
+<body>
+    <div id="control-panel">
+        <div class="app-title">Hệ Thống Thử Nghiệm Số Elip Pro</div>
+        
+        <div class="tab-container">
+            <button class="tab-btn active" onclick="switchTab('explore')">🌐 Khám Phá & Mô Phỏng</button>
+            <button class="tab-btn" onclick="switchTab('challenge')">📝 Thử Nghiệm / Giải Đề</button>
+        </div>
+
+        <div id="tab-explore" class="tab-content active">
+            <h3>📐 Thiết lập buồng hình học</h3>
+            <div class="section-card">
+                <div class="input-group">
+                    <div class="header-label"><span>Bán trục lớn (a):</span> <span class="val-badge" id="val-a">3.5</span></div>
+                    <input type="range" id="slider-a" min="2.0" max="5.0" step="0.1" value="3.5">
+                </div>
+                <div class="input-group">
+                    <div class="header-label"><span>Bán trục nhỏ (b):</span> <span class="val-badge" id="val-b">2.1</span></div>
+                    <input type="range" id="slider-b" min="1.0" max="4.0" step="0.1" value="2.1">
+                </div>
+                <div style="font-size: 13px; color: #475569; margin-top: 8px; font-weight: 600; background: #e0f2fe; padding: 6px 10px; border-radius: 4px;">
+                    Tiêu cự gương: c = &radic;(a&sup2; - b&sup2;) = <span id="val-c" style="color: #2563eb;">2.80</span>
+                </div>
+            </div>
+
+            <h3>⚡ Chùm sóng xung kích</h3>
+            <div class="section-card">
+                <div class="input-group">
+                    <div class="header-label"><span>Số lượng tia quét (n):</span> <span class="val-badge" id="val-n">8</span></div>
+                    <input type="range" id="slider-n" min="2" max="16" step="1" value="8">
+                </div>
+                <div class="input-group">
+                    <div class="header-label"><span>Tọa độ mặt cắt quét (m):</span> <span class="val-badge" id="val-m">1.5</span></div>
+                    <input type="range" id="slider-m" min="0" max="3" step="0.1" value="1.5">
+                </div>
+                <button class="btn-action btn-pulse" style="margin-top: 5px;" onclick="startShockwaveAnimation()">⚡ PHÁT SÓNG (Yêu cầu 100% để vỡ sỏi)</button>
+            </div>
+
+            <h3>🎯 Vị trí bệnh nhân (Hạt Sỏi)</h3>
+            <div class="section-card">
+                <div class="input-group">
+                    <div class="header-label">Khoảng cách từ nguồn phát đến sỏi (d):</div>
+                    <input type="range" id="slider-d" min="0" max="10" step="0.01" value="4.0">
+                </div>
+                <div class="header-label" style="margin-top: 5px;"><span>Tọa độ thực của Sỏi:</span> <span class="val-badge" id="txt-stone-pos">X = 0.00</span></div>
+                
+                <div class="energy-container">
+                    <div class="header-label"><span style="font-size:12px;">Mức năng lượng hội tụ tại sỏi:</span></div>
+                    <div class="energy-bar-bg">
+                        <div class="energy-bar-fill" id="energy-fill"></div>
+                        <div class="energy-text" id="energy-txt">0%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tab-challenge" class="tab-content">
+            <button class="btn-action btn-challenge" onclick="generateNewProblem()">🎲 SINH ĐỀ BÀI NGẪU NHIÊN</button>
+            
+            <div id="problem-card" class="section-card" style="display:none; background: #fffbeb; border: 1px solid #fef08a; line-height: 1.5; font-size: 13.5px; color: #78350f;">
+                <strong>ĐỀ BÀI THỬ NGHIỆM:</strong><br>
+                Một kỹ sư y sinh cần thiết lập hệ thống tán sỏi thận với buồng elip có thông số:<br>
+                - Bán trục lớn: <strong id="prob-a" style="color:#d97706;">...</strong><br>
+                - Bán trục nhỏ: <strong id="prob-b" style="color:#d97706;">...</strong><br>
+                Hãy tính toán tiêu cự và nhập vào <strong>khoảng cách lý tưởng d</strong> giữa nguồn phát sóng (F2) và viên sỏi (F1) để năng lượng đạt 100% làm vỡ sỏi.
+            </div>
+
+            <h3>✍️ Nhập kết quả tính toán số của bạn</h3>
+            <div class="section-card">
+                <div class="input-group">
+                    <label class="header-label" for="input-challenge-d">Khoảng cách d tính toán được:</label>
+                    <input type="number" id="input-challenge-d" step="0.01" placeholder="Ví dụ: 5.60">
+                </div>
+                <button class="btn-action btn-pulse" style="margin-top: 8px;" onclick="checkChallengeAnswer()">🚀 KÍCH NỔ THỬ NGHIỆM</button>
+                <div id="challenge-alert" class="alert-box"></div>
+            </div>
+        </div>
+
+        <h3>📊 Minh chứng số học (Live Invariant Proof)</h3>
+        <div class="section-card" style="overflow-x: auto; padding: 6px;">
+            <div style="font-size: 11px; color:#64748b; margin-bottom: 5px; font-weight: bold; text-align: center;">Hằng số liên kết Elip lý thuyết: 2a = <span id="proof-2a" class="math-highlight">7.00</span></div>
+            <table class="math-table" id="data-table">
+                <thead>
+                    <tr>
+                        <th>Tia quét</th>
+                        <th>Tia tới MF₂</th>
+                        <th>Phản xạ MF₁</th>
+                        <th>Tổng (MF₂ + MF₁)</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div id="workspace">
+        <div class="workspace-pane" id="plot-2d-container">
+            <div class="panel-title">📐 Mặt cắt phẳng 2D (Bản vẽ hình học - Trục Oxy)</div>
+            <div id="plot-2d" style="width: 100%; height: 100%;"></div>
+        </div>
+        
+        <div class="workspace-pane" id="plot-3d-container">
+            <div class="panel-title">🧊 Không gian 3D (Sỏi 3D Procedural & Hạt Mảnh Vỡ)</div>
+        </div>
+    </div>
+
+    <script type="module">
+        import * as THREE from 'three';
+        import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+        const sliderA = document.getElementById('slider-a');
+        const sliderB = document.getElementById('slider-b');
+        const sliderN = document.getElementById('slider-n');
+        const sliderM = document.getElementById('slider-m');
+        const sliderD = document.getElementById('slider-d');
+        const inputChallengeD = document.getElementById('input-challenge-d');
+        const challengeAlert = document.getElementById('challenge-alert');
+        
+        let isChallengeMode = false;
+        let challengeA = 4.0, challengeB = 2.4;
+        let animationActive = false;
+        let animationProgress = 0;
+        let currentRaysData = [];
+        let isStoneShattered = false;
+        let explosionTimer = 0;
+        let currentEnergy = 0; // Biến lưu trữ % năng lượng thực tế
+
+        window.switchTab = function(tabName) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            if (tabName === 'explore') {
+                document.querySelectorAll('.tab-btn')[0].classList.add('active');
+                document.getElementById('tab-explore').classList.add('active');
+                isChallengeMode = false;
+            } else {
+                document.querySelectorAll('.tab-btn')[1].classList.add('active');
+                document.getElementById('tab-challenge').classList.add('active');
+                isChallengeMode = true;
+                generateNewProblem();
+            }
+            updateSimulation();
+        }
+
+        window.generateNewProblem = function() {
+            const problemSets = [ {a: 5.0, b: 3.0}, {a: 5.0, b: 4.0}, {a: 4.0, b: 2.4}, {a: 3.5, b: 2.1}, {a: 4.5, b: 2.7} ];
+            const chosen = problemSets[Math.floor(Math.random() * problemSets.length)];
+            challengeA = chosen.a; challengeB = chosen.b;
+            document.getElementById('prob-a').innerText = challengeA.toFixed(1);
+            document.getElementById('prob-b').innerText = challengeB.toFixed(1);
+            document.getElementById('problem-card').style.display = 'block';
+            inputChallengeD.value = ''; challengeAlert.style.display = 'none';
+            updateSimulation();
+        }
+
+        window.checkChallengeAnswer = function() {
+            let userD = parseFloat(inputChallengeD.value);
+            if (isNaN(userD) || userD <= 0) {
+                challengeAlert.className = 'alert-box alert-error'; challengeAlert.innerText = '⚠️ Vui lòng nhập khoảng cách d!';
+                return challengeAlert.style.display = 'block';
+            }
+            let correctC = Math.sqrt(challengeA*challengeA - challengeB*challengeB);
+            let correctD = correctC * 2;
+            if (Math.abs(userD - correctD) <= 0.05) {
+                challengeAlert.className = 'alert-box alert-success';
+                challengeAlert.innerText = `🎉 CHÍNH XÁC! d = ${correctD.toFixed(2)}. Năng lượng đạt 100%. Sóng kích nổ!`;
+                challengeAlert.style.display = 'block';
+                sliderD.value = userD; updateSimulation(); startShockwaveAnimation();
+            } else {
+                challengeAlert.className = 'alert-box alert-error';
+                challengeAlert.innerText = `❌ Sai. Sỏi chưa đặt đúng F1 (Năng lượng chưa đủ 100% để vỡ). Hãy tính lại c = √(a² - b²) nhé!`;
+                challengeAlert.style.display = 'block';
+            }
+        }
+
+        // --- CÀI ĐẶT THREE.JS ---
+        const container3D = document.getElementById('plot-3d-container');
+        const scene = new THREE.Scene(); scene.background = new THREE.Color(0xf8fafc);
+        const camera = new THREE.PerspectiveCamera(45, container3D.clientWidth / container3D.clientHeight, 0.1, 100);
+        camera.position.set(5, 4, 8);
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(container3D.clientWidth, container3D.clientHeight);
+        container3D.appendChild(renderer.domElement);
+        const controls = new OrbitControls(camera, renderer.domElement); controls.enableDamping = true;
+
+        scene.add(new THREE.AxesHelper(6));
+        const grid = new THREE.GridHelper(16, 16, 0xcbd5e1, 0xf1f5f9); grid.position.y = -2; scene.add(grid);
+        scene.add(new THREE.AmbientLight(0xffffff, 0.9));
+        const dirLight = new THREE.DirectionalLight(0xffffff, 1.5); dirLight.position.set(5, 12, 6); scene.add(dirLight);
+
+        const groupModel = new THREE.Group(); scene.add(groupModel);
+        
+        // Gương Elip
+        const matMirror = new THREE.MeshPhysicalMaterial({ color: 0x3b82f6, transparent: true, opacity: 0.25, side: THREE.DoubleSide });
+        const meshMirror = new THREE.Mesh(new THREE.BufferGeometry(), matMirror); meshMirror.rotation.z = -Math.PI / 2; groupModel.add(meshMirror);
+        
+        // Điểm phát sóng
+        const meshF2 = new THREE.Mesh(new THREE.SphereGeometry(0.1, 16, 16), new THREE.MeshBasicMaterial({ color: 0x0284c7 })); groupModel.add(meshF2);
+        
+        // [CẬP NHẬT] TẠO SỎI 3D CHÂN THỰC BẰNG PROCEDURAL GEOMETRY
+        const stoneGeo = new THREE.IcosahedronGeometry(0.16, 3);
+        const posAttribute = stoneGeo.attributes.position;
+        // Bóp méo các đỉnh (vertices) ngẫu nhiên để tạo độ gồ ghề cho sỏi thận
+        for (let i = 0; i < posAttribute.count; i++) {
+            let v = new THREE.Vector3().fromBufferAttribute(posAttribute, i);
+            v.normalize().multiplyScalar(0.1 + Math.random() * 0.08); // Bán kính ngẫu nhiên từ 0.1 đến 0.18
+            posAttribute.setXYZ(i, v.x, v.y, v.z);
+        }
+        stoneGeo.computeVertexNormals(); // Cập nhật tính toán đổ bóng lại cho bề mặt gồ ghề
+        const matStone = new THREE.MeshStandardMaterial({ color: 0x8b7355, roughness: 1.0, metalness: 0.1 }); // Màu nâu sỏi oxalate
+        const meshStone = new THREE.Mesh(stoneGeo, matStone); groupModel.add(meshStone);
+        
+        const staticRayGroup = new THREE.Group(); groupModel.add(staticRayGroup);
+        const pulseGroup = new THREE.Group(); groupModel.add(pulseGroup);
+        const particleGroup = new THREE.Group(); groupModel.add(particleGroup);
+
+        // --- HÀM VẼ 2D BẰNG PLOTLY ---
+        function draw2DPlot(a, b, c, d, m) {
+            let x_dashed = [], y_top_dashed = [], y_bot_dashed = [];
+            let x_solid = [], y_top_solid = [], y_bot_solid = [];
+
+            for(let x = -a; x <= a; x += 0.05) {
+                let y = b * Math.sqrt(Math.max(0, 1 - (x*x)/(a*a)));
+                x_dashed.push(x); y_top_dashed.push(y); y_bot_dashed.push(-y);
+                if (x >= 0) { x_solid.push(x); y_top_solid.push(y); y_bot_solid.push(-y); }
+            }
+
+            const data = [];
+            data.push({ x: x_dashed, y: y_top_dashed, type: 'scatter', mode: 'lines', line: {color: '#cbd5e1', dash: 'dot', width: 2}, showlegend: false, hoverinfo: 'skip' });
+            data.push({ x: x_dashed, y: y_bot_dashed, type: 'scatter', mode: 'lines', line: {color: '#cbd5e1', dash: 'dot', width: 2}, showlegend: false, hoverinfo: 'skip' });
+            data.push({ x: x_solid, y: y_top_solid, type: 'scatter', mode: 'lines', line: {color: '#3b82f6', width: 4}, name: 'Gương phản xạ' });
+            data.push({ x: x_solid, y: y_bot_solid, type: 'scatter', mode: 'lines', line: {color: '#3b82f6', width: 4}, showlegend: false });
+
+            const F1_x = -c, F2_x = c, stone_x = F2_x - d;
+            data.push({ x: [F2_x], y: [0], type: 'scatter', mode: 'markers+text', marker: {size: 10, color: '#0284c7'}, text: ['F₂ (Nguồn)'], textposition: 'bottom right', name: 'Nguồn phát' });
+            data.push({ x: [F1_x], y: [0], type: 'scatter', mode: 'markers+text', marker: {size: 10, color: '#10b981'}, text: ['F₁ (Hội tụ)'], textposition: 'bottom left', name: 'Tiêu điểm hội tụ' });
+            
+            // Marker sỏi đổi màu khi năng lượng 100%
+            let stoneColor = currentEnergy === 100 ? '#10b981' : '#ef4444'; 
+            data.push({ x: [stone_x], y: [0], type: 'scatter', mode: 'markers', marker: {size: 14, color: stoneColor, symbol: 'star'}, name: 'Viên Sỏi' });
+
+            let m_y = b * Math.sqrt(Math.max(0, 1 - (m*m)/(a*a)));
+            data.push({ x: [F2_x, m, F1_x], y: [0, m_y, 0], type: 'scatter', mode: 'lines', line: {color: '#f59e0b', width: 1.5, dash: 'dash'}, name: 'Tia sóng hội tụ' });
+            data.push({ x: [F2_x, m, F1_x], y: [0, -m_y, 0], type: 'scatter', mode: 'lines', line: {color: '#f59e0b', width: 1.5, dash: 'dash'}, showlegend: false });
+
+            const layout = { margin: {t: 40, l: 40, r: 20, b: 30}, xaxis: {range: [-5.5, 5.5]}, yaxis: {range: [-4.5, 4.5]}, plot_bgcolor: '#ffffff', paper_bgcolor: '#ffffff', legend: { orientation: "h", y: 1.1 } };
+            Plotly.react('plot-2d', data, layout, {displayModeBar: false, responsive: true});
+        }
+
+        // --- CẬP NHẬT MÔ PHỎNG ---
+        function updateSimulation() {
+            let a = isChallengeMode ? challengeA : parseFloat(sliderA.value);
+            let b = isChallengeMode ? challengeB : parseFloat(sliderB.value);
+            if (b >= a) { b = a - 0.1; sliderB.value = b; }
+            if(!isChallengeMode) { document.getElementById('val-a').innerText = a.toFixed(1); document.getElementById('val-b').innerText = b.toFixed(1); }
+
+            let c = Math.sqrt(a*a - b*b);
+            if(!isChallengeMode) document.getElementById('val-c').innerText = c.toFixed(2);
+            document.getElementById('proof-2a').innerText = (2*a).toFixed(2);
+
+            let n = parseInt(sliderN.value); document.getElementById('val-n').innerText = n;
+            sliderM.max = a; let m = parseFloat(sliderM.value); if(m > a) m = a;
+            document.getElementById('val-m').innerText = m.toFixed(1);
+
+            let d = parseFloat(sliderD.value);
+            const F2_x = c, F1_x = -c, stone_x = F2_x - d;
+
+            meshF2.position.set(F2_x, 0, 0);
+            meshStone.position.set(stone_x, 0, 0);
+            document.getElementById('txt-stone-pos').innerText = `X = ${stone_x.toFixed(2)}`;
+
+            // ĐIỀU KIỆN NĂNG LƯỢNG 100%
+            let deviation = Math.abs(stone_x - F1_x);
+            let energyPercent = Math.max(0, 100 - (deviation * 100)); // Tính phần trăm
+            if (deviation < 0.02) energyPercent = 100; // Snap chính xác 100% nếu đặt đúng F1
+            if(d === 0) energyPercent = 0;
+            currentEnergy = Math.floor(energyPercent);
+            
+            let fillEl = document.getElementById('energy-fill');
+            fillEl.style.width = `${currentEnergy}%`;
+            document.getElementById('energy-txt').innerText = `${currentEnergy}%`;
+            if (currentEnergy === 100) fillEl.classList.add('energy-100'); else fillEl.classList.remove('energy-100');
+
+            const pts = []; for (let x = 0; x <= a; x += a/30) pts.push(new THREE.Vector2(b * Math.sqrt(Math.max(0, 1 - (x*x)/(a*a))), x));
+            meshMirror.geometry.dispose(); meshMirror.geometry = new THREE.LatheGeometry(pts, 48, 0, Math.PI * 2);
+
+            staticRayGroup.clear(); currentRaysData = [];
+            const tbody = document.getElementById('data-table').querySelector('tbody'); tbody.innerHTML = '';
+            let r_m = b * Math.sqrt(Math.max(0, 1 - (m*m)/(a*a)));
+            
+            for(let i = 0; i < n; i++) {
+                let theta = (i * 2 * Math.PI) / n;
+                let M = new THREE.Vector3(m, r_m * Math.cos(theta), r_m * Math.sin(theta));
+                let F2 = new THREE.Vector3(F2_x, 0, 0); let F1 = new THREE.Vector3(F1_x, 0, 0);
+                
+                currentRaysData.push({ f2: F2, m: M, f1: F1 });
+                staticRayGroup.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([F2, M]), new THREE.LineBasicMaterial({ color: 0x94a3b8, transparent: true, opacity: 0.4 })));
+                staticRayGroup.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([M, F1]), new THREE.LineBasicMaterial({ color: 0x3b82f6, transparent: true, opacity: 0.5 })));
+
+                if(i < 3) {
+                    let distF2_M = F2.distanceTo(M); let distM_F1 = M.distanceTo(F1);
+                    tbody.innerHTML += `<tr><td>Tia ${i+1}</td><td>${distF2_M.toFixed(3)}</td><td>${distM_F1.toFixed(3)}</td><td class="math-highlight">${(distF2_M + distM_F1).toFixed(3)}</td></tr>`;
+                }
+            }
+            draw2DPlot(a, b, c, d, m);
+        }
+
+        window.startShockwaveAnimation = function() {
+            if (animationActive) return;
+            animationActive = true; animationProgress = 0; pulseGroup.clear();
+            currentRaysData.forEach(() => pulseGroup.add(new THREE.Mesh(new THREE.SphereGeometry(0.06, 8, 8), new THREE.MeshBasicMaterial({ color: 0xffa500 }))));
+        }
+
+        // [CẬP NHẬT] HIỆU ỨNG VỠ SỎI 3D (CHUNKS)
+        function triggerStoneExplosion(pos) {
+            particleGroup.clear(); isStoneShattered = true; explosionTimer = 0; meshStone.visible = false;
+            
+            const chunkGeo = new THREE.TetrahedronGeometry(0.05); // Các mảnh vỡ góc cạnh
+            const chunkMat = new THREE.MeshStandardMaterial({ color: 0x8b7355, roughness: 1.0 });
+
+            for(let i=0; i<35; i++) {
+                let chunk = new THREE.Mesh(chunkGeo, chunkMat.clone());
+                chunk.position.copy(pos);
+                // Tạo độ lệch ban đầu để khối không dính vào nhau
+                chunk.position.x += (Math.random() - 0.5) * 0.1;
+                chunk.position.y += (Math.random() - 0.5) * 0.1;
+                chunk.position.z += (Math.random() - 0.5) * 0.1;
+                
+                // Vận tốc văng và tốc độ xoay lộn xộn
+                chunk.userData.velocity = new THREE.Vector3((Math.random() - 0.5)*4, (Math.random() - 0.5)*4, (Math.random() - 0.5)*4);
+                chunk.userData.rotationSpeed = new THREE.Vector3(Math.random()*10, Math.random()*10, Math.random()*10);
+                particleGroup.add(chunk);
+            }
+        }
+
+        function animate() {
+            requestAnimationFrame(animate); controls.update();
+            
+            // Xử lý tia sóng chạy
+            if (animationActive && pulseGroup.children.length > 0) {
+                animationProgress += 0.015;
+                for (let i = 0; i < currentRaysData.length; i++) {
+                    let pulse = pulseGroup.children[i]; let data = currentRaysData[i];
+                    if (animationProgress <= 1) pulse.position.lerpVectors(data.f2, data.m, animationProgress);
+                    else if (animationProgress <= 2) pulse.position.lerpVectors(data.m, data.f1, animationProgress - 1);
+                }
+                
+                // Kết thúc hoạt cảnh tia sóng
+                if (animationProgress >= 2) {
+                    animationActive = false; pulseGroup.clear();
+                    // ĐIỀU KIỆN CHỈ VỠ SỎI KHI NĂNG LƯỢNG LÀ 100%
+                    if (currentEnergy === 100) triggerStoneExplosion(meshStone.position);
+                }
+            }
+
+            // Xử lý các mảnh vỡ (Chunks) văng ra
+            if (isStoneShattered && particleGroup.children.length > 0) {
+                explosionTimer += 0.016; 
+                particleGroup.children.forEach(chunk => {
+                    chunk.position.addScaledVector(chunk.userData.velocity, 0.016); // Bay ra xa
+                    chunk.rotation.x += chunk.userData.rotationSpeed.x * 0.016;    // Xoay lộn vòng
+                    chunk.rotation.y += chunk.userData.rotationSpeed.y * 0.016;
+                    
+                    // Mờ dần rồi biến mất
+                    chunk.material.opacity = Math.max(0, 1 - explosionTimer / 2.5);
+                    chunk.material.transparent = true;
+                });
+                
+                if (explosionTimer >= 2.5) { isStoneShattered = false; particleGroup.clear(); meshStone.visible = true; } // Reset lại sỏi
+            }
+            renderer.render(scene, camera);
+        }
+
+        sliderA.addEventListener('input', updateSimulation); sliderB.addEventListener('input', updateSimulation);
+        sliderN.addEventListener('input', updateSimulation); sliderM.addEventListener('input', updateSimulation);
+        sliderD.addEventListener('input', updateSimulation);
+
+        window.addEventListener('resize', () => {
+            camera.aspect = container3D.clientWidth / container3D.clientHeight; camera.updateProjectionMatrix(); renderer.setSize(container3D.clientWidth, container3D.clientHeight);
+            Plotly.Plots.resize(document.getElementById('plot-2d'));
+        });
+
+        updateSimulation(); animate();
+    </script>
+</body>
+</html>

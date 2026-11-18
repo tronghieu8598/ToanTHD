@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="275" viewBox="0 0 320 275">
+  <rect x="0" y="0" width="320" height="275" fill="#ffffff" />
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#1a1a1a" />
+    </marker>
+    <marker id="arr-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#c0392b" />
+    </marker>
+    <marker id="arr-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#1f618d" />
+    </marker>
+  </defs>
+  <line x1="77.0" y1="175.0" x2="267.0" y2="170.0" stroke="#1a1a1a" stroke-width="1.4" stroke-dasharray="5,4" />
+  <line x1="167.0" y1="38.0" x2="77.0" y2="175.0" stroke="#1a1a1a" stroke-width="1.4" />
+  <line x1="167.0" y1="38.0" x2="157.0" y2="212.0" stroke="#1a1a1a" stroke-width="1.4" />
+  <line x1="167.0" y1="38.0" x2="267.0" y2="170.0" stroke="#1a1a1a" stroke-width="1.4" />
+  <line x1="77.0" y1="175.0" x2="157.0" y2="212.0" stroke="#1a1a1a" stroke-width="1.4" />
+  <line x1="157.0" y1="212.0" x2="267.0" y2="170.0" stroke="#1a1a1a" stroke-width="1.4" />
+  <circle cx="117.0" cy="193.5" r="2.6" fill="#c0392b" />
+  <text x="107.0" y="205.5" font-family="DejaVu Serif, Georgia, serif" font-size="13" font-style="italic" fill="#c0392b" text-anchor="middle">M</text>
+  <circle cx="217.0" cy="104.0" r="2.6" fill="#c0392b" />
+  <text x="229.0" y="100.0" font-family="DejaVu Serif, Georgia, serif" font-size="13" font-style="italic" fill="#c0392b" text-anchor="middle">N</text>
+  <circle cx="162.0" cy="125.0" r="2.6" fill="#c0392b" />
+  <text x="150.0" y="125.0" font-family="DejaVu Serif, Georgia, serif" font-size="13" font-style="italic" fill="#c0392b" text-anchor="middle">P</text>
+  <line x1="217.0" y1="104.0" x2="117.0" y2="193.5" stroke="#c0392b" stroke-width="1.6" stroke-dasharray="5,4" marker-end="url(#arr-red)" />
+  <line x1="117.0" y1="193.5" x2="162.0" y2="125.0" stroke="#1f618d" stroke-width="1.6" stroke-dasharray="5,4" />
+  <line x1="217.0" y1="104.0" x2="162.0" y2="125.0" stroke="#1f618d" stroke-width="1.6" stroke-dasharray="5,4" />
+  <circle cx="167.0" cy="38.0" r="2.6" fill="#111111" />
+  <text x="167.0" y="28.0" font-family="DejaVu Serif, Georgia, serif" font-size="14" font-style="italic" fill="#111111" text-anchor="middle">A</text>
+  <circle cx="77.0" cy="175.0" r="2.6" fill="#111111" />
+  <text x="63.0" y="181.0" font-family="DejaVu Serif, Georgia, serif" font-size="14" font-style="italic" fill="#111111" text-anchor="middle">B</text>
+  <circle cx="157.0" cy="212.0" r="2.6" fill="#111111" />
+  <text x="157.0" y="228.0" font-family="DejaVu Serif, Georgia, serif" font-size="14" font-style="italic" fill="#111111" text-anchor="middle">C</text>
+  <circle cx="267.0" cy="170.0" r="2.6" fill="#111111" />
+  <text x="281.0" y="176.0" font-family="DejaVu Serif, Georgia, serif" font-size="14" font-style="italic" fill="#111111" text-anchor="middle">D</text>
+  <text x="160.0" y="256" font-family="DejaVu Serif, Georgia, serif" font-size="12" fill="#1f618d" text-anchor="middle">AB=6a, CD=10a</text>
+</svg>

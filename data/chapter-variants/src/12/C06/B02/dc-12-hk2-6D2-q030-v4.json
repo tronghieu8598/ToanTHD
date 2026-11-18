@@ -1,0 +1,134 @@
+{
+  "id": "dc-12-hk2-6D2-q030-v4",
+  "source_fingerprint": "93a35143672b2d42c186c5e52f1eb430faaa76494913f7187dbd9fd800251291",
+  "variants": [
+    {
+      "id": "dc-12-hk2-6D2-q030-v4--bt01",
+      "number": 1,
+      "kind": "tf",
+      "prompt": "Đầu năm mới, công ty A tổ chức rút thăm may mắn cho <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>80</mn></mrow></semantics></math> công nhân, mỗi người chỉ được rút <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math> thẻ (không trả lại), trong đó có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn></mrow></semantics></math> thẻ trúng thưởng trong tất cả <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>80</mn></mrow></semantics></math> thẻ. Công ty có vợ chồng anh Tèo được rút đầu, vợ anh Tèo rút thẻ đầu tiên, tới anh Tèo rút thẻ thứ hai.<br>\n\tXét tính đúng sai của các khẳng định sau",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Xác suất để hai vợ chồng anh Tèo đều trúng thưởng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>3</mn><mn>1580</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Xác suất để hai vợ chồng anh Tèo có đúng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math> người trúng thưởng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>38</mn><mn>395</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Xác suất để anh Tèo trúng thưởng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>20</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Xác suất để vợ anh Tèo trúng thưởng còn anh Tèo thì không trúng thưởng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>19</mn><mn>395</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "solution": "<ol class=\"alpha-list\"><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn></mrow><mrow><mn>80</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn></mrow><mrow><mn>79</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>1580</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Xác suất có đúng 1 người trúng thưởng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn></mrow><mrow><mn>80</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>76</mn></mrow><mrow><mn>79</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>38</mn><mn>395</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Theo công thức xác suất toàn phần, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>1580</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>19</mn><mn>395</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>20</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn></mrow><mrow><mn>80</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>76</mn></mrow><mrow><mn>79</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>19</mn><mn>395</mn></mfrac></mrow></semantics></math>.</li></ol>",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-6D2-q030-v4--bt02",
+      "number": 2,
+      "kind": "tf",
+      "prompt": "Đầu năm mới, công ty A tổ chức rút thăm may mắn cho <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>60</mn></mrow></semantics></math> công nhân, mỗi người chỉ được rút <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math> thẻ (không trả lại), trong đó có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>6</mn></mrow></semantics></math> thẻ trúng thưởng trong tất cả <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>60</mn></mrow></semantics></math> thẻ. Công ty có vợ chồng anh Tèo được rút đầu, vợ anh Tèo rút thẻ đầu tiên, tới anh Tèo rút thẻ thứ hai.<br>\n\tXét tính đúng sai của các khẳng định sau",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Xác suất để hai vợ chồng anh Tèo đều trúng thưởng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>118</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Xác suất để hai vợ chồng anh Tèo có đúng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math> người trúng thưởng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>54</mn><mn>295</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Xác suất để anh Tèo trúng thưởng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>10</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Xác suất để vợ anh Tèo trúng thưởng còn anh Tèo thì không trúng thưởng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>27</mn><mn>295</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "solution": "<ol class=\"alpha-list\"><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>6</mn></mrow><mrow><mn>60</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn></mrow><mrow><mn>59</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>118</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Xác suất có đúng 1 người trúng thưởng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>6</mn></mrow><mrow><mn>60</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>54</mn></mrow><mrow><mn>59</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>54</mn><mn>295</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Theo công thức xác suất toàn phần, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>118</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>27</mn><mn>295</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>10</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>6</mn></mrow><mrow><mn>60</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>54</mn></mrow><mrow><mn>59</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>27</mn><mn>295</mn></mfrac></mrow></semantics></math>.</li></ol>",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-6D2-q030-v4--bt03",
+      "number": 3,
+      "kind": "tf",
+      "prompt": "Đầu năm mới, công ty A tổ chức rút thăm may mắn cho <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>50</mn></mrow></semantics></math> công nhân, mỗi người chỉ được rút <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math> thẻ (không trả lại), trong đó có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn></mrow></semantics></math> thẻ trúng thưởng trong tất cả <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>50</mn></mrow></semantics></math> thẻ. Công ty có vợ chồng anh Tèo được rút đầu, vợ anh Tèo rút thẻ đầu tiên, tới anh Tèo rút thẻ thứ hai.<br>\n\tXét tính đúng sai của các khẳng định sau",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Xác suất để hai vợ chồng anh Tèo đều trúng thưởng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>2</mn><mn>245</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Xác suất để hai vợ chồng anh Tèo có đúng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math> người trúng thưởng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>9</mn><mn>49</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Xác suất để anh Tèo trúng thưởng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>12</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Xác suất để vợ anh Tèo trúng thưởng còn anh Tèo thì không trúng thưởng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>9</mn><mn>98</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "solution": "<ol class=\"alpha-list\"><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn></mrow><mrow><mn>50</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn></mrow><mrow><mn>49</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>245</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Xác suất có đúng 1 người trúng thưởng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn></mrow><mrow><mn>50</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>45</mn></mrow><mrow><mn>49</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>9</mn><mn>49</mn></mfrac></mrow></semantics></math>.</li><li><strong>Sai</strong>. Theo công thức xác suất toàn phần, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>245</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>9</mn><mn>98</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>10</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn></mrow><mrow><mn>50</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>45</mn></mrow><mrow><mn>49</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>9</mn><mn>98</mn></mfrac></mrow></semantics></math>.</li></ol>",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-6D2-q030-v4--bt04",
+      "number": 4,
+      "kind": "tf",
+      "prompt": "Đầu năm mới, công ty A tổ chức rút thăm may mắn cho <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>90</mn></mrow></semantics></math> công nhân, mỗi người chỉ được rút <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math> thẻ (không trả lại), trong đó có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>6</mn></mrow></semantics></math> thẻ trúng thưởng trong tất cả <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>90</mn></mrow></semantics></math> thẻ. Công ty có vợ chồng anh Tèo được rút đầu, vợ anh Tèo rút thẻ đầu tiên, tới anh Tèo rút thẻ thứ hai.<br>\n\tXét tính đúng sai của các khẳng định sau",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Xác suất để hai vợ chồng anh Tèo đều trúng thưởng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>267</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Xác suất để hai vợ chồng anh Tèo có đúng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math> người trúng thưởng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>28</mn><mn>445</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Xác suất để anh Tèo trúng thưởng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>15</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Xác suất để vợ anh Tèo trúng thưởng còn anh Tèo thì không trúng thưởng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>28</mn><mn>445</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        false,
+        true,
+        true
+      ],
+      "solution": "<ol class=\"alpha-list\"><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>6</mn></mrow><mrow><mn>90</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn></mrow><mrow><mn>89</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>267</mn></mfrac></mrow></semantics></math>.</li><li><strong>Sai</strong>. Xác suất có đúng 1 người trúng thưởng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>6</mn></mrow><mrow><mn>90</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>84</mn></mrow><mrow><mn>89</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>56</mn><mn>445</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Theo công thức xác suất toàn phần, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>267</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>28</mn><mn>445</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>15</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>6</mn></mrow><mrow><mn>90</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>84</mn></mrow><mrow><mn>89</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>28</mn><mn>445</mn></mfrac></mrow></semantics></math>.</li></ol>",
+      "accepted_answers": []
+    }
+  ]
+}

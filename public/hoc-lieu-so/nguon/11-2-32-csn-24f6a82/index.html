@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thử Thách Fractal: Thảm Sierpinski</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background-color: #f4f7f6; 
+            color: #333; 
+            margin: 0; 
+            padding: 20px; 
+            display: flex; 
+            justify-content: center; 
+        }
+        .main-wrapper {
+            max-width: 950px;
+            width: 100%;
+        }
+        
+        /* Box Đề Bài */
+        .problem-box {
+            background: #ffffff;
+            border-left: 6px solid #e67e22;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        /* Điểm kích hoạt bí mật: Ngăn bôi đen chữ khi click nhiều lần để không bị lộ */
+        .problem-box .title {
+            color: #d35400;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 5px;
+            display: inline-block;
+            cursor: default;
+            user-select: none; 
+            -webkit-user-select: none;
+        }
+
+        /* Giao diện 2 cột */
+        .app-container { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 30px; 
+            background: white; 
+            padding: 25px; 
+            border-radius: 12px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+        }
+        .visual-panel { flex: 1.2; min-width: 320px; text-align: center; }
+        .quiz-panel { flex: 1; min-width: 300px; display: flex; flex-direction: column; justify-content: flex-start; }
+        
+        canvas { 
+            border: 2px solid #2c3e50; 
+            border-radius: 2px; 
+            background-color: #fff; 
+            max-width: 100%; 
+            height: auto; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        h2 { color: #2c3e50; margin-top: 0; font-size: 20px; text-align: center; }
+        
+        .step-control { 
+            background: #e8f4f8; 
+            padding: 15px; 
+            border-radius: 10px; 
+            margin-top: 15px; 
+            text-align: center; 
+        }
+        input[type="range"] { width: 90%; cursor: pointer; margin-top: 10px; }
+        
+        .question-box { background: #f9f9f9; border: 1px solid #e0e0e0; padding: 15px; border-radius: 8px; margin-bottom: 15px; }
+        .question-box label { font-weight: bold; display: block; margin-bottom: 8px; color: #34495e; }
+        input[type="text"] { width: 100%; padding: 10px; border: 2px solid #bdc3c7; border-radius: 6px; font-size: 16px; box-sizing: border-box; transition: border 0.3s; }
+        input[type="text"]:focus { border-color: #3498db; outline: none; }
+        
+        .btn-group { display: flex; gap: 10px; margin-top: 5px; }
+        button { flex: 1; padding: 12px; border: none; border-radius: 6px; font-size: 15px; font-weight: bold; cursor: pointer; transition: all 0.2s; color: white; }
+        .btn-check { background-color: #27ae60; }
+        .btn-check:hover { background-color: #219150; }
+        
+        .feedback { margin-top: 15px; padding: 12px; border-radius: 6px; display: none; font-weight: bold; text-align: center; font-size: 15px;}
+        .feedback.correct { display: block; background-color: #d5f5e3; color: #27ae60; border: 1px solid #27ae60; }
+        .feedback.wrong { display: block; background-color: #fadbd8; color: #c0392b; border: 1px solid #c0392b; }
+        
+        /* Mặc định ẩn bảng gợi ý */
+        .hint-box { margin-top: 15px; padding: 15px; background-color: #fff3cd; border-left: 4px solid #ffc107; color: #856404; display: none; font-size: 14px; line-height: 1.6; }
+    </style>
+</head>
+<body>
+
+<div class="main-wrapper">
+    <div class="problem-box">
+        <div class="title" id="secretTrigger">Bài 2.32:</div>
+        Một hình vuông màu vàng có cạnh 1 đơn vị dài được chia thành chín hình vuông nhỏ hơn và hình vuông ở chính giữa được tô màu xanh như minh họa. Mỗi hình vuông màu vàng nhỏ hơn lại được chia thành chín hình vuông con, và mỗi hình vuông con ở chính giữa lại được tô màu xanh. 
+        <br><br>
+        <i>Nếu quá trình này được tiếp tục lặp lại năm lần, thì tổng diện tích các hình vuông được tô màu xanh bằng bao nhiêu?</i>
+    </div>
+
+    <div class="app-container">
+        <div class="visual-panel">
+            <canvas id="fractalCanvas" width="486" height="486"></canvas>
+            <div class="step-control">
+                <label for="stepRange"><strong>Thực hiện bước lặp thứ (n): <span id="stepDisplay" style="color:#e74c3c; font-size: 20px;">1</span></strong></label>
+                <input type="range" id="stepRange" min="1" max="5" value="1" oninput="updateSimulation()">
+            </div>
+        </div>
+
+        <div class="quiz-panel">
+            <h2>Phân Tích Toán Học</h2>
+            
+            <div class="question-box">
+                <label>1. Diện tích màu xanh MỚI được tô thêm ở bước n (uₙ):</label>
+                <input type="text" id="inputUn" placeholder="Nhập phân số (VD: 1/9)">
+            </div>
+
+            <div class="question-box">
+                <label>2. TỔNG diện tích màu xanh hiện có sau n bước (Sₙ):</label>
+                <input type="text" id="inputSn" placeholder="Nhập phân số (VD: 17/81)">
+            </div>
+
+            <div class="btn-group">
+                <button class="btn-check" onclick="checkAnswers()">Kiểm tra đáp án</button>
+                </div>
+
+            <div id="feedbackMsg" class="feedback"></div>
+            
+            <div id="hintBox" class="hint-box">
+                <strong>Gợi ý Cấp số nhân:</strong><br>
+                - Kéo thanh trượt để đếm ô. Bước 1: Diện tích tô thêm <b>u₁ = 1/9</b>.<br>
+                - Ở mỗi bước, số lượng ô xanh mới tăng gấp 8 lần, nhưng diện tích mỗi ô giảm 9 lần so với ô trước. Vậy công bội <b>q = 8/9</b>.<br>
+                - Công thức số hạng tổng quát: <i>uₙ = u₁ × qⁿ⁻¹</i><br>
+                - Công thức tổng: <i>Sₙ = u₁ × (1 - qⁿ) / (1 - q)</i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const canvas = document.getElementById('fractalCanvas');
+    const ctx = canvas.getContext('2d');
+    const stepRange = document.getElementById('stepRange');
+    
+    // Hàm đệ quy vẽ các hình vuông xanh
+    function drawBlueSquares(x, y, size, currentStep, targetStep) {
+        if (currentStep > targetStep) return;
+        let third = size / 3;
+        
+        ctx.fillStyle = '#00a8ff'; 
+        ctx.fillRect(x + third, y + third, third, third);
+
+        ctx.strokeStyle = '#0086cc';
+        ctx.lineWidth = 1;
+        ctx.strokeRect(x + third, y + third, third, third);
+
+        for (let row = 0; row < 3; row++) {
+            for (let col = 0; col < 3; col++) {
+                if (row === 1 && col === 1) continue; 
+                drawBlueSquares(x + col * third, y + row * third, third, currentStep + 1, targetStep);
+            }
+        }
+    }
+
+    // Cập nhật toàn bộ giao diện khi kéo thanh trượt
+    function updateSimulation() {
+        let n = parseInt(stepRange.value);
+        document.getElementById('stepDisplay').innerText = n;
+        
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = '#f1c40f'; 
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        let segments = Math.pow(3, n); 
+        let stepSize = canvas.width / segments;
+
+        ctx.beginPath();
+        ctx.strokeStyle = n <= 3 ? 'rgba(0, 0, 0, 0.25)' : 'rgba(0, 0, 0, 0.1)';
+        ctx.lineWidth = 1;
+
+        for (let i = 1; i < segments; i++) {
+            ctx.moveTo(i * stepSize, 0);
+            ctx.lineTo(i * stepSize, canvas.height);
+            ctx.moveTo(0, i * stepSize);
+            ctx.lineTo(canvas.width, i * stepSize);
+        }
+        ctx.stroke();
+
+        drawBlueSquares(0, 0, canvas.width, 1, n);
+        
+        document.getElementById('inputUn').value = "";
+        document.getElementById('inputSn').value = "";
+        document.getElementById('feedbackMsg').className = "feedback";
+        document.getElementById('feedbackMsg').innerText = "";
+        document.getElementById('hintBox').style.display = "none";
+    }
+
+    // Thuật toán kiểm tra
+    function checkAnswers() {
+        let n = parseInt(stepRange.value);
+        let userUn = document.getElementById('inputUn').value.replace(/\s/g, '');
+        let userSn = document.getElementById('inputSn').value.replace(/\s/g, '');
+        
+        let correctUn = Math.pow(8, n - 1) + "/" + Math.pow(9, n);
+        let correctSn = (Math.pow(9, n) - Math.pow(8, n)) + "/" + Math.pow(9, n);
+        let feedback = document.getElementById('feedbackMsg');
+        
+        if (userUn === "" || userSn === "") {
+            feedback.className = "feedback wrong";
+            feedback.innerText = "Hãy nhập đầy đủ 2 đáp án nhé!";
+            return;
+        }
+
+        if (userUn === correctUn && userSn === correctSn) {
+            feedback.className = "feedback correct";
+            feedback.innerHTML = "🎉 Chính xác! Bạn đã làm rất tốt.";
+            document.getElementById('hintBox').style.display = "none";
+        } else if (userUn !== correctUn && userSn === correctSn) {
+            feedback.className = "feedback wrong";
+            feedback.innerText = "Tổng Sₙ đúng rồi, nhưng diện tích uₙ (ô xanh sinh thêm) ở bước này bị sai. Kiểm tra lại n nha!";
+        } else if (userUn === correctUn && userSn !== correctSn) {
+            feedback.className = "feedback wrong";
+            feedback.innerText = "uₙ chuẩn xác! Hãy cộng lại Sₙ cẩn thận hơn một chút.";
+        } else {
+            feedback.className = "feedback wrong";
+            feedback.innerText = "❌ Chưa chính xác. Hãy nháp lại cẩn thận nhé!";
+        }
+    }
+
+    // --- LOGIC KÍCH HOẠT TÍNH NĂNG ẨN DÀNH CHO GIÁO VIÊN ---
+    let clickCount = 0;
+    let clickTimer;
+    
+    document.getElementById('secretTrigger').addEventListener('click', function() {
+        clickCount++;
+        clearTimeout(clickTimer);
+        
+        if (clickCount === 3) {
+            // Mở hoặc đóng bảng gợi ý khi click đủ 3 lần
+            let hint = document.getElementById('hintBox');
+            hint.style.display = (hint.style.display === "none" || hint.style.display === "") ? "block" : "none";
+            clickCount = 0; // Reset bộ đếm
+        } else {
+            // Nếu không click tiếp trong vòng 0.8 giây, bộ đếm tự reset về 0
+            clickTimer = setTimeout(() => { 
+                clickCount = 0; 
+            }, 800); 
+        }
+    });
+
+    // Load trạng thái ban đầu
+    window.onload = updateSimulation;
+</script>
+
+</body>
+</html>

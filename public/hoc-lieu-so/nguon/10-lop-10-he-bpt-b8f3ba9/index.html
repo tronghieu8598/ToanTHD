@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vẽ hệ bất phương trình hai ẩn • Lớp 10</title>
+  <style>
+    :root{
+      --bg:#f3f7ff; --panel:#ffffff; --ink:#0f172a; --muted:#64748b;
+      --brand:#2563eb; --brand2:#4f46e5; --accent:#10b981; --warn:#f59e0b; --bad:#ef4444;
+      --line1:#ef4444; --line2:#22c55e; --line3:#06b6d4; --line4:#f97316; --line5:#a855f7; --line6:#64748b;
+      --border:#dbe7f5; --soft:#f8fbff; --shadow:0 18px 48px rgba(30,64,175,.10);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:radial-gradient(circle at 10% 0%,#dbeafe 0,transparent 30%),linear-gradient(180deg,#f8fbff,#eef4ff);min-height:100vh}
+    button,input,select,textarea{font:inherit}
+    header{position:sticky;top:0;z-index:20;background:linear-gradient(105deg,#1d4ed8,#4f46e5 70%,#2563eb);color:#fff;box-shadow:0 8px 30px rgba(30,64,175,.22)}
+    header .in{max-width:1480px;margin:auto;display:flex;gap:16px;align-items:center;justify-content:space-between;padding:14px 20px}
+    .brandBlock{display:flex;align-items:center;gap:12px;min-width:0}
+    .brandIcon{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;background:rgba(255,255,255,.16);font-size:23px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.18)}
+    header h1{margin:0;font-weight:900;font-size:clamp(18px,2.2vw,26px);letter-spacing:-.02em}
+    .subHead{font-size:12px;opacity:.88;margin-top:2px}
+    .badge{background:rgba(255,255,255,.14);padding:7px 11px;border-radius:999px;font-weight:800;font-size:12px;white-space:nowrap;border:1px solid rgba(255,255,255,.18)}
+
+    .wrap{max-width:1480px;margin:18px auto;padding:0 16px 22px;display:grid;grid-template-columns:minmax(390px,470px) minmax(0,1fr);gap:16px;align-items:start}
+    @media (max-width:1050px){.wrap{grid-template-columns:1fr}.graphPanel{order:-1}.graphPanel{position:static!important}}
+    @media (max-width:620px){header .in{padding:11px 12px}.badge{display:none}.wrap{padding:0 9px 18px;margin-top:10px}.brandIcon{width:38px;height:38px}.subHead{display:none}}
+
+    .card{background:rgba(255,255,255,.96);border:1px solid rgba(203,213,225,.65);border-radius:20px;box-shadow:var(--shadow);padding:14px}
+    .controlsPanel{display:flex;flex-direction:column;gap:12px}
+    .graphPanel{position:sticky;top:88px;padding:14px;overflow:hidden}
+    .section{background:linear-gradient(180deg,#fff,#fbfdff);border:1px solid var(--border);border-radius:16px;padding:12px}
+    .sectionTitle{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:900;color:#1e3a8a;margin-bottom:10px}
+    .stepNo{display:inline-grid;place-items:center;width:25px;height:25px;border-radius:8px;background:#dbeafe;color:#1d4ed8;font-size:12px}
+    .sectionNote{font-size:11px;color:var(--muted);margin-left:auto;font-weight:600}
+
+    label{font-size:12px;color:var(--muted);font-weight:700}
+    input[type="number"], input[type="text"], select, textarea{width:100%;padding:10px 11px;border-radius:11px;border:1px solid #cbd5e1;background:#fff;color:#0f172a;transition:.18s}
+    textarea{min-height:150px;resize:vertical;line-height:1.65;font-size:17px;font-weight:650;letter-spacing:.01em;background:#fbfdff}
+    textarea:focus,input:focus,select:focus{outline:none;border-color:#60a5fa;box-shadow:0 0 0 4px rgba(37,99,235,.10)}
+    .row{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    @media (max-width:620px){.grid{grid-template-columns:1fr}}
+
+    .quickInput{padding:0;border:0;background:none;border-radius:0}
+    .quickTitle{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap;margin-bottom:7px}
+    .quickTitle b{font-size:14px;color:#1d4ed8}
+    .opToolbar{display:grid;grid-template-columns:auto repeat(4,58px);align-items:center;gap:7px;margin:8px 0;padding:8px;background:#f1f6ff;border:1px solid #dbeafe;border-radius:13px}
+    .opToolbar .opLabel{font-size:11px;font-weight:900;color:#475569;padding-left:3px}
+    .opBtn{height:46px;border:1px solid #bfdbfe;border-radius:11px;background:#fff;color:#1d4ed8;font:900 23px/1 system-ui;cursor:pointer;box-shadow:0 3px 9px rgba(37,99,235,.08);touch-action:manipulation;transition:.15s}
+    .opBtn:hover{background:#dbeafe;transform:translateY(-1px)}
+    .opBtn:active{transform:none;box-shadow:none}
+    .opHint{display:none}
+    @media (max-width:520px){.opToolbar{grid-template-columns:1fr repeat(4,1fr)}.opBtn{min-width:0}}
+
+    .examples{display:flex;gap:6px;flex-wrap:wrap;margin:7px 0 0}
+    .chip{border:1px solid #cbd5e1;background:#fff;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:800;cursor:pointer;color:#334155;transition:.15s}
+    .chip:hover{border-color:#60a5fa;color:#1d4ed8;background:#eff6ff}
+
+    .btn{border:none;padding:10px 14px;border-radius:11px;font-weight:850;color:#fff;background:linear-gradient(135deg,#2563eb,#4f46e5);cursor:pointer;box-shadow:0 7px 18px rgba(37,99,235,.22);transition:.15s}
+    .btn:hover{transform:translateY(-1px);filter:brightness(1.02)}
+    .btn:active{transform:none}
+    .btn.alt{background:linear-gradient(135deg,#059669,#10b981);box-shadow:0 7px 18px rgba(16,185,129,.20)}
+    .btn.ghost{background:#eef4ff;color:#1e3a8a;box-shadow:none;border:1px solid #dbeafe}
+    .btn.warn{background:#f59e0b}
+    .btn.mainAction{flex:1;min-width:180px;font-size:14px;padding:12px 16px}
+
+    .toggleGrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+    .toggleItem{display:flex;align-items:center;gap:8px;padding:9px 10px;border:1px solid #dbe7f5;background:#f8fbff;border-radius:11px;font-size:12px;color:#334155;font-weight:750;cursor:pointer}
+    .toggleItem input{width:auto;accent-color:#2563eb}
+    .parseOk{color:#047857;font-weight:800}.parseBad{color:#b91c1c;font-weight:800}
+    #ineqBox.hiddenAdvanced{display:none}
+
+    .legend{display:flex;gap:7px;flex-wrap:wrap}
+    .tag{display:inline-flex;gap:6px;align-items:center;background:#fff;border:1px solid #dbe7f5;padding:6px 9px;border-radius:999px;font-size:11px;font-weight:750;box-shadow:0 2px 7px rgba(15,23,42,.04)}
+    .dot{width:10px;height:10px;border-radius:3px;flex:0 0 auto}
+    .small{font-size:11px;color:var(--muted)}
+
+    .graphHead{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:10px}
+    .graphTitle{font-size:16px;font-weight:900;color:#0f172a}
+    .graphSub{font-size:11px;color:#64748b;margin-top:2px}
+    .graphKey{display:flex;align-items:center;gap:6px;font-size:11px;color:#475569;white-space:nowrap}
+    .whiteSwatch{width:16px;height:16px;background:#fff;border:1px solid #94a3b8;border-radius:5px}
+    .board{position:relative;display:grid;place-items:center;min-height:440px;background:linear-gradient(180deg,#f8fbff,#fff);border:1px solid #dbe7f5;border-radius:16px;padding:8px;overflow:hidden}
+    #plot{width:min(900px,100%);height:auto;max-height:72vh;background:#fff;border-radius:12px;box-shadow:inset 0 0 0 1px #e5e7eb}
+    canvas{touch-action:none}
+    .tooltip{position:absolute;pointer-events:none;background:#0f172a;color:#fff;padding:6px 8px;border-radius:8px;font-size:12px;transform:translate(-50%,-120%);white-space:nowrap;z-index:4}
+    .scaleInfo{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-top:8px;font-size:11px;color:#64748b;padding:0 3px}
+    .status{margin-top:10px;padding:10px 12px;border-radius:12px;background:#f1f5f9;color:#0f172a;font-size:12px;border:1px solid #e2e8f0}
+    .status b{color:#1d4ed8}
+
+    table{width:100%;border-collapse:collapse;margin-top:8px;font-size:12px}
+    th,td{border-bottom:1px solid #e5e7eb;padding:8px 6px;text-align:right}
+    th{background:#f8fafc;color:#0f172a;position:sticky;top:0}
+    td:first-child,th:first-child{text-align:left}
+    tr.hit{background:#ecfeff;font-weight:800}
+    details{border:1px dashed #cbd5e1;border-radius:12px;padding:8px 10px;background:#fff}
+    details summary{cursor:pointer;font-size:12px;font-weight:800;color:#475569}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="in">
+      <div class="brandBlock">
+        <div class="brandIcon">📐</div>
+        <div>
+          <h1>Vẽ hệ bất phương trình hai ẩn</h1>
+          <div class="subHead">Toán 10 • Nhập trực tiếp như trên giấy • Quan sát miền bị loại và miền nghiệm</div>
+        </div>
+      </div>
+      <div class="badge">LỚP TOÁN THẦY DANH</div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <!-- LEFT: Controls -->
+    <section class="card controlsPanel">
+      <div class="section">
+        <div class="sectionTitle"><span class="stepNo">1</span> Nhập hệ bất phương trình <span class="sectionNote">mỗi dòng một BPT</span></div>
+        <div class="quickInput">
+        <div class="quickTitle">
+          <b>⚡ Nhập nhanh hệ bất phương trình</b>
+          <span class="small">Mỗi dòng 1 bất phương trình • tự hiểu ≤, ≥, &lt;=, &gt;=</span>
+        </div>
+        <textarea id="quickIneq" spellcheck="false" inputmode="text" placeholder="Ví dụ:
+2x + y ≤ 10
+x + 2y ≤ 8
+−x + y ≤ 2"></textarea>
+        <div class="opToolbar" aria-label="Bộ chèn dấu bất phương trình">
+          <span class="opLabel">CHÈN DẤU:</span>
+          <button class="opBtn" type="button" data-op="≤" title="Bé hơn hoặc bằng">≤</button>
+          <button class="opBtn" type="button" data-op="≥" title="Lớn hơn hoặc bằng">≥</button>
+          <button class="opBtn" type="button" data-op="<" title="Bé hơn">&lt;</button>
+          <button class="opBtn" type="button" data-op=">" title="Lớn hơn">&gt;</button>
+          <span class="opHint">Bấm dấu để chèn ngay tại vị trí con trỏ.</span>
+        </div>
+        <div class="examples">
+          <button class="chip" type="button" data-example="2x + y &lt;= 10&#10;x + 2y &lt;= 8&#10;-x + y &lt;= 2">Ví dụ 1</button>
+          <button class="chip" type="button" data-example="x + y &lt;= 6&#10;2x - y &gt;= 2&#10;x &lt;= 5">Có dấu ≥</button>
+          <button class="chip" type="button" data-example="x + y &gt; 2&#10;x - 2y &lt; 4&#10;y &lt;= 3">Có dấu &lt; &gt;</button>
+        </div>
+        <div class="row" style="margin-top:9px">
+          <button class="btn alt mainAction" id="parseDrawBtn" type="button">▶ VẼ MIỀN NGHIỆM</button>
+          <button class="btn ghost" id="clearQuickBtn" type="button">Xóa</button>
+          <span class="small" id="parseMsg">Gõ tự nhiên: <b>2x+y≤10</b>, <b>x−y≥3</b>, <b>x≤6</b>.</span>
+        </div>
+      </div>
+      </div>
+
+      <div class="section">
+        <div class="sectionTitle"><span class="stepNo">2</span> Tùy chọn hiển thị</div>
+        <div class="toggleGrid">
+          <label class="toggleItem"><input id="nonNegToggle" type="checkbox"> Thêm x ≥ 0, y ≥ 0</label>
+          <label class="toggleItem"><input id="shadeToggle" type="checkbox" checked> Tô phần bị loại</label>
+          <label class="toggleItem"><input id="gridToggle" type="checkbox" checked> Hiện lưới tọa độ</label>
+          <label class="toggleItem"><input id="labelToggle" type="checkbox" checked> Hiện tên đường biên</label>
+          <label class="toggleItem"><input id="vertexToggle" type="checkbox" checked> Hiện các đỉnh</label>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="sectionTitle"><span class="stepNo">3</span> Tối ưu tuyến tính <span class="sectionNote">tùy chọn</span></div>
+        <div class="grid">
+          <div><label>Hệ số của x</label><input type="number" id="c1" step="any" placeholder="c₁"></div>
+          <div><label>Hệ số của y</label><input type="number" id="c2" step="any" placeholder="c₂"></div>
+        </div>
+        <div style="margin-top:8px"><label>Yêu cầu</label><select id="sense"><option value="max">Tìm giá trị lớn nhất</option><option value="min">Tìm giá trị nhỏ nhất</option></select></div>
+        <div class="small" style="margin-top:6px">Hàm mục tiêu: Z = c₁x + c₂y. Có thể bỏ qua nếu chỉ cần vẽ miền nghiệm.</div>
+      </div>
+
+      <details>
+        <summary>⚙️ Chỉnh hệ số từng bất phương trình</summary>
+        <div id="ineqBox" style="margin-top:10px"></div>
+      </details>
+      <div class="row">
+        <button class="btn ghost" id="resetBtn">↺ Khôi phục ví dụ</button>
+        <button class="btn ghost" id="dragBtn">🖐 Rê hàm mục tiêu</button>
+        <span class="small" id="msg">Sẵn sàng.</span>
+      </div>
+    </section>
+
+    <!-- RIGHT: Plot + Results -->
+    <section class="card graphPanel">
+      <div class="graphHead">
+        <div>
+          <div class="graphTitle">Mặt phẳng tọa độ Oxy</div>
+          <div class="graphSub">Miền trắng là phần đồng thời thỏa mãn tất cả bất phương trình</div>
+        </div>
+        <div class="graphKey"><span class="whiteSwatch"></span> Miền nghiệm</div>
+      </div>
+      <div class="legend" id="legend" style="margin-bottom:9px"></div>
+      <div class="board">
+        <canvas id="plot"></canvas>
+        <div class="tooltip" id="tip" style="display:none"></div>
+      </div>
+      <div class="scaleInfo"><span id="scaleInfo">Tỉ lệ trục: tự động</span><span>Di chuột lên đỉnh để xem tọa độ</span></div>
+      <div class="status" id="status">Nhập hệ bất phương trình rồi bấm <b>Vẽ miền nghiệm</b>.</div>
+      <div id="results"></div>
+    </section>
+  </main>
+
+  <script>
+  // ===== Cấu hình chung =====
+  const config={
+    axes:{color:'#64748b'}, grid:{color:'#dbe4f0'}, feasibleFill:'#ffffff', vertex:{r:5, color:'#111'}, optimal:{r:7, color:'#2563eb'},
+    colors:['var(--line1)','var(--line2)','var(--line3)','var(--line4)','var(--line5)','var(--line6)'],
+    objLine:'#111', objLineDash:[8,6]
+  };
+
+  // ===== Dữ liệu khởi tạo =====
+  const initialProblem={
+    title:'Hệ bất phương trình hai ẩn', sense:'max', c:[5,4],
+    constraints:[
+      {a:2,b:1,c:10,label:'2x + y ≤ 10',enabled:true},
+      {a:1,b:2,c:8,label:'x + 2y ≤ 8',enabled:true},
+      {a:-1,b:1,c:2,label:'−x + y ≤ 2',enabled:true}
+    ],
+    note:'Nhập hệ bất phương trình, quan sát phần bị loại theo màu và miền nghiệm màu trắng.'
+  };
+
+  // ===== DOM helpers =====
+  const $=s=>document.querySelector(s);
+  const plot=$('#plot'); const ctx=plot.getContext('2d');
+  const tip=$('#tip');
+
+  // ===== Trạng thái hiện tại =====
+  let cur=JSON.parse(JSON.stringify(initialProblem));
+  let dragEnabled=false; let dragZ=null; // Z hiện tại khi rê
+  let useNonNegative=false; // mặc định vẽ hệ BPT tổng quát trên toàn mặt phẳng Oxy
+
+  // ===== Khởi tạo UI ràng buộc (thẻ chi tiết) =====
+  function renderConstraints(){
+    const box=$('#ineqBox'); box.innerHTML='';
+    const wrap=document.createElement('div'); wrap.className='grid';
+    cur.constraints.forEach((cn,i)=>{
+      const color=getColor(i);
+      const card=document.createElement('div');
+      card.className='card'; card.style.padding='10px';
+      card.innerHTML=`<div class="row" style="justify-content:space-between;align-items:center">
+        <div class="row" style="gap:6px">
+          <div class="dot" style="background:${color}"></div>
+          <b>Ràng buộc ${i+1}</b>
+        </div>
+        <div class="row" style="gap:8px">
+          <label class="small">Bật</label><input type="checkbox" ${cn.enabled!==false?'checked':''} data-k="en-${i}">
+          <button class="btn warn" data-del="${i}" title="Xóa">×</button>
+        </div>
+      </div>
+      <div class="row" style="margin-top:6px;display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:7px">
+        <input type="number" step="any" value="${cn.a}" data-k="a-${i}" aria-label="Hệ số x">
+        <b>x +</b>
+        <input type="number" step="any" value="${cn.b}" data-k="b-${i}" aria-label="Hệ số y">
+        <b>y ≤</b>
+        <input type="number" step="any" value="${cn.c}" data-k="c-${i}" aria-label="Vế phải">
+      </div>
+      <input type="text" value="${cn.label||''}" data-k="label-${i}" placeholder="ghi chú (tùy chọn)" />`;
+      wrap.appendChild(card);
+    });
+
+    // Thêm mới
+    const add=document.createElement('div'); add.className='row'; add.style.marginTop='8px';
+    add.innerHTML=`<button class="btn ghost" id="addC">+ Thêm ràng buộc</button>`;
+    box.appendChild(wrap); box.appendChild(add);
+
+    // Legend
+    const leg=$('#legend'); leg.innerHTML='';
+    cur.constraints.forEach((cn,i)=>{
+      const t=document.createElement('span'); t.className='tag';
+      t.innerHTML=`<span class="dot" style="background:${getColor(i)}"></span>${escapeHtml(cn.label||('Ràng buộc '+(i+1)))}`;
+      leg.appendChild(t);
+    });
+    syncQuickInput();
+  }
+
+  // ===== Nhập nhanh hệ bất phương trình =====
+  function prettyNum(v){
+    if(Math.abs(v-Math.round(v))<1e-10) return String(Math.round(v));
+    return String(+v.toFixed(6));
+  }
+  function termText(coef, variable, first=false){
+    if(Math.abs(coef)<1e-12) return '';
+    const sign=coef<0?'-':'+'; const a=Math.abs(coef);
+    const body=(Math.abs(a-1)<1e-12?'':prettyNum(a))+variable;
+    if(first) return (coef<0?'-':'')+body;
+    return ` ${sign} ${body}`;
+  }
+  function constraintToText(L){
+    let out='';
+    if(Math.abs(L.a)>1e-12) out+=termText(L.a,'x',true);
+    if(Math.abs(L.b)>1e-12) out+=termText(L.b,'y',out==='');
+    if(!out) out='0';
+    return `${out} ≤ ${prettyNum(L.c)}`;
+  }
+  function syncQuickInput(){
+    const el=$('#quickIneq'); if(!el) return;
+    if(document.activeElement===el && el.dataset.dirty==='1') return;
+    el.value=cur.constraints.map(constraintToText).join('\n');
+    el.dataset.dirty='0';
+  }
+  function parseLinearExpr(expr){
+    let s=(expr||'').toLowerCase()
+      .replace(/[−–—]/g,'-').replace(/,/g,'.')
+      .replace(/[·×*]/g,'').replace(/\s+/g,'');
+    if(!s) throw new Error('vế trống');
+    if(/[^0-9.xy+\-]/.test(s)) throw new Error('chỉ dùng số, x, y, +, −');
+    if(!/^[+\-]/.test(s)) s='+'+s;
+    const terms=s.match(/[+\-][^+\-]+/g)||[];
+    let a=0,b=0,k=0;
+    for(const t of terms){
+      const sign=t[0]==='-'?-1:1; const body=t.slice(1);
+      const xCount=(body.match(/x/g)||[]).length, yCount=(body.match(/y/g)||[]).length;
+      if(xCount+yCount>1) throw new Error(`không hiểu hạng tử “${body}”`);
+      if(xCount===1){
+        const q=body.replace('x',''); const coef=q===''?1:Number(q);
+        if(!Number.isFinite(coef)) throw new Error('hệ số x không hợp lệ');
+        a+=sign*coef;
+      }else if(yCount===1){
+        const q=body.replace('y',''); const coef=q===''?1:Number(q);
+        if(!Number.isFinite(coef)) throw new Error('hệ số y không hợp lệ');
+        b+=sign*coef;
+      }else{
+        const num=Number(body); if(!Number.isFinite(num)) throw new Error('hằng số không hợp lệ'); k+=sign*num;
+      }
+    }
+    return {a,b,k};
+  }
+  function parseOneInequality(raw){
+    let line=(raw||'').trim()
+      .replace(/^\s*(?:[•–]\s*|-\s+|\d+[.)]\s*)/,'')
+      .replace(/[−–—]/g,'-')
+      .replace(/≤/g,'<=').replace(/≥/g,'>=');
+    if(!line) return [];
+    const m=line.match(/(<=|>=|<|>|=)/);
+    if(!m) throw new Error('thiếu dấu ≤ hoặc ≥');
+    const op=m[1], pos=m.index;
+    const L=parseLinearExpr(line.slice(0,pos));
+    const R=parseLinearExpr(line.slice(pos+op.length));
+    let a=L.a-R.a, b=L.b-R.b, c=R.k-L.k;
+    if(Math.abs(a)<1e-12 && Math.abs(b)<1e-12) throw new Error('không có biến x hoặc y');
+    const strict=(op==='<'||op==='>');
+    const mk=(aa,bb,cc,label)=>({a:aa,b:bb,c:cc,label,enabled:true,strict});
+    const label=line.replace('<=','≤').replace('>=','≥');
+    if(op==='>='||op==='>'){ a=-a; b=-b; c=-c; return [mk(a,b,c,label)]; }
+    if(op==='=') return [mk(a,b,c,label+' (≤)'),mk(-a,-b,-c,label+' (≥)')];
+    return [mk(a,b,c,label)];
+  }
+  function parseQuickSystem(text){
+    const rawLines=(text||'').replace(/[{}]/g,'').split(/\n|;/).map(x=>x.trim()).filter(Boolean);
+    if(!rawLines.length) throw new Error('Hãy nhập ít nhất 1 bất phương trình.');
+    const out=[]; const errors=[]; let strictCount=0;
+    rawLines.forEach((line,i)=>{
+      try{
+        const arr=parseOneInequality(line); arr.forEach(L=>{if(L.strict) strictCount++; out.push(L);});
+      }catch(err){ errors.push(`Dòng ${i+1}: ${err.message}`); }
+    });
+    if(errors.length) throw new Error(errors.join(' • '));
+    return {constraints:out, strictCount};
+  }
+  function applyQuickAndDraw(){
+    const msg=$('#parseMsg');
+    try{
+      const originalText=$('#quickIneq').value;
+      const parsed=parseQuickSystem(originalText);
+      cur.constraints=parsed.constraints;
+      $('#quickIneq').dataset.dirty='0';
+      renderConstraints();
+      $('#quickIneq').value=originalText; $('#quickIneq').dataset.dirty='0';
+      solveAndDraw();
+      msg.className='small parseOk';
+      msg.textContent=`✓ Đã nhận diện ${cur.constraints.length} ràng buộc`+(parsed.strictCount?` • ${parsed.strictCount} dấu < hoặc > được hiển thị bằng đường biên nét đứt.`:'')+'.';
+    }catch(err){
+      msg.className='small parseBad'; msg.textContent='⚠ '+err.message;
+    }
+  }
+
+  // Mục tiêu & sense
+  function renderObjective(){
+    $('#c1').value=cur.c[0]; $('#c2').value=cur.c[1]; $('#sense').value=cur.sense;
+  }
+
+  // Đồng bộ input → state
+  function bindInputs(){
+    $('#ineqBox').addEventListener('input',e=>{
+      const k=e.target.getAttribute('data-k'); if(!k) return; const [field,idx]=k.split('-'); const i=+idx;
+      if(field==='a'||field==='b'||field==='c'){ cur.constraints[i][field]=parseFloat(e.target.value||'0'); syncQuickInput(); }
+      if(field==='label'){ cur.constraints[i].label=e.target.value; }
+    });
+    $('#ineqBox').addEventListener('change',e=>{
+      const k=e.target.getAttribute('data-k'); if(!k) return; const [field,idx]=k.split('-'); const i=+idx;
+      if(field==='en'){ cur.constraints[i].enabled = e.target.checked; }
+    });
+    $('#ineqBox').addEventListener('click',e=>{
+      if(e.target.matches('[data-del]')){ const i=+e.target.getAttribute('data-del'); cur.constraints.splice(i,1); renderConstraints(); }
+    });
+    document.addEventListener('click',e=>{ if(e.target && e.target.id==='addC'){ cur.constraints.push({a:1,b:1,c:10,label:'a·x + b·y ≤ c',enabled:true}); renderConstraints(); } });
+
+    $('#c1').addEventListener('input',()=>{ cur.c[0]=parseFloat($('#c1').value||'0'); if(dragEnabled) solveAndDraw(); });
+    $('#c2').addEventListener('input',()=>{ cur.c[1]=parseFloat($('#c2').value||'0'); if(dragEnabled) solveAndDraw(); });
+    $('#sense').addEventListener('change',()=>{ cur.sense=$('#sense').value; if(dragEnabled) solveAndDraw(); });
+  }
+
+  // ===== Toán học: tìm đỉnh miền khả thi =====
+  function feasibleVertices(cons){
+    const enabled = cons.filter(L=>L.enabled!==false);
+    const all=useNonNegative ? [...enabled,{a:-1,b:0,c:0,label:'x ≥ 0',enabled:true},{a:0,b:-1,c:0,label:'y ≥ 0',enabled:true}] : [...enabled];
+    const verts=[];
+    for(let i=0;i<all.length;i++){
+      for(let j=i+1;j<all.length;j++){
+        const L1=all[i], L2=all[j];
+        const det = L1.a*L2.b - L2.a*L1.b;
+        if(Math.abs(det)<1e-9) continue; // song song
+        const x=(L1.c*L2.b - L2.c*L1.b)/det;
+        const y=(L1.a*L2.c - L2.a*L1.c)/det;
+        if(Number.isFinite(x)&&Number.isFinite(y)){
+          if(isFeasible(x,y,all)) verts.push({x,y});
+        }
+      }
+    }
+    const uniq=[]; verts.forEach(p=>{ if(!uniq.some(q=>Math.hypot(p.x-q.x,p.y-q.y)<1e-6)) uniq.push(p); });
+    const cx=avg(uniq.map(p=>p.x)||[0]), cy=avg(uniq.map(p=>p.y)||[0]);
+    uniq.sort((p,q)=>Math.atan2(p.y-cy,p.x-cx)-Math.atan2(q.y-cy,q.x-cx));
+    return uniq;
+  }
+  function isFeasible(x,y,cons){ return cons.every(L=> L.a*x + L.b*y <= L.c + 1e-9 ); }
+  const avg=a=>a.length? a.reduce((s,v)=>s+v,0)/a.length : 0;
+
+  // ===== Tối ưu trên tập đỉnh =====
+  function optimize(verts,c1,c2,sense){
+    if(!verts.length) return null;
+    let best=verts[0], bestZ=c1*best.x+c2*best.y;
+    for(const p of verts){ const z=c1*p.x+c2*p.y; if((sense==='max' && z>bestZ+1e-9) || (sense==='min' && z<bestZ-1e-9)) { best=p; bestZ=z; } }
+    return {point:best, value:bestZ};
+  }
+
+  // ===== Khung nhìn & chuyển đổi toạ độ =====
+  function worldBounds(cons){
+    const enabled = cons.filter(L=>L.enabled!==false);
+    const vs=feasibleVertices(cons);
+    if(useNonNegative){
+      let maxX=0,maxY=0;
+      enabled.forEach(L=>{
+        if(Math.abs(L.a)>1e-9) maxX=Math.max(maxX, Math.abs(L.c/L.a));
+        if(Math.abs(L.b)>1e-9) maxY=Math.max(maxY, Math.abs(L.c/L.b));
+      });
+      vs.forEach(p=>{ maxX=Math.max(maxX,p.x); maxY=Math.max(maxY,p.y); });
+      maxX=Math.max(10,maxX*1.15); maxY=Math.max(10,maxY*1.15);
+      return {xmin:0,ymin:0,xmax:maxX,ymax:maxY};
+    }
+    let scale=10;
+    enabled.forEach(L=>{
+      if(Math.abs(L.a)>1e-9) scale=Math.max(scale,Math.abs(L.c/L.a));
+      if(Math.abs(L.b)>1e-9) scale=Math.max(scale,Math.abs(L.c/L.b));
+    });
+    if(vs.length){
+      const xs=vs.map(p=>p.x), ys=vs.map(p=>p.y);
+      let xmin=Math.min(...xs), xmax=Math.max(...xs), ymin=Math.min(...ys), ymax=Math.max(...ys);
+      const dx=Math.max(4,xmax-xmin), dy=Math.max(4,ymax-ymin);
+      xmin-=dx*.18; xmax+=dx*.18; ymin-=dy*.18; ymax+=dy*.18;
+      if(xmax-xmin<8){ const m=(xmin+xmax)/2; xmin=m-4; xmax=m+4; }
+      if(ymax-ymin<8){ const m=(ymin+ymax)/2; ymin=m-4; ymax=m+4; }
+      return {xmin,ymin,xmax,ymax};
+    }
+    scale=Math.max(10,scale*1.2);
+    return {xmin:-scale,ymin:-scale,xmax:scale,ymax:scale};
+  }
+  function setCanvasSize(){
+    const panel=plot.parentElement?.clientWidth || Math.min(900,window.innerWidth*.92);
+    const w=Math.max(320,Math.min(900,panel-18));
+    const h=Math.max(380,Math.min(650,w*.68));
+    plot.width=Math.round(w*2); plot.height=Math.round(h*2);
+    plot.style.width=w+'px'; plot.style.height=h+'px';
+  }
+  function sx(x){return padL + (x-ub.xmin)/(ub.xmax-ub.xmin) * (plot.width - padL - padR)}
+  function sy(y){return plot.height - padB - (y-ub.ymin)/(ub.ymax-ub.ymin) * (plot.height - padT - padB)}
+  function wx(X){return ub.xmin + (X - padL)/(plot.width - padL - padR)*(ub.xmax-ub.xmin)}
+  function wy(Y){return ub.ymin + (plot.height - padB - Y)/(plot.height - padT - padB)*(ub.ymax-ub.ymin)}
+
+  let ub={xmin:0,ymin:0,xmax:10,ymax:10};
+  const padL=70,padR=20,padT=20,padB=60;
+
+  // ===== Vẽ đồ thị =====
+  function getActiveConstraints(cons){
+    const enabled = cons.filter(L=>L.enabled!==false);
+    return useNonNegative ? [...enabled,{a:-1,b:0,c:0,label:'x ≥ 0',enabled:true,isAuto:true},{a:0,b:-1,c:0,label:'y ≥ 0',enabled:true,isAuto:true}] : enabled;
+  }
+
+  function withAlpha(col, alpha){
+    const nums=(col.match(/[\d.]+/g)||[]).slice(0,3).map(Number);
+    if(nums.length<3) return col;
+    return `rgba(${nums[0]}, ${nums[1]}, ${nums[2]}, ${alpha})`;
+  }
+
+  function plotRectWorld(){
+    return [
+      {x:ub.xmin,y:ub.ymin},
+      {x:ub.xmax,y:ub.ymin},
+      {x:ub.xmax,y:ub.ymax},
+      {x:ub.xmin,y:ub.ymax}
+    ];
+  }
+
+  function clipPolygonHalfPlane(poly, L, keepGreater=false){
+    if(!poly.length) return [];
+    const inside = p => keepGreater ? (L.a*p.x + L.b*p.y >= L.c - 1e-9) : (L.a*p.x + L.b*p.y <= L.c + 1e-9);
+    const intersect = (p1,p2)=>{
+      const v1=L.a*p1.x + L.b*p1.y - L.c;
+      const v2=L.a*p2.x + L.b*p2.y - L.c;
+      const den=v1-v2;
+      const t=Math.abs(den)<1e-12 ? 0 : v1/den;
+      return {x:p1.x + t*(p2.x-p1.x), y:p1.y + t*(p2.y-p1.y)};
+    };
+    const out=[];
+    for(let i=0;i<poly.length;i++){
+      const cur=poly[i], prev=poly[(i+poly.length-1)%poly.length];
+      const ic=inside(cur), ip=inside(prev);
+      if(ic){
+        if(!ip) out.push(intersect(prev,cur));
+        out.push(cur);
+      }else if(ip){
+        out.push(intersect(prev,cur));
+      }
+    }
+    return out;
+  }
+
+  function drawWorldPolygon(poly, fillStyle, strokeStyle=null, lineWidth=1){
+    if(!poly || poly.length<3) return;
+    ctx.save();
+    ctx.beginPath();
+    ctx.moveTo(sx(poly[0].x), sy(poly[0].y));
+    for(let i=1;i<poly.length;i++) ctx.lineTo(sx(poly[i].x), sy(poly[i].y));
+    ctx.closePath();
+    if(fillStyle){ ctx.fillStyle=fillStyle; ctx.fill(); }
+    if(strokeStyle){ ctx.strokeStyle=strokeStyle; ctx.lineWidth=lineWidth; ctx.stroke(); }
+    ctx.restore();
+  }
+
+  function feasibleViewPolygon(cons){
+    let poly=plotRectWorld();
+    for(const L of getActiveConstraints(cons)) poly=clipPolygonHalfPlane(poly, L, false);
+    return poly;
+  }
+
+  function niceStep(span){
+    const rough=Math.max(span,1e-9)/8;
+    const power=Math.pow(10, Math.floor(Math.log10(rough)));
+    const norm=rough/power;
+    const nice=norm<=1?1:norm<=2?2:norm<=5?5:10;
+    return nice*power;
+  }
+
+  function draw(cons, verts, best){
+    ctx.clearRect(0,0,plot.width,plot.height);
+
+    ctx.save();
+    ctx.fillStyle='#ffffff';
+    ctx.fillRect(0,0,plot.width,plot.height);
+    ctx.fillStyle='#ffffff';
+    ctx.fillRect(padL,padT,plot.width-padL-padR,plot.height-padT-padB);
+    ctx.strokeStyle='#e5e7eb';
+    ctx.strokeRect(padL,padT,plot.width-padL-padR,plot.height-padT-padB);
+    ctx.restore();
+
+    const enabled = cons.filter(L=>L.enabled!==false);
+    if(!$('#shadeToggle') || $('#shadeToggle').checked){
+      enabled.forEach((L,i)=>{
+        const col=getColor(i);
+        const rejected=clipPolygonHalfPlane(plotRectWorld(), L, true);
+        drawWorldPolygon(rejected, withAlpha(col,0.16));
+      });
+    }
+    if(useNonNegative && (!$('#shadeToggle') || $('#shadeToggle').checked)){
+      drawWorldPolygon(clipPolygonHalfPlane(plotRectWorld(), {a:-1,b:0,c:0}, true), 'rgba(148,163,184,0.12)');
+      drawWorldPolygon(clipPolygonHalfPlane(plotRectWorld(), {a:0,b:-1,c:0}, true), 'rgba(100,116,139,0.10)');
+    }
+
+    const viewPoly=feasibleViewPolygon(cons);
+    if(viewPoly.length>=3) drawWorldPolygon(viewPoly, config.feasibleFill);
+
+    drawGridAxes();
+
+    enabled.forEach((L,i)=>{
+      const col=getColor(i);
+      ctx.save(); ctx.strokeStyle=col; ctx.lineWidth=3;
+      ctx.setLineDash(L.strict?[10,7]:[]);
+      const pts=[];
+      for(let k=0;k<=240;k++){
+        const x=ub.xmin + (ub.xmax-ub.xmin)*k/240;
+        const y = L.b!==0 ? (L.c - L.a*x)/L.b : (Math.abs(L.a)>1e-9 ? (L.c/L.a) : NaN);
+        if(Number.isFinite(y)) pts.push([sx(x), sy(y)]);
+      }
+      if(Math.abs(L.b)<1e-9 && Math.abs(L.a)>1e-9){
+        const x0=sx(L.c/L.a);
+        ctx.beginPath(); ctx.moveTo(x0,padT); ctx.lineTo(x0,plot.height-padB); ctx.stroke();
+      }else if(pts.length){
+        ctx.beginPath(); ctx.moveTo(pts[0][0],pts[0][1]);
+        for(const p of pts) ctx.lineTo(p[0],p[1]);
+        ctx.stroke();
+      }
+      const mid = (()=>{
+        const candidates=[];
+        for(let k=0;k<=20;k++){
+          const x=ub.xmin + (ub.xmax-ub.xmin)*k/20;
+          const y = L.b!==0 ? (L.c - L.a*x)/L.b : NaN;
+          if(Number.isFinite(y) && y>=ub.ymin && y<=ub.ymax) candidates.push({x,y});
+        }
+        if(Math.abs(L.b)<1e-9 && Math.abs(L.a)>1e-9){ const x=L.c/L.a; return {x,y:ub.ymax-(ub.ymax-ub.ymin)*0.08}; }
+        return candidates[Math.floor(candidates.length/2)] || {x:ub.xmin+(i+1)/(enabled.length+1)*(ub.xmax-ub.xmin), y:ub.ymax-(ub.ymax-ub.ymin)*0.08};
+      })();
+      const tx=Math.max(padL+16, Math.min(plot.width-padR-140, sx(mid.x)+10));
+      const ty=Math.max(padT+24, Math.min(plot.height-padB-12, sy(mid.y)-10));
+      if(!$('#labelToggle') || $('#labelToggle').checked){ ctx.fillStyle=col; ctx.font='bold 18px system-ui'; ctx.fillText(L.label||`Ràng buộc`, tx, ty); }
+      ctx.restore();
+    });
+
+    if(!$('#vertexToggle') || $('#vertexToggle').checked){
+      ctx.save();
+      for(const p of verts){ ctx.fillStyle=config.vertex.color; ctx.beginPath(); ctx.arc(sx(p.x), sy(p.y), config.vertex.r, 0, 2*Math.PI); ctx.fill(); }
+      if(best){ ctx.fillStyle=config.optimal.color; ctx.beginPath(); ctx.arc(sx(best.point.x), sy(best.point.y), config.optimal.r, 0, 2*Math.PI); ctx.fill(); }
+      ctx.restore();
+    }
+
+    if(dragEnabled && dragZ!=null){ drawObjectiveLine(dragZ); }
+  }
+
+  function getColor(i){ const d=document.createElement('div'); d.style.color=config.colors[i%config.colors.length]; document.body.appendChild(d); const col=getComputedStyle(d).color; d.remove(); return col; }
+
+  function drawGridAxes(){
+    ctx.save();
+    const xStep=niceStep(ub.xmax-ub.xmin), yStep=niceStep(ub.ymax-ub.ymin);
+    const axisY=(ub.ymin<=0 && 0<=ub.ymax)? sy(0) : Math.min(plot.height-padB, Math.max(padT, sy(ub.ymin)));
+    const axisX=(ub.xmin<=0 && 0<=ub.xmax)? sx(0) : Math.min(plot.width-padR, Math.max(padL, sx(ub.xmin)));
+
+    ctx.strokeStyle=config.grid.color; ctx.lineWidth=1;
+    if(!$('#gridToggle') || $('#gridToggle').checked){
+    for(let x=Math.ceil(ub.xmin/xStep)*xStep; x<=ub.xmax+1e-9; x+=xStep){
+      const X=sx(x);
+      ctx.beginPath(); ctx.moveTo(X,padT); ctx.lineTo(X, plot.height-padB); ctx.stroke();
+    }
+    for(let y=Math.ceil(ub.ymin/yStep)*yStep; y<=ub.ymax+1e-9; y+=yStep){
+      const Y=sy(y);
+      ctx.beginPath(); ctx.moveTo(padL,Y); ctx.lineTo(plot.width-padR, Y); ctx.stroke();
+    }
+    }
+
+    ctx.strokeStyle=config.axes.color; ctx.lineWidth=2.5;
+    ctx.beginPath(); ctx.moveTo(padL,axisY); ctx.lineTo(plot.width-padR,axisY); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(axisX,padT); ctx.lineTo(axisX,plot.height-padB); ctx.stroke();
+
+    ctx.fillStyle='#0f172a'; ctx.strokeStyle='#475569'; ctx.lineWidth=1.5; ctx.font='600 16px system-ui';
+    for(let x=Math.ceil(ub.xmin/xStep)*xStep; x<=ub.xmax+1e-9; x+=xStep){
+      const X=sx(x);
+      ctx.beginPath(); ctx.moveTo(X,axisY-8); ctx.lineTo(X,axisY+8); ctx.stroke();
+      if(Math.abs(x)>1e-9) ctx.fillText(fmt(x), X-10, Math.min(plot.height-18, axisY+24));
+    }
+    for(let y=Math.ceil(ub.ymin/yStep)*yStep; y<=ub.ymax+1e-9; y+=yStep){
+      const Y=sy(y);
+      ctx.beginPath(); ctx.moveTo(axisX-8,Y); ctx.lineTo(axisX+8,Y); ctx.stroke();
+      if(Math.abs(y)>1e-9) ctx.fillText(fmt(y), Math.max(6,axisX-54), Y+5);
+    }
+    if(ub.xmin<=0 && 0<=ub.xmax && ub.ymin<=0 && 0<=ub.ymax) ctx.fillText('0', axisX+8, axisY+20);
+
+    ctx.font='700 22px system-ui';
+    ctx.fillText('x', plot.width-padR-18, axisY-10);
+    ctx.fillText('y', axisX+10, padT+22);
+    const info=$('#scaleInfo'); if(info) info.textContent=`Khoảng chia: trục x = ${fmt(xStep)} • trục y = ${fmt(yStep)}`;
+    ctx.restore();
+  }
+
+  // ===== Bảng kết quả =====
+  function renderResults(verts, best){
+    const box=$('#results'); if(!verts.length){ box.innerHTML=''; return; }
+    let html=`<div style="overflow:auto;max-height:280px"><table><thead><tr><th>#</th><th>x</th><th>y</th><th>Z = ${fmt(cur.c[0])}·x + ${fmt(cur.c[1])}·y</th></tr></thead><tbody>`;
+    const bz=best? cur.c[0]*best.point.x + cur.c[1]*best.point.y : null;
+    verts.forEach((p,i)=>{ const z=cur.c[0]*p.x + cur.c[1]*p.y; const hit=best && Math.abs(z-bz)<1e-6 && Math.hypot(p.x-best.point.x,p.y-best.point.y)<1e-6; html+=`<tr class="${hit?'hit':''}"><td>${i+1}</td><td>${fmt(p.x)}</td><td>${fmt(p.y)}</td><td>${fmt(z)}</td></tr>`; });
+    html+='</tbody></table></div>';
+    if(best){ const senseTxt = cur.sense==='max'? 'tối đa' : 'tối thiểu'; html+=`<div class="status">⭐ <b>Đỉnh ${senseTxt}</b>: (x*, y*) = (<b>${fmt(best.point.x)}</b>, <b>${fmt(best.point.y)}</b>) → Z* = <b>${fmt(best.value)}</b>.`+(dragEnabled && dragZ!=null? ` <br>🔎 Đường đẳng mức hiện tại: Z = <b>${fmt(dragZ)}</b>.`:``)+`</div>`; }
+    box.innerHTML=html;
+  }
+
+  const fmt=(v)=> (Math.abs(v)<1e-9? '0' : (+v).toLocaleString('vi-VN',{maximumFractionDigits:4}));
+  const escapeHtml=s=>s.replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[m]));
+
+  // ===== Hover + Rê hàm mục tiêu =====
+  let hoverPts=[];
+  plot.addEventListener('mousemove', e=>{
+    const rect=plot.getBoundingClientRect(); const X=(e.clientX-rect.left)*2; const Y=(e.clientY-rect.top)*2;
+    if(!hoverPts.length && !dragEnabled){ tip.style.display='none'; return; }
+
+    // Nếu đang rê hàm mục tiêu
+    if(dragEnabled){
+      const xw=wx(X), yw=wy(Y); dragZ = cur.c[0]*xw + cur.c[1]*yw;
+      if($('#results').innerHTML){ const cons=cur.constraints.slice(); ub=worldBounds(cons); const verts=feasibleVertices(cons); const best=optimize(verts, +cur.c[0], +cur.c[1], cur.sense); draw(cons, verts, best); renderResults(verts, best); }
+      const feasTxt = (function(){ const all=useNonNegative ? [...cur.constraints.filter(L=>L.enabled!==false),{a:-1,b:0,c:0},{a:0,b:-1,c:0}] : [...cur.constraints.filter(L=>L.enabled!==false)]; return all.every(L=> L.a*xw+L.b*yw <= L.c + 1e-9) ? '✅ Trong miền' : '⛔ Ngoài miền'; })();
+      tip.style.display='block'; tip.textContent=`x=${fmt(xw)}, y=${fmt(yw)}, Z=${fmt(dragZ)} ${feasTxt}`; tip.style.left=(X/2)+'px'; tip.style.top=(Y/2)+'px';
+      return;
+    }
+
+    // Tooltip đỉnh
+    let found=null; for(const p of hoverPts){ const d=Math.hypot(sx(p.x)-X, sy(p.y)-Y); if(d<12){ found=p; break; } }
+    if(found){ tip.style.display='block'; tip.textContent=`(${fmt(found.x)}, ${fmt(found.y)})`; tip.style.left=(X/2)+'px'; tip.style.top=(Y/2)+'px'; }
+    else tip.style.display='none';
+  });
+  plot.addEventListener('mouseleave', ()=> tip.style.display='none');
+
+  // ===== Hành động chính =====
+  function solveAndDraw(){
+    setCanvasSize();
+    const cons=cur.constraints.slice();
+    ub=worldBounds(cons);
+    const verts=feasibleVertices(cons);
+    const viewPoly=feasibleViewPolygon(cons);
+    if(!viewPoly.length){
+      ctx.clearRect(0,0,plot.width,plot.height); drawGridAxes();
+      $('#status').innerHTML='⛔ <b>Hệ không có miền nghiệm trong khung nhìn.</b> Hãy kiểm tra lại các bất phương trình.';
+      $('#results').innerHTML=''; hoverPts=[]; dragZ=null; return;
+    }
+    const best=verts.length ? optimize(verts, +cur.c[0], +cur.c[1], cur.sense) : null;
+    draw(cons, verts, best); renderResults(verts, best); hoverPts=verts;
+    $('#status').innerHTML='✓ <b>Miền trắng</b> là miền nghiệm chung. Mỗi vùng màu là phần bị loại bởi một bất phương trình; đường biên cùng màu với bất phương trình tương ứng.';
+    dragZ = best ? best.value : null;
+    if(dragEnabled && dragZ!=null) drawObjectiveLine(dragZ);
+  }
+
+  function resetProblem(){
+    cur=JSON.parse(JSON.stringify(initialProblem));
+    useNonNegative=false;
+    if($('#nonNegToggle')) $('#nonNegToggle').checked=false;
+    renderObjective(); renderConstraints();
+    $('#status').textContent='Đã khôi phục ví dụ ban đầu.';
+    $('#results').innerHTML=''; hoverPts=[]; dragZ=null;
+    setCanvasSize(); ub=worldBounds(cur.constraints); drawGridAxes();
+  }
+
+  // ===== Khởi động =====
+  function boot(){
+    setCanvasSize(); renderObjective(); renderConstraints(); bindInputs(); ub=worldBounds(cur.constraints); drawGridAxes();
+    $('#msg').textContent = initialProblem.note;
+    $('#resetBtn').addEventListener('click', resetProblem);
+    $('#dragBtn').addEventListener('click', ()=>{ dragEnabled=!dragEnabled; $('#dragBtn').classList.toggle('alt', dragEnabled); $('#dragBtn').textContent = dragEnabled? '🖐️ Đang rê hàm mục tiêu' : '🖐️ Rê hàm mục tiêu'; if($('#results').innerHTML) solveAndDraw(); });
+    $('#parseDrawBtn').addEventListener('click', applyQuickAndDraw);
+    $('#nonNegToggle').addEventListener('change', ()=>{ useNonNegative=$('#nonNegToggle').checked; if($('#results').innerHTML) solveAndDraw(); });
+    ['shadeToggle','gridToggle','labelToggle','vertexToggle'].forEach(id=>{
+      $('#'+id).addEventListener('change',()=>{ if($('#results').innerHTML) solveAndDraw(); else drawGridAxes(); });
+    });
+    $('#quickIneq').addEventListener('input', ()=>{ $('#quickIneq').dataset.dirty='1'; $('#parseMsg').className='small'; $('#parseMsg').textContent='Đã thay đổi nội dung. Bấm “Nhận diện & Vẽ”.'; });
+    $('#clearQuickBtn').addEventListener('click', ()=>{ $('#quickIneq').value=''; $('#quickIneq').dataset.dirty='1'; $('#quickIneq').focus(); });
+    document.querySelectorAll('[data-op]').forEach(btn=>btn.addEventListener('click',()=>{
+      const ta=$('#quickIneq'); const op=btn.getAttribute('data-op')||'';
+      const start=Number.isInteger(ta.selectionStart)?ta.selectionStart:ta.value.length;
+      const end=Number.isInteger(ta.selectionEnd)?ta.selectionEnd:start;
+      ta.setRangeText(op,start,end,'end');
+      ta.dataset.dirty='1';
+      $('#parseMsg').className='small';
+      $('#parseMsg').textContent=`Đã chèn dấu ${op}. Tiếp tục nhập bất phương trình hoặc bấm “Nhận diện & Vẽ”.`;
+      ta.focus();
+    }));
+    document.querySelectorAll('[data-example]').forEach(btn=>btn.addEventListener('click',()=>{ $('#quickIneq').value=btn.getAttribute('data-example'); $('#quickIneq').dataset.dirty='1'; applyQuickAndDraw(); }));
+    $('#quickIneq').addEventListener('keydown',e=>{ if((e.ctrlKey||e.metaKey)&&e.key==='Enter'){ e.preventDefault(); applyQuickAndDraw(); } });
+    window.addEventListener('resize', ()=>{ if($('#results').innerHTML) solveAndDraw(); else { setCanvasSize(); drawGridAxes(); } });
+  }
+  boot();
+
+  // ===== Vẽ đường đẳng mức Z =====
+  function drawObjectiveLine(Z){
+    const c1=+cur.c[0], c2=+cur.c[1]; if(Math.abs(c1)<1e-9 && Math.abs(c2)<1e-9) return;
+    const pts=[]; for(let k=0;k<=200;k++){ const x=ub.xmin + (ub.xmax-ub.xmin)*k/200; const y=(Math.abs(c2)>1e-9)? (Z - c1*x)/c2 : NaN; if(Number.isFinite(y) && y>=ub.ymin-1 && y<=ub.ymax+1) pts.push([sx(x), sy(y)]); }
+    if(pts.length>=2){ ctx.save(); ctx.setLineDash(config.objLineDash); ctx.strokeStyle=config.objLine; ctx.lineWidth=2.5; ctx.beginPath(); ctx.moveTo(pts[0][0], pts[0][1]); for(const p of pts) ctx.lineTo(p[0],p[1]); ctx.stroke(); ctx.setLineDash([]); ctx.restore(); }
+  }
+
+  </script>
+</body>
+</html>

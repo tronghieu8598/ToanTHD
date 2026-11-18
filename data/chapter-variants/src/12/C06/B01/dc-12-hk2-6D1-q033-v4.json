@@ -1,0 +1,134 @@
+{
+  "id": "dc-12-hk2-6D1-q033-v4",
+  "source_fingerprint": "e876176d3712f89f1f8076410d9e2152c37f96ca0d307a891d37dc04a4a06575",
+  "variants": [
+    {
+      "id": "dc-12-hk2-6D1-q033-v4--bt01",
+      "number": 1,
+      "kind": "tf",
+      "prompt": "Bạn An có một túi gồm một số chiếc kẹo cùng loại, chỉ khác màu, trong đó có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn></mrow></semantics></math> chiếc kẹo sô-cô-la đen, còn lại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn></mrow></semantics></math> chiếc kẹo sô-cô-la trắng. An lấy ngẫu nhiên 1 chiếc kẹo trong túi để cho Bình, rồi lại lấy ngẫu nhiên tiếp 1 chiếc kẹo nữa trong túi và cũng đưa cho Bình. Xét tính đúng sai của các khẳng định sau",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Xác suất để Bình nhận được 2 chiếc kẹo sô-cô-la đen là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>5</mn><mn>14</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Xác suất để Bình nhận được 2 chiếc kẹo sô-cô-la trắng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>3</mn><mn>28</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Xác suất để Bình nhận được 2 chiếc kẹo sô-cô-la khác màu nhau là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>15</mn><mn>28</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Xác suất để Bình nhận được chiếc kẹo sô-cô-la đen ở lần thứ nhất, chiếc kẹo sô-cô-la trắng ở lần thứ hai là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>5</mn><mn>28</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "solution": "Tổng số chiếc kẹo trong túi ban đầu là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>8</mn></mrow></semantics></math>.<ol class=\"alpha-list\"><li><strong>Đúng</strong>. Xác suất nhận được 2 chiếc kẹo đen là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>5</mn></mrow><mrow><mn>8</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn></mrow><mrow><mn>7</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>14</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Xác suất nhận được 2 chiếc kẹo trắng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>3</mn></mrow><mrow><mn>8</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn></mrow><mrow><mn>7</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>28</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Xác suất nhận được 2 chiếc kẹo khác màu là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>14</mn></mfrac><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>28</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>15</mn><mn>28</mn></mfrac></mrow></semantics></math>.</li><li><strong>Sai</strong>. Xác suất lần 1 đen, lần 2 trắng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>5</mn></mrow><mrow><mn>8</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn></mrow><mrow><mn>7</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>15</mn><mn>56</mn></mfrac></mrow></semantics></math>.</li></ol>",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-6D1-q033-v4--bt02",
+      "number": 2,
+      "kind": "tf",
+      "prompt": "Bạn An có một túi gồm một số chiếc kẹo cùng loại, chỉ khác màu, trong đó có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>6</mn></mrow></semantics></math> chiếc kẹo sô-cô-la đen, còn lại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn></mrow></semantics></math> chiếc kẹo sô-cô-la trắng. An lấy ngẫu nhiên 1 chiếc kẹo trong túi để cho Bình, rồi lại lấy ngẫu nhiên tiếp 1 chiếc kẹo nữa trong túi và cũng đưa cho Bình. Xét tính đúng sai của các khẳng định sau",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Xác suất để Bình nhận được 2 chiếc kẹo sô-cô-la đen là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>5</mn><mn>12</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Xác suất để Bình nhận được 2 chiếc kẹo sô-cô-la trắng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>12</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Xác suất để Bình nhận được 2 chiếc kẹo sô-cô-la khác màu nhau là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Xác suất để Bình nhận được chiếc kẹo sô-cô-la đen ở lần thứ nhất, chiếc kẹo sô-cô-la trắng ở lần thứ hai là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>4</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "solution": "Tổng số chiếc kẹo trong túi ban đầu là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>6</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>9</mn></mrow></semantics></math>.<ol class=\"alpha-list\"><li><strong>Đúng</strong>. Xác suất nhận được 2 chiếc kẹo đen là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>6</mn></mrow><mrow><mn>9</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn></mrow><mrow><mn>8</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>12</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Xác suất nhận được 2 chiếc kẹo trắng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>3</mn></mrow><mrow><mn>9</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn></mrow><mrow><mn>8</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>12</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Xác suất nhận được 2 chiếc kẹo khác màu là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>12</mn></mfrac><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>12</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Xác suất lần 1 đen, lần 2 trắng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>6</mn></mrow><mrow><mn>9</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn></mrow><mrow><mn>8</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>4</mn></mfrac></mrow></semantics></math>.</li></ol>",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-6D1-q033-v4--bt03",
+      "number": 3,
+      "kind": "tf",
+      "prompt": "Bạn An có một túi gồm một số chiếc kẹo cùng loại, chỉ khác màu, trong đó có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>7</mn></mrow></semantics></math> chiếc kẹo sô-cô-la đen, còn lại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn></mrow></semantics></math> chiếc kẹo sô-cô-la trắng. An lấy ngẫu nhiên 1 chiếc kẹo trong túi để cho Bình, rồi lại lấy ngẫu nhiên tiếp 1 chiếc kẹo nữa trong túi và cũng đưa cho Bình. Xét tính đúng sai của các khẳng định sau",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Xác suất để Bình nhận được 2 chiếc kẹo sô-cô-la đen là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>7</mn><mn>22</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Xác suất để Bình nhận được 2 chiếc kẹo sô-cô-la trắng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>5</mn><mn>33</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Xác suất để Bình nhận được 2 chiếc kẹo sô-cô-la khác màu nhau là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>35</mn><mn>66</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Xác suất để Bình nhận được chiếc kẹo sô-cô-la đen ở lần thứ nhất, chiếc kẹo sô-cô-la trắng ở lần thứ hai là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>35</mn><mn>132</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "solution": "Tổng số chiếc kẹo trong túi ban đầu là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>7</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>12</mn></mrow></semantics></math>.<ol class=\"alpha-list\"><li><strong>Đúng</strong>. Xác suất nhận được 2 chiếc kẹo đen là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>7</mn></mrow><mrow><mn>12</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>6</mn></mrow><mrow><mn>11</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>7</mn><mn>22</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Xác suất nhận được 2 chiếc kẹo trắng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>5</mn></mrow><mrow><mn>12</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn></mrow><mrow><mn>11</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>33</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Xác suất nhận được 2 chiếc kẹo khác màu là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>7</mn><mn>22</mn></mfrac><mo>−</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>33</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>35</mn><mn>66</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Xác suất lần 1 đen, lần 2 trắng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>7</mn></mrow><mrow><mn>12</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn></mrow><mrow><mn>11</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>35</mn><mn>132</mn></mfrac></mrow></semantics></math>.</li></ol>",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-6D1-q033-v4--bt04",
+      "number": 4,
+      "kind": "tf",
+      "prompt": "Bạn An có một túi gồm một số chiếc kẹo cùng loại, chỉ khác màu, trong đó có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>8</mn></mrow></semantics></math> chiếc kẹo sô-cô-la đen, còn lại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn></mrow></semantics></math> chiếc kẹo sô-cô-la trắng. An lấy ngẫu nhiên 1 chiếc kẹo trong túi để cho Bình, rồi lại lấy ngẫu nhiên tiếp 1 chiếc kẹo nữa trong túi và cũng đưa cho Bình. Xét tính đúng sai của các khẳng định sau",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Xác suất để Bình nhận được 2 chiếc kẹo sô-cô-la đen là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>14</mn><mn>33</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Xác suất để Bình nhận được 2 chiếc kẹo sô-cô-la trắng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>11</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Xác suất để Bình nhận được 2 chiếc kẹo sô-cô-la khác màu nhau là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>16</mn><mn>33</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Xác suất để Bình nhận được chiếc kẹo sô-cô-la đen ở lần thứ nhất, chiếc kẹo sô-cô-la trắng ở lần thứ hai là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>8</mn><mn>33</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "solution": "Tổng số chiếc kẹo trong túi ban đầu là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>8</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>12</mn></mrow></semantics></math>.<ol class=\"alpha-list\"><li><strong>Đúng</strong>. Xác suất nhận được 2 chiếc kẹo đen là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>8</mn></mrow><mrow><mn>12</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>7</mn></mrow><mrow><mn>11</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>14</mn><mn>33</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Xác suất nhận được 2 chiếc kẹo trắng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>4</mn></mrow><mrow><mn>12</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn></mrow><mrow><mn>11</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>11</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Xác suất nhận được 2 chiếc kẹo khác màu là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>14</mn><mn>33</mn></mfrac><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>11</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>16</mn><mn>33</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Xác suất lần 1 đen, lần 2 trắng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>8</mn></mrow><mrow><mn>12</mn></mrow></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn></mrow><mrow><mn>11</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>8</mn><mn>33</mn></mfrac></mrow></semantics></math>.</li></ol>",
+      "accepted_answers": []
+    }
+  ]
+}

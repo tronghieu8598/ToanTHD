@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="330" height="225" viewBox="0 0 330 225">
+  <rect x="0" y="0" width="330" height="225" fill="#ffffff"/>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#1a1a1a"/>
+    </marker>
+    <marker id="arr-red" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#c0392b"/>
+    </marker>
+    <marker id="arr-blue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 9 5 L 0 8.5 z" fill="#1f618d"/>
+    </marker>
+  </defs>
+  <rect x="45" y="25" width="240" height="14" fill="#d5dbdb" stroke="#333333" stroke-width="1"/>
+  <rect x="45" y="180" width="240" height="14" fill="#d5dbdb" stroke="#333333" stroke-width="1"/>
+  <text x="65.0" y="36.0" font-family="DejaVu Serif, Georgia, serif" font-size="13" fill="#111111" text-anchor="middle">+</text>
+  <text x="65.0" y="191.0" font-family="DejaVu Serif, Georgia, serif" font-size="13" fill="#111111" text-anchor="middle">−</text>
+  <line x1="65.0" y1="42.0" x2="65.0" y2="176.0" stroke="#7f8c8d" stroke-width="1.0" marker-end="url(#arr)"/>
+  <text x="97.0" y="36.0" font-family="DejaVu Serif, Georgia, serif" font-size="13" fill="#111111" text-anchor="middle">+</text>
+  <text x="97.0" y="191.0" font-family="DejaVu Serif, Georgia, serif" font-size="13" fill="#111111" text-anchor="middle">−</text>
+  <line x1="97.0" y1="42.0" x2="97.0" y2="176.0" stroke="#7f8c8d" stroke-width="1.0" marker-end="url(#arr)"/>
+  <text x="129.0" y="36.0" font-family="DejaVu Serif, Georgia, serif" font-size="13" fill="#111111" text-anchor="middle">+</text>
+  <text x="129.0" y="191.0" font-family="DejaVu Serif, Georgia, serif" font-size="13" fill="#111111" text-anchor="middle">−</text>
+  <line x1="129.0" y1="42.0" x2="129.0" y2="176.0" stroke="#7f8c8d" stroke-width="1.0" marker-end="url(#arr)"/>
+  <text x="161.0" y="36.0" font-family="DejaVu Serif, Georgia, serif" font-size="13" fill="#111111" text-anchor="middle">+</text>
+  <text x="161.0" y="191.0" font-family="DejaVu Serif, Georgia, serif" font-size="13" fill="#111111" text-anchor="middle">−</text>
+  <line x1="161.0" y1="42.0" x2="161.0" y2="176.0" stroke="#7f8c8d" stroke-width="1.0" marker-end="url(#arr)"/>
+  <text x="193.0" y="36.0" font-family="DejaVu Serif, Georgia, serif" font-size="13" fill="#111111" text-anchor="middle">+</text>
+  <text x="193.0" y="191.0" font-family="DejaVu Serif, Georgia, serif" font-size="13" fill="#111111" text-anchor="middle">−</text>
+  <line x1="193.0" y1="42.0" x2="193.0" y2="176.0" stroke="#7f8c8d" stroke-width="1.0" marker-end="url(#arr)"/>
+  <text x="225.0" y="36.0" font-family="DejaVu Serif, Georgia, serif" font-size="13" fill="#111111" text-anchor="middle">+</text>
+  <text x="225.0" y="191.0" font-family="DejaVu Serif, Georgia, serif" font-size="13" fill="#111111" text-anchor="middle">−</text>
+  <line x1="225.0" y1="42.0" x2="225.0" y2="176.0" stroke="#7f8c8d" stroke-width="1.0" marker-end="url(#arr)"/>
+  <text x="257.0" y="36.0" font-family="DejaVu Serif, Georgia, serif" font-size="13" fill="#111111" text-anchor="middle">+</text>
+  <text x="257.0" y="191.0" font-family="DejaVu Serif, Georgia, serif" font-size="13" fill="#111111" text-anchor="middle">−</text>
+  <line x1="257.0" y1="42.0" x2="257.0" y2="176.0" stroke="#7f8c8d" stroke-width="1.0" marker-end="url(#arr)"/>
+  <circle cx="167" cy="95" r="9" fill="#fef9e7" stroke="#c0392b" stroke-width="1.5"/>
+  <text x="167.0" y="99.0" font-family="DejaVu Serif, Georgia, serif" font-size="13" fill="#c0392b" text-anchor="middle">+</text>
+  <text x="149.0" y="99.0" font-family="DejaVu Serif, Georgia, serif" font-size="14" font-style="italic" fill="#c0392b" text-anchor="middle">q</text>
+  <line x1="167.0" y1="104.0" x2="167.0" y2="150.0" stroke="#c0392b" stroke-width="2.0" marker-end="url(#arr-red)"/>
+  <text x="183.0" y="140.0" font-family="DejaVu Serif, Georgia, serif" font-size="14" font-style="italic" fill="#c0392b" text-anchor="middle">F</text>
+  <text x="165.0" y="214.0" font-family="DejaVu Serif, Georgia, serif" font-size="12" fill="#1f618d" text-anchor="middle">q = 10^(-8) C, E = 10^5 N/C</text>
+</svg>

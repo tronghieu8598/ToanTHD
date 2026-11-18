@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thí Nghiệm Ảo: Vòng Quay Lượng Giác</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --primary: #38bdf8;
+            --accent: #f43f5e;
+            --success: #10b981;
+            --text: #f8fafc;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: var(--bg-color);
+            color: var(--text);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            margin: 0 0 10px 0;
+            color: var(--primary);
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        .description {
+            max-width: 1000px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #94a3b8;
+            font-size: 14px;
+        }
+
+        .main-container {
+            display: flex;
+            gap: 20px;
+            max-width: 1100px;
+            width: 100%;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .canvas-container {
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 15px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        canvas {
+            background-color: #0b0f19;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+
+        .control-panel {
+            width: 100%;
+            max-width: 1000px;
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+            box-sizing: border-box;
+        }
+
+        .slider-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .slider-container label {
+            font-weight: 600;
+            min-width: 140px;
+        }
+
+        input[type=range] {
+            flex-grow: 1;
+            height: 8px;
+            border-radius: 4px;
+            background: #475569;
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--primary);
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+
+        input[type=range]::-webkit-slider-thumb:hover {
+            transform: scale(1.2);
+        }
+
+        .time-display {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--primary);
+            min-width: 80px;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        button {
+            background-color: #334155;
+            color: var(--text);
+            border: none;
+            padding: 10px 20px;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        button:hover {
+            background-color: #475569;
+            transform: translateY(-2px);
+        }
+
+        button.active {
+            background-color: var(--primary);
+            color: #0f172a;
+        }
+
+        button.highlight {
+            background-color: var(--accent);
+        }
+
+        button.highlight:hover {
+            background-color: #e11d48;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+            border-top: 1px solid #334155;
+            padding-top: 20px;
+        }
+
+        .stat-card {
+            background-color: #0f172a;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #334155;
+        }
+
+        .stat-val {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--success);
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎡 Mô Phỏng Tương Tác: Đu Quay Lượng Giác</h1>
+    <div class="description">
+        Bài toán: Đu quay bán kính 75m, tâm ở độ cao 90m, quay 1 vòng hết 30 phút. Người vào cabin tại vị trí thấp nhất. Hãy khảo sát độ cao sau 20 phút.
+    </div>
+
+    <div class="main-container">
+        <div class="canvas-container">
+            <h3 style="margin-top:0; color:#94a3b8;">Mô hình Hình học (Hệ trục Oxy)</h3>
+            <canvas id="ferrisCanvas" width="480" height="420"></canvas>
+        </div>
+
+        <div class="canvas-container">
+            <h3 style="margin-top:0; color:#94a3b8;">Đồ thị Độ cao theo Thời gian h(t)</h3>
+            <canvas id="graphCanvas" width="480" height="420"></canvas>
+        </div>
+    </div>
+
+    <div class="control-panel">
+        <div class="slider-container">
+            <label for="timeSlider">⏱️ Thời gian (t):</label>
+            <input type="range" id="timeSlider" min="0" max="60" step="0.1" value="0">
+            <div class="time-display" id="timeLabel">0.0 phút</div>
+        </div>
+
+        <div class="btn-group">
+            <button id="playBtn">▶️ Tự động quay</button>
+            <button id="btn0" class="active">Khởi phát (0 phút)</button>
+            <button id="btn15">Đỉnh cao nhất (15 phút)</button>
+            <button id="btn20" class="highlight">✨ Mốc bài toán (20 phút)</button>
+            <button id="btn30">Hết 1 vòng (30.phút)</button>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div>Góc quét lượng giác</div>
+                <div class="stat-val" id="angleStat">0°</div>
+            </div>
+            <div class="stat-card">
+                <div>Tọa độ hình học (x ; y)</div>
+                <div class="stat-val" id="coordStat">(0.0 ; -75.0)</div>
+            </div>
+            <div class="stat-card">
+                <div>Độ cao so với mặt đất (h)</div>
+                <div class="stat-val" id="heightStat" style="color: #38bdf8;">15.0 m</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const ferrisCanvas = document.getElementById('ferrisCanvas');
+        const ctxF = ferrisCanvas.getContext('2d');
+        const graphCanvas = document.getElementById('graphCanvas');
+        const ctxG = graphCanvas.getContext('2d');
+
+        const timeSlider = document.getElementById('timeSlider');
+        const timeLabel = document.getElementById('timeLabel');
+        const playBtn = document.getElementById('playBtn');
+
+        // Thông số bài toán thực tế
+        const R = 75; // mét
+        const H_tam = 90; // mét
+        const T = 30; // 30 phút/vòng
+
+        // Cấu hình hiển thị tỷ lệ (Scale) trên canvas
+        // Tâm đu quay đặt tại trung tâm canvas hình học (240, 200)
+        const originX = 240;
+        const originY = 200;
+        const scale = 1.8; // 1 mét thực tế = 1.8 pixel trên màn hình
+
+        let t = 0; // thời gian hiện tại
+        let isPlaying = false;
+        let animationFrameId = null;
+
+        // Hàm tính toán dựa trên công thức Lượng giác
+        function updateCalculations() {
+            // Góc quét theo thời gian (Radian). Xuất phát từ đáy (-PI/2), quay ngược chiều kim đồng hồ (+ góc)
+            // Tốc độ góc = 2*PI / T
+            const alpha = -Math.PI / 2 + (2 * Math.PI / T) * t;
+            
+            // Tọa độ hình học trên hệ trục Oxy lấy tâm đu quay làm gốc O(0,0)
+            const x = R * Math.cos(alpha);
+            const y = R * Math.sin(alpha);
+            
+            // Độ cao thực tế so với mặt đất
+            const h = y + H_tam;
+            
+            // Tính góc hình học theo độ (để học sinh dễ nhìn) từ trục Ox
+            let angleDeg = (alpha * 180 / Math.PI) % 360;
+            if (angleDeg < 0) angleDeg += 360;
+
+            return { x, y, h, angleDeg, alpha };
+        }
+
+        function drawFerrisWheel(data) {
+            ctxF.clearRect(0, 0, ferrisCanvas.width, ferrisCanvas.height);
+
+            // 1. Vẽ bầu trời & Mặt đất
+            const groundY = originY + (H_tam * scale);
+            ctxF.fillStyle = '#111827';
+            ctxF.fillRect(0, groundY, ferrisCanvas.width, ferrisCanvas.height - groundY);
+            // Kẻ đường mặt đất
+            ctxF.strokeStyle = '#64748b';
+            ctxF.lineWidth = 3;
+            ctxF.beginPath();
+            ctxF.moveTo(0, groundY);
+            ctxF.lineTo(ferrisCanvas.width, groundY);
+            ctxF.stroke();
+            ctxF.fillStyle = '#64748b';
+            ctxF.font = '12px Segoe UI';
+            ctxF.fillText('MẶT ĐẤT (y = -90m)', 10, groundY - 8);
+
+            // 2. Vẽ Hệ trục Tọa độ màu đỏ (Oxy lấy tâm làm gốc)
+            ctxF.strokeStyle = 'rgba(239, 68, 68, 0.4)';
+            ctxF.lineWidth = 1.5;
+            // Trục Ox
+            ctxF.beginPath();
+            ctxF.moveTo(20, originY);
+            ctxF.lineTo(ferrisCanvas.width - 20, originY);
+            ctxF.stroke();
+            // Mũi tên Ox
+            ctxF.fillStyle = 'rgba(239, 68, 68, 0.6)';
+            ctxF.fillText('x', ferrisCanvas.width - 15, originY + 4);
+
+            // Trục Oy
+            ctxF.beginPath();
+            ctxF.moveTo(originX, 10);
+            ctxF.lineTo(originX, groundY + 10);
+            ctxF.stroke();
+            ctxF.fillText('y', originX - 12, 15);
+            // Gốc O
+            ctxF.fillStyle = '#ef4444';
+            ctxF.beginPath();
+            ctxF.arc(originX, originY, 4, 0, Math.PI*2);
+            ctxF.fill();
+            ctxF.fillText('O (Tâm)', originX + 8, originY - 8);
+
+            // 3. Vẽ cấu trúc Đu quay (Vòng tròn lớn)
+            ctxF.strokeStyle = '#334155';
+            ctxF.lineWidth = 4;
+            ctxF.beginPath();
+            ctxF.arc(originX, originY, R * scale, 0, Math.PI * 2);
+            ctxF.stroke();
+
+            // Vẽ các nan hoa đu quay cố định để tăng cảm giác cơ học
+            ctxF.strokeStyle = 'rgba(51, 65, 85, 0.4)';
+            ctxF.lineWidth = 1;
+            for(let i=0; i<12; i++) {
+                let a = (i * Math.PI) / 6;
+                ctxF.beginPath();
+                ctxF.moveTo(originX, originY);
+                ctxF.lineTo(originX + R * scale * Math.cos(a), originY + R * scale * Math.sin(a));
+                ctxF.stroke();
+            }
+
+            // 4. Vẽ Cabin mục tiêu chuyển động (Điểm vàng/đỏ rực rỡ)
+            const cx = originX + data.x * scale;
+            const cy = originY - data.y * scale; // Trục Y màn hình ngược với Y toán học
+
+            // Đường gióng nét đứt màu xanh chỉ Độ cao xuống mặt đất
+            ctxF.strokeStyle = '#10b981';
+            ctxF.lineWidth = 1.5;
+            ctxF.setLineDash([4, 4]);
+            ctxF.beginPath();
+            ctxF.moveTo(cx, cy);
+            ctxF.lineTo(cx, groundY);
+            ctxF.stroke();
+            ctxF.setLineDash([]); // Reset nét liền
+
+            // Hiển thị độ cao real-time ngay cạnh đường gióng
+            ctxF.fillStyle = '#10b981';
+            ctxF.font = 'bold 13px Segoe UI';
+            ctxF.fillText(`h = ${data.h.toFixed(1)}m`, cx + 10, (cy + groundY)/2);
+
+            // Đường gióng ngang vào trục Oy để thấy giá trị y hình học
+            ctxF.strokeStyle = 'rgba(56, 189, 248, 0.5)';
+            ctxF.setLineDash([2, 3]);
+            ctxF.beginPath();
+            ctxF.moveTo(cx, cy);
+            ctxF.lineTo(originX, cy);
+            ctxF.stroke();
+            ctxF.setLineDash([]);
+
+            // Vẽ cục Cabin lung linh
+            let gradient = ctxF.createRadialGradient(cx, cy, 2, cx, cy, 10);
+            gradient.addColorStop(0, '#fff');
+            gradient.addColorStop(0.3, '#f43f5e');
+            gradient.addColorStop(1, 'transparent');
+            ctxF.fillStyle = gradient;
+            ctxF.beginPath();
+            ctxF.arc(cx, cy, 12, 0, Math.PI*2);
+            ctxF.fill();
+
+            ctxF.fillStyle = '#f8fafc';
+            ctxF.beginPath();
+            ctxF.arc(cx, cy, 5, 0, Math.PI*2);
+            ctxF.fill();
+            ctxF.strokeStyle = '#fff';
+            ctxF.lineWidth = 1.5;
+            ctxF.stroke();
+            
+            ctxF.fillStyle = '#f43f5e';
+            ctxF.font = 'bold 12px Segoe UI';
+            ctxF.fillText("Cabin", cx - 18, cy - 15);
+        }
+
+        function drawGraph(currentData) {
+            ctxG.clearRect(0, 0, graphCanvas.width, graphCanvas.height);
+
+            const paddingLeft = 50;
+            const paddingBottom = 50;
+            const graphW = graphCanvas.width - paddingLeft - 20;
+            const graphH = graphCanvas.height - paddingBottom - 30;
+
+            // Vẽ hệ trục đồ thị (Trục hoành: t (0->60p), Trục tung: h (0->180m))
+            ctxG.strokeStyle = '#475569';
+            ctxG.lineWidth = 2;
+            ctxG.beginPath();
+            // Trục tung
+            ctxG.moveTo(paddingLeft, 20);
+            ctxG.lineTo(paddingLeft, graphCanvas.height - paddingBottom);
+            // Trục hoành
+            ctxG.lineTo(graphCanvas.width - 20, graphCanvas.height - paddingBottom);
+            ctxG.stroke();
+
+            // Tên trục
+            ctxG.fillStyle = '#94a3b8';
+            ctxG.font = '12px Segoe UI';
+            ctxG.fillText('h (mét)', paddingLeft - 40, 25);
+            ctxG.fillText('t (phút)', graphCanvas.width - 60, graphCanvas.height - paddingBottom + 20);
+
+            // Vạch chia trục tung (Độ cao: 15m, 90m, 165m)
+            const heights = [15, 90, 165];
+            ctxG.textAlign = 'right';
+            heights.forEach(val => {
+                // Tỷ lệ chuyển đổi độ cao -> pixel trên đồ thị
+                const yPos = (graphCanvas.height - paddingBottom) - (val / 180) * graphH;
+                ctxG.fillStyle = '#64748b';
+                ctxG.beginPath();
+                ctxG.moveTo(paddingLeft - 5, yPos);
+                ctxG.lineTo(paddingLeft, yPos);
+                ctxG.stroke();
+                ctxG.fillText(val, paddingLeft - 8, yPos + 4);
+
+                // Đường lưới ngang mờ
+                ctxG.strokeStyle = 'rgba(51, 65, 85, 0.3)';
+                ctxG.beginPath();
+                ctxG.moveTo(paddingLeft, yPos);
+                ctxG.lineTo(graphCanvas.width - 20, yPos);
+                ctxG.stroke();
+            });
+
+            // Vạch chia trục hoành (Thời gian: 15p, 20p, 30p, 45p, 60p)
+            const times = [15, 20, 30, 45, 60];
+            ctxG.textAlign = 'center';
+            times.forEach(val => {
+                const xPos = paddingLeft + (val / 60) * graphW;
+                ctxG.strokeStyle = val === 20 ? 'rgba(244, 63, 94, 0.4)' : '#334155';
+                ctxG.lineWidth = val === 20 ? 1.5 : 1;
+                ctxG.beginPath();
+                ctxG.moveTo(xPos, graphCanvas.height - paddingBottom);
+                ctxG.lineTo(xPos, 20);
+                ctxG.stroke();
+                
+                ctxG.fillStyle = val === 20 ? '#f43f5e' : '#64748b';
+                ctxG.fillText(val, xPos, graphCanvas.height - paddingBottom + 16);
+            });
+            ctxG.textAlign = 'left';
+
+            // 2. Vẽ Đường Cong Hình Cosin/Sin toàn vẹn (t từ 0 đến 60)
+            ctxG.strokeStyle = '#38bdf8';
+            ctxG.lineWidth = 3;
+            ctxG.beginPath();
+            for(let i = 0; i <= 60; i += 0.5) {
+                const alpha_i = -Math.PI / 2 + (2 * Math.PI / T) * i;
+                const h_i = R * Math.sin(alpha_i) + H_tam;
+                
+                const xPos = paddingLeft + (i / 60) * graphW;
+                const yPos = (graphCanvas.height - paddingBottom) - (h_i / 180) * graphH;
+                
+                if(i === 0) ctxG.moveTo(xPos, yPos);
+                else ctxG.lineTo(xPos, yPos);
+            }
+            ctxG.stroke();
+
+            // 3. Vẽ Điểm Chạy Hiện Tại trên đồ thị
+            const curX = paddingLeft + (t / 60) * graphW;
+            const curY = (graphCanvas.height - paddingBottom) - (currentData.h / 180) * graphH;
+
+            ctxG.fillStyle = '#f43f5e';
+            ctxG.beginPath();
+            ctxG.arc(curX, curY, 6, 0, Math.PI*2);
+            ctxG.fill();
+            
+            // Nếu bằng đúng 20 phút thì highlight kết quả bài toán
+            if(Math.abs(t - 20) < 0.1) {
+                ctxG.fillStyle = '#fff';
+                ctxG.font = 'bold 13px Segoe UI';
+                ctxG.fillText('⭐ 127.5 m', curX + 10, curY - 10);
+            }
+        }
+
+        function render() {
+            // Cập nhật nhãn và thanh trượt
+            timeSlider.value = t;
+            timeLabel.innerText = parseFloat(t).toFixed(1) + " phút";
+
+            // Tính toán giá trị lượng giác tương ứng
+            const data = updateCalculations();
+
+            // Cập nhật bảng số liệu bên dưới
+            document.getElementById('angleStat').innerText = Math.round(data.angleDeg) + "°";
+            document.getElementById('coordStat').innerText = `(${data.x.toFixed(1)} ; ${data.y.toFixed(1)})`;
+            document.getElementById('heightStat').innerText = data.h.toFixed(1) + " m";
+
+            // Vẽ 2 vùng canvas độc lập
+            drawFerrisWheel(data);
+            drawGraph(data);
+        }
+
+        // Vòng lặp điều khiển hiệu ứng chuyển động mượt mà
+        function tick() {
+            if (!isPlaying) return;
+            t += 0.08; // Tốc độ thời gian trôi
+            if (t > 60) t = 0; // Reset khi chạy hết 2 chu kỳ (60 phút)
+            render();
+            animationFrameId = requestAnimationFrame(tick);
+        }
+
+        // Sự kiện tương tác của người dùng
+        timeSlider.addEventListener('input', (e) => {
+            t = parseFloat(e.target.value);
+            // Hủy tự động quay nếu người dùng đang chủ động kéo tay
+            if(isPlaying) {
+                isPlaying = false;
+                playBtn.innerText = "▶️ Tự động quay";
+                playBtn.classList.remove('active');
+            }
+            render();
+            setActiveButton(null);
+        });
+
+        playBtn.addEventListener('click', () => {
+            isPlaying = !isPlaying;
+            if(isPlaying) {
+                playBtn.innerText = "⏸️ Tạm dừng";
+                playBtn.classList.add('active');
+                tick();
+            } else {
+                playBtn.innerText = "▶️ Tự động quay";
+                playBtn.classList.remove('active');
+                cancelAnimationFrame(animationFrameId);
+            }
+        });
+
+        // Xử lý các nút bấm mốc thời gian cố định
+        const buttons = {
+            'btn0': 0,
+            'btn15': 15,
+            'btn20': 20,
+            'btn30': 30
+        };
+
+        Object.keys(buttons).forEach(btnId => {
+            document.getElementById(btnId).addEventListener('click', (e) => {
+                // Tắt tự động quay
+                isPlaying = false;
+                playBtn.innerText = "▶️ Tự động quay";
+                playBtn.classList.remove('active');
+                
+                t = buttons[btnId];
+                render();
+                setActiveButton(e.target);
+            });
+        });
+
+        function setActiveButton(activeBtn) {
+            document.querySelectorAll('.btn-group button').forEach(btn => {
+                if(btn !== playBtn) btn.classList.remove('active');
+            });
+            if(activeBtn) activeBtn.classList.add('active');
+        }
+
+        // Khởi chạy thí nghiệm ban đầu
+        render();
+    </script>
+</body>
+</html>
