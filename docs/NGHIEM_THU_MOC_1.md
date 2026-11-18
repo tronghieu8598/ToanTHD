@@ -1,4 +1,4 @@
-# Biên bản thử Toán THĐ v0.14 trên Windows và LAN
+# Biên bản nghiệm thu Toán THĐ v0.14 trên Windows và LAN
 
 Ngày 18/11/2026. Cài riêng từ mã `723861b97edf5a3220521e1518fd833d5b8bcd70` của PR #1, sau đó dựng lại với bản sửa phản hồi API trong cùng PR. Máy thử chạy Windows, Node.js 26.13.0 và trình duyệt Chromium. Các tài khoản, lớp, học liệu tải lên và bài làm trong biên bản là dữ liệu mẫu.
 
@@ -21,6 +21,8 @@ Trong lần thử trên iPhone, phần đề nhấp nháy và trang bị kéo l�
 
 `npm run content:check`, `npm run typecheck` và 77 kiểm thử tự động đã qua. Trên Windows, Node.js 24.22.1 chạy đủ kiểm thử với SGK offline, dựng được web và mở bản cài trên cổng thử 8827. Khi chạy bộ kiểm thử từ mã tải qua Git, đặt `TOANTHD_GIT_CHECKOUT=1` nếu tệp SGK offline chưa được cài.
 
-## Phép thử cần thực hiện trên thiết bị thật
+## Kết quả trên iPhone
 
-iPhone cùng Wi-Fi với laptop mở lại phiên mẫu trên bản sửa, cuộn tới cuối đề và quan sát qua vài nhịp đồng hồ. Sau đó chọn một đáp án, ngắt kết nối ngắn, nối lại và nộp. Giáo viên đối chiếu bài máy chủ nhận được. Đây là bước còn chờ trước khi duyệt bản nền vào `main`. [Phiếu thử trên lớp](../public/Phieu_thu_tren_lop.html) · [PR #1](https://github.com/tronghieu8598/ToanTHD/pull/1)
+Ngày 18/11/2026, giáo viên xác nhận vào đúng phiên mẫu và nộp bài thành công trên iPhone sau khi cập nhật bản sửa. Máy chủ LAN ghi nhận đúng một bài đã nộp, đủ 2/2 câu. Bảng điểm mẫu dùng để đối chiếu Excel vẫn cho kết quả 10 điểm, 0 điểm và ô trống cho học sinh chưa vào. [Phiếu thử trên lớp](../public/Phieu_thu_tren_lop.html) · [PR #1](https://github.com/tronghieu8598/ToanTHD/pull/1)
+
+Việc tự lưu lại sau khi mất kết nối được kiểm tra bằng bộ kiểm thử lưu nháp. [Kiểm thử lưu nháp](../tests/sync.test.mjs)

@@ -6,7 +6,7 @@ Cập nhật theo v0.14 ngày 18/11/2026.
 
 ## Bản hiện tại
 
-- Mã v0.14 nằm trên nhánh `codex/v0.14-mo-dun`. PR #1 đang ở dạng nháp. GitHub Actions đã cài thư viện, kiểm tra nội dung, chạy 76 kiểm thử và dựng web thành công. [PR #1](https://github.com/tronghieu8598/ToanTHD/pull/1) · [Lần kiểm tra](https://github.com/tronghieu8598/ToanTHD/actions/runs/43423306196)
+- Bản Windows/LAN v0.14 đã nghiệm thu, gồm vào phiên và nộp bài trên iPhone sau bản sửa hiển thị. GitHub Actions đã kiểm tra nội dung, chạy 77 kiểm thử và dựng web thành công. [PR #1](https://github.com/tronghieu8598/ToanTHD/pull/1) · [Các lượt kiểm tra](https://github.com/tronghieu8598/ToanTHD/pull/1/checks)
 - Bản cài Windows đã có lệnh chạy trên máy và lệnh mở LAN. Phiếu thử có các tình huống QR, mất mạng, Excel và phục hồi. [Hướng dẫn cài](README.md#cài-mới-trên-windows) · [Phiếu thử tại lớp](public/Phieu_thu_tren_lop.html)
 - Chương VI Toán 12 đã tách từng câu và nhóm biến thể. Sơ đồ ghi vị trí mã của các chức năng còn lại và cấu trúc đích. [Bản đồ mô-đun](docs/KIEN_TRUC.md)
 
@@ -50,7 +50,7 @@ Thứ tự bàn giao là **gói cài Windows và biên bản thử LAN → link 
 
 Biên bản mốc 1 ghi mã phiên bản, thiết bị, kết quả đạt hoặc lỗi của từng luồng và đường dẫn đến lỗi còn mở. Với đề và điểm, ghi cả kết quả dự kiến và thực tế. Dùng dữ liệu giả trong ảnh, tệp Excel và biên bản chia sẻ trên GitHub.
 
-Kết quả chạy trên bản cài Windows, Excel, phục hồi và bước thử QR còn chờ được ghi tại [Biên bản thử mốc 1](docs/NGHIEM_THU_MOC_1.md).
+Kết quả chạy trên bản cài Windows, Excel, phục hồi và phép thử trên iPhone được ghi tại [Biên bản nghiệm thu mốc 1](docs/NGHIEM_THU_MOC_1.md).
 
 ## Việc kỹ thuật để mở link HTTPS
 
