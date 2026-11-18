@@ -17,8 +17,10 @@ Ngày 18/11/2026. Cài riêng từ mã `723861b97edf5a3220521e1518fd833d5b8bcd70
 
 Khi giáo viên thiếu quyền đăng học liệu, bản cài Windows có lúc trả lỗi 503 hoặc trả thiếu nội dung của lỗi 403. API đọc phần thân chưa được xử lý trong giới hạn nhận của cổng LAN trước khi trả phản hồi. Thử lại trên máy chủ đã dựng cho kết quả 403 đầy đủ ở cả 20 lượt. Bộ kiểm thử kiểm tra cả việc đọc thân yêu cầu bị từ chối. [API](../lib/api.ts) · [Kiểm thử học liệu riêng tư](../tests/api.test.mjs)
 
-`npm run content:check`, `npm run typecheck` và 76 kiểm thử tự động đã qua. Trên cùng máy Windows, Node.js 24.22.1 cũng chạy đủ 76 kiểm thử với SGK offline, dựng được web và mở bản cài trên cổng thử 8827. Phiên đã lưu, học liệu riêng và 20 phản hồi 403 đều được đối chiếu lại trên bản này. Khi chạy bộ kiểm thử từ mã tải qua Git, đặt `TOANTHD_GIT_CHECKOUT=1` nếu tệp SGK offline chưa được cài.
+Trong lần thử trên iPhone, phần đề nhấp nháy và trang bị kéo lên khi học sinh cuộn. Bộ kiểm thử tái hiện việc React thay phần tử công thức và ảnh khi đồng hồ chạy. Bản sửa giữ các phần tử đó qua các lần cập nhật nếu nội dung câu hỏi giữ nguyên. Trên Chromium ở khung 390 px, nút Nộp bài giữ nguyên vị trí ở cuối đề qua 22 giây đếm ngược. Chọn đáp án, lưu nháp và nộp đều thành công. [Mã hiển thị](../app/rich-content.tsx) · [Kiểm thử giữ công thức và ảnh](../tests/rich-content.test.mjs)
+
+`npm run content:check`, `npm run typecheck` và 77 kiểm thử tự động đã qua. Trên Windows, Node.js 24.22.1 chạy đủ kiểm thử với SGK offline, dựng được web và mở bản cài trên cổng thử 8827. Khi chạy bộ kiểm thử từ mã tải qua Git, đặt `TOANTHD_GIT_CHECKOUT=1` nếu tệp SGK offline chưa được cài.
 
 ## Phép thử cần thực hiện trên thiết bị thật
 
-Điện thoại cùng Wi-Fi với laptop quét QR của phiên mẫu, xác nhận đúng lớp, chọn một đáp án, ngắt kết nối ngắn, nối lại và nộp. Giáo viên đối chiếu bài máy chủ nhận được. Đây là bước còn chờ trước khi duyệt bản nền vào `main`. [Phiếu thử trên lớp](../public/Phieu_thu_tren_lop.html) · [PR #1](https://github.com/tronghieu8598/ToanTHD/pull/1)
+iPhone cùng Wi-Fi với laptop mở lại phiên mẫu trên bản sửa, cuộn tới cuối đề và quan sát qua vài nhịp đồng hồ. Sau đó chọn một đáp án, ngắt kết nối ngắn, nối lại và nộp. Giáo viên đối chiếu bài máy chủ nhận được. Đây là bước còn chờ trước khi duyệt bản nền vào `main`. [Phiếu thử trên lớp](../public/Phieu_thu_tren_lop.html) · [PR #1](https://github.com/tronghieu8598/ToanTHD/pull/1)
