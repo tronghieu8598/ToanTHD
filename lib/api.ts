@@ -47,7 +47,6 @@ const readBody = async (request: Request, maxLength = 5000000): Promise<Row> => 
         throw new ApiError(400, 'Dữ liệu JSON không hợp lệ.');
     }
 };
-const cookieName='toanthd_teacher';
 const authTools=createAuth({env,database,first,must});
 const secureEqual=authTools.equal;
 async function getRoster(s:Row) {
@@ -128,7 +127,7 @@ function checkOrigin(request: Request) {
         return;
     const origin = request.headers.get('origin');
     if (origin)
-        must(origin === new URL(request.url).origin, 'Yêu cầu đến từ địa chỉ khác không được chấp nhận.', 403);
+        must(origin === authTools.publicOrigin(request.url), 'Yêu cầu đến từ địa chỉ khác không được chấp nhận.', 403);
 }
 type StaffAuth = Awaited<ReturnType<typeof authTools.requireTeacher>>;
 type ExamQuestion = {position:number;source_id:string;snapshot:string};
@@ -272,7 +271,7 @@ export async function handleApi(request: Request) {
           return json({ok:true},200,{'Set-Cookie':await authTools.login(body.username,body.password,request.url)});
         }
         if (path === 'teacher/logout' && method === 'POST')
-            return json({ ok: true }, 200, { 'Set-Cookie': `${cookieName}=; HttpOnly; SameSite=Strict; Path=/; Max-Age=0` });
+            return json({ ok: true }, 200, { 'Set-Cookie': authTools.clearCookie(request.url) });
         if (path.startsWith('teacher/')) {
             const teacherAuth=await authTools.requireTeacher(request);
             requireTeacherRoute(teacherAuth,path,method,must);
