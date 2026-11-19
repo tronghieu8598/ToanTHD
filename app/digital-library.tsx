@@ -26,6 +26,7 @@ type LibraryScope = 'team' | 'mine' | 'trash';
 const getChapter = (resource: LibraryResource) => resource.chapterNumber ?? 0;
 const chapterLabel = (grade: MathGrade, value: number) => value ? mathChapters(grade)[value - 1] : 'Tài liệu dùng chung';
 const isGrade = (value: number): value is MathGrade => mathGrades.some(grade => grade === value);
+const isPdf = (item: LibraryResource) => item.upload?.mime === 'application/pdf' || item.url.endsWith('.pdf');
 
 export function DigitalLibrary({ initialKind = 'all', embedded = false, plan, onPlan, onAddToPlan, openId, onOpenHandled, focusSearch, onSearchFocused, uploads, canUpload }: {
   initialKind?: Kind;
@@ -148,6 +149,14 @@ export function DigitalLibrary({ initialKind = 'all', embedded = false, plan, on
     if (!embedded && window.location.search.includes('tai-lieu=')) {
       window.history.replaceState(null, '', window.location.pathname);
     }
+  }
+
+  function toggleFullscreen() {
+    if (document.fullscreenElement === viewerRef.current) {
+      void document.exitFullscreen().catch(() => {});
+      return;
+    }
+    void viewerRef.current?.requestFullscreen?.().catch(() => {});
   }
   function openResource(item: LibraryResource) {
     if (item.kind === 'archive') {
@@ -332,8 +341,8 @@ export function DigitalLibrary({ initialKind = 'all', embedded = false, plan, on
           <button className="dl-back" onClick={closeViewer}><ArrowLeft size={17}/> <span>Thư viện</span></button>
           <div className="dl-viewer-name"><small>{resourceKinds[selected.kind]} · {selected.grade?`Toán ${selected.grade}`:'Toán THPT'}</small><b title={selected.title}>{selected.title}</b></div>
           <div className="dl-viewer-actions">
-            <button title="Phóng to toàn màn hình" aria-label="Toàn màn hình" onClick={()=>void viewerRef.current?.requestFullscreen?.().catch(() => {})}><Maximize2 size={18}/></button>
-            {selected.upload && <a href={downloadUrl(selected)} aria-label="Tải xuống"><Download size={17}/><span>Tải xuống</span></a>}
+            {document.fullscreenEnabled && <button title="Toàn màn hình" aria-label="Toàn màn hình" onClick={toggleFullscreen}><Maximize2 size={18}/></button>}
+            {(selected.upload || isPdf(selected)) && <a href={downloadUrl(selected)} download={selected.upload ? undefined : ''} aria-label="Tải xuống"><Download size={17}/><span>Tải xuống</span></a>}
             <a href={resourceUrl(selected)} target="_blank" rel="noopener noreferrer" title="Mở tài nguyên trong tab riêng"><ExternalLink size={17}/><span>Mở tab riêng</span></a>
             <button aria-label="Đóng" title="Đóng" onClick={closeViewer}><X size={20}/></button>
           </div>
@@ -342,7 +351,7 @@ export function DigitalLibrary({ initialKind = 'all', embedded = false, plan, on
           {fileState === 'missing' ? <div className="dl-file-issue"><Info size={28}/><h3>Chưa tìm thấy tệp học liệu</h3><p>{selected.upload ? 'Tệp có thể đã được gỡ hoặc đổi phạm vi chia sẻ.' : 'Hãy kiểm tra thư mục học liệu đi kèm bản cài đặt.'}</p><button onClick={closeViewer}>Quay về thư viện</button></div>
           : fileState === 'loading' ? <div className="dl-frame-loading" role="status">Đang kiểm tra tệp học liệu...</div>
           : selected.upload?.mime.startsWith('image/') ? <img className="dl-uploaded-image" src={resourceUrl(selected)} alt={selected.title} />
-          : selected.upload?.mime === 'application/pdf' || selected.url.endsWith('.pdf') ? <iframe key={selected.id} className="dl-resource-frame" src={resourceUrl(selected)} title={selected.title} />
+          : isPdf(selected) ? <iframe key={selected.id} className="dl-resource-frame" src={resourceUrl(selected)} title={selected.title} />
           : <iframe key={selected.id} className="dl-resource-frame" src={resourceUrl(selected)} title={selected.title}
                sandbox={selected.upload ? 'allow-scripts' : 'allow-scripts allow-forms allow-modals allow-downloads allow-pointer-lock' + (library?.isolated ? ' allow-same-origin' : '')}
                allow="fullscreen" referrerPolicy="no-referrer" />}
