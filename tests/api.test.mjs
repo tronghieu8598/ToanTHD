@@ -1,11 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import nodeCrypto from 'node:crypto';
+import {syncBuiltinESMExports} from 'node:module';
 import {DatabaseSync} from 'node:sqlite';
 import {readFileSync,writeFileSync,mkdtempSync,readdirSync,rmSync} from 'node:fs';
 import {tmpdir} from 'node:os';
 import path from 'node:path';
 import {pathToFileURL} from 'node:url';
 import ts from 'typescript';
+import {newStaffPassword} from '../lib/auth.mjs';
 // Exercise the real API module. Only the Cloudflare env binding is substituted;
 // SQL is executed by SQLite using the generated D1 schema and the actual seed.
 const db=new DatabaseSync(':memory:');
@@ -46,6 +49,30 @@ test('the configured HTTPS origin protects cookies and writes behind an HTTP rev
   const expired=logout.headers.get('Set-Cookie')||'';
   assert.ok(expired.includes('Max-Age=0')&&expired.includes('; Secure'));
  }finally{delete env.THD_PUBLIC_ORIGIN;}
+});
+
+test('a hosted PBKDF2 cap preserves existing teacher passwords and newly generated hashes',async(t)=>{
+ const deriveNative=nodeCrypto.pbkdf2Sync;
+ const password='Mật khẩu kiểm thử 🔒';
+ const existing=newStaffPassword(password);
+ const id='worker-fallback-teacher';
+ db.prepare(`INSERT INTO teacher_accounts(id,username,display_name,password_salt,password_hash,auth_epoch)
+  VALUES (?,?,?,?,?,?)`).run(id,'gv-fallback','Giáo viên mẫu',existing.salt,existing.hash,existing.epoch);
+ const limited=t.mock.method(nodeCrypto,'pbkdf2Sync',(...args)=>{
+  if(args[2]>100_000)throw new DOMException('PBKDF2 iteration limit','NotSupportedError');
+  return deriveNative(...args);
+ });
+ syncBuiltinESMExports();
+ try{
+  await call('teacher/login',{method:'POST',auth:false,body:{username:'gv-fallback',password}});
+  const generated=newStaffPassword(password);
+  assert.equal(generated.hash,deriveNative(password,generated.salt,600_000,32,'sha256').toString('hex'));
+  assert.equal(limited.mock.callCount(),2);
+ }finally{
+  limited.mock.restore();
+  syncBuiltinESMExports();
+  db.prepare('DELETE FROM teacher_accounts WHERE id=?').run(id);
+ }
 });
 
 test('API: teacher access, three answer types, original numbers, save/resume, duplicate guards, scoring, closing and export',async()=>{
