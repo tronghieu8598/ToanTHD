@@ -488,3 +488,97 @@ test('v0.14: only the owner can read a private draft, shared exams can be copied
   assert.ok(!JSON.stringify(history).includes('rotated-private-2026'));
  } finally {cookie=admin;}
 });
+
+test('Studio plans synchronize by teacher and classroom and respect library access', async () => {
+ const admin = cookie;
+ const classroomA = 'plan-class-a', classroomB = 'plan-class-b';
+ const insertClass = db.prepare("INSERT INTO classrooms VALUES (?, ?, 12, '2026-2027', 1)");
+ insertClass.run(classroomA, '12 Kế hoạch A');
+ insertClass.run(classroomB, '12 Kế hoạch B');
+ const monty = '12-monty-hall-game-577dcd0';
+ const practice = 'all-de-cuong-toan-10-11-12-dcfe2d2';
+ const simulation = '12-phong-thi-nghiem-1-so-bai-thuc-t-3f2a9d7';
+ const wrongGrade = '11-giaoan-sp1-adc1846';
+ const resourceId = () => 'upload-' + crypto.randomUUID();
+ const sharedUpload = resourceId(), privateUpload = resourceId(), trashedUpload = resourceId();
+ const post = (route, body, status=200) => call(route,{method:'POST',body,status});
+ const session = result => result.response.headers.get('set-cookie').split(';')[0];
+ async function teacher(username, classes) {
+  cookie = admin;
+  const {data:{id}} = await post('teacher/accounts',{username,display_name:username,permissions:{upload_library:true},
+   allowed_class_ids:classes,temporary_password:'temporary-plan-2026'},201);
+  cookie = session(await post('teacher/login',{username,password:'temporary-plan-2026'}));
+  cookie = session(await post('teacher/password',{old_password:'temporary-plan-2026',new_password:'updated-plan-2026'}));
+  await post('teacher/profile',{class_ids:classes});
+  return {id,cookie,username};
+ }
+ async function plan(staff, room, change, status=200) {
+  const response = await handleApi(new Request('http://test.local/api/teacher/studio-plan' + (change ? '' : '?classroom_id='+room), {
+   method:change ? 'POST' : 'GET', headers:{cookie:staff.cookie, ...(change && {'Content-Type':'application/json'})},
+   ...(change && {body:JSON.stringify({account_id:staff.id,classroom_id:room,...change})}),
+  }));
+  const data = await response.json();
+  assert.equal(response.status,status,JSON.stringify(data));
+  assert.equal(response.headers.get('cache-control'),'no-store');
+  return data;
+ }
+ const add = resource_id => ({action:'add',resource_id});
+ const remove = resource_id => ({action:'remove',resource_id});
+ const seed = resource_ids => ({action:'import',resource_ids});
+ const ids = async (staff,room) => (await plan(staff,room)).resource_ids;
+ try {
+  const author = await teacher('plan-author',[classroomA,classroomB]);
+  const colleague = await teacher('plan-colleague',[classroomA]);
+  const authorOnAnotherDevice = {...author,cookie:session(await post('teacher/login',{username:author.username,password:'updated-plan-2026'}))};
+  const upload = db.prepare(`INSERT INTO library_uploads(id,owner_key,title,grade,chapter_number,visibility,mime,filename,byte_length,created_at,deleted_at)
+   VALUES (?,?,'Học liệu mẫu',12,6,?,'text/html','mau.html',30,1,?)`);
+  upload.run(sharedUpload,colleague.id,'team',null);
+  upload.run(privateUpload,colleague.id,'private',null);
+  upload.run(trashedUpload,colleague.id,'team',1);
+
+  await plan({cookie:''},classroomA,null,401);
+  await plan(colleague,classroomB,null,403);
+  await plan(colleague,classroomB,add(monty),403);
+  await plan(author,classroomA,{...add(monty),account_id:colleague.id},409);
+  assert.equal((await plan(author,classroomA)).exists,false);
+  await plan(author,classroomA,add(wrongGrade),404);
+  await plan(author,classroomA,add(privateUpload),404);
+  await plan(author,classroomA,add(trashedUpload),404);
+  assert.equal((await plan(author,classroomA)).exists,false);
+
+  const imported = await plan(author,classroomA,seed([monty,monty,wrongGrade,privateUpload,trashedUpload,'missing']));
+  assert.deepEqual(imported.resource_ids,[monty]);
+  assert.deepEqual(await ids(authorOnAnotherDevice,classroomA),[monty]);
+  assert.deepEqual(await ids(colleague,classroomA),[]);
+  assert.deepEqual(await ids({cookie:admin},classroomA),[]);
+
+  await Promise.all([
+   plan(author,classroomA,add(sharedUpload)),
+   plan(authorOnAnotherDevice,classroomA,add(practice)),
+   plan(author,classroomB,add(simulation)),
+  ]);
+  const before = await ids(authorOnAnotherDevice,classroomA);
+  assert.equal(before[0],monty);
+  assert.deepEqual(new Set(before),new Set([monty,sharedUpload,practice]));
+  assert.deepEqual((await plan(author,classroomA,add(monty))).resource_ids,before);
+  assert.deepEqual(await ids(author,classroomB),[simulation]);
+  assert.deepEqual((await plan(author,classroomA,seed([simulation]))).resource_ids,before);
+
+  cookie=colleague.cookie;
+  const revoked=(await post('teacher/library/change',{id:sharedUpload,revision:1,action:'visibility',visibility:'private'})).data.item;
+  assert.deepEqual(await ids(author,classroomA),[monty,practice]);
+  await plan(author,classroomA,add(sharedUpload),404);
+  await post('teacher/library/change',{id:sharedUpload,revision:revoked.upload.revision,action:'visibility',visibility:'team'});
+  assert.deepEqual(await ids(author,classroomA),before);
+
+  for (const id of before) await plan(authorOnAnotherDevice,classroomA,remove(id));
+  const empty = await plan(author,classroomA,seed([monty]));
+  assert.equal(empty.exists,true);
+  assert.deepEqual(empty.resource_ids,[]);
+  assert.deepEqual(await ids(author,classroomB),[simulation]);
+  cookie = admin;
+  const {data:{accounts}} = await call('teacher/accounts');
+  await post('teacher/accounts',{...accounts.find(a=>a.id===author.id),allowed_class_ids:[classroomA]});
+  await plan(author,classroomB,null,403);
+ } finally {cookie=admin;}
+});

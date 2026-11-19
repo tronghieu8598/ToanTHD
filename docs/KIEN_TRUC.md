@@ -40,7 +40,13 @@ flowchart LR
     AUDIT["Nhật ký tài khoản"] --> DB
 ```
 
-Đề đã lưu có bản chụp câu hỏi. Khi giao đề, phiên giữ danh sách học sinh, câu, đáp án và cách chấm tại thời điểm giao. Báo cáo và trình chiếu đọc kết quả từ phiên đó. Kế hoạch dạy ở v0.14 lưu theo tài khoản và lớp trong trình duyệt. Khi cần đồng bộ thiết bị, có thể bổ sung bảng kế hoạch riêng.
+Đề đã lưu có bản chụp câu hỏi. Khi giao đề, phiên giữ danh sách học sinh, câu, đáp án và cách chấm tại thời điểm giao. Báo cáo và trình chiếu đọc kết quả từ phiên đó.
+
+### Kế hoạch tiết dạy
+
+Bảng `studio_plans` có một bản ghi cho mỗi cặp tài khoản và mã lớp. `resource_ids` là danh sách mã học liệu theo thứ tự trong tiết. API kiểm tra phạm vi lớp và quyền mở tệp. Hai trình duyệt thêm hai học liệu cùng lúc sẽ ghi từng thao tác vào kế hoạch đang lưu. [Migration](../drizzle/0007_studio_plans.sql) · [API kế hoạch](../lib/studio-plan.mjs) · [Hàm JSON của D1](https://developers.cloudflare.com/d1/sql-api/query-json/)
+
+Trình duyệt cũ chuyển kế hoạch theo từng lớp chưa có bản ghi. Sau khi bỏ học liệu cuối cùng, bản ghi vẫn biểu thị một kế hoạch trống. Phục hồi JSON trong ứng dụng giữ kế hoạch của bản cài đích theo mã lớp. Sao lưu toàn thư mục giữ cả các kế hoạch đã đồng bộ. [Đọc và chuyển kế hoạch](../app/use-studio-plan.ts) · [Sao lưu toàn thư mục](../README.md#sao-lưu-toàn-bộ-thư-mục)
 
 ### Tài khoản, lớp và bài làm
 
@@ -81,7 +87,8 @@ Các đường dẫn ở cột giữa mở được từ thư mục gốc của 
 
 | Mô-đun | Mở ở v0.14 | Phạm vi phụ trách |
 | --- | --- | --- |
-| Điều hướng và Hôm nay | `app/workspace.tsx`, `app/studio-navigation.tsx`, `app/studio-plan.tsx`, `app/studio.css` | Màn hình đầu, danh mục, tìm nhanh và kế hoạch của lớp. |
+| Điều hướng và Hôm nay | `app/workspace.tsx`, `app/studio-navigation.tsx`, `app/studio-plan.tsx`, `app/studio.css` | Màn hình đầu, danh mục, tìm nhanh và giao diện kế hoạch của lớp. |
+| Đồng bộ kế hoạch | `app/use-studio-plan.ts`, `lib/studio-plan.mjs`, `drizzle/0007_studio_plans.sql` | Đọc, thêm, bỏ học liệu và chuyển kế hoạch cũ theo tài khoản và lớp. |
 | Chương, bài và đề cương | `data/curriculum/kntt-math.json`, `data/course-bank/manifest.json`, `app/admin-panels.tsx`, `lib/admin.mjs` | Mục lục chương theo khối, tài liệu, bài và phiên bản đề cương. |
 | Ngân hàng chuẩn | `data/course-bank/src/12/C06/`, `lib/course-bank.mjs`, `scripts/course-bank-data.mjs` | Nguồn chuẩn, tra cứu, trạng thái duyệt, nhập gói vào web. |
 | Biến thể | `data/chapter-variants/src/12/C06/`, `lib/accepted-variants.mjs`, `lib/question-variants.mjs` | Nhóm biến thể, điều kiện khả dụng và tra phiên bản câu gốc. |

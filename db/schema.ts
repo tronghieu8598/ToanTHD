@@ -1,5 +1,5 @@
-import { sqliteTable, text, integer, real, uniqueIndex, index, primaryKey } from "drizzle-orm/sqlite-core";
-import { desc } from "drizzle-orm";
+import { sqliteTable, text, integer, real, uniqueIndex, index, primaryKey, check } from "drizzle-orm/sqlite-core";
+import { desc, sql } from "drizzle-orm";
 export const documents = sqliteTable("documents", {
     id: text("id").primaryKey(), grade: integer("grade").notNull(), title: text("title").notNull(),
     edition: text("edition").notNull(), parentId: text("parent_id"), isSample: integer("is_sample").notNull().default(1),
@@ -20,6 +20,14 @@ export const classrooms = sqliteTable("classrooms", {
     id: text("id").primaryKey(), label: text("label").notNull(), grade: integer("grade").notNull(),
     schoolYear: text("school_year").notNull(), isSample: integer("is_sample").notNull().default(1),
 });
+export const studioPlans = sqliteTable("studio_plans", {
+    ownerKey: text("owner_key").notNull(),
+    classroomId: text("classroom_id").notNull(),
+    resourceIds: text("resource_ids").notNull().default("[]"),
+}, (t) => [
+    primaryKey({ columns: [t.ownerKey, t.classroomId] }),
+    check("studio_plan_resource_array", sql`json_valid(${t.resourceIds}) AND json_type(${t.resourceIds}) = 'array'`),
+]);
 export const students = sqliteTable("students", {
     id: text("id").primaryKey(), classroomId: text("classroom_id").notNull().references(() => classrooms.id),
     ordinal: integer("ordinal").notNull(), name: text("name").notNull(), archivedAt: integer("archived_at"),

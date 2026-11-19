@@ -1,9 +1,10 @@
 import { env } from 'cloudflare:workers';
 import { gradeAttempt, answeredCount, validExamStructure, numericValue } from './grading.mjs';
 import {createAuth} from './auth.mjs';
-import {can,canUseClass,canUseSession,requireTeacherRoute} from './access.mjs';
+import {can,canUseClass,canUseSession,requireTeacherRoute,teacherWriteGuard} from './access.mjs';
 import {handleAccounts} from './accounts.mjs';
 import {handleLibraryUploads} from './library-uploads.mjs';
+import {handleStudioPlan} from './studio-plan.mjs';
 import {handleAdmin,currentBankSQL} from './admin.mjs';
 import {handleBackup} from './backup-service.mjs';
 import {decodeQuestion,publicQuestion,canAutoGrade,canEnterSession,bankFilter,parseNumberSelection,isCourseDocument} from './course-bank.mjs';
@@ -136,10 +137,6 @@ const examReadable = "(visibility='team' OR (?<>'demo' AND owner_teacher_id IS ?
 const ownsExam = (exam: Row, auth: StaffAuth) => auth.role !== 'demo' && exam.owner_teacher_id === auth.id;
 const managesExam = (exam: Row, auth: StaffAuth) =>
     ownsExam(exam, auth) && can(auth, 'author_exams') || auth.role === 'admin' && exam.visibility === 'team';
-const teacherWriteGuard = (auth: StaffAuth) => auth.role === 'teacher'
-    ? {sql: 'EXISTS(SELECT 1 FROM teacher_accounts WHERE id=? AND revision=? AND enabled=1)', args: [auth.id, auth.account!.revision]}
-    : {sql: '1=1', args: []};
-
 async function scopedSession(id: unknown, auth: StaffAuth) {
     const session = await getSession(typeof id === 'string' ? id : '');
     must(canUseSession(auth, session), 'Không tìm thấy phiên làm bài.', 404);
@@ -275,6 +272,7 @@ export async function handleApi(request: Request) {
         if (path.startsWith('teacher/')) {
             const teacherAuth=await authTools.requireTeacher(request);
             requireTeacherRoute(teacherAuth,path,method,must);
+            if(path==='teacher/studio-plan')return await handleStudioPlan(request,{all,first,database,must,json,readBody,auth:teacherAuth,authTools});
             const uploads=await handleLibraryUploads(path,request,{all,first,database,must,json,readBody,auth:teacherAuth,authTools});
             if(uploads)return uploads;
             const accountResponse=await handleAccounts(path,request,{all,first,database,must,json,readBody,auth:teacherAuth,authTools});

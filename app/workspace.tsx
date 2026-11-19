@@ -14,7 +14,8 @@ import { Rich } from './rich-content';
 import DigitalLibrary from './digital-library';
 import { BookText } from 'lucide-react';
 import { StudioNavigation, type NavigationItem } from './studio-navigation';
-import { StudioPlanDialog, StudioToday, useStudioPlan } from './studio-plan';
+import { StudioPlanDialog, StudioToday } from './studio-plan';
+import { useStudioPlan } from './use-studio-plan';
 import { useLibraryUploads } from './library-uploads';
 import { chapterRoman, mathChapters, type LibraryResource, type MathGrade, type ResourceKind } from '../lib/client/library-catalog';
 type Any = Record<string, any>;
@@ -217,7 +218,9 @@ export default function Workspace({ studentOnly = false }: { studentOnly?: boole
     const planAccount = authorized ? String(data?.auth?.user?.id || data?.auth?.role || '') : '';
     const libraryUploads = useLibraryUploads(authorized && !data?.auth?.setup_required && data?.auth?.role !== 'demo' ? planAccount : '');
     const canUpload = isAdmin ? !!data?.auth?.custom_password : isTeacher && data?.auth?.permissions?.upload_library === true;
-    const studioPlan = useStudioPlan(planAccount, data?.classrooms ?? [], libraryUploads.items);
+    const syncPlan = !!planAccount && !data?.auth?.setup_required && data?.auth?.role !== 'demo' && data?.auth?.custom_password === true;
+    const studioPlan = useStudioPlan(planAccount, data?.classrooms ?? [], libraryUploads.items, syncPlan);
+    const refreshStudioPlan = studioPlan.refresh;
     const clearLibraryOpen = useCallback(() => setLibraryOpenId(null), []);
     const clearLibraryFocus = useCallback(() => setFocusLibrary(false), []);
     const viewEpoch = useRef(0);
@@ -350,11 +353,12 @@ export default function Workspace({ studentOnly = false }: { studentOnly?: boole
     const nav = useCallback((value: string) => {
         setView(value);
         setError('');
+        if (value === 'home') void refreshStudioPlan();
         if (value !== 'bank') setVariantSource(null);
         if (value !== 'sessions') { setSessionId(''); setDetail(null); }
         if (value !== 'digital') { setLibraryOpenId(null); setFocusLibrary(false); }
         window.scrollTo({ top: 0, behavior: 'instant' });
-    }, []);
+    }, [refreshStudioPlan]);
     const searchLibrary = useCallback(() => {
         setDigitalKind('all');
         nav('digital');
@@ -381,9 +385,11 @@ export default function Workspace({ studentOnly = false }: { studentOnly?: boole
         setLibraryOpenId(resource.id);
         nav('digital');
     }
-    function addStudioResource(resource: LibraryResource) {
-        const saved = studioPlan.update(resource, true);
-        notify(saved ? `Đã thêm vào tiết ${studioPlan.room?.label}.` : 'Trình duyệt chưa lưu được kế hoạch.');
+    async function addStudioResource(resource: LibraryResource) {
+        try {
+            await studioPlan.update(resource, true);
+            notify(`Đã thêm vào tiết ${studioPlan.room?.label}.`);
+        } catch (e) { notify((e as Error).message); }
     }
     function composeFromStudio() {
         const room = studioPlan.room;
@@ -680,7 +686,7 @@ export default function Workspace({ studentOnly = false }: { studentOnly?: boole
                 {view === 'home' && <StudioToday plan={studioPlan} onBrowse={browseStudio} onOpen={openStudioResource}
                     onPlan={() => setPlanOpen(true)} onCompose={mayAuthor ? composeFromStudio : undefined} />}
                 {view === 'digital' && <DigitalLibrary embedded initialKind={digitalKind} plan={studioPlan}
-                    onPlan={() => setPlanOpen(true)} onAddToPlan={addStudioResource}
+                    onPlan={() => setPlanOpen(true)} onAddToPlan={resource => void addStudioResource(resource)}
                     openId={libraryOpenId} onOpenHandled={clearLibraryOpen}
                     focusSearch={focusLibrary} onSearchFocused={clearLibraryFocus} uploads={data!.auth.role === 'demo' ? undefined : libraryUploads} canUpload={canUpload} />}
                 {view === 'exams' && <SavedExamsPanel rooms={classes} canAuthor={!!maySaveExam}
@@ -1033,9 +1039,7 @@ export default function Workspace({ studentOnly = false }: { studentOnly?: boole
 
         {planOpen && <StudioPlanDialog plan={studioPlan} onClose={() => setPlanOpen(false)}
             onBrowse={() => browseStudio('all')} onOpen={openStudioResource}
-            onRemove={resource => {
-                if (!studioPlan.update(resource, false)) notify('Trình duyệt chưa lưu được thay đổi kế hoạch.');
-            }} />}
+            onRemove={resource => void studioPlan.update(resource, false).catch(e => notify(e.message))} />}
         {shareSession && <ShareDialog session={shareSession} onClose={() => setShareSession(null)} />}
         {mayAuthor && cloneModal && <Modal title="Giao lại đề này cho lớp khác" onClose={() => setCloneModal(null)}>
             <form className="modal-content" onSubmit={submitCloneSession}>

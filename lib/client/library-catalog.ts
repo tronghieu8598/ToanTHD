@@ -1,4 +1,4 @@
-import catalog from '../../data/digital-library/catalog.json';
+import { bundledLibraryCatalog as catalog } from '../library-resources.mjs';
 import curriculum from '../../data/curriculum/kntt-math.json';
 import montyPilot from '../../data/digital-library/generated/monty-hall.json';
 
