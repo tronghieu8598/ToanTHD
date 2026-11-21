@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk1-1D1-q018-v4",
+  "source_fingerprint": "32d58ac4240fc0ece248add2b7ad963d5b933197cec926880ece4a21ca2511ba",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D1-q018-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Cho các hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mo>log</mo><mn>3</mn></msub><mi>x</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mi>π</mi><mi mathvariant=\"normal\">e</mi></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>x</mi></msup></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mo>log</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></msub><mi>x</mi></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><msqrt><mn>2</mn></msqrt><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>x</mi></msup></mrow></semantics></math>. Trong các hàm số trên, có bao nhiêu hàm số đồng biến trên tập xác định của nó?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "A",
+      "solution": "Hàm số mũ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>a</mi><mi>x</mi></msup></mrow></semantics></math> và hàm số lôgarit <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mo>log</mo><mi>a</mi></msub><mi>x</mi></mrow></semantics></math> đồng biến trên tập xác định khi và chỉ khi cơ số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math>. Có 2 hàm số đồng biến trên tập xác định là log_3(x) (cơ số 3 > 1) và (π/e)^x (cơ số π/e > 1).",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D1-q018-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Cho các hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mo>log</mo><mn>5</mn></msub><mi>x</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>x</mi></msup></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mo>log</mo><mn>2</mn></msub><mi>x</mi></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>x</mi></msup></mrow></semantics></math>. Trong các hàm số trên, có bao nhiêu hàm số đồng biến trên tập xác định của nó?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Hàm số mũ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>a</mi><mi>x</mi></msup></mrow></semantics></math> và hàm số lôgarit <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mo>log</mo><mi>a</mi></msub><mi>x</mi></mrow></semantics></math> đồng biến trên tập xác định khi và chỉ khi cơ số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math>. Có 3 hàm số đồng biến trên tập xác định là log_5(x), (π/2)^x và log_2(x) do đều có cơ số lớn hơn 1.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D1-q018-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Cho các hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mo>log</mo><mn>5</mn></msub><mi>x</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>2</mn><mi>π</mi></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>x</mi></msup></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mo>log</mo><mfrac><mn>1</mn><mn>5</mn></mfrac></msub><mi>x</mi></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><msqrt><mn>3</mn></msqrt><mn>3</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>x</mi></msup></mrow></semantics></math>. Trong các hàm số trên, có bao nhiêu hàm số đồng biến trên tập xác định của nó?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "D",
+      "solution": "Hàm số mũ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>a</mi><mi>x</mi></msup></mrow></semantics></math> và hàm số lôgarit <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mo>log</mo><mi>a</mi></msub><mi>x</mi></mrow></semantics></math> đồng biến trên tập xác định khi và chỉ khi cơ số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math>. Có 1 hàm số đồng biến trên tập xác định là log_5(x) vì cơ số 5 > 1; ba hàm còn lại có cơ số nhỏ hơn 1.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D1-q018-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Cho các hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mo>log</mo><mn>7</mn></msub><mi>x</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>4</mn><mn>3</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>x</mi></msup></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mo>log</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></msub><mi>x</mi></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mi mathvariant=\"normal\">e</mi><mi>π</mi></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>x</mi></msup></mrow></semantics></math>. Trong các hàm số trên, có bao nhiêu hàm số đồng biến trên tập xác định của nó?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Hàm số mũ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>a</mi><mi>x</mi></msup></mrow></semantics></math> và hàm số lôgarit <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mo>log</mo><mi>a</mi></msub><mi>x</mi></mrow></semantics></math> đồng biến trên tập xác định khi và chỉ khi cơ số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math>. Có 2 hàm số đồng biến trên tập xác định là log_7(x) và (4/3)^x.",
+      "accepted_answers": []
+    }
+  ]
+}

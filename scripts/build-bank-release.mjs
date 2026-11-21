@@ -7,26 +7,22 @@ import {parseArgs} from 'node:util';
 import {gunzipSync} from 'node:zlib';
 import {DOMParser} from 'linkedom/worker';
 import {availableQuestionVariantKeys, resolveQuestionVariant} from '../lib/accepted-variants.mjs';
-import frozenVariants from '../lib/chapter-variants/12-C06.mjs';
+import {bankReleaseChapters} from '../lib/bank-release-chapters.mjs';
 import frozenVariantIndex from '../lib/chapter-variants/index.mjs';
+import frozenVariantLoaders from '../lib/chapter-variants/loaders.mjs';
 import {courseRowPayload, decodeQuestion} from '../lib/course-bank.mjs';
 import {validateRichHtml} from '../lib/rich-html.mjs';
 import {compileContent} from './content-pilot.mjs';
 import {readCourseBank} from './course-bank-data.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
-const scope = '12-C06';
-const lessonIds = new Set(['dc-12-hk2-6D1-v4', 'dc-12-hk2-6D2-v4']);
-const sourcePaths = [
+const sharedSources = [
     'data/course-bank/manifest.json', 'data/course-bank/questions.json.gz',
-    'data/course-bank/src/12/C06', 'data/course-bank/generated/12-C06.json',
     'data/chapter-variants/manifest.json', 'data/chapter-variants/release.json',
-    'data/chapter-variants/src/12/C06', 'data/chapter-variants/source/12-C06.json.gz',
-    'data/chapter-variants/generated/12-C06.json', 'lib/chapter-variants/12-C06.mjs',
     'lib/chapter-variants/assets.mjs', 'lib/chapter-variants/index.mjs', 'lib/chapter-variants/loaders.mjs',
-    'lib/course-assets.mjs', 'lib/course-bank.mjs', 'lib/accepted-variants.mjs',
+    'lib/bank-release-chapters.mjs', 'lib/course-assets.mjs', 'lib/course-bank.mjs', 'lib/accepted-variants.mjs',
     'lib/content.mjs', 'lib/grading.mjs', 'lib/question-variants.mjs', 'lib/rich-html.mjs',
-    'scripts/content-pilot.mjs', 'scripts/course-bank-data.mjs', 'package-lock.json',
+    'scripts/build-bank-release.mjs', 'scripts/content-pilot.mjs', 'scripts/course-bank-data.mjs', 'package-lock.json',
 ];
 const read = relative => readFileSync(path.join(root, relative));
 const readJson = relative => JSON.parse(read(relative));
@@ -34,18 +30,27 @@ const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
 const git = (...args) => execFileSync('git', args, {cwd: root, encoding: 'utf8'}).trim();
 const assert = (ok, message) => { if (!ok) throw new Error(message); };
 
-function assertCommittedSource(assets = []) {
-    const paths = sourcePaths.concat(assets.map(asset => 'public' + asset.path));
-    assert(!git('status', '--porcelain=v1', '--untracked-files=all', '--', ...paths),
-        'Hãy commit các thay đổi nguồn câu hỏi, biến thể và hình trước khi đóng gói.');
+function assertCommittedSource(scope, assets = []) {
+    const folder = scope.replace('-', '/');
+    const paths = [...sharedSources,
+        `data/course-bank/src/${folder}`, `data/course-bank/generated/${scope}.json`,
+        `data/chapter-variants/src/${folder}`, `data/chapter-variants/source/${scope}.json.gz`,
+        `data/chapter-variants/generated/${scope}.json`, `lib/chapter-variants/${scope}.mjs`,
+        ...assets.map(asset => 'public' + asset.path),
+    ];
+    // A chapter can reference enough individual assets to exceed the Windows command line limit.
+    for (let start = 0; start < paths.length; start += 128) {
+        assert(!git('status', '--porcelain=v1', '--untracked-files=all', '--', ...paths.slice(start, start + 128)),
+            'Hãy commit các thay đổi nguồn câu hỏi, biến thể và hình trước khi đóng gói.');
+    }
 }
 
-function verifyVariantSource(questions) {
+async function verifyVariantSource(scope, questions) {
     const entry = readJson('data/chapter-variants/release.json').chapters.find(item => item.id === scope);
     assert(entry?.file === scope + '.json.gz' && ['source_approved', 'teacher_confirmed_integration'].includes(entry.acceptance),
-        'Thiếu nguồn biến thể Chương VI đã duyệt.');
+        `Thiếu nguồn biến thể đã duyệt cho ${scope}.`);
     const frozen = read('data/chapter-variants/source/' + entry.file);
-    assert(sha256(frozen) === entry.sha256, 'Nguồn biến thể Chương VI sai SHA-256.');
+    assert(sha256(frozen) === entry.sha256, `Nguồn biến thể ${scope} sai SHA-256.`);
     const source = JSON.parse(gunzipSync(frozen));
     const ids = new Set(source.items.map(item => item.source_id));
     assert(source.format === 'toanthd.chapter-variants/1' && source.chapter_id === scope &&
@@ -54,12 +59,15 @@ function verifyVariantSource(questions) {
             const indexed = frozenVariantIndex[item.source_id];
             return indexed?.chapter === scope && indexed.fingerprint === item.source_fingerprint &&
                 indexed.count === item.variants.length;
-        }), 'Nguồn biến thể Chương VI không khớp danh sách mã câu chuẩn.');
+        }), `Nguồn biến thể ${scope} không khớp danh sách mã câu chuẩn.`);
 
     const compiled = readJson('data/chapter-variants/manifest.json').chapters.find(item => item.id === scope);
+    const {default: frozenVariants} = await frozenVariantLoaders[scope]();
     assert(compiled?.source_questions === questions.length &&
+        compiled.variants === source.items.reduce((count, item) => count + item.variants.length, 0) &&
         sha256(gunzipSync(Buffer.from(frozenVariants, 'base64'))).slice(0, 12) === compiled.version,
-        'Mô-đun biến thể gốc Chương VI không khớp bản đã duyệt.');
+        `Mô-đun biến thể gốc ${scope} không khớp bản đã duyệt.`);
+    return compiled.held;
 }
 
 function referencedAssets(rows) {
@@ -84,11 +92,13 @@ function referencedAssets(rows) {
     });
 }
 
-export async function buildBankRelease() {
+export async function buildBankRelease(scope = '12-C06') {
+    assert(Object.hasOwn(bankReleaseChapters, scope), `Chương ${scope} chưa có cấu hình phát hành.`);
+    const chapter = bankReleaseChapters[scope];
+    const lessonIds = new Set(chapter.lessons.map(lesson => lesson.id));
     const sourceCommit = git('rev-parse', '--verify', 'HEAD^{commit}');
-    assertCommittedSource();
-    const bank = compileContent('bank')[0];
-    const variantOverlay = compileContent('variants')[0];
+    assertCommittedSource(scope);
+    const [bank, variantOverlay] = ['bank', 'variants'].map(part => compileContent(part, undefined, undefined, scope)[0]);
     for (const {files} of [bank, variantOverlay]) {
         for (const [file, bytes] of files) {
             assert(read(file).equals(bytes), 'Gói chưa đồng bộ với nguồn: ' + file + '. Chạy npm run content:build rồi commit.');
@@ -101,11 +111,12 @@ export async function buildBankRelease() {
     const lessons = manifest.lessons.filter(lesson => lessonIds.has(lesson.id));
     const documents = manifest.documents.filter(document => lessons.some(lesson => lesson.document_id === document.id));
     assert(lessons.length === lessonIds.size && documents.length === 1 &&
-        documents[0].id === 'dc-12-hk2-v4' && documents[0].grade === 12 &&
+        documents[0].id === chapter.documentId && documents[0].grade === chapter.grade &&
+        chapter.lessons.every(({id, count}) => questions.filter(question => question.lesson_id === id).length === count) &&
         questions.length === bank.summary.questions && ids.size === questions.length && questions.every(question =>
         question.bank_fingerprint === sha256(courseRowPayload(question))),
-        'Tài liệu, bài học hoặc dấu vân tay câu chuẩn Chương VI không khớp.');
-    verifyVariantSource(questions);
+        `Tài liệu, bài học hoặc dấu vân tay câu chuẩn ${scope} không khớp.`);
+    const sourceHolds = await verifyVariantSource(scope, questions);
 
     const variants = [];
     for (const question of questions) {
@@ -118,19 +129,21 @@ export async function buildBankRelease() {
     }
     assert(variants.length === variantOverlay.summary.available, 'Số biến thể mà web dùng chưa khớp gói đã duyệt.');
     const assets = referencedAssets([...questions.map(question => decodeQuestion(question)), ...variants]);
-    assertCommittedSource(assets);
+    assertCommittedSource(scope, assets);
     assert(sourceCommit === git('rev-parse', '--verify', 'HEAD^{commit}'), 'Commit nguồn vừa đổi. Chạy lại bước đóng gói.');
 
+    const baseVersion = readJson('data/course-bank/manifest.json').version;
+    const sourceVersion = bank.summary.changed.length ? `${baseVersion}+${bank.summary.version}` : baseVersion;
     const release = {
         format: 'toanthd.bank-release/1', scope, source_commit: sourceCommit,
-        source_version: manifest.version, variants_version: variantOverlay.summary.version,
+        source_version: sourceVersion, variants_version: variantOverlay.summary.version,
         documents, lessons, questions, assets,
     };
     const data = Buffer.from(JSON.stringify(release));
     const summary = {
-        scope, source_commit: sourceCommit, source_version: manifest.version, variants_version: release.variants_version,
+        scope, source_commit: sourceCommit, source_version: sourceVersion, variants_version: release.variants_version,
         documents: documents.length, lessons: lessons.length, questions: questions.length,
-        variants: variants.length, held: variantOverlay.summary.held,
+        variants: variants.length, held: [...new Set([...sourceHolds.map(hold => hold.source_id), ...variantOverlay.summary.held])].sort(),
         assets: assets.length, bytes: data.length, sha256: sha256(data),
     };
     return {data, summary};
@@ -138,8 +151,8 @@ export async function buildBankRelease() {
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
     try {
-        const {values} = parseArgs({options: {output: {type: 'string'}}});
-        const {data, summary} = await buildBankRelease();
+        const {values} = parseArgs({options: {chapter: {type: 'string'}, output: {type: 'string'}}});
+        const {data, summary} = await buildBankRelease(values.chapter);
         if (values.output !== undefined) {
             assert(values.output.trim(), 'Hãy chỉ rõ đường dẫn cho --output.');
             writeFileSync(path.resolve(values.output), data, {flag: 'wx'});

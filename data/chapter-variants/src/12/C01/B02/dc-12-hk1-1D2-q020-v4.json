@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk1-1D2-q020-v4",
+  "source_fingerprint": "c95e95ea42f945daa6067b00139a68b2283ddfa375bac6bb4330b72e0193af84",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D2-q020-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn><mi>x</mi><mo>+</mo><mn>18</mn></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>13</mn></mrow></mfrac></mrow></semantics></math>. Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math> lần lượt là giá trị nhỏ nhất và giá trị lớn nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></semantics></math>. Tính tích <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>⋅</mo><mi>M</mi></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>1</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "A",
+      "solution": "Tập xác định <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi></mrow></semantics></math>. Giải phương trình <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math> ta được hai nghiệm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>7</mn></mrow></semantics></math>.<br>\n\t\tVì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>±</mo><mi>∞</mi></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math>, so sánh các giá trị cực trị ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mo>−</mo><mn>2</mn><mo>)</mo></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mo>−</mo><mn>7</mn><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>.<br>\n\t\tVậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>⋅</mo><mi>M</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q020-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>12</mn></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>13</mn></mrow></mfrac></mrow></semantics></math>. Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math> lần lượt là giá trị nhỏ nhất và giá trị lớn nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></semantics></math>. Tính tích <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>⋅</mo><mi>M</mi></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>18</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>9</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>9</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>8</mn><mn>9</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Tập xác định <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi></mrow></semantics></math>. Giải phương trình <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math> ta được hai nghiệm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>11</mn></mrow></semantics></math>.<br>\n\t\tVì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>±</mo><mi>∞</mi></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math>, so sánh các giá trị cực trị ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mo>−</mo><mn>11</mn><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>9</mn></mfrac></mrow></semantics></math>.<br>\n\t\tVậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>⋅</mo><mi>M</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>9</mn></mfrac></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q020-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>14</mn></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>8</mn><mi>x</mi><mo>+</mo><mn>32</mn></mrow></mfrac></mrow></semantics></math>. Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math> lần lượt là giá trị nhỏ nhất và giá trị lớn nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></semantics></math>. Tính tích <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>⋅</mo><mi>M</mi></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>16</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>3</mn><mn>8</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>32</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>16</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": "D",
+      "solution": "Tập xác định <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi></mrow></semantics></math>. Giải phương trình <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math> ta được hai nghiệm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>12</mn></mrow></semantics></math>.<br>\n\t\tVì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>±</mo><mi>∞</mi></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math>, so sánh các giá trị cực trị ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mo>−</mo><mn>2</mn><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mo>−</mo><mn>12</mn><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>8</mn></mfrac></mrow></semantics></math>.<br>\n\t\tVậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>⋅</mo><mi>M</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>16</mn></mfrac></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q020-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn><mi>x</mi><mo>+</mo><mn>20</mn></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>10</mn></mrow></mfrac></mrow></semantics></math>. Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math> lần lượt là giá trị nhỏ nhất và giá trị lớn nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></semantics></math>. Tính tích <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>⋅</mo><mi>M</mi></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>16</mn><mn>9</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mn>4</mn><mn>9</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>4</mn><mn>9</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>9</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Tập xác định <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi></mrow></semantics></math>. Giải phương trình <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math> ta được hai nghiệm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>10</mn></mrow></semantics></math>.<br>\n\t\tVì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>±</mo><mi>∞</mi></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math>, so sánh các giá trị cực trị ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mo>−</mo><mn>10</mn><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>9</mn></mfrac></mrow></semantics></math>.<br>\n\t\tVậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>⋅</mo><mi>M</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>4</mn><mn>9</mn></mfrac></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-12-hk1-1D4-q046-v4",
+  "original_number": 46,
+  "kind": "tf",
+  "based_on": "aea5d6554bef598f97c7b2103ec359e4b9bcfcaade433048ae48102441d7c220",
+  "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>+</mo><mi>a</mi></mrow><mrow><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi></mrow></mfrac><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>∈</mo><mi>ℤ</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>. Xét tính đúng sai của các khẳng định sau:\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/401a988564df7826db0bfd7ac64dc033a5f5d40f1fb9b919131fdf7ac84e184f.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Đồ thị hàm số có tiệm cận đứng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Đồ thị hàm số có tiệm cận ngang là trục hoành"
+    },
+    {
+      "key": "c",
+      "text": "Hàm số đồng biến trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>ℝ</mi></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>−</mo><mn>3</mn><mi>b</mi><mo>−</mo><mn>2</mn><mi>c</mi><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "solution": "Đồ thị hàm số có tiệm cận đứng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn><mo>⇒</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mi>c</mi></mrow><mi>b</mi></mfrac><mo>=</mo><mn>1</mn></mrow></semantics></math> (1).<br>\n\t\tĐồ thị hàm số có tiệm cận ngang là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn><mo>⇒</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>b</mi></mfrac><mo>=</mo><mn>1</mn><mo>⇒</mo><mi>b</mi><mo>=</mo><mn>1</mn><mi>.</mi></mrow></semantics></math><br>\n\t\tDo đó từ (1) ta có: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>c</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>.<br>\n\t\tTa thấy đồ thị đi qua điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>0</mn><mo>+</mo><mi>a</mi></mrow><mrow><mn>0</mn><mo>+</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac><mo>=</mo><mn>2</mn><mo>⇒</mo><mi>a</mi><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math>.<br>\n\t\tSuy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>−</mo><mn>3</mn><mi>b</mi><mo>−</mo><mn>2</mn><mi>c</mi><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math>.<br>\t\n\t\tTừ đó ta xét tính đúng sai của các khẳng định:\n\t\t<ol class=\"alpha-list\"><li>Đúng</li><li>Sai</li><li>Sai</li><li>Đúng</li></ol>",
+  "accepted_answers": []
+}

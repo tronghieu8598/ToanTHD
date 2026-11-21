@@ -1,0 +1,33 @@
+{
+  "id": "dc-12-hk1-1D2-q035-v4",
+  "original_number": 35,
+  "kind": "tf",
+  "based_on": "733f402667a532781d64cdefef0eb96d94ef651833a7872cd67b78c23cdbf907",
+  "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có bảng biến thiên như hình vẽ.\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/788e8590009c6a24a1b678271d85efc6df7e7a290bdc5d29fc3ee8316cf2bcb8.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tXét tính đúng sai của các khẳng định sau:",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có giá trị lớn nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>3</mn></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có giá trị nhỏ nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có giá trị lớn nhất trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>3</mn></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có giá trị nhỏ nhất trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>1</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "solution": "Dựa vào bảng biến thiên, ta thấy \n\t\t<ol class=\"alpha-list\"><li><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msub><mi>y</mi><mtext mathvariant=\"normal\">CĐ</mtext></msub><mo>=</mo><mn>3</mn></mrow></semantics></math>.</li><li>Hàm số không có giá trị nhỏ nhất.</li><li><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>≠</mo><mn>3</mn></mrow></semantics></math>.</li><li><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msub><mi>y</mi><mtext mathvariant=\"normal\">CT</mtext></msub><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

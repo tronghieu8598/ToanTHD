@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk1-1D2-q028-v4",
+  "source_fingerprint": "08d03b7f7c9bb86ad90fd59c2e9a6b52ddcaab2697ec4807e156461d7875ec2c",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D2-q028-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Một người nông dân có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow>12<mspace width=\"0.167em\"/>000<mspace width=\"0.167em\"/>000</mrow></semantics></math> đồng muốn làm một cái hàng rào hình chữ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>E</mi></mrow></semantics></math> dọc theo một con sông (như hình vẽ) để làm một khu đất có hai phần hình chữ nhật để trồng rau. Đối với mặt rào song song với bờ sông thì chi phí nguyên vật liệu là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow>50<mspace width=\"0.167em\"/>000</mrow></semantics></math> đồng một mét, còn đối với ba mặt hàng rào song song nhau thì chi phí nguyên vật liệu là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow>40<mspace width=\"0.167em\"/>000</mrow></semantics></math> đồng một mét. Tìm diện tích lớn nhất của đất rào thu được.\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/d4bfcd6cf84ba0d9e27436ee11636fb4fc0c7948cd08761327e2b79953ec4e41.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3000</mn></mrow></semantics></math> m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>120</mn></mrow></semantics></math> m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1200</mn></mrow></semantics></math> m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>6000</mn></mrow></semantics></math> m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>"
+        }
+      ],
+      "correct": "D",
+      "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> (m) là chiều dài mặt rào song song với bờ sông và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> (m) là chiều dài mỗi mặt rào vuông góc với bờ sông.<br>\n\t\tTheo giả thiết chi phí: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>50</mn><mi>x</mi><mo>+</mo><mn>3</mn><mo>⋅</mo><mn>40</mn><mi>y</mi><mo>=</mo><mn>12000</mn><mo>⇒</mo><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>12000</mn><mo>−</mo><mn>50</mn><mi>x</mi></mrow><mn>120</mn></mfrac></mrow></semantics></math>.<br>\n\t\tDiện tích khu đất là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>x</mi><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mrow><mo>(</mo><mn>12000</mn><mo>−</mo><mn>50</mn><mi>x</mi><mo>)</mo></mrow></mrow><mn>120</mn></mfrac></mrow></semantics></math>, đạt giá trị lớn nhất khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>120</mn></mrow></semantics></math> m và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>50</mn></mrow></semantics></math> m.<br>\n\t\tVậy diện tích lớn nhất của đất rào thu được là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>S</mi><mo>max</mo></msub><mo>=</mo><mn>120</mn><mo>⋅</mo><mn>50</mn><mo>=</mo><mn>6000</mn></mrow></semantics></math> m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q028-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Một người nông dân có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow>18<mspace width=\"0.167em\"/>000<mspace width=\"0.167em\"/>000</mrow></semantics></math> đồng muốn làm một cái hàng rào hình chữ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>E</mi></mrow></semantics></math> dọc theo một con sông (như hình vẽ) để làm một khu đất có hai phần hình chữ nhật để trồng rau. Đối với mặt rào song song với bờ sông thì chi phí nguyên vật liệu là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow>60<mspace width=\"0.167em\"/>000</mrow></semantics></math> đồng một mét, còn đối với ba mặt hàng rào song song nhau thì chi phí nguyên vật liệu là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow>50<mspace width=\"0.167em\"/>000</mrow></semantics></math> đồng một mét. Tìm diện tích lớn nhất của đất rào thu được.\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/d4bfcd6cf84ba0d9e27436ee11636fb4fc0c7948cd08761327e2b79953ec4e41.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>150</mn></mrow></semantics></math> m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>9000</mn></mrow></semantics></math> m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4500</mn></mrow></semantics></math> m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1800</mn></mrow></semantics></math> m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> (m) là chiều dài mặt rào song song với bờ sông và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> (m) là chiều dài mỗi mặt rào vuông góc với bờ sông.<br>\n\t\tTheo giả thiết chi phí: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>60</mn><mi>x</mi><mo>+</mo><mn>3</mn><mo>⋅</mo><mn>50</mn><mi>y</mi><mo>=</mo><mn>18000</mn><mo>⇒</mo><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>18000</mn><mo>−</mo><mn>60</mn><mi>x</mi></mrow><mn>150</mn></mfrac></mrow></semantics></math>.<br>\n\t\tDiện tích khu đất là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>x</mi><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mrow><mo>(</mo><mn>18000</mn><mo>−</mo><mn>60</mn><mi>x</mi><mo>)</mo></mrow></mrow><mn>150</mn></mfrac></mrow></semantics></math>, đạt giá trị lớn nhất khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>150</mn></mrow></semantics></math> m và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>60</mn></mrow></semantics></math> m.<br>\n\t\tVậy diện tích lớn nhất của đất rào thu được là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>S</mi><mo>max</mo></msub><mo>=</mo><mn>150</mn><mo>⋅</mo><mn>60</mn><mo>=</mo><mn>9000</mn></mrow></semantics></math> m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q028-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Một người nông dân có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow>24<mspace width=\"0.167em\"/>000<mspace width=\"0.167em\"/>000</mrow></semantics></math> đồng muốn làm một cái hàng rào hình chữ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>E</mi></mrow></semantics></math> dọc theo một con sông (như hình vẽ) để làm một khu đất có hai phần hình chữ nhật để trồng rau. Đối với mặt rào song song với bờ sông thì chi phí nguyên vật liệu là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow>80<mspace width=\"0.167em\"/>000</mrow></semantics></math> đồng một mét, còn đối với ba mặt hàng rào song song nhau thì chi phí nguyên vật liệu là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow>50<mspace width=\"0.167em\"/>000</mrow></semantics></math> đồng một mét. Tìm diện tích lớn nhất của đất rào thu được.\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/d4bfcd6cf84ba0d9e27436ee11636fb4fc0c7948cd08761327e2b79953ec4e41.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>12000</mn></mrow></semantics></math> m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2400</mn></mrow></semantics></math> m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>150</mn></mrow></semantics></math> m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>6000</mn></mrow></semantics></math> m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>"
+        }
+      ],
+      "correct": "A",
+      "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> (m) là chiều dài mặt rào song song với bờ sông và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> (m) là chiều dài mỗi mặt rào vuông góc với bờ sông.<br>\n\t\tTheo giả thiết chi phí: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>80</mn><mi>x</mi><mo>+</mo><mn>3</mn><mo>⋅</mo><mn>50</mn><mi>y</mi><mo>=</mo><mn>24000</mn><mo>⇒</mo><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>24000</mn><mo>−</mo><mn>80</mn><mi>x</mi></mrow><mn>150</mn></mfrac></mrow></semantics></math>.<br>\n\t\tDiện tích khu đất là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>x</mi><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mrow><mo>(</mo><mn>24000</mn><mo>−</mo><mn>80</mn><mi>x</mi><mo>)</mo></mrow></mrow><mn>150</mn></mfrac></mrow></semantics></math>, đạt giá trị lớn nhất khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>150</mn></mrow></semantics></math> m và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>80</mn></mrow></semantics></math> m.<br>\n\t\tVậy diện tích lớn nhất của đất rào thu được là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>S</mi><mo>max</mo></msub><mo>=</mo><mn>150</mn><mo>⋅</mo><mn>80</mn><mo>=</mo><mn>12000</mn></mrow></semantics></math> m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q028-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Một người nông dân có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow>12<mspace width=\"0.167em\"/>000<mspace width=\"0.167em\"/>000</mrow></semantics></math> đồng muốn làm một cái hàng rào hình chữ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>E</mi></mrow></semantics></math> dọc theo một con sông (như hình vẽ) để làm một khu đất có hai phần hình chữ nhật để trồng rau. Đối với mặt rào song song với bờ sông thì chi phí nguyên vật liệu là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow>60<mspace width=\"0.167em\"/>000</mrow></semantics></math> đồng một mét, còn đối với ba mặt hàng rào song song nhau thì chi phí nguyên vật liệu là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow>40<mspace width=\"0.167em\"/>000</mrow></semantics></math> đồng một mét. Tìm diện tích lớn nhất của đất rào thu được.\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/d4bfcd6cf84ba0d9e27436ee11636fb4fc0c7948cd08761327e2b79953ec4e41.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1000</mn></mrow></semantics></math> m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2500</mn></mrow></semantics></math> m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5000</mn></mrow></semantics></math> m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>100</mn></mrow></semantics></math> m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> (m) là chiều dài mặt rào song song với bờ sông và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> (m) là chiều dài mỗi mặt rào vuông góc với bờ sông.<br>\n\t\tTheo giả thiết chi phí: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>60</mn><mi>x</mi><mo>+</mo><mn>3</mn><mo>⋅</mo><mn>40</mn><mi>y</mi><mo>=</mo><mn>12000</mn><mo>⇒</mo><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>12000</mn><mo>−</mo><mn>60</mn><mi>x</mi></mrow><mn>120</mn></mfrac></mrow></semantics></math>.<br>\n\t\tDiện tích khu đất là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>x</mi><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mrow><mo>(</mo><mn>12000</mn><mo>−</mo><mn>60</mn><mi>x</mi><mo>)</mo></mrow></mrow><mn>120</mn></mfrac></mrow></semantics></math>, đạt giá trị lớn nhất khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>100</mn></mrow></semantics></math> m và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>50</mn></mrow></semantics></math> m.<br>\n\t\tVậy diện tích lớn nhất của đất rào thu được là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>S</mi><mo>max</mo></msub><mo>=</mo><mn>100</mn><mo>⋅</mo><mn>50</mn><mo>=</mo><mn>5000</mn></mrow></semantics></math> m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

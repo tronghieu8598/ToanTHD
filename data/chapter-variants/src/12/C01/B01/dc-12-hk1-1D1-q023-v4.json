@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk1-1D1-q023-v4",
+  "source_fingerprint": "013747a8879eda663445c6eed029a1ca657fa2d85f3fb6789d3b7c552ceddb45",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D1-q023-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có đạo hàm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>−</mo><mn>4</mn></mrow></semantics></math> với mọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math>. Hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mn>3</mn><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> nghịch biến trên khoảng nào?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        }
+      ],
+      "correct": "A",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mo>−</mo><mn>3</mn><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>3</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.<br>\n\t\tĐể hàm số nghịch biến thì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>≤</mo><mn>0</mn><mo>⇔</mo><mn>1</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>4</mn></mrow></semantics></math>. Vậy hàm số nghịch biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D1-q023-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có đạo hàm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo>+</mo><mn>2</mn></mrow></semantics></math> với mọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math>. Hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mn>4</mn><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> nghịch biến trên khoảng nào?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mo>−</mo><mn>4</mn><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>4</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.<br>\n\t\tĐể hàm số nghịch biến thì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>≤</mo><mn>0</mn><mo>⇔</mo><mo>−</mo><mn>1</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>2</mn></mrow></semantics></math>. Vậy hàm số nghịch biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D1-q023-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có đạo hàm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>7</mn><mi>x</mi><mo>−</mo><mn>10</mn></mrow></semantics></math> với mọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math>. Hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mn>2</mn><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> nghịch biến trên khoảng nào?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>5</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>5</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mo>−</mo><mn>2</mn><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>7</mn><mi>x</mi><mo>+</mo><mn>10</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.<br>\n\t\tĐể hàm số nghịch biến thì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>≤</mo><mn>0</mn><mo>⇔</mo><mn>2</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>5</mn></mrow></semantics></math>. Vậy hàm số nghịch biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D1-q023-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có đạo hàm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo>+</mo><mn>6</mn></mrow></semantics></math> với mọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math>. Hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mn>5</mn><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> nghịch biến trên khoảng nào?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        }
+      ],
+      "correct": "D",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mo>−</mo><mn>5</mn><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>5</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi><mo>−</mo><mn>6</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.<br>\n\t\tĐể hàm số nghịch biến thì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>≤</mo><mn>0</mn><mo>⇔</mo><mo>−</mo><mn>2</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>3</mn></mrow></semantics></math>. Vậy hàm số nghịch biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

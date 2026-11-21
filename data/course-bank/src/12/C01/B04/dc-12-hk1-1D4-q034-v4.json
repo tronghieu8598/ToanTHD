@@ -1,0 +1,33 @@
+{
+  "id": "dc-12-hk1-1D4-q034-v4",
+  "original_number": 34,
+  "kind": "tf",
+  "based_on": "3af6c3e149ce554b54298b15cc807388840d9743edbc992e9dd7a0104cbaaaa3",
+  "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có bảng biến thiên như hình vẽ bên dưới:\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/4ad0adc7c449f01d3c903aa4e899be264f38591dd9d45e03e768dd4eb1ee9a3a.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tXét tính đúng sai của các khẳng định sau:",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Hàm số nghịch biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Hàm số đồng biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Hàm số có hai điểm cực trị"
+    },
+    {
+      "key": "d",
+      "text": "Toạ độ điểm cực đại của đồ thị hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mo>−</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    true,
+    true
+  ],
+  "solution": "Dựa vào bảng biến thiên ta xét các phát biểu\n\t\t<ol class=\"alpha-list\"><li>Sai vì hàm số nghịch biến trên<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.</li><li>Đúng</li><li>Đúng</li><li>Đúng</li></ol>",
+  "accepted_answers": []
+}

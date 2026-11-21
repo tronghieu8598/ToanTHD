@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-1D1-q036-v4",
+  "original_number": 36,
+  "kind": "mcq",
+  "based_on": "bd0d79417d4f8c9643c34132f7b5545e62b55fd9614f8319bd9cc72187fa2c1c",
+  "prompt": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>A</mi></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>B</mi></semantics></math> là hai điểm cực trị của đồ thị hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></semantics></math>. Tính diện tích <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>S</mi></semantics></math> của tam giác <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>A</mi><mi>B</mi></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>O</mi></semantics></math> là gốc tọa độ.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>8</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><msqrt><mn>3</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Tập xác định <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>6</mn><mi>x</mi><mo>⇒</mo><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>0</mn><mo>⇒</mo><mi>y</mi><mo>=</mo><mn>4</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>2</mn><mo>⇒</mo><mi>y</mi><mo>=</mo><mn>0</mn><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math><br>\n\t\tThấy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>2</mn></semantics></math> điểm cực trị đều nằm trên hai trục tọa độ nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>S</mi><mrow><mi>O</mi><mi>A</mi><mi>B</mi></mrow></msub><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>O</mi><mi>A</mi><mo>⋅</mo><mi>O</mi><mi>B</mi></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><msub><mi>y</mi><mi>A</mi></msub><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><msub><mi>x</mi><mi>B</mi></msub><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow></mrow><mn>2</mn></mfrac><mo>=</mo><mn>4</mn></mrow></semantics></math> (đvdt).",
+  "accepted_answers": []
+}

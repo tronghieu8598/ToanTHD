@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk1-1D3-q016-v4",
+  "source_fingerprint": "9d2905ed74c8711b57142ef2ac32d4f43fd7c59084fb3b844a48eccdf8b788df",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D3-q016-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mi>x</mi></mfrac></mrow></semantics></math> có đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>. Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi></mrow></semantics></math> là tích khoảng cách từ một điểm bất kì trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> đến các đường tiệm cận của <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>. Tính <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><msqrt><mn>3</mn></msqrt></mrow></semantics></math>"
+        }
+      ],
+      "correct": "A",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>3</mn><mi>x</mi></mfrac></mrow></semantics></math>, hai tiệm cận là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>. Với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mrow><mo>(</mo><mi>x</mi><mo>;</mo><mi>y</mi><mo>)</mo></mrow><mo>∈</mo><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>, tích khoảng cách là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><mrow><mo>|</mo><mi>x</mi><mo>|</mo></mrow><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>3</mn><mrow><mo>|</mo><mi>x</mi><mo>|</mo></mrow></mfrac><mo>=</mo><mn>3</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D3-q016-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>5</mn></mrow><mi>x</mi></mfrac></mrow></semantics></math> có đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>. Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi></mrow></semantics></math> là tích khoảng cách từ một điểm bất kì trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> đến các đường tiệm cận của <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>. Tính <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><msqrt><mn>5</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>5</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn><msqrt><mn>5</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>2</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>5</mn><mi>x</mi></mfrac></mrow></semantics></math>, hai tiệm cận là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>. Với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mrow><mo>(</mo><mi>x</mi><mo>;</mo><mi>y</mi><mo>)</mo></mrow><mo>∈</mo><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>, tích khoảng cách là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><mrow><mo>|</mo><mi>x</mi><mo>|</mo></mrow><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>5</mn><mrow><mo>|</mo><mi>x</mi><mo>|</mo></mrow></mfrac><mo>=</mo><mn>5</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D3-q016-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>+</mo><mn>6</mn></mrow><mi>x</mi></mfrac></mrow></semantics></math> có đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>. Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi></mrow></semantics></math> là tích khoảng cách từ một điểm bất kì trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> đến các đường tiệm cận của <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>. Tính <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn><msqrt><mn>6</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><msqrt><mn>6</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>6</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "D",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>6</mn><mi>x</mi></mfrac></mrow></semantics></math>, hai tiệm cận là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>. Với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mrow><mo>(</mo><mi>x</mi><mo>;</mo><mi>y</mi><mo>)</mo></mrow><mo>∈</mo><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>, tích khoảng cách là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><mrow><mo>|</mo><mi>x</mi><mo>|</mo></mrow><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>6</mn><mrow><mo>|</mo><mi>x</mi><mo>|</mo></mrow></mfrac><mo>=</mo><mn>6</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D3-q016-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mi>x</mi><mo>+</mo><mn>7</mn></mrow><mi>x</mi></mfrac></mrow></semantics></math> có đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>. Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi></mrow></semantics></math> là tích khoảng cách từ một điểm bất kì trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> đến các đường tiệm cận của <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>. Tính <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><msqrt><mn>7</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>7</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn><msqrt><mn>7</mn></msqrt></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>3</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>7</mn><mi>x</mi></mfrac></mrow></semantics></math>, hai tiệm cận là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>. Với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mrow><mo>(</mo><mi>x</mi><mo>;</mo><mi>y</mi><mo>)</mo></mrow><mo>∈</mo><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>, tích khoảng cách là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><mrow><mo>|</mo><mi>x</mi><mo>|</mo></mrow><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>7</mn><mrow><mo>|</mo><mi>x</mi><mo>|</mo></mrow></mfrac><mo>=</mo><mn>7</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

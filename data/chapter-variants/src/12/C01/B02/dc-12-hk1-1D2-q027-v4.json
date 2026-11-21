@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk1-1D2-q027-v4",
+  "source_fingerprint": "42525a3268d291375fd5a3d4803efba9b67cdba15c8ad2af428cd05782bfedaf",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D2-q027-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Để làm một hộp quà có hình dạng Kim Tự Tháp Ai Cập từ một tờ giấy bìa hình vuông với kích thước cạnh bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>10</mn></mrow></semantics></math> cm, người ta cắt bỏ bốn tam giác cân bằng nhau có kích thước cạnh đáy chính là cạnh của hình vuông rồi gấp lên, ghép lại thành một hình chóp tứ giác đều có cạnh đáy bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi></mrow></semantics></math> cm.\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/c07538b8793a8de5e99de166b2b0bfcc81ca8539f1aa982327b721cec3ac693a.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tĐể hộp quà có thể tích lớn nhất thì cạnh đáy của hộp quà là",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>4</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>5</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>5</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+        }
+      ],
+      "correct": "A",
+      "solution": "Gọi tấm bìa hình vuông là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> cạnh <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>10</mn></mrow></semantics></math> cm, đáy hình chóp là hình vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>N</mi><mi>P</mi><mi>Q</mi></mrow></semantics></math> cạnh <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi></mrow></semantics></math> cm có tâm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>H</mi></mrow></semantics></math>.<br>\n\t\tTa có đường chéo <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>P</mi><mo>=</mo><mi>x</mi><msqrt><mn>2</mn></msqrt></mrow></semantics></math>, chiều cao hình chóp sau khi gấp là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mo>=</mo><msqrt><mrow><mfrac displaystyle=\"true\"><msup><mn>10</mn><mn>2</mn></msup><mn>2</mn></mfrac><mo>−</mo><mn>5</mn><msqrt><mn>2</mn></msqrt><mi>x</mi></mrow></msqrt></mrow></semantics></math>, với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>5</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>.<br>\n\t\tThể tích khối chóp là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>V</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><msup><mi>x</mi><mn>2</mn></msup><mi>h</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><msqrt><mrow><mfrac displaystyle=\"true\"><msup><mn>10</mn><mn>2</mn></msup><mn>2</mn></mfrac><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>5</mn><msqrt><mn>2</mn></msqrt><msup><mi>x</mi><mn>5</mn></msup></mrow></msqrt></mrow></semantics></math>.<br>\n\t\tXét <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><msup><mn>10</mn><mn>2</mn></msup><mn>2</mn></mfrac><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>5</mn><msqrt><mn>2</mn></msqrt><msup><mi>x</mi><mn>5</mn></msup></mrow></semantics></math>, ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow><mn>5</mn></mfrac><mo>⋅</mo><mn>10</mn><mo>=</mo><mn>4</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math> cm.<br>\n\t\tVậy thể tích hộp quà lớn nhất khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>4</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q027-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Để làm một hộp quà có hình dạng Kim Tự Tháp Ai Cập từ một tờ giấy bìa hình vuông với kích thước cạnh bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>15</mn></mrow></semantics></math> cm, người ta cắt bỏ bốn tam giác cân bằng nhau có kích thước cạnh đáy chính là cạnh của hình vuông rồi gấp lên, ghép lại thành một hình chóp tứ giác đều có cạnh đáy bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi></mrow></semantics></math> cm.\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/cd65e267701eeab36e94d95002a34d3454e5bb66c7773192fe3e8ee01b35d368.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tĐể hộp quà có thể tích lớn nhất thì cạnh đáy của hộp quà là",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>5</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>6</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>7</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>7</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Gọi tấm bìa hình vuông là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> cạnh <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>15</mn></mrow></semantics></math> cm, đáy hình chóp là hình vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>N</mi><mi>P</mi><mi>Q</mi></mrow></semantics></math> cạnh <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi></mrow></semantics></math> cm có tâm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>H</mi></mrow></semantics></math>.<br>\n\t\tTa có đường chéo <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>P</mi><mo>=</mo><mi>x</mi><msqrt><mn>2</mn></msqrt></mrow></semantics></math>, chiều cao hình chóp sau khi gấp là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mo>=</mo><msqrt><mrow><mfrac displaystyle=\"true\"><msup><mn>15</mn><mn>2</mn></msup><mn>2</mn></mfrac><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>15</mn><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac><mi>x</mi></mrow></msqrt></mrow></semantics></math>, với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mfrac displaystyle=\"true\"><mrow><mn>15</mn><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></semantics></math>.<br>\n\t\tThể tích khối chóp là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>V</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><msup><mi>x</mi><mn>2</mn></msup><mi>h</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><msqrt><mrow><mfrac displaystyle=\"true\"><msup><mn>15</mn><mn>2</mn></msup><mn>2</mn></mfrac><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>15</mn><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac><msup><mi>x</mi><mn>5</mn></msup></mrow></msqrt></mrow></semantics></math>.<br>\n\t\tXét <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><msup><mn>15</mn><mn>2</mn></msup><mn>2</mn></mfrac><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>15</mn><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac><msup><mi>x</mi><mn>5</mn></msup></mrow></semantics></math>, ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow><mn>5</mn></mfrac><mo>⋅</mo><mn>15</mn><mo>=</mo><mn>6</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math> cm.<br>\n\t\tVậy thể tích hộp quà lớn nhất khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>6</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q027-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Để làm một hộp quà có hình dạng Kim Tự Tháp Ai Cập từ một tờ giấy bìa hình vuông với kích thước cạnh bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>25</mn></mrow></semantics></math> cm, người ta cắt bỏ bốn tam giác cân bằng nhau có kích thước cạnh đáy chính là cạnh của hình vuông rồi gấp lên, ghép lại thành một hình chóp tứ giác đều có cạnh đáy bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi></mrow></semantics></math> cm.\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/c1889e9df5e1d6014f9779c0feef9d68741a1b5ab1ae6766cd1b7283fd90439c.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tĐể hộp quà có thể tích lớn nhất thì cạnh đáy của hộp quà là",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>12</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>11</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>10</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>9</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Gọi tấm bìa hình vuông là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> cạnh <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>25</mn></mrow></semantics></math> cm, đáy hình chóp là hình vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>N</mi><mi>P</mi><mi>Q</mi></mrow></semantics></math> cạnh <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi></mrow></semantics></math> cm có tâm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>H</mi></mrow></semantics></math>.<br>\n\t\tTa có đường chéo <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>P</mi><mo>=</mo><mi>x</mi><msqrt><mn>2</mn></msqrt></mrow></semantics></math>, chiều cao hình chóp sau khi gấp là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mo>=</mo><msqrt><mrow><mfrac displaystyle=\"true\"><msup><mn>25</mn><mn>2</mn></msup><mn>2</mn></mfrac><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>25</mn><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac><mi>x</mi></mrow></msqrt></mrow></semantics></math>, với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mfrac displaystyle=\"true\"><mrow><mn>25</mn><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></semantics></math>.<br>\n\t\tThể tích khối chóp là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>V</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><msup><mi>x</mi><mn>2</mn></msup><mi>h</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><msqrt><mrow><mfrac displaystyle=\"true\"><msup><mn>25</mn><mn>2</mn></msup><mn>2</mn></mfrac><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>25</mn><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac><msup><mi>x</mi><mn>5</mn></msup></mrow></msqrt></mrow></semantics></math>.<br>\n\t\tXét <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><msup><mn>25</mn><mn>2</mn></msup><mn>2</mn></mfrac><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>25</mn><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac><msup><mi>x</mi><mn>5</mn></msup></mrow></semantics></math>, ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow><mn>5</mn></mfrac><mo>⋅</mo><mn>25</mn><mo>=</mo><mn>10</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math> cm.<br>\n\t\tVậy thể tích hộp quà lớn nhất khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>10</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q027-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Để làm một hộp quà có hình dạng Kim Tự Tháp Ai Cập từ một tờ giấy bìa hình vuông với kích thước cạnh bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>30</mn></mrow></semantics></math> cm, người ta cắt bỏ bốn tam giác cân bằng nhau có kích thước cạnh đáy chính là cạnh của hình vuông rồi gấp lên, ghép lại thành một hình chóp tứ giác đều có cạnh đáy bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi></mrow></semantics></math> cm.\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/2bd5d192367d93a912f3bd04d1303b17847177ec1e5abecafb35844039542f45.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tĐể hộp quà có thể tích lớn nhất thì cạnh đáy của hộp quà là",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>13</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>11</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>15</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>12</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+        }
+      ],
+      "correct": "D",
+      "solution": "Gọi tấm bìa hình vuông là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> cạnh <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>30</mn></mrow></semantics></math> cm, đáy hình chóp là hình vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>N</mi><mi>P</mi><mi>Q</mi></mrow></semantics></math> cạnh <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi></mrow></semantics></math> cm có tâm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>H</mi></mrow></semantics></math>.<br>\n\t\tTa có đường chéo <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>P</mi><mo>=</mo><mi>x</mi><msqrt><mn>2</mn></msqrt></mrow></semantics></math>, chiều cao hình chóp sau khi gấp là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mo>=</mo><msqrt><mrow><mfrac displaystyle=\"true\"><msup><mn>30</mn><mn>2</mn></msup><mn>2</mn></mfrac><mo>−</mo><mn>15</mn><msqrt><mn>2</mn></msqrt><mi>x</mi></mrow></msqrt></mrow></semantics></math>, với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>15</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>.<br>\n\t\tThể tích khối chóp là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>V</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><msup><mi>x</mi><mn>2</mn></msup><mi>h</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><msqrt><mrow><mfrac displaystyle=\"true\"><msup><mn>30</mn><mn>2</mn></msup><mn>2</mn></mfrac><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>15</mn><msqrt><mn>2</mn></msqrt><msup><mi>x</mi><mn>5</mn></msup></mrow></msqrt></mrow></semantics></math>.<br>\n\t\tXét <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><msup><mn>30</mn><mn>2</mn></msup><mn>2</mn></mfrac><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>15</mn><msqrt><mn>2</mn></msqrt><msup><mi>x</mi><mn>5</mn></msup></mrow></semantics></math>, ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow><mn>5</mn></mfrac><mo>⋅</mo><mn>30</mn><mo>=</mo><mn>12</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math> cm.<br>\n\t\tVậy thể tích hộp quà lớn nhất khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>12</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

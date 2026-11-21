@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-1D2-q008-v4",
+  "original_number": 8,
+  "kind": "mcq",
+  "based_on": "3027eac6a6853ee5ac5de2078c59aaeb6bf7cab494c45ac1aa18c7ac04ac06b5",
+  "prompt": "Tổng giá trị nhỏ nhất và lớn nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msqrt><mrow><mn>2</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt><mo>−</mo><mi>x</mi></mrow></semantics></math> bằng bao nhiêu?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mo>−</mo><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>2</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mo>+</mo><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>1</mn></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Tập xác định <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><msqrt><mn>2</mn></msqrt><mo>;</mo><msqrt><mn>2</mn></msqrt><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>x</mi><msqrt><mrow><mn>2</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mfrac><mo>−</mo><mn>1</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><msqrt><mrow><mn>2</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mo>−</mo><mi>x</mi><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>≤</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mn>2</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mtd></mtr></mtable></mrow><mo>⇔</mo><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn><mo>∈</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><msqrt><mn>2</mn></msqrt><mo>;</mo><msqrt><mn>2</mn></msqrt><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.<br>\n\t\tLại có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><msqrt><mn>2</mn></msqrt><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msqrt><mn>2</mn></msqrt></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msqrt><mn>2</mn></msqrt><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><msqrt><mn>2</mn></msqrt></mrow></semantics></math>.<br>\n\t\tDo đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><msqrt><mn>2</mn></msqrt><mo>;</mo><msqrt><mn>2</mn></msqrt><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>y</mi><mo>=</mo><mo>−</mo><msqrt><mn>2</mn></msqrt></mrow></semantics></math> tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><msqrt><mn>2</mn></msqrt></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><msqrt><mn>2</mn></msqrt><mo>;</mo><msqrt><mn>2</mn></msqrt><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>y</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>.<br>\n\t\tTổng giá trị nhỏ nhất và lớn nhất của hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mo>−</mo><msqrt><mn>2</mn></msqrt></mrow></semantics></math>.",
+  "accepted_answers": []
+}

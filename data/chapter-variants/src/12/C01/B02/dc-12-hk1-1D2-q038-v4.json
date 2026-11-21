@@ -1,0 +1,134 @@
+{
+  "id": "dc-12-hk1-1D2-q038-v4",
+  "source_fingerprint": "22f990f4a7dc2ef096ae8866abf8d79f4291304d38ff8594a13db6a2a15835dd",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D2-q038-v4--bt01",
+      "number": 1,
+      "kind": "tf",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></semantics></math> liên tục trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math> có bảng xét dấu đạo hàm như sau:\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/3aacf132c61ebb5fd39394a52acace4c4fd10888f4eaa6d3ae7b1eeca2b08e5d.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tXét tính đúng sai của các khẳng định sau:",
+      "choices": [
+        {
+          "key": "a",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mrow><mo>(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo>)</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo>(</mo><mn>0</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo>)</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo>(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>2</mn><mo>]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mrow><mo>[</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>2</mn><mo>]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        false,
+        true,
+        false,
+        true
+      ],
+      "solution": "Dựa vào bảng xét dấu đạo hàm, hàm số đồng biến trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>; nghịch biến trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>. Do đó trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> hàm số đạt giá trị lớn nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow></mrow></semantics></math>, còn trên nửa khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> hàm số đạt giá trị nhỏ nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q038-v4--bt02",
+      "number": 2,
+      "kind": "tf",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></semantics></math> liên tục trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math> có bảng xét dấu đạo hàm như sau:\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/d28bef6b6242a3a78d41e0b23a6b9f00402927d79a5fbb8297c5d1e22018a0fb.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tXét tính đúng sai của các khẳng định sau:",
+      "choices": [
+        {
+          "key": "a",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mrow><mo>(</mo><mo>−</mo><mn>3</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo>)</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo>(</mo><mn>0</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo>)</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mn>3</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mrow><mo>(</mo><mo>−</mo><mn>3</mn><mo>;</mo><mn>3</mn><mo>]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mrow><mo>(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mo>−</mo><mn>3</mn><mo>)</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mo>−</mo><mn>3</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        false,
+        true,
+        true,
+        false
+      ],
+      "solution": "Dựa vào bảng xét dấu đạo hàm, hàm số đồng biến trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mo>−</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>; nghịch biến trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>3</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>. Do đó trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> hàm số đạt giá trị lớn nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mn>3</mn><mo>)</mo></mrow></mrow></semantics></math>, còn trên nửa khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>3</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> hàm số đạt giá trị nhỏ nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q038-v4--bt03",
+      "number": 3,
+      "kind": "tf",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></semantics></math> liên tục trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math> có bảng xét dấu đạo hàm như sau:\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/c94dca0f1b81a9bbbf4f5e35988ce2d2d45757703c0505b0fb6f2d049e712fbf.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tXét tính đúng sai của các khẳng định sau:",
+      "choices": [
+        {
+          "key": "a",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mrow><mo>[</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>3</mn><mo>]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo>(</mo><mn>1</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo>)</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mn>3</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo>(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>3</mn><mo>]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mrow><mo>(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mo>−</mo><mn>2</mn><mo>)</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mo>−</mo><mn>2</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "solution": "Dựa vào bảng xét dấu đạo hàm, hàm số đồng biến trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>; nghịch biến trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>. Do đó trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> hàm số đạt giá trị lớn nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mn>3</mn><mo>)</mo></mrow></mrow></semantics></math>, còn trên nửa khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> hàm số đạt giá trị nhỏ nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q038-v4--bt04",
+      "number": 4,
+      "kind": "tf",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></semantics></math> liên tục trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math> có bảng xét dấu đạo hàm như sau:\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/c601e2c2150fc67b34b480acfa381a95449332047c0e32691b25ce6971fa567c.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tXét tính đúng sai của các khẳng định sau:",
+      "choices": [
+        {
+          "key": "a",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mrow><mo>(</mo><mo>−</mo><mn>3</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo>)</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo>)</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mrow><mo>(</mo><mo>−</mo><mn>3</mn><mo>;</mo><mn>2</mn><mo>]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo>(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mo>−</mo><mn>3</mn><mo>]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mo>−</mo><mn>3</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "solution": "Dựa vào bảng xét dấu đạo hàm, hàm số đồng biến trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mo>−</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>; nghịch biến trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>3</mn><mo>;</mo><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>. Do đó trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> hàm số đạt giá trị lớn nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow></mrow></semantics></math>, còn trên nửa khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>3</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> hàm số đạt giá trị nhỏ nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

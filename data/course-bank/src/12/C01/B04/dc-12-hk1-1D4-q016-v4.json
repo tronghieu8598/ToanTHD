@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-1D4-q016-v4",
+  "original_number": 16,
+  "kind": "mcq",
+  "based_on": "a92e63422e15c8f1577791a527c18f5e22eff4fe90575b841cbcc86970ab2f99",
+  "prompt": "<div class=\"with-figure\"><div>Đường cong trong hình vẽ bên là đồ thị của một trong bốn hàm số bên dưới, đó là hàm số nào?</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/96e03488643c0bb5b244572477261aca319bbf9918234ad3eb27137ee4836ce0.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>2</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>−</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>−</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>2</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Dựa vào đồ thị hàm số ta thấy đây là đồ thị hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>a</mi><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mi>b</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>c</mi><mi>x</mi><mo>+</mo><mi>d</mi></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mi>y</mi><mo>=</mo><mo>−</mo><mi>∞</mi></mrow></semantics></math> nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mn>0</mn></mrow></semantics></math>. Hàm số có hai điểm cực trị trong đó có một điểm cực trị là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>.<br>\n\t\tMặt khác đồ thị hàm số đi qua điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> nên đây là đồ thị hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>−</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

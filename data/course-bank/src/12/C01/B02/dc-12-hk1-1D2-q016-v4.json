@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-1D2-q016-v4",
+  "original_number": 16,
+  "kind": "mcq",
+  "based_on": "caf185b77fe892b5de2644304c0b0f3bf4a6c72a5f0b5f61d4bf141b196a210b",
+  "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> giảm trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>ℝ</mi></semantics></math>. Giá trị nhỏ nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mi mathvariant=\"normal\">e</mi><mrow><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><msup><mi>x</mi><mn>3</mn></msup></mrow></msup><mo>−</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">e</mi><mo>−</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn><mo>−</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>6</mn><mi>x</mi><mo>−</mo><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><msup><mi mathvariant=\"normal\">e</mi><mrow><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><msup><mi>x</mi><mn>3</mn></msup></mrow></msup><mo>−</mo><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>≥</mo><mn>0</mn><mo>,</mo><mo>∀</mo><mi>x</mi><mo>∈</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></mrow></semantics></math> (vì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>≥</mo><mn>0</mn><mo>,</mo><mo>∀</mo><mi>x</mi><mo>∈</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> giảm nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>≤</mo><mn>0</mn></mrow></semantics></math>)<br>\n\t\tDo đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>g</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>g</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.",
+  "accepted_answers": []
+}

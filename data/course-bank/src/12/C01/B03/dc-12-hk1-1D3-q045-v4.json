@@ -1,0 +1,33 @@
+{
+  "id": "dc-12-hk1-1D3-q045-v4",
+  "original_number": 45,
+  "kind": "tf",
+  "based_on": "ec02023bd4dc8db42dcbc16b88a808efa6ebf3b89997e17b4c05b29b5deef8bd",
+  "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có tập xác định <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>\\</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math> và có bảng biến thiên như hình vẽ dưới đây\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/caf8565fb73829d6bc02810774d28d650ff6ad2c926c2f151ed0eb9cfd6e59d4.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tXét tính đúng sai của các khẳng định sau",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Đồ thị hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có đúng ba đường tiệm cận đứng"
+    },
+    {
+      "key": "b",
+      "text": "Đồ thị hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có đúng một đường tiệm cận ngang"
+    },
+    {
+      "key": "c",
+      "text": "Đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></semantics></math> là một đường tiệm cận đứng của đồ thị hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> là một đường tiệm cận ngang của đồ thị hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    false,
+    false
+  ],
+  "solution": "Dựa vào bảng biến thiên, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>−</mo><mi>∞</mi></mrow></munder><mi>y</mi><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>−</mo><msup><mn>2</mn><mo>+</mo></msup></mrow></munder><mi>y</mi><mo>=</mo><mo>+</mo><mi>∞</mi></mrow></semantics></math>.<br>\n\t\tVậy đồ thị hàm số đã cho có một tiệm cận đứng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math> và một tiệm cận ngang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math>.\n\t\t<ol class=\"alpha-list\"><li>Phát biểu đã cho sai.</li><li>Phát biểu đã cho đúng.</li><li>Phát biểu đã cho sai.</li><li>Phát biểu đã cho sai.</li></ol>",
+  "accepted_answers": []
+}

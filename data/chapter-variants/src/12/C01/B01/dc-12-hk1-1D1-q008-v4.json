@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk1-1D1-q008-v4",
+  "source_fingerprint": "16a6eeee7b01f3001d8e2e7327faa9be8e0f9337013159e548e7d7cc310619ee",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D1-q008-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>4</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn><mi>x</mi><mo>−</mo><mn>3</mn></mrow></semantics></math> nghịch biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>a</mi><mo>;</mo><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mi>b</mi></mrow></semantics></math>; <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math> và đồng biến trên các khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mi>a</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>b</mi><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>. Tính <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>3</mn><mi>a</mi><mo>+</mo><mn>3</mn><mi>b</mi></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>6</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>8</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>10</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>12</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "<ul class=\"\"><li>Tập xác định <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi></mrow></semantics></math>.</li><li><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>8</mn><mi>x</mi><mo>+</mo><mn>4</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>2</mn><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math></li><li>Bảng biến thiên\n\t\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/be4035e744b0584edf328dd24b7b3f62959f2fed61094ebedb642a044ee2fe66.svg\" alt=\"Bảng biến thiên\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></li></ul>\n\t\tHàm số nghịch biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>. Suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>b</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>. Vậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>3</mn><mi>a</mi><mo>+</mo><mn>3</mn><mi>b</mi><mo>=</mo><mn>8</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D1-q008-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>8</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>−</mo><mn>2</mn></mrow></semantics></math> nghịch biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>a</mi><mo>;</mo><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mi>b</mi></mrow></semantics></math>; <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math> và đồng biến trên các khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mi>a</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>b</mi><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>. Tính <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>3</mn><mi>a</mi><mo>+</mo><mn>3</mn><mi>b</mi></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>12</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>14</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>16</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>18</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "<ul class=\"\"><li>Tập xác định <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi></mrow></semantics></math>.</li><li><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>16</mn><mi>x</mi><mo>+</mo><mn>5</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>5</mn><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math></li><li>Bảng biến thiên\n\t\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/4e504ebab7484439a874e1aad78480e57deb96e3de045de585949a7b83a5f022.svg\" alt=\"Bảng biến thiên\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></li></ul>\n\t\tHàm số nghịch biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mo>;</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>. Suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>b</mi><mo>=</mo><mn>5</mn></mrow></semantics></math>. Vậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>3</mn><mi>a</mi><mo>+</mo><mn>3</mn><mi>b</mi><mo>=</mo><mn>16</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D1-q008-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow></semantics></math> nghịch biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>a</mi><mo>;</mo><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mi>b</mi></mrow></semantics></math>; <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math> và đồng biến trên các khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mi>a</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>b</mi><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>. Tính <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>3</mn><mi>a</mi><mo>+</mo><mn>3</mn><mi>b</mi></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>6</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>8</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>10</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "A",
+      "solution": "<ul class=\"\"><li>Tập xác định <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi></mrow></semantics></math>.</li><li><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>x</mi><mo>−</mo><mn>4</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>2</mn><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math></li><li>Bảng biến thiên\n\t\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/757222cf51a0c9879119be04059ff4720ba55aa9bf046a97e065ccbcb763d629.svg\" alt=\"Bảng biến thiên\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></li></ul>\n\t\tHàm số nghịch biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>. Suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>b</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>. Vậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>3</mn><mi>a</mi><mo>+</mo><mn>3</mn><mi>b</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D1-q008-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>8</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>16</mn><mi>x</mi><mo>−</mo><mn>5</mn></mrow></semantics></math> nghịch biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>a</mi><mo>;</mo><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mi>b</mi></mrow></semantics></math>; <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math> và đồng biến trên các khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mi>a</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>b</mi><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>. Tính <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>3</mn><mi>a</mi><mo>+</mo><mn>3</mn><mi>b</mi></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>10</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>12</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>14</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>16</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "D",
+      "solution": "<ul class=\"\"><li>Tập xác định <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi></mrow></semantics></math>.</li><li><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>16</mn><mi>x</mi><mo>+</mo><mn>16</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>4</mn><mn>3</mn></mfrac></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>4</mn><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math></li><li>Bảng biến thiên\n\t\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/ce36c84265fa882cc1864b31e48f877bcefc344049f40da1b4d129ae25960820.svg\" alt=\"Bảng biến thiên\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></li></ul>\n\t\tHàm số nghịch biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>4</mn><mn>3</mn></mfrac><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>. Suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>4</mn><mn>3</mn></mfrac></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>b</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>. Vậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>3</mn><mi>a</mi><mo>+</mo><mn>3</mn><mi>b</mi><mo>=</mo><mn>16</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

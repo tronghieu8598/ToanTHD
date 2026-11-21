@@ -3,33 +3,39 @@ import {existsSync, mkdirSync, readdirSync, readFileSync, renameSync, unlinkSync
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {gunzipSync} from 'node:zlib';
+import {parseArgs} from 'node:util';
 import {bankSearch, courseRowPayload} from '../lib/course-bank.mjs';
+import {bankReleaseChapters} from '../lib/bank-release-chapters.mjs';
 import {numericValue} from '../lib/grading.mjs';
 import {validateRichHtml} from '../lib/rich-html.mjs';
 import frozenVariantIndex from '../lib/chapter-variants/index.mjs';
-import frozenVariantsPacked from '../lib/chapter-variants/12-C06.mjs';
+import chapterOnePacked from '../lib/chapter-variants/12-C01.mjs';
+import chapterSixPacked from '../lib/chapter-variants/12-C06.mjs';
 import {readFrozenCourseBank} from './course-bank-data.mjs';
 
 const workspace = fileURLToPath(new URL('../', import.meta.url));
-const pilot = '12/C06';
-const lessons = [
-    {folder: 'B01', id: 'dc-12-hk2-6D1-v4'},
-    {folder: 'B02', id: 'dc-12-hk2-6D2-v4'},
-];
+const defaultScope = '12-C06';
 const monty = '12-monty-hall-game-577dcd0';
 const parts = ['bank', 'variants', 'library'];
 const digest = value => createHash('sha256').update(value).digest('hex');
 const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
 const jsonBytes = value => Buffer.from(JSON.stringify(value, null, 2) + '\n');
-const bankSource = file => `data/course-bank/src/${pilot}/${file}`;
-const variantSource = file => `data/chapter-variants/src/${pilot}/${file}`;
-const librarySource = file => `data/digital-library/src/${pilot}/${monty}/${file}`;
+const bankSource = (scope, file) => `data/course-bank/src/${scope.replace('-', '/')}/${file}`;
+const variantSource = (scope, file) => `data/chapter-variants/src/${scope.replace('-', '/')}/${file}`;
+const librarySource = file => `data/digital-library/src/12/C06/${monty}/${file}`;
 const fail = (ok, message) => { if (!ok) throw new Error(message); };
 const shape = (value, keys) => value && typeof value === 'object' && !Array.isArray(value)
     && Object.keys(value).length === keys.length && keys.every(key => Object.hasOwn(value, key));
 const fingerprint = /^[a-f0-9]{64}$/;
 
-const frozenVariants = JSON.parse(gunzipSync(Buffer.from(frozenVariantsPacked, 'base64')));
+const packedVariants = {'12-C01': chapterOnePacked, '12-C06': chapterSixPacked};
+const cachedVariants = new Map();
+function frozenVariantsFor(scope) {
+    if (!cachedVariants.has(scope)) {
+        cachedVariants.set(scope, JSON.parse(gunzipSync(Buffer.from(packedVariants[scope], 'base64'))));
+    }
+    return cachedVariants.get(scope);
+}
 const readDisk = relative => readFileSync(path.join(workspace, relative));
 const listDisk = relative => readdirSync(path.join(workspace, relative));
 function readJson(read, file) {
@@ -91,37 +97,44 @@ function baseBank() {
     return frozenBank;
 }
 
-function compileBank(read, list) {
+function compileBank(read, list, scope) {
     const {manifest, questions} = baseBank();
     const rows = [], approvedSources = [], effective = new Map();
-    for (const lesson of lessons) {
-        const folder = bankSource(lesson.folder);
+    for (const lesson of bankReleaseChapters[scope].lessons) {
+        const folder = bankSource(scope, lesson.folder);
         const originals = new Map(questions.filter(row => row.lesson_id === lesson.id).map(row => [row.id, row]));
         const doc = readLesson(read, list, folder, lesson.id, 'toanthd.question-lesson/1', 'questions', [...originals.keys()]);
         const lessonMeta = manifest.lessons.find(item => item.id === lesson.id);
         for (const input of doc.questions) {
             const original = originals.get(input.id);
             const label = folder + '/' + input.id + '.json';
-            fail(shape(input, ['id', 'original_number', 'kind', 'based_on', ...fields]) &&
+            const keys = ['id', 'original_number', 'kind', 'based_on', ...fields];
+            const needsReview = Object.hasOwn(input, 'bank_status');
+            if (needsReview) keys.push('bank_status');
+            fail(shape(input, keys) && (!needsReview || input.bank_status === 'review') &&
                 input.original_number === original.original_number && input.kind === original.kind && input.based_on === original.bank_fingerprint,
             label + ' · Mã, số gốc, dạng câu hoặc dấu vân tay nguồn đã thay đổi.');
             const baseContent = questionContent(original);
             const content = Object.fromEntries(fields.map(key => [key, input[key]]));
-            if (same(content, baseContent)) {
+            const edited = !same(content, baseContent);
+            const status = needsReview ? input.bank_status : original.bank_status;
+            if (!edited && status === original.bank_status) {
                 effective.set(original.id, original);
                 continue;
             }
-            validateContent(content, original.kind, label, original.bank_status === 'review');
-            const meta = JSON.parse(original.bank_meta || '{}');
-            meta.acceptedAnswers = content.accepted_answers;
-            const row = {
-                ...original,
-                prompt: content.prompt,
-                solution: content.solution,
-                choices: JSON.stringify(content.choices),
-                correct: JSON.stringify(content.correct),
-                bank_meta: JSON.stringify(meta),
-            };
+            const row = {...original, bank_status: status};
+            if (edited) {
+                validateContent(content, original.kind, label, status === 'review');
+                const meta = JSON.parse(original.bank_meta || '{}');
+                meta.acceptedAnswers = content.accepted_answers;
+                Object.assign(row, {
+                    prompt: content.prompt,
+                    solution: content.solution,
+                    choices: JSON.stringify(content.choices),
+                    correct: JSON.stringify(content.correct),
+                    bank_meta: JSON.stringify(meta),
+                });
+            }
             if (row.prompt !== original.prompt || row.choices !== original.choices) {
                 const text = [row.prompt, ...content.choices.map(choice => choice.text)].join(' ').replace(/<[^>]*>/g, ' ');
                 row.bank_search = bankSearch([text, lessonMeta.title, lessonMeta.chapter, row.original_number].join(' '));
@@ -142,17 +155,18 @@ function compileBank(read, list) {
         id: row.id, source_fingerprint: row.bank_fingerprint, previous_variants: frozenVariantIndex[row.id].count,
     }));
     return {
-        files: [['data/course-bank/generated/12-C06.json', jsonBytes(output)]],
+        files: [[`data/course-bank/generated/${scope}.json`, jsonBytes(output)]],
         summary: {part: 'bank', version: output.version, questions: effective.size, changed: rows.map(row => row.id), affected_variants: affected},
         effective,
     };
 }
 
-function compileVariants(read, list, effective) {
+function compileVariants(read, list, effective, scope) {
     const entries = {}, held = [], approvedSources = [];
+    const frozenVariants = frozenVariantsFor(scope);
     let available = 0;
-    for (const lesson of lessons) {
-        const folder = variantSource(lesson.folder);
+    for (const lesson of bankReleaseChapters[scope].lessons) {
+        const folder = variantSource(scope, lesson.folder);
         const ids = [...effective.values()].filter(row => row.lesson_id === lesson.id).map(row => row.id);
         const doc = readLesson(read, list, folder, lesson.id, 'toanthd.variant-lesson/1', 'families', ids);
         for (const family of doc.families) {
@@ -190,7 +204,7 @@ function compileVariants(read, list, effective) {
         entries,
     };
     return {
-        files: [['data/chapter-variants/generated/12-C06.json', jsonBytes(output)]],
+        files: [[`data/chapter-variants/generated/${scope}.json`, jsonBytes(output)]],
         summary: {part: 'variants', version: output.version, available, changed: Object.keys(entries), held},
     };
 }
@@ -224,13 +238,14 @@ function compileLibrary(read) {
     };
 }
 
-export function compileContent(part = 'all', read = readDisk, list = listDisk) {
+export function compileContent(part = 'all', read = readDisk, list = listDisk, scope = defaultScope) {
     fail(part === 'all' || parts.includes(part), 'Chọn bank, variants, library hoặc all.');
-    const bank = part !== 'library' ? compileBank(read, list) : null;
+    fail(Object.hasOwn(bankReleaseChapters, scope), 'Chương chưa có cấu hình biên tập.');
+    const bank = part !== 'library' ? compileBank(read, list, scope) : null;
     const results = [];
     if (part === 'all' || part === 'bank') results.push(bank);
-    if (part === 'all' || part === 'variants') results.push(compileVariants(read, list, bank.effective));
-    if (part === 'all' || part === 'library') results.push(compileLibrary(read));
+    if (part === 'all' || part === 'variants') results.push(compileVariants(read, list, bank.effective, scope));
+    if (part === 'library' || (part === 'all' && scope === defaultScope)) results.push(compileLibrary(read));
     return results;
 }
 
@@ -247,12 +262,14 @@ function writeGenerated(relative, bytes) {
     }
 }
 
-export function frozenLessonInputs() {
+export function frozenLessonInputs(scope = defaultScope) {
+    fail(Object.hasOwn(bankReleaseChapters, scope), 'Chương chưa có cấu hình biên tập.');
     const {questions} = baseBank();
+    const frozenVariants = frozenVariantsFor(scope);
     const files = {};
-    for (const lesson of lessons) {
-        const bankFolder = bankSource(lesson.folder);
-        const variantFolder = variantSource(lesson.folder);
+    for (const lesson of bankReleaseChapters[scope].lessons) {
+        const bankFolder = bankSource(scope, lesson.folder);
+        const variantFolder = variantSource(scope, lesson.folder);
         for (const row of questions.filter(row => row.lesson_id === lesson.id)) {
             const filename = row.id + '.json';
             files[bankFolder + '/' + filename] = jsonBytes({id: row.id, original_number: row.original_number,
@@ -266,13 +283,18 @@ export function frozenLessonInputs() {
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
     try {
-        const [command = 'check', part = 'all'] = process.argv.slice(2);
-        fail(['check', 'build', 'preview'].includes(command), 'Dùng content-pilot.mjs check|build|preview [bank|variants|library|all].');
-        const outputs = compileContent(part);
-        for (const {files} of outputs) for (const [file, bytes] of files) {
+        const {positionals, values} = parseArgs({allowPositionals: true, options: {chapter: {type: 'string'}}});
+        const [command = 'check', part = 'all'] = positionals;
+        fail(positionals.length <= 2 && ['check', 'build', 'preview'].includes(command),
+            'Dùng content-pilot.mjs check|build|preview [bank|variants|library|all] [--chapter 12-C01|12-C06].');
+        const scopes = values.chapter ? [values.chapter]
+            : command === 'check' && part !== 'library' ? Object.keys(bankReleaseChapters) : [defaultScope];
+        const outputs = scopes.flatMap(scope => compileContent(part, readDisk, listDisk, scope)
+            .map(output => ({...output, scope})));
+        for (const {files, scope} of outputs) for (const [file, bytes] of files) {
             if (command === 'build') writeGenerated(file, bytes);
             if (command === 'check') fail(existsSync(path.join(workspace, file)) && readDisk(file).equals(bytes),
-                file + ' chưa đồng bộ. Chạy npm run content:build -- ' + part + '.');
+                file + ' chưa đồng bộ. Chạy npm run content:build -- ' + part + ' --chapter ' + scope + '.');
         }
         console.log(JSON.stringify(outputs.map(output => output.summary), null, 2));
     } catch (error) {

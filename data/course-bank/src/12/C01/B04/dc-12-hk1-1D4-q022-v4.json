@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-1D4-q022-v4",
+  "original_number": 22,
+  "kind": "mcq",
+  "based_on": "aaeb610b3d2434605b288516d31136994afb86e10fe1a057c039c33c56f33b2d",
+  "prompt": "Hàm số nào trong bốn hàm số dưới đây có bảng biến thiên như hình vẽ?\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/cc5544339e2ff89d687ea2e4b697a2a8e1783ac16802fdbe617a4ed4023f2b3c.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>x</mi><mo>−</mo><mn>3</mn></mrow><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>+</mo><mn>4</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>x</mi><mo>−</mo><mn>7</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mn>2</mn><mo>+</mo></msup></mrow></munder><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>+</mo><mi>∞</mi><mo>⇒</mo><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> là một tiệm cận đứng của đồ thị hàm số. Khi đó đồ thị hàm số có dạng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi></mrow><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mfrac></mrow></semantics></math>.<br>\n\t\tLại có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn><mo>⇒</mo><mi>y</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> là một tiệm cận ngang của đồ thị hàm số. Khi đó đồ thị hàm số có dạng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mi>b</mi></mrow><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mfrac></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mn>4</mn><mo>−</mo><mi>b</mi></mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></mfrac><mo>&lt;</mo><mn>0</mn><mo>⇒</mo><mo>−</mo><mn>4</mn><mo>−</mo><mi>b</mi><mo>&lt;</mo><mn>0</mn><mo>⇒</mo><mi>b</mi><mo>&gt;</mo><mo>−</mo><mn>4</mn></mrow></semantics></math>.<br>\n\t\tVậy ta chọn phương án <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

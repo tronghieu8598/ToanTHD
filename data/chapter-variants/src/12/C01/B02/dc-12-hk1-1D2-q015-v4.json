@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk1-1D2-q015-v4",
+  "source_fingerprint": "e2d94dd4c3d3bfb26c6a681aede7d173b278c2a0c95912753d72355196fb4569",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D2-q015-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Tìm giá trị nhỏ nhất <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi></mrow></semantics></math> của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msqrt><mrow><mn>5</mn><mo>+</mo><mi>x</mi></mrow></msqrt><mo>+</mo><msqrt><mrow><mn>11</mn><mo>−</mo><mi>x</mi></mrow></msqrt><mo>−</mo><msqrt><mrow><mn>5</mn><mo>+</mo><mi>x</mi></mrow></msqrt><mo>⋅</mo><msqrt><mrow><mn>11</mn><mo>−</mo><mi>x</mi></mrow></msqrt></mrow></semantics></math> trên tập xác định của nó.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>4</mn><msqrt><mn>2</mn></msqrt><mo>−</mo><mn>8</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>4</mn><msqrt><mn>2</mn></msqrt><mo>−</mo><mn>4</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>4</mn><msqrt><mn>2</mn></msqrt><mo>+</mo><mn>8</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "A",
+      "solution": "Tập xác định <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>5</mn><mo>;</mo><mn>11</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>. Đặt <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><msqrt><mrow><mn>5</mn><mo>+</mo><mi>x</mi></mrow></msqrt><mo>+</mo><msqrt><mrow><mn>11</mn><mo>−</mo><mi>x</mi></mrow></msqrt></mrow></semantics></math>, khi đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>∈</mo><mrow><mo>[</mo><mn>4</mn><mo>;</mo><mn>4</mn><msqrt><mn>2</mn></msqrt><mo>]</mo></mrow></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msqrt><mrow><mrow><mo>(</mo><mn>5</mn><mo>+</mo><mi>x</mi><mo>)</mo></mrow><mrow><mo>(</mo><mn>11</mn><mo>−</mo><mi>x</mi><mo>)</mo></mrow></mrow></msqrt><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>−</mo><mn>16</mn></mrow><mn>2</mn></mfrac></mrow></semantics></math>.<br>\n\t\tHàm số trở thành <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><msup><mi>u</mi><mn>2</mn></msup><mo>+</mo><mi>u</mi><mo>+</mo><mn>8</mn></mrow></semantics></math> nghịch biến trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>[</mo><mn>4</mn><mo>;</mo><mn>4</mn><msqrt><mn>2</mn></msqrt><mo>]</mo></mrow></mrow></semantics></math>.<br>\n\t\tDo đó giá trị nhỏ nhất đạt tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mn>4</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>4</mn><msqrt><mn>2</mn></msqrt><mo>−</mo><mn>8</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q015-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Tìm giá trị nhỏ nhất <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi></mrow></semantics></math> của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msqrt><mrow><mn>10</mn><mo>+</mo><mi>x</mi></mrow></msqrt><mo>+</mo><msqrt><mrow><mn>26</mn><mo>−</mo><mi>x</mi></mrow></msqrt><mo>−</mo><msqrt><mrow><mn>10</mn><mo>+</mo><mi>x</mi></mrow></msqrt><mo>⋅</mo><msqrt><mrow><mn>26</mn><mo>−</mo><mi>x</mi></mrow></msqrt></mrow></semantics></math> trên tập xác định của nó.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>6</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>6</mn><msqrt><mn>2</mn></msqrt><mo>−</mo><mn>18</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>6</mn><msqrt><mn>2</mn></msqrt><mo>+</mo><mn>18</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>6</mn><msqrt><mn>2</mn></msqrt><mo>−</mo><mn>6</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Tập xác định <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>10</mn><mo>;</mo><mn>26</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>. Đặt <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><msqrt><mrow><mn>10</mn><mo>+</mo><mi>x</mi></mrow></msqrt><mo>+</mo><msqrt><mrow><mn>26</mn><mo>−</mo><mi>x</mi></mrow></msqrt></mrow></semantics></math>, khi đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>∈</mo><mrow><mo>[</mo><mn>6</mn><mo>;</mo><mn>6</mn><msqrt><mn>2</mn></msqrt><mo>]</mo></mrow></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msqrt><mrow><mrow><mo>(</mo><mn>10</mn><mo>+</mo><mi>x</mi><mo>)</mo></mrow><mrow><mo>(</mo><mn>26</mn><mo>−</mo><mi>x</mi><mo>)</mo></mrow></mrow></msqrt><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>−</mo><mn>36</mn></mrow><mn>2</mn></mfrac></mrow></semantics></math>.<br>\n\t\tHàm số trở thành <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><msup><mi>u</mi><mn>2</mn></msup><mo>+</mo><mi>u</mi><mo>+</mo><mn>18</mn></mrow></semantics></math> nghịch biến trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>[</mo><mn>6</mn><mo>;</mo><mn>6</mn><msqrt><mn>2</mn></msqrt><mo>]</mo></mrow></mrow></semantics></math>.<br>\n\t\tDo đó giá trị nhỏ nhất đạt tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mn>6</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>6</mn><msqrt><mn>2</mn></msqrt><mo>−</mo><mn>18</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q015-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Tìm giá trị nhỏ nhất <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi></mrow></semantics></math> của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msqrt><mrow><mn>20</mn><mo>+</mo><mi>x</mi></mrow></msqrt><mo>+</mo><msqrt><mrow><mn>44</mn><mo>−</mo><mi>x</mi></mrow></msqrt><mo>−</mo><msqrt><mrow><mn>20</mn><mo>+</mo><mi>x</mi></mrow></msqrt><mo>⋅</mo><msqrt><mrow><mn>44</mn><mo>−</mo><mi>x</mi></mrow></msqrt></mrow></semantics></math> trên tập xác định của nó.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>8</mn><msqrt><mn>2</mn></msqrt><mo>−</mo><mn>8</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>8</mn><msqrt><mn>2</mn></msqrt><mo>+</mo><mn>32</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>8</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>8</mn><msqrt><mn>2</mn></msqrt><mo>−</mo><mn>32</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "D",
+      "solution": "Tập xác định <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>20</mn><mo>;</mo><mn>44</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>. Đặt <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><msqrt><mrow><mn>20</mn><mo>+</mo><mi>x</mi></mrow></msqrt><mo>+</mo><msqrt><mrow><mn>44</mn><mo>−</mo><mi>x</mi></mrow></msqrt></mrow></semantics></math>, khi đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>∈</mo><mrow><mo>[</mo><mn>8</mn><mo>;</mo><mn>8</mn><msqrt><mn>2</mn></msqrt><mo>]</mo></mrow></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msqrt><mrow><mrow><mo>(</mo><mn>20</mn><mo>+</mo><mi>x</mi><mo>)</mo></mrow><mrow><mo>(</mo><mn>44</mn><mo>−</mo><mi>x</mi><mo>)</mo></mrow></mrow></msqrt><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>−</mo><mn>64</mn></mrow><mn>2</mn></mfrac></mrow></semantics></math>.<br>\n\t\tHàm số trở thành <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><msup><mi>u</mi><mn>2</mn></msup><mo>+</mo><mi>u</mi><mo>+</mo><mn>32</mn></mrow></semantics></math> nghịch biến trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>[</mo><mn>8</mn><mo>;</mo><mn>8</mn><msqrt><mn>2</mn></msqrt><mo>]</mo></mrow></mrow></semantics></math>.<br>\n\t\tDo đó giá trị nhỏ nhất đạt tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mn>8</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>8</mn><msqrt><mn>2</mn></msqrt><mo>−</mo><mn>32</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q015-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Tìm giá trị nhỏ nhất <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi></mrow></semantics></math> của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msqrt><mrow><mn>30</mn><mo>+</mo><mi>x</mi></mrow></msqrt><mo>+</mo><msqrt><mrow><mn>70</mn><mo>−</mo><mi>x</mi></mrow></msqrt><mo>−</mo><msqrt><mrow><mn>30</mn><mo>+</mo><mi>x</mi></mrow></msqrt><mo>⋅</mo><msqrt><mrow><mn>70</mn><mo>−</mo><mi>x</mi></mrow></msqrt></mrow></semantics></math> trên tập xác định của nó.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>10</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>10</mn><msqrt><mn>2</mn></msqrt><mo>−</mo><mn>10</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>10</mn><msqrt><mn>2</mn></msqrt><mo>−</mo><mn>50</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>10</mn><msqrt><mn>2</mn></msqrt><mo>+</mo><mn>50</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Tập xác định <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>30</mn><mo>;</mo><mn>70</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>. Đặt <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><msqrt><mrow><mn>30</mn><mo>+</mo><mi>x</mi></mrow></msqrt><mo>+</mo><msqrt><mrow><mn>70</mn><mo>−</mo><mi>x</mi></mrow></msqrt></mrow></semantics></math>, khi đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>∈</mo><mrow><mo>[</mo><mn>10</mn><mo>;</mo><mn>10</mn><msqrt><mn>2</mn></msqrt><mo>]</mo></mrow></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msqrt><mrow><mrow><mo>(</mo><mn>30</mn><mo>+</mo><mi>x</mi><mo>)</mo></mrow><mrow><mo>(</mo><mn>70</mn><mo>−</mo><mi>x</mi><mo>)</mo></mrow></mrow></msqrt><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mi>u</mi><mn>2</mn></msup><mo>−</mo><mn>100</mn></mrow><mn>2</mn></mfrac></mrow></semantics></math>.<br>\n\t\tHàm số trở thành <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><msup><mi>u</mi><mn>2</mn></msup><mo>+</mo><mi>u</mi><mo>+</mo><mn>50</mn></mrow></semantics></math> nghịch biến trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>[</mo><mn>10</mn><mo>;</mo><mn>10</mn><msqrt><mn>2</mn></msqrt><mo>]</mo></mrow></mrow></semantics></math>.<br>\n\t\tDo đó giá trị nhỏ nhất đạt tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mn>10</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>10</mn><msqrt><mn>2</mn></msqrt><mo>−</mo><mn>50</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

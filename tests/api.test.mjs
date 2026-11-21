@@ -10,7 +10,10 @@ import {pathToFileURL} from 'node:url';
 import ts from 'typescript';
 import {newStaffPassword} from '../lib/auth.mjs';
 import {courseRowPayload} from '../lib/course-bank.mjs';
+import {bankReleaseChapters} from '../lib/bank-release-chapters.mjs';
+import chapter01Overlay from '../data/chapter-variants/generated/12-C01.json' with {type: 'json'};
 import variantOverlay from '../data/chapter-variants/generated/12-C06.json' with {type: 'json'};
+import variantManifest from '../data/chapter-variants/manifest.json' with {type: 'json'};
 // Exercise the real API module. Only the Cloudflare env binding is substituted;
 // SQL is executed by SQLite using the generated D1 schema and the actual seed.
 const db=new DatabaseSync(':memory:');
@@ -585,28 +588,32 @@ test('Studio plans synchronize by teacher and classroom and respect library acce
  } finally {cookie=admin;}
 });
 
+const releaseFingerprint=question=>nodeCrypto.createHash('sha256').update(courseRowPayload(question)).digest('hex');
+function sampleRelease(scope, variantVersion, chapterTitle, review=new Set()){
+ const chapter=bankReleaseChapters[scope];
+ const {documentId}=chapter;
+ return {format:'toanthd.bank-release/1',scope,source_commit:'a'.repeat(40),source_version:'sample-pilot.1',
+  variants_version:variantVersion,documents:[{id:documentId,grade:chapter.grade,title:'Đề cương kiểm thử',edition:'Mẫu',parent_id:null,is_sample:0}],
+  lessons:chapter.lessons.map(({id})=>({id,document_id:documentId,chapter:chapterTitle,title:'Bài mẫu '+id})),assets:[],
+  questions:chapter.lessons.flatMap(lesson=>Array.from({length:lesson.count},(_,index)=>{
+   const number=index+1,id=lesson.id.slice(0,-3)+'-q'+String(number).padStart(3,'0')+'-v4';
+   const item={id,lesson_id:lesson.id,original_number:number,revision:1,kind:'short',prompt:'Tính giá trị 1+1',choices:'[]',correct:'"2"',
+    solution:'Hai',family_id:id,source_json:null,archived_at:null,updated_at:0,bank_status:review.has(id)?'review':'auto',bank_origin:'qa:'+id,bank_tex:null,
+    bank_meta:'{}',bank_note:'',bank_search:'tinh gia tri'};
+   return {...item,bank_fingerprint:releaseFingerprint(item)};
+  })),
+ };
+}
+
 test('bank release stages privately, applies atomically, preserves history and rejects stale previews', async () => {
  const admin=cookie;
  const origin='http://test.local';
- const chapters=[['dc-12-hk2-6D1-v4',48],['dc-12-hk2-6D2-v4',70]];
- const documentId='dc-12-hk2-v4';
- const fingerprint=question=>nodeCrypto.createHash('sha256').update(courseRowPayload(question)).digest('hex');
- const release={format:'toanthd.bank-release/1',scope:'12-C06',source_commit:'a'.repeat(40),source_version:'sample-pilot.1',
-  variants_version:variantOverlay.version,documents:[{id:documentId,grade:12,title:'Đề cương kiểm thử',edition:'Mẫu',parent_id:null,is_sample:0}],
-  lessons:chapters.map(([id])=>({id,document_id:documentId,chapter:'Chương VI',title:'Bài mẫu '+id})),assets:[],
-  questions:chapters.flatMap(([lesson,n])=>Array.from({length:n},(_,index)=>{
-   const number=index+1,id=lesson.slice(0,-3)+'-q'+String(number).padStart(3,'0')+'-v4';
-   const item={id,lesson_id:lesson,original_number:number,revision:1,kind:'short',prompt:'Tính giá trị 1+1',choices:'[]',correct:'"2"',
-    solution:'Hai',family_id:id,source_json:null,archived_at:null,updated_at:0,bank_status:'auto',bank_origin:'qa:'+id,bank_tex:null,
-    bank_meta:'{}',bank_note:'',bank_search:'tinh gia tri'};
-   return {...item,bank_fingerprint:fingerprint(item)};
-  })),
- };
+ const release=sampleRelease('12-C06',variantOverlay.version,'Chương VI');
  const objects=new Map();
  env.BUCKET={async put(key,value){objects.set(key,value);},async get(key){const value=objects.get(key);return value?{async text(){return value;}}:null;}};
  const post=(action,body,options={})=>call('teacher/bank-release/'+action,{method:'POST',origin,body,...options}).then(r=>r.data);
  const receipt=()=>db.prepare("SELECT value FROM workspace_settings WHERE key='course_bank_release:12-C06'").get();
- const count=()=>db.prepare('SELECT COUNT(*) AS count FROM questions WHERE lesson_id IN (?,?)').get(...chapters.map(([id])=>id)).count;
+ const count=()=>db.prepare('SELECT COUNT(*) AS count FROM questions WHERE lesson_id IN (?,?)').get(...release.lessons.map(({id})=>id)).count;
  const probe=release.questions[0];
  const batch=env.DB.batch;
  try{
@@ -655,7 +662,7 @@ test('bank release stages privately, applies atomically, preserves history and r
   db.prepare(`INSERT INTO workspace_settings(key,value) VALUES('verified_course_keys',?) ON CONFLICT(key) DO UPDATE SET value=excluded.value`)
    .run(JSON.stringify(overrides));
   const edited={...probe,correct:'"4"',prompt:'Tính giá trị 2+2',solution:'Bốn',archived_at:null,updated_at:0};
-  edited.bank_fingerprint=fingerprint(edited);
+  edited.bank_fingerprint=releaseFingerprint(edited);
   const next={...release,source_version:'sample-pilot.2',questions:[edited,...release.questions.slice(1)]};
   const update=await post('stage',next);
   assert.deepEqual(update.preview.changed_ids,[probe.id]);
@@ -681,6 +688,53 @@ test('bank release stages privately, applies atomically, preserves history and r
  }finally{
   cookie=admin;
   env.DB.batch=batch;
+  delete env.BUCKET;
+ }
+});
+
+test('Chapter I release keeps pending review and cannot change the active Chapter VI bank', async ()=>{
+ const origin='http://test.local';
+ const chapter='12-C01';
+ const chapterSix='12-C06';
+ const held=new Set(variantManifest.chapters.find(item=>item.id===chapter).held.map(item=>item.source_id));
+ const release=sampleRelease(chapter,chapter01Overlay.version,'Chương I',held);
+ const objects=new Map();
+ env.BUCKET={async put(key,value){objects.set(key,value);},async get(key){const value=objects.get(key);return value?{async text(){return value;}}:null;}};
+ const post=(action,body,status=200)=>call('teacher/bank-release/'+action,{method:'POST',origin,body,status}).then(r=>r.data);
+ const receipt=scope=>db.prepare('SELECT value FROM workspace_settings WHERE key=?').get('course_bank_release:'+scope)?.value;
+ const savedRows=scope=>db.prepare(`SELECT q.id,q.bank_fingerprint,q.archived_at,q.updated_at,q.bank_status
+  FROM questions q JOIN lessons l ON q.lesson_id=l.id WHERE l.document_id=? ORDER BY q.id`).all(bankReleaseChapters[scope].documentId);
+ try{
+  const priorReceipt=receipt(chapterSix);
+  const priorQuestions=savedRows(chapterSix);
+  assert.equal(priorQuestions.length,118);
+  assert.ok(priorReceipt);
+  const wrongStatus=release.questions.map(row=>{
+   if(row.id!=='dc-12-hk1-1D3-q038-v4') return row;
+   const changed={...row,bank_status:'auto'};
+   return {...changed,bank_fingerprint:releaseFingerprint(changed)};
+  });
+  const invalid=await post('stage',{...release,questions:wrongStatus},422);
+  assert.match(invalid.error,/q038-v4.*chờ duyệt/);
+  const otherDocument=release.documents.map(document=>({...document,id:bankReleaseChapters[chapterSix].documentId}));
+  await post('stage',{...release,documents:otherDocument},422);
+
+  const staged=await post('stage',release);
+  assert.equal(staged.preview.added,230);
+  assert.equal(staged.release.lessons,4);
+  assert.ok([...objects.keys()].every(key=>key.startsWith('bank-release/staged/12-C01/')));
+  assert.equal(savedRows(chapter).length,0);
+  assert.equal(receipt(chapter),undefined);
+  await post('activate',{digest:staged.digest},404);
+  await post('activate',{scope:'12-C02',digest:staged.digest},422);
+  assert.equal((await post('activate',{scope:chapter,digest:staged.digest})).replayed,false);
+  assert.equal((await post('activate',{scope:chapter,digest:staged.digest})).replayed,true);
+  assert.equal(savedRows(chapter).length,230);
+  assert.deepEqual(new Set(savedRows(chapter).filter(row=>row.bank_status==='review').map(row=>row.id)),held);
+  assert.equal(receipt(chapterSix),priorReceipt);
+  assert.deepEqual(savedRows(chapterSix),priorQuestions);
+  assert.notEqual(receipt(chapter),priorReceipt);
+ }finally{
   delete env.BUCKET;
  }
 });

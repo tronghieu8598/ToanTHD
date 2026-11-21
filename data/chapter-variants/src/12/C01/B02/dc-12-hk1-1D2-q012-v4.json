@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk1-1D2-q012-v4",
+  "source_fingerprint": "e93ac7e4de81ec78132604b04be37c0c8b193ecc4f7161025fe5df713778b8be",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D2-q012-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Giá trị lớn nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> là",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><msup><mi mathvariant=\"normal\">e</mi><mn>4</mn></msup></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>3</mn><msup><mi mathvariant=\"normal\">e</mi><mn>4</mn></msup></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>4</mn><msup><mi mathvariant=\"normal\">e</mi><mn>4</mn></msup></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>5</mn><msup><mi mathvariant=\"normal\">e</mi><mn>4</mn></msup></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>3</mn><mo>)</mo></mrow><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup></mrow></semantics></math>.<br>\n\t\tSo sánh giá trị tại đầu mút và điểm tới hạn trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>, với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mn>5</mn><mo>&lt;</mo><mn>0</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mn>4</mn><mo>)</mo></mrow><mo>=</mo><mn>3</mn><msup><mi mathvariant=\"normal\">e</mi><mn>4</mn></msup><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>, ta được <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>3</mn><msup><mi mathvariant=\"normal\">e</mi><mn>4</mn></msup></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q012-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Giá trị lớn nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> là",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>3</mn><msup><mi mathvariant=\"normal\">e</mi><mn>2</mn></msup></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>4</mn><msup><mi mathvariant=\"normal\">e</mi><mn>2</mn></msup></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><msup><mi mathvariant=\"normal\">e</mi><mn>2</mn></msup></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>2</mn><msup><mi mathvariant=\"normal\">e</mi><mn>2</mn></msup></mrow></semantics></math>"
+        }
+      ],
+      "correct": "D",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>1</mn><mo>)</mo></mrow><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup></mrow></semantics></math>.<br>\n\t\tSo sánh giá trị tại đầu mút và điểm tới hạn trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>, với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mn>4</mn><mo>&lt;</mo><mn>0</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow><mo>=</mo><mn>2</mn><msup><mi mathvariant=\"normal\">e</mi><mn>2</mn></msup><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>, ta được <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>2</mn><msup><mi mathvariant=\"normal\">e</mi><mn>2</mn></msup></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q012-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Giá trị lớn nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> là",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>3</mn><msup><mi mathvariant=\"normal\">e</mi><mn>2</mn></msup></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>4</mn><msup><mi mathvariant=\"normal\">e</mi><mn>2</mn></msup></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>5</mn><msup><mi mathvariant=\"normal\">e</mi><mn>2</mn></msup></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><msup><mi mathvariant=\"normal\">e</mi><mn>2</mn></msup></mrow></semantics></math>"
+        }
+      ],
+      "correct": "A",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup></mrow></semantics></math>.<br>\n\t\tSo sánh giá trị tại đầu mút và điểm tới hạn trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>, với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mn>1</mn><mo>&lt;</mo><mn>0</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow><mo>=</mo><mn>3</mn><msup><mi mathvariant=\"normal\">e</mi><mn>2</mn></msup><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>, ta được <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>3</mn><msup><mi mathvariant=\"normal\">e</mi><mn>2</mn></msup></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q012-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Giá trị lớn nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> là",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>6</mn><msup><mi mathvariant=\"normal\">e</mi><mn>3</mn></msup></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><msup><mi mathvariant=\"normal\">e</mi><mn>3</mn></msup></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>4</mn><msup><mi mathvariant=\"normal\">e</mi><mn>3</mn></msup></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>5</mn><msup><mi mathvariant=\"normal\">e</mi><mn>3</mn></msup></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mrow><mo>(</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>2</mn><mo>)</mo></mrow><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup></mrow></semantics></math>.<br>\n\t\tSo sánh giá trị tại đầu mút và điểm tới hạn trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>, với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mn>5</mn><mo>&lt;</mo><mn>0</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mn>3</mn><mo>)</mo></mrow><mo>=</mo><mn>4</mn><msup><mi mathvariant=\"normal\">e</mi><mn>3</mn></msup><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>, ta được <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>4</mn><msup><mi mathvariant=\"normal\">e</mi><mn>3</mn></msup></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

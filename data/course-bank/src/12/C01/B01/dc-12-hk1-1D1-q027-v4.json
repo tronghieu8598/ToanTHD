@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-1D1-q027-v4",
+  "original_number": 27,
+  "kind": "mcq",
+  "based_on": "c05ad287f72063acc8250720bf9189d17a95eb306cabb66b1caf8ac060b83707",
+  "prompt": "Hiệu số giữa giá trị cực đại và giá trị cực tiểu của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>4</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>4</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>2</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>2</mn></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Tập xác định <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi></mrow></semantics></math>.<br>\n\t\t<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>6</mn><mi>x</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>2</mn><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math><br>\n\t\tBảng biến thiên\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/dd801f867a428388c204e6998013ecfa76ee67a31632d8060bdb61cba0415a6d.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tHàm số đạt giá trị cực tiểu tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math>, đạt giá trị cực đại tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>.<br>\n\t\tKhi này hiệu số giữa giá trị cực đại và giá trị cực tiểu của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>4</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk1-1D2-q030-v4",
+  "source_fingerprint": "8a9820aee2fa63a0c1a24fc7a8373f72738b960d0cf77baa76ce037418ab9863",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D2-q030-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Từ một tấm gỗ lớn, người ta cắt ra một tấm gỗ có hình tam giác vuông có tổng của một cạnh góc vuông và cạnh huyền bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>90</mn></mrow></semantics></math> cm sao cho tấm gỗ hình tam giác vuông có diện tích lớn nhất. Hỏi cạnh huyền của tấm gỗ này là bao nhiêu?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>30</mn></mrow></semantics></math> cm"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>60</mn></mrow></semantics></math> cm"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>30</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math> cm"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>30</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math> cm"
+        }
+      ],
+      "correct": "B",
+      "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi></mrow></semantics></math> (cm) là cạnh góc vuông (<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>45</mn></mrow></semantics></math>), cạnh huyền là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>90</mn><mo>−</mo><mi>x</mi></mrow></semantics></math> (cm).<br>\n\t\tDiện tích tam giác là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mi>x</mi><msqrt><mrow><msup><mrow><mo>(</mo><mn>90</mn><mo>−</mo><mi>x</mi><mo>)</mo></mrow><mn>2</mn></msup><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><msqrt><mrow><mn>180</mn><msup><mi>x</mi><mn>2</mn></msup><mrow><mo>(</mo><mn>45</mn><mo>−</mo><mi>x</mi><mo>)</mo></mrow></mrow></msqrt></mrow></semantics></math>.<br>\n\t\tXét <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mrow><mo>(</mo><mn>45</mn><mo>−</mo><mi>x</mi><mo>)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>x</mi><mrow><mo>(</mo><mn>90</mn><mo>−</mo><mn>3</mn><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>30</mn></mrow></semantics></math>.<br>\n\t\tVậy diện tích lớn nhất khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>30</mn></mrow></semantics></math> cm, suy ra cạnh huyền bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>90</mn><mo>−</mo><mn>30</mn><mo>=</mo><mn>60</mn></mrow></semantics></math> cm.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q030-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Từ một tấm gỗ lớn, người ta cắt ra một tấm gỗ có hình tam giác vuông có tổng của một cạnh góc vuông và cạnh huyền bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>150</mn></mrow></semantics></math> cm sao cho tấm gỗ hình tam giác vuông có diện tích lớn nhất. Hỏi cạnh huyền của tấm gỗ này là bao nhiêu?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>50</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math> cm"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>50</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math> cm"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>50</mn></mrow></semantics></math> cm"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>100</mn></mrow></semantics></math> cm"
+        }
+      ],
+      "correct": "D",
+      "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi></mrow></semantics></math> (cm) là cạnh góc vuông (<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>75</mn></mrow></semantics></math>), cạnh huyền là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>150</mn><mo>−</mo><mi>x</mi></mrow></semantics></math> (cm).<br>\n\t\tDiện tích tam giác là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mi>x</mi><msqrt><mrow><msup><mrow><mo>(</mo><mn>150</mn><mo>−</mo><mi>x</mi><mo>)</mo></mrow><mn>2</mn></msup><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><msqrt><mrow><mn>300</mn><msup><mi>x</mi><mn>2</mn></msup><mrow><mo>(</mo><mn>75</mn><mo>−</mo><mi>x</mi><mo>)</mo></mrow></mrow></msqrt></mrow></semantics></math>.<br>\n\t\tXét <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mrow><mo>(</mo><mn>75</mn><mo>−</mo><mi>x</mi><mo>)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>x</mi><mrow><mo>(</mo><mn>150</mn><mo>−</mo><mn>3</mn><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>50</mn></mrow></semantics></math>.<br>\n\t\tVậy diện tích lớn nhất khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>50</mn></mrow></semantics></math> cm, suy ra cạnh huyền bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>150</mn><mo>−</mo><mn>50</mn><mo>=</mo><mn>100</mn></mrow></semantics></math> cm.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q030-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Từ một tấm gỗ lớn, người ta cắt ra một tấm gỗ có hình tam giác vuông có tổng của một cạnh góc vuông và cạnh huyền bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>180</mn></mrow></semantics></math> cm sao cho tấm gỗ hình tam giác vuông có diện tích lớn nhất. Hỏi cạnh huyền của tấm gỗ này là bao nhiêu?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>120</mn></mrow></semantics></math> cm"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>60</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math> cm"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>60</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math> cm"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>60</mn></mrow></semantics></math> cm"
+        }
+      ],
+      "correct": "A",
+      "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi></mrow></semantics></math> (cm) là cạnh góc vuông (<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>90</mn></mrow></semantics></math>), cạnh huyền là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>180</mn><mo>−</mo><mi>x</mi></mrow></semantics></math> (cm).<br>\n\t\tDiện tích tam giác là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mi>x</mi><msqrt><mrow><msup><mrow><mo>(</mo><mn>180</mn><mo>−</mo><mi>x</mi><mo>)</mo></mrow><mn>2</mn></msup><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><msqrt><mrow><mn>360</mn><msup><mi>x</mi><mn>2</mn></msup><mrow><mo>(</mo><mn>90</mn><mo>−</mo><mi>x</mi><mo>)</mo></mrow></mrow></msqrt></mrow></semantics></math>.<br>\n\t\tXét <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mrow><mo>(</mo><mn>90</mn><mo>−</mo><mi>x</mi><mo>)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>x</mi><mrow><mo>(</mo><mn>180</mn><mo>−</mo><mn>3</mn><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>60</mn></mrow></semantics></math>.<br>\n\t\tVậy diện tích lớn nhất khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>60</mn></mrow></semantics></math> cm, suy ra cạnh huyền bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>180</mn><mo>−</mo><mn>60</mn><mo>=</mo><mn>120</mn></mrow></semantics></math> cm.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q030-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Từ một tấm gỗ lớn, người ta cắt ra một tấm gỗ có hình tam giác vuông có tổng của một cạnh góc vuông và cạnh huyền bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>210</mn></mrow></semantics></math> cm sao cho tấm gỗ hình tam giác vuông có diện tích lớn nhất. Hỏi cạnh huyền của tấm gỗ này là bao nhiêu?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>70</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math> cm"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>70</mn></mrow></semantics></math> cm"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>140</mn></mrow></semantics></math> cm"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>70</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math> cm"
+        }
+      ],
+      "correct": "C",
+      "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi></mrow></semantics></math> (cm) là cạnh góc vuông (<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>105</mn></mrow></semantics></math>), cạnh huyền là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>210</mn><mo>−</mo><mi>x</mi></mrow></semantics></math> (cm).<br>\n\t\tDiện tích tam giác là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mi>x</mi><msqrt><mrow><msup><mrow><mo>(</mo><mn>210</mn><mo>−</mo><mi>x</mi><mo>)</mo></mrow><mn>2</mn></msup><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><msqrt><mrow><mn>420</mn><msup><mi>x</mi><mn>2</mn></msup><mrow><mo>(</mo><mn>105</mn><mo>−</mo><mi>x</mi><mo>)</mo></mrow></mrow></msqrt></mrow></semantics></math>.<br>\n\t\tXét <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mrow><mo>(</mo><mn>105</mn><mo>−</mo><mi>x</mi><mo>)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>x</mi><mrow><mo>(</mo><mn>210</mn><mo>−</mo><mn>3</mn><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>70</mn></mrow></semantics></math>.<br>\n\t\tVậy diện tích lớn nhất khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>70</mn></mrow></semantics></math> cm, suy ra cạnh huyền bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>210</mn><mo>−</mo><mn>70</mn><mo>=</mo><mn>140</mn></mrow></semantics></math> cm.",
+      "accepted_answers": []
+    }
+  ]
+}

@@ -1,11 +1,13 @@
 # Góp nội dung cho Toán THĐ
 
-Mỗi yêu cầu ghi mã câu hoặc mã học liệu, thay đổi cần làm và người duyệt. Tạo một nhánh từ `main` cho yêu cầu đó. Người sửa có thể dùng trình soạn thảo hoặc giao cùng yêu cầu cho AI. Bản thử v0.14 áp dụng cho Chương VI Toán 12 và Monty Hall.
+Mỗi yêu cầu ghi mã câu hoặc mã học liệu, thay đổi cần làm và người duyệt. Tạo một nhánh từ `main` cho yêu cầu đó. Người sửa có thể dùng trình soạn thảo hoặc giao cùng yêu cầu cho AI. Bản thử v0.14 áp dụng cho Chương I và Chương VI Toán 12 cùng học liệu Monty Hall.
 
 [Sơ đồ mô-đun và bản đồ tệp](docs/KIEN_TRUC.md) chỉ đường dẫn cho từng chức năng.
 
 | Phần | Nguồn để sửa | Lệnh sau khi sửa |
 | --- | --- | --- |
+| Câu hỏi Chương I | `data/course-bank/src/12/C01/B01/` đến `B04/`. Mỗi tệp mang mã một câu. | `npm run content:build -- bank --chapter 12-C01` |
+| Biến thể Chương I | `data/chapter-variants/src/12/C01/B01/` đến `B04/`. Mỗi tệp mang mã câu gốc. | `npm run content:build -- variants --chapter 12-C01` |
 | Câu hỏi Chương VI | `data/course-bank/src/12/C06/B01/` và `B02/`. Mỗi tệp mang mã một câu. | `npm run content:build -- bank` |
 | Biến thể Chương VI | `data/chapter-variants/src/12/C06/B01/` và `B02/`. Mỗi tệp mang mã câu gốc. | `npm run content:build -- variants` |
 | Monty Hall | `data/digital-library/src/12/C06/12-monty-hall-game-577dcd0/` | `npm run content:build -- library` |

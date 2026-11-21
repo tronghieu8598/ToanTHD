@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-1D4-q024-v4",
+  "original_number": 24,
+  "kind": "mcq",
+  "based_on": "7c0c8fd8a78e27d9283ac23bc1929bd94145c75848a7825e37d81094de2fad3b",
+  "prompt": "<div class=\"with-figure\"><div>Hãy xác định <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>a</mi></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>b</mi></semantics></math> để hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mo>−</mo><mi>a</mi><mi>x</mi></mrow><mrow><mi>x</mi><mo>+</mo><mi>b</mi></mrow></mfrac></mrow></semantics></math> có đồ thị như hình vẽ.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/3318bd735ea64f46c17339735af4388471ab228099ad7bec02a4a3012816ee57.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>; <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>b</mi><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>=</mo><mi>b</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>; <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>b</mi><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>=</mo><mi>b</mi><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Đồ thị hàm số có tiệm cận đứng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn><mo>⇒</mo><mi>b</mi><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math>.<br>\n\t\tĐồ thị hàm số có tiệm cận ngang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn><mo>⇒</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>a</mi><mn>1</mn></mfrac><mo>=</mo><mn>1</mn><mo>⇒</mo><mi>a</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

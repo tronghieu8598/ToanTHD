@@ -2,7 +2,10 @@ import assert from 'node:assert/strict';
 import {readdirSync, readFileSync} from 'node:fs';
 import {test} from 'node:test';
 import {compileContent, frozenLessonInputs} from '../scripts/content-pilot.mjs';
-import {readCourseBank} from '../scripts/course-bank-data.mjs';
+import {readCourseBank, readFrozenCourseBank} from '../scripts/course-bank-data.mjs';
+import {availableQuestionVariantKeys} from '../lib/accepted-variants.mjs';
+import {canEnterSession, decodeQuestion} from '../lib/course-bank.mjs';
+import {BACKUP_TABLES, sealBackup, validateBackup} from '../lib/backup-model.mjs';
 
 const root = new URL('../', import.meta.url);
 const read = file => readFileSync(new URL(file, root));
@@ -83,4 +86,32 @@ test('two edits in the same lesson combine by question ID', () => {
     assert.deepEqual(bank.summary.changed, [id, secondId]);
     assert.equal(bank.effective.get(id).solution, first.solution);
     assert.equal(bank.effective.get(secondId).solution, second.solution);
+});
+
+test('Chapter I keeps the published variants and routes the held source question for review', async () => {
+    const heldId = 'dc-12-hk1-1D3-q038-v4';
+    const [bank, variants] = compileContent('all', read, list, '12-C01');
+    assert.equal(bank.summary.questions, 230);
+    assert.deepEqual(bank.summary.changed, [heldId]);
+    assert.equal(variants.summary.available, 900);
+    for (const result of [bank, variants])
+        for (const [file, bytes] of result.files) assert.deepEqual(read(file), bytes);
+
+    const source = readFrozenCourseBank().questions.find(row => row.id === heldId);
+    const rows = readCourseBank().questions.filter(row => bank.effective.has(row.id));
+    assert.equal(rows.length, 230);
+    assert.equal(rows.reduce((sum, row) => sum + availableQuestionVariantKeys(row).length, 0), 900);
+    const held = rows.find(row => row.id === heldId);
+    assert.deepEqual({...held, bank_status: source.bank_status, bank_fingerprint: source.bank_fingerprint}, source);
+    assert.equal(held.bank_status, 'review');
+    assert.equal(canEnterSession(decodeQuestion(held)), false);
+
+    const current = {
+        id: heldId, course_ref: held.bank_fingerprint, archived_at: null, updated_at: 0,
+    };
+    const tables = Object.fromEntries(BACKUP_TABLES.map(key => [key, []]));
+    tables.questions.push({...current, course_ref: source.bank_fingerprint});
+    const oldBackup = await sealBackup(tables);
+    const restored = await validateBackup(oldBackup, {courseRows: [current]});
+    assert.equal(restored.tables.questions[0].course_ref, held.bank_fingerprint);
 });

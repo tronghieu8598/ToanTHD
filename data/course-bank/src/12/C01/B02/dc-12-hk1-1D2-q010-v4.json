@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-1D2-q010-v4",
+  "original_number": 10,
+  "kind": "mcq",
+  "based_on": "8bb179547e49aaf64dc19e5255a3f365996ca547eaedfab5b337461cea9d5c62",
+  "prompt": "Trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>x</mi></mfrac></mrow></semantics></math> đạt giá trị nhỏ nhất tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><msub><mi>x</mi><mn>0</mn></msub></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mroot><mn>3</mn><mn>4</mn></mroot></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><msqrt><mn>3</mn></msqrt></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mroot><mn>3</mn><mn>4</mn></mroot></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>0</mn><mo>⇔</mo><msup><mi>x</mi><mn>4</mn></msup><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mroot><mn>3</mn><mn>4</mn></mroot></mfrac><mo>∉</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mroot><mn>3</mn><mn>4</mn></mroot></mfrac><mo>∈</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math><br>\n\t\tBảng biến thiên\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/4d836873fd1399c9f8969b9f8897edf68b0d8540ba0fa12a6aa5c5def16f12ef.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tDựa vào bảng biến thiên ta thấy hàm số đạt giá trị nhỏ nhất tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mroot><mn>3</mn><mn>4</mn></mroot></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

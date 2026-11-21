@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk1-1D1-q028-v4",
+  "source_fingerprint": "eee6f5904c6083b7d0bd077aaf2315df6cec51a8488f27225a23bdd5f37e0c9f",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D1-q028-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>ln</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>8</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có bao nhiêu điểm cực trị?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Hàm số xác định khi và chỉ khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>8</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>16</mn><mi>x</mi></mrow><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>8</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn></mrow></mfrac></mrow></semantics></math>. Giải <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> được <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> (thỏa mãn vì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>5</mn><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>) và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>±</mo><mn>2</mn></mrow></semantics></math> (Không thỏa mãn vì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>±</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>11</mn></mrow></semantics></math>).<br>\n\t\tVậy hàm số đã cho có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math> điểm cực trị.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D1-q028-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>ln</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có bao nhiêu điểm cực trị?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Hàm số xác định khi và chỉ khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>12</mn><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>12</mn><mi>x</mi></mrow><mrow><mn>3</mn><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn></mrow></mfrac></mrow></semantics></math>. Giải <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> được <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> (thỏa mãn vì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>) và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>±</mo><mn>1</mn></mrow></semantics></math> (Không thỏa mãn vì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>±</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>).<br>\n\t\tVậy hàm số đã cho có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math> điểm cực trị.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D1-q028-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>ln</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có bao nhiêu điểm cực trị?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "D",
+      "solution": "Hàm số xác định khi và chỉ khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>4</mn><mi>x</mi></mrow><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn></mrow></mfrac></mrow></semantics></math>. Giải <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> được <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> (thỏa mãn vì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>5</mn><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>) và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>±</mo><mn>1</mn></mrow></semantics></math> (Thỏa mãn vì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>±</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>4</mn></mrow></semantics></math>).<br>\n\t\tVậy hàm số đã cho có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn></mrow></semantics></math> điểm cực trị.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D1-q028-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>ln</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>36</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>7</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có bao nhiêu điểm cực trị?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "A",
+      "solution": "Hàm số xác định khi và chỉ khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>36</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>7</mn><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>8</mn><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>72</mn><mi>x</mi></mrow><mrow><mn>2</mn><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>36</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>7</mn></mrow></mfrac></mrow></semantics></math>. Giải <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> được <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> (thỏa mãn vì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>7</mn><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>) và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>±</mo><mn>3</mn></mrow></semantics></math> (Không thỏa mãn vì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>±</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>155</mn></mrow></semantics></math>).<br>\n\t\tVậy hàm số đã cho có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math> điểm cực trị.",
+      "accepted_answers": []
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "dc-12-hk1-1D4-q056-v4",
+  "source_fingerprint": "e59732da447e7f267ab477e4f9f4fb9d5cef9f4375c5396fa257a98b0053676d",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D4-q056-v4--bt01",
+      "number": 1,
+      "kind": "short",
+      "prompt": "Một công ty chuyên sản xuất dụng cụ thể thao nhận được đơn đặt hàng sản xuất <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>7200</mn></mrow></semantics></math> quả bóng rổ. Công ty có một số máy móc, mỗi máy có khả năng sản xuất <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>36</mn></mrow></semantics></math> quả bóng rổ trong một giờ. Chi phí thiết lập mỗi máy là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>200</mn></mrow></semantics></math> nghìn đồng. Sau khi thiết lập, quá trình sản xuất sẽ diễn ra hoàn toàn tự động và chỉ cần có người giám sát. Chi phí trả cho người giám sát là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>144</mn></mrow></semantics></math> nghìn đồng mỗi giờ. Số máy móc công ty cần sử dụng để chi phí hoạt động đạt mức thấp nhất là bao nhiêu?",
+      "choices": [],
+      "correct": "12",
+      "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> là số máy móc cần sử dụng. Thời gian sản xuất là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>200</mn><mi>x</mi></mfrac></mrow></semantics></math> (giờ).<br>\n\t\tTổng chi phí hoạt động là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>200</mn><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mn>28800</mn><mi>x</mi></mfrac></mrow></semantics></math>, đạt giá trị nhỏ nhất khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>12</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D4-q056-v4--bt02",
+      "number": 2,
+      "kind": "short",
+      "prompt": "Một công ty chuyên sản xuất dụng cụ thể thao nhận được đơn đặt hàng sản xuất <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>8000</mn></mrow></semantics></math> quả bóng rổ. Công ty có một số máy móc, mỗi máy có khả năng sản xuất <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>40</mn></mrow></semantics></math> quả bóng rổ trong một giờ. Chi phí thiết lập mỗi máy là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>200</mn></mrow></semantics></math> nghìn đồng. Sau khi thiết lập, quá trình sản xuất sẽ diễn ra hoàn toàn tự động và chỉ cần có người giám sát. Chi phí trả cho người giám sát là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>196</mn></mrow></semantics></math> nghìn đồng mỗi giờ. Số máy móc công ty cần sử dụng để chi phí hoạt động đạt mức thấp nhất là bao nhiêu?",
+      "choices": [],
+      "correct": "14",
+      "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> là số máy móc cần sử dụng. Thời gian sản xuất là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>200</mn><mi>x</mi></mfrac></mrow></semantics></math> (giờ).<br>\n\t\tTổng chi phí hoạt động là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>200</mn><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mn>39200</mn><mi>x</mi></mfrac></mrow></semantics></math>, đạt giá trị nhỏ nhất khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>14</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D4-q056-v4--bt03",
+      "number": 3,
+      "kind": "short",
+      "prompt": "Một công ty chuyên sản xuất dụng cụ thể thao nhận được đơn đặt hàng sản xuất <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>9000</mn></mrow></semantics></math> quả bóng rổ. Công ty có một số máy móc, mỗi máy có khả năng sản xuất <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>30</mn></mrow></semantics></math> quả bóng rổ trong một giờ. Chi phí thiết lập mỗi máy là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>300</mn></mrow></semantics></math> nghìn đồng. Sau khi thiết lập, quá trình sản xuất sẽ diễn ra hoàn toàn tự động và chỉ cần có người giám sát. Chi phí trả cho người giám sát là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>256</mn></mrow></semantics></math> nghìn đồng mỗi giờ. Số máy móc công ty cần sử dụng để chi phí hoạt động đạt mức thấp nhất là bao nhiêu?",
+      "choices": [],
+      "correct": "16",
+      "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> là số máy móc cần sử dụng. Thời gian sản xuất là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>300</mn><mi>x</mi></mfrac></mrow></semantics></math> (giờ).<br>\n\t\tTổng chi phí hoạt động là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>300</mn><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mn>76800</mn><mi>x</mi></mfrac></mrow></semantics></math>, đạt giá trị nhỏ nhất khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>16</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D4-q056-v4--bt04",
+      "number": 4,
+      "kind": "short",
+      "prompt": "Một công ty chuyên sản xuất dụng cụ thể thao nhận được đơn đặt hàng sản xuất <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>6000</mn></mrow></semantics></math> quả bóng rổ. Công ty có một số máy móc, mỗi máy có khả năng sản xuất <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>25</mn></mrow></semantics></math> quả bóng rổ trong một giờ. Chi phí thiết lập mỗi máy là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>240</mn></mrow></semantics></math> nghìn đồng. Sau khi thiết lập, quá trình sản xuất sẽ diễn ra hoàn toàn tự động và chỉ cần có người giám sát. Chi phí trả cho người giám sát là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>324</mn></mrow></semantics></math> nghìn đồng mỗi giờ. Số máy móc công ty cần sử dụng để chi phí hoạt động đạt mức thấp nhất là bao nhiêu?",
+      "choices": [],
+      "correct": "18",
+      "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> là số máy móc cần sử dụng. Thời gian sản xuất là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>240</mn><mi>x</mi></mfrac></mrow></semantics></math> (giờ).<br>\n\t\tTổng chi phí hoạt động là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>240</mn><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mn>77760</mn><mi>x</mi></mfrac></mrow></semantics></math>, đạt giá trị nhỏ nhất khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>18</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

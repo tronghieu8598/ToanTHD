@@ -1,0 +1,33 @@
+{
+  "id": "dc-12-hk1-1D2-q037-v4",
+  "original_number": 37,
+  "kind": "tf",
+  "based_on": "accb28bfe9e6f5204726ce4239f0d506ac06f4593b4c1e6ca2c5062323aad736",
+  "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>x</mi><mo>+</mo><msqrt><mrow><mn>12</mn><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mrow></semantics></math> có tập xác định <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>𝒟</mi></semantics></math>. Xét tính đúng sai của các khẳng định sau:",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mi>x</mi></mrow><msqrt><mrow><mn>12</mn><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>𝒟</mi></munder><mi>y</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mi>𝒟</mi></munder><mi>y</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Hàm số đạt giá trị lớn nhất tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    false
+  ],
+  "solution": "Hàm số có tập xác định là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></mrow></semantics></math>.\n\t\t<ol class=\"alpha-list\"><li><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>1</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>12</mn><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi></mrow><mrow><mn>2</mn><msqrt><mrow><mn>12</mn><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mrow></mfrac><mo>=</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mi>x</mi></mrow><msqrt><mrow><mn>12</mn><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mfrac></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><msqrt><mrow><mn>12</mn><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mn>3</mn><mi>x</mi><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>1</mn><mo>∈</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</li><li>Từ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math>; suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>y</mi><mo>=</mo><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math>.</li><li>Từ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math>; suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>y</mi><mo>=</mo><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math>.</li><li>Hàm số đạt giá trị lớn nhất tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

@@ -1,0 +1,134 @@
+{
+  "id": "dc-12-hk1-1D3-q040-v4",
+  "source_fingerprint": "f0603e50ec59c278c212e25b298ef8d406632f8fdc6060f1c6ca6ab29df5de77",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D3-q040-v4--bt01",
+      "number": 1,
+      "kind": "tf",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mn>2</mn><mi>x</mi></msup></mrow></semantics></math> có đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Phương trình đường tiệm cận ngang của đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Phương trình đường tiệm cận đứng của đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> có đúng một đường tiệm cận đứng"
+        },
+        {
+          "key": "d",
+          "text": "Đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> có đúng một đường tiệm cận ngang"
+        }
+      ],
+      "correct": [
+        true,
+        false,
+        false,
+        true
+      ],
+      "solution": "Hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mn>2</mn><mi>x</mi></msup></mrow></semantics></math> xác định trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math>, có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>−</mo><mi>∞</mi></mrow></munder><mi>y</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mi>y</mi><mo>=</mo><mo>+</mo><mi>∞</mi></mrow></semantics></math>, nên có đúng 1 tiệm cận ngang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> và không có tiệm cận đứng.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D3-q040-v4--bt02",
+      "number": 2,
+      "kind": "tf",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mn>3</mn><mi>x</mi></msup></mrow></semantics></math> có đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Phương trình đường tiệm cận ngang của đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Phương trình đường tiệm cận đứng của đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> có đúng một đường tiệm cận đứng"
+        },
+        {
+          "key": "d",
+          "text": "Đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> có đúng một đường tiệm cận ngang"
+        }
+      ],
+      "correct": [
+        true,
+        false,
+        false,
+        true
+      ],
+      "solution": "Hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mn>3</mn><mi>x</mi></msup></mrow></semantics></math> xác định trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math>, có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>−</mo><mi>∞</mi></mrow></munder><mi>y</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mi>y</mi><mo>=</mo><mo>+</mo><mi>∞</mi></mrow></semantics></math>, nên có đúng 1 tiệm cận ngang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> và không có tiệm cận đứng.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D3-q040-v4--bt03",
+      "number": 3,
+      "kind": "tf",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mn>5</mn><mi>x</mi></msup></mrow></semantics></math> có đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Phương trình đường tiệm cận ngang của đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Phương trình đường tiệm cận đứng của đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> có đúng một đường tiệm cận đứng"
+        },
+        {
+          "key": "d",
+          "text": "Đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> có đúng một đường tiệm cận ngang"
+        }
+      ],
+      "correct": [
+        true,
+        false,
+        false,
+        true
+      ],
+      "solution": "Hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mn>5</mn><mi>x</mi></msup></mrow></semantics></math> xác định trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math>, có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>−</mo><mi>∞</mi></mrow></munder><mi>y</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mi>y</mi><mo>=</mo><mo>+</mo><mi>∞</mi></mrow></semantics></math>, nên có đúng 1 tiệm cận ngang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> và không có tiệm cận đứng.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D3-q040-v4--bt04",
+      "number": 4,
+      "kind": "tf",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mn>7</mn><mi>x</mi></msup></mrow></semantics></math> có đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Phương trình đường tiệm cận ngang của đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Phương trình đường tiệm cận đứng của đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> có đúng một đường tiệm cận đứng"
+        },
+        {
+          "key": "d",
+          "text": "Đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> có đúng một đường tiệm cận ngang"
+        }
+      ],
+      "correct": [
+        true,
+        false,
+        false,
+        true
+      ],
+      "solution": "Hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mn>7</mn><mi>x</mi></msup></mrow></semantics></math> xác định trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math>, có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>−</mo><mi>∞</mi></mrow></munder><mi>y</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mi>y</mi><mo>=</mo><mo>+</mo><mi>∞</mi></mrow></semantics></math>, nên có đúng 1 tiệm cận ngang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> và không có tiệm cận đứng.",
+      "accepted_answers": []
+    }
+  ]
+}

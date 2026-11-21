@@ -1,0 +1,134 @@
+{
+  "id": "dc-12-hk1-1D1-q051-v4",
+  "source_fingerprint": "607e9111ff12057a7467665ee3159e07db74d85ee1490a33b487a2337da75eea",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D1-q051-v4--bt01",
+      "number": 1,
+      "kind": "tf",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>9</mn><mi>x</mi><mo>+</mo><mn>2</mn></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Hàm số đạt cực đại tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Hàm số đạt cực tiểu tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Giá trị cực đại của hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>20</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Giá trị cực tiểu của hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>16</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "solution": "Tập xác định: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>9</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math> hoặc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>.<br>\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/90b12e8108d170b7068aa38564423a181a82aae6882c4e3d0e444bdb687b3171.svg\" alt=\"Bảng biến thiên\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tHàm số đạt cực đại tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>y</mi><mtext>CĐ</mtext></msub><mo>=</mo><mn>20</mn></mrow></semantics></math> và đạt cực tiểu tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>y</mi><mtext>CT</mtext></msub><mo>=</mo><mo>−</mo><mn>16</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D1-q051-v4--bt02",
+      "number": 2,
+      "kind": "tf",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>4</mn></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Hàm số đạt cực đại tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Hàm số đạt cực tiểu tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Giá trị cực đại của hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>13</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Giá trị cực tiểu của hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "solution": "Tập xác định: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>3</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math> hoặc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>.<br>\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/3bf4614336ca3ecfd61eb532bf6c2b9ce553cc680915a2407a33ab83cc519528.svg\" alt=\"Bảng biến thiên\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tHàm số đạt cực đại tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>y</mi><mtext>CĐ</mtext></msub><mo>=</mo><mn>13</mn></mrow></semantics></math> và đạt cực tiểu tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>y</mi><mtext>CT</mtext></msub><mo>=</mo><mfrac displaystyle=\"true\"><mn>7</mn><mn>3</mn></mfrac></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D1-q051-v4--bt03",
+      "number": 3,
+      "kind": "tf",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>5</mn></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Hàm số đạt cực đại tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Hàm số đạt cực tiểu tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Giá trị cực đại của hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>6</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Giá trị cực tiểu của hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>4</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "solution": "Tập xác định: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>3</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math> hoặc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>.<br>\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/b1315831eb0ef6bf03f8242a2dc9b588bcdf3c802e97464d0086f3d37996ab72.svg\" alt=\"Bảng biến thiên\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tHàm số đạt cực đại tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>y</mi><mtext>CĐ</mtext></msub><mo>=</mo><mfrac displaystyle=\"true\"><mn>20</mn><mn>3</mn></mfrac></mrow></semantics></math> và đạt cực tiểu tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>y</mi><mtext>CT</mtext></msub><mo>=</mo><mo>−</mo><mn>4</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D1-q051-v4--bt04",
+      "number": 4,
+      "kind": "tf",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>9</mn><mi>x</mi><mo>−</mo><mn>1</mn></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Hàm số đạt cực đại tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Hàm số đạt cực tiểu tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Giá trị cực đại của hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>17</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Giá trị cực tiểu của hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>15</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "solution": "Tập xác định: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>9</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math> hoặc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>.<br>\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/06a6e984236c7da8b6581f65495c18e14842cd4a91c1ea322ba20aeeed29c9b7.svg\" alt=\"Bảng biến thiên\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tHàm số đạt cực đại tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>y</mi><mtext>CĐ</mtext></msub><mo>=</mo><mn>17</mn></mrow></semantics></math> và đạt cực tiểu tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>y</mi><mtext>CT</mtext></msub><mo>=</mo><mo>−</mo><mn>19</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-1D3-q033-v4",
+  "original_number": 33,
+  "kind": "mcq",
+  "based_on": "938d3800afdf2a34cce587bbd9966189d54307b38ab41f9b0c9befc99d086680",
+  "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mo>log</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></msub><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow></mrow></semantics></math>. Mệnh đề nào dưới đây là mệnh đề <strong> sai</strong>?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "Hàm số đã cho nghịch biến trên từng khoảng xác định"
+    },
+    {
+      "key": "B",
+      "text": "Đồ thị hàm số đã cho không có tiệm cận ngang"
+    },
+    {
+      "key": "C",
+      "text": "Đồ thị hàm số đã cho có một tiệm cận đứng là trục tung"
+    },
+    {
+      "key": "D",
+      "text": "Hàm số đã cho có tập xác định là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi><mo>\\</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>0</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Hàm số đã cho có tập xác định là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi><mo>\\</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>0</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>.<br>\n\t\t<strong> Cách 1.</strong> Ta có \n\t\t<div class=\"math-display\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msub><mo>log</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></msub><mi>x</mi><mo>,</mo><mrow><mspace width=\"0.333em\"/><mtext mathvariant=\"normal\"> nếu </mtext><mspace width=\"0.333em\"/></mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msub><mo>log</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>,</mo><mrow><mspace width=\"0.333em\"/><mtext mathvariant=\"normal\"> nếu </mtext><mspace width=\"0.333em\"/></mrow><mi>x</mi><mo>&lt;</mo><mn>0</mn><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math></div>\n\t\tDo đó \n\t\t<div class=\"math-display\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mi>x</mi><mo>⋅</mo><mo>ln</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></mfrac><mo>,</mo><mrow><mspace width=\"0.333em\"/><mtext mathvariant=\"normal\"> nếu </mtext><mspace width=\"0.333em\"/></mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mi>x</mi><mo>⋅</mo><mo>ln</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></mfrac><mo>,</mo><mrow><mspace width=\"0.333em\"/><mtext mathvariant=\"normal\"> nếu </mtext><mspace width=\"0.333em\"/></mrow><mi>x</mi><mo>&lt;</mo><mn>0</mn><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math></div>\n\t\tRõ ràng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> với mọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>&lt;</mo><mn>0</mn></mrow></semantics></math>, do đó hàm số đã cho đồng biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.<br>\n\t\tVậy khẳng định ``Hàm số đã cho nghịch biến trên từng khoảng xác định&#x27;&#x27; là sai.<br>\n\t\t<strong> Cách 2.</strong> Hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mo>log</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></msub><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow></mrow></semantics></math> là hàm số chẵn nên đồ thị của hàm số đối xứng với nhau qua trục tung, do đó tính đơn điệu của hàm số tại từng khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> phải ngược nhau (nếu bên này đồng biến thì bên còn lại phải nghịch biến hoặc ngược lại).<br>\n\t\tVậy khẳng định ``Hàm số đã cho nghịch biến trên từng khoảng xác định&#x27;&#x27; là sai.<br>",
+  "accepted_answers": []
+}

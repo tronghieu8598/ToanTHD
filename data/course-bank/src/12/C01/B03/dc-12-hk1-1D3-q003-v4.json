@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-1D3-q003-v4",
+  "original_number": 3,
+  "kind": "mcq",
+  "based_on": "f5e8dd14730b916e7cdd36b7038547e53fca6fe818d2a97a41522f01c4130df1",
+  "prompt": "Số đường tiệm cận đứng và tiệm cận ngang của đồ thị hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn></mrow></mfrac></mrow></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>2</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>1</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>4</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>3</mn></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Tập xác định <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi><mo>\\</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>.<br>\n\t\tTa có\n\t\t<ul class=\"\"><li><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>±</mo><mi>∞</mi></mrow></munder><mi>y</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> là đường tiệm cận ngang của đồ thị hàm số.</li><li><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mn>2</mn><mo>+</mo></msup></mrow></munder><mi>y</mi><mo>=</mo><mo>+</mo><mi>∞</mi></mrow></semantics></math> nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> là đường tiệm cận đứng của đồ thị hàm số.</li><li><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>−</mo></msup></mrow></munder><mi>y</mi><mo>=</mo><mo>−</mo><mi>∞</mi></mrow></semantics></math> nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math> là đường tiệm cận đứng của đồ thị hàm số.</li></ul>\n\t\tVậy đồ thị hàm số có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>3</mn></semantics></math> đường tiệm cận.",
+  "accepted_answers": []
+}

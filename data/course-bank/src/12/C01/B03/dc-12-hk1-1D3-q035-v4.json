@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-1D3-q035-v4",
+  "original_number": 35,
+  "kind": "mcq",
+  "based_on": "797097a4174c70d5a076592e169de06fa4e2844013ef758982f0e37afb6a7ef1",
+  "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> liên tục trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi><mo>\\</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math> và có bảng biến thiên sau:\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/78b646e7a5e9c746ceda417e9c4e264e2f1b3589698234e039ab31858c05deb8.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tĐồ thị hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mn>2</mn><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>−</mo><mn>5</mn></mrow></mfrac></mrow></semantics></math> có bao nhiêu tiệm cận đứng?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>0</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>2</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>1</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>4</mn></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>−</mo><mn>5</mn><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac></mrow></semantics></math>. Dựa vào bảng biến thiên đã cho, phương trình <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac></mrow></semantics></math> có bốn nghiệm phân biệt. Do đó, hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mn>2</mn><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>−</mo><mn>5</mn></mrow></mfrac></mrow></semantics></math> có bốn tiệm cận đứng.",
+  "accepted_answers": []
+}

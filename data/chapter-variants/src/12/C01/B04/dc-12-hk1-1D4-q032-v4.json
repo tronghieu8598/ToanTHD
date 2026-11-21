@@ -1,0 +1,134 @@
+{
+  "id": "dc-12-hk1-1D4-q032-v4",
+  "source_fingerprint": "1ac69e8f0355345dd4b001a7ff4ec9c1fa52b5b74266dba7b7e61cbc07fd00c8",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D4-q032-v4--bt01",
+      "number": 1,
+      "kind": "tf",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></semantics></math> có bảng biến thiên như hình vẽ bên dưới:\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/d947bcfee276a9de187034fde4e89db960aee15a033b1b0aa03999f111c542dc.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tXét tính đúng sai của các khẳng định sau:",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Hàm số nghịch biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Hàm số đồng biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Hàm số có hai điểm cực trị"
+        },
+        {
+          "key": "d",
+          "text": "Tọa độ điểm cực đại của đồ thị hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mo>−</mo><mn>2</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "solution": "Từ bảng biến thiên, hàm số gián đoạn tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>, nghịch biến trên từng khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, đồng biến trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, và có điểm cực đại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mo>−</mo><mn>2</mn><mo>)</mo></mrow></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D4-q032-v4--bt02",
+      "number": 2,
+      "kind": "tf",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></semantics></math> có bảng biến thiên như hình vẽ bên dưới:\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/436d22356294793a67430845b7609fe6c9a8f2fd8abc5229fd388c637cba3e20.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tXét tính đúng sai của các khẳng định sau:",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Hàm số nghịch biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>3</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Hàm số đồng biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Hàm số có hai điểm cực trị"
+        },
+        {
+          "key": "d",
+          "text": "Tọa độ điểm cực đại của đồ thị hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mo>−</mo><mn>3</mn><mo>;</mo><mn>6</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        false,
+        true,
+        true,
+        false
+      ],
+      "solution": "Từ bảng biến thiên, hàm số gián đoạn tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>, nghịch biến trên từng khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>3</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, đồng biến trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, và có điểm cực đại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mo>−</mo><mn>3</mn><mo>;</mo><mo>−</mo><mn>6</mn><mo>)</mo></mrow></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D4-q032-v4--bt03",
+      "number": 3,
+      "kind": "tf",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></semantics></math> có bảng biến thiên như hình vẽ bên dưới:\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/83a4bfc40ec1ca1997f105bf7a838e101a753a54c061f4ede57d01fe8eb9a074.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tXét tính đúng sai của các khẳng định sau:",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Hàm số nghịch biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Hàm số đồng biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Hàm số có ba điểm cực trị"
+        },
+        {
+          "key": "d",
+          "text": "Tọa độ điểm cực đại của đồ thị hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mo>−</mo><mn>3</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        false,
+        true,
+        false,
+        true
+      ],
+      "solution": "Từ bảng biến thiên, hàm số gián đoạn tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>, nghịch biến trên từng khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, đồng biến trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, và có điểm cực đại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mo>−</mo><mn>3</mn><mo>)</mo></mrow></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D4-q032-v4--bt04",
+      "number": 4,
+      "kind": "tf",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></semantics></math> có bảng biến thiên như hình vẽ bên dưới:\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/6e5984e17466f250f1ecc1dc15a3abedfddb869d5f4f3d77b67a8c8add407d5f.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tXét tính đúng sai của các khẳng định sau:",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Hàm số nghịch biến trên các khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Hàm số đồng biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>5</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Hàm số có hai điểm cực trị"
+        },
+        {
+          "key": "d",
+          "text": "Tọa độ điểm cực đại của đồ thị hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mo>−</mo><mn>5</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "solution": "Từ bảng biến thiên, hàm số gián đoạn tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>, nghịch biến trên từng khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, đồng biến trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, và có điểm cực đại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mo>−</mo><mn>5</mn><mo>)</mo></mrow></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

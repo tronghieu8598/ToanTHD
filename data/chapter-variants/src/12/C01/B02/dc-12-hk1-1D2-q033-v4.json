@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk1-1D2-q033-v4",
+  "source_fingerprint": "fe8e5756075a2cbc53269bbceea47081b703a9a40f1469b6ef7edc459bb77e87",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D2-q033-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "<div class=\"with-figure\"><div>Cho một tấm nhôm hình vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> cạnh <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>20</mn></mrow></semantics></math> cm. Người ta muốn cắt tấm nhôm để tạo một hình thang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>N</mi><mi>P</mi><mi>Q</mi></mrow></semantics></math> như hình vẽ (với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>N</mi><mo>=</mo><mn>8</mn></mrow></semantics></math> cm, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>N</mi><mi>B</mi><mo>=</mo><mn>12</mn></mrow></semantics></math> cm, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi><mi>P</mi><mo>=</mo><mi>P</mi><mi>C</mi><mo>=</mo><mn>10</mn></mrow></semantics></math> cm, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>M</mi><mo>=</mo><mi>x</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi><mi>Q</mi><mo>=</mo><mi>y</mi></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>N</mi></mrow></semantics></math> song song với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mi>Q</mi></mrow></semantics></math>). Khi diện tích hình thang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>N</mi><mi>P</mi><mi>Q</mi></mrow></semantics></math> đạt giá trị nhỏ nhất, hãy tính <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi></mrow></semantics></math>.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/variant-assets/addd973b9a13d3873e1fe9a4f2267011a96b1c9be75ef43393ef3ced2f7e45a4.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>8</mn><msqrt><mn>6</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>6</mn><msqrt><mn>6</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>28</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>2</mn><msqrt><mn>6</mn></msqrt></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Vì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>N</mi><mo>∥</mo><mi>P</mi><mi>Q</mi></mrow></semantics></math> nên hai tam giác vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>M</mi><mi>N</mi></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi><mi>P</mi><mi>Q</mi></mrow></semantics></math> đồng dạng, suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mi>x</mi><mn>8</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>10</mn><mi>y</mi></mfrac><mo>⇒</mo><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>80</mn><mi>x</mi></mfrac></mrow></semantics></math>.<br>\n\t\tDiện tích hình thang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>N</mi><mi>P</mi><mi>Q</mi></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>6</mn><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>400</mn></mrow><mi>x</mi></mfrac><mo>+</mo><mn>100</mn></mrow></semantics></math>.<br>\n\t\tTheo bất đẳng thức Cauchy, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></semantics></math> đạt giá trị nhỏ nhất khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>6</mn><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>400</mn></mrow><mi>x</mi></mfrac></mrow></semantics></math>. Từ đó tính được <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>6</mn><msqrt><mn>6</mn></msqrt></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q033-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "<div class=\"with-figure\"><div>Cho một tấm nhôm hình vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> cạnh <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>30</mn></mrow></semantics></math> cm. Người ta muốn cắt tấm nhôm để tạo một hình thang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>N</mi><mi>P</mi><mi>Q</mi></mrow></semantics></math> như hình vẽ (với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>N</mi><mo>=</mo><mn>12</mn></mrow></semantics></math> cm, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>N</mi><mi>B</mi><mo>=</mo><mn>18</mn></mrow></semantics></math> cm, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi><mi>P</mi><mo>=</mo><mi>P</mi><mi>C</mi><mo>=</mo><mn>15</mn></mrow></semantics></math> cm, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>M</mi><mo>=</mo><mi>x</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi><mi>Q</mi><mo>=</mo><mi>y</mi></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>N</mi></mrow></semantics></math> song song với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mi>Q</mi></mrow></semantics></math>). Khi diện tích hình thang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>N</mi><mi>P</mi><mi>Q</mi></mrow></semantics></math> đạt giá trị nhỏ nhất, hãy tính <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi></mrow></semantics></math>.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/variant-assets/73c48c985754f39b22f5a277a279ce8e5189a4854780b9c1cd666a60b31cb177.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>42</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>3</mn><msqrt><mn>6</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>9</mn><msqrt><mn>6</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>11</mn><msqrt><mn>6</mn></msqrt></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Vì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>N</mi><mo>∥</mo><mi>P</mi><mi>Q</mi></mrow></semantics></math> nên hai tam giác vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>M</mi><mi>N</mi></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi><mi>P</mi><mi>Q</mi></mrow></semantics></math> đồng dạng, suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mi>x</mi><mn>12</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>15</mn><mi>y</mi></mfrac><mo>⇒</mo><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>180</mn><mi>x</mi></mfrac></mrow></semantics></math>.<br>\n\t\tDiện tích hình thang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>N</mi><mi>P</mi><mi>Q</mi></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>9</mn><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>1350</mn></mrow><mi>x</mi></mfrac><mo>+</mo><mn>225</mn></mrow></semantics></math>.<br>\n\t\tTheo bất đẳng thức Cauchy, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></semantics></math> đạt giá trị nhỏ nhất khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>9</mn><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>1350</mn></mrow><mi>x</mi></mfrac></mrow></semantics></math>. Từ đó tính được <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>9</mn><msqrt><mn>6</mn></msqrt></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q033-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "<div class=\"with-figure\"><div>Cho một tấm nhôm hình vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> cạnh <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>40</mn></mrow></semantics></math> cm. Người ta muốn cắt tấm nhôm để tạo một hình thang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>N</mi><mi>P</mi><mi>Q</mi></mrow></semantics></math> như hình vẽ (với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>N</mi><mo>=</mo><mn>16</mn></mrow></semantics></math> cm, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>N</mi><mi>B</mi><mo>=</mo><mn>24</mn></mrow></semantics></math> cm, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi><mi>P</mi><mo>=</mo><mi>P</mi><mi>C</mi><mo>=</mo><mn>20</mn></mrow></semantics></math> cm, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>M</mi><mo>=</mo><mi>x</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi><mi>Q</mi><mo>=</mo><mi>y</mi></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>N</mi></mrow></semantics></math> song song với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mi>Q</mi></mrow></semantics></math>). Khi diện tích hình thang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>N</mi><mi>P</mi><mi>Q</mi></mrow></semantics></math> đạt giá trị nhỏ nhất, hãy tính <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi></mrow></semantics></math>.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/variant-assets/ebb1ff2b8c5780056e0e2319991c87a2411bd36d037999eb3688149dbc3aecb5.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>12</mn><msqrt><mn>6</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>14</mn><msqrt><mn>6</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>4</mn><msqrt><mn>6</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>56</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "A",
+      "solution": "Vì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>N</mi><mo>∥</mo><mi>P</mi><mi>Q</mi></mrow></semantics></math> nên hai tam giác vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>M</mi><mi>N</mi></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi><mi>P</mi><mi>Q</mi></mrow></semantics></math> đồng dạng, suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mi>x</mi><mn>16</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>20</mn><mi>y</mi></mfrac><mo>⇒</mo><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>320</mn><mi>x</mi></mfrac></mrow></semantics></math>.<br>\n\t\tDiện tích hình thang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>N</mi><mi>P</mi><mi>Q</mi></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>12</mn><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>3200</mn></mrow><mi>x</mi></mfrac><mo>+</mo><mn>400</mn></mrow></semantics></math>.<br>\n\t\tTheo bất đẳng thức Cauchy, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></semantics></math> đạt giá trị nhỏ nhất khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>12</mn><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>3200</mn></mrow><mi>x</mi></mfrac></mrow></semantics></math>. Từ đó tính được <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>12</mn><msqrt><mn>6</mn></msqrt></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q033-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "<div class=\"with-figure\"><div>Cho một tấm nhôm hình vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> cạnh <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>12</mn></mrow></semantics></math> cm. Người ta muốn cắt tấm nhôm để tạo một hình thang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>N</mi><mi>P</mi><mi>Q</mi></mrow></semantics></math> như hình vẽ (với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>N</mi><mo>=</mo><mn>3</mn></mrow></semantics></math> cm, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>N</mi><mi>B</mi><mo>=</mo><mn>9</mn></mrow></semantics></math> cm, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi><mi>P</mi><mo>=</mo><mi>P</mi><mi>C</mi><mo>=</mo><mn>6</mn></mrow></semantics></math> cm, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>M</mi><mo>=</mo><mi>x</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi><mi>Q</mi><mo>=</mo><mi>y</mi></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>N</mi></mrow></semantics></math> song song với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mi>Q</mi></mrow></semantics></math>). Khi diện tích hình thang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>N</mi><mi>P</mi><mi>Q</mi></mrow></semantics></math> đạt giá trị nhỏ nhất, hãy tính <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi></mrow></semantics></math>.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/variant-assets/71ab2f844dfc46fe741713eb9b63985b5ac69797c7303bd37c793a897807c3f0.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>1</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>15</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>5</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>3</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math>"
+        }
+      ],
+      "correct": "D",
+      "solution": "Vì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>N</mi><mo>∥</mo><mi>P</mi><mi>Q</mi></mrow></semantics></math> nên hai tam giác vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>M</mi><mi>N</mi></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi><mi>P</mi><mi>Q</mi></mrow></semantics></math> đồng dạng, suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mi>x</mi><mn>3</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>6</mn><mi>y</mi></mfrac><mo>⇒</mo><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>18</mn><mi>x</mi></mfrac></mrow></semantics></math>.<br>\n\t\tDiện tích hình thang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mi>N</mi><mi>P</mi><mi>Q</mi></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>9</mn><mn>2</mn></mfrac><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>54</mn></mrow><mi>x</mi></mfrac><mo>+</mo><mn>36</mn></mrow></semantics></math>.<br>\n\t\tTheo bất đẳng thức Cauchy, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></semantics></math> đạt giá trị nhỏ nhất khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>9</mn><mn>2</mn></mfrac><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>54</mn></mrow><mi>x</mi></mfrac></mrow></semantics></math>. Từ đó tính được <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>3</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

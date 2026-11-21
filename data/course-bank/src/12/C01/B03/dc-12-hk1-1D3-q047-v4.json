@@ -1,0 +1,11 @@
+{
+  "id": "dc-12-hk1-1D3-q047-v4",
+  "original_number": 47,
+  "kind": "short",
+  "based_on": "13fd8ec04cfcde6ab7b4a6ba386f371f7794250451a269720454b424a5e96d50",
+  "prompt": "Số đường tiệm cận của đồ thị hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mfrac></mrow></semantics></math> là bao nhiêu?",
+  "choices": [],
+  "correct": "2",
+  "solution": "Tập xác định <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi><mo>\\</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>±</mo><mi>∞</mi></mrow></munder><mi>y</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>. Suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> là đường tiệm cận ngang của đồ thị hàm số.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mn>2</mn><mo>+</mo></msup></mrow></munder><mi>y</mi><mo>=</mo><mo>+</mo><mi>∞</mi></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mn>2</mn><mo>−</mo></msup></mrow></munder><mi>y</mi><mo>=</mo><mo>−</mo><mi>∞</mi></mrow></semantics></math>. Suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> là đường tiệm cận đứng của đồ thị hàm số.<br>\n\t\tVậy đồ thị hàm số có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>2</mn></semantics></math> đường tiệm cận.",
+  "accepted_answers": []
+}

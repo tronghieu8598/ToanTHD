@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk1-1D2-q029-v4",
+  "source_fingerprint": "30a0bd148525023170efad68129d67e93ebf13d7ba5ed304a7e48afebe2b0a29",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D2-q029-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "<div class=\"with-figure\"><div>Một mảnh giấy hình chữ nhật có chiều dài <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>8</mn></mrow></semantics></math> cm và chiều rộng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn></mrow></semantics></math> cm. Thực hiện thao tác gấp góc dưới bên trái sao cho đỉnh được gấp nằm trên cạnh đối diện (tham khảo hình vẽ). Chiều dài <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>L</mi></mrow></semantics></math> tối thiểu của nếp gấp là bao nhiêu?</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/variant-assets/83542964083d0bfc768623396ec8f6d25f8fc9db5c53622276905e1f10f8743f.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>min</mo><mi>L</mi><mo>=</mo><mn>4</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math> cm"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>min</mo><mi>L</mi><mo>=</mo><mn>2</mn><msqrt><mn>6</mn></msqrt></mrow></semantics></math> cm"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>min</mo><mi>L</mi><mo>=</mo><mn>3</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math> cm"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>min</mo><mi>L</mi><mo>=</mo><mn>4</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math> cm"
+        }
+      ],
+      "correct": "C",
+      "solution": "Đặt <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>N</mi><mo>=</mo><mi>M</mi><mi>N</mi><mo>=</mo><mi>x</mi></mrow></semantics></math> (cm) với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>4</mn></mrow></semantics></math>, khi đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>D</mi><mi>N</mi><mo>=</mo><mn>4</mn><mo>−</mo><mi>x</mi></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>cos</mo><mover><mrow><mi>D</mi><mi>N</mi><mi>M</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn><mo>−</mo><mi>x</mi></mrow><mi>x</mi></mfrac><mo>⇒</mo><mo>cos</mo><mover><mrow><mi>M</mi><mi>N</mi><mi>P</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><msqrt><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow><mi>x</mi></mfrac></msqrt></mrow></semantics></math>.<br>\n\t\tSuy ra chiều dài nếp gấp là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>L</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mi>x</mi><mrow><mo>cos</mo><mover><mrow><mi>M</mi><mi>N</mi><mi>P</mi></mrow><mo accent=\"true\">̂</mo></mover></mrow></mfrac><mo>=</mo><msqrt><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>3</mn></msup><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mfrac></msqrt></mrow></semantics></math>.<br>\n\t\tXét <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>3</mn></msup><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mfrac></mrow></semantics></math> trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mi>x</mi><mn>2</mn></msup><mrow><mo>(</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>6</mn><mo>)</mo></mrow></mrow><msup><mrow><mo>(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo>)</mo></mrow><mn>2</mn></msup></mfrac><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>.<br>\n\t\tDo đó chiều dài nếp gấp nhỏ nhất là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>min</mo><mi>L</mi><mo>=</mo><mn>3</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math> cm khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></semantics></math> cm.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q029-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "<div class=\"with-figure\"><div>Một mảnh giấy hình chữ nhật có chiều dài <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>16</mn></mrow></semantics></math> cm và chiều rộng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>8</mn></mrow></semantics></math> cm. Thực hiện thao tác gấp góc dưới bên trái sao cho đỉnh được gấp nằm trên cạnh đối diện (tham khảo hình vẽ). Chiều dài <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>L</mi></mrow></semantics></math> tối thiểu của nếp gấp là bao nhiêu?</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/variant-assets/6e28e042bdcaab388d2c1a7bf07105d062627ca1205ef24043e533b5390027ea.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>min</mo><mi>L</mi><mo>=</mo><mn>6</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math> cm"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>min</mo><mi>L</mi><mo>=</mo><mn>4</mn><msqrt><mn>6</mn></msqrt></mrow></semantics></math> cm"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>min</mo><mi>L</mi><mo>=</mo><mn>7</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math> cm"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>min</mo><mi>L</mi><mo>=</mo><mn>8</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math> cm"
+        }
+      ],
+      "correct": "A",
+      "solution": "Đặt <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>N</mi><mo>=</mo><mi>M</mi><mi>N</mi><mo>=</mo><mi>x</mi></mrow></semantics></math> (cm) với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>8</mn></mrow></semantics></math>, khi đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>D</mi><mi>N</mi><mo>=</mo><mn>8</mn><mo>−</mo><mi>x</mi></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>cos</mo><mover><mrow><mi>D</mi><mi>N</mi><mi>M</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>8</mn><mo>−</mo><mi>x</mi></mrow><mi>x</mi></mfrac><mo>⇒</mo><mo>cos</mo><mover><mrow><mi>M</mi><mi>N</mi><mi>P</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><msqrt><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>−</mo><mn>4</mn></mrow><mi>x</mi></mfrac></msqrt></mrow></semantics></math>.<br>\n\t\tSuy ra chiều dài nếp gấp là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>L</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mi>x</mi><mrow><mo>cos</mo><mover><mrow><mi>M</mi><mi>N</mi><mi>P</mi></mrow><mo accent=\"true\">̂</mo></mover></mrow></mfrac><mo>=</mo><msqrt><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>3</mn></msup><mrow><mi>x</mi><mo>−</mo><mn>4</mn></mrow></mfrac></msqrt></mrow></semantics></math>.<br>\n\t\tXét <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>3</mn></msup><mrow><mi>x</mi><mo>−</mo><mn>4</mn></mrow></mfrac></mrow></semantics></math> trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo>;</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mi>x</mi><mn>2</mn></msup><mrow><mo>(</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>12</mn><mo>)</mo></mrow></mrow><msup><mrow><mo>(</mo><mi>x</mi><mo>−</mo><mn>4</mn><mo>)</mo></mrow><mn>2</mn></msup></mfrac><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>6</mn></mrow></semantics></math>.<br>\n\t\tDo đó chiều dài nếp gấp nhỏ nhất là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>min</mo><mi>L</mi><mo>=</mo><mn>6</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math> cm khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>6</mn></mrow></semantics></math> cm.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q029-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "<div class=\"with-figure\"><div>Một mảnh giấy hình chữ nhật có chiều dài <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>20</mn></mrow></semantics></math> cm và chiều rộng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>10</mn></mrow></semantics></math> cm. Thực hiện thao tác gấp góc dưới bên trái sao cho đỉnh được gấp nằm trên cạnh đối diện (tham khảo hình vẽ). Chiều dài <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>L</mi></mrow></semantics></math> tối thiểu của nếp gấp là bao nhiêu?</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/variant-assets/2536c782706589e76db39f550f132bed6edf7cab866af1ad213192d9c5544a34.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>min</mo><mi>L</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>17</mn><msqrt><mn>3</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></semantics></math> cm"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>min</mo><mi>L</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>15</mn><msqrt><mn>3</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></semantics></math> cm"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>min</mo><mi>L</mi><mo>=</mo><mn>10</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math> cm"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>min</mo><mi>L</mi><mo>=</mo><mn>5</mn><msqrt><mn>6</mn></msqrt></mrow></semantics></math> cm"
+        }
+      ],
+      "correct": "B",
+      "solution": "Đặt <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>N</mi><mo>=</mo><mi>M</mi><mi>N</mi><mo>=</mo><mi>x</mi></mrow></semantics></math> (cm) với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>10</mn></mrow></semantics></math>, khi đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>D</mi><mi>N</mi><mo>=</mo><mn>10</mn><mo>−</mo><mi>x</mi></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>cos</mo><mover><mrow><mi>D</mi><mi>N</mi><mi>M</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>10</mn><mo>−</mo><mi>x</mi></mrow><mi>x</mi></mfrac><mo>⇒</mo><mo>cos</mo><mover><mrow><mi>M</mi><mi>N</mi><mi>P</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><msqrt><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>−</mo><mn>5</mn></mrow><mi>x</mi></mfrac></msqrt></mrow></semantics></math>.<br>\n\t\tSuy ra chiều dài nếp gấp là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>L</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mi>x</mi><mrow><mo>cos</mo><mover><mrow><mi>M</mi><mi>N</mi><mi>P</mi></mrow><mo accent=\"true\">̂</mo></mover></mrow></mfrac><mo>=</mo><msqrt><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>3</mn></msup><mrow><mi>x</mi><mo>−</mo><mn>5</mn></mrow></mfrac></msqrt></mrow></semantics></math>.<br>\n\t\tXét <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>3</mn></msup><mrow><mi>x</mi><mo>−</mo><mn>5</mn></mrow></mfrac></mrow></semantics></math> trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>5</mn><mo>;</mo><mn>10</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mi>x</mi><mn>2</mn></msup><mrow><mo>(</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>15</mn><mo>)</mo></mrow></mrow><msup><mrow><mo>(</mo><mi>x</mi><mo>−</mo><mn>5</mn><mo>)</mo></mrow><mn>2</mn></msup></mfrac><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>15</mn><mn>2</mn></mfrac></mrow></semantics></math>.<br>\n\t\tDo đó chiều dài nếp gấp nhỏ nhất là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>min</mo><mi>L</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>15</mn><msqrt><mn>3</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></semantics></math> cm khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>15</mn><mn>2</mn></mfrac></mrow></semantics></math> cm.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q029-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "<div class=\"with-figure\"><div>Một mảnh giấy hình chữ nhật có chiều dài <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>24</mn></mrow></semantics></math> cm và chiều rộng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>12</mn></mrow></semantics></math> cm. Thực hiện thao tác gấp góc dưới bên trái sao cho đỉnh được gấp nằm trên cạnh đối diện (tham khảo hình vẽ). Chiều dài <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>L</mi></mrow></semantics></math> tối thiểu của nếp gấp là bao nhiêu?</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/variant-assets/4dd19290c21daa76a38e3febdd9c0f43e402e6e32d607f9fc3c31c5328fbdae5.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>min</mo><mi>L</mi><mo>=</mo><mn>6</mn><msqrt><mn>6</mn></msqrt></mrow></semantics></math> cm"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>min</mo><mi>L</mi><mo>=</mo><mn>12</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math> cm"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>min</mo><mi>L</mi><mo>=</mo><mn>10</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math> cm"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>min</mo><mi>L</mi><mo>=</mo><mn>9</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math> cm"
+        }
+      ],
+      "correct": "D",
+      "solution": "Đặt <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>N</mi><mo>=</mo><mi>M</mi><mi>N</mi><mo>=</mo><mi>x</mi></mrow></semantics></math> (cm) với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>6</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>12</mn></mrow></semantics></math>, khi đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>D</mi><mi>N</mi><mo>=</mo><mn>12</mn><mo>−</mo><mi>x</mi></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>cos</mo><mover><mrow><mi>D</mi><mi>N</mi><mi>M</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>12</mn><mo>−</mo><mi>x</mi></mrow><mi>x</mi></mfrac><mo>⇒</mo><mo>cos</mo><mover><mrow><mi>M</mi><mi>N</mi><mi>P</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><msqrt><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>−</mo><mn>6</mn></mrow><mi>x</mi></mfrac></msqrt></mrow></semantics></math>.<br>\n\t\tSuy ra chiều dài nếp gấp là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>L</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mi>x</mi><mrow><mo>cos</mo><mover><mrow><mi>M</mi><mi>N</mi><mi>P</mi></mrow><mo accent=\"true\">̂</mo></mover></mrow></mfrac><mo>=</mo><msqrt><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>3</mn></msup><mrow><mi>x</mi><mo>−</mo><mn>6</mn></mrow></mfrac></msqrt></mrow></semantics></math>.<br>\n\t\tXét <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>3</mn></msup><mrow><mi>x</mi><mo>−</mo><mn>6</mn></mrow></mfrac></mrow></semantics></math> trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>6</mn><mo>;</mo><mn>12</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mi>x</mi><mn>2</mn></msup><mrow><mo>(</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>18</mn><mo>)</mo></mrow></mrow><msup><mrow><mo>(</mo><mi>x</mi><mo>−</mo><mn>6</mn><mo>)</mo></mrow><mn>2</mn></msup></mfrac><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>9</mn></mrow></semantics></math>.<br>\n\t\tDo đó chiều dài nếp gấp nhỏ nhất là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>min</mo><mi>L</mi><mo>=</mo><mn>9</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math> cm khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>9</mn></mrow></semantics></math> cm.",
+      "accepted_answers": []
+    }
+  ]
+}

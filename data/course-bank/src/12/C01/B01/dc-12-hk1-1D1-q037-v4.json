@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-1D1-q037-v4",
+  "original_number": 37,
+  "kind": "mcq",
+  "based_on": "acc8d75e49b3305aa484bbd0112f9d75e064da3b87c05581d3ac68b9ce250f7e",
+  "prompt": "Khoảng cách từ điểm cực tiểu của đồ thị hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn></mrow></semantics></math> đến trục tung bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>1</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>2</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>4</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>0</mn></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Tập xác định <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>6</mn><mi>x</mi><mo>⇒</mo><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>2</mn><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math><br>\n\t\tSuy ra bảng biên thiên như sau\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/6f00a604cb3fd2bf0f6044d12d7f5fb572242e7988536a08134bfb6cda45f958.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tTừ bảng biến thiên suy ra hàm số đạt cực tiểu tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>.<br>\n\t\tVậy khoảng cách từ điểm cực tiểu của đồ thị đến trục tung là bằng độ lớn của <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>x</mi><mrow><mi mathvariant=\"normal\">C</mi><mi mathvariant=\"normal\">T</mi></mrow></msub><mo>=</mo><mn>2</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

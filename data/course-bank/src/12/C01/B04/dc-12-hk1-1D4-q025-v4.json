@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-1D4-q025-v4",
+  "original_number": 25,
+  "kind": "mcq",
+  "based_on": "68410a8a15a0b6d47871701113ca99f4d6e20b4ec3b3ea5346cb2318245e9b35",
+  "prompt": "<div class=\"with-figure\"><div>Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi></mrow><mrow><mi>x</mi><mo>+</mo><mi>c</mi></mrow></mfrac></mrow></semantics></math> có đồ thị như hình vẽ, với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>a</mi></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>b</mi></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>c</mi></semantics></math> là các số nguyên. Tính giá trị của biểu thức <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>T</mi><mo>=</mo><mi>a</mi><mo>−</mo><mn>3</mn><mi>b</mi><mo>+</mo><mn>2</mn><mi>c</mi></mrow></semantics></math>.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/d6075f63602734d168982842a18daeac87d49d82b9326a30f724adf4e10c391a.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>T</mi><mo>=</mo><mn>12</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>T</mi><mo>=</mo><mo>−</mo><mn>7</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>T</mi><mo>=</mo><mn>10</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>T</mi><mo>=</mo><mo>−</mo><mn>9</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Đồ thị hàm số có tiệm cận ngang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mn>1</mn><mo>⇒</mo><mfrac displaystyle=\"true\"><mi>a</mi><mn>1</mn></mfrac><mo>=</mo><mo>−</mo><mn>1</mn><mo>⇒</mo><mi>a</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>.<br>\n\t\tĐồ thị hàm số có tiệm cận đứng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn><mo>⇒</mo><mo>−</mo><mi>c</mi><mo>=</mo><mn>1</mn><mo>⇒</mo><mi>c</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>.<br>\n\t\tĐồ thị hàm số cắt trục tung tại điểm có tung độ bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>2</mn><mo>⇒</mo><mfrac displaystyle=\"true\"><mi>b</mi><mrow><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mo>−</mo><mn>2</mn><mo>⇒</mo><mi>b</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>.<br>\n\t\tVậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>T</mi><mo>=</mo><mo>−</mo><mi>a</mi><mo>−</mo><mn>3</mn><mo>⋅</mo><mn>2</mn><mo>+</mo><mn>2</mn><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>9</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

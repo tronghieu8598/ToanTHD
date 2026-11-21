@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-1D2-q004-v4",
+  "original_number": 4,
+  "kind": "mcq",
+  "based_on": "6f64f57826a077156a44a443ee0361dde0189e16bec0ede61553b4a482d5bf68",
+  "prompt": "Tìm giá trị nhỏ nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>x</mi><mo>−</mo><mn>5</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>x</mi></mfrac></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>5</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>3</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>5</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>0</mn><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn><mo>∉</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>;</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>1</mn><mo>∈</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>;</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math><br>\n\t\tLại có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>5</mn></mfrac></mrow></semantics></math>.<br>\n\t\tDo đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>;</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>y</mi><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math> khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

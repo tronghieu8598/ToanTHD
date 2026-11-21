@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk1-1D2-q004-v4",
+  "source_fingerprint": "6f64f57826a077156a44a443ee0361dde0189e16bec0ede61553b4a482d5bf68",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D2-q004-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Tìm giá trị nhỏ nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>x</mi><mo>−</mo><mn>7</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>4</mn><mi>x</mi></mfrac></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>1</mn><mo>;</mo><mn>6</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>3</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>2</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>7</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "A",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>4</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>6</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.<br>\n\t\tLại có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mn>6</mn><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></mrow></semantics></math>.<br>\n\t\tDo đó giá trị nhỏ nhất của hàm số trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>1</mn><mo>;</mo><mn>6</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>3</mn></mrow></semantics></math> khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q004-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Tìm giá trị nhỏ nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>x</mi><mo>−</mo><mn>8</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>9</mn><mi>x</mi></mfrac></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>1</mn><mo>;</mo><mn>9</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>8</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>2</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>4</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>9</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>3</mn></mrow></semantics></math> trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>9</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.<br>\n\t\tLại có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mn>3</mn><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mn>9</mn><mo>)</mo></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math>.<br>\n\t\tDo đó giá trị nhỏ nhất của hàm số trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>1</mn><mo>;</mo><mn>9</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>2</mn></mrow></semantics></math> khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q004-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Tìm giá trị nhỏ nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>x</mi><mo>−</mo><mn>9</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>4</mn><mi>x</mi></mfrac></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>1</mn><mo>;</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>4</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>9</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>5</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "D",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>4</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.<br>\n\t\tLại có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mn>4</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mn>5</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mn>8</mn><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>.<br>\n\t\tDo đó giá trị nhỏ nhất của hàm số trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>1</mn><mo>;</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>5</mn></mrow></semantics></math> khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q004-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Tìm giá trị nhỏ nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>x</mi><mo>−</mo><mn>10</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>16</mn><mi>x</mi></mfrac></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>2</mn><mo>;</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>10</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>4</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>2</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>16</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>4</mn></mrow></semantics></math> trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.<br>\n\t\tLại có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mn>2</mn><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mn>4</mn><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mn>8</mn><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math>.<br>\n\t\tDo đó giá trị nhỏ nhất của hàm số trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>2</mn><mo>;</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>2</mn></mrow></semantics></math> khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

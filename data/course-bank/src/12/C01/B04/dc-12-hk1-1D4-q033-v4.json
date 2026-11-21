@@ -1,0 +1,33 @@
+{
+  "id": "dc-12-hk1-1D4-q033-v4",
+  "original_number": 33,
+  "kind": "tf",
+  "based_on": "49f115a6b58523cbde68051853c872bac63eb00cefdfd2e84dcd5bc93679a42a",
+  "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo>−</mo><mn>5</mn></mrow></semantics></math>. Xét tính đúng sai của các khẳng định sau:",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Tập xác định của hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>ℝ</mi></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Hàm số đạt cực đại tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>&gt;</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>∈</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "solution": "TXĐ: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi></mrow></semantics></math><br>\n\t\t<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo>=</mo><mn>0</mn><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>1</mn><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math><br>\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/3a10ec13855ee33a9ef1eae7a1f8d80767e121ee54e4a1058da77b5a20ec744d.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\t\n\t\t<ol class=\"alpha-list\"><li>Đúng</li><li>Đúng</li><li>Sai</li><li>Sai</li></ol>",
+  "accepted_answers": []
+}

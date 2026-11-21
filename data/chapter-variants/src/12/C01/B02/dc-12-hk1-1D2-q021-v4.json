@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk1-1D2-q021-v4",
+  "source_fingerprint": "d06a9d82e665b9c4656930e8f9efd81e657cb60d8459cc33a17bd3d0ffdbd4d2",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D2-q021-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Tìm giá trị nhỏ nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><msup><mo>cos</mo><mn>2</mn></msup><mn>2</mn><mi>x</mi><mo>−</mo><mn>2</mn><mo>sin</mo><mi>x</mi><mo>cos</mo><mi>x</mi><mo>+</mo><mn>5</mn></mrow></semantics></math> trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>7</mn><mn>2</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>4</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>9</mn><mn>2</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>6</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Đặt <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mo>sin</mo><mn>2</mn><mi>x</mi><mo>∈</mo><mrow><mo>[</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>]</mo></mrow></mrow></semantics></math>, hàm số trở thành <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow><mo>=</mo><mo>−</mo><msup><mi>u</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn><mi>u</mi><mo>+</mo><mn>6</mn></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>.<br>\n\t\tHoành độ đỉnh parabol là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>∈</mo><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math> (bề lõm quay xuống), nên giá trị nhỏ nhất đạt tại đầu mút <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow><mo>=</mo><mn>4</mn></mrow></semantics></math>. Vậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>4</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q021-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Tìm giá trị nhỏ nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>2</mn><msup><mo>cos</mo><mn>2</mn></msup><mn>2</mn><mi>x</mi><mo>−</mo><mo>sin</mo><mi>x</mi><mo>cos</mo><mi>x</mi><mo>+</mo><mn>3</mn></mrow></semantics></math> trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>3</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>5</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Đặt <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mo>sin</mo><mn>2</mn><mi>x</mi><mo>∈</mo><mrow><mo>[</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>]</mo></mrow></mrow></semantics></math>, hàm số trở thành <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mn>2</mn><msup><mi>u</mi><mn>2</mn></msup><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mi>u</mi><mo>+</mo><mn>5</mn></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>.<br>\n\t\tHoành độ đỉnh parabol là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>8</mn></mfrac><mo>∈</mo><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math> (bề lõm quay xuống), nên giá trị nhỏ nhất đạt tại đầu mút <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac></mrow></semantics></math>. Vậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q021-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Tìm giá trị nhỏ nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><msup><mo>cos</mo><mn>2</mn></msup><mn>2</mn><mi>x</mi><mo>−</mo><mn>2</mn><mo>sin</mo><mi>x</mi><mo>cos</mo><mi>x</mi><mo>+</mo><mn>3</mn></mrow></semantics></math> trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>4</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "D",
+      "solution": "Đặt <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mo>sin</mo><mn>2</mn><mi>x</mi><mo>∈</mo><mrow><mo>[</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>]</mo></mrow></mrow></semantics></math>, hàm số trở thành <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow><mo>=</mo><mo>−</mo><msup><mi>u</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn><mi>u</mi><mo>+</mo><mn>4</mn></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>.<br>\n\t\tHoành độ đỉnh parabol là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>∈</mo><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math> (bề lõm quay xuống), nên giá trị nhỏ nhất đạt tại đầu mút <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math>. Vậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q021-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Tìm giá trị nhỏ nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>2</mn><msup><mo>cos</mo><mn>2</mn></msup><mn>2</mn><mi>x</mi><mo>−</mo><mn>3</mn><mo>sin</mo><mi>x</mi><mo>cos</mo><mi>x</mi><mo>+</mo><mn>6</mn></mrow></semantics></math> trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>9</mn><mn>2</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>8</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>4</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>5</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "A",
+      "solution": "Đặt <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mo>sin</mo><mn>2</mn><mi>x</mi><mo>∈</mo><mrow><mo>[</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>]</mo></mrow></mrow></semantics></math>, hàm số trở thành <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mn>2</mn><msup><mi>u</mi><mn>2</mn></msup><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac><mi>u</mi><mo>+</mo><mn>8</mn></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>.<br>\n\t\tHoành độ đỉnh parabol là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>8</mn></mfrac><mo>∈</mo><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math> (bề lõm quay xuống), nên giá trị nhỏ nhất đạt tại đầu mút <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>9</mn><mn>2</mn></mfrac></mrow></semantics></math>. Vậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>9</mn><mn>2</mn></mfrac></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

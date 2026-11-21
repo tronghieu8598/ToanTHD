@@ -1,6 +1,8 @@
 import {readFile} from 'node:fs/promises';
 import {pathToFileURL} from 'node:url';
 import {createHash} from 'node:crypto';
+import {parseArgs} from 'node:util';
+import {bankReleaseChapters} from '../lib/bank-release-chapters.mjs';
 
 const releaseRoute = '/api/teacher/bank-release/';
 
@@ -104,14 +106,21 @@ export async function readReleaseCredentials() {
     }
 }
 
-async function main([action, input, ...extra]) {
+async function main(args) {
+    const {values, positionals: [action, input, ...extra]} = parseArgs({
+        args, options: {chapter: {type: 'string'}}, allowPositionals: true,
+    });
     if (!['stage', 'activate'].includes(action) || !input || extra.length) {
-        throw new Error('Cách dùng\n  node scripts/publish-bank-release.mjs stage <gói.json>\n  node scripts/publish-bank-release.mjs activate <sha256>');
+        throw new Error('Cách dùng\n  node scripts/publish-bank-release.mjs stage <gói.json>\n  node scripts/publish-bank-release.mjs activate <sha256> [--chapter 12-C01|12-C06]');
     }
+    const chapter = values.chapter;
+    if (chapter && !Object.hasOwn(bankReleaseChapters, chapter)) throw new Error('Chương chưa có cấu hình phát hành.');
     if (action === 'activate' && !/^[a-f0-9]{64}$/.test(input)) throw new Error('Thiếu SHA-256 nhận được từ bước xem trước.');
-    const body = action === 'stage' ? await readFile(input) : JSON.stringify({digest: input});
+    const body = action === 'stage' ? await readFile(input) : JSON.stringify({digest: input, scope: chapter});
+    const pack = action === 'stage' ? JSON.parse(body) : null;
+    if (pack && chapter && chapter !== pack.scope) throw new Error('Chương đã chọn khác với chương trong gói.');
     const client = await openBankReleaseClient(await readReleaseCredentials());
-    if (action === 'stage') await verifyBankReleaseAssets(client, JSON.parse(body));
+    if (pack) await verifyBankReleaseAssets(client, pack);
     console.log(JSON.stringify(await client.release(action, body), null, 2));
 }
 

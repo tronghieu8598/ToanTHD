@@ -1,0 +1,33 @@
+{
+  "id": "dc-12-hk1-1D4-q044-v4",
+  "original_number": 44,
+  "kind": "tf",
+  "based_on": "dda4e566d943bd5e0a1e1ece00bc359188016daeffc774dee05420e2d7f1ead7",
+  "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mi>x</mi></mfrac></mrow></semantics></math>. Xét tính đúng sai của các khẳng định sau:",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Hàm số có tiệm cận đứng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Hàm số có tiệm cận xiên là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Hàm số đồng biến trên mỗi khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Đồ thị hàm số nhận <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>O</mi></semantics></math> làm tâm đối xứng"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    true
+  ],
+  "solution": "TXĐ: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi><mo>\\</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>0</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math><br>\n\t\t<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>&lt;</mo><mn>0</mn><mi>.</mi></mrow></semantics></math><br>\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/00ff76352452205aab05a08514fa20690a27dbe5622b5737109939870467718c.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\t\n\t\tTừ đó ta xét tính đúng sai của các khẳng định:\n\t\t<ol class=\"alpha-list\"><li>Đúng</li><li>Đúng vì:<br>\n\t\t\tTa có: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>−</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mi>x</mi></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>x</mi></mfrac></mrow></semantics></math>.<br>\n\t\t\tDo đó: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>−</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mn>1</mn><mi>x</mi></mfrac><mo>=</mo><mn>0</mn></mrow></semantics></math>.<br>\n\t\t\tSuy ra hàm số có tiệm cận xiên là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mi>x</mi></mrow></semantics></math>.</li><li>Sai</li><li>Đúng vì ta thấy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>,</mo><mo>∀</mo><mi>x</mi><mo>∈</mo><mi>D</mi><mo>⇒</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> là hàm số lẻ nên đồ thị hàm số nhận <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>O</mi></semantics></math> làm tâm đối xứng.</li></ol>",
+  "accepted_answers": []
+}

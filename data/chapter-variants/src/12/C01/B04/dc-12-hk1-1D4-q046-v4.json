@@ -1,0 +1,134 @@
+{
+  "id": "dc-12-hk1-1D4-q046-v4",
+  "source_fingerprint": "aea5d6554bef598f97c7b2103ec359e4b9bcfcaade433048ae48102441d7c220",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D4-q046-v4--bt01",
+      "number": 1,
+      "kind": "tf",
+      "prompt": "<div class=\"with-figure\"><div>Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>+</mo><mi>a</mi></mrow><mrow><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi></mrow></mfrac><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>∈</mo><mi>ℤ</mi><mo>)</mo></mrow></mrow></semantics></math> có đồ thị như hình vẽ bên. Xét tính đúng sai của các khẳng định sau:</div><figure class=\"tex-figure\"><img src=\"/variant-assets/2a49aa32cb910e1b1888d6e0ab308c1d1e5dcd41f357361582a2c45ab00686b9.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Đồ thị hàm số có tiệm cận đứng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Đồ thị hàm số có tiệm cận ngang là trục hoành"
+        },
+        {
+          "key": "c",
+          "text": "Hàm số đồng biến trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>−</mo><mn>3</mn><mi>b</mi><mo>−</mo><mn>2</mn><mi>c</mi><mo>=</mo><mo>−</mo><mn>4</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        false,
+        false,
+        true
+      ],
+      "solution": "Từ đồ thị ta có tiệm cận đứng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>, tiệm cận ngang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>=</mo><mn>3</mn></mrow></semantics></math> nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>b</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>c</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math>. Khi đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>−</mo><mn>3</mn><mi>b</mi><mo>−</mo><mn>2</mn><mi>c</mi><mo>=</mo><mo>−</mo><mn>4</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D4-q046-v4--bt02",
+      "number": 2,
+      "kind": "tf",
+      "prompt": "<div class=\"with-figure\"><div>Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>+</mo><mi>a</mi></mrow><mrow><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi></mrow></mfrac><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>∈</mo><mi>ℤ</mi><mo>)</mo></mrow></mrow></semantics></math> có đồ thị như hình vẽ bên. Xét tính đúng sai của các khẳng định sau:</div><figure class=\"tex-figure\"><img src=\"/variant-assets/889b054f307ac399ec91ff2e03d492f6ded34f21148f639452c66701f2ea9daa.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Đồ thị hàm số có tiệm cận đứng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Đồ thị hàm số có tiệm cận ngang là trục hoành"
+        },
+        {
+          "key": "c",
+          "text": "Hàm số nghịch biến trên từng khoảng xác định"
+        },
+        {
+          "key": "d",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>−</mo><mn>3</mn><mi>b</mi><mo>−</mo><mn>2</mn><mi>c</mi><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        false,
+        true,
+        true
+      ],
+      "solution": "Từ đồ thị ta có tiệm cận đứng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>, tiệm cận ngang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math> nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>b</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>c</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>. Khi đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>−</mo><mn>3</mn><mi>b</mi><mo>−</mo><mn>2</mn><mi>c</mi><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D4-q046-v4--bt03",
+      "number": 3,
+      "kind": "tf",
+      "prompt": "<div class=\"with-figure\"><div>Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>+</mo><mi>a</mi></mrow><mrow><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi></mrow></mfrac><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>∈</mo><mi>ℤ</mi><mo>)</mo></mrow></mrow></semantics></math> có đồ thị như hình vẽ bên. Xét tính đúng sai của các khẳng định sau:</div><figure class=\"tex-figure\"><img src=\"/variant-assets/bbf17ccd4f8f051688d7fba6bf918532d830b1591063eb727d219e784053fc73.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Đồ thị hàm số có tiệm cận đứng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Đồ thị hàm số có tiệm cận ngang là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Hàm số đồng biến trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>−</mo><mn>3</mn><mi>b</mi><mo>−</mo><mn>2</mn><mi>c</mi><mo>=</mo><mo>−</mo><mn>7</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "solution": "Từ đồ thị ta có tiệm cận đứng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>, tiệm cận ngang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math> nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>b</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>c</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math>. Khi đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>−</mo><mn>3</mn><mi>b</mi><mo>−</mo><mn>2</mn><mi>c</mi><mo>=</mo><mo>−</mo><mn>7</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D4-q046-v4--bt04",
+      "number": 4,
+      "kind": "tf",
+      "prompt": "<div class=\"with-figure\"><div>Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>+</mo><mi>a</mi></mrow><mrow><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi></mrow></mfrac><mrow><mo>(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>∈</mo><mi>ℤ</mi><mo>)</mo></mrow></mrow></semantics></math> có đồ thị như hình vẽ bên. Xét tính đúng sai của các khẳng định sau:</div><figure class=\"tex-figure\"><img src=\"/variant-assets/7549036e9495199bb126eb5b83e1a07d40f54b1c12cccdef500318f533160eb9.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Đồ thị hàm số có tiệm cận đứng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Đồ thị hàm số có tiệm cận ngang là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Hàm số đồng biến trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>−</mo><mn>3</mn><mi>b</mi><mo>−</mo><mn>2</mn><mi>c</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        false,
+        true,
+        false,
+        true
+      ],
+      "solution": "Từ đồ thị ta có tiệm cận đứng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>, tiệm cận ngang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math> nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>b</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>c</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>. Khi đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>−</mo><mn>3</mn><mi>b</mi><mo>−</mo><mn>2</mn><mi>c</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

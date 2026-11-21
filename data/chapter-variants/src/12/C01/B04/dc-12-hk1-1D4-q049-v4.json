@@ -1,0 +1,134 @@
+{
+  "id": "dc-12-hk1-1D4-q049-v4",
+  "source_fingerprint": "5831866fcb25332b1933cdc5743973c4ee610f1f4e5bd7cb0e7e20cb38c25562",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D4-q049-v4--bt01",
+      "number": 1,
+      "kind": "tf",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn></mrow></semantics></math> có đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>. Xét tính đúng sai các phát biểu sau:",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Tập xác định của hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Hàm số đồng biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Phương trình đường thẳng đi qua hai điểm cực trị của đồ thị hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>−</mo><mn>2</mn><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Diện tích của tam giác <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>A</mi><mi>B</mi></mrow></semantics></math> bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi></mrow></semantics></math> là gốc tọa độ và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow></semantics></math> là hai điểm cực trị"
+        }
+      ],
+      "correct": [
+        true,
+        false,
+        true,
+        true
+      ],
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>6</mn><mi>x</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> hoặc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>. Hai điểm cực trị là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mrow><mo>(</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo>)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi><mrow><mo>(</mo><mn>2</mn><mo>;</mo><mo>−</mo><mn>2</mn><mo>)</mo></mrow></mrow></semantics></math> và tâm đối xứng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mrow><mo>(</mo><mn>1</mn><mo>;</mo><mn>0</mn><mo>)</mo></mrow></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D4-q049-v4--bt02",
+      "number": 2,
+      "kind": "tf",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>6</mn></mrow></semantics></math> có đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>. Xét tính đúng sai các phát biểu sau:",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Tập xác định của hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Hàm số đồng biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Phương trình đường thẳng đi qua hai điểm cực trị của đồ thị hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>−</mo><mn>6</mn><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Diện tích của tam giác <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>A</mi><mi>B</mi></mrow></semantics></math> bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>8</mn></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi></mrow></semantics></math> là gốc tọa độ và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow></semantics></math> là hai điểm cực trị"
+        }
+      ],
+      "correct": [
+        true,
+        false,
+        true,
+        false
+      ],
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>6</mn><mi>x</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> hoặc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>. Hai điểm cực trị là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mrow><mo>(</mo><mn>0</mn><mo>;</mo><mn>6</mn><mo>)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi><mrow><mo>(</mo><mn>2</mn><mo>;</mo><mn>2</mn><mo>)</mo></mrow></mrow></semantics></math> và tâm đối xứng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mrow><mo>(</mo><mn>1</mn><mo>;</mo><mn>4</mn><mo>)</mo></mrow></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D4-q049-v4--bt03",
+      "number": 3,
+      "kind": "tf",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>8</mn></mrow></semantics></math> có đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>. Xét tính đúng sai các phát biểu sau:",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Tập xác định của hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Hàm số đồng biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Phương trình đường thẳng đi qua hai điểm cực trị của đồ thị hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>8</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mn>8</mn><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Diện tích của tam giác <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>A</mi><mi>B</mi></mrow></semantics></math> bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>16</mn></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi></mrow></semantics></math> là gốc tọa độ và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow></semantics></math> là hai điểm cực trị"
+        }
+      ],
+      "correct": [
+        true,
+        false,
+        false,
+        true
+      ],
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>12</mn><mi>x</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> hoặc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>. Hai điểm cực trị là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mrow><mo>(</mo><mn>0</mn><mo>;</mo><mn>8</mn><mo>)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi><mrow><mo>(</mo><mn>4</mn><mo>;</mo><mo>−</mo><mn>24</mn><mo>)</mo></mrow></mrow></semantics></math> (đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>:</mo><mn>8</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>−</mo><mn>8</mn><mo>=</mo><mn>0</mn></mrow></semantics></math>) và tâm đối xứng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mrow><mo>(</mo><mn>2</mn><mo>;</mo><mo>−</mo><mn>8</mn><mo>)</mo></mrow></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D4-q049-v4--bt04",
+      "number": 4,
+      "kind": "tf",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>8</mn></mrow></semantics></math> có đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>. Xét tính đúng sai các phát biểu sau:",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Tập xác định của hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Hàm số nghịch biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Phương trình đường thẳng đi qua hai điểm cực trị của đồ thị hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>−</mo><mn>8</mn><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Diện tích của tam giác <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>A</mi><mi>B</mi></mrow></semantics></math> bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>8</mn></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi></mrow></semantics></math> là gốc tọa độ và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow></semantics></math> là hai điểm cực trị"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>6</mn><mi>x</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> hoặc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>. Hai điểm cực trị là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mrow><mo>(</mo><mn>0</mn><mo>;</mo><mn>8</mn><mo>)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi><mrow><mo>(</mo><mn>2</mn><mo>;</mo><mn>4</mn><mo>)</mo></mrow></mrow></semantics></math> và tâm đối xứng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mrow><mo>(</mo><mn>1</mn><mo>;</mo><mn>6</mn><mo>)</mo></mrow></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

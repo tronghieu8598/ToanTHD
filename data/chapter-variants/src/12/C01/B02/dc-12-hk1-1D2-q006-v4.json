@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk1-1D2-q006-v4",
+  "source_fingerprint": "ceb37bed7f649d07f02e4b4c457b56f7e29696df10e322d0bb11e918a34fccc7",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D2-q006-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>N</mi></mrow></semantics></math> lần lượt là giá trị lớn nhất và nhỏ nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>8</mn><mo>ln</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>. Tính <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>N</mi></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>N</mi><mo>=</mo><mn>8</mn><mo>ln</mo><mn>2</mn><mo>−</mo><mn>2</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>N</mi><mo>=</mo><mn>8</mn><mo>ln</mo><mn>2</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>N</mi><mo>=</mo><mn>8</mn><mo>ln</mo><mn>3</mn><mo>−</mo><mn>8</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>N</mi><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "A",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>4</mn><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mn>8</mn><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn><mrow><mo>(</mo><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></mfrac></mrow></semantics></math>.<br>\n\t\tTrên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math> (nghiệm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> bị loại).<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mo>−</mo><mn>2</mn><mo>)</mo></mrow><mo>=</mo><mn>8</mn><mo>−</mo><mn>8</mn><mo>ln</mo><mn>3</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mo>=</mo><mn>2</mn><mo>−</mo><mn>8</mn><mo>ln</mo><mn>2</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math>.<br>\n\t\tDo đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>N</mi><mo>=</mo><mn>2</mn><mo>−</mo><mn>8</mn><mo>ln</mo><mn>2</mn></mrow></semantics></math>, suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>N</mi><mo>=</mo><mn>8</mn><mo>ln</mo><mn>2</mn><mo>−</mo><mn>2</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q006-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>N</mi></mrow></semantics></math> lần lượt là giá trị lớn nhất và nhỏ nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>12</mn><mo>ln</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>. Tính <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>N</mi></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>N</mi><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>N</mi><mo>=</mo><mn>12</mn><mo>ln</mo><mn>2</mn><mo>−</mo><mn>3</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>N</mi><mo>=</mo><mn>12</mn><mo>ln</mo><mn>3</mn><mo>−</mo><mn>12</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>N</mi><mo>=</mo><mn>12</mn><mo>ln</mo><mn>2</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>6</mn><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mn>12</mn><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>6</mn><mrow><mo>(</mo><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></mfrac></mrow></semantics></math>.<br>\n\t\tTrên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math> (nghiệm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> bị loại).<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mo>−</mo><mn>2</mn><mo>)</mo></mrow><mo>=</mo><mn>12</mn><mo>−</mo><mn>12</mn><mo>ln</mo><mn>3</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mo>=</mo><mn>3</mn><mo>−</mo><mn>12</mn><mo>ln</mo><mn>2</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math>.<br>\n\t\tDo đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>N</mi><mo>=</mo><mn>3</mn><mo>−</mo><mn>12</mn><mo>ln</mo><mn>2</mn></mrow></semantics></math>, suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>N</mi><mo>=</mo><mn>12</mn><mo>ln</mo><mn>2</mn><mo>−</mo><mn>3</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q006-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>N</mi></mrow></semantics></math> lần lượt là giá trị lớn nhất và nhỏ nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>4</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>16</mn><mo>ln</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>. Tính <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>N</mi></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>N</mi><mo>=</mo><mn>16</mn><mo>ln</mo><mn>2</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>N</mi><mo>=</mo><mn>16</mn><mo>ln</mo><mn>3</mn><mo>−</mo><mn>16</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>N</mi><mo>=</mo><mo>−</mo><mn>4</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>N</mi><mo>=</mo><mn>16</mn><mo>ln</mo><mn>2</mn><mo>−</mo><mn>4</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "D",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>8</mn><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mn>16</mn><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>8</mn><mrow><mo>(</mo><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></mfrac></mrow></semantics></math>.<br>\n\t\tTrên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math> (nghiệm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> bị loại).<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mo>−</mo><mn>2</mn><mo>)</mo></mrow><mo>=</mo><mn>16</mn><mo>−</mo><mn>16</mn><mo>ln</mo><mn>3</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mo>=</mo><mn>4</mn><mo>−</mo><mn>16</mn><mo>ln</mo><mn>2</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math>.<br>\n\t\tDo đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>N</mi><mo>=</mo><mn>4</mn><mo>−</mo><mn>16</mn><mo>ln</mo><mn>2</mn></mrow></semantics></math>, suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>N</mi><mo>=</mo><mn>16</mn><mo>ln</mo><mn>2</mn><mo>−</mo><mn>4</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q006-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>N</mi></mrow></semantics></math> lần lượt là giá trị lớn nhất và nhỏ nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>5</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>20</mn><mo>ln</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>. Tính <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>N</mi></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>N</mi><mo>=</mo><mo>−</mo><mn>5</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>N</mi><mo>=</mo><mn>20</mn><mo>ln</mo><mn>2</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>N</mi><mo>=</mo><mn>20</mn><mo>ln</mo><mn>2</mn><mo>−</mo><mn>5</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>N</mi><mo>=</mo><mn>20</mn><mo>ln</mo><mn>3</mn><mo>−</mo><mn>20</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>10</mn><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mn>20</mn><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>10</mn><mrow><mo>(</mo><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo>)</mo></mrow></mrow><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></mfrac></mrow></semantics></math>.<br>\n\t\tTrên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math> (nghiệm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> bị loại).<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mo>−</mo><mn>2</mn><mo>)</mo></mrow><mo>=</mo><mn>20</mn><mo>−</mo><mn>20</mn><mo>ln</mo><mn>3</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mo>=</mo><mn>5</mn><mo>−</mo><mn>20</mn><mo>ln</mo><mn>2</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math>.<br>\n\t\tDo đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>N</mi><mo>=</mo><mn>5</mn><mo>−</mo><mn>20</mn><mo>ln</mo><mn>2</mn></mrow></semantics></math>, suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>N</mi><mo>=</mo><mn>20</mn><mo>ln</mo><mn>2</mn><mo>−</mo><mn>5</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

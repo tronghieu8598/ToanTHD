@@ -1,0 +1,134 @@
+{
+  "id": "dc-12-hk1-1D4-q042-v4",
+  "source_fingerprint": "2d72bc41fd7b42d4bf98de8a3caf672be7f5adf89e0197de6f34af2b4e9c7cc0",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D4-q042-v4--bt01",
+      "number": 1,
+      "kind": "tf",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn></mrow></semantics></math> có đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>. Xét tính đúng sai các phát biểu sau:",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Hàm số đồng biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>10</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Hàm số đạt cực đại tại điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Hàm số đạt giá trị nhỏ nhất trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Khoảng cách giữa hai điểm cực trị của đồ thị hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><msqrt><mn>5</mn></msqrt></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>6</mn><mi>x</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> hoặc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>. Hai điểm cực trị là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mrow><mo>(</mo><mn>0</mn><mo>;</mo><mn>5</mn><mo>)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi><mrow><mo>(</mo><mn>2</mn><mo>;</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math> và tâm đối xứng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mrow><mo>(</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo>)</mo></mrow></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D4-q042-v4--bt02",
+      "number": 2,
+      "kind": "tf",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn></mrow></semantics></math> có đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>. Xét tính đúng sai các phát biểu sau:",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Hàm số đồng biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Hàm số đạt cực đại tại điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Hàm số đạt giá trị nhỏ nhất trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Khoảng cách giữa hai điểm cực trị của đồ thị hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><msqrt><mn>5</mn></msqrt></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>6</mn><mi>x</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> hoặc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>. Hai điểm cực trị là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mrow><mo>(</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo>)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi><mrow><mo>(</mo><mn>2</mn><mo>;</mo><mo>−</mo><mn>2</mn><mo>)</mo></mrow></mrow></semantics></math> và tâm đối xứng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mrow><mo>(</mo><mn>1</mn><mo>;</mo><mn>0</mn><mo>)</mo></mrow></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D4-q042-v4--bt03",
+      "number": 3,
+      "kind": "tf",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></semantics></math> có đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>. Xét tính đúng sai các phát biểu sau:",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Hàm số đồng biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>10</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Hàm số đạt cực đại tại điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Hàm số đạt giá trị nhỏ nhất trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>28</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Khoảng cách giữa hai điểm cực trị của đồ thị hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><msqrt><mn>10</mn></msqrt></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        false,
+        true,
+        true,
+        false
+      ],
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>12</mn><mi>x</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> hoặc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>. Hai điểm cực trị là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mrow><mo>(</mo><mn>0</mn><mo>;</mo><mn>4</mn><mo>)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi><mrow><mo>(</mo><mn>4</mn><mo>;</mo><mo>−</mo><mn>28</mn><mo>)</mo></mrow></mrow></semantics></math> và tâm đối xứng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mrow><mo>(</mo><mn>2</mn><mo>;</mo><mo>−</mo><mn>12</mn><mo>)</mo></mrow></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D4-q042-v4--bt04",
+      "number": 4,
+      "kind": "tf",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn></mrow></semantics></math> có đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>. Xét tính đúng sai các phát biểu sau:",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Hàm số đồng biến trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Hàm số đạt cực đại tại điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Hàm số đạt giá trị nhỏ nhất trên khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>7</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Khoảng cách giữa hai điểm cực trị của đồ thị hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><msqrt><mn>5</mn></msqrt></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        false,
+        true,
+        true
+      ],
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>6</mn><mi>x</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> hoặc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>. Hai điểm cực trị là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mrow><mo>(</mo><mn>0</mn><mo>;</mo><mo>−</mo><mn>3</mn><mo>)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi><mrow><mo>(</mo><mn>2</mn><mo>;</mo><mo>−</mo><mn>7</mn><mo>)</mo></mrow></mrow></semantics></math> và tâm đối xứng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mrow><mo>(</mo><mn>1</mn><mo>;</mo><mo>−</mo><mn>5</mn><mo>)</mo></mrow></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

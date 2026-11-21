@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk1-1D2-q017-v4",
+  "source_fingerprint": "234994f7dbd02934620d1186bd2d124a8f2f444161729b120ed654210af9b2df",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D2-q017-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mo>cos</mo><mi>x</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>+</mo><mn>2</mn><mo>cos</mo><mn>2</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>. Tính <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>M</mi><mo>−</mo><mi>m</mi></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi></mrow></semantics></math> lần lượt là giá trị lớn nhất, giá trị nhỏ nhất của hàm số đã cho.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>9</mn><mo>+</mo><mfrac displaystyle=\"true\"><msqrt><mn>3</mn></msqrt><mn>9</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>12</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>6</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>9</mn><mo>−</mo><mfrac displaystyle=\"true\"><msqrt><mn>3</mn></msqrt><mn>9</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mo>cos</mo><mi>x</mi><mrow><mo>(</mo><mn>1</mn><mo>+</mo><mn>2</mn><mrow><mo>(</mo><mn>2</mn><msup><mo>cos</mo><mn>2</mn></msup><mi>x</mi><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mo>)</mo></mrow><mo>=</mo><mn>4</mn><msup><mo>cos</mo><mn>3</mn></msup><mi>x</mi><mo>−</mo><mo>cos</mo><mi>x</mi></mrow></semantics></math>.<br>\n\t\tĐặt <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mo>cos</mo><mi>x</mi><mo>∈</mo><mrow><mo>[</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>]</mo></mrow></mrow></semantics></math>. Xét hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow><mo>=</mo><mn>4</mn><msup><mi>u</mi><mn>3</mn></msup><mo>−</mo><mi>u</mi></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mi>′</mi><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow><mo>=</mo><mn>12</mn><msup><mi>u</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>u</mi><mo>=</mo><mo>±</mo><mfrac displaystyle=\"true\"><msqrt><mn>3</mn></msqrt><mn>6</mn></mfrac><mo>∈</mo><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math>.<br>\n\t\tTính các giá trị: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow><mo>=</mo><mn>3</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo>(</mo><mo>±</mo><mfrac displaystyle=\"true\"><msqrt><mn>3</mn></msqrt><mn>6</mn></mfrac><mo>)</mo></mrow><mo>=</mo><mo>∓</mo><mfrac displaystyle=\"true\"><msqrt><mn>3</mn></msqrt><mn>9</mn></mfrac></mrow></semantics></math>.<br>\n\t\tDo đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>=</mo><mn>3</mn></mrow></semantics></math> (khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>) và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math> (khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>). Vậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>M</mi><mo>−</mo><mi>m</mi><mo>=</mo><mn>9</mn><mo>−</mo><mrow><mo>(</mo><mo>−</mo><mn>3</mn><mo>)</mo></mrow><mo>=</mo><mn>12</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q017-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>2</mn><mo>cos</mo><mi>x</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>+</mo><mn>2</mn><mo>cos</mo><mn>2</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>. Tính <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mi>M</mi><mo>−</mo><mi>m</mi></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi></mrow></semantics></math> lần lượt là giá trị lớn nhất, giá trị nhỏ nhất của hàm số đã cho.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>18</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>6</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>12</mn><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msqrt><mn>3</mn></msqrt></mrow><mn>9</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>12</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msqrt><mn>3</mn></msqrt></mrow><mn>9</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": "A",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>2</mn><mo>cos</mo><mi>x</mi><mrow><mo>(</mo><mn>1</mn><mo>+</mo><mn>2</mn><mrow><mo>(</mo><mn>2</mn><msup><mo>cos</mo><mn>2</mn></msup><mi>x</mi><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mo>)</mo></mrow><mo>=</mo><mn>8</mn><msup><mo>cos</mo><mn>3</mn></msup><mi>x</mi><mo>−</mo><mn>2</mn><mo>cos</mo><mi>x</mi></mrow></semantics></math>.<br>\n\t\tĐặt <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mo>cos</mo><mi>x</mi><mo>∈</mo><mrow><mo>[</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>]</mo></mrow></mrow></semantics></math>. Xét hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow><mo>=</mo><mn>8</mn><msup><mi>u</mi><mn>3</mn></msup><mo>−</mo><mn>2</mn><mi>u</mi></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mi>′</mi><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow><mo>=</mo><mn>24</mn><msup><mi>u</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>u</mi><mo>=</mo><mo>±</mo><mfrac displaystyle=\"true\"><msqrt><mn>3</mn></msqrt><mn>6</mn></mfrac><mo>∈</mo><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math>.<br>\n\t\tTính các giá trị: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mn>6</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow><mo>=</mo><mn>6</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo>(</mo><mo>±</mo><mfrac displaystyle=\"true\"><msqrt><mn>3</mn></msqrt><mn>6</mn></mfrac><mo>)</mo></mrow><mo>=</mo><mo>∓</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msqrt><mn>3</mn></msqrt></mrow><mn>9</mn></mfrac></mrow></semantics></math>.<br>\n\t\tDo đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>=</mo><mn>6</mn></mrow></semantics></math> (khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>) và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mo>−</mo><mn>6</mn></mrow></semantics></math> (khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>). Vậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mi>M</mi><mo>−</mo><mi>m</mi><mo>=</mo><mn>12</mn><mo>−</mo><mrow><mo>(</mo><mo>−</mo><mn>6</mn><mo>)</mo></mrow><mo>=</mo><mn>18</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q017-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>3</mn><mo>cos</mo><mi>x</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>+</mo><mn>2</mn><mo>cos</mo><mn>2</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>. Tính <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mi>M</mi><mo>−</mo><mi>m</mi></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi></mrow></semantics></math> lần lượt là giá trị lớn nhất, giá trị nhỏ nhất của hàm số đã cho.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>9</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>18</mn><mo>−</mo><mfrac displaystyle=\"true\"><msqrt><mn>3</mn></msqrt><mn>3</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>18</mn><mo>+</mo><mfrac displaystyle=\"true\"><msqrt><mn>3</mn></msqrt><mn>3</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>27</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "D",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>3</mn><mo>cos</mo><mi>x</mi><mrow><mo>(</mo><mn>1</mn><mo>+</mo><mn>2</mn><mrow><mo>(</mo><mn>2</mn><msup><mo>cos</mo><mn>2</mn></msup><mi>x</mi><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mo>)</mo></mrow><mo>=</mo><mn>12</mn><msup><mo>cos</mo><mn>3</mn></msup><mi>x</mi><mo>−</mo><mn>3</mn><mo>cos</mo><mi>x</mi></mrow></semantics></math>.<br>\n\t\tĐặt <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mo>cos</mo><mi>x</mi><mo>∈</mo><mrow><mo>[</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>]</mo></mrow></mrow></semantics></math>. Xét hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow><mo>=</mo><mn>12</mn><msup><mi>u</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><mi>u</mi></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mi>′</mi><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow><mo>=</mo><mn>36</mn><msup><mi>u</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>u</mi><mo>=</mo><mo>±</mo><mfrac displaystyle=\"true\"><msqrt><mn>3</mn></msqrt><mn>6</mn></mfrac><mo>∈</mo><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math>.<br>\n\t\tTính các giá trị: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mn>9</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow><mo>=</mo><mn>9</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo>(</mo><mo>±</mo><mfrac displaystyle=\"true\"><msqrt><mn>3</mn></msqrt><mn>6</mn></mfrac><mo>)</mo></mrow><mo>=</mo><mo>∓</mo><mfrac displaystyle=\"true\"><msqrt><mn>3</mn></msqrt><mn>3</mn></mfrac></mrow></semantics></math>.<br>\n\t\tDo đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>=</mo><mn>9</mn></mrow></semantics></math> (khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>) và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mo>−</mo><mn>9</mn></mrow></semantics></math> (khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>). Vậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mi>M</mi><mo>−</mo><mi>m</mi><mo>=</mo><mn>18</mn><mo>−</mo><mrow><mo>(</mo><mo>−</mo><mn>9</mn><mo>)</mo></mrow><mo>=</mo><mn>27</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q017-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>2</mn><mo>cos</mo><mi>x</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>+</mo><mn>2</mn><mo>cos</mo><mn>2</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>. Tính <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>M</mi><mo>−</mo><mi>m</mi></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi></mrow></semantics></math> lần lượt là giá trị lớn nhất, giá trị nhỏ nhất của hàm số đã cho.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>18</mn><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msqrt><mn>3</mn></msqrt></mrow><mn>9</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>18</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msqrt><mn>3</mn></msqrt></mrow><mn>9</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>24</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>12</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>2</mn><mo>cos</mo><mi>x</mi><mrow><mo>(</mo><mn>1</mn><mo>+</mo><mn>2</mn><mrow><mo>(</mo><mn>2</mn><msup><mo>cos</mo><mn>2</mn></msup><mi>x</mi><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mo>)</mo></mrow><mo>=</mo><mn>8</mn><msup><mo>cos</mo><mn>3</mn></msup><mi>x</mi><mo>−</mo><mn>2</mn><mo>cos</mo><mi>x</mi></mrow></semantics></math>.<br>\n\t\tĐặt <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mo>cos</mo><mi>x</mi><mo>∈</mo><mrow><mo>[</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>]</mo></mrow></mrow></semantics></math>. Xét hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow><mo>=</mo><mn>8</mn><msup><mi>u</mi><mn>3</mn></msup><mo>−</mo><mn>2</mn><mi>u</mi></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mi>′</mi><mrow><mo>(</mo><mi>u</mi><mo>)</mo></mrow><mo>=</mo><mn>24</mn><msup><mi>u</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>u</mi><mo>=</mo><mo>±</mo><mfrac displaystyle=\"true\"><msqrt><mn>3</mn></msqrt><mn>6</mn></mfrac><mo>∈</mo><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math>.<br>\n\t\tTính các giá trị: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mn>6</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow><mo>=</mo><mn>6</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>g</mi><mrow><mo>(</mo><mo>±</mo><mfrac displaystyle=\"true\"><msqrt><mn>3</mn></msqrt><mn>6</mn></mfrac><mo>)</mo></mrow><mo>=</mo><mo>∓</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msqrt><mn>3</mn></msqrt></mrow><mn>9</mn></mfrac></mrow></semantics></math>.<br>\n\t\tDo đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>=</mo><mn>6</mn></mrow></semantics></math> (khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>) và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mo>−</mo><mn>6</mn></mrow></semantics></math> (khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>). Vậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mi>M</mi><mo>−</mo><mi>m</mi><mo>=</mo><mn>18</mn><mo>−</mo><mrow><mo>(</mo><mo>−</mo><mn>6</mn><mo>)</mo></mrow><mo>=</mo><mn>24</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-1D3-q007-v4",
+  "original_number": 7,
+  "kind": "mcq",
+  "based_on": "a89ca571f7078e2f5a5275588280805f6306d8a19e732d89f276b7afaf41d44a",
+  "prompt": "Cho đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>:</mo><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow></mfrac></mrow></semantics></math> có hai đường tiệm cận cắt nhau tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>I</mi></semantics></math>. Tính độ dài đoạn thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>I</mi></mrow></semantics></math> (với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>O</mi></semantics></math> là gốc tọa độ).",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>I</mi><mo>=</mo><msqrt><mn>3</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>I</mi><mo>=</mo><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>I</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>I</mi><mo>=</mo><msqrt><mn>5</mn></msqrt></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Tập xác định <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi><mo>\\</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>±</mo><mi>∞</mi></mrow></munder><mi>y</mi><mo>=</mo><mn>01</mn></mrow></semantics></math> nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow></semantics></math> là đường tiệm cận ngang của đồ thị hàm số.<br>\n\t\tLại có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo></msup></mrow></munder><mi>y</mi><mo>=</mo><mo>−</mo><mi>∞</mi></mrow></semantics></math> nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math> là đường tiệm cận đứng của đồ thị hàm số.<br>\n\t\tSuy ra hai đường tiệm cận cắt nhau tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.<br>\n\t\tVậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>I</mi><mo>=</mo><msqrt><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mn>1</mn><mn>2</mn></msup></mrow></msqrt><mo>=</mo><msqrt><mn>5</mn></msqrt></mrow></semantics></math>.",
+  "accepted_answers": []
+}

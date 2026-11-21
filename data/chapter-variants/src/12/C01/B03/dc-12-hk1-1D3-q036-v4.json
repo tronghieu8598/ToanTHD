@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk1-1D3-q036-v4",
+  "source_fingerprint": "33077dadfc8a5c589f3564763f183509d43c051cb360ac0b872811a531b5d768",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D3-q036-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "<div class=\"with-figure\"><div>Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math> có đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>. Giả sử <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi></mrow></semantics></math> là hai điểm thuộc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> và đối xứng nhau qua giao điểm của hai đường tiệm cận. Dựng hình vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>E</mi><mi>B</mi><mi>F</mi></mrow></semantics></math>. Diện tích nhỏ nhất của hình vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>E</mi><mi>B</mi><mi>F</mi></mrow></semantics></math> là</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/variant-assets/527fb3c2e2692b2fd63092f3eac944cdfb867adca4ccb6d745a91e474364a850.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>12</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>6</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>12</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>24</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> có tiệm cận đứng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math> và tiệm cận ngang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>, giao điểm hai tiệm cận là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mrow><mo>(</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math>.<br>\n\t\tDiện tích hình vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>E</mi><mi>B</mi><mi>F</mi></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>A</mi><msup><mi>B</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mn>2</mn><mi>I</mi><msup><mi>A</mi><mn>2</mn></msup></mrow></semantics></math>.<br>\n\t\tGọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mrow><mo>(</mo><mi>x</mi><mo>;</mo><mn>1</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>3</mn><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math>, ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><msup><mi>A</mi><mn>2</mn></msup><mo>=</mo><msup><mrow><mo>(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><mfrac displaystyle=\"true\"><mn>9</mn><msup><mrow><mo>(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mn>2</mn></msup></mfrac><mo>≥</mo><mn>6</mn></mrow></semantics></math> (đẳng thức xảy ra khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn><mo>+</mo><msqrt><mn>3</mn></msqrt></mrow></semantics></math>).<br>\n\t\tVậy diện tích nhỏ nhất của hình vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>E</mi><mi>B</mi><mi>F</mi></mrow></semantics></math> bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mo>⋅</mo><mn>6</mn><mo>=</mo><mn>12</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D3-q036-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "<div class=\"with-figure\"><div>Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math> có đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>. Giả sử <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi></mrow></semantics></math> là hai điểm thuộc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> và đối xứng nhau qua giao điểm của hai đường tiệm cận. Dựng hình vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>E</mi><mi>B</mi><mi>F</mi></mrow></semantics></math>. Diện tích nhỏ nhất của hình vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>E</mi><mi>B</mi><mi>F</mi></mrow></semantics></math> là</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/variant-assets/28c46f0e4080b41b59abdb909ebdc7ec9b669417cdb212078b5ad2d7605d69da.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>16</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>16</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>32</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>8</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "A",
+      "solution": "Đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> có tiệm cận đứng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math> và tiệm cận ngang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>, giao điểm hai tiệm cận là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mrow><mo>(</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math>.<br>\n\t\tDiện tích hình vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>E</mi><mi>B</mi><mi>F</mi></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>A</mi><msup><mi>B</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mn>2</mn><mi>I</mi><msup><mi>A</mi><mn>2</mn></msup></mrow></semantics></math>.<br>\n\t\tGọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mrow><mo>(</mo><mi>x</mi><mo>;</mo><mn>1</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>4</mn><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math>, ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><msup><mi>A</mi><mn>2</mn></msup><mo>=</mo><msup><mrow><mo>(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><mfrac displaystyle=\"true\"><mn>16</mn><msup><mrow><mo>(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mn>2</mn></msup></mfrac><mo>≥</mo><mn>8</mn></mrow></semantics></math> (đẳng thức xảy ra khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn><mo>+</mo><mn>2</mn></mrow></semantics></math>).<br>\n\t\tVậy diện tích nhỏ nhất của hình vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>E</mi><mi>B</mi><mi>F</mi></mrow></semantics></math> bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mo>⋅</mo><mn>8</mn><mo>=</mo><mn>16</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D3-q036-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "<div class=\"with-figure\"><div>Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math> có đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>. Giả sử <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi></mrow></semantics></math> là hai điểm thuộc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> và đối xứng nhau qua giao điểm của hai đường tiệm cận. Dựng hình vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>E</mi><mi>B</mi><mi>F</mi></mrow></semantics></math>. Diện tích nhỏ nhất của hình vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>E</mi><mi>B</mi><mi>F</mi></mrow></semantics></math> là</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/variant-assets/979a60edbf77ee97c1c3cb9d0b7ed1444b033363cd8cd586c6791f23df21fae4.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>8</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> có tiệm cận đứng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math> và tiệm cận ngang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>, giao điểm hai tiệm cận là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mrow><mo>(</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo>)</mo></mrow></mrow></semantics></math>.<br>\n\t\tDiện tích hình vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>E</mi><mi>B</mi><mi>F</mi></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>A</mi><msup><mi>B</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mn>2</mn><mi>I</mi><msup><mi>A</mi><mn>2</mn></msup></mrow></semantics></math>.<br>\n\t\tGọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mrow><mo>(</mo><mi>x</mi><mo>;</mo><mn>2</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac><mo>)</mo></mrow></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math>, ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><msup><mi>A</mi><mn>2</mn></msup><mo>=</mo><msup><mrow><mo>(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><msup><mrow><mo>(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mn>2</mn></msup></mfrac><mo>≥</mo><mn>2</mn></mrow></semantics></math> (đẳng thức xảy ra khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn><mo>+</mo><mn>1</mn></mrow></semantics></math>).<br>\n\t\tVậy diện tích nhỏ nhất của hình vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>E</mi><mi>B</mi><mi>F</mi></mrow></semantics></math> bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mo>⋅</mo><mn>2</mn><mo>=</mo><mn>4</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D3-q036-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "<div class=\"with-figure\"><div>Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mfrac></mrow></semantics></math> có đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math>. Giả sử <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi></mrow></semantics></math> là hai điểm thuộc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> và đối xứng nhau qua giao điểm của hai đường tiệm cận. Dựng hình vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>E</mi><mi>B</mi><mi>F</mi></mrow></semantics></math>. Diện tích nhỏ nhất của hình vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>E</mi><mi>B</mi><mi>F</mi></mrow></semantics></math> là</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/variant-assets/930b86646e29db569f72951e73fe4b21afcc2c99323803b8fa0358bc3e431d15.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>10</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>40</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>20</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>20</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "D",
+      "solution": "Đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mi>C</mi><mo>)</mo></mrow></mrow></semantics></math> có tiệm cận đứng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> và tiệm cận ngang <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>, giao điểm hai tiệm cận là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mrow><mo>(</mo><mn>2</mn><mo>;</mo><mn>2</mn><mo>)</mo></mrow></mrow></semantics></math>.<br>\n\t\tDiện tích hình vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>E</mi><mi>B</mi><mi>F</mi></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>A</mi><msup><mi>B</mi><mn>2</mn></msup></mrow><mn>2</mn></mfrac><mo>=</mo><mn>2</mn><mi>I</mi><msup><mi>A</mi><mn>2</mn></msup></mrow></semantics></math>.<br>\n\t\tGọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mrow><mo>(</mo><mi>x</mi><mo>;</mo><mn>2</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>5</mn><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mfrac><mo>)</mo></mrow></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>2</mn></mrow></semantics></math>, ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><msup><mi>A</mi><mn>2</mn></msup><mo>=</mo><msup><mrow><mo>(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><mfrac displaystyle=\"true\"><mn>25</mn><msup><mrow><mo>(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo>)</mo></mrow><mn>2</mn></msup></mfrac><mo>≥</mo><mn>10</mn></mrow></semantics></math> (đẳng thức xảy ra khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn><mo>+</mo><msqrt><mn>5</mn></msqrt></mrow></semantics></math>).<br>\n\t\tVậy diện tích nhỏ nhất của hình vuông <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>E</mi><mi>B</mi><mi>F</mi></mrow></semantics></math> bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mo>⋅</mo><mn>10</mn><mo>=</mo><mn>20</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

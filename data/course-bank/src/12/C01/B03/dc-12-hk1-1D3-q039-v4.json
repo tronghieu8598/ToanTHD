@@ -1,0 +1,33 @@
+{
+  "id": "dc-12-hk1-1D3-q039-v4",
+  "original_number": 39,
+  "kind": "tf",
+  "based_on": "0ef9ac016124437df781edca96d6f7e01d3ff99cd1cf8e66a2fcdc86c0e3ff18",
+  "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> xác định trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi><mo>\\</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>0</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>, liên tục trên mỗi khoảng xác định và có bảng biến thiên như hình vẽ.\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/277750654cf3ffc6479a441786455823005941621146a6ecda5b09ee8228a547.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tXét tính đúng sai các khẳng định sau",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Đồ thị hàm số có đúng một tiệm cận ngang"
+    },
+    {
+      "key": "b",
+      "text": "Tiệm cận ngang của đồ thị hàm số có phương trình là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Đồ thị hàm số có đúng một tiệm cận đứng"
+    },
+    {
+      "key": "d",
+      "text": "Tiệm cận đúng của đồ thị hàm số có phương trình là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "solution": "Dựa vào bảng biến thiên, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mi>y</mi><mo>=</mo><mo>−</mo><mi>∞</mi></mrow></semantics></math>; <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>−</mo><mi>∞</mi></mrow></munder><mi>y</mi><mo>=</mo><mo>+</mo><mi>∞</mi></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mn>0</mn><mo>+</mo></msup></mrow></munder><mi>y</mi><mo>=</mo><mo>−</mo><mi>∞</mi></mrow></semantics></math>.<br>\n\t\tVậy đồ thị hàm số có một tiệm cận đứng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> và không có tiệm cận ngang.\n\t\t<ol class=\"alpha-list\"><li>Phát biểu đã cho sai.</li><li>Phát biểu đã cho sai.</li><li>Phát biểu đã cho đúng.</li><li>Phát biểu đã cho đúng.</li></ol>",
+  "accepted_answers": []
+}

@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk1-1D2-q009-v4",
+  "source_fingerprint": "5e2371c6db2939da38afded2eb5387cca74e4e38c63733e222ba1dfcad48ad0f",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D2-q009-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></semantics></math> liên tục trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math> và có bảng biến thiên như hình vẽ.\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/dc01b83e30dc907424a22c2c4255d4e648a423b901e9f31adb6676f32b64f645.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tKhẳng định nào sau đây là đúng?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Hàm số có giá trị nhỏ nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>2</mn></mrow></semantics></math> và giá trị lớn nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "Hàm số có hai điểm cực trị"
+        },
+        {
+          "key": "C",
+          "text": "Hàm số có giá trị cực đại bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>2</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "Hàm số đạt cực tiểu tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math> và đạt cực đại tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><mn>3</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Dựa vào bảng biến thiên, đạo hàm đổi dấu hai lần tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> nên hàm số có hai điểm cực trị (tập giá trị là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mo>+</mo><mi>∞</mi><mo>)</mo></mrow></mrow></semantics></math> nên hàm số không có giá trị lớn nhất và giá trị nhỏ nhất trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math>).",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q009-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></semantics></math> liên tục trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math> và có bảng biến thiên như hình vẽ.\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/3c759702b84fbd37b78d94cfe4332ff0124221e7f0dd39036e6a5f4cc80b926b.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tKhẳng định nào sau đây là đúng?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Hàm số có giá trị cực đại bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>1</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "Hàm số có giá trị nhỏ nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>1</mn></mrow></semantics></math> và giá trị lớn nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "Hàm số có hai điểm cực trị"
+        },
+        {
+          "key": "D",
+          "text": "Hàm số đạt cực tiểu tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math> và đạt cực đại tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><mn>4</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Dựa vào bảng biến thiên, đạo hàm đổi dấu hai lần tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math> nên hàm số có hai điểm cực trị (tập giá trị là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mo>+</mo><mi>∞</mi><mo>)</mo></mrow></mrow></semantics></math> nên hàm số không có giá trị lớn nhất và giá trị nhỏ nhất trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math>).",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q009-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></semantics></math> liên tục trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math> và có bảng biến thiên như hình vẽ.\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/3b2db51f85a874ce6ba5f0fceee965120354bca90ce19d76a16103a6983abf91.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tKhẳng định nào sau đây là đúng?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Hàm số đạt cực tiểu tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math> và đạt cực đại tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "Hàm số có giá trị cực đại bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>3</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "Hàm số có giá trị nhỏ nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>3</mn></mrow></semantics></math> và giá trị lớn nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "Hàm số có hai điểm cực trị"
+        }
+      ],
+      "correct": "D",
+      "solution": "Dựa vào bảng biến thiên, đạo hàm đổi dấu hai lần tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> nên hàm số có hai điểm cực trị (tập giá trị là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mo>+</mo><mi>∞</mi><mo>)</mo></mrow></mrow></semantics></math> nên hàm số không có giá trị lớn nhất và giá trị nhỏ nhất trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math>).",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q009-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mrow></semantics></math> liên tục trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math> và có bảng biến thiên như hình vẽ.\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/5b6fea48c64635ec6e1ead836ade1ddf1e38af1d5b7bca6c7d352436d2a3fefc.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tKhẳng định nào sau đây là đúng?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "Hàm số có hai điểm cực trị"
+        },
+        {
+          "key": "B",
+          "text": "Hàm số đạt cực tiểu tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mn>0</mn></mrow></semantics></math> và đạt cực đại tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><mn>5</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "Hàm số có giá trị cực đại bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "Hàm số có giá trị nhỏ nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn></mrow></semantics></math> và giá trị lớn nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "A",
+      "solution": "Dựa vào bảng biến thiên, đạo hàm đổi dấu hai lần tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></semantics></math> nên hàm số có hai điểm cực trị (tập giá trị là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mo>+</mo><mi>∞</mi><mo>)</mo></mrow></mrow></semantics></math> nên hàm số không có giá trị lớn nhất và giá trị nhỏ nhất trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>ℝ</mi></mrow></semantics></math>).",
+      "accepted_answers": []
+    }
+  ]
+}

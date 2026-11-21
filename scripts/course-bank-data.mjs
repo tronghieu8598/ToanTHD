@@ -4,6 +4,7 @@ import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 import path from 'node:path';
 import {courseRowPayload} from '../lib/course-bank.mjs';
+import {bankReleaseChapters} from '../lib/bank-release-chapters.mjs';
 const dataRoot=fileURLToPath(new URL('../data/course-bank/',import.meta.url));
 export function readFrozenCourseBank(folder=dataRoot){
  const manifest=JSON.parse(fs.readFileSync(path.join(folder,'manifest.json'),'utf8')),packed=fs.readFileSync(path.join(folder,'questions.json.gz'));
@@ -13,22 +14,35 @@ export function readFrozenCourseBank(folder=dataRoot){
 }
 export function readCourseBank(){
  const bundle=readFrozenCourseBank();
- const pilot=JSON.parse(fs.readFileSync(path.join(dataRoot,'generated','12-C06.json'),'utf8'));
- if(pilot.format!=='toanthd.bank-overlay/1'||pilot.base_sha256!==bundle.manifest.questions_sha256)
-   throw new Error('Gói Chương VI không khớp ngân hàng nguồn. Chạy npm run content:check.');
  const originals=new Map(bundle.questions.map(row=>[row.id,row]));
  const patches=new Map();
- for(const row of pilot.rows){
-   const original=originals.get(row.id);
-   if(!original||patches.has(row.id)||!/^dc-12-hk2-6D[12]-v4$/.test(original.lesson_id)
-       ||row.lesson_id!==original.lesson_id||row.original_number!==original.original_number||row.revision!==original.revision||row.kind!==original.kind
-       ||createHash('sha256').update(courseRowPayload(row)).digest('hex')!==row.bank_fingerprint)
-     throw new Error('Bản ghi Chương VI không hợp lệ: '+row.id);
-   patches.set(row.id,row);
+ const versions=[];
+ const summary=structuredClone(bundle.manifest.summary);
+ for(const [scope,chapter] of Object.entries(bankReleaseChapters)){
+   const overlay=JSON.parse(fs.readFileSync(path.join(dataRoot,'generated',scope+'.json'),'utf8'));
+   if(overlay.format!=='toanthd.bank-overlay/1'||overlay.base_sha256!==bundle.manifest.questions_sha256)
+     throw new Error('Gói '+scope+' không khớp ngân hàng nguồn. Chạy npm run content:check.');
+   const lessons=new Set(chapter.lessons.map(lesson=>lesson.id));
+   for(const row of overlay.rows){
+     const original=originals.get(row.id);
+     if(!original||patches.has(row.id)||!lessons.has(original.lesson_id)
+         ||row.lesson_id!==original.lesson_id||row.original_number!==original.original_number||row.revision!==original.revision||row.kind!==original.kind
+         ||!['auto','review','reference'].includes(row.bank_status)
+         ||createHash('sha256').update(courseRowPayload(row)).digest('hex')!==row.bank_fingerprint)
+       throw new Error('Bản ghi '+scope+' không hợp lệ '+row.id+'.');
+     if(row.bank_status!==original.bank_status){
+       for(const counts of [summary.by_status,summary.by_grade[chapter.grade]]){
+         counts[original.bank_status]--;
+         counts[row.bank_status]=(counts[row.bank_status]??0)+1;
+       }
+     }
+     patches.set(row.id,row);
+   }
+   if(overlay.rows.length)versions.push(overlay.version);
  }
  if(!patches.size)return bundle;
  return {
-   manifest:{...bundle.manifest,version:bundle.manifest.version+'+'+pilot.version},
+   manifest:{...bundle.manifest,summary,version:[bundle.manifest.version,...versions].join('+')},
    questions:bundle.questions.map(row=>patches.get(row.id)??row),
  };
 }

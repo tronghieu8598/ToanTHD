@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-1D1-q034-v4",
+  "original_number": 34,
+  "kind": "mcq",
+  "based_on": "25daf3e0eaf101a6fcf8b304872965ec014458a5336e23c476f814a78b655390",
+  "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>8</mn><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>1</mn></mrow></semantics></math>. Chọn mệnh đề đúng.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "Hàm số nhận điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><mn>6</mn></mrow></semantics></math> làm điểm cực đại"
+    },
+    {
+      "key": "B",
+      "text": "Hàm số nhận điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><mn>6</mn></mrow></semantics></math> làm điểm cực tiểu"
+    },
+    {
+      "key": "C",
+      "text": "Hàm số nhận điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mrow></semantics></math> làm điểm cực đại"
+    },
+    {
+      "key": "D",
+      "text": "Hàm số nhận điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mrow></semantics></math> làm điểm cực tiểu"
+    }
+  ],
+  "correct": "B",
+  "solution": "Tập xác định <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>4</mn><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>24</mn><msup><mi>x</mi><mn>3</mn></msup></mrow></semantics></math>. Khi đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mn>4</mn><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>24</mn><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>0</mn><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>6</mn><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math><br>\n\t\tBảng biến thiên như sau\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/17e0053e169cdf6eb2756ea1df1641365396b79d189af62ecf14e7986d91ef6d.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tTừ bảng biến thiên suy ra hàm số nhận điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><mn>6</mn></mrow></semantics></math> làm điểm cực tiểu.",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-1D2-q030-v4",
+  "original_number": 30,
+  "kind": "mcq",
+  "based_on": "8a9820aee2fa63a0c1a24fc7a8373f72738b960d0cf77baa76ce037418ab9863",
+  "prompt": "Từ một tấm gỗ lớn, người ta cắt ra một tấm gỗ có hình tam giác vuông có tổng của một cạnh góc vuông và cạnh huyền bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>120</mn></semantics></math> cm từ tấm gỗ trên sao cho tấm gỗ hình tam giác vuông có diện tích lớn nhất. Hỏi cạnh huyền của tấm gỗ này là bao nhiêu?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>40</mn></semantics></math> cm"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>40</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math> cm"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>80</mn></semantics></math> cm"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>40</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math> cm"
+    }
+  ],
+  "correct": "C",
+  "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>x</mi></semantics></math> (cm) là cạnh góc vuông của tấm gỗ hình tam giác vuông cắt được, khi đó cạnh huyền là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>120</mn><mo>−</mo><mi>x</mi></mrow></semantics></math> (cm) (với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>60</mn></mrow></semantics></math>).<br>\n\t\tCạnh góc vuông còn lại là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msqrt><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>120</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><msqrt><mrow><mn>240</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>60</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></msqrt></mrow></semantics></math>.<br>\n\t\tDiện tích của tam giác vuông là\n\t\t<div class=\"math-display\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>S</mi><mo>=</mo><mi>x</mi><mo>⋅</mo><msqrt><mrow><mn>240</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>60</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></msqrt><mo>=</mo><msqrt><mrow><mn>240</mn><msup><mi>x</mi><mn>2</mn></msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>60</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></msqrt><mi>.</mi></mrow></semantics></math></div>\n\t\tXét hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>240</mn><msup><mi>x</mi><mn>2</mn></msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>60</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>60</mn></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>240</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>120</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo>⇒</mo><mi>x</mi><mo>=</mo><mn>40</mn></mrow></semantics></math>.\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/658337aa376594bf590739ee0302aad55aa644e9c21d944818688c8df79140b7.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tTừ đó suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>max</mo><mi>S</mi><mo>=</mo><msqrt><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>40</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></msqrt><mo>=</mo><mn>1600</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math> khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>40</mn></mrow></semantics></math>.<br>\n\t\tCạnh huyền của tấm gỗ là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>120</mn><mo>−</mo><mn>40</mn><mo>=</mo><mn>80</mn></mrow></semantics></math> (cm).",
+  "accepted_answers": []
+}

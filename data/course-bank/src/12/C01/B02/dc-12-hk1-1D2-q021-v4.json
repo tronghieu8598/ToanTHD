@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-1D2-q021-v4",
+  "original_number": 21,
+  "kind": "mcq",
+  "based_on": "d06a9d82e665b9c4656930e8f9efd81e657cb60d8459cc33a17bd3d0ffdbd4d2",
+  "prompt": "Tìm giá trị nhỏ nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mo>cos</mo><mn>2</mn></msup><mn>2</mn><mi>x</mi><mo>−</mo><mo>sin</mo><mi>x</mi><mo>cos</mo><mi>x</mi><mo>+</mo><mn>4</mn></mrow></semantics></math> trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>ℝ</mi></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>7</mn><mn>2</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>3</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>10</mn><mn>3</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>16</mn><mn>5</mn></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mo>cos</mo><mn>2</mn></msup><mn>2</mn><mi>x</mi><mo>−</mo><mo>sin</mo><mi>x</mi><mo>cos</mo><mi>x</mi><mo>+</mo><mn>4</mn><mo>=</mo><mo>−</mo><msup><mo>sin</mo><mn>22</mn></msup><mi>x</mi><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>sin</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>5</mn></mrow></semantics></math>.<br>\n\t\tĐặt <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>=</mo><mo>sin</mo><mn>2</mn><mi>x</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>u</mi><mo>∈</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></mrow></semantics></math>, xét hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>u</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><msup><mi>u</mi><mn>2</mn></msup><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mi>u</mi><mo>+</mo><mn>5</mn></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>u</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>2</mn><mi>u</mi><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>u</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>u</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>4</mn></mfrac></mrow></semantics></math>.<br>\n\t\tBảng biến thiên\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/bc9836ea5d55dd164de8099068aa3fd044190b726e965fde13521032575a40d0.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tDựa vào bảng biến thiên ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mi>ℝ</mi></munder><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>7</mn><mn>2</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

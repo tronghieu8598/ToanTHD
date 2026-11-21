@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk1-1D2-q026-v4",
+  "source_fingerprint": "e19b9f4ed0743deef9e40a1e82ac2d60b8f965de908769597c59ce8e6458d93d",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D2-q026-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Một người muốn xây một cái bể chứa nước, dạng một khối hộp chữ nhật không nắp có thể tích bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>288</mn></mrow></semantics></math> dm<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>3</mn></msup></mrow></semantics></math>. Đáy bể là hình chữ nhật có chiều dài gấp đôi chiều rộng, giá thuê công nhân để xây bể là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>750000</mn></mrow></semantics></math> đồng/m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>. Nếu người đó biết xác định các kích thước của bể hợp lí thì chi phí thuê nhân công sẽ thấp nhất. Hỏi người đó trả chi phí thấp nhất để thuê công nhân xây dựng bể đó là bao nhiêu?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>62</mn></mrow></semantics></math> triệu đồng"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>62</mn></mrow></semantics></math> triệu đồng"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>62</mn></mrow></semantics></math> triệu đồng"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>15</mn></mrow></semantics></math> triệu đồng"
+        }
+      ],
+      "correct": "B",
+      "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> (dm) là chiều rộng đáy bể, chiều dài đáy là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mi>x</mi></mrow></semantics></math> (dm) và chiều cao là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>144</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow></semantics></math> (dm).<br>\n\t\tDiện tích xây bể là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mfrac displaystyle=\"true\"><mn>864</mn><mi>x</mi></mfrac></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>4</mn><mi>x</mi><mo>−</mo><mfrac displaystyle=\"true\"><mn>864</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>6</mn></mrow></semantics></math> (dm).<br>\n\t\tDiện tích nhỏ nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>216</mn></mrow></semantics></math> dm<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math> = <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>16</mn></mrow></semantics></math> m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>. Vậy chi phí thấp nhất là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>62</mn></mrow></semantics></math> triệu đồng.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q026-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Một người muốn xây một cái bể chứa nước, dạng một khối hộp chữ nhật không nắp có thể tích bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>972</mn></mrow></semantics></math> dm<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>3</mn></msup></mrow></semantics></math>. Đáy bể là hình chữ nhật có chiều dài gấp đôi chiều rộng, giá thuê công nhân để xây bể là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>500000</mn></mrow></semantics></math> đồng/m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>. Nếu người đó biết xác định các kích thước của bể hợp lí thì chi phí thuê nhân công sẽ thấp nhất. Hỏi người đó trả chi phí thấp nhất để thuê công nhân xây dựng bể đó là bao nhiêu?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>43</mn></mrow></semantics></math> triệu đồng"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>15</mn></mrow></semantics></math> triệu đồng"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>43</mn></mrow></semantics></math> triệu đồng"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>43</mn></mrow></semantics></math> triệu đồng"
+        }
+      ],
+      "correct": "C",
+      "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> (dm) là chiều rộng đáy bể, chiều dài đáy là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mi>x</mi></mrow></semantics></math> (dm) và chiều cao là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>486</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow></semantics></math> (dm).<br>\n\t\tDiện tích xây bể là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mfrac displaystyle=\"true\"><mn>2916</mn><mi>x</mi></mfrac></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>4</mn><mi>x</mi><mo>−</mo><mfrac displaystyle=\"true\"><mn>2916</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>9</mn></mrow></semantics></math> (dm).<br>\n\t\tDiện tích nhỏ nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>486</mn></mrow></semantics></math> dm<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math> = <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>86</mn></mrow></semantics></math> m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>. Vậy chi phí thấp nhất là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>43</mn></mrow></semantics></math> triệu đồng.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q026-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Một người muốn xây một cái bể chứa nước, dạng một khối hộp chữ nhật không nắp có thể tích bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>972</mn></mrow></semantics></math> dm<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>3</mn></msup></mrow></semantics></math>. Đáy bể là hình chữ nhật có chiều dài gấp đôi chiều rộng, giá thuê công nhân để xây bể là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1000000</mn></mrow></semantics></math> đồng/m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>. Nếu người đó biết xác định các kích thước của bể hợp lí thì chi phí thuê nhân công sẽ thấp nhất. Hỏi người đó trả chi phí thấp nhất để thuê công nhân xây dựng bể đó là bao nhiêu?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>15</mn></mrow></semantics></math> triệu đồng"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>86</mn></mrow></semantics></math> triệu đồng"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>86</mn></mrow></semantics></math> triệu đồng"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>86</mn></mrow></semantics></math> triệu đồng"
+        }
+      ],
+      "correct": "D",
+      "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> (dm) là chiều rộng đáy bể, chiều dài đáy là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mi>x</mi></mrow></semantics></math> (dm) và chiều cao là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>486</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow></semantics></math> (dm).<br>\n\t\tDiện tích xây bể là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mfrac displaystyle=\"true\"><mn>2916</mn><mi>x</mi></mfrac></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>4</mn><mi>x</mi><mo>−</mo><mfrac displaystyle=\"true\"><mn>2916</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>9</mn></mrow></semantics></math> (dm).<br>\n\t\tDiện tích nhỏ nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>486</mn></mrow></semantics></math> dm<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math> = <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>86</mn></mrow></semantics></math> m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>. Vậy chi phí thấp nhất là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>86</mn></mrow></semantics></math> triệu đồng.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D2-q026-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Một người muốn xây một cái bể chứa nước, dạng một khối hộp chữ nhật không nắp có thể tích bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2304</mn></mrow></semantics></math> dm<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>3</mn></msup></mrow></semantics></math>. Đáy bể là hình chữ nhật có chiều dài gấp đôi chiều rộng, giá thuê công nhân để xây bể là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>500000</mn></mrow></semantics></math> đồng/m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>. Nếu người đó biết xác định các kích thước của bể hợp lí thì chi phí thuê nhân công sẽ thấp nhất. Hỏi người đó trả chi phí thấp nhất để thuê công nhân xây dựng bể đó là bao nhiêu?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>32</mn></mrow></semantics></math> triệu đồng"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>15</mn></mrow></semantics></math> triệu đồng"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>32</mn></mrow></semantics></math> triệu đồng"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>32</mn></mrow></semantics></math> triệu đồng"
+        }
+      ],
+      "correct": "A",
+      "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> (dm) là chiều rộng đáy bể, chiều dài đáy là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mi>x</mi></mrow></semantics></math> (dm) và chiều cao là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1152</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow></semantics></math> (dm).<br>\n\t\tDiện tích xây bể là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mfrac displaystyle=\"true\"><mn>6912</mn><mi>x</mi></mfrac></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>4</mn><mi>x</mi><mo>−</mo><mfrac displaystyle=\"true\"><mn>6912</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>12</mn></mrow></semantics></math> (dm).<br>\n\t\tDiện tích nhỏ nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>864</mn></mrow></semantics></math> dm<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math> = <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>8</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>64</mn></mrow></semantics></math> m<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi/><mn>2</mn></msup></mrow></semantics></math>. Vậy chi phí thấp nhất là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>32</mn></mrow></semantics></math> triệu đồng.",
+      "accepted_answers": []
+    }
+  ]
+}

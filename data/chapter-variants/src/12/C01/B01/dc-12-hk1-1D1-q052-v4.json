@@ -1,0 +1,134 @@
+{
+  "id": "dc-12-hk1-1D1-q052-v4",
+  "source_fingerprint": "63e28d915aba3097be71e1b628e7057438e9d5a47c0bb1b7ee4fe7bc3ba9f0fa",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D1-q052-v4--bt01",
+      "number": 1,
+      "kind": "tf",
+      "prompt": "Trong thời gian <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>8</mn></mrow></semantics></math> phút đầu kể từ khi xuất phát, độ cao <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi></mrow></semantics></math> (tính bằng mét) so với mặt đất của một quả bóng bay vào thời điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi></mrow></semantics></math> phút được cho bởi công thức <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn><msup><mi>t</mi><mn>3</mn></msup><mo>−</mo><mn>27</mn><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>108</mn><mi>t</mi></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Tại thời điểm ban đầu, quả bóng đang ở mặt đất"
+        },
+        {
+          "key": "b",
+          "text": "Sau <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math> phút, quả bóng bay đạt độ cao <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>83</mn></mrow></semantics></math> mét so với mặt đất"
+        },
+        {
+          "key": "c",
+          "text": "Trong <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn></mrow></semantics></math> phút đầu tiên, quả bóng bay tăng dần độ cao"
+        },
+        {
+          "key": "d",
+          "text": "Từ phút thứ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn></mrow></semantics></math> đến phút thứ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>8</mn></mrow></semantics></math>, quả bóng bay đang tăng dần độ cao"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "solution": "Xét <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn><msup><mi>t</mi><mn>3</mn></msup><mo>−</mo><mn>27</mn><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>108</mn><mi>t</mi></mrow></semantics></math> trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>. Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>83</mn></mrow></semantics></math>, và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>6</mn><msup><mi>t</mi><mn>2</mn></msup><mo>−</mo><mn>54</mn><mi>t</mi><mo>+</mo><mn>108</mn><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>t</mi><mo>=</mo><mn>3</mn></mrow></semantics></math> hoặc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>6</mn></mrow></semantics></math>.<br>\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/9682d2021a7a3599d2b8c6d427a40c92fa76adbec98a67402003510aef4de2fd.svg\" alt=\"Bảng biến thiên\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tQuả bóng tăng độ cao trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>6</mn><mo>;</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, giảm độ cao trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>;</mo><mn>6</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D1-q052-v4--bt02",
+      "number": 2,
+      "kind": "tf",
+      "prompt": "Trong thời gian <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>8</mn></mrow></semantics></math> phút đầu kể từ khi xuất phát, độ cao <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi></mrow></semantics></math> (tính bằng mét) so với mặt đất của một quả bóng bay vào thời điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi></mrow></semantics></math> phút được cho bởi công thức <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>4</mn><msup><mi>t</mi><mn>3</mn></msup><mo>−</mo><mn>54</mn><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>216</mn><mi>t</mi></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Tại thời điểm ban đầu, quả bóng đang ở mặt đất"
+        },
+        {
+          "key": "b",
+          "text": "Sau <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math> phút, quả bóng bay đạt độ cao <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>160</mn></mrow></semantics></math> mét so với mặt đất"
+        },
+        {
+          "key": "c",
+          "text": "Trong <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn></mrow></semantics></math> phút đầu tiên, quả bóng bay tăng dần độ cao"
+        },
+        {
+          "key": "d",
+          "text": "Từ phút thứ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn></mrow></semantics></math> đến phút thứ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>8</mn></mrow></semantics></math>, quả bóng bay đang tăng dần độ cao"
+        }
+      ],
+      "correct": [
+        true,
+        false,
+        true,
+        false
+      ],
+      "solution": "Xét <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>4</mn><msup><mi>t</mi><mn>3</mn></msup><mo>−</mo><mn>54</mn><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>216</mn><mi>t</mi></mrow></semantics></math> trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>. Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>166</mn></mrow></semantics></math>, và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>12</mn><msup><mi>t</mi><mn>2</mn></msup><mo>−</mo><mn>108</mn><mi>t</mi><mo>+</mo><mn>216</mn><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>t</mi><mo>=</mo><mn>3</mn></mrow></semantics></math> hoặc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>6</mn></mrow></semantics></math>.<br>\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/2b9203bbaa83000a321d74b714444c1690c1006d4d8b0ba4356e4872c486183d.svg\" alt=\"Bảng biến thiên\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tQuả bóng tăng độ cao trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>6</mn><mo>;</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, giảm độ cao trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>;</mo><mn>6</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D1-q052-v4--bt03",
+      "number": 3,
+      "kind": "tf",
+      "prompt": "Trong thời gian <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>7</mn></mrow></semantics></math> phút đầu kể từ khi xuất phát, độ cao <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi></mrow></semantics></math> (tính bằng mét) so với mặt đất của một quả bóng bay vào thời điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi></mrow></semantics></math> phút được cho bởi công thức <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn><msup><mi>t</mi><mn>3</mn></msup><mo>−</mo><mn>21</mn><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>60</mn><mi>t</mi></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Tại thời điểm ban đầu, quả bóng đang ở mặt đất"
+        },
+        {
+          "key": "b",
+          "text": "Sau <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math> phút, quả bóng bay đạt độ cao <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>41</mn></mrow></semantics></math> mét so với mặt đất"
+        },
+        {
+          "key": "c",
+          "text": "Trong <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn></mrow></semantics></math> phút đầu tiên, quả bóng bay tăng dần độ cao"
+        },
+        {
+          "key": "d",
+          "text": "Từ phút thứ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn></mrow></semantics></math> đến phút thứ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>7</mn></mrow></semantics></math>, quả bóng bay đang tăng dần độ cao"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "solution": "Xét <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn><msup><mi>t</mi><mn>3</mn></msup><mo>−</mo><mn>21</mn><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>60</mn><mi>t</mi></mrow></semantics></math> trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>7</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>. Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>41</mn></mrow></semantics></math>, và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>6</mn><msup><mi>t</mi><mn>2</mn></msup><mo>−</mo><mn>42</mn><mi>t</mi><mo>+</mo><mn>60</mn><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>t</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> hoặc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>5</mn></mrow></semantics></math>.<br>\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/3fb75102b3b9fc83634e1539a66fc1d741a739a20c9b16c1b2915504bf21f3eb.svg\" alt=\"Bảng biến thiên\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tQuả bóng tăng độ cao trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>5</mn><mo>;</mo><mn>7</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, giảm độ cao trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D1-q052-v4--bt04",
+      "number": 4,
+      "kind": "tf",
+      "prompt": "Trong thời gian <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>7</mn></mrow></semantics></math> phút đầu kể từ khi xuất phát, độ cao <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi></mrow></semantics></math> (tính bằng mét) so với mặt đất của một quả bóng bay vào thời điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi></mrow></semantics></math> phút được cho bởi công thức <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>4</mn><msup><mi>t</mi><mn>3</mn></msup><mo>−</mo><mn>42</mn><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>120</mn><mi>t</mi></mrow></semantics></math>.",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Tại thời điểm ban đầu, quả bóng đang ở mặt đất"
+        },
+        {
+          "key": "b",
+          "text": "Sau <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math> phút, quả bóng bay đạt độ cao <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>80</mn></mrow></semantics></math> mét so với mặt đất"
+        },
+        {
+          "key": "c",
+          "text": "Trong <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn></mrow></semantics></math> phút đầu tiên, quả bóng bay tăng dần độ cao"
+        },
+        {
+          "key": "d",
+          "text": "Từ phút thứ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn></mrow></semantics></math> đến phút thứ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>7</mn></mrow></semantics></math>, quả bóng bay đang tăng dần độ cao"
+        }
+      ],
+      "correct": [
+        true,
+        false,
+        true,
+        false
+      ],
+      "solution": "Xét <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>4</mn><msup><mi>t</mi><mn>3</mn></msup><mo>−</mo><mn>42</mn><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>120</mn><mi>t</mi></mrow></semantics></math> trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>7</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>. Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>82</mn></mrow></semantics></math>, và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>12</mn><msup><mi>t</mi><mn>2</mn></msup><mo>−</mo><mn>84</mn><mi>t</mi><mo>+</mo><mn>120</mn><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>t</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> hoặc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>5</mn></mrow></semantics></math>.<br>\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/77495ae3a623fcc4ebb42d44e50d3d70e797e1037760106e481e7058422752f7.svg\" alt=\"Bảng biến thiên\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tQuả bóng tăng độ cao trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>5</mn><mo>;</mo><mn>7</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, giảm độ cao trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

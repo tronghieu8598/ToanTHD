@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-1D2-q013-v4",
+  "original_number": 13,
+  "kind": "mcq",
+  "based_on": "baf82066c79eba071977ab2314b3e52fbd567778aab2b96a444d24dd1e3d360d",
+  "prompt": "Giá trị nhỏ nhất, lớn nhất của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>x</mi><mo>−</mo><mo>ln</mo><mi>x</mi></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>;</mo><mi mathvariant=\"normal\">e</mi><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> theo thứ tự là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>1</mn></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mo>ln</mo><mn>2</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mo>ln</mo><mn>2</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">e</mi><mo>−</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>1</mn></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">e</mi><mo>−</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>1</mn></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi mathvariant=\"normal\">e</mi></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>x</mi></mfrac></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>x</mi></mfrac><mo>=</mo><mn>0</mn><mo>⇔</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mi>x</mi></mfrac><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>1</mn><mo>∈</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>;</mo><mi mathvariant=\"normal\">e</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.<br>\n\t\tLại có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mo>ln</mo><mn>2</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi mathvariant=\"normal\">e</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi mathvariant=\"normal\">e</mi><mo>−</mo><mn>1</mn></mrow></semantics></math>.<br>\n\t\tDo đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>max</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>;</mo><mi mathvariant=\"normal\">e</mi><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>y</mi><mo>=</mo><mi mathvariant=\"normal\">e</mi><mo>−</mo><mn>1</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munder><mo>min</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>;</mo><mi mathvariant=\"normal\">e</mi><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></munder><mi>y</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

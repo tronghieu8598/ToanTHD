@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-1D4-q019-v4",
+  "original_number": 19,
+  "kind": "mcq",
+  "based_on": "1f410d06f01177955ed41cb1c135c241b1099220480792ca9b5aa4866a6894dd",
+  "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mo>cos</mo><mi>x</mi></mrow></semantics></math> có đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>. Viết phương trình tiếp tuyến của đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> tại giao điểm của <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> với trục tung.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>x</mi><mo>+</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mi>x</mi><mo>+</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mi>x</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Thay <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> vào hàm số ta được <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>sin</mo><mn>0</mn><mo>+</mo><mo>cos</mo><mn>0</mn><mo>=</mo><mn>1</mn></mrow></semantics></math>. Suy ra giao điểm của <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> với trục tung là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mo>cos</mo><mi>x</mi><mo>−</mo><mo>sin</mo><mi>x</mi></mrow></semantics></math>.<br>\n\t\tPhương trình tiếp tuyến của <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>M</mi></semantics></math> là\n\t\t<div class=\"math-display\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>y</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mn>1</mn><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>cos</mo><mn>0</mn><mo>−</mo><mo>sin</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>x</mi><mo>+</mo><mn>1</mn><mo>=</mo><mi>x</mi><mo>+</mo><mn>1</mn><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

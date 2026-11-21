@@ -1,0 +1,58 @@
+{
+  "id": "dc-12-hk1-1D4-q067-v4",
+  "source_fingerprint": "100ce5367964513665fb71170cc88fc9943e9f4b78626d745bc3dd7458ef5637",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D4-q067-v4--bt01",
+      "number": 1,
+      "kind": "short",
+      "prompt": "Một xe ô tô chở khách du lịch có sức chứa tối đa là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>15</mn></mrow></semantics></math> hành khách. Trong một khu du lịch, một đoàn khách gồm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>20</mn></mrow></semantics></math> người đang đi bộ và muốn thuê xe về khách sạn. Lái xe đưa ra thỏa thuận với đoàn khách du lịch như sau: Nếu một chuyến xe chở <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi></mrow></semantics></math> (người) thì giá tiền cho mỗi người là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><msup><mrow><mo>(</mo><mn>36</mn><mo>−</mo><mi>x</mi><mo>)</mo></mrow><mn>2</mn></msup><mn>2</mn></mfrac></mrow></semantics></math> (nghìn đồng). Với thỏa thuận như trên thì lái xe có thể thu được nhiều nhất bao nhiêu triệu đồng từ một chuyến chở khách (làm tròn kết quả đến hàng phần trăm)?",
+      "choices": [],
+      "correct": "3.46",
+      "solution": "Số tiền thu được là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><msup><mrow><mo>(</mo><mn>36</mn><mo>−</mo><mi>x</mi><mo>)</mo></mrow><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow></semantics></math> (nghìn đồng) với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℤ</mi><mo>,</mo><mn>1</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>15</mn></mrow></semantics></math>.<br>\n\t\tGiải <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>12</mn><mo>∈</mo><mrow><mo>(</mo><mn>0</mn><mo>;</mo><mn>15</mn><mo>]</mo></mrow></mrow></semantics></math>, tại đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mn>12</mn><mo>)</mo></mrow><mo>=</mo><mn>3456</mn></mrow></semantics></math> nghìn đồng, xấp xỉ 3,46 triệu đồng.",
+      "accepted_answers": [
+        "3.46",
+        "3,46"
+      ]
+    },
+    {
+      "id": "dc-12-hk1-1D4-q067-v4--bt02",
+      "number": 2,
+      "kind": "short",
+      "prompt": "Một xe ô tô chở khách du lịch có sức chứa tối đa là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>18</mn></mrow></semantics></math> hành khách. Trong một khu du lịch, một đoàn khách gồm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>25</mn></mrow></semantics></math> người đang đi bộ và muốn thuê xe về khách sạn. Lái xe đưa ra thỏa thuận với đoàn khách du lịch như sau: Nếu một chuyến xe chở <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi></mrow></semantics></math> (người) thì giá tiền cho mỗi người là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><msup><mrow><mo>(</mo><mn>45</mn><mo>−</mo><mi>x</mi><mo>)</mo></mrow><mn>2</mn></msup><mn>2</mn></mfrac></mrow></semantics></math> (nghìn đồng). Với thỏa thuận như trên thì lái xe có thể thu được nhiều nhất bao nhiêu triệu đồng từ một chuyến chở khách (làm tròn kết quả đến hàng phần trăm)?",
+      "choices": [],
+      "correct": "6.75",
+      "solution": "Số tiền thu được là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><msup><mrow><mo>(</mo><mn>45</mn><mo>−</mo><mi>x</mi><mo>)</mo></mrow><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow></semantics></math> (nghìn đồng) với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℤ</mi><mo>,</mo><mn>1</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>18</mn></mrow></semantics></math>.<br>\n\t\tGiải <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>15</mn><mo>∈</mo><mrow><mo>(</mo><mn>0</mn><mo>;</mo><mn>18</mn><mo>]</mo></mrow></mrow></semantics></math>, tại đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mn>15</mn><mo>)</mo></mrow><mo>=</mo><mn>6750</mn></mrow></semantics></math> nghìn đồng, xấp xỉ 6,75 triệu đồng.",
+      "accepted_answers": [
+        "6.75",
+        "6,75"
+      ]
+    },
+    {
+      "id": "dc-12-hk1-1D4-q067-v4--bt03",
+      "number": 3,
+      "kind": "short",
+      "prompt": "Một xe ô tô chở khách du lịch có sức chứa tối đa là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>16</mn></mrow></semantics></math> hành khách. Trong một khu du lịch, một đoàn khách gồm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>24</mn></mrow></semantics></math> người đang đi bộ và muốn thuê xe về khách sạn. Lái xe đưa ra thỏa thuận với đoàn khách du lịch như sau: Nếu một chuyến xe chở <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi></mrow></semantics></math> (người) thì giá tiền cho mỗi người là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><msup><mrow><mo>(</mo><mn>42</mn><mo>−</mo><mi>x</mi><mo>)</mo></mrow><mn>2</mn></msup><mn>2</mn></mfrac></mrow></semantics></math> (nghìn đồng). Với thỏa thuận như trên thì lái xe có thể thu được nhiều nhất bao nhiêu triệu đồng từ một chuyến chở khách (làm tròn kết quả đến hàng phần trăm)?",
+      "choices": [],
+      "correct": "5.49",
+      "solution": "Số tiền thu được là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><msup><mrow><mo>(</mo><mn>42</mn><mo>−</mo><mi>x</mi><mo>)</mo></mrow><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow></semantics></math> (nghìn đồng) với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℤ</mi><mo>,</mo><mn>1</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>16</mn></mrow></semantics></math>.<br>\n\t\tGiải <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>14</mn><mo>∈</mo><mrow><mo>(</mo><mn>0</mn><mo>;</mo><mn>16</mn><mo>]</mo></mrow></mrow></semantics></math>, tại đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mn>14</mn><mo>)</mo></mrow><mo>=</mo><mn>5488</mn></mrow></semantics></math> nghìn đồng, xấp xỉ 5,49 triệu đồng.",
+      "accepted_answers": [
+        "5.49",
+        "5,49"
+      ]
+    },
+    {
+      "id": "dc-12-hk1-1D4-q067-v4--bt04",
+      "number": 4,
+      "kind": "short",
+      "prompt": "Một xe ô tô chở khách du lịch có sức chứa tối đa là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>20</mn></mrow></semantics></math> hành khách. Trong một khu du lịch, một đoàn khách gồm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>28</mn></mrow></semantics></math> người đang đi bộ và muốn thuê xe về khách sạn. Lái xe đưa ra thỏa thuận với đoàn khách du lịch như sau: Nếu một chuyến xe chở <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi></mrow></semantics></math> (người) thì giá tiền cho mỗi người là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><msup><mrow><mo>(</mo><mn>48</mn><mo>−</mo><mi>x</mi><mo>)</mo></mrow><mn>2</mn></msup><mn>2</mn></mfrac></mrow></semantics></math> (nghìn đồng). Với thỏa thuận như trên thì lái xe có thể thu được nhiều nhất bao nhiêu triệu đồng từ một chuyến chở khách (làm tròn kết quả đến hàng phần trăm)?",
+      "choices": [],
+      "correct": "8.19",
+      "solution": "Số tiền thu được là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><msup><mrow><mo>(</mo><mn>48</mn><mo>−</mo><mi>x</mi><mo>)</mo></mrow><mn>2</mn></msup></mrow><mn>2</mn></mfrac></mrow></semantics></math> (nghìn đồng) với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℤ</mi><mo>,</mo><mn>1</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>20</mn></mrow></semantics></math>.<br>\n\t\tGiải <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>16</mn><mo>∈</mo><mrow><mo>(</mo><mn>0</mn><mo>;</mo><mn>20</mn><mo>]</mo></mrow></mrow></semantics></math>, tại đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mn>16</mn><mo>)</mo></mrow><mo>=</mo><mn>8192</mn></mrow></semantics></math> nghìn đồng, xấp xỉ 8,19 triệu đồng.",
+      "accepted_answers": [
+        "8.19",
+        "8,19"
+      ]
+    }
+  ]
+}

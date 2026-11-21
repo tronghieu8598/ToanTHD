@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-1D2-q023-v4",
+  "original_number": 23,
+  "kind": "mcq",
+  "based_on": "92e19d649d5ce2c45fa1e4df50cffc273cf3d0cd0f11fdee2e5205501914424a",
+  "prompt": "Một cái hộp có dạng hình hộp chữ nhật có thể tích bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>48</mn></semantics></math> và chiều dài gấp đôi chiều rộng. Chất liệu làm đáy và bốn mặt bên của hộp có giá thành gấp ba lần giá thành của chất liệu làm nắp hộp. Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>h</mi></semantics></math> là chiều cao của hộp để giá thành của hộp là thấp nhất. Biết <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>m</mi><mi>n</mi></mfrac></mrow></semantics></math>, với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>m</mi></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>n</mi></semantics></math> là các số nguyên dương nguyên tố cùng nhau. Tổng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>12</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>13</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>11</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>10</mn></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>x</mi></semantics></math> là chiều rộng của hình hộp chữ nhật (<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>), suy ra chiều dài là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mi>x</mi></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>⋅</mo><mn>2</mn><mi>x</mi><mo>⋅</mo><mi>h</mi><mo>=</mo><mn>48</mn><mo>⇒</mo><mi>h</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>24</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow></semantics></math>.<br>\n\t\tGiả sử giá thành chất liệu để làm nắp là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>S</mi></semantics></math> trên một đơn vị diện tích. Tổng số tiền để làm hộp là\n\t\t<div class=\"math-display\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>T</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mi>x</mi><mi>h</mi><mo>+</mo><mn>2</mn><mo>⋅</mo><mn>2</mn><mi>x</mi><mi>h</mi><mo>+</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⋅</mo><mn>3</mn><mi>S</mi><mo>+</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>⋅</mo><mi>S</mi><mo>=</mo><mn>3</mn><mi>S</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>144</mn><mi>x</mi></mfrac><mo>+</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mn>2</mn><mi>S</mi><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>54</mn><mi>x</mi></mfrac><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⋅</mo><mn>8</mn><mi>S</mi><mi>.</mi></mrow></semantics></math></div>\n\t\tÁp dụng bất đẳng thức AM - GM ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>54</mn><mi>x</mi></mfrac><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><mo>≥</mo><mn>3</mn><mroot><msup><mn>27</mn><mn>2</mn></msup><mn>3</mn></mroot><mo>=</mo><mn>27</mn></mrow></semantics></math>, suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>T</mi><mo>≥</mo><mn>216</mn><mi>S</mi></mrow></semantics></math>. <br>\n\t\tGiá thành của hộp thấp nhất khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>27</mn><mi>x</mi></mfrac><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⇔</mo><msup><mi>x</mi><mn>3</mn></msup><mo>=</mo><mn>27</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>3</mn><mo>⇒</mo><mi>h</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>24</mn><msup><mn>3</mn><mn>2</mn></msup></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>8</mn><mn>3</mn></mfrac></mrow></semantics></math>.<br>\n\t\tSuy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>8</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>3</mn></mrow></semantics></math> nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>+</mo><mi>n</mi><mo>=</mo><mn>8</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>11</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

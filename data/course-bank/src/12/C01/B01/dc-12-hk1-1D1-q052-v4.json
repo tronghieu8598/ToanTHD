@@ -1,0 +1,33 @@
+{
+  "id": "dc-12-hk1-1D1-q052-v4",
+  "original_number": 52,
+  "kind": "tf",
+  "based_on": "63e28d915aba3097be71e1b628e7057438e9d5a47c0bb1b7ee4fe7bc3ba9f0fa",
+  "prompt": "Trong thời gian <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>8</mn></semantics></math> phút đầu kể từ khi xuất phát, độ cao <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>h</mi></semantics></math> (tính bằng mét) so với mặt đất của một quả bóng bay vào thời điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> phút được cho bởi công thức <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>6</mn><msup><mi>t</mi><mn>3</mn></msup><mo>−</mo><mn>81</mn><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>324</mn><mi>t</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Tại thời điểm ban đầu, quả bóng đang ở mặt đất"
+    },
+    {
+      "key": "b",
+      "text": "Sau <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>1</mn></semantics></math> phút, quả bóng bay đạt độ cao <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>250</mn></semantics></math> mét so với mặt đất"
+    },
+    {
+      "key": "c",
+      "text": "Trong <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>3</mn></semantics></math> phút đầu tiên, quả bóng bay tăng dần độ cao"
+    },
+    {
+      "key": "d",
+      "text": "Từ phút thứ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>3</mn></semantics></math> đến phút thứ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>8</mn></semantics></math>, quả bóng bay đang tăng dần độ cao"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    true,
+    false
+  ],
+  "solution": "Xét <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>6</mn><msup><mi>t</mi><mn>3</mn></msup><mo>−</mo><mn>81</mn><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>324</mn><mi>t</mi></mrow></semantics></math> (<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>t</mi><mo>≤</mo><mn>8</mn></mrow></semantics></math>).<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>18</mn><msup><mi>t</mi><mn>2</mn></msup><mo>−</mo><mn>162</mn><mi>t</mi><mo>+</mo><mn>324</mn></mrow></semantics></math>; <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>t</mi><mo>=</mo><mn>3</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>t</mi><mo>=</mo><mn>6</mn><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math><br>\n\t\tBảng biến thiên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/cec4f624e3da05edfc5f26469ad3770832d1021fbf7cd9b5f8a533c499b67774.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\t<ol class=\"alpha-list\"><li>Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math>. Suy ra tại thời điểm ban đầu, quả bóng đang ở mặt đất.</li><li>Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>6</mn><mo>⋅</mo><mn>1</mn><mo>−</mo><mn>81</mn><mo>⋅</mo><mn>1</mn><mo>+</mo><mn>324</mn><mo>⋅</mo><mn>1</mn><mo>=</mo><mn>249</mn></mrow></semantics></math>.<br>\n\t\t\tSuy ra sau <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>1</mn></semantics></math> phút, quả bóng bay đạt độ cao <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>249</mn></semantics></math> mét so với mặt đất.</li><li>Từ bảng biến thiên, ta thấy trong <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>3</mn></semantics></math> phút đầu tiên, quả bóng bay tăng dần độ cao.</li><li>Từ bảng biến thiên ta thấy từ phút thứ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>3</mn></semantics></math> đến phút thứ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>6</mn></semantics></math> quả bóng bay giảm dần độ cao. Sau đó từ phút thứ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>6</mn></semantics></math> đến phút thứ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>8</mn></semantics></math>, quả bóng tăng dần độ cao.</li></ol>",
+  "accepted_answers": []
+}

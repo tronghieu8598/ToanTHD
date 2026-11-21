@@ -1,0 +1,134 @@
+{
+  "id": "dc-12-hk1-1D4-q041-v4",
+  "source_fingerprint": "6aa6534f3996b566bb8385ea5ab10be178a7c528da71e127bedc58597ece4279",
+  "variants": [
+    {
+      "id": "dc-12-hk1-1D4-q041-v4--bt01",
+      "number": 1,
+      "kind": "tf",
+      "prompt": "<div class=\"with-figure\"><div>Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>a</mi><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mi>b</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>c</mi><mi>x</mi><mo>+</mo><mi>d</mi></mrow></semantics></math> có đồ thị như hình vẽ bên. Xét tính đúng sai của các khẳng định sau:</div><figure class=\"tex-figure\"><img src=\"/variant-assets/ef0e075d1c1b2bb48ddd437c3d646557791b693130e16f47a07fb982b0df97d6.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Hàm số có hai điểm cực trị"
+        },
+        {
+          "key": "b",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>&gt;</mo><mn>0</mn><mo>,</mo><mo>∀</mo><mi>x</mi><mo>∈</mo><mrow><mo>(</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mo>&lt;</mo><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "solution": "Đồ thị đi qua điểm cực đại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mn>0</mn><mo>;</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math> và điểm cực tiểu <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mn>2</mn><mo>;</mo><mo>−</mo><mn>3</mn><mo>)</mo></mrow></mrow></semantics></math> nên hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></semantics></math>, nghịch biến trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D4-q041-v4--bt02",
+      "number": 2,
+      "kind": "tf",
+      "prompt": "<div class=\"with-figure\"><div>Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>a</mi><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mi>b</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>c</mi><mi>x</mi><mo>+</mo><mi>d</mi></mrow></semantics></math> có đồ thị như hình vẽ bên. Xét tính đúng sai của các khẳng định sau:</div><figure class=\"tex-figure\"><img src=\"/variant-assets/818e364a16b04dac92186b156625ac32f3404673e66b2ee8d7c968e31263e3ba.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Hàm số có hai điểm cực trị"
+        },
+        {
+          "key": "b",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>=</mo><mn>3</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>&lt;</mo><mn>0</mn><mo>,</mo><mo>∀</mo><mi>x</mi><mo>∈</mo><mrow><mo>(</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mo>&lt;</mo><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "solution": "Đồ thị đi qua điểm cực đại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mn>0</mn><mo>;</mo><mn>3</mn><mo>)</mo></mrow></mrow></semantics></math> và điểm cực tiểu <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mn>2</mn><mo>;</mo><mo>−</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math> nên hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn></mrow></semantics></math>, nghịch biến trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D4-q041-v4--bt03",
+      "number": 3,
+      "kind": "tf",
+      "prompt": "<div class=\"with-figure\"><div>Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>a</mi><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mi>b</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>c</mi><mi>x</mi><mo>+</mo><mi>d</mi></mrow></semantics></math> có đồ thị như hình vẽ bên. Xét tính đúng sai của các khẳng định sau:</div><figure class=\"tex-figure\"><img src=\"/variant-assets/9d9ca18befcc51e03459fffb53d1695fa12ca856afa1e62c24d67125ac31442b.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Hàm số có hai điểm cực trị"
+        },
+        {
+          "key": "b",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>&lt;</mo><mn>0</mn><mo>,</mo><mo>∀</mo><mi>x</mi><mo>∈</mo><mrow><mo>(</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mo>&gt;</mo><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        false,
+        true,
+        true
+      ],
+      "solution": "Đồ thị đi qua điểm cực đại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mn>0</mn><mo>;</mo><mn>4</mn><mo>)</mo></mrow></mrow></semantics></math> và điểm cực tiểu <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mn>2</mn><mo>;</mo><mn>0</mn><mo>)</mo></mrow></mrow></semantics></math> nên hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></semantics></math>, nghịch biến trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-1D4-q041-v4--bt04",
+      "number": 4,
+      "kind": "tf",
+      "prompt": "<div class=\"with-figure\"><div>Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><mi>a</mi><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mi>b</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>c</mi><mi>x</mi><mo>+</mo><mi>d</mi></mrow></semantics></math> có đồ thị như hình vẽ bên. Xét tính đúng sai của các khẳng định sau:</div><figure class=\"tex-figure\"><img src=\"/variant-assets/007a24d8f51bc8b92cb7f35610bff49e79dc44c7359101f9f192f6215a2a7b93.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Hàm số có ba điểm cực trị"
+        },
+        {
+          "key": "b",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mn>0</mn><mo>)</mo></mrow><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>&lt;</mo><mn>0</mn><mo>,</mo><mo>∀</mo><mi>x</mi><mo>∈</mo><mrow><mo>(</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mo>−</mo><mn>1</mn><mo>)</mo></mrow><mo>&gt;</mo><mi>f</mi><mi>′</mi><mrow><mo>(</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "solution": "Đồ thị đi qua điểm cực đại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mn>0</mn><mo>;</mo><mo>−</mo><mn>1</mn><mo>)</mo></mrow></mrow></semantics></math> và điểm cực tiểu <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo>(</mo><mn>2</mn><mo>;</mo><mo>−</mo><mn>5</mn><mo>)</mo></mrow></mrow></semantics></math> nên hàm số là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow></semantics></math>, nghịch biến trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-12-hk1-1D4-q048-v4",
+  "original_number": 48,
+  "kind": "tf",
+  "based_on": "d0dc6306265c1e39c15c301193e54239d76b7b254ec6098d775f1494ea16ef39",
+  "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math>. Xét tính đúng sai của các khẳng định sau:",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Hàm số có đạo hàm là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Đồ thị hàm số đi qua điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Đồ thị hàm số và đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mi>x</mi><mo>−</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></mrow></semantics></math> có hai điểm chung"
+    },
+    {
+      "key": "d",
+      "text": "Phương trình tiếp tuyến của đồ thị hàm số tại điểm có hoành độ bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>2</mn></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>10</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "solution": "TXĐ: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi><mo>\\</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math><br>\n\t\t<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mn>3</mn></mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></mfrac></mrow></semantics></math>.\n\t\t<ol class=\"alpha-list\"><li>Sai</li><li>Đúng vì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mo>+</mo><mn>2</mn></mrow><mrow><mn>2</mn><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mn>4</mn></mrow></semantics></math>.</li><li>Sai.<br>\n\t\t\tPhương trình hoành độ giao điểm của <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mo>−</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></mrow></semantics></math> là:\n\t\t\t<div class=\"math-display\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mtable><mtr><mtd columnalign=\"center\" style=\"text-align: center\"><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mo>−</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></mtd></mtr><mtr><mtd columnalign=\"center\" style=\"text-align: center\"><mo>⇒</mo><mn>3</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⇔</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>4</mn><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mo>−</mo><mn>2</mn></mtd></mtr></mtable></semantics></math></div>\n\t\t\tVậy đồ thị hàm số và đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mi>x</mi><mo>−</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></mrow></semantics></math> có một điểm chung.</li><li>Đúng.<br>\n\t\t\tPhương trình tiếp tuyến của đồ thị hàm số tại điểm có hoành độ bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>2</mn></semantics></math> là: <div class=\"math-display\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>y</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>3</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mn>4</mn><mo>=</mo><mo>−</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>10</mn></mrow></semantics></math></div></li></ol>",
+  "accepted_answers": []
+}

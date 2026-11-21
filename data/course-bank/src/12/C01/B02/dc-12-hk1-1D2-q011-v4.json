@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-1D2-q011-v4",
+  "original_number": 11,
+  "kind": "mcq",
+  "based_on": "bc17409c2594c66c3ebfdfe8846c1f3cc6ee0c908174c76dc637227d83203423",
+  "prompt": "Hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>4</mn><mo>sin</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo>cos</mo><mi>x</mi></mrow></semantics></math> có giá trị lớn nhất <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>M</mi></semantics></math> và giá trị nhỏ nhất <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>m</mi></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>=</mo><mn>7</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>=</mo><mn>5</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mo>−</mo><mn>5</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mo>−</mo><mn>7</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>=</mo><mn>7</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mo>−</mo><mn>7</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>5</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>4</mn><mn>5</mn></mfrac><mo>sin</mo><mi>x</mi><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>5</mn></mfrac><mo>cos</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>5</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>sin</mo><mi>x</mi><mo>cos</mo><mi>α</mi><mo>−</mo><mo>sin</mo><mi>α</mi><mo>cos</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>5</mn><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mi>α</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>sin</mo><mi>α</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>5</mn></mfrac></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>cos</mo><mi>α</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>4</mn><mn>5</mn></mfrac></mrow></semantics></math>.<br>\n\t\tMà <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>1</mn><mo>≤</mo><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mi>α</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>≤</mo><mn>1</mn><mo>⇔</mo><mo>−</mo><mn>5</mn><mo>≤</mo><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mi>α</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>≤</mo><mn>5</mn><mo>⇔</mo><mo>−</mo><mn>5</mn><mo>≤</mo><mi>y</mi><mo>≤</mo><mn>5</mn></mrow></semantics></math>.<br>\n\t\tDo đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mo>=</mo><mn>5</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mo>−</mo><mn>5</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

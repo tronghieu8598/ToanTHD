@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-1D3-q016-v4",
+  "original_number": 16,
+  "kind": "mcq",
+  "based_on": "9d2905ed74c8711b57142ef2ac32d4f43fd7c59084fb3b844a48eccdf8b788df",
+  "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mi>x</mi></mfrac></mrow></semantics></math> có đồ thị <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>. Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>d</mi></semantics></math> là tích khoảng cách từ một điểm bất kì trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> đến các đường tiệm cận của <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>. Tính <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>d</mi></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mi>x</mi></mfrac><mo>=</mo><mn>1</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>2</mn><mi>x</mi></mfrac></mrow></semantics></math>,\n\t\t<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> có các đường tiệm cận là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>.<br>\n\t\tLấy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>;</mo><mn>1</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>2</mn><mi>x</mi></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>∈</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, ta có \n\t\t<div class=\"math-display\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"><mi mathvariant=\"normal\">d</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>M</mi><mo>,</mo><mi>x</mi><mo>=</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>,</mo><mi mathvariant=\"normal\">d</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>M</mi><mo>,</mo><mi>y</mi><mo>=</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mn>1</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>2</mn><mi>x</mi></mfrac><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mfrac displaystyle=\"true\"><mn>2</mn><mi>x</mi></mfrac><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow></mfrac><mi>.</mi></mtd></mtr></mtable></semantics></math></div>\n\t\tVậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>d</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>2</mn><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow></mfrac><mo>=</mo><mn>2</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}
