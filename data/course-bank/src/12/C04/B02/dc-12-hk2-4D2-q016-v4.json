@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk2-4D2-q016-v4",
+  "original_number": 16,
+  "kind": "mcq",
+  "based_on": "a3fd1cac2dfdde85c5efb48d76f14140bd460bef6e04e70e389e5df705a3070c",
+  "prompt": "Hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> liên tục trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>10</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> và thỏa mãn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munderover><mo>∫</mo><mn>0</mn><mn>10</mn></munderover><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mn>7</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munderover><mo>∫</mo><mn>2</mn><mn>6</mn></munderover><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>.\n\tTính giá trị của <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mo>=</mo><munderover><mo>∫</mo><mn>0</mn><mn>2</mn></munderover><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>+</mo><munderover><mo>∫</mo><mn>6</mn><mn>10</mn></munderover><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>4</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>4</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>10</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>7</mn></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Ta có\n\t\t<div class=\"math-display\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>P</mi><mo>=</mo><munderover><mo>∫</mo><mn>0</mn><mn>2</mn></munderover><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>+</mo><munderover><mo>∫</mo><mn>2</mn><mn>6</mn></munderover><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>+</mo><munderover><mo>∫</mo><mn>6</mn><mn>10</mn></munderover><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>−</mo><munderover><mo>∫</mo><mn>2</mn><mn>6</mn></munderover><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><munderover><mo>∫</mo><mn>0</mn><mn>10</mn></munderover><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>−</mo><munderover><mo>∫</mo><mn>2</mn><mn>6</mn></munderover><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mn>7</mn><mo>−</mo><mn>3</mn><mo>=</mo><mn>4</mn><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-3D2-q022-v4",
+  "original_number": 22,
+  "kind": "mcq",
+  "based_on": "bc0d794a280aefa7738c3ebbb940e86a0984952b77213a1842411c9b99efb390",
+  "prompt": "Thành tích môn nhảy cao của các vận động viên tại một giải điền kinh dành cho học sinh trung học phổ thông như sau:\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Mức xà (cm)</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>170</mn><mo>;</mo><mn>172</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>172</mn><mo>;</mo><mn>174</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>174</mn><mo>;</mo><mn>176</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>176</mn><mo>;</mo><mn>178</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td></tr><tr><td>Số vận động viên</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>3</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>10</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>6</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>1</mn></semantics></math></td></tr></tbody></table></div></div>\n\tTính giá trị trung bình thành tích môn nhảy cao của các vận động viên (làm tròn kết quả đến hàng phần mười).",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>173</mn><mo>,</mo><mn>5</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>173</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>174</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>170</mn></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Giá trị trung bình <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mi>x</mi><mo accent=\"true\">‾</mo></mover></semantics></math> của mẫu số liệu ghép nhóm là\n\t\t<div class=\"math-display\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mover><mi>x</mi><mo accent=\"true\">‾</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mo>⋅</mo><mn>171</mn><mo>+</mo><mn>10</mn><mo>⋅</mo><mn>173</mn><mo>+</mo><mn>6</mn><mo>⋅</mo><mn>175</mn><mo>+</mo><mn>1</mn><mo>⋅</mo><mn>177</mn></mrow><mn>20</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>513</mn><mo>+</mo><mn>1730</mn><mo>+</mo><mn>1050</mn><mo>+</mo><mn>177</mn></mrow><mn>20</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>3471</mn><mn>20</mn></mfrac><mo>=</mo><mn>173</mn><mo>,</mo><mn>5</mn></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

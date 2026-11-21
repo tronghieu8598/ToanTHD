@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk2-4D2-q022-v4",
+  "original_number": 22,
+  "kind": "mcq",
+  "based_on": "f2492aaea0d805276a7c1d766251e7a818e13db477bf0d86211240f0849e7e30",
+  "prompt": "Nếu <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munderover><mo>∫</mo><mi>a</mi><mi>b</mi></munderover><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munderover><mo>∫</mo><mi>a</mi><mi>b</mi></munderover><mi>g</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></semantics></math> thì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munderover><mo>∫</mo><mi>a</mi><mi>b</mi></munderover><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>5</mn><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>−</mo><mn>2</mn><mi>g</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi></mrow></semantics></math> bằng bao nhiêu?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>4</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>11</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>8</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>16</mn></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Ta có <div class=\"math-display\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><munderover><mo>∫</mo><mi>a</mi><mi>b</mi></munderover><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>5</mn><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>−</mo><mn>2</mn><mi>g</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mn>5</mn><munderover><mo>∫</mo><mi>a</mi><mi>b</mi></munderover><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>−</mo><mn>2</mn><munderover><mo>∫</mo><mi>a</mi><mi>b</mi></munderover><mi>g</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mn>5</mn><mo>⋅</mo><mn>2</mn><mo>−</mo><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>=</mo><mn>4</mn><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

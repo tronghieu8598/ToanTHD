@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk2-4D2-q023-v4",
+  "original_number": 23,
+  "kind": "mcq",
+  "based_on": "b376b51dfeb991a704056b6146d3fd66699bedca55199684a125ab0ad5434ca1",
+  "prompt": "Cho <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munderover><mo>∫</mo><mrow><mo>−</mo><mn>1</mn></mrow><mn>2</mn></munderover><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munderover><mo>∫</mo><mrow><mo>−</mo><mn>1</mn></mrow><mn>2</mn></munderover><mi>g</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>, khi đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munderover><mo>∫</mo><mrow><mo>−</mo><mn>1</mn></mrow><mn>2</mn></munderover><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mi>x</mi><mo>+</mo><mn>2</mn><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mn>3</mn><mi>g</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi></mrow></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>17</mn><mn>2</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>7</mn><mn>2</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>11</mn><mn>2</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Ta có \n\t\t<div class=\"math-display\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"><munderover><mo>∫</mo><mrow><mo>−</mo><mn>1</mn></mrow><mn>2</mn></munderover><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mi>x</mi><mo>+</mo><mn>2</mn><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mn>3</mn><mi>g</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi></mtd><mtd columnalign=\"center\" style=\"text-align: center\"><mo>=</mo></mtd><mtd columnalign=\"left\" style=\"text-align: left\"><munderover><mo>∫</mo><mrow><mo>−</mo><mn>1</mn></mrow><mn>2</mn></munderover><mi>x</mi><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>+</mo><mn>2</mn><munderover><mo>∫</mo><mrow><mo>−</mo><mn>1</mn></mrow><mn>2</mn></munderover><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>+</mo><mn>3</mn><munderover><mo>∫</mo><mrow><mo>−</mo><mn>1</mn></mrow><mn>2</mn></munderover><mi>g</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"center\" style=\"text-align: center\"><mo>=</mo></mtd><mtd columnalign=\"left\" style=\"text-align: left\"><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac><mo>+</mo><mn>4</mn><mo>−</mo><mn>3</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"center\" style=\"text-align: center\"><mo>=</mo></mtd><mtd columnalign=\"left\" style=\"text-align: left\"><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac><mi>.</mi></mtd></mtr></mtable></semantics></math></div>",
+  "accepted_answers": []
+}

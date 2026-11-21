@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk2-4D1-q005-v4",
+  "original_number": 5,
+  "kind": "mcq",
+  "based_on": "13eaec3b9669d8e477e6fb7945e16afb8e76453581ead551beebc3cd079701c3",
+  "prompt": "Cho hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> liên tục trên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>ℝ</mi></semantics></math> thỏa mãn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi mathvariant=\"normal\">d</mi><mi>x</mi><mo>=</mo><msup><mi mathvariant=\"normal\">e</mi><mrow><mo>−</mo><mn>2025</mn><mi>x</mi></mrow></msup><mo>+</mo><mi>C</mi></mrow></semantics></math>. Khẳng định nào sau đây là đúng?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><msup><mi mathvariant=\"normal\">e</mi><mrow><mo>−</mo><mn>2025</mn><mi>x</mi></mrow></msup><mn>2025</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>2025</mn><msup><mi mathvariant=\"normal\">e</mi><mrow><mo>−</mo><mn>2025</mn><mi>x</mi></mrow></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2025</mn><msup><mi mathvariant=\"normal\">e</mi><mrow><mo>−</mo><mn>2025</mn><mi>x</mi></mrow></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><msup><mi mathvariant=\"normal\">e</mi><mrow><mo>−</mo><mn>2025</mn><mi>x</mi></mrow></msup><mrow><mo>−</mo><mn>2025</mn></mrow></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi mathvariant=\"normal\">e</mi><mrow><mo>−</mo><mn>2025</mn><mi>x</mi></mrow></msup><mo>+</mo><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi><mo>=</mo><mo>−</mo><mn>2025</mn><msup><mi mathvariant=\"normal\">e</mi><mrow><mo>−</mo><mn>2025</mn><mi>x</mi></mrow></msup></mrow></semantics></math> nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>2025</mn><msup><mi mathvariant=\"normal\">e</mi><mrow><mo>−</mo><mn>2025</mn><mi>x</mi></mrow></msup></mrow></semantics></math>.",
+  "accepted_answers": []
+}

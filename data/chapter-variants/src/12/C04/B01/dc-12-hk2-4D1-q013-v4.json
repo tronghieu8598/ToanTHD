@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk2-4D1-q013-v4",
+  "source_fingerprint": "669d5c639298aa4d2e03b6029fc26150fe93ebaf1c28d98c3ebc29b150d971da",
+  "variants": [
+    {
+      "id": "dc-12-hk2-4D1-q013-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Họ nguyên hàm của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mo>cos</mo><mi>x</mi></mrow></semantics></math> là",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn><mi>x</mi><mo>−</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msup><mi>x</mi><mn>3</mn></msup></mrow><mrow><mn>3</mn></mrow></mfrac><mo>+</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-4D1-q013-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Họ nguyên hàm của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>4</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mo>cos</mo><mi>x</mi></mrow></semantics></math> là",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>8</mn><mi>x</mi><mo>−</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>4</mn></mrow><mrow><mn>3</mn></mrow></mfrac><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>4</mn></mrow><mrow><mn>3</mn></mrow></mfrac><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn><msup><mi>x</mi><mn>3</mn></msup></mrow><mrow><mn>3</mn></mrow></mfrac><mo>+</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-4D1-q013-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Họ nguyên hàm của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>5</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mo>cos</mo><mi>x</mi></mrow></semantics></math> là",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>10</mn><mi>x</mi><mo>−</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>5</mn></mrow><mrow><mn>3</mn></mrow></mfrac><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>5</mn></mrow><mrow><mn>3</mn></mrow></mfrac><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn><msup><mi>x</mi><mn>3</mn></msup></mrow><mrow><mn>3</mn></mrow></mfrac><mo>+</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-4D1-q013-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Họ nguyên hàm của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>7</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mo>cos</mo><mi>x</mi></mrow></semantics></math> là",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>14</mn><mi>x</mi><mo>−</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>7</mn><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>7</mn></mrow><mrow><mn>3</mn></mrow></mfrac><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>7</mn></mrow><mrow><mn>3</mn></mrow></mfrac><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>7</mn><msup><mi>x</mi><mn>3</mn></msup></mrow><mrow><mn>3</mn></mrow></mfrac><mo>+</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

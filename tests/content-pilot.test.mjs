@@ -118,15 +118,15 @@ test('Chapter I keeps the published variants and routes the held source question
 
 test('Chapter II editing applies only the approved question 58 correction and preserves variant holds', () => {
     const scope = '12-C02';
-    const lessonId = 'dc-12-hk1-2H1-v4';
+    const lessonIds = new Set(['dc-12-hk1-2H1-v4', 'dc-12-hk1-2H2-v4', 'dc-12-hk1-2H3-v4']);
     const reviewId = 'dc-12-hk1-2H1-q058-v4';
-    const originals = readFrozenCourseBank().questions.filter(row => row.lesson_id === lessonId);
+    const originals = readFrozenCourseBank().questions.filter(row => lessonIds.has(row.lesson_id));
     const [bank, variants] = compileContent('all', read, list, scope);
-    assert.equal(bank.summary.questions, 107);
+    assert.equal(bank.summary.questions, 218);
     assert.deepEqual(bank.summary.changed, [reviewId]);
     const unchanged = row => row.id !== reviewId;
     assert.deepEqual([...bank.effective.values()].filter(unchanged), originals.filter(unchanged));
-    assert.equal(variants.summary.available, 256);
+    assert.equal(variants.summary.available, 700);
     assert.deepEqual(variants.summary.changed, []);
     for (const result of [bank, variants]) {
         for (const [file, bytes] of result.files) assert.deepEqual(read(file), bytes);
@@ -137,8 +137,9 @@ test('Chapter II editing applies only the approved question 58 correction and pr
     assert.equal(sourceHolds.length, 43);
     const rows = readCourseBank().questions.filter(row => bank.effective.has(row.id));
     assert.deepEqual(rows, [...bank.effective.values()]);
+    assert.deepEqual(rows.filter(row => row.bank_status === 'review').map(row => row.id), ['dc-12-hk1-2H2-q037-v4']);
     const variantsByQuestion = new Map(rows.map(row => [row.id, availableQuestionVariantKeys(row)]));
-    assert.equal([...variantsByQuestion.values()].flat().length, 256);
+    assert.equal([...variantsByQuestion.values()].flat().length, 700);
     for (const hold of sourceHolds) assert.deepEqual(variantsByQuestion.get(hold.source_id), []);
 
     const original = originals.find(row => row.id === reviewId);
@@ -153,3 +154,50 @@ test('Chapter II editing applies only the approved question 58 correction and pr
     assert.notEqual(bank_fingerprint, original.bank_fingerprint);
     assert.equal(canEnterSession(decodeQuestion(approved)), true);
 });
+
+const chapterExpectations = [
+    {
+        scope: '12-C03',
+        lessonIds: ['dc-12-hk1-3D1-v4', 'dc-12-hk1-3D2-v4'],
+        questions: 151, variants: 604, reviewIds: [], heldVariants: 0,
+    },
+    {
+        scope: '12-C04',
+        lessonIds: ['dc-12-hk2-4D1-v4', 'dc-12-hk2-4D2-v4', 'dc-12-hk2-4D3-v4'],
+        questions: 153, variants: 576, heldVariants: 9,
+        reviewIds: ['dc-12-hk2-4D2-q026-v4', 'dc-12-hk2-4D3-q039-v4', 'dc-12-hk2-4D3-q056-v4'],
+    },
+    {
+        scope: '12-C05',
+        lessonIds: ['dc-12-hk2-5H1-v4', 'dc-12-hk2-5H2-v4', 'dc-12-hk2-5H3-v4'],
+        questions: 168, variants: 636, heldVariants: 9,
+        reviewIds: ['dc-12-hk2-5H2-q057-v4', 'dc-12-hk2-5H3-q028-v4', 'dc-12-hk2-5H3-q034-v4'],
+    },
+];
+
+for (const expected of chapterExpectations) {
+    test(`${expected.scope} keeps the approved source questions and variant holds`, () => {
+        const originals = readFrozenCourseBank().questions.filter(row => expected.lessonIds.includes(row.lesson_id));
+        const [bank, variants] = compileContent('all', read, list, expected.scope);
+        assert.equal(bank.summary.questions, expected.questions);
+        assert.deepEqual(bank.summary.changed, []);
+        assert.deepEqual([...bank.effective.values()], originals);
+        assert.equal(variants.summary.available, expected.variants);
+        assert.deepEqual(variants.summary.changed, []);
+        for (const result of [bank, variants]) {
+            for (const [file, bytes] of result.files) assert.deepEqual(read(file), bytes);
+        }
+
+        const rows = readCourseBank().questions.filter(row => expected.lessonIds.includes(row.lesson_id));
+        assert.deepEqual(rows, originals);
+        const held = rows.filter(row => row.bank_status === 'review');
+        assert.deepEqual(held.map(row => row.id), expected.reviewIds);
+        assert.ok(held.every(row => !canEnterSession(decodeQuestion(row))));
+        const chapters = JSON.parse(read('data/chapter-variants/manifest.json')).chapters;
+        const sourceHolds = chapters.find(entry => entry.id === expected.scope).held;
+        assert.equal(sourceHolds.length, expected.heldVariants);
+        for (const hold of sourceHolds) {
+            assert.deepEqual(availableQuestionVariantKeys(bank.effective.get(hold.source_id)), []);
+        }
+    });
+}

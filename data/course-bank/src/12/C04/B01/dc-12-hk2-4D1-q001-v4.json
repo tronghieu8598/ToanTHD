@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk2-4D1-q001-v4",
+  "original_number": 1,
+  "kind": "mcq",
+  "based_on": "d33fa7bb19141e9a2d21ed5a6b62eb817f9c29af393499bda7baca05a75c2b0b",
+  "prompt": "Họ nguyên hàm của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>x</mi><mo>+</mo><mo>sin</mo><mi>x</mi></mrow></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mo>cos</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac><mo>+</mo><mo>cos</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mo>cos</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac><mo>−</mo><mo>cos</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mo>=</mo><mo>∫</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mo>sin</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi mathvariant=\"normal\">d</mi><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mo>cos</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>",
+  "accepted_answers": []
+}

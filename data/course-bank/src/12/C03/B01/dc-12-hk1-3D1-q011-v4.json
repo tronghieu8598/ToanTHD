@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-3D1-q011-v4",
+  "original_number": 11,
+  "kind": "mcq",
+  "based_on": "332859929776a7f9d5ac0134bd8caecf8f150c9a023918b08860ccac73e58674",
+  "prompt": "Ở một phòng điều trị nội trú của bệnh viện, dữ liệu thống kê thời gian ngủ hằng đêm (đơn vị: phút) của hai bệnh nhân trong suốt một tháng được tổng hợp bởi hai bảng dưới đây:<br>\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Thời gian</td><td>Số đêm</td></tr><tr><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>180</mn><mo>;</mo><mn>240</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>5</mn></semantics></math></td></tr><tr><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>240</mn><mo>;</mo><mn>300</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>5</mn></semantics></math></td></tr><tr><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>300</mn><mo>;</mo><mn>360</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>10</mn></semantics></math></td></tr><tr><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>360</mn><mo>;</mo><mn>420</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>6</mn></semantics></math></td></tr><tr><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>420</mn><mo>;</mo><mn>480</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>4</mn></semantics></math></td></tr></tbody></table></div><br>\n\t\t\t<em> Bảng 1: Thời gian ngủ của bệnh nhân A</em></div>\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Thời gian</td><td>Số đêm</td></tr><tr><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>180</mn><mo>;</mo><mn>240</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td>2</td></tr><tr><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>240</mn><mo>;</mo><mn>300</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td>9</td></tr><tr><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>300</mn><mo>;</mo><mn>360</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td>12</td></tr><tr><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>360</mn><mo>;</mo><mn>420</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td>5</td></tr><tr><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>420</mn><mo>;</mo><mn>480</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td>2</td></tr></tbody></table></div><br>\n\t\t\t<em> Bảng 2: Thời gian ngủ của bệnh nhân B</em></div>\n\tCác mẫu số liệu ghép nhóm trên có cỡ mẫu là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>60</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>300</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>10</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>30</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Các mẫu số liệu ghép nhóm trên có cỡ mẫu là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>30</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

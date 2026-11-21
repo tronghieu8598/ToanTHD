@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk2-4D1-q003-v4",
+  "original_number": 3,
+  "kind": "mcq",
+  "based_on": "25da66a9409d718703d638b8af96e9052c8c7bcf1041814a8858fc6153398dbc",
+  "prompt": "Họ nguyên hàm của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mi mathvariant=\"normal\">e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo>+</mo><mn>1</mn></mrow></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup><mo>+</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><msup><mi mathvariant=\"normal\">e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo>+</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi mathvariant=\"normal\">e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo>+</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup><mo>+</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi mathvariant=\"normal\">e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo>+</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi mathvariant=\"normal\">d</mi><mi>x</mi><mo>=</mo><mo>−</mo><msup><mi mathvariant=\"normal\">e</mi><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo>+</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>.",
+  "accepted_answers": []
+}

@@ -1,0 +1,54 @@
+{
+  "id": "dc-12-hk2-4D1-q050-v4",
+  "source_fingerprint": "4663a12889dea069deeccab6541cd9324c86ca0b8ef0bd625904ec990b3c274d",
+  "variants": [
+    {
+      "id": "dc-12-hk2-4D1-q050-v4--bt01",
+      "number": 1,
+      "kind": "short",
+      "prompt": "Tốc độ tăng trưởng của một đàn gấu mèo tại thời điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> tháng kể từ khi người ta thả <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>120</mn></semantics></math> cá thể đầu tiên vào một khu rừng được ước lượng bởi công thức <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>6</mn><mi>t</mi><mo>+</mo><mn>25</mn></mrow></semantics></math> (con/tháng), với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> là số lượng cá thể trong đàn tại thời điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> tháng tương ứng. Dựa vào tốc độ tăng trưởng đã cho, hãy ước tính số cá thể của đàn gấu mèo này tại thời điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>4</mn></semantics></math> tháng kể từ khi chúng được thả vào rừng.<br>",
+      "choices": [],
+      "correct": "268",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>3</mn><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>25</mn><mi>t</mi><mo>+</mo><mn>120</mn></mrow></semantics></math>. Khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>3</mn><mo>⋅</mo><msup><mn>4</mn><mn>2</mn></msup><mo>+</mo><mn>25</mn><mo>⋅</mo><mn>4</mn><mo>+</mo><mn>120</mn><mo>=</mo><mn>268</mn></mrow></semantics></math>.",
+      "accepted_answers": [
+        "268"
+      ]
+    },
+    {
+      "id": "dc-12-hk2-4D1-q050-v4--bt02",
+      "number": 2,
+      "kind": "short",
+      "prompt": "Tốc độ tăng trưởng của một đàn gấu mèo tại thời điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> tháng kể từ khi người ta thả <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>150</mn></semantics></math> cá thể đầu tiên vào một khu rừng được ước lượng bởi công thức <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>10</mn><mi>t</mi><mo>+</mo><mn>20</mn></mrow></semantics></math> (con/tháng), với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> là số lượng cá thể trong đàn tại thời điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> tháng tương ứng. Dựa vào tốc độ tăng trưởng đã cho, hãy ước tính số cá thể của đàn gấu mèo này tại thời điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>3</mn></semantics></math> tháng kể từ khi chúng được thả vào rừng.<br>",
+      "choices": [],
+      "correct": "255",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>5</mn><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>20</mn><mi>t</mi><mo>+</mo><mn>150</mn></mrow></semantics></math>. Khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>5</mn><mo>⋅</mo><msup><mn>3</mn><mn>2</mn></msup><mo>+</mo><mn>20</mn><mo>⋅</mo><mn>3</mn><mo>+</mo><mn>150</mn><mo>=</mo><mn>255</mn></mrow></semantics></math>.",
+      "accepted_answers": [
+        "255"
+      ]
+    },
+    {
+      "id": "dc-12-hk2-4D1-q050-v4--bt03",
+      "number": 3,
+      "kind": "short",
+      "prompt": "Tốc độ tăng trưởng của một đàn gấu mèo tại thời điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> tháng kể từ khi người ta thả <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>80</mn></semantics></math> cá thể đầu tiên vào một khu rừng được ước lượng bởi công thức <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>8</mn><mi>t</mi><mo>+</mo><mn>35</mn></mrow></semantics></math> (con/tháng), với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> là số lượng cá thể trong đàn tại thời điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> tháng tương ứng. Dựa vào tốc độ tăng trưởng đã cho, hãy ước tính số cá thể của đàn gấu mèo này tại thời điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>5</mn></semantics></math> tháng kể từ khi chúng được thả vào rừng.<br>",
+      "choices": [],
+      "correct": "355",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>4</mn><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>35</mn><mi>t</mi><mo>+</mo><mn>80</mn></mrow></semantics></math>. Khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>5</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>4</mn><mo>⋅</mo><msup><mn>5</mn><mn>2</mn></msup><mo>+</mo><mn>35</mn><mo>⋅</mo><mn>5</mn><mo>+</mo><mn>80</mn><mo>=</mo><mn>355</mn></mrow></semantics></math>.",
+      "accepted_answers": [
+        "355"
+      ]
+    },
+    {
+      "id": "dc-12-hk2-4D1-q050-v4--bt04",
+      "number": 4,
+      "kind": "short",
+      "prompt": "Tốc độ tăng trưởng của một đàn gấu mèo tại thời điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> tháng kể từ khi người ta thả <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>200</mn></semantics></math> cá thể đầu tiên vào một khu rừng được ước lượng bởi công thức <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>12</mn><mi>t</mi><mo>+</mo><mn>15</mn></mrow></semantics></math> (con/tháng), với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> là số lượng cá thể trong đàn tại thời điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> tháng tương ứng. Dựa vào tốc độ tăng trưởng đã cho, hãy ước tính số cá thể của đàn gấu mèo này tại thời điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>4</mn></semantics></math> tháng kể từ khi chúng được thả vào rừng.<br>",
+      "choices": [],
+      "correct": "356",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>6</mn><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>15</mn><mi>t</mi><mo>+</mo><mn>200</mn></mrow></semantics></math>. Khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>6</mn><mo>⋅</mo><msup><mn>4</mn><mn>2</mn></msup><mo>+</mo><mn>15</mn><mo>⋅</mo><mn>4</mn><mo>+</mo><mn>200</mn><mo>=</mo><mn>356</mn></mrow></semantics></math>.",
+      "accepted_answers": [
+        "356"
+      ]
+    }
+  ]
+}

@@ -1,6 +1,15 @@
 # Phát hành thử ngân hàng theo chương trên HTTPS
 
-Chạy từ checkout của mã đã duyệt. Trình đóng gói đọc câu chuẩn cùng bản chỉnh theo mã câu và đối chiếu biến thể đã duyệt. Mỗi gói ghi commit nguồn, phiên bản nội dung, danh sách câu và SHA-256 từng hình. Phạm vi thử nghiệm HTTPS đã duyệt ở Toán 12 gồm Chương I với 230 câu chuẩn và 900 biến thể, cùng Chương VI với 118 câu chuẩn và 436 biến thể. [Quy trình sửa một câu](../CONTRIBUTING.md)
+Chạy từ checkout của mã đã duyệt. Trình đóng gói đọc câu chuẩn cùng bản chỉnh theo mã câu và đối chiếu biến thể đã duyệt. Mỗi gói ghi commit nguồn, phiên bản nội dung, danh sách câu và SHA-256 từng hình. Bảng dưới liệt kê các phạm vi có thể đóng gói trong kho mã. Kiểm tra biên nhận của từng chương trên bản thử để xác định gói đang hoạt động. [Quy trình sửa một câu](../CONTRIBUTING.md)
+
+| Chương | Mã gói | Số câu chuẩn | Số biến thể |
+| --- | --- | ---: | ---: |
+| I | `12-C01` | 230 | 900 |
+| II | `12-C02` | 218 | 700 |
+| III | `12-C03` | 151 | 604 |
+| IV | `12-C04` | 153 | 576 |
+| V | `12-C05` | 168 | 636 |
+| VI | `12-C06` | 118 | 436 |
 
 Triển khai mã cùng phiên bản biến thể và tệp hình lên bản thử trước. Cấp cấu hình cho lệnh nạp qua `TOANTHD_RELEASE_ORIGIN`, `TOANTHD_RELEASE_ADMIN_PASSWORD` và `TOANTHD_RELEASE_SITES_TOKEN` khi dùng Sites. Lệnh cũng nhận một dòng JSON trên stdin với các trường `origin`, `password` và `sitesToken`. Giữ thông tin xác thực ngoài Git.
 
@@ -15,9 +24,9 @@ node scripts/publish-bank-release.mjs activate <digest-tu-buoc-stage> --chapter 
 
 Đối chiếu số câu của từng bài, thử mở công thức và hình, rồi chạy lại lệnh kích hoạt. Mỗi chương có biên nhận riêng. Trên bộ dữ liệu thử, kiểm tra rằng lỗi giữa giao dịch giữ nguyên câu, đề đã giao và điểm đã nộp. Khi câu chuẩn đổi dấu vân tay, đối chiếu lại xác nhận đáp án và các biến thể liên quan.
 
-## Kiểm tra bài B01 Chương II trên máy
+## Kiểm tra gói Chương II–V trên máy
 
-Phạm vi `12-C02` hiện mô tả riêng bài B01 “Vectơ và các phép toán trong không gian”. Bản biên tập chứa 107 câu gốc, 256 biến thể đã nghiệm thu và 43 câu giữ quyết định hoãn tạo biến thể. Câu `dc-12-hk1-2H1-q058-v4` đã được giáo viên duyệt sửa nhãn ý b trong lời giải thành **Đúng**. Khóa đáp án gốc được giữ nguyên và câu này đã đủ điều kiện chấm tự động. Hai bài B02 và B03 vẫn nằm trong gói nguồn nền của chương.
+Phạm vi `12-C02` gồm cả ba bài B01, B02 và B03. Câu `dc-12-hk1-2H1-q058-v4` đã được giáo viên duyệt sửa nhãn ý b trong lời giải thành **Đúng**, giữ khóa đáp án gốc và đủ điều kiện chấm tự động. Bảy câu gốc chờ duyệt trong phần mở rộng Chương II–V giữ nguyên trạng thái `review` và được loại khỏi lựa chọn chấm tự động.
 
 ```powershell
 npm run content:preview -- bank --chapter 12-C02
@@ -26,4 +35,4 @@ npm run content:check -- all --chapter 12-C02
 node --test tests/content-pilot.test.mjs
 ```
 
-Kết quả đối chiếu cần có 107 câu nguồn, 256 biến thể khả dụng, mục `changed` của gói câu hỏi chứa mã câu 58 và mục `changed` của gói biến thể rỗng. Sau khi commit, chạy `node scripts/build-bank-release.mjs --chapter 12-C02` để kiểm tra phiên bản và dấu vân tay hình trên máy. Chỉ chạy các bước `stage` và `activate` khi người phụ trách duyệt phạm vi phát hành HTTPS.
+Đối chiếu số câu và biến thể với bảng. Trong đợt này, mục `changed` của gói câu hỏi Chương II chỉ có mã câu 58 đã duyệt. Sau khi commit, chạy `node scripts/build-bank-release.mjs --chapter 12-C02` để kiểm tra phiên bản và dấu vân tay hình trên máy. Dùng mã chương tương ứng khi kiểm tra Chương III–V. Chỉ chạy các bước `stage` và `activate` khi người phụ trách duyệt phạm vi phát hành HTTPS.

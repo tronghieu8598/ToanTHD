@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk2-4D1-q017-v4",
+  "source_fingerprint": "346a6a10dc163eee029f1036a9bb39c659c69e7cf89cc01cf31585bc21a9b3af",
+  "variants": [
+    {
+      "id": "dc-12-hk2-4D1-q017-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Họ tất cả các nguyên hàm của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mn>3</mn><mi>x</mi></msup><mo>+</mo><mn>6</mn><mi>x</mi></mrow></semantics></math> là",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mn>3</mn><mi>x</mi></msup><mo>ln</mo><mn>3</mn><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><msup><mn>3</mn><mi>x</mi></msup></mrow><mrow><mo>ln</mo><mn>3</mn></mrow></mfrac><mo>+</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><msup><mn>3</mn><mi>x</mi></msup></mrow><mrow><mo>ln</mo><mn>3</mn></mrow></mfrac><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mn>3</mn><mi>x</mi></msup><mo>ln</mo><mn>3</mn><mo>+</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mn>3</mn><mi>x</mi></msup></mrow><mrow><mo>ln</mo><mn>3</mn></mrow></mfrac><mo>+</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>C</mi></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-4D1-q017-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Họ tất cả các nguyên hàm của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mn>5</mn><mi>x</mi></msup><mo>+</mo><mn>8</mn><mi>x</mi></mrow></semantics></math> là",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mn>5</mn><mi>x</mi></msup><mo>ln</mo><mn>5</mn><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><msup><mn>5</mn><mi>x</mi></msup></mrow><mrow><mo>ln</mo><mn>5</mn></mrow></mfrac><mo>+</mo><mn>4</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><msup><mn>5</mn><mi>x</mi></msup></mrow><mrow><mo>ln</mo><mn>5</mn></mrow></mfrac><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mn>5</mn><mi>x</mi></msup><mo>ln</mo><mn>5</mn><mo>+</mo><mn>4</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mn>5</mn><mi>x</mi></msup></mrow><mrow><mo>ln</mo><mn>5</mn></mrow></mfrac><mo>+</mo><mn>4</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>C</mi></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-4D1-q017-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Họ tất cả các nguyên hàm của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mn>6</mn><mi>x</mi></msup><mo>+</mo><mn>10</mn><mi>x</mi></mrow></semantics></math> là",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mn>6</mn><mi>x</mi></msup><mo>ln</mo><mn>6</mn><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><msup><mn>6</mn><mi>x</mi></msup></mrow><mrow><mo>ln</mo><mn>6</mn></mrow></mfrac><mo>+</mo><mn>5</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><msup><mn>6</mn><mi>x</mi></msup></mrow><mrow><mo>ln</mo><mn>6</mn></mrow></mfrac><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mn>6</mn><mi>x</mi></msup><mo>ln</mo><mn>6</mn><mo>+</mo><mn>5</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mn>6</mn><mi>x</mi></msup></mrow><mrow><mo>ln</mo><mn>6</mn></mrow></mfrac><mo>+</mo><mn>5</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>C</mi></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-4D1-q017-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Họ tất cả các nguyên hàm của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mn>7</mn><mi>x</mi></msup><mo>+</mo><mn>6</mn><mi>x</mi></mrow></semantics></math> là",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mn>7</mn><mi>x</mi></msup><mo>ln</mo><mn>7</mn><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><msup><mn>7</mn><mi>x</mi></msup></mrow><mrow><mo>ln</mo><mn>7</mn></mrow></mfrac><mo>+</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><msup><mn>7</mn><mi>x</mi></msup></mrow><mrow><mo>ln</mo><mn>7</mn></mrow></mfrac><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mn>7</mn><mi>x</mi></msup><mo>ln</mo><mn>7</mn><mo>+</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mn>7</mn><mi>x</mi></msup></mrow><mrow><mo>ln</mo><mn>7</mn></mrow></mfrac><mo>+</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>C</mi></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-12-hk2-4D3-q044-v4",
+  "original_number": 44,
+  "kind": "tf",
+  "based_on": "fac63feffd54226a7e7fe8b7b13f627036abfbf0e8690768a5451e944dc68448",
+  "prompt": "Một xe ô tô đang chuyển động đều với vận tốc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>16</mn></semantics></math> m/s thì người lái xe thấy một chướng ngại vật nên đạp phanh tại điểm đó, ô tô chuyển động chậm dần đều với vận tốc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>2</mn><mi>t</mi><mo>+</mo><mn>16</mn></mrow></semantics></math> trong đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> là thời gian (tính bằng giây) kể từ lúc đạp phanh. Xét tính đúng sai của các khẳng định sau.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Sau <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>16</mn></semantics></math> giây thì ô tô dừng hẳn kể từ lúc đạp phanh"
+    },
+    {
+      "key": "b",
+      "text": "Quãng đường mà ô tô đi được trong <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>8</mn></semantics></math> giây cuối là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>46</mn></semantics></math> m"
+    },
+    {
+      "key": "c",
+      "text": "Trong <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>2</mn></semantics></math> giây đầu (kể từ lúc đạp phanh) ô tô đi được <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>28</mn></semantics></math> m"
+    },
+    {
+      "key": "d",
+      "text": "Quãng đường ô tô đi được trong <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>10</mn></semantics></math> giây cuối là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>96</mn></semantics></math> m"
+    }
+  ],
+  "correct": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Sai. Ô tô dừng hẳn khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo>⇔</mo><mo>−</mo><mn>2</mn><mi>t</mi><mo>+</mo><mn>16</mn><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>t</mi><mo>=</mo><mn>8</mn></mrow></semantics></math>.\n\t\t\tVậy sau <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>8</mn></semantics></math> giây thì ô tô dừng hẳn kể từ lúc đạp phanh.</li><li>Sai. Quãng đường mà ô tô đi được trong <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>8</mn></semantics></math> giây cuối là\n\t\t\t<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>S</mi><mn>1</mn></msub><mo>=</mo><msubsup><mo>∫</mo><mn>0</mn><mn>8</mn></msubsup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mi>t</mi><mo>+</mo><mn>16</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>16</mn><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><msubsup><mo minsize=\"2.4\" maxsize=\"2.4\" stretchy=\"false\" form=\"prefix\">|</mo><mn>0</mn><mn>8</mn></msubsup><mo>=</mo><mo>−</mo><msup><mn>8</mn><mn>2</mn></msup><mo>+</mo><mn>16</mn><mo>⋅</mo><mn>8</mn><mo>=</mo><mn>64</mn></mrow></semantics></math> m.</li><li>Đúng. Quãng đường ô tô đi được trong <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>2</mn></semantics></math> giây đầu là\n\t\t\t<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>S</mi><mn>1</mn></msub><mo>=</mo><msubsup><mo>∫</mo><mn>0</mn><mn>2</mn></msubsup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mi>t</mi><mo>+</mo><mn>16</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>16</mn><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><msubsup><mo minsize=\"2.4\" maxsize=\"2.4\" stretchy=\"false\" form=\"prefix\">|</mo><mn>0</mn><mn>2</mn></msubsup><mo>=</mo><mo>−</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><mn>16</mn><mo>⋅</mo><mn>2</mn><mo>=</mo><mn>28</mn></mrow></semantics></math> m.</li><li>Đúng. Quãng đường ô tô đi được trong <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>10</mn></semantics></math> giây cuối là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>64</mn><mo>+</mo><mn>32</mn><mo>=</mo><mn>96</mn></mrow></semantics></math> m.</li></ol>",
+  "accepted_answers": []
+}

@@ -1,0 +1,54 @@
+{
+  "id": "dc-12-hk2-4D2-q034-v4",
+  "source_fingerprint": "ba1e7271e1ec31f55e50db994075fedd71db2223fe27f2ecb79261b3986b0961",
+  "variants": [
+    {
+      "id": "dc-12-hk2-4D2-q034-v4--bt01",
+      "number": 1,
+      "kind": "short",
+      "prompt": "Biết <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mo>=</mo><munderover><mo>∫</mo><mn>1</mn><mn>2</mn></munderover><mfrac displaystyle=\"true\"><mrow><mn>4</mn></mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mi>a</mi><mo>ln</mo><mn>3</mn><mo>+</mo><mi>b</mi><mo>ln</mo><mn>2</mn><mo>+</mo><mi>c</mi></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>a</mi></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>b</mi></semantics></math> là các số nguyên. Tính tổng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi></mrow></semantics></math>.",
+      "choices": [],
+      "correct": "-2",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mo>=</mo><mn>4</mn><mo>ln</mo><mn>3</mn><mo>−</mo><mn>8</mn><mo>ln</mo><mn>2</mn><mo>+</mo><mn>2</mn></mrow></semantics></math>, suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>=</mo><mn>4</mn><mo>,</mo><mspace width=\"0.167em\"/><mi>b</mi><mo>=</mo><mo>−</mo><mn>8</mn><mo>,</mo><mspace width=\"0.167em\"/><mi>c</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>. Vậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math>.",
+      "accepted_answers": [
+        "-2"
+      ]
+    },
+    {
+      "id": "dc-12-hk2-4D2-q034-v4--bt02",
+      "number": 2,
+      "kind": "short",
+      "prompt": "Biết <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mo>=</mo><munderover><mo>∫</mo><mn>1</mn><mn>2</mn></munderover><mfrac displaystyle=\"true\"><mrow><mn>6</mn></mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mi>a</mi><mo>ln</mo><mn>3</mn><mo>+</mo><mi>b</mi><mo>ln</mo><mn>2</mn><mo>+</mo><mi>c</mi></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>a</mi></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>b</mi></semantics></math> là các số nguyên. Tính tổng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi></mrow></semantics></math>.",
+      "choices": [],
+      "correct": "-3",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mo>=</mo><mn>6</mn><mo>ln</mo><mn>3</mn><mo>−</mo><mn>12</mn><mo>ln</mo><mn>2</mn><mo>+</mo><mn>3</mn></mrow></semantics></math>, suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>=</mo><mn>6</mn><mo>,</mo><mspace width=\"0.167em\"/><mi>b</mi><mo>=</mo><mo>−</mo><mn>12</mn><mo>,</mo><mspace width=\"0.167em\"/><mi>c</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>. Vậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math>.",
+      "accepted_answers": [
+        "-3"
+      ]
+    },
+    {
+      "id": "dc-12-hk2-4D2-q034-v4--bt03",
+      "number": 3,
+      "kind": "short",
+      "prompt": "Biết <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mo>=</mo><munderover><mo>∫</mo><mn>1</mn><mn>2</mn></munderover><mfrac displaystyle=\"true\"><mrow><mn>8</mn></mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mi>a</mi><mo>ln</mo><mn>3</mn><mo>+</mo><mi>b</mi><mo>ln</mo><mn>2</mn><mo>+</mo><mi>c</mi></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>a</mi></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>b</mi></semantics></math> là các số nguyên. Tính tổng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi></mrow></semantics></math>.",
+      "choices": [],
+      "correct": "-4",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mo>=</mo><mn>8</mn><mo>ln</mo><mn>3</mn><mo>−</mo><mn>16</mn><mo>ln</mo><mn>2</mn><mo>+</mo><mn>4</mn></mrow></semantics></math>, suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>=</mo><mn>8</mn><mo>,</mo><mspace width=\"0.167em\"/><mi>b</mi><mo>=</mo><mo>−</mo><mn>16</mn><mo>,</mo><mspace width=\"0.167em\"/><mi>c</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>. Vậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo>=</mo><mo>−</mo><mn>4</mn></mrow></semantics></math>.",
+      "accepted_answers": [
+        "-4"
+      ]
+    },
+    {
+      "id": "dc-12-hk2-4D2-q034-v4--bt04",
+      "number": 4,
+      "kind": "short",
+      "prompt": "Biết <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mo>=</mo><munderover><mo>∫</mo><mn>1</mn><mn>2</mn></munderover><mfrac displaystyle=\"true\"><mrow><mn>10</mn></mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mi>a</mi><mo>ln</mo><mn>3</mn><mo>+</mo><mi>b</mi><mo>ln</mo><mn>2</mn><mo>+</mo><mi>c</mi></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>a</mi></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>b</mi></semantics></math> là các số nguyên. Tính tổng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi></mrow></semantics></math>.",
+      "choices": [],
+      "correct": "-5",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mo>=</mo><mn>10</mn><mo>ln</mo><mn>3</mn><mo>−</mo><mn>20</mn><mo>ln</mo><mn>2</mn><mo>+</mo><mn>5</mn></mrow></semantics></math>, suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>=</mo><mn>10</mn><mo>,</mo><mspace width=\"0.167em\"/><mi>b</mi><mo>=</mo><mo>−</mo><mn>20</mn><mo>,</mo><mspace width=\"0.167em\"/><mi>c</mi><mo>=</mo><mn>5</mn></mrow></semantics></math>. Vậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>S</mi><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>c</mi><mo>=</mo><mo>−</mo><mn>5</mn></mrow></semantics></math>.",
+      "accepted_answers": [
+        "-5"
+      ]
+    }
+  ]
+}

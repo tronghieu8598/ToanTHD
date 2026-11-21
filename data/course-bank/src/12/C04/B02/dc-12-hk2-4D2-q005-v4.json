@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk2-4D2-q005-v4",
+  "original_number": 5,
+  "kind": "mcq",
+  "based_on": "6f6ca90d2ae34573dadf38aa780bfe2b9d4bf41f3a6741e9d6a2173c83074632",
+  "prompt": "Một chiếc ô tô đang dừng và bắt đầu chuyển động theo một đường thẳng với gia tốc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>6</mn><mo>−</mo><mn>2</mn><mi>t</mi></mrow></semantics></math> (m/s<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><msup><mi/><mn>2</mn></msup></semantics></math>), trong đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> là khoảng thời gian tính bằng giây. Quãng đường ô tô đi được kể từ lúc bắt đầu chuyển động đến khi ô tô đạt vận tốc lớn nhất là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>18</mn></semantics></math> m"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>20</mn></semantics></math> m"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>27</mn><mn>7</mn></mfrac></semantics></math> m"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>9</mn></semantics></math> m"
+    }
+  ],
+  "correct": "A",
+  "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><mi>a</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>t</mi><mo>=</mo><mo>∫</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>6</mn><mo>−</mo><mn>2</mn><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>t</mi><mo>=</mo><mn>6</mn><mi>t</mi><mo>−</mo><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mi>C</mi></mrow></semantics></math> nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>6</mn><mi>t</mi><mo>+</mo><mi>C</mi></mrow></semantics></math> (m/s).<br>\n\t\tDo vận tốc ban đầu của ô tô bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>0</mn></semantics></math> nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>, suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>6</mn><mi>t</mi></mrow></semantics></math>.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo>−</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>9</mn><mo>≤</mo><mn>9</mn></mrow></semantics></math> nên ô tô đạt vận tốc lớn nhất là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>9</mn></semantics></math> m/s tại thời điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>3</mn></mrow></semantics></math> giây.<br>\n\t\tQuãng đường ô tô đi được kể từ lúc bắt đầu chuyển động đến khi ô tô đạt vận tốc lớn nhất là\n\t\t<div class=\"math-display\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>s</mi><mo>=</mo><munderover><mo>∫</mo><mn>0</mn><mn>3</mn></munderover><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>t</mi><mo>=</mo><munderover><mo>∫</mo><mn>0</mn><mn>3</mn></munderover><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>6</mn><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>t</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mfrac displaystyle=\"true\"><msup><mi>t</mi><mn>3</mn></msup><mn>3</mn></mfrac><mo>+</mo><mn>3</mn><msup><mi>t</mi><mn>2</mn></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><msubsup><mo minsize=\"3.0\" maxsize=\"3.0\" stretchy=\"false\" form=\"prefix\">|</mo><mn>0</mn><mn>3</mn></msubsup><mo>=</mo><mn>18</mn><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">m</mi><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

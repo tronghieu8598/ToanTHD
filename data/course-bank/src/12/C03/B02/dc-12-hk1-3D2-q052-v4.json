@@ -1,0 +1,33 @@
+{
+  "id": "dc-12-hk1-3D2-q052-v4",
+  "original_number": 52,
+  "kind": "tf",
+  "based_on": "0840c0c9834ee56efa15dc29f871c218b23e02d4ca9fafc80933acf881ca8928",
+  "prompt": "Một bác tài xế đã thống kê lại quãng đường di chuyển của một số chuyến xe mà bác ấy thực hiện trong một tuần ở bảng sau (đơn vị: km).\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Quãng đường</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>2</mn><mo>;</mo><mn>4</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>4</mn><mo>;</mo><mn>6</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>6</mn><mo>;</mo><mn>8</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td></tr><tr><td>Số chuyến xe</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>40</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>20</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>15</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>10</mn></semantics></math></td></tr></tbody></table></div></div>",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Bác tài xế đã thống kê lại quãng đường di chuyển của <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>85</mn></semantics></math> chuyến xe"
+    },
+    {
+      "key": "b",
+      "text": "Tứ phân vị thứ ba của mẫu số liệu ghép nhóm trên thuộc nhóm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>4</mn><mo>;</mo><mn>6</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Khoảng tứ phân vị của mẫu số liệu ghép nhóm trên là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>8</mn></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Độ lệch chuẩn của mẫu số liệu ghép nhóm trên có giá trị thuộc khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Đúng. Số chuyến xe mà bác tài xế đã thống kê chính là cỡ mẫu. Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>40</mn><mo>+</mo><mn>20</mn><mo>+</mo><mn>15</mn><mo>+</mo><mn>10</mn><mo>=</mo><mn>85</mn></mrow></semantics></math>.</li><li>Đúng. Tần số tích lũy nhóm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>2</mn><mo>;</mo><mn>4</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>4</mn><mo>;</mo><mn>6</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math> lần lượt là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>60</mn></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>75</mn></semantics></math> mà <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>60</mn><mo>&lt;</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mo>⋅</mo><mn>85</mn></mrow><mn>4</mn></mfrac><mo>&lt;</mo><mn>75</mn></mrow></semantics></math> nên tứ phân vị thứ ba của mẫu số liệu ghép nhóm thuộc nhóm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>4</mn><mo>;</mo><mn>6</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>.</li><li>Sai. Tứ phân vị thứ ba của mẫu số liệu ghép nhóm là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mn>4</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mo>⋅</mo><mn>85</mn></mrow><mn>4</mn></mfrac><mo>−</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>40</mn><mo>+</mo><mn>20</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mn>15</mn></mfrac><mo>⋅</mo><mn>2</mn><mo>=</mo><mn>4</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn></mrow></semantics></math>. Nhóm chứa tứ phân vị thứ nhất là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>. Tứ phân vị thứ nhất là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>0625</mn></mrow></semantics></math>. Khoảng tứ phân vị của mẫu số liệu là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>Δ</mi><mi>Q</mi></msub><mo>=</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>−</mo><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>3</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>4375</mn></mrow></semantics></math>.</li><li>Sai. Độ lệch chuẩn của mẫu số liệu là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>s</mi><mo>≈</mo><mn>2</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>1</mn><mo>∉</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

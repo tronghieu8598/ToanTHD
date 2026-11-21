@@ -54,8 +54,7 @@ async function verifyVariantSource(scope, questions) {
     const source = JSON.parse(gunzipSync(frozen));
     const ids = new Set(source.items.map(item => item.source_id));
     assert(source.format === 'toanthd.chapter-variants/1' && source.chapter_id === scope &&
-        source.items.length === ids.size &&
-        (bankReleaseChapters[scope].partial || ids.size === questions.length) &&
+        source.items.length === questions.length && ids.size === questions.length &&
         questions.every(question => ids.has(question.id)) && source.items.every(item => {
             const indexed = frozenVariantIndex[item.source_id];
             return indexed?.chapter === scope && indexed.fingerprint === item.source_fingerprint &&
@@ -68,8 +67,7 @@ async function verifyVariantSource(scope, questions) {
         compiled.variants === source.items.reduce((count, item) => count + item.variants.length, 0) &&
         sha256(gunzipSync(Buffer.from(frozenVariants, 'base64'))).slice(0, 12) === compiled.version,
         `Mô-đun biến thể gốc ${scope} không khớp bản đã duyệt.`);
-    const releaseIds = new Set(questions.map(question => question.id));
-    return compiled.held.filter(hold => releaseIds.has(hold.source_id));
+    return compiled.held;
 }
 
 function referencedAssets(rows) {

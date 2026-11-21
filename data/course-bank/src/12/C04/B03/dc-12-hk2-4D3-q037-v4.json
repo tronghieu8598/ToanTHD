@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk2-4D3-q037-v4",
+  "original_number": 37,
+  "kind": "mcq",
+  "based_on": "f6e54b78dcc339642d7cac0f0d9dcea25bad4b8becff89c99ff67bfd5a6caa3d",
+  "prompt": "Kí hiệu <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>H</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> là hình phẳng giới hạn bởi đồ thị hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>2</mn><mi>x</mi><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>. Tính thể tích vật thể tròn xoay được sinh ra bởi hình phẳng đó khi quay nó quanh trục <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>x</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>19</mn><mi>π</mi></mrow><mn>15</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>18</mn><mi>π</mi></mrow><mn>15</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>16</mn><mi>π</mi></mrow><mn>15</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>17</mn><mi>π</mi></mrow><mn>15</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Phương trình hoành độ giao điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mi>x</mi><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>0</mn></mrow></semantics></math> có nghiệm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>.\n\t\t<br>\n\t\tThể tích <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>V</mi><mo>=</mo><mi>π</mi><munderover><mo>∫</mo><mn>0</mn><mn>2</mn></munderover><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mi>x</mi><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>16</mn><mi>π</mi></mrow><mn>15</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

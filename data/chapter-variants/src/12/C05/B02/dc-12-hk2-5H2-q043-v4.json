@@ -1,0 +1,134 @@
+{
+  "id": "dc-12-hk2-5H2-q043-v4",
+  "source_fingerprint": "dc5e7eab3dc8a5368585dff196ca1cd1116d005cd75621a5696f7cbb832314a9",
+  "variants": [
+    {
+      "id": "dc-12-hk2-5H2-q043-v4--bt01",
+      "number": 1,
+      "kind": "tf",
+      "prompt": "Trong không gian <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>x</mi><mi>y</mi><mi>z</mi></mrow></semantics></math>, cho hai đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>:</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>y</mi><mo>+</mo><mn>2</mn></mrow><mrow><mn>1</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>z</mi><mo>−</mo><mn>3</mn></mrow><mrow><mo>−</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>2</mn></msub><mo>:</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi></mrow><mrow><mn>1</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>y</mi><mo>−</mo><mn>1</mn></mrow><mrow><mo>−</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>z</mi><mo>−</mo><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac></mrow></semantics></math>. Xét tính đúng sai của các phát biểu sau",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub></mrow></semantics></math> đi qua điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>2</mn></msub></mrow></semantics></math> không đi qua điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>N</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Hai đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>2</mn></msub></mrow></semantics></math> cắt nhau"
+        },
+        {
+          "key": "d",
+          "text": "Hai đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>2</mn></msub></mrow></semantics></math> chéo nhau"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "solution": "Kiểm tra tọa độ các điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>N</mi></mrow></semantics></math> và tính tích hỗn tạp để xác định vị trí tương đối.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-5H2-q043-v4--bt02",
+      "number": 2,
+      "kind": "tf",
+      "prompt": "Trong không gian <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>x</mi><mi>y</mi><mi>z</mi></mrow></semantics></math>, cho hai đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>:</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow><mrow><mn>1</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>y</mi><mo>−</mo><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>z</mi><mo>+</mo><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>2</mn></msub><mo>:</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>y</mi></mrow><mrow><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>z</mi><mo>−</mo><mn>2</mn></mrow><mrow><mn>1</mn></mrow></mfrac></mrow></semantics></math>. Xét tính đúng sai của các phát biểu sau",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub></mrow></semantics></math> đi qua điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mo>−</mo><mn>1</mn><mo>;</mo><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>2</mn></msub></mrow></semantics></math> không đi qua điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>N</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Hai đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>2</mn></msub></mrow></semantics></math> cắt nhau"
+        },
+        {
+          "key": "d",
+          "text": "Hai đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>2</mn></msub></mrow></semantics></math> chéo nhau"
+        }
+      ],
+      "correct": [
+        false,
+        true,
+        false,
+        true
+      ],
+      "solution": "Kiểm tra tọa độ các điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>N</mi></mrow></semantics></math> và tính tích hỗn tạp để xác định vị trí tương đối.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-5H2-q043-v4--bt03",
+      "number": 3,
+      "kind": "tf",
+      "prompt": "Trong không gian <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>x</mi><mi>y</mi><mi>z</mi></mrow></semantics></math>, cho hai đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>:</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>y</mi><mo>−</mo><mn>3</mn></mrow><mrow><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>z</mi><mo>−</mo><mn>2</mn></mrow><mrow><mn>1</mn></mrow></mfrac></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>2</mn></msub><mo>:</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow><mrow><mn>1</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>y</mi><mo>−</mo><mn>2</mn></mrow><mrow><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>z</mi></mrow><mrow><mo>−</mo><mn>2</mn></mrow></mfrac></mrow></semantics></math>. Xét tính đúng sai của các phát biểu sau",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub></mrow></semantics></math> đi qua điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mn>2</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>2</mn></msub></mrow></semantics></math> không đi qua điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>N</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo>;</mo><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Hai đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>2</mn></msub></mrow></semantics></math> cắt nhau"
+        },
+        {
+          "key": "d",
+          "text": "Hai đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>2</mn></msub></mrow></semantics></math> chéo nhau"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "solution": "Kiểm tra tọa độ các điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>N</mi></mrow></semantics></math> và tính tích hỗn tạp để xác định vị trí tương đối.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-5H2-q043-v4--bt04",
+      "number": 4,
+      "kind": "tf",
+      "prompt": "Trong không gian <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>x</mi><mi>y</mi><mi>z</mi></mrow></semantics></math>, cho hai đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>:</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>−</mo><mn>3</mn></mrow><mrow><mn>1</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>y</mi></mrow><mrow><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>z</mi><mo>+</mo><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>2</mn></msub><mo>:</mo><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>y</mi><mo>+</mo><mn>1</mn></mrow><mrow><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>z</mi><mo>−</mo><mn>1</mn></mrow><mrow><mn>2</mn></mrow></mfrac></mrow></semantics></math>. Xét tính đúng sai của các phát biểu sau",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub></mrow></semantics></math> đi qua điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>;</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>2</mn></msub></mrow></semantics></math> không đi qua điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>N</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>;</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Hai đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>2</mn></msub></mrow></semantics></math> cắt nhau"
+        },
+        {
+          "key": "d",
+          "text": "Hai đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>d</mi><mn>2</mn></msub></mrow></semantics></math> chéo nhau"
+        }
+      ],
+      "correct": [
+        false,
+        true,
+        false,
+        true
+      ],
+      "solution": "Kiểm tra tọa độ các điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>N</mi></mrow></semantics></math> và tính tích hỗn tạp để xác định vị trí tương đối.",
+      "accepted_answers": []
+    }
+  ]
+}

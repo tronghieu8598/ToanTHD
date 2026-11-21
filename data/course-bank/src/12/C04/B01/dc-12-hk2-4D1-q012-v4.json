@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk2-4D1-q012-v4",
+  "original_number": 12,
+  "kind": "mcq",
+  "based_on": "2ff1fe726024c7b2a3a4d3d5a63469041ffbfd503d86074911c1d27cfd60e266",
+  "prompt": "Tìm nguyên hàm của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>+</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>3</mn><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>x</mi></mfrac><mo>−</mo><mn>3</mn><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>x</mi></mfrac><mo>−</mo><mn>3</mn><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>x</mi></mfrac><mo>+</mo><mn>3</mn><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>x</mi></mfrac><mo>−</mo><mn>3</mn><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>x</mi></mfrac><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup><mo>+</mo><mi>C</mi></mrow></semantics></math>.",
+  "accepted_answers": []
+}

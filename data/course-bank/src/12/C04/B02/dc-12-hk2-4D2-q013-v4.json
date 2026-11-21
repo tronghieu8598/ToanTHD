@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk2-4D2-q013-v4",
+  "original_number": 13,
+  "kind": "mcq",
+  "based_on": "427c0c97076ba63f89117448be197c5f0a5f8cd96d4ac8a8ea71aa2d8c56dd9e",
+  "prompt": "Tính tích phân <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mo>=</mo><munderover><mo>∫</mo><mn>0</mn><mn>2</mn></munderover><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mspace width=\"0.167em\"/><mrow><mi mathvariant=\"normal\">d</mi><mi>x</mi></mrow></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>I</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>6</mn></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi><mo>≤</mo><mn>0</mn></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi><mo>≥</mo><mn>0</mn></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>. Do đó\n\t\t<div class=\"math-display\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>I</mi><mo>=</mo><munderover><mo>∫</mo><mn>0</mn><mn>2</mn></munderover><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mspace width=\"0.167em\"/><mrow><mi mathvariant=\"normal\">d</mi><mi>x</mi></mrow><mo>=</mo><mo>−</mo><munderover><mo>∫</mo><mn>0</mn><mn>1</mn></munderover><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mspace width=\"0.167em\"/><mrow><mi mathvariant=\"normal\">d</mi><mi>x</mi></mrow><mo>+</mo><munderover><mo>∫</mo><mn>1</mn><mn>2</mn></munderover><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mspace width=\"0.167em\"/><mrow><mi mathvariant=\"normal\">d</mi><mi>x</mi></mrow><mo>=</mo><mo>−</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac><mo>−</mo><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><msubsup><mo minsize=\"3.0\" maxsize=\"3.0\" stretchy=\"false\" form=\"prefix\">|</mo><mn>0</mn><mn>1</mn></msubsup><mo>+</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac><mo>−</mo><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><msubsup><mo minsize=\"3.0\" maxsize=\"3.0\" stretchy=\"false\" form=\"prefix\">|</mo><mn>1</mn><mn>2</mn></msubsup><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>6</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>6</mn></mfrac><mo>=</mo><mn>1</mn><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

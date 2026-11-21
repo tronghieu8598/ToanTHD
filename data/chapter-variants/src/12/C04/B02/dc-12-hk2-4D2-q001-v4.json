@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk2-4D2-q001-v4",
+  "source_fingerprint": "77493c38902798da005ee9d2338af31b9ea78f62b7de1d9dfce67d9ceee6d9b0",
+  "variants": [
+    {
+      "id": "dc-12-hk2-4D2-q001-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Một vật chuyển động theo quy luật <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>s</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><msup><mi>t</mi><mn>3</mn></msup><mo>+</mo><mn>15</mn><msup><mi>t</mi><mn>2</mn></msup></mrow></semantics></math>, với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> giây là khoảng thời gian tính từ lúc vật bắt đầu chuyển động và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>s</mi></semantics></math> mét là quãng đường vật đi được trong khoảng thời gian đó. Hỏi trong khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>8</mn></semantics></math> giây kể từ lúc bắt đầu chuyển động, vận tốc lớn nhất của vật đạt được là bao nhiêu?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>150</mn></semantics></math> m/s"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>72</mn></semantics></math> m/s"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>704</mn></semantics></math> m/s"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>144</mn></semantics></math> m/s"
+        }
+      ],
+      "correct": "D",
+      "solution": "Vận tốc thức thời của chuyển động là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>s</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>30</mn><mi>t</mi><mspace width=\"0.167em\"/><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo>≥</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.<br>\n\t\tXét sự biến thiên của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>, ta có bảng biến thiên như sau\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/f451fb7c1f896848cd8d1305cd2266e427381bc898588619561c57e9062728eb.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tTừ bảng biến thiên ta thấy trong khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>8</mn></semantics></math> giây kể từ lúc bắt đầu chuyển động, vận tốc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> đạt giá trị lớn nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>144</mn></semantics></math> m/s tại thời điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>8</mn></mrow></semantics></math> giây.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-4D2-q001-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Một vật chuyển động theo quy luật <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>s</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><msup><mi>t</mi><mn>3</mn></msup><mo>+</mo><mn>12</mn><msup><mi>t</mi><mn>2</mn></msup></mrow></semantics></math>, với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> giây là khoảng thời gian tính từ lúc vật bắt đầu chuyển động và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>s</mi></semantics></math> mét là quãng đường vật đi được trong khoảng thời gian đó. Hỏi trong khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>6</mn></semantics></math> giây kể từ lúc bắt đầu chuyển động, vận tốc lớn nhất của vật đạt được là bao nhiêu?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>96</mn></semantics></math> m/s"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>45</mn></semantics></math> m/s"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>324</mn></semantics></math> m/s"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>90</mn></semantics></math> m/s"
+        }
+      ],
+      "correct": "D",
+      "solution": "Vận tốc thức thời của chuyển động là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>s</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>24</mn><mi>t</mi><mspace width=\"0.167em\"/><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo>≥</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.<br>\n\t\tXét sự biến thiên của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>6</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>, ta có bảng biến thiên như sau\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/1965b154f1de705c9cd2793cfe74d76e795d9aedebdea0dd95739cd5ce0e2199.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tTừ bảng biến thiên ta thấy trong khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>6</mn></semantics></math> giây kể từ lúc bắt đầu chuyển động, vận tốc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> đạt giá trị lớn nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>90</mn></semantics></math> m/s tại thời điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>6</mn></mrow></semantics></math> giây.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-4D2-q001-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Một vật chuyển động theo quy luật <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>s</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><msup><mi>t</mi><mn>3</mn></msup><mo>+</mo><mn>21</mn><msup><mi>t</mi><mn>2</mn></msup></mrow></semantics></math>, với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> giây là khoảng thời gian tính từ lúc vật bắt đầu chuyển động và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>s</mi></semantics></math> mét là quãng đường vật đi được trong khoảng thời gian đó. Hỏi trong khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>10</mn></semantics></math> giây kể từ lúc bắt đầu chuyển động, vận tốc lớn nhất của vật đạt được là bao nhiêu?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>294</mn></semantics></math> m/s"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>135</mn></semantics></math> m/s"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>1600</mn></semantics></math> m/s"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>270</mn></semantics></math> m/s"
+        }
+      ],
+      "correct": "D",
+      "solution": "Vận tốc thức thời của chuyển động là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>s</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>42</mn><mi>t</mi><mspace width=\"0.167em\"/><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo>≥</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.<br>\n\t\tXét sự biến thiên của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>10</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>, ta có bảng biến thiên như sau\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/ab354ba030f62175706ba3f10af0d366e1eae1f3b27e563d76c02f936e80742e.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tTừ bảng biến thiên ta thấy trong khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>10</mn></semantics></math> giây kể từ lúc bắt đầu chuyển động, vận tốc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> đạt giá trị lớn nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>270</mn></semantics></math> m/s tại thời điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>10</mn></mrow></semantics></math> giây.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-4D2-q001-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Một vật chuyển động theo quy luật <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>s</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><msup><mi>t</mi><mn>3</mn></msup><mo>+</mo><mn>24</mn><msup><mi>t</mi><mn>2</mn></msup></mrow></semantics></math>, với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> giây là khoảng thời gian tính từ lúc vật bắt đầu chuyển động và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>s</mi></semantics></math> mét là quãng đường vật đi được trong khoảng thời gian đó. Hỏi trong khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>12</mn></semantics></math> giây kể từ lúc bắt đầu chuyển động, vận tốc lớn nhất của vật đạt được là bao nhiêu?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>384</mn></semantics></math> m/s"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>180</mn></semantics></math> m/s"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>2592</mn></semantics></math> m/s"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>360</mn></semantics></math> m/s"
+        }
+      ],
+      "correct": "D",
+      "solution": "Vận tốc thức thời của chuyển động là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>s</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>48</mn><mi>t</mi><mspace width=\"0.167em\"/><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo>≥</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.<br>\n\t\tXét sự biến thiên của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> trên đoạn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>12</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>, ta có bảng biến thiên như sau\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/variant-assets/5eb1dc16237273a32a9792b8bcf2e7d8af69f0fc61c61545b96901d2499d9dd2.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tTừ bảng biến thiên ta thấy trong khoảng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>12</mn></semantics></math> giây kể từ lúc bắt đầu chuyển động, vận tốc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> đạt giá trị lớn nhất bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>360</mn></semantics></math> m/s tại thời điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>12</mn></mrow></semantics></math> giây.",
+      "accepted_answers": []
+    }
+  ]
+}

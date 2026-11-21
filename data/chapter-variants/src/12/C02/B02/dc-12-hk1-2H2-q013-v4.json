@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk1-2H2-q013-v4",
+  "source_fingerprint": "bf2abeb9743a8273e2e5b22ab965659ece6990e80e83dddf3e68f0cbe041de49",
+  "variants": [
+    {
+      "id": "dc-12-hk1-2H2-q013-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Một vật ở trạng thái cân bằng khi hợp của tất cả các lực tác dụng lên vật được biểu diễn bằng véc-tơ-không. Trong không gian <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>x</mi><mi>y</mi><mi>z</mi></mrow></semantics></math>, biết rằng đang có ba lực biểu thị bởi ba véc-tơ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>1</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo>;</mo><mo>−</mo><mn>5</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>2</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mo>−</mo><mn>3</mn><mo>;</mo><mn>6</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>3</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>;</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> tác dụng lên một vật. Hãy tìm tọa độ của véc-tơ biểu thị lực <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover></mrow></semantics></math> để khi tác dụng thêm lực này vào vật thì vật ở trạng thái cân bằng.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>9</mn><mo>;</mo><mn>9</mn><mo>;</mo><mo>−</mo><mn>13</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>9</mn><mo>;</mo><mo>−</mo><mn>9</mn><mo>;</mo><mo>−</mo><mn>13</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>9</mn><mo>;</mo><mn>9</mn><mo>;</mo><mo>−</mo><mn>13</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>9</mn><mo>;</mo><mo>−</mo><mn>9</mn><mo>;</mo><mn>13</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+        }
+      ],
+      "correct": "A",
+      "solution": "Điều kiện cân bằng của vật là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>1</mn></msub><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><msub><mi>F</mi><mn>2</mn></msub><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><msub><mi>F</mi><mn>3</mn></msub><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mi>0</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.<br>Suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mo>−</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><msub><mi>F</mi><mn>1</mn></msub><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><msub><mi>F</mi><mn>2</mn></msub><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><msub><mi>F</mi><mn>3</mn></msub><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>9</mn><mo>;</mo><mn>9</mn><mo>;</mo><mo>−</mo><mn>13</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-2H2-q013-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Một vật ở trạng thái cân bằng khi hợp của tất cả các lực tác dụng lên vật được biểu diễn bằng véc-tơ-không. Trong không gian <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>x</mi><mi>y</mi><mi>z</mi></mrow></semantics></math>, biết rằng đang có ba lực biểu thị bởi ba véc-tơ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>1</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>6</mn><mo>;</mo><mo>−</mo><mn>4</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>2</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mo>−</mo><mn>5</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>3</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo>;</mo><mn>2</mn><mo>;</mo><mn>7</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> tác dụng lên một vật. Hãy tìm tọa độ của véc-tơ biểu thị lực <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover></mrow></semantics></math> để khi tác dụng thêm lực này vào vật thì vật ở trạng thái cân bằng.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>11</mn><mo>;</mo><mo>−</mo><mn>7</mn><mo>;</mo><mo>−</mo><mn>14</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>11</mn><mo>;</mo><mn>7</mn><mo>;</mo><mo>−</mo><mn>14</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>11</mn><mo>;</mo><mn>7</mn><mo>;</mo><mo>−</mo><mn>14</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>11</mn><mo>;</mo><mo>−</mo><mn>7</mn><mo>;</mo><mn>14</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Điều kiện cân bằng của vật là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>1</mn></msub><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><msub><mi>F</mi><mn>2</mn></msub><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><msub><mi>F</mi><mn>3</mn></msub><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mi>0</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.<br>Suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mo>−</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><msub><mi>F</mi><mn>1</mn></msub><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><msub><mi>F</mi><mn>2</mn></msub><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><msub><mi>F</mi><mn>3</mn></msub><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>11</mn><mo>;</mo><mn>7</mn><mo>;</mo><mo>−</mo><mn>14</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-2H2-q013-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Một vật ở trạng thái cân bằng khi hợp của tất cả các lực tác dụng lên vật được biểu diễn bằng véc-tơ-không. Trong không gian <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>x</mi><mi>y</mi><mi>z</mi></mrow></semantics></math>, biết rằng đang có ba lực biểu thị bởi ba véc-tơ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>1</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>;</mo><mo>−</mo><mn>6</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>2</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>5</mn><mo>;</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>3</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mo>−</mo><mn>4</mn><mo>;</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> tác dụng lên một vật. Hãy tìm tọa độ của véc-tơ biểu thị lực <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover></mrow></semantics></math> để khi tác dụng thêm lực này vào vật thì vật ở trạng thái cân bằng.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>10</mn><mo>;</mo><mo>−</mo><mn>11</mn><mo>;</mo><mo>−</mo><mn>15</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>10</mn><mo>;</mo><mn>11</mn><mo>;</mo><mo>−</mo><mn>15</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>10</mn><mo>;</mo><mn>11</mn><mo>;</mo><mo>−</mo><mn>15</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>10</mn><mo>;</mo><mo>−</mo><mn>11</mn><mo>;</mo><mn>15</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Điều kiện cân bằng của vật là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>1</mn></msub><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><msub><mi>F</mi><mn>2</mn></msub><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><msub><mi>F</mi><mn>3</mn></msub><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mi>0</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.<br>Suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mo>−</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><msub><mi>F</mi><mn>1</mn></msub><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><msub><mi>F</mi><mn>2</mn></msub><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><msub><mi>F</mi><mn>3</mn></msub><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>10</mn><mo>;</mo><mn>11</mn><mo>;</mo><mo>−</mo><mn>15</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-2H2-q013-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Một vật ở trạng thái cân bằng khi hợp của tất cả các lực tác dụng lên vật được biểu diễn bằng véc-tơ-không. Trong không gian <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>x</mi><mi>y</mi><mi>z</mi></mrow></semantics></math>, biết rằng đang có ba lực biểu thị bởi ba véc-tơ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>1</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>7</mn><mo>;</mo><mo>−</mo><mn>3</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>2</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mo>−</mo><mn>4</mn><mo>;</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>3</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>5</mn><mo>;</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>6</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> tác dụng lên một vật. Hãy tìm tọa độ của véc-tơ biểu thị lực <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover></mrow></semantics></math> để khi tác dụng thêm lực này vào vật thì vật ở trạng thái cân bằng.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>14</mn><mo>;</mo><mo>−</mo><mn>9</mn><mo>;</mo><mo>−</mo><mn>13</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>14</mn><mo>;</mo><mn>9</mn><mo>;</mo><mo>−</mo><mn>13</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>14</mn><mo>;</mo><mo>−</mo><mn>9</mn><mo>;</mo><mn>13</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>14</mn><mo>;</mo><mn>9</mn><mo>;</mo><mo>−</mo><mn>13</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+        }
+      ],
+      "correct": "D",
+      "solution": "Điều kiện cân bằng của vật là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>1</mn></msub><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><msub><mi>F</mi><mn>2</mn></msub><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><msub><mi>F</mi><mn>3</mn></msub><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mi>0</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.<br>Suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><msub><mi>F</mi><mn>4</mn></msub><mo accent=\"true\">→</mo></mover><mo>=</mo><mo>−</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><msub><mi>F</mi><mn>1</mn></msub><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><msub><mi>F</mi><mn>2</mn></msub><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><msub><mi>F</mi><mn>3</mn></msub><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>14</mn><mo>;</mo><mn>9</mn><mo>;</mo><mo>−</mo><mn>13</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

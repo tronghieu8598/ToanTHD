@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk2-4D3-q041-v4",
+  "source_fingerprint": "f57c11e191e3e964a5a6ebcdd3175f5d99c0f1d2f9fe0f93fa6cc7df1b1899a6",
+  "variants": [
+    {
+      "id": "dc-12-hk2-4D3-q041-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Một vật đang chuyển động thẳng với vận tốc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>5</mn></semantics></math> m/s thì tăng tốc với gia tốc tức thời là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn></mrow><mrow><mn>1</mn><mo>+</mo><mi>t</mi></mrow></mfrac></mrow></semantics></math> m/s<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><msup><mi/><mn>2</mn></msup></semantics></math>, trong đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> là khoảng thời gian tính bằng giây kể từ lúc bắt đầu tăng tốc. Hỏi vận tốc của vật sau 10 giây kể từ lúc bắt đầu tăng tốc gần nhất với kết quả nào sau đây?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>16</mn></semantics></math> m/s"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>14</mn></semantics></math> m/s"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>13</mn></semantics></math> m/s"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>15</mn></semantics></math> m/s"
+        }
+      ],
+      "correct": "D",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>10</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>5</mn><mo>+</mo><munderover><mo>∫</mo><mrow><mn>0</mn></mrow><mrow><mn>10</mn></mrow></munderover><mfrac displaystyle=\"true\"><mrow><mn>4</mn></mrow><mrow><mn>1</mn><mo>+</mo><mi>t</mi></mrow></mfrac><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>t</mi><mo>=</mo><mn>5</mn><mo>+</mo><mn>4</mn><mo>ln</mo><mn>11</mn><mo>≈</mo><mn>15</mn></mrow></semantics></math> m/s.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-4D3-q041-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Một vật đang chuyển động thẳng với vận tốc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>7</mn></semantics></math> m/s thì tăng tốc với gia tốc tức thời là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn></mrow><mrow><mn>1</mn><mo>+</mo><mi>t</mi></mrow></mfrac></mrow></semantics></math> m/s<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><msup><mi/><mn>2</mn></msup></semantics></math>, trong đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> là khoảng thời gian tính bằng giây kể từ lúc bắt đầu tăng tốc. Hỏi vận tốc của vật sau 10 giây kể từ lúc bắt đầu tăng tốc gần nhất với kết quả nào sau đây?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>20</mn></semantics></math> m/s"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>18</mn></semantics></math> m/s"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>17</mn></semantics></math> m/s"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>19</mn></semantics></math> m/s"
+        }
+      ],
+      "correct": "D",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>10</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>7</mn><mo>+</mo><munderover><mo>∫</mo><mrow><mn>0</mn></mrow><mrow><mn>10</mn></mrow></munderover><mfrac displaystyle=\"true\"><mrow><mn>5</mn></mrow><mrow><mn>1</mn><mo>+</mo><mi>t</mi></mrow></mfrac><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>t</mi><mo>=</mo><mn>7</mn><mo>+</mo><mn>5</mn><mo>ln</mo><mn>11</mn><mo>≈</mo><mn>19</mn></mrow></semantics></math> m/s.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-4D3-q041-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Một vật đang chuyển động thẳng với vận tốc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>4</mn></semantics></math> m/s thì tăng tốc với gia tốc tức thời là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>6</mn></mrow><mrow><mn>1</mn><mo>+</mo><mi>t</mi></mrow></mfrac></mrow></semantics></math> m/s<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><msup><mi/><mn>2</mn></msup></semantics></math>, trong đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> là khoảng thời gian tính bằng giây kể từ lúc bắt đầu tăng tốc. Hỏi vận tốc của vật sau 8 giây kể từ lúc bắt đầu tăng tốc gần nhất với kết quả nào sau đây?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>18</mn></semantics></math> m/s"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>16</mn></semantics></math> m/s"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>15</mn></semantics></math> m/s"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>17</mn></semantics></math> m/s"
+        }
+      ],
+      "correct": "D",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>4</mn><mo>+</mo><munderover><mo>∫</mo><mrow><mn>0</mn></mrow><mrow><mn>8</mn></mrow></munderover><mfrac displaystyle=\"true\"><mrow><mn>6</mn></mrow><mrow><mn>1</mn><mo>+</mo><mi>t</mi></mrow></mfrac><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>t</mi><mo>=</mo><mn>4</mn><mo>+</mo><mn>6</mn><mo>ln</mo><mn>9</mn><mo>≈</mo><mn>17</mn></mrow></semantics></math> m/s.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-4D3-q041-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Một vật đang chuyển động thẳng với vận tốc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>8</mn></semantics></math> m/s thì tăng tốc với gia tốc tức thời là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn></mrow><mrow><mn>1</mn><mo>+</mo><mi>t</mi></mrow></mfrac></mrow></semantics></math> m/s<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><msup><mi/><mn>2</mn></msup></semantics></math>, trong đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> là khoảng thời gian tính bằng giây kể từ lúc bắt đầu tăng tốc. Hỏi vận tốc của vật sau 12 giây kể từ lúc bắt đầu tăng tốc gần nhất với kết quả nào sau đây?",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>19</mn></semantics></math> m/s"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>17</mn></semantics></math> m/s"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>16</mn></semantics></math> m/s"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>18</mn></semantics></math> m/s"
+        }
+      ],
+      "correct": "D",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>12</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>8</mn><mo>+</mo><munderover><mo>∫</mo><mrow><mn>0</mn></mrow><mrow><mn>12</mn></mrow></munderover><mfrac displaystyle=\"true\"><mrow><mn>4</mn></mrow><mrow><mn>1</mn><mo>+</mo><mi>t</mi></mrow></mfrac><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>t</mi><mo>=</mo><mn>8</mn><mo>+</mo><mn>4</mn><mo>ln</mo><mn>13</mn><mo>≈</mo><mn>18</mn></mrow></semantics></math> m/s.",
+      "accepted_answers": []
+    }
+  ]
+}

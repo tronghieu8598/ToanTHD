@@ -1,0 +1,33 @@
+{
+  "id": "dc-12-hk1-2H3-q042-v4",
+  "original_number": 42,
+  "kind": "tf",
+  "based_on": "c890a75febbbae32a0acf706cc0aeabe348c664af0da568f1a8d7c7881a5b633",
+  "prompt": "Trong không gian với hệ toạ độ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>x</mi><mi>y</mi><mi>z</mi></mrow></semantics></math>, cho ba véc-tơ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>,</mo><mover><mi>c</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mi>c</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mi>a</mi><mo accent=\"true\">→</mo></mover></semantics></math> cùng phương <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mi>c</mi><mo accent=\"true\">→</mo></mover></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo>,</mo><mover><mi>c</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><msqrt><mn>6</mn></msqrt></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mi>c</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mn>0</mn><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    false,
+    false,
+    false
+  ],
+  "solution": "Ta có\n\t\t<ul class=\"\"><li><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mi>c</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mo>−</mo><mn>1</mn><mo>⋅</mo><mn>1</mn><mo>+</mo><mn>1</mn><mo>⋅</mo><mn>1</mn><mo>+</mo><mn>0</mn><mo>⋅</mo><mn>1</mn><mo>=</mo><mn>0</mn><mo>⇒</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>⊥</mo><mover><mi>c</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.</li><li><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mi>c</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>≠</mo><mover><mn>0</mn><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.</li><li><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo>,</mo><mover><mi>c</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mi>c</mi><mo accent=\"true\">→</mo></mover></mrow><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mover><mi>c</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>⋅</mo><mn>1</mn><mo>+</mo><mn>1</mn><mo>⋅</mo><mn>1</mn><mo>+</mo><mn>0</mn><mo>⋅</mo><mn>1</mn></mrow><mrow><msqrt><mrow><mn>1</mn><mo>+</mo><mn>1</mn></mrow></msqrt><mo>⋅</mo><msqrt><mrow><mn>1</mn><mo>+</mo><mn>1</mn><mo>+</mo><mn>1</mn></mrow></msqrt></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><msqrt><mn>6</mn></msqrt></mfrac></mrow></semantics></math>.</li></ul>",
+  "accepted_answers": []
+}

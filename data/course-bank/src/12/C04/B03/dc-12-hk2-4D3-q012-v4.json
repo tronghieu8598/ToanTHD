@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk2-4D3-q012-v4",
+  "original_number": 12,
+  "kind": "mcq",
+  "based_on": "2dc559bcb0247f93ef4344014c77449cd10dce1368e0a40a1a6332848fe01edf",
+  "prompt": "Thể tích <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>V</mi></semantics></math> của khối tròn xoay được tạo thành khi quay hình phẳng giới hạn bởi đồ thị của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>cos</mo><mi>x</mi></mrow></semantics></math>, trục hoành và các đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mi>π</mi></mrow></semantics></math> quanh trục <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>x</mi></mrow></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>V</mi><mo>=</mo><msup><mi>π</mi><mn>2</mn></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac displaystyle=\"true\"><msup><mi>π</mi><mn>2</mn></msup><mn>2</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>V</mi><mo>=</mo><mn>2</mn><msup><mi>π</mi><mn>2</mn></msup></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Thể tích <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>V</mi></semantics></math> của khối tròn xoay được tạo thành khi quay hình phẳng giới hạn bởi đồ thị của hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>cos</mo><mi>x</mi></mrow></semantics></math>, trục hoành và các đường thẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>=</mo><mi>π</mi></mrow></semantics></math> quanh trục <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>x</mi></mrow></semantics></math> là\n\t\t<div class=\"math-display\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi>V</mi><mo>=</mo><mi>π</mi><munderover><mo>∫</mo><mn>0</mn><mi>π</mi></munderover><msup><mo>cos</mo><mn>2</mn></msup><mi>x</mi><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mi>π</mi><munderover><mo>∫</mo><mn>0</mn><mi>π</mi></munderover><mfrac displaystyle=\"true\"><mrow><mo>cos</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mn>2</mn></mfrac><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mi>π</mi><mo>⋅</mo><msubsup><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mrow><mo>sin</mo><mn>2</mn><mi>x</mi></mrow><mn>4</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mi>x</mi><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mn>0</mn><mi>π</mi></msubsup><mo>=</mo><mfrac displaystyle=\"true\"><msup><mi>π</mi><mn>2</mn></msup><mn>2</mn></mfrac><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

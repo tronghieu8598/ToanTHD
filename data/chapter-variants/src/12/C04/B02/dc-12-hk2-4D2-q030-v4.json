@@ -1,0 +1,134 @@
+{
+  "id": "dc-12-hk2-4D2-q030-v4",
+  "source_fingerprint": "61c2e42858bea3e50ded76f25a4bae0acd41d1245e422a55167aaad57ebbae8e",
+  "variants": [
+    {
+      "id": "dc-12-hk2-4D2-q030-v4--bt01",
+      "number": 1,
+      "kind": "tf",
+      "prompt": "Một ô tô đang chạy đều với vận tốc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>x</mi></semantics></math> m/s thì người lái xe đạp phanh. Từ thời điểm đó, ô tô chuyển động chậm dần đều với vận tốc thay đổi theo hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>4</mn><mi>t</mi><mo>+</mo><mn>20</mn></mrow></semantics></math> m/s, trong đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> là thời gian tính bằng giây kể từ lúc đạp phanh.",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Thời gian từ lúc người lái xe đạp phanh cho đến khi xe dừng hẳn là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>6</mn></semantics></math> s"
+        },
+        {
+          "key": "b",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><mrow><mo>(</mo><mo>−</mo><mn>4</mn><mi>t</mi><mo>+</mo><mn>20</mn><mo>)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>t</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn><msup><mi>t</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn></mrow></mfrac><mo>+</mo><mn>20</mn><mi>t</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Khi xe dừng hẳn thì vận tốc bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>0</mn></semantics></math> m/s"
+        },
+        {
+          "key": "d",
+          "text": "Quãng đường từ lúc đạp phanh cho đến khi xe dừng hẳn là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>500</mn></semantics></math> m"
+        }
+      ],
+      "correct": [
+        false,
+        true,
+        true,
+        false
+      ],
+      "solution": "Xe dừng khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>5</mn></mrow></semantics></math> s (nên mệnh đề a sai), quãng đường đi được là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>50</mn></semantics></math> m (nên mệnh đề d sai).",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-4D2-q030-v4--bt02",
+      "number": 2,
+      "kind": "tf",
+      "prompt": "Một ô tô đang chạy đều với vận tốc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>x</mi></semantics></math> m/s thì người lái xe đạp phanh. Từ thời điểm đó, ô tô chuyển động chậm dần đều với vận tốc thay đổi theo hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>6</mn><mi>t</mi><mo>+</mo><mn>24</mn></mrow></semantics></math> m/s, trong đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> là thời gian tính bằng giây kể từ lúc đạp phanh.",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Thời gian từ lúc người lái xe đạp phanh cho đến khi xe dừng hẳn là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>5</mn></semantics></math> s"
+        },
+        {
+          "key": "b",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><mrow><mo>(</mo><mo>−</mo><mn>6</mn><mi>t</mi><mo>+</mo><mn>24</mn><mo>)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>t</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>6</mn><msup><mi>t</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn></mrow></mfrac><mo>+</mo><mn>24</mn><mi>t</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Khi xe dừng hẳn thì vận tốc bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>0</mn></semantics></math> m/s"
+        },
+        {
+          "key": "d",
+          "text": "Quãng đường từ lúc đạp phanh cho đến khi xe dừng hẳn là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>480</mn></semantics></math> m"
+        }
+      ],
+      "correct": [
+        false,
+        true,
+        true,
+        false
+      ],
+      "solution": "Xe dừng khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>4</mn></mrow></semantics></math> s (nên mệnh đề a sai), quãng đường đi được là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>48</mn></semantics></math> m (nên mệnh đề d sai).",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-4D2-q030-v4--bt03",
+      "number": 3,
+      "kind": "tf",
+      "prompt": "Một ô tô đang chạy đều với vận tốc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>x</mi></semantics></math> m/s thì người lái xe đạp phanh. Từ thời điểm đó, ô tô chuyển động chậm dần đều với vận tốc thay đổi theo hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>5</mn><mi>t</mi><mo>+</mo><mn>30</mn></mrow></semantics></math> m/s, trong đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> là thời gian tính bằng giây kể từ lúc đạp phanh.",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Thời gian từ lúc người lái xe đạp phanh cho đến khi xe dừng hẳn là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>7</mn></semantics></math> s"
+        },
+        {
+          "key": "b",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><mrow><mo>(</mo><mo>−</mo><mn>5</mn><mi>t</mi><mo>+</mo><mn>30</mn><mo>)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>t</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn><msup><mi>t</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn></mrow></mfrac><mo>+</mo><mn>30</mn><mi>t</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Khi xe dừng hẳn thì vận tốc bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>0</mn></semantics></math> m/s"
+        },
+        {
+          "key": "d",
+          "text": "Quãng đường từ lúc đạp phanh cho đến khi xe dừng hẳn là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>900</mn></semantics></math> m"
+        }
+      ],
+      "correct": [
+        false,
+        true,
+        true,
+        false
+      ],
+      "solution": "Xe dừng khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>6</mn></mrow></semantics></math> s (nên mệnh đề a sai), quãng đường đi được là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>90</mn></semantics></math> m (nên mệnh đề d sai).",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-4D2-q030-v4--bt04",
+      "number": 4,
+      "kind": "tf",
+      "prompt": "Một ô tô đang chạy đều với vận tốc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>x</mi></semantics></math> m/s thì người lái xe đạp phanh. Từ thời điểm đó, ô tô chuyển động chậm dần đều với vận tốc thay đổi theo hàm số <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>8</mn><mi>t</mi><mo>+</mo><mn>24</mn></mrow></semantics></math> m/s, trong đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> là thời gian tính bằng giây kể từ lúc đạp phanh.",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Thời gian từ lúc người lái xe đạp phanh cho đến khi xe dừng hẳn là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>4</mn></semantics></math> s"
+        },
+        {
+          "key": "b",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><mrow><mo>(</mo><mo>−</mo><mn>8</mn><mi>t</mi><mo>+</mo><mn>24</mn><mo>)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>t</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>8</mn><msup><mi>t</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn></mrow></mfrac><mo>+</mo><mn>24</mn><mi>t</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Khi xe dừng hẳn thì vận tốc bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>0</mn></semantics></math> m/s"
+        },
+        {
+          "key": "d",
+          "text": "Quãng đường từ lúc đạp phanh cho đến khi xe dừng hẳn là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>360</mn></semantics></math> m"
+        }
+      ],
+      "correct": [
+        false,
+        true,
+        true,
+        false
+      ],
+      "solution": "Xe dừng khi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>3</mn></mrow></semantics></math> s (nên mệnh đề a sai), quãng đường đi được là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>36</mn></semantics></math> m (nên mệnh đề d sai).",
+      "accepted_answers": []
+    }
+  ]
+}

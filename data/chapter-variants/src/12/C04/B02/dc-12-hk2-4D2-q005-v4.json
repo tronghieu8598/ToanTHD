@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk2-4D2-q005-v4",
+  "source_fingerprint": "6f6ca90d2ae34573dadf38aa780bfe2b9d4bf41f3a6741e9d6a2173c83074632",
+  "variants": [
+    {
+      "id": "dc-12-hk2-4D2-q005-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Một chiếc ô tô đang dừng và bắt đầu chuyển động theo một đường thẳng với gia tốc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>12</mn><mo>−</mo><mn>2</mn><mi>t</mi></mrow></semantics></math> (m/s<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><msup><mi/><mn>2</mn></msup></semantics></math>), trong đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> là khoảng thời gian tính bằng giây. Quãng đường ô tô đi được kể từ lúc bắt đầu chuyển động đến khi ô tô đạt vận tốc lớn nhất là",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>144</mn></semantics></math> m"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>150</mn></semantics></math> m"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>216</mn></mrow><mrow><mn>7</mn></mrow></mfrac></semantics></math> m"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>36</mn></semantics></math> m"
+        }
+      ],
+      "correct": "A",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>12</mn><mi>t</mi></mrow></semantics></math> đạt giá trị lớn nhất tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>6</mn></mrow></semantics></math>. Quãng đường đi được là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>s</mi><mo>=</mo><munderover><mo>∫</mo><mrow><mn>0</mn></mrow><mrow><mn>6</mn></mrow></munderover><mi>v</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>t</mi><mo>=</mo><mn>144</mn></mrow></semantics></math> m.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-4D2-q005-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Một chiếc ô tô đang dừng và bắt đầu chuyển động theo một đường thẳng với gia tốc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>18</mn><mo>−</mo><mn>2</mn><mi>t</mi></mrow></semantics></math> (m/s<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><msup><mi/><mn>2</mn></msup></semantics></math>), trong đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> là khoảng thời gian tính bằng giây. Quãng đường ô tô đi được kể từ lúc bắt đầu chuyển động đến khi ô tô đạt vận tốc lớn nhất là",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>486</mn></semantics></math> m"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>492</mn></semantics></math> m"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>729</mn></mrow><mrow><mn>7</mn></mrow></mfrac></semantics></math> m"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>81</mn></semantics></math> m"
+        }
+      ],
+      "correct": "A",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>18</mn><mi>t</mi></mrow></semantics></math> đạt giá trị lớn nhất tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>9</mn></mrow></semantics></math>. Quãng đường đi được là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>s</mi><mo>=</mo><munderover><mo>∫</mo><mrow><mn>0</mn></mrow><mrow><mn>9</mn></mrow></munderover><mi>v</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>t</mi><mo>=</mo><mn>486</mn></mrow></semantics></math> m.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-4D2-q005-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Một chiếc ô tô đang dừng và bắt đầu chuyển động theo một đường thẳng với gia tốc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>24</mn><mo>−</mo><mn>2</mn><mi>t</mi></mrow></semantics></math> (m/s<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><msup><mi/><mn>2</mn></msup></semantics></math>), trong đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> là khoảng thời gian tính bằng giây. Quãng đường ô tô đi được kể từ lúc bắt đầu chuyển động đến khi ô tô đạt vận tốc lớn nhất là",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>1152</mn></semantics></math> m"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>1158</mn></semantics></math> m"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>1728</mn></mrow><mrow><mn>7</mn></mrow></mfrac></semantics></math> m"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>144</mn></semantics></math> m"
+        }
+      ],
+      "correct": "A",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>24</mn><mi>t</mi></mrow></semantics></math> đạt giá trị lớn nhất tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>12</mn></mrow></semantics></math>. Quãng đường đi được là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>s</mi><mo>=</mo><munderover><mo>∫</mo><mrow><mn>0</mn></mrow><mrow><mn>12</mn></mrow></munderover><mi>v</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>t</mi><mo>=</mo><mn>1152</mn></mrow></semantics></math> m.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-4D2-q005-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Một chiếc ô tô đang dừng và bắt đầu chuyển động theo một đường thẳng với gia tốc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>30</mn><mo>−</mo><mn>2</mn><mi>t</mi></mrow></semantics></math> (m/s<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><msup><mi/><mn>2</mn></msup></semantics></math>), trong đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> là khoảng thời gian tính bằng giây. Quãng đường ô tô đi được kể từ lúc bắt đầu chuyển động đến khi ô tô đạt vận tốc lớn nhất là",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>2250</mn></semantics></math> m"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>2256</mn></semantics></math> m"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>3375</mn></mrow><mrow><mn>7</mn></mrow></mfrac></semantics></math> m"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>225</mn></semantics></math> m"
+        }
+      ],
+      "correct": "A",
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>30</mn><mi>t</mi></mrow></semantics></math> đạt giá trị lớn nhất tại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>15</mn></mrow></semantics></math>. Quãng đường đi được là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>s</mi><mo>=</mo><munderover><mo>∫</mo><mrow><mn>0</mn></mrow><mrow><mn>15</mn></mrow></munderover><mi>v</mi><mrow><mo>(</mo><mi>t</mi><mo>)</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>t</mi><mo>=</mo><mn>2250</mn></mrow></semantics></math> m.",
+      "accepted_answers": []
+    }
+  ]
+}

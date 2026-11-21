@@ -111,7 +111,8 @@ async function main(args) {
         args, options: {chapter: {type: 'string'}}, allowPositionals: true,
     });
     if (!['stage', 'activate'].includes(action) || !input || extra.length) {
-        throw new Error('Cách dùng\n  node scripts/publish-bank-release.mjs stage <gói.json>\n  node scripts/publish-bank-release.mjs activate <sha256> [--chapter 12-C01|12-C02|12-C06]');
+        const chapters = Object.keys(bankReleaseChapters).join('|');
+        throw new Error(`Cách dùng\n  node scripts/publish-bank-release.mjs stage <gói.json>\n  node scripts/publish-bank-release.mjs activate <sha256> [--chapter ${chapters}]`);
     }
     const chapter = values.chapter;
     if (chapter && !Object.hasOwn(bankReleaseChapters, chapter)) throw new Error('Chương chưa có cấu hình phát hành.');

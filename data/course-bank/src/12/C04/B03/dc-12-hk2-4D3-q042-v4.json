@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk2-4D3-q042-v4",
+  "original_number": 42,
+  "kind": "mcq",
+  "based_on": "18c59e890707a2cbe16b9c87943affa99bcd158f0deea8289d0ebabc43ee6a70",
+  "prompt": "Tính thể tích <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>V</mi></semantics></math> của khối tròn xoay được tạo thành khi quay hình phẳng giới hạn bởi các đường <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>2</mn></msup><mn>8</mn></mfrac></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>8</mn><mi>x</mi></mfrac></mrow></semantics></math> quanh trục <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>x</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>V</mi><mo>=</mo><mn>22</mn><mi>π</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>63</mn><mi>π</mi></mrow><mn>10</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>96</mn><mi>π</mi></mrow><mn>5</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>157</mn><mi>π</mi></mrow><mn>10</mn></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>2</mn></msup><mn>8</mn></mfrac><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>.\n\t\t<br>\n\t\t<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mfrac displaystyle=\"true\"><mn>8</mn><mi>x</mi></mfrac><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>.\n\t\t<br>\n\t\t<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>2</mn></msup><mn>8</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>8</mn><mi>x</mi></mfrac><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>.\n\t\t<br>\n\t\tKhi đó thể tích <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>V</mi><mo>=</mo><mi>π</mi><munderover><mo>∫</mo><mn>0</mn><mn>2</mn></munderover><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>−</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>2</mn></msup><mn>8</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>+</mo><mi>π</mi><munderover><mo>∫</mo><mn>0</mn><mn>2</mn></munderover><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>8</mn><mi>x</mi></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>−</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>2</mn></msup><mn>8</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>96</mn><mi>π</mi></mrow><mn>5</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

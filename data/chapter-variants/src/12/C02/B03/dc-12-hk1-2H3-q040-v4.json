@@ -1,0 +1,134 @@
+{
+  "id": "dc-12-hk1-2H3-q040-v4",
+  "source_fingerprint": "6f7228c89b8378dcd39037f9b36f2161ad43dd6aeec799acf167dbebeaad4bc3",
+  "variants": [
+    {
+      "id": "dc-12-hk1-2H3-q040-v4--bt01",
+      "number": 1,
+      "kind": "tf",
+      "prompt": "Trong không gian với hệ tọa độ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>x</mi><mi>y</mi><mi>z</mi></mrow></semantics></math>, cho 3 điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mn>3</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mn>1</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>0</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>. Xét tính đúng - sai của các mệnh đề sau về tam giác <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math>:",
+      "choices": [
+        {
+          "key": "a",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><msqrt><mrow><mn>5</mn></mrow></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Tam giác cân tại đỉnh <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Tam giác đều"
+        },
+        {
+          "key": "d",
+          "text": "Tam giác có ba góc nhọn"
+        }
+      ],
+      "correct": [
+        true,
+        false,
+        false,
+        true
+      ],
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mrow><mi>A</mi><mi>B</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>5</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mrow><mi>A</mi><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>14</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mrow><mi>B</mi><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>11</mn></mrow></semantics></math>.<br>Tổng bình phương hai cạnh bất kì đều lớn hơn bình phương cạnh còn lại nên tam giác có ba góc nhọn.<br>Do đó: a) Đúng; b) Sai; c) Sai; d) Đúng.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-2H3-q040-v4--bt02",
+      "number": 2,
+      "kind": "tf",
+      "prompt": "Trong không gian với hệ tọa độ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>x</mi><mi>y</mi><mi>z</mi></mrow></semantics></math>, cho 3 điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>0</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mn>2</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>;</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>. Xét tính đúng - sai của các mệnh đề sau về tam giác <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math>:",
+      "choices": [
+        {
+          "key": "a",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Tam giác cân tại đỉnh <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Tam giác đều"
+        },
+        {
+          "key": "d",
+          "text": "Tam giác có ba góc nhọn"
+        }
+      ],
+      "correct": [
+        true,
+        false,
+        false,
+        true
+      ],
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mrow><mi>A</mi><mi>B</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>9</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mrow><mi>A</mi><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>14</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mrow><mi>B</mi><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>11</mn></mrow></semantics></math>.<br>Tổng bình phương hai cạnh bất kì đều lớn hơn bình phương cạnh còn lại nên tam giác có ba góc nhọn.<br>Do đó: a) Đúng; b) Sai; c) Sai; d) Đúng.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-2H3-q040-v4--bt03",
+      "number": 3,
+      "kind": "tf",
+      "prompt": "Trong không gian với hệ tọa độ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>x</mi><mi>y</mi><mi>z</mi></mrow></semantics></math>, cho 3 điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mn>2</mn><mo>;</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>. Xét tính đúng - sai của các mệnh đề sau về tam giác <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math>:",
+      "choices": [
+        {
+          "key": "a",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><msqrt><mrow><mn>8</mn></mrow></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Tam giác cân tại đỉnh <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Tam giác đều"
+        },
+        {
+          "key": "d",
+          "text": "Tam giác có ba góc nhọn"
+        }
+      ],
+      "correct": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mrow><mi>A</mi><mi>B</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>6</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mrow><mi>A</mi><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>14</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mrow><mi>B</mi><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>18</mn></mrow></semantics></math>.<br>Tổng bình phương hai cạnh bất kì đều lớn hơn bình phương cạnh còn lại nên tam giác có ba góc nhọn.<br>Do đó: a) Sai; b) Sai; c) Sai; d) Đúng.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-2H3-q040-v4--bt04",
+      "number": 4,
+      "kind": "tf",
+      "prompt": "Trong không gian với hệ tọa độ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>x</mi><mi>y</mi><mi>z</mi></mrow></semantics></math>, cho 3 điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>;</mo><mn>3</mn><mo>;</mo><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>5</mn><mo>;</mo><mn>5</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>. Xét tính đúng - sai của các mệnh đề sau về tam giác <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math>:",
+      "choices": [
+        {
+          "key": "a",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><msqrt><mrow><mn>6</mn></mrow></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Tam giác cân tại đỉnh <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Tam giác đều"
+        },
+        {
+          "key": "d",
+          "text": "Tam giác có ba góc nhọn"
+        }
+      ],
+      "correct": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mrow><mi>A</mi><mi>B</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>6</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mrow><mi>A</mi><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>25</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mrow><mi>B</mi><mi>C</mi></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>9</mn></mrow></semantics></math>.<br>Tổng bình phương hai cạnh bất kì đều lớn hơn bình phương cạnh còn lại nên tam giác có ba góc nhọn.<br>Do đó: a) Đúng; b) Sai; c) Sai; d) Sai.",
+      "accepted_answers": []
+    }
+  ]
+}

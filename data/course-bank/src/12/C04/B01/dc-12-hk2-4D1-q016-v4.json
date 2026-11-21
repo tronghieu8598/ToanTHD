@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk2-4D1-q016-v4",
+  "original_number": 16,
+  "kind": "mcq",
+  "based_on": "ab544e7a0a2e0fa34f305bf9385d6236941ce1bc1d68ef64a40f7c81f85c80dd",
+  "prompt": "Khẳng định nào dưới đây đúng?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><msup><mn>5</mn><mrow><mn>2</mn><mi>x</mi></mrow></msup><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><msup><mn>5</mn><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow></msup><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><msup><mn>5</mn><mrow><mn>2</mn><mi>x</mi></mrow></msup><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><msup><mn>5</mn><mrow><mn>2</mn><mi>x</mi></mrow></msup><mrow><mo>ln</mo><mn>5</mn></mrow></mfrac><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><msup><mn>5</mn><mrow><mn>2</mn><mi>x</mi></mrow></msup><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><msup><mn>5</mn><mi>x</mi></msup><mrow><mo>ln</mo><mn>25</mn></mrow></mfrac><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><msup><mn>5</mn><mrow><mn>2</mn><mi>x</mi></mrow></msup><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><msup><mn>5</mn><mrow><mn>2</mn><mi>x</mi></mrow></msup><mrow><mo>ln</mo><mn>25</mn></mrow></mfrac><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><msup><mn>5</mn><mrow><mn>2</mn><mi>x</mi></mrow></msup><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mo>∫</mo><msup><mn>25</mn><mi>x</mi></msup><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><msup><mn>25</mn><mi>x</mi></msup><mrow><mo>ln</mo><mn>25</mn></mrow></mfrac><mo>+</mo><mi>C</mi><mo>=</mo><mfrac displaystyle=\"true\"><msup><mn>5</mn><mrow><mn>2</mn><mi>x</mi></mrow></msup><mrow><mo>ln</mo><mn>25</mn></mrow></mfrac><mo>+</mo><mi>C</mi></mrow></semantics></math>.",
+  "accepted_answers": []
+}

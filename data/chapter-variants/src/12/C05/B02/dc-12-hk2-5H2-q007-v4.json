@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk2-5H2-q007-v4",
+  "source_fingerprint": "5d53d306ca4f0344cab9b8cdb2949b3617e164435bf9882f538dcc355ff17dfa",
+  "variants": [
+    {
+      "id": "dc-12-hk2-5H2-q007-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Trong không gian <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>x</mi><mi>y</mi><mi>z</mi></mrow></semantics></math>, cho hai mặt phẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>P</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Q</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có phương trình lần lượt là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>+</mo><mi>z</mi><mo>−</mo><mn>3</mn><mo>=</mo><mn>0</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>−</mo><mn>3</mn><mi>y</mi><mo>+</mo><mi>z</mi><mo>+</mo><mn>2</mn><mo>=</mo><mn>0</mn></mrow></semantics></math>. Viết phương trình đường thẳng đi qua điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> và cùng phương với giao tuyến của hai mặt phẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>P</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Q</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"left\"><mi>x</mi><mo>=</mo><mn>1</mn><mo>+</mo><mn>4</mn><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>y</mi><mo>=</mo><mo>−</mo><mn>2</mn><mo>+</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>z</mi><mo>=</mo><mn>3</mn><mo>−</mo><mi>t</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"left\"><mi>x</mi><mo>=</mo><mn>1</mn><mo>−</mo><mn>4</mn><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>y</mi><mo>=</mo><mo>−</mo><mn>2</mn><mo>+</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>z</mi><mo>=</mo><mn>3</mn><mo>−</mo><mi>t</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"left\"><mi>x</mi><mo>=</mo><mn>1</mn><mo>+</mo><mn>4</mn><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>y</mi><mo>=</mo><mo>−</mo><mn>2</mn><mo>−</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>z</mi><mo>=</mo><mn>3</mn><mo>−</mo><mi>t</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"left\"><mi>x</mi><mo>=</mo><mn>1</mn><mo>+</mo><mn>4</mn><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>y</mi><mo>=</mo><mo>−</mo><mn>2</mn><mo>+</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>z</mi><mo>=</mo><mn>3</mn><mo>+</mo><mi>t</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>"
+        }
+      ],
+      "correct": "A",
+      "solution": "Véc-tơ chỉ phương của đường thẳng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>u</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo>;</mo><mn>1</mn><mo>;</mo><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>. Đường thẳng đi qua <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có phương trình <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"left\"><mi>x</mi><mo>=</mo><mn>1</mn><mo>+</mo><mn>4</mn><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>y</mi><mo>=</mo><mo>−</mo><mn>2</mn><mo>+</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>z</mi><mo>=</mo><mn>3</mn><mo>−</mo><mi>t</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-5H2-q007-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Trong không gian <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>x</mi><mi>y</mi><mi>z</mi></mrow></semantics></math>, cho hai mặt phẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>P</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Q</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có phương trình lần lượt là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>−</mo><mi>z</mi><mo>+</mo><mn>2</mn><mo>=</mo><mn>0</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi><mo>−</mo><mn>4</mn><mo>=</mo><mn>0</mn></mrow></semantics></math>. Viết phương trình đường thẳng đi qua điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mn>1</mn><mo>;</mo><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> và cùng phương với giao tuyến của hai mặt phẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>P</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Q</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"left\"><mi>x</mi><mo>=</mo><mn>2</mn><mo>−</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>y</mi><mo>=</mo><mn>1</mn><mo>−</mo><mn>3</mn><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>z</mi><mo>=</mo><mo>−</mo><mn>1</mn><mo>+</mo><mi>t</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"left\"><mi>x</mi><mo>=</mo><mn>2</mn><mo>+</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>y</mi><mo>=</mo><mn>1</mn><mo>+</mo><mn>3</mn><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>z</mi><mo>=</mo><mo>−</mo><mn>1</mn><mo>+</mo><mi>t</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"left\"><mi>x</mi><mo>=</mo><mn>2</mn><mo>+</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>y</mi><mo>=</mo><mn>1</mn><mo>−</mo><mn>3</mn><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>z</mi><mo>=</mo><mo>−</mo><mn>1</mn><mo>+</mo><mi>t</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"left\"><mi>x</mi><mo>=</mo><mn>2</mn><mo>+</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>y</mi><mo>=</mo><mn>1</mn><mo>−</mo><mn>3</mn><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>z</mi><mo>=</mo><mo>−</mo><mn>1</mn><mo>−</mo><mi>t</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Véc-tơ chỉ phương của đường thẳng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>u</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mo>−</mo><mn>3</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>. Đường thẳng đi qua <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mn>1</mn><mo>;</mo><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có phương trình <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"left\"><mi>x</mi><mo>=</mo><mn>2</mn><mo>+</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>y</mi><mo>=</mo><mn>1</mn><mo>−</mo><mn>3</mn><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>z</mi><mo>=</mo><mo>−</mo><mn>1</mn><mo>+</mo><mi>t</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-5H2-q007-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Trong không gian <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>x</mi><mi>y</mi><mi>z</mi></mrow></semantics></math>, cho hai mặt phẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>P</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Q</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có phương trình lần lượt là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>−</mo><mn>1</mn><mo>=</mo><mn>0</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>x</mi><mo>−</mo><mn>2</mn><mi>y</mi><mo>+</mo><mn>3</mn><mi>z</mi><mo>+</mo><mn>5</mn><mo>=</mo><mn>0</mn></mrow></semantics></math>. Viết phương trình đường thẳng đi qua điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> và cùng phương với giao tuyến của hai mặt phẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>P</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Q</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"left\"><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn><mo>−</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>y</mi><mo>=</mo><mn>3</mn><mo>−</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>z</mi><mo>=</mo><mn>2</mn><mo>−</mo><mi>t</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"left\"><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn><mo>+</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>y</mi><mo>=</mo><mn>3</mn><mo>+</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>z</mi><mo>=</mo><mn>2</mn><mo>−</mo><mi>t</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"left\"><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn><mo>+</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>y</mi><mo>=</mo><mn>3</mn><mo>−</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>z</mi><mo>=</mo><mn>2</mn><mo>+</mo><mi>t</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"left\"><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn><mo>+</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>y</mi><mo>=</mo><mn>3</mn><mo>−</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>z</mi><mo>=</mo><mn>2</mn><mo>−</mo><mi>t</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>"
+        }
+      ],
+      "correct": "D",
+      "solution": "Véc-tơ chỉ phương của đường thẳng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>u</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mo>−</mo><mn>1</mn><mo>;</mo><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>. Đường thẳng đi qua <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có phương trình <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"left\"><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn><mo>+</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>y</mi><mo>=</mo><mn>3</mn><mo>−</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>z</mi><mo>=</mo><mn>2</mn><mo>−</mo><mi>t</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-5H2-q007-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Trong không gian <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>O</mi><mi>x</mi><mi>y</mi><mi>z</mi></mrow></semantics></math>, cho hai mặt phẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>P</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Q</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có phương trình lần lượt là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>y</mi><mo>−</mo><mn>2</mn><mi>z</mi><mo>+</mo><mn>4</mn><mo>=</mo><mn>0</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>−</mo><mi>z</mi><mo>−</mo><mn>3</mn><mo>=</mo><mn>0</mn></mrow></semantics></math>. Viết phương trình đường thẳng đi qua điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>;</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> và cùng phương với giao tuyến của hai mặt phẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>P</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Q</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"left\"><mi>x</mi><mo>=</mo><mn>3</mn><mo>−</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>y</mi><mo>=</mo><mo>−</mo><mn>1</mn><mo>−</mo><mn>4</mn><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>z</mi><mo>=</mo><mn>1</mn><mo>−</mo><mn>2</mn><mi>t</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"left\"><mi>x</mi><mo>=</mo><mn>3</mn><mo>+</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>y</mi><mo>=</mo><mo>−</mo><mn>1</mn><mo>−</mo><mn>4</mn><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>z</mi><mo>=</mo><mn>1</mn><mo>−</mo><mn>2</mn><mi>t</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"left\"><mi>x</mi><mo>=</mo><mn>3</mn><mo>+</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>y</mi><mo>=</mo><mo>−</mo><mn>1</mn><mo>+</mo><mn>4</mn><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>z</mi><mo>=</mo><mn>1</mn><mo>−</mo><mn>2</mn><mi>t</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"left\"><mi>x</mi><mo>=</mo><mn>3</mn><mo>+</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>y</mi><mo>=</mo><mo>−</mo><mn>1</mn><mo>−</mo><mn>4</mn><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>z</mi><mo>=</mo><mn>1</mn><mo>+</mo><mn>2</mn><mi>t</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Véc-tơ chỉ phương của đường thẳng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>u</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mo>−</mo><mn>4</mn><mo>;</mo><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>. Đường thẳng đi qua <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>;</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có phương trình <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"left\"><mi>x</mi><mo>=</mo><mn>3</mn><mo>+</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>y</mi><mo>=</mo><mo>−</mo><mn>1</mn><mo>−</mo><mn>4</mn><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"left\"><mi>z</mi><mo>=</mo><mn>1</mn><mo>−</mo><mn>2</mn><mi>t</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

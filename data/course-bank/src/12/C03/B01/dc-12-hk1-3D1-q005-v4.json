@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-3D1-q005-v4",
+  "original_number": 5,
+  "kind": "mcq",
+  "based_on": "087c720e8998b2523cd473290ffb53a26cdea1071b9a257dc2430f9e8211a098",
+  "prompt": "Để chuẩn bị mở một trung tâm thể dục thể thao, anh Dũng đã tiến hành điều tra tuổi thọ (đơn vị: năm) của máy chạy bộ do hai hãng X, Y sản xuất. Bảng bên dưới biểu thị hai mẫu số liệu mà anh thu thập được qua Internet.\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Tuổi thọ</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>2</mn><mo>;</mo><mn>4</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>4</mn><mo>;</mo><mn>6</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>6</mn><mo>;</mo><mn>8</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>8</mn><mo>;</mo><mn>10</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>10</mn><mo>;</mo><mn>12</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td></tr><tr><td>Số máy hãng X</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>7</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>20</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>36</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>20</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>17</mn></semantics></math></td></tr><tr><td>Số máy hãng Y</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>0</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>20</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>35</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>35</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>10</mn></semantics></math></td></tr></tbody></table></div></div>\n\tMệnh đề nào dưới đây đúng?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "Khoảng biến thiên của mẫu số liệu máy hãng X là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>10</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "Khoảng biến thiên của mẫu số liệu máy hãng Y là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>10</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "Khoảng biến thiên của mẫu số liệu hai hãng bằng nhau"
+    },
+    {
+      "key": "D",
+      "text": "Khoảng biến thiên của mẫu số liệu máy hãng Y lớn hơn hãng X"
+    }
+  ],
+  "correct": "A",
+  "solution": "<ul class=\"\"><li>Khoảng biến thiên của mẫu số liệu của máy hãng X là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>R</mi><mi>X</mi></msub><mo>=</mo><mn>12</mn><mo>−</mo><mn>2</mn><mo>=</mo><mn>10</mn></mrow></semantics></math>.</li><li>Khoảng biến thiên của mẫu số liệu của máy hãng Y là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>R</mi><mi>Y</mi></msub><mo>=</mo><mn>12</mn><mo>−</mo><mn>4</mn><mo>=</mo><mn>8</mn></mrow></semantics></math>.</li></ul>\t\n\t\tVì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>R</mi><mi>X</mi></msub><mo>&gt;</mo><msub><mi>R</mi><mi>Y</mi></msub></mrow></semantics></math> nên ta có thể nói  tuổi thọ máy chạy bộ của hãng X có độ phân tán hơn máy của hãng Y.",
+  "accepted_answers": []
+}

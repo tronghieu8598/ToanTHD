@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk2-4D3-q041-v4",
+  "original_number": 41,
+  "kind": "mcq",
+  "based_on": "f57c11e191e3e964a5a6ebcdd3175f5d99c0f1d2f9fe0f93fa6cc7df1b1899a6",
+  "prompt": "Một vật đang chuyển động thẳng với vận tốc <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>6</mn></semantics></math> m/s thì tăng tốc với gia tốc tức thời là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mrow><mn>1</mn><mo>+</mo><mi>t</mi></mrow></mfrac></mrow></semantics></math> m/s<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><msup><mi/><mn>2</mn></msup></semantics></math>, trong đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>t</mi></semantics></math> là khoảng thời gian tính bằng giây kể từ lúc bắt đầu tăng tốc. Hỏi vận tốc của vật sau 10 giây kể từ lúc bắt đầu tăng tốc gần nhất với kết quả nào sau đây?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>14</mn></semantics></math> m/s"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>12</mn></semantics></math> m/s"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>11</mn></semantics></math> m/s"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>13</mn></semantics></math> m/s"
+    }
+  ],
+  "correct": "D",
+  "solution": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>V</mi><mo>=</mo><mn>6</mn><mo>+</mo><munderover><mo>∫</mo><mn>0</mn><mn>10</mn></munderover><mfrac displaystyle=\"true\"><mn>3</mn><mrow><mn>1</mn><mo>+</mo><mi>t</mi></mrow></mfrac><mrow><mspace width=\"0.167em\"/><mi mathvariant=\"normal\">d</mi></mrow><mi>t</mi><mo>≈</mo><mn>13</mn></mrow></semantics></math> m/s.",
+  "accepted_answers": []
+}

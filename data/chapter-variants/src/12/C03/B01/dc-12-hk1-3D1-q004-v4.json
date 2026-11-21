@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk1-3D1-q004-v4",
+  "source_fingerprint": "8d02364e01e14e53bbfcfcb45f42ab85904b63e91875bc2bc9f0f802cd37b130",
+  "variants": [
+    {
+      "id": "dc-12-hk1-3D1-q004-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Bảng bên dưới biểu thị kết quả điều tra thời gian(đơn vị: phút) sử dụng Internet hàng ngày của một số người.\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Thời gian</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>20</mn><mo>;</mo><mn>50</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>50</mn><mo>;</mo><mn>80</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>80</mn><mo>;</mo><mn>110</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>110</mn><mo>;</mo><mn>140</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>140</mn><mo>;</mo><mn>170</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td></tr><tr><td>Số người</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>2</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>6</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>8</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>5</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>3</mn></semantics></math></td></tr></tbody></table></div></div>\n\tTìm khoảng tứ phân vị của mẫu số liệu đã cho.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>60</mn></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>46</mn></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>102</mn></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>52</mn></semantics></math>"
+        }
+      ],
+      "correct": "D",
+      "solution": "Cỡ mẫu <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>24</mn></mrow></semantics></math>.<br/>Tứ phân vị thứ nhất thuộc nhóm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>50</mn><mo>;</mo><mn>80</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>50</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>6</mn><mo>−</mo><mn>2</mn></mrow><mn>6</mn></mfrac><mo>⋅</mo><mn>30</mn><mo>=</mo><mn>70</mn></mrow></semantics></math>.<br/>Tứ phân vị thứ hai (trung vị) thuộc nhóm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>80</mn><mo>;</mo><mn>110</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>Q</mi><mn>2</mn></msub><mo>=</mo><mn>80</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>12</mn><mo>−</mo><mn>8</mn></mrow><mn>8</mn></mfrac><mo>⋅</mo><mn>30</mn><mo>=</mo><mn>95</mn></mrow></semantics></math>.<br/>Tứ phân vị thứ ba thuộc nhóm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>110</mn><mo>;</mo><mn>140</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mn>110</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>18</mn><mo>−</mo><mn>16</mn></mrow><mn>5</mn></mfrac><mo>⋅</mo><mn>30</mn><mo>=</mo><mn>122</mn></mrow></semantics></math>.<br/>Khoảng tứ phân vị của mẫu số liệu ghép nhóm là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>Δ</mi><mi>Q</mi></msub><mo>=</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>−</mo><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>52</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-3D1-q004-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Bảng bên dưới biểu thị kết quả điều tra thời gian(đơn vị: phút) sử dụng Internet hàng ngày của một số người.\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Thời gian</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>30</mn><mo>;</mo><mn>50</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>50</mn><mo>;</mo><mn>70</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>70</mn><mo>;</mo><mn>90</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>90</mn><mo>;</mo><mn>110</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>110</mn><mo>;</mo><mn>130</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td></tr><tr><td>Số người</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>4</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>10</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>12</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>10</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>4</mn></semantics></math></td></tr></tbody></table></div></div>\n\tTìm khoảng tứ phân vị của mẫu số liệu đã cho.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>44</mn></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>36</mn></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>30</mn></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>68</mn></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Cỡ mẫu <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>40</mn></mrow></semantics></math>.<br/>Tứ phân vị thứ nhất thuộc nhóm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>50</mn><mo>;</mo><mn>70</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>50</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>10</mn><mo>−</mo><mn>4</mn></mrow><mn>10</mn></mfrac><mo>⋅</mo><mn>20</mn><mo>=</mo><mn>62</mn></mrow></semantics></math>.<br/>Tứ phân vị thứ hai (trung vị) thuộc nhóm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>70</mn><mo>;</mo><mn>90</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>Q</mi><mn>2</mn></msub><mo>=</mo><mn>70</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>20</mn><mo>−</mo><mn>14</mn></mrow><mn>12</mn></mfrac><mo>⋅</mo><mn>20</mn><mo>=</mo><mn>80</mn></mrow></semantics></math>.<br/>Tứ phân vị thứ ba thuộc nhóm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>90</mn><mo>;</mo><mn>110</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mn>90</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>30</mn><mo>−</mo><mn>26</mn></mrow><mn>10</mn></mfrac><mo>⋅</mo><mn>20</mn><mo>=</mo><mn>98</mn></mrow></semantics></math>.<br/>Khoảng tứ phân vị của mẫu số liệu ghép nhóm là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>Δ</mi><mi>Q</mi></msub><mo>=</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>−</mo><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>36</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-3D1-q004-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Bảng bên dưới biểu thị kết quả điều tra thời gian(đơn vị: phút) sử dụng Internet hàng ngày của một số người.\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Thời gian</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>40</mn><mo>;</mo><mn>70</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>70</mn><mo>;</mo><mn>100</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>100</mn><mo>;</mo><mn>130</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>130</mn><mo>;</mo><mn>160</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>160</mn><mo>;</mo><mn>190</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td></tr><tr><td>Số người</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>4</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>10</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>12</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>10</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>4</mn></semantics></math></td></tr></tbody></table></div></div>\n\tTìm khoảng tứ phân vị của mẫu số liệu đã cho.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>54</mn></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>62</mn></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>48</mn></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>102</mn></semantics></math>"
+        }
+      ],
+      "correct": "A",
+      "solution": "Cỡ mẫu <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>40</mn></mrow></semantics></math>.<br/>Tứ phân vị thứ nhất thuộc nhóm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>70</mn><mo>;</mo><mn>100</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>70</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>10</mn><mo>−</mo><mn>4</mn></mrow><mn>10</mn></mfrac><mo>⋅</mo><mn>30</mn><mo>=</mo><mn>88</mn></mrow></semantics></math>.<br/>Tứ phân vị thứ hai (trung vị) thuộc nhóm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>100</mn><mo>;</mo><mn>130</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>Q</mi><mn>2</mn></msub><mo>=</mo><mn>100</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>20</mn><mo>−</mo><mn>14</mn></mrow><mn>12</mn></mfrac><mo>⋅</mo><mn>30</mn><mo>=</mo><mn>115</mn></mrow></semantics></math>.<br/>Tứ phân vị thứ ba thuộc nhóm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>130</mn><mo>;</mo><mn>160</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mn>130</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>30</mn><mo>−</mo><mn>26</mn></mrow><mn>10</mn></mfrac><mo>⋅</mo><mn>30</mn><mo>=</mo><mn>142</mn></mrow></semantics></math>.<br/>Khoảng tứ phân vị của mẫu số liệu ghép nhóm là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>Δ</mi><mi>Q</mi></msub><mo>=</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>−</mo><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>54</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-3D1-q004-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Bảng bên dưới biểu thị kết quả điều tra thời gian(đơn vị: phút) sử dụng Internet hàng ngày của một số người.\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Thời gian</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>15</mn><mo>;</mo><mn>40</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>40</mn><mo>;</mo><mn>65</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>65</mn><mo>;</mo><mn>90</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>90</mn><mo>;</mo><mn>115</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>115</mn><mo>;</mo><mn>140</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td></tr><tr><td>Số người</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>3</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>5</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>9</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>5</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>2</mn></semantics></math></td></tr></tbody></table></div></div>\n\tTìm khoảng tứ phân vị của mẫu số liệu đã cho.",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>48</mn></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>34</mn></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>40</mn></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>80</mn></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Cỡ mẫu <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>24</mn></mrow></semantics></math>.<br/>Tứ phân vị thứ nhất thuộc nhóm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>40</mn><mo>;</mo><mn>65</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>40</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>6</mn><mo>−</mo><mn>3</mn></mrow><mn>5</mn></mfrac><mo>⋅</mo><mn>25</mn><mo>=</mo><mn>55</mn></mrow></semantics></math>.<br/>Tứ phân vị thứ hai (trung vị) thuộc nhóm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>65</mn><mo>;</mo><mn>90</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>Q</mi><mn>2</mn></msub><mo>=</mo><mn>65</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>12</mn><mo>−</mo><mn>8</mn></mrow><mn>9</mn></mfrac><mo>⋅</mo><mn>25</mn><mo>≈</mo><mfrac displaystyle=\"true\"><mn>685</mn><mn>9</mn></mfrac></mrow></semantics></math>.<br/>Tứ phân vị thứ ba thuộc nhóm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>90</mn><mo>;</mo><mn>115</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mn>90</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>18</mn><mo>−</mo><mn>17</mn></mrow><mn>5</mn></mfrac><mo>⋅</mo><mn>25</mn><mo>=</mo><mn>95</mn></mrow></semantics></math>.<br/>Khoảng tứ phân vị của mẫu số liệu ghép nhóm là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msub><mi>Δ</mi><mi>Q</mi></msub><mo>=</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>−</mo><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>40</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

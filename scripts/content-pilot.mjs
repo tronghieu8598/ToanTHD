@@ -11,6 +11,9 @@ import {validateRichHtml} from '../lib/rich-html.mjs';
 import frozenVariantIndex from '../lib/chapter-variants/index.mjs';
 import chapterOnePacked from '../lib/chapter-variants/12-C01.mjs';
 import chapterTwoPacked from '../lib/chapter-variants/12-C02.mjs';
+import chapterThreePacked from '../lib/chapter-variants/12-C03.mjs';
+import chapterFourPacked from '../lib/chapter-variants/12-C04.mjs';
+import chapterFivePacked from '../lib/chapter-variants/12-C05.mjs';
 import chapterSixPacked from '../lib/chapter-variants/12-C06.mjs';
 import {readFrozenCourseBank} from './course-bank-data.mjs';
 
@@ -29,7 +32,14 @@ const shape = (value, keys) => value && typeof value === 'object' && !Array.isAr
     && Object.keys(value).length === keys.length && keys.every(key => Object.hasOwn(value, key));
 const fingerprint = /^[a-f0-9]{64}$/;
 
-const packedVariants = {'12-C01': chapterOnePacked, '12-C02': chapterTwoPacked, '12-C06': chapterSixPacked};
+const packedVariants = {
+    '12-C01': chapterOnePacked,
+    '12-C02': chapterTwoPacked,
+    '12-C03': chapterThreePacked,
+    '12-C04': chapterFourPacked,
+    '12-C05': chapterFivePacked,
+    '12-C06': chapterSixPacked,
+};
 const cachedVariants = new Map();
 function frozenVariantsFor(scope) {
     if (!cachedVariants.has(scope)) {
@@ -294,7 +304,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
         const {positionals, values} = parseArgs({allowPositionals: true, options: {chapter: {type: 'string'}}});
         const [command = 'check', part = 'all'] = positionals;
         fail(positionals.length <= 2 && ['check', 'build', 'preview'].includes(command),
-            'Dùng content-pilot.mjs check|build|preview [bank|variants|library|all] [--chapter 12-C01|12-C02|12-C06].');
+            `Dùng content-pilot.mjs check|build|preview [bank|variants|library|all] [--chapter ${Object.keys(bankReleaseChapters).join('|')}].`);
         const scopes = values.chapter ? [values.chapter]
             : command === 'check' && part !== 'library' ? Object.keys(bankReleaseChapters) : [defaultScope];
         const outputs = scopes.flatMap(scope => compileContent(part, readDisk, listDisk, scope)

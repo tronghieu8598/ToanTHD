@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk2-4D1-q008-v4",
+  "original_number": 8,
+  "kind": "mcq",
+  "based_on": "cd087864e1b55b9ac868ffbe42938fbbad8a0eda3db5e5ea8fd6622a59dd9c59",
+  "prompt": "Tìm mệnh đề sai trong các mệnh đề sau?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><msup><mi>x</mi><mn>3</mn></msup><mi mathvariant=\"normal\">d</mi><mi>x</mi><mo>=</mo><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><mfrac displaystyle=\"true\"><mi>C</mi><mn>4</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>x</mi></mfrac><mi mathvariant=\"normal\">d</mi><mi>x</mi><mo>=</mo><mo>ln</mo><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><mn>2</mn><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup><mi mathvariant=\"normal\">d</mi><mi>x</mi><mo>=</mo><mn>2</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup><mo>+</mo><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><mo>sin</mo><mi>x</mi><mi mathvariant=\"normal\">d</mi><mi>x</mi><mo>=</mo><mo>−</mo><mo>cos</mo><mi>x</mi><mo>+</mo><mi>C</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>∫</mo><msup><mi>x</mi><mn>3</mn></msup><mi mathvariant=\"normal\">d</mi><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>4</mn></msup><mn>4</mn></mfrac><mo>+</mo><mi>C</mi></mrow></semantics></math>.",
+  "accepted_answers": []
+}

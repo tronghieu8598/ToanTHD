@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk2-4D2-q025-v4",
+  "original_number": 25,
+  "kind": "mcq",
+  "based_on": "6c12eac3ab5f213822d8e0097b2422b750f4ef3b59168d31640b468d2aba9e58",
+  "prompt": "Biết <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><munderover><mo>∫</mo><mfrac displaystyle=\"false\"><mi>π</mi><mn>4</mn></mfrac><mfrac displaystyle=\"false\"><mi>π</mi><mn>2</mn></mfrac></munderover><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mo>cos</mo><mn>2</mn></msup><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><msup><mo>sin</mo><mn>2</mn></msup><mi>x</mi></mrow></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi mathvariant=\"normal\">d</mi><mi>x</mi><mo>=</mo><mi>a</mi><mi>π</mi><mo>+</mo><mn>2</mn><mi>b</mi></mrow></semantics></math>, với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>∈</mo><mi>ℚ</mi></mrow></semantics></math>. Tính <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>4</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>8</mn></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Ta có \n\t\t<div class=\"math-display\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"><munderover><mo>∫</mo><mfrac displaystyle=\"false\"><mi>π</mi><mn>4</mn></mfrac><mfrac displaystyle=\"false\"><mi>π</mi><mn>2</mn></mfrac></munderover><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mo>cos</mo><mn>2</mn></msup><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><msup><mo>sin</mo><mn>2</mn></msup><mi>x</mi></mrow></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi mathvariant=\"normal\">d</mi><mi>x</mi></mtd><mtd columnalign=\"center\" style=\"text-align: center\"><mo>=</mo></mtd><mtd columnalign=\"left\" style=\"text-align: left\"><munderover><mo>∫</mo><mfrac displaystyle=\"false\"><mi>π</mi><mn>4</mn></mfrac><mfrac displaystyle=\"false\"><mi>π</mi><mn>2</mn></mfrac></munderover><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>+</mo><mo>cos</mo><mn>2</mn><mi>x</mi></mrow><mn>2</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><msup><mo>sin</mo><mn>2</mn></msup><mi>x</mi></mrow></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi mathvariant=\"normal\">d</mi><mi>x</mi></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"center\" style=\"text-align: center\"><mo>=</mo></mtd><mtd columnalign=\"left\" style=\"text-align: left\"><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mi>x</mi><mn>2</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mo>sin</mo><mn>2</mn><mi>x</mi></mrow><mn>4</mn></mfrac><mo>−</mo><mo>cot</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><msubsup><mo minsize=\"3.0\" maxsize=\"3.0\" stretchy=\"false\" form=\"prefix\">|</mo><mfrac displaystyle=\"false\"><mi>π</mi><mn>4</mn></mfrac><mfrac displaystyle=\"false\"><mi>π</mi><mn>2</mn></mfrac></msubsup></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"center\" style=\"text-align: center\"><mo>=</mo></mtd><mtd columnalign=\"left\" style=\"text-align: left\"><mfrac displaystyle=\"true\"><mi>π</mi><mn>8</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"center\" style=\"text-align: center\"><mo>⇒</mo></mtd><mtd columnalign=\"left\" style=\"text-align: left\"><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>a</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>8</mn></mfrac></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>b</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>8</mn></mfrac></mtd></mtr></mtable></mrow></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"center\" style=\"text-align: center\"><mo>⇒</mo></mtd><mtd columnalign=\"left\" style=\"text-align: left\"><mi>a</mi><mo>+</mo><mi>b</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mi>.</mi></mtd></mtr></mtable></semantics></math></div>",
+  "accepted_answers": []
+}
