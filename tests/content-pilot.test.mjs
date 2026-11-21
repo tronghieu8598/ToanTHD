@@ -116,15 +116,16 @@ test('Chapter I keeps the published variants and routes the held source question
     assert.equal(restored.tables.questions[0].course_ref, held.bank_fingerprint);
 });
 
-test('Chapter II editing covers only B01 and preserves the reviewed source and variant holds', () => {
+test('Chapter II editing applies only the approved question 58 correction and preserves variant holds', () => {
     const scope = '12-C02';
     const lessonId = 'dc-12-hk1-2H1-v4';
     const reviewId = 'dc-12-hk1-2H1-q058-v4';
     const originals = readFrozenCourseBank().questions.filter(row => row.lesson_id === lessonId);
     const [bank, variants] = compileContent('all', read, list, scope);
     assert.equal(bank.summary.questions, 107);
-    assert.deepEqual(bank.summary.changed, []);
-    assert.deepEqual([...bank.effective.values()], originals);
+    assert.deepEqual(bank.summary.changed, [reviewId]);
+    const unchanged = row => row.id !== reviewId;
+    assert.deepEqual([...bank.effective.values()].filter(unchanged), originals.filter(unchanged));
     assert.equal(variants.summary.available, 256);
     assert.deepEqual(variants.summary.changed, []);
     for (const result of [bank, variants]) {
@@ -135,12 +136,20 @@ test('Chapter II editing covers only B01 and preserves the reviewed source and v
     const sourceHolds = chapter.held.filter(hold => bank.effective.has(hold.source_id));
     assert.equal(sourceHolds.length, 43);
     const rows = readCourseBank().questions.filter(row => bank.effective.has(row.id));
-    assert.deepEqual(rows, originals);
+    assert.deepEqual(rows, [...bank.effective.values()]);
     const variantsByQuestion = new Map(rows.map(row => [row.id, availableQuestionVariantKeys(row)]));
     assert.equal([...variantsByQuestion.values()].flat().length, 256);
     for (const hold of sourceHolds) assert.deepEqual(variantsByQuestion.get(hold.source_id), []);
 
-    const held = rows.find(row => row.id === reviewId);
-    assert.equal(held.bank_status, 'review');
-    assert.equal(canEnterSession(decodeQuestion(held)), false);
+    const original = originals.find(row => row.id === reviewId);
+    const approved = bank.effective.get(reviewId);
+    const {solution, bank_status, bank_note, bank_meta, bank_fingerprint, ...rest} = approved;
+    assert.deepEqual({...rest, solution: original.solution, bank_status: original.bank_status,
+        bank_note: original.bank_note, bank_meta: original.bank_meta, bank_fingerprint: original.bank_fingerprint}, original);
+    assert.equal(solution, original.solution.replace('<li><strong>Sai</strong>', '<li><strong>Đúng</strong>'));
+    assert.equal(bank_status, 'auto');
+    assert.deepEqual(JSON.parse(bank_meta), {...JSON.parse(original.bank_meta), flags: []});
+    assert.match(bank_note, /đã duyệt/);
+    assert.notEqual(bank_fingerprint, original.bank_fingerprint);
+    assert.equal(canEnterSession(decodeQuestion(approved)), true);
 });

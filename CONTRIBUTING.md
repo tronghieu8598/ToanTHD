@@ -24,7 +24,7 @@ Mỗi yêu cầu ghi mã câu hoặc mã học liệu, thay đổi cần làm v�
 
 Khi hai người sửa hai câu khác nhau trong một bài, ghép các tệp câu trên nhánh tích hợp mới nhất rồi chạy lại `content:build` cho phần đó. Công cụ sẽ tạo gói từ các bài được cấu hình trong phạm vi đang biên tập.
 
-Bài B01 Chương II là “Vectơ và các phép toán trong không gian”, mã `dc-12-hk1-2H1-v4`. Đợt tách nguồn giữ nguyên 107 câu gốc và 256 biến thể đã nghiệm thu. 43 câu giữ quyết định hoãn tạo biến thể trong nguồn đã duyệt. Câu `dc-12-hk1-2H1-q058-v4` vẫn chờ giáo viên xác nhận lời giải ý b. Xem phạm vi thử nghiệm tại [hướng dẫn nạp ngân hàng](docs/NAP_NGAN_HANG_HTTPS.md).
+Bài B01 Chương II là “Vectơ và các phép toán trong không gian”, mã `dc-12-hk1-2H1-v4`. Phạm vi có 107 câu gốc và 256 biến thể đã nghiệm thu. 43 câu giữ quyết định hoãn tạo biến thể trong nguồn đã duyệt. Với câu `dc-12-hk1-2H1-q058-v4`, giáo viên đã duyệt đổi nhãn lời giải ý b thành **Đúng** và giữ khóa đáp án gốc. Xem phạm vi thử nghiệm tại [hướng dẫn nạp ngân hàng](docs/NAP_NGAN_HANG_HTTPS.md).
 
 Các tệp `questions.json.gz`, `data/chapter-variants/source/` và mô-đun biến thể cũ là dữ liệu nền của bản thử. Bộ đóng gói ghép bản sửa theo mã và giữ phiên bản gói riêng trong `generated/`. Sau khi duyệt câu hỏi, chạy bước cài đặt/nâng cấp cơ sở dữ liệu trên bản thử rồi dựng lại web. Bản cài sao lưu toàn thư mục lưu cả đề đã giao và dữ liệu của giáo viên.
 

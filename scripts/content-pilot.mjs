@@ -101,7 +101,8 @@ function baseBank() {
 function compileBank(read, list, scope) {
     const {manifest, questions} = baseBank();
     const rows = [], approvedSources = [], effective = new Map();
-    for (const lesson of bankReleaseChapters[scope].lessons) {
+    const {lessons, approvedReviews} = bankReleaseChapters[scope];
+    for (const lesson of lessons) {
         const folder = bankSource(scope, lesson.folder);
         const originals = new Map(questions.filter(row => row.lesson_id === lesson.id).map(row => [row.id, row]));
         const doc = readLesson(read, list, folder, lesson.id, 'toanthd.question-lesson/1', 'questions', [...originals.keys()]);
@@ -110,24 +111,30 @@ function compileBank(read, list, scope) {
             const original = originals.get(input.id);
             const label = folder + '/' + input.id + '.json';
             const keys = ['id', 'original_number', 'kind', 'based_on', ...fields];
-            const needsReview = Object.hasOwn(input, 'bank_status');
-            if (needsReview) keys.push('bank_status');
-            fail(shape(input, keys) && (!needsReview || input.bank_status === 'review') &&
+            const hasStatus = Object.hasOwn(input, 'bank_status');
+            const approval = input.bank_status === 'auto' && approvedReviews?.[input.id];
+            if (hasStatus) keys.push('bank_status');
+            fail(shape(input, keys) && (!hasStatus || input.bank_status === 'review' || approval && original.bank_status === 'review') &&
                 input.original_number === original.original_number && input.kind === original.kind && input.based_on === original.bank_fingerprint,
-            label + ' · Mã, số gốc, dạng câu hoặc dấu vân tay nguồn đã thay đổi.');
+            label + ' · Mã, số gốc, dạng câu, trạng thái hoặc dấu vân tay nguồn không hợp lệ.');
             const baseContent = questionContent(original);
             const content = Object.fromEntries(fields.map(key => [key, input[key]]));
             const edited = !same(content, baseContent);
-            const status = needsReview ? input.bank_status : original.bank_status;
+            const status = input.bank_status ?? original.bank_status;
             if (!edited && status === original.bank_status) {
                 effective.set(original.id, original);
                 continue;
             }
             const row = {...original, bank_status: status};
-            if (edited) {
+            if (edited || approval) {
                 validateContent(content, original.kind, label, status === 'review');
                 const meta = JSON.parse(original.bank_meta || '{}');
                 meta.acceptedAnswers = content.accepted_answers;
+                if (approval) {
+                    fail(same(meta.flags, [approval.flag]), label + ' · Cờ cần duyệt chưa khớp phê duyệt.');
+                    meta.flags = [];
+                    row.bank_note = approval.note;
+                }
                 Object.assign(row, {
                     prompt: content.prompt,
                     solution: content.solution,

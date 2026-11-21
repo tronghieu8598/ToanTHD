@@ -17,7 +17,7 @@ node scripts/publish-bank-release.mjs activate <digest-tu-buoc-stage> --chapter 
 
 ## Kiểm tra bài B01 Chương II trên máy
 
-Phạm vi `12-C02` hiện mô tả riêng bài B01 “Vectơ và các phép toán trong không gian”. Bản biên tập chứa 107 câu gốc, 256 biến thể đã nghiệm thu và 43 câu giữ quyết định hoãn tạo biến thể. Câu `dc-12-hk1-2H1-q058-v4` giữ trạng thái chờ duyệt vì nhãn ở ý b trong lời giải mâu thuẫn với khóa đáp án. Phạm vi biên tập bài B01 đang ở bước xác minh trên máy. Hai bài B02 và B03 vẫn nằm trong gói nguồn nền của chương.
+Phạm vi `12-C02` hiện mô tả riêng bài B01 “Vectơ và các phép toán trong không gian”. Bản biên tập chứa 107 câu gốc, 256 biến thể đã nghiệm thu và 43 câu giữ quyết định hoãn tạo biến thể. Câu `dc-12-hk1-2H1-q058-v4` đã được giáo viên duyệt sửa nhãn ý b trong lời giải thành **Đúng**. Khóa đáp án gốc được giữ nguyên và câu này đã đủ điều kiện chấm tự động. Hai bài B02 và B03 vẫn nằm trong gói nguồn nền của chương.
 
 ```powershell
 npm run content:preview -- bank --chapter 12-C02
@@ -26,4 +26,4 @@ npm run content:check -- all --chapter 12-C02
 node --test tests/content-pilot.test.mjs
 ```
 
-Kết quả đối chiếu cần có 107 câu nguồn, 256 biến thể khả dụng và danh sách `changed` rỗng ở cả hai gói. Sau khi commit, chạy `node scripts/build-bank-release.mjs --chapter 12-C02` để kiểm tra phiên bản và dấu vân tay hình trên máy. Chỉ chạy các bước `stage` và `activate` khi người phụ trách duyệt phạm vi phát hành HTTPS.
+Kết quả đối chiếu cần có 107 câu nguồn, 256 biến thể khả dụng, mục `changed` của gói câu hỏi chứa mã câu 58 và mục `changed` của gói biến thể rỗng. Sau khi commit, chạy `node scripts/build-bank-release.mjs --chapter 12-C02` để kiểm tra phiên bản và dấu vân tay hình trên máy. Chỉ chạy các bước `stage` và `activate` khi người phụ trách duyệt phạm vi phát hành HTTPS.

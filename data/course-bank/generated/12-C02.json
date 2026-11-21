@@ -1,6 +1,29 @@
 {
   "format": "toanthd.bank-overlay/1",
-  "version": "72235d3608aa",
+  "version": "7804a65de470",
   "base_sha256": "f846cfe59a1cffdd4ed85b211a7cb16bc23450a648bb0c07a19768ea811ea138",
-  "rows": []
+  "rows": [
+    {
+      "id": "dc-12-hk1-2H1-q058-v4",
+      "lesson_id": "dc-12-hk1-2H1-v4",
+      "original_number": 58,
+      "revision": 1,
+      "kind": "tf",
+      "prompt": "Cho hình lập phương <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mi>.</mi><mi>A</mi><mi>′</mi><mi>B</mi><mi>′</mi><mi>C</mi><mi>′</mi><mi>D</mi><mi>′</mi></mrow></semantics></math>. \n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/6734544e620af04c938ecc420b6c847b3f58e80d6c0b37f44b64e954b08159a8.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tCác khẳng định sau đúng hay sai?",
+      "choices": "[{\"key\":\"a\",\"text\":\"Giá của <math xmlns=\\\"http://www.w3.org/1998/Math/MathML\\\" display=\\\"inline\\\"><semantics><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\\\"true\\\">→</mo></mover></semantics></math> nằm trong mặt phẳng <math xmlns=\\\"http://www.w3.org/1998/Math/MathML\\\" display=\\\"inline\\\"><semantics><mrow><mo stretchy=\\\"true\\\" form=\\\"prefix\\\">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy=\\\"true\\\" form=\\\"postfix\\\">)</mo></mrow></semantics></math>\"},{\"key\":\"b\",\"text\":\"<math xmlns=\\\"http://www.w3.org/1998/Math/MathML\\\" display=\\\"inline\\\"><semantics><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\\\"true\\\">→</mo></mover></semantics></math> và <math xmlns=\\\"http://www.w3.org/1998/Math/MathML\\\" display=\\\"inline\\\"><semantics><mover><mrow><mi>C</mi><mi>C</mi><mi>′</mi></mrow><mo accent=\\\"true\\\">→</mo></mover></semantics></math> có cùng độ dài\"},{\"key\":\"c\",\"text\":\"<math xmlns=\\\"http://www.w3.org/1998/Math/MathML\\\" display=\\\"inline\\\"><semantics><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\\\"true\\\">→</mo></mover></semantics></math> và <math xmlns=\\\"http://www.w3.org/1998/Math/MathML\\\" display=\\\"inline\\\"><semantics><mover><mrow><mi>A</mi><mi>D</mi><mi>′</mi></mrow><mo accent=\\\"true\\\">→</mo></mover></semantics></math> cùng hướng\"},{\"key\":\"d\",\"text\":\"<math xmlns=\\\"http://www.w3.org/1998/Math/MathML\\\" display=\\\"inline\\\"><semantics><mrow><mover><mrow><mi>A</mi><mi>D</mi></mrow><mo accent=\\\"true\\\">→</mo></mover><mo>=</mo><mover><mrow><mi>B</mi><mi>′</mi><mi>C</mi><mi>′</mi></mrow><mo accent=\\\"true\\\">→</mo></mover></mrow></semantics></math>\"}]",
+      "correct": "[true,true,false,true]",
+      "solution": "<ol class=\"alpha-list\"><li><strong>Đúng</strong>. Giá của <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> nằm trong mặt phẳng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Vì <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>=</mo><mi>A</mi><mi>B</mi><mo>=</mo><mi>C</mi><mi>C</mi><mi>′</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mover><mrow><mi>C</mi><mi>C</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow></mrow></semantics></math>.</li><li><strong>Sai</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>A</mi><mi>D</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> không cùng hướng.</li><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>A</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>B</mi><mi>′</mi><mi>C</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.</li></ol>",
+      "family_id": "dc-12-hk1-2H1-q058-v4",
+      "source_json": null,
+      "archived_at": null,
+      "updated_at": 0,
+      "bank_status": "auto",
+      "bank_origin": "12:hk1-2H1-q058",
+      "bank_tex": null,
+      "bank_meta": "{\"sourceFile\":\"2H1.tex\",\"sourceNumber\":58,\"semester\":\"hk1\",\"answerRaw\":\"\",\"acceptedAnswers\":[],\"answerUnit\":\"\",\"flags\":[]}",
+      "bank_note": "Giáo viên đã duyệt sửa nhãn lời giải ý b thành Đúng. Khóa đáp án giữ nguyên.",
+      "bank_search": "cho hinh lap phuong abcd.a′b′c′d′. ⤢ cac khang dinh sau dung hay sai? gia cua ac→ nam trong mat phang (abcd) ab→ va cc′→ co cung do dai ac→ va ad′→ cung huong ad→=b′c′→ vector va cac phep toan trong khong gian vector va he toa do trong khong gian 58",
+      "bank_fingerprint": "a1b01f3da645a55112f2a483a6c45c00f6e0feb746c086b200c38da711688e72"
+    }
+  ]
 }
