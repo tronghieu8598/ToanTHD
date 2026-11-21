@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-2H1-q037-v4",
+  "original_number": 37,
+  "kind": "mcq",
+  "based_on": "7048adecfefee605adfdca903544d302ee7b4367fd9d4ff869f41a683b387d8d",
+  "prompt": "Cho hình lăng trụ tứ giác đều <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mi>.</mi><mi>A</mi><mi>′</mi><mi>B</mi><mi>′</mi><mi>C</mi><mi>′</mi><mi>D</mi><mi>′</mi></mrow></semantics></math> có độ dài mỗi cạnh đáy bằng 1 và độ dài mỗi cạnh bên bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>2</mn></semantics></math>. Trong các khẳng định sau khẳng định nào <strong>sai</strong>?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>A</mi><mi>A</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mrow><mi>B</mi><mi>′</mi><mi>A</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>A</mi><mi>A</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mrow><mi>C</mi><mi>′</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mo>−</mo><mn>4</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mrow><mi>B</mi><mi>′</mi><mi>D</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "<div class=\"with-figure\"><div><ul class=\"\"><li><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>′</mi><mi>B</mi><mi>′</mi><mi>C</mi><mi>′</mi><mi>D</mi><mi>′</mi></mrow></semantics></math> là các hình vuông có cạnh là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>1</mn></semantics></math> nên độ dài các đường chéo của hai hình vuông này bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><msqrt><mn>2</mn></msqrt></semantics></math>.</li><li><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>A</mi><mi>A</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>0</mn></mrow></semantics></math> do đây là hai véc-tơ vuông góc.</li><li><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mrow><mi>B</mi><mi>′</mi><mi>A</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mi>A</mi><mi>C</mi><mo>⋅</mo><mi>B</mi><mi>′</mi><mi>A</mi><mi>′</mi><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>,</mo><mover><mrow><mi>B</mi><mi>′</mi><mi>A</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msqrt><mn>2</mn></msqrt><mo>⋅</mo><mn>1</mn><mo>⋅</mo><mo>cos</mo><msup><mn>135</mn><mo>∘</mo></msup><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>.</li><li><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>A</mi><mi>A</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mrow><mi>C</mi><mi>′</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mi>A</mi><mi>A</mi><mi>′</mi><mo>⋅</mo><mi>C</mi><mi>′</mi><mi>C</mi><mo>cos</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>=</mo><mo>−</mo><mn>4</mn></mrow></semantics></math>.</li><li>Do <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi><mi>′</mi><mi>D</mi><mi>′</mi><mo>∥</mo><mi>B</mi><mi>D</mi></mrow></semantics></math> mà <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>C</mi><mo>⊥</mo><mi>B</mi><mi>D</mi></mrow></semantics></math> nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mrow><mi>B</mi><mi>′</mi><mi>D</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mrow><mi>B</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>0</mn></mrow></semantics></math>.</li></ul></div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/0178ab558c60b2cfe0c28f57050e4ed1f2d02c55c27a32f14f28563790c5f1c9.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

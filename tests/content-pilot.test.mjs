@@ -115,3 +115,32 @@ test('Chapter I keeps the published variants and routes the held source question
     const restored = await validateBackup(oldBackup, {courseRows: [current]});
     assert.equal(restored.tables.questions[0].course_ref, held.bank_fingerprint);
 });
+
+test('Chapter II editing covers only B01 and preserves the reviewed source and variant holds', () => {
+    const scope = '12-C02';
+    const lessonId = 'dc-12-hk1-2H1-v4';
+    const reviewId = 'dc-12-hk1-2H1-q058-v4';
+    const originals = readFrozenCourseBank().questions.filter(row => row.lesson_id === lessonId);
+    const [bank, variants] = compileContent('all', read, list, scope);
+    assert.equal(bank.summary.questions, 107);
+    assert.deepEqual(bank.summary.changed, []);
+    assert.deepEqual([...bank.effective.values()], originals);
+    assert.equal(variants.summary.available, 256);
+    assert.deepEqual(variants.summary.changed, []);
+    for (const result of [bank, variants]) {
+        for (const [file, bytes] of result.files) assert.deepEqual(read(file), bytes);
+    }
+
+    const chapter = JSON.parse(read('data/chapter-variants/manifest.json')).chapters.find(entry => entry.id === scope);
+    const sourceHolds = chapter.held.filter(hold => bank.effective.has(hold.source_id));
+    assert.equal(sourceHolds.length, 43);
+    const rows = readCourseBank().questions.filter(row => bank.effective.has(row.id));
+    assert.deepEqual(rows, originals);
+    const variantsByQuestion = new Map(rows.map(row => [row.id, availableQuestionVariantKeys(row)]));
+    assert.equal([...variantsByQuestion.values()].flat().length, 256);
+    for (const hold of sourceHolds) assert.deepEqual(variantsByQuestion.get(hold.source_id), []);
+
+    const held = rows.find(row => row.id === reviewId);
+    assert.equal(held.bank_status, 'review');
+    assert.equal(canEnterSession(decodeQuestion(held)), false);
+});

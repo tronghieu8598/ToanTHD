@@ -1,0 +1,134 @@
+{
+  "id": "dc-12-hk1-2H1-q068-v4",
+  "source_fingerprint": "a863959bdd62d6d6b352fe2188e63b6773b7de4ee7a9e6b1c4d6ce0e7330fc4e",
+  "variants": [
+    {
+      "id": "dc-12-hk1-2H1-q068-v4--bt01",
+      "number": 1,
+      "kind": "tf",
+      "prompt": "<div class=\"with-figure\"><div>Cho hình hộp đứng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mi>.</mi><mi>E</mi><mi>F</mi><mi>G</mi><mi>H</mi></mrow></semantics></math>. Điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math> là trọng tâm của tam giác <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>F</mi><mi>H</mi></mrow></semantics></math>. Giả sử <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>D</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>E</mi><mo>=</mo><mn>8</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>120</mn><mo>∘</mo></msup></mrow></semantics></math>. Các khẳng định sau là đúng hay sai?</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/variant-assets/7bda364992484efa41faed9aed8a3d7558fcd6d8cf14bc59c846e79244bee1cb.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>A</mi><mi>G</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mrow><mi>H</mi><mi>E</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>C</mi><mi>G</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>E</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi></mrow></semantics></math> thẳng hàng"
+        },
+        {
+          "key": "c",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>F</mi><mi>M</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>A</mi><mi>E</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>A</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>E</mi><mi>M</mi><mo>≈</mo><mn>3</mn><mo>,</mo><mn>35</mn></mrow></semantics></math> (làm tròn tới chữ số thập phân thứ hai)"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>E</mi><mi>M</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>E</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math> nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>E</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi></mrow></semantics></math> thẳng hàng.<br>Mặt khác <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>F</mi><mi>M</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>A</mi><mi>E</mi></mrow><mo accent=\"true\">→</mo></mover><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>A</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>, và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>E</mi><mi>M</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msqrt><mrow><mn>101</mn></mrow></msqrt></mrow><mrow><mn>3</mn></mrow></mfrac><mo>≈</mo><mn>3</mn><mo>,</mo><mn>35</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-2H1-q068-v4--bt02",
+      "number": 2,
+      "kind": "tf",
+      "prompt": "<div class=\"with-figure\"><div>Cho hình hộp đứng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mi>.</mi><mi>E</mi><mi>F</mi><mi>G</mi><mi>H</mi></mrow></semantics></math>. Điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math> là trọng tâm của tam giác <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>F</mi><mi>H</mi></mrow></semantics></math>. Giả sử <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>D</mi><mo>=</mo><mn>5</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>E</mi><mo>=</mo><mn>9</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>120</mn><mo>∘</mo></msup></mrow></semantics></math>. Các khẳng định sau là đúng hay sai?</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/variant-assets/68479faa223cb93710322d79d489aba6e321bb22587adfa393a951130d76a3a6.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>A</mi><mi>G</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mrow><mi>H</mi><mi>E</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>C</mi><mi>G</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>E</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi></mrow></semantics></math> thẳng hàng"
+        },
+        {
+          "key": "c",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>F</mi><mi>M</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>A</mi><mi>E</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>A</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>E</mi><mi>M</mi><mo>≈</mo><mn>4</mn><mo>,</mo><mn>22</mn></mrow></semantics></math> (làm tròn tới chữ số thập phân thứ hai)"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        false,
+        false
+      ],
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>E</mi><mi>M</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>E</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math> nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>E</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi></mrow></semantics></math> thẳng hàng.<br>Mặt khác <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>F</mi><mi>M</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>A</mi><mi>E</mi></mrow><mo accent=\"true\">→</mo></mover><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>A</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>, và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>E</mi><mi>M</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msqrt><mrow><mn>142</mn></mrow></msqrt></mrow><mrow><mn>3</mn></mrow></mfrac><mo>≈</mo><mn>3</mn><mo>,</mo><mn>97</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-2H1-q068-v4--bt03",
+      "number": 3,
+      "kind": "tf",
+      "prompt": "<div class=\"with-figure\"><div>Cho hình hộp đứng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mi>.</mi><mi>E</mi><mi>F</mi><mi>G</mi><mi>H</mi></mrow></semantics></math>. Điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math> là trọng tâm của tam giác <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>F</mi><mi>H</mi></mrow></semantics></math>. Giả sử <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mn>6</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>D</mi><mo>=</mo><mn>8</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>E</mi><mo>=</mo><mn>12</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>120</mn><mo>∘</mo></msup></mrow></semantics></math>. Các khẳng định sau là đúng hay sai?</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/variant-assets/6882ab3f869fc13b42ad6614aa0e24808d27251499defeed52a82a4fa0655a36.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>A</mi><mi>G</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mrow><mi>H</mi><mi>E</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>C</mi><mi>G</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>E</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi></mrow></semantics></math> thẳng hàng"
+        },
+        {
+          "key": "c",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>F</mi><mi>M</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>A</mi><mi>E</mi></mrow><mo accent=\"true\">→</mo></mover><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>A</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>E</mi><mi>M</mi><mo>≈</mo><mn>5</mn><mo>,</mo><mn>70</mn></mrow></semantics></math> (làm tròn tới chữ số thập phân thứ hai)"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>E</mi><mi>M</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>E</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math> nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>E</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi></mrow></semantics></math> thẳng hàng.<br>Mặt khác <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>F</mi><mi>M</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>A</mi><mi>E</mi></mrow><mo accent=\"true\">→</mo></mover><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>A</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>, và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>E</mi><mi>M</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msqrt><mrow><mn>292</mn></mrow></msqrt></mrow><mrow><mn>3</mn></mrow></mfrac><mo>≈</mo><mn>5</mn><mo>,</mo><mn>70</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-2H1-q068-v4--bt04",
+      "number": 4,
+      "kind": "tf",
+      "prompt": "<div class=\"with-figure\"><div>Cho hình hộp đứng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mi>.</mi><mi>E</mi><mi>F</mi><mi>G</mi><mi>H</mi></mrow></semantics></math>. Điểm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math> là trọng tâm của tam giác <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>F</mi><mi>H</mi></mrow></semantics></math>. Giả sử <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mn>5</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>D</mi><mo>=</mo><mn>7</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>E</mi><mo>=</mo><mn>11</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>120</mn><mo>∘</mo></msup></mrow></semantics></math>. Các khẳng định sau là đúng hay sai?</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/variant-assets/29eef901de9a051e2492fe8718bd2b33d63a7459f8db5cb87acfdce75ca5e1f5.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+      "choices": [
+        {
+          "key": "a",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>A</mi><mi>G</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mrow><mi>H</mi><mi>E</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>C</mi><mi>G</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>E</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi></mrow></semantics></math> thẳng hàng"
+        },
+        {
+          "key": "c",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>F</mi><mi>M</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>A</mi><mi>E</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>A</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>E</mi><mi>M</mi><mo>≈</mo><mn>5</mn><mo>,</mo><mn>06</mn></mrow></semantics></math> (làm tròn tới chữ số thập phân thứ hai)"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>E</mi><mi>M</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>E</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math> nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>E</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>M</mi></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi></mrow></semantics></math> thẳng hàng.<br>Mặt khác <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>F</mi><mi>M</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>A</mi><mi>E</mi></mrow><mo accent=\"true\">→</mo></mover><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn></mrow><mrow><mn>3</mn></mrow></mfrac><mover><mrow><mi>A</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>, và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>E</mi><mi>M</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msqrt><mrow><mn>230</mn></mrow></msqrt></mrow><mrow><mn>3</mn></mrow></mfrac><mo>≈</mo><mn>5</mn><mo>,</mo><mn>06</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

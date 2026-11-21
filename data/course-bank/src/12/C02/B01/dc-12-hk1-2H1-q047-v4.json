@@ -1,0 +1,33 @@
+{
+  "id": "dc-12-hk1-2H1-q047-v4",
+  "original_number": 47,
+  "kind": "tf",
+  "based_on": "d9f4994207419cbe90b69e9dfdf778af9b6eec6c276b47f9b8705a4346c7bdaa",
+  "prompt": "<div class=\"with-figure\"><div>Cho hình hộp <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mi>.</mi><mi>A</mi><mi>′</mi><mi>B</mi><mi>′</mi><mi>C</mi><mi>′</mi><mi>D</mi><mi>′</mi></mrow></semantics></math>.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/d53845724bcfd5a44c3b42f9ac66f04a1bc097beb1dbc8be2676ba3fc7be60a3.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>′</mi><mi>C</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Giá của ba véc-tơ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>A</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>A</mi><mi>A</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> cùng nằm trong một mặt phẳng"
+    },
+    {
+      "key": "c",
+      "text": "Các véc-tơ  <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>D</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>A</mi><mi>′</mi><mi>B</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>D</mi><mi>′</mi><mi>C</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> bằng với  véc-tơ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Các véc-tơ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>D</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>,  <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>C</mi><mi>′</mi><mi>B</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>D</mi><mi>′</mi><mi>A</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> là các véc-tơ đối của véc-tơ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>A</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>′</mi><mi>C</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.</li><li>Giá của ba véc-tơ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>A</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>A</mi><mi>A</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> không cùng nằm trong một mặt phẳng.</li><li>Các véc-tơ bằng  véc-tơ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> là  <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>D</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>A</mi><mi>′</mi><mi>B</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>D</mi><mi>′</mi><mi>C</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>.</li><li>Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>A</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> là hai véc-tơ bằng nhau.</li></ol>",
+  "accepted_answers": []
+}

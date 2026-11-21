@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-2H1-q001-v4",
+  "original_number": 1,
+  "kind": "mcq",
+  "based_on": "399ac001f61c94ae39f8671d0017bcb4670a0916646508f312528487a6836bb8",
+  "prompt": "Cho hình tứ diện <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math>. Có bao nhiêu véc-tơ có điểm đầu là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>B</mi></semantics></math> và điểm cuối là các đỉnh còn lại của hình tứ diện?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>1</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>2</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>3</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "Vô số"
+    }
+  ],
+  "correct": "C",
+  "solution": "Các véc-tơ có điểm đầu là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>B</mi></semantics></math> và điểm cuối là các đỉnh còn lại của hình tứ diện là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>B</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mrow><mi>B</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>.",
+  "accepted_answers": []
+}

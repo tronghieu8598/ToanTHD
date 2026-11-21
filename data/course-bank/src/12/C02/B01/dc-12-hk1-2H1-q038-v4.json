@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk1-2H1-q038-v4",
+  "original_number": 38,
+  "kind": "mcq",
+  "based_on": "ed82b4f3802d67c7107a08b9e228b77355dc484ab99dec685d4d209dc59549fe",
+  "prompt": "Trong không gian, cho hai véc-tơ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mi>a</mi><mo accent=\"true\">→</mo></mover></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mover><mi>b</mi><mo accent=\"true\">→</mo></mover></semantics></math> cùng có độ dài bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>1</mn></semantics></math>. Biết rằng góc giữa hai véc-tơ đó là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><msup><mn>45</mn><mo>∘</mo></msup></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mi>m</mi><mo>+</mo><mi>n</mi><msqrt><mn>2</mn></msqrt></mrow></semantics></math> (trong đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>m</mi></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>). Giá trị của biểu thức <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>T</mi><mo>=</mo><mi>m</mi><mo>+</mo><mi>n</mi></mrow></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mo>−</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>0</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>1</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>2</mn></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mo>⋅</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>2</mn><mo>−</mo><mn>2</mn><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>cos</mo><msup><mn>45</mn><mo>∘</mo></msup><mo>=</mo><mn>2</mn><mo>−</mo><mn>2</mn><mo>⋅</mo><mfrac displaystyle=\"true\"><msqrt><mn>2</mn></msqrt><mn>2</mn></mfrac><mo>=</mo><mn>2</mn><mo>−</mo><msqrt><mn>2</mn></msqrt></mrow></semantics></math>.<br>\n\t\tSuy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>n</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>.<br>\n\t\tVậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>T</mi><mo>=</mo><mi>m</mi><mo>+</mo><mi>n</mi><mo>=</mo><mn>2</mn><mo>+</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

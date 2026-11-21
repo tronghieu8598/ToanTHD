@@ -2,7 +2,7 @@
 
 [Bản đồ tệp v0.14](#bản-đồ-tệp-v014) · [Cây thư mục](#cây-thư-mục) · [Tìm và sửa câu](#tìm-và-sửa-câu) · [Giao việc trên GitHub](#giao-việc-trên-github) · [Lộ trình](#lộ-trình)
 
-V0.14 tổ chức dữ liệu chuẩn theo khối, chương và bài. Chương I và Chương VI Toán 12 có **một tệp nguồn cho mỗi câu** và một tệp riêng cho nhóm biến thể của câu đó. Monty Hall có thư mục riêng cho thông tin học liệu và bìa. Các phần còn lại có vị trí tra cứu trong bản đồ bên dưới. Tên dưới `features/` và `server/` là cấu trúc đích khi tách mã ứng dụng.
+V0.14 tổ chức dữ liệu chuẩn theo khối, chương và bài. Chương I, bài B01 Chương II và Chương VI Toán 12 có **một tệp nguồn cho mỗi câu** và một tệp riêng cho nhóm biến thể của câu đó. Monty Hall có thư mục riêng cho thông tin học liệu và bìa. Các phần còn lại có vị trí tra cứu trong bản đồ bên dưới. Tên dưới `features/` và `server/` là cấu trúc đích khi tách mã ứng dụng.
 
 ## Các mô-đun nối với nhau thế nào
 
@@ -90,8 +90,8 @@ Các đường dẫn ở cột giữa mở được từ thư mục gốc của 
 | Điều hướng và Hôm nay | `app/workspace.tsx`, `app/studio-navigation.tsx`, `app/studio-plan.tsx`, `app/studio.css` | Màn hình đầu, danh mục, tìm nhanh và giao diện kế hoạch của lớp. |
 | Đồng bộ kế hoạch | `app/use-studio-plan.ts`, `lib/studio-plan.mjs`, `drizzle/0007_studio_plans.sql` | Đọc, thêm, bỏ học liệu và chuyển kế hoạch cũ theo tài khoản và lớp. |
 | Chương, bài và đề cương | `data/curriculum/kntt-math.json`, `data/course-bank/manifest.json`, `app/admin-panels.tsx`, `lib/admin.mjs` | Mục lục chương theo khối, tài liệu, bài và phiên bản đề cương. |
-| Ngân hàng chuẩn | `data/course-bank/src/12/C01/`, `data/course-bank/src/12/C06/`, `lib/course-bank.mjs` | Nguồn chuẩn, tra cứu và trạng thái duyệt. |
-| Biến thể | `data/chapter-variants/src/12/C01/`, `data/chapter-variants/src/12/C06/`, `lib/accepted-variants.mjs` | Nhóm biến thể, điều kiện khả dụng và tra phiên bản câu gốc. |
+| Ngân hàng chuẩn | `data/course-bank/src/12/C01/`, `data/course-bank/src/12/C02/B01/`, `data/course-bank/src/12/C06/`, `lib/course-bank.mjs` | Nguồn chuẩn, tra cứu và trạng thái duyệt. |
+| Biến thể | `data/chapter-variants/src/12/C01/`, `data/chapter-variants/src/12/C02/B01/`, `data/chapter-variants/src/12/C06/`, `lib/accepted-variants.mjs` | Nhóm biến thể, điều kiện khả dụng và tra phiên bản câu gốc. |
 | Nạp ngân hàng theo chương | `lib/bank-release-chapters.mjs`, `lib/bank-release.mjs`, `scripts/build-bank-release.mjs` | Danh sách bài mỗi chương, đóng gói, xem trước và kích hoạt trên HTTPS. |
 | Giao diện ngân hàng và soạn đề | `app/workspace.tsx`, `app/studio-library-bank.css`, `app/admin-panels.tsx`, `lib/api.ts` | Bộ lọc, xem câu, giỏ câu, sửa ngân hàng nội bộ và chọn câu. |
 | Học liệu chuẩn | `app/digital-library.tsx`, `app/hoc-lieu-so/page.tsx`, `app/studio-cover.tsx`, `lib/client/library-catalog.ts`, `data/digital-library/`, `public/hoc-lieu-so/nguon/` | Danh mục, bìa, tìm kiếm, mở học liệu và nhóm theo chương. |
@@ -240,7 +240,7 @@ Trước khi tách kho công khai, đưa các tệp ngân hàng đóng gói, ch�
 
 | Việc | Tiêu chí nghiệm thu |
 | --- | --- |
-| Mở rộng nguồn theo từng câu sang Chương I–V, sau đó tới khối 10–11 | Ánh xạ 75 bài trong ngân hàng vào mã chương đã kiểm tra. Mở nguồn theo từng chương. Đối chiếu mã, loại, trạng thái, câu hỏi, đáp án, hình và dấu vân tay với gói đã duyệt. Toàn ngân hàng nền hiện có 5.837 câu. |
+| Mở rộng nguồn theo từng câu sang B02–B03 Chương II và Chương III–V, sau đó tới khối 10–11 | Ánh xạ 75 bài trong ngân hàng vào mã chương đã kiểm tra. Mở nguồn theo từng chương. Đối chiếu mã, loại, trạng thái, câu hỏi, đáp án, hình và dấu vân tay với gói đã duyệt. Toàn ngân hàng nền hiện có 5.837 câu. |
 | Chuẩn hóa gói theo phần và mã chương | Dùng mã chương chung như `kntt-12-c06`. Kiểm tra gói đúng chương, nhập lại cho cùng kết quả, xem trước và quay về gói trước. Khi ghép gói mới, đối chiếu đề và bài làm cũ. |
 | Tách mã ứng dụng theo nhóm | Bắt đầu từ bộ chọn câu và thư viện. Giữ điểm vào web/API đang dùng, tách dần theo màn hình và kiểm tra lưu đề, tải học liệu, cấp quyền. |
 | Tạo bản nguồn công khai khi có phạm vi chia sẻ | Bản mã công khai chạy được với dữ liệu mẫu. Bản dùng trong tổ nạp riêng gói nội dung được duyệt. |

@@ -1,0 +1,134 @@
+{
+  "id": "dc-12-hk1-2H1-q067-v4",
+  "source_fingerprint": "71d968d230ff3918dba04b81ae0b969705bbd33a6700672679173c0285843bc4",
+  "variants": [
+    {
+      "id": "dc-12-hk1-2H1-q067-v4--bt01",
+      "number": 1,
+      "kind": "tf",
+      "prompt": "Trong không gian, cho hai véc-tơ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>a</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>b</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math> cùng có độ dài bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>2</mn></mrow></semantics></math>. Góc giữa hai véc-tơ đó là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mn>45</mn><mo>∘</mo></msup></mrow></semantics></math>. Xét véc-tơ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>v</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>2</mn><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mn>3</mn><mover><mi>b</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math>. Xác định tính đúng, sai của mỗi khẳng định sau:",
+      "choices": [
+        {
+          "key": "a",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>4</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mn>4</mn><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>8</mn><mo>+</mo><mn>4</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>8</mn><mo>+</mo><mn>4</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Độ dài véc-tơ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>v</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math> bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msqrt><mrow><mn>52</mn><mo>+</mo><mn>24</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></msqrt></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mrow><mn>2</mn></mrow><mrow><mn>2</mn></mrow></msup><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow><mrow><mn>2</mn></mrow></mfrac></mrow></semantics></math>.<br>Khai triển: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mn>4</mn><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn><msup><mrow><mover><mi>a</mi><mo accent=\"true\">→</mo></mover></mrow><mrow><mn>2</mn></mrow></msup><mo>−</mo><mn>4</mn><msup><mrow><mover><mi>b</mi><mo accent=\"true\">→</mo></mover></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><mn>2</mn><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mo>−</mo><mn>8</mn><mo>+</mo><mn>4</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></semantics></math>.<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>8</mn><mo>+</mo><mn>4</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></semantics></math>, và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mover><mi>v</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>=</mo><msqrt><mrow><mn>52</mn><mo>+</mo><mn>24</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></msqrt></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-2H1-q067-v4--bt02",
+      "number": 2,
+      "kind": "tf",
+      "prompt": "Trong không gian, cho hai véc-tơ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>a</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>b</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math> cùng có độ dài bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>1</mn></mrow></semantics></math>. Góc giữa hai véc-tơ đó là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mn>45</mn><mo>∘</mo></msup></mrow></semantics></math>. Xét véc-tơ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>v</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>2</mn><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mn>5</mn><mover><mi>b</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math>. Xác định tính đúng, sai của mỗi khẳng định sau:",
+      "choices": [
+        {
+          "key": "a",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>1</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mn>4</mn><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>2</mn><mo>+</mo><mn>1</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>2</mn><mo>+</mo><mn>1</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Độ dài véc-tơ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>v</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math> bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msqrt><mrow><mn>27</mn><mo>+</mo><mn>10</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></msqrt></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        false,
+        true,
+        true,
+        false
+      ],
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mrow><mn>1</mn></mrow><mrow><mn>2</mn></mrow></msup><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow><mrow><mn>2</mn></mrow></mfrac></mrow></semantics></math>.<br>Khai triển: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mn>4</mn><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn><msup><mrow><mover><mi>a</mi><mo accent=\"true\">→</mo></mover></mrow><mrow><mn>2</mn></mrow></msup><mo>−</mo><mn>4</mn><msup><mrow><mover><mi>b</mi><mo accent=\"true\">→</mo></mover></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><mn>2</mn><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mo>−</mo><mn>2</mn><mo>+</mo><mn>1</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></semantics></math>.<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>2</mn><mo>+</mo><mn>1</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></semantics></math>, và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mover><mi>v</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>=</mo><msqrt><mrow><mn>29</mn><mo>+</mo><mn>10</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></msqrt></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-2H1-q067-v4--bt03",
+      "number": 3,
+      "kind": "tf",
+      "prompt": "Trong không gian, cho hai véc-tơ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>a</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>b</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math> cùng có độ dài bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn></mrow></semantics></math>. Góc giữa hai véc-tơ đó là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mn>45</mn><mo>∘</mo></msup></mrow></semantics></math>. Xét véc-tơ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>v</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>1</mn><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mn>2</mn><mover><mi>b</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math>. Xác định tính đúng, sai của mỗi khẳng định sau:",
+      "choices": [
+        {
+          "key": "a",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>9</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mn>4</mn><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>20</mn><mo>+</mo><mn>9</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>18</mn><mo>+</mo><mn>9</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Độ dài véc-tơ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>v</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math> bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msqrt><mrow><mn>45</mn><mo>+</mo><mn>18</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></msqrt></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mrow><mn>3</mn></mrow><mrow><mn>2</mn></mrow></msup><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow><mrow><mn>2</mn></mrow></mfrac></mrow></semantics></math>.<br>Khai triển: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mn>4</mn><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn><msup><mrow><mover><mi>a</mi><mo accent=\"true\">→</mo></mover></mrow><mrow><mn>2</mn></mrow></msup><mo>−</mo><mn>4</mn><msup><mrow><mover><mi>b</mi><mo accent=\"true\">→</mo></mover></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><mn>2</mn><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mo>−</mo><mn>18</mn><mo>+</mo><mn>9</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></semantics></math>.<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>18</mn><mo>+</mo><mn>9</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></semantics></math>, và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mover><mi>v</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>=</mo><msqrt><mrow><mn>45</mn><mo>+</mo><mn>18</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></msqrt></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk1-2H1-q067-v4--bt04",
+      "number": 4,
+      "kind": "tf",
+      "prompt": "Trong không gian, cho hai véc-tơ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>a</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>b</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math> cùng có độ dài bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn></mrow></semantics></math>. Góc giữa hai véc-tơ đó là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mn>45</mn><mo>∘</mo></msup></mrow></semantics></math>. Xét véc-tơ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>v</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>1</mn><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mn>3</mn><mover><mi>b</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math>. Xác định tính đúng, sai của mỗi khẳng định sau:",
+      "choices": [
+        {
+          "key": "a",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>16</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mn>4</mn><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>32</mn><mo>+</mo><mn>16</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>34</mn><mo>+</mo><mn>16</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Độ dài véc-tơ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>v</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math> bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msqrt><mrow><mn>160</mn><mo>+</mo><mn>48</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></msqrt></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        false,
+        true,
+        false,
+        true
+      ],
+      "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mrow><mn>4</mn></mrow><mrow><mn>2</mn></mrow></msup><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow><mrow><mn>2</mn></mrow></mfrac></mrow></semantics></math>.<br>Khai triển: <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mn>4</mn><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn><msup><mrow><mover><mi>a</mi><mo accent=\"true\">→</mo></mover></mrow><mrow><mn>2</mn></mrow></msup><mo>−</mo><mn>4</mn><msup><mrow><mover><mi>b</mi><mo accent=\"true\">→</mo></mover></mrow><mrow><mn>2</mn></mrow></msup><mo>+</mo><mn>2</mn><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mo>−</mo><mn>32</mn><mo>+</mo><mn>16</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></semantics></math>.<br><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><msup><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mrow><mn>2</mn></mrow></msup><mo>=</mo><mn>32</mn><mo>+</mo><mn>16</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></semantics></math>, và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mover><mi>v</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>=</mo><msqrt><mrow><mn>160</mn><mo>+</mo><mn>48</mn><msqrt><mrow><mn>2</mn></mrow></msqrt></mrow></msqrt></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

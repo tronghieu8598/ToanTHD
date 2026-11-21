@@ -12,6 +12,7 @@ import {newStaffPassword} from '../lib/auth.mjs';
 import {courseRowPayload} from '../lib/course-bank.mjs';
 import {bankReleaseChapters} from '../lib/bank-release-chapters.mjs';
 import chapter01Overlay from '../data/chapter-variants/generated/12-C01.json' with {type: 'json'};
+import chapter02Overlay from '../data/chapter-variants/generated/12-C02.json' with {type: 'json'};
 import variantOverlay from '../data/chapter-variants/generated/12-C06.json' with {type: 'json'};
 import variantManifest from '../data/chapter-variants/manifest.json' with {type: 'json'};
 // Exercise the real API module. Only the Cloudflare env binding is substituted;
@@ -726,7 +727,7 @@ test('Chapter I release keeps pending review and cannot change the active Chapte
   assert.equal(savedRows(chapter).length,0);
   assert.equal(receipt(chapter),undefined);
   await post('activate',{digest:staged.digest},404);
-  await post('activate',{scope:'12-C02',digest:staged.digest},422);
+  await post('activate',{scope:'12-C02',digest:staged.digest},404);
   assert.equal((await post('activate',{scope:chapter,digest:staged.digest})).replayed,false);
   assert.equal((await post('activate',{scope:chapter,digest:staged.digest})).replayed,true);
   assert.equal(savedRows(chapter).length,230);
@@ -734,6 +735,61 @@ test('Chapter I release keeps pending review and cannot change the active Chapte
   assert.equal(receipt(chapterSix),priorReceipt);
   assert.deepEqual(savedRows(chapterSix),priorQuestions);
   assert.notEqual(receipt(chapter),priorReceipt);
+ }finally{
+  delete env.BUCKET;
+ }
+});
+
+test('Chapter II release stages only B01 and keeps question 58 in teacher review', async ()=>{
+ const origin='http://test.local';
+ const scope='12-C02';
+ const lessonId='dc-12-hk1-2H1-v4';
+ const heldId='dc-12-hk1-2H1-q058-v4';
+ const receiptKey='course_bank_release:'+scope;
+ const release=sampleRelease(scope,chapter02Overlay.version,'Chương II',new Set([heldId]));
+ const objects=new Map();
+ env.BUCKET={async put(key,value){objects.set(key,value);},async get(key){const value=objects.get(key);return value?{async text(){return value;}}:null;}};
+ const post=(action,body,status=200)=>call('teacher/bank-release/'+action,{method:'POST',origin,body,status}).then(r=>r.data);
+ const priorState=()=>({
+  documents:db.prepare('SELECT * FROM documents WHERE id=?').all(release.documents[0].id),
+  lessons:db.prepare('SELECT * FROM lessons WHERE id<>? ORDER BY id').all(lessonId),
+  questions:db.prepare('SELECT * FROM questions WHERE lesson_id<>? ORDER BY id').all(lessonId),
+  receipts:db.prepare("SELECT * FROM workspace_settings WHERE key LIKE 'course_bank_release:%' AND key<>? ORDER BY key").all(receiptKey),
+ });
+ const replaceHeld=patch=>release.questions.map(row=>{
+  if(row.id!==heldId) return row;
+  const changed={...row,...patch};
+  return {...changed,bank_fingerprint:releaseFingerprint(changed)};
+ });
+ const count=()=>db.prepare('SELECT COUNT(*) AS count FROM questions WHERE lesson_id=?').get(lessonId).count;
+ try{
+  const before=priorState();
+  assert.ok(before.lessons.some(lesson=>lesson.document_id===release.documents[0].id&&lesson.id==='dc-12-hk1-1D1-v4'));
+  const invalid=await post('stage',{...release,questions:replaceHeld({bank_status:'auto'})},422);
+  assert.match(invalid.error,/q058-v4.*chờ duyệt/);
+  const pastEnd='dc-12-hk1-2H1-q108-v4';
+  await post('stage',{...release,questions:replaceHeld({id:pastEnd,family_id:pastEnd,original_number:108})},422);
+  for(const unit of ['2H2','2H3']){
+   const otherLesson='dc-12-hk1-'+unit+'-v4';
+   const otherId=heldId.replace('2H1',unit);
+   await post('stage',{...release,questions:replaceHeld({id:otherId,family_id:otherId,lesson_id:otherLesson})},422);
+  }
+
+  const staged=await post('stage',release);
+  assert.equal(staged.release.lessons,1);
+  assert.equal(staged.preview.added,107);
+  assert.deepEqual([...objects.keys()],['bank-release/staged/'+scope+'/'+staged.digest+'.json']);
+  assert.equal(count(),0);
+  assert.equal(db.prepare('SELECT value FROM workspace_settings WHERE key=?').get(receiptKey),undefined);
+  assert.deepEqual(priorState(),before);
+
+  assert.equal((await post('activate',{scope,digest:staged.digest})).replayed,false);
+  assert.equal(count(),107);
+  assert.deepEqual(priorState(),before);
+  const {data:review}=await call('teacher/bank?status=review&lesson_id='+lessonId);
+  assert.deepEqual(review.questions.map(question=>question.id),[heldId]);
+  const {data:selection}=await call('teacher/bank/select',{method:'POST',body:{mode:'numbers',lesson_id:lessonId,numbers_spec:'57–59'}});
+  assert.deepEqual(selection.questions.map(question=>question.original_number),[57,59]);
  }finally{
   delete env.BUCKET;
  }

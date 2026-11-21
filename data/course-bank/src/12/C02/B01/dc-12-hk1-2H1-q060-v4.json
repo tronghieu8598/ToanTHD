@@ -1,0 +1,33 @@
+{
+  "id": "dc-12-hk1-2H1-q060-v4",
+  "original_number": 60,
+  "kind": "tf",
+  "based_on": "07cecc80a3df738e8c88809e429a95c6bfc92c07a652333109f968f4695d539f",
+  "prompt": "Cho hình lăng trụ <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>.</mi><mi>A</mi><mi>′</mi><mi>B</mi><mi>′</mi><mi>C</mi><mi>′</mi></mrow></semantics></math> có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>A</mi><mi>A</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>,</mo><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo>,</mo><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mi>c</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/fa15f87d02da54b2eb425edeb48ecd66336f0163012ed4c8ca8f35e58e8cc3c5.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tCác khẳng định sau đúng hay sai?",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>C</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>B</mi><mi>′</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mo>−</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mi>c</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>B</mi><mi>C</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mi>c</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    false,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li><strong>Sai</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math></li><li><strong>Sai</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>A</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.</li><li><strong>Đúng</strong>.\n\t\t\t<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>B</mi><mi>′</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mrow><mi>A</mi><mi>B</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>−</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mrow><mi>A</mi><mi>A</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mover><mi>c</mi><mo accent=\"true\">→</mo></mover><mo>−</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mi>c</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.</li><li><strong>Sai</strong>. \n\t\t\t<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mover><mrow><mi>B</mi><mi>C</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>C</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>A</mi><mi>′</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mover><mi>a</mi><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mi>b</mi><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mi>c</mi><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}
