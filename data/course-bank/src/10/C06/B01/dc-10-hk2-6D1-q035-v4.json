@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-6D1-q035-v4",
+  "original_number": 35,
+  "kind": "mcq",
+  "based_on": "0729a800ed310a342d3641a2d8ea4b82b6bdbbc05e14b07f983f931150d5d278",
+  "prompt": "Tập xác định của hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msqrt><mrow><mn>2</mn><mo>−</mo><mi>x</mi></mrow></msqrt><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn></mrow></mfrac></mrow></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>\\</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ℝ</mi><mo>\\</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">]</mo><mo>\\</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Hàm số đã cho xác định khi và chỉ khi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mn>2</mn><mo>−</mo><mi>x</mi><mo>≥</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mo>≠</mo><mn>0</mn></mtd></mtr></mtable></mrow><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>&lt;</mo><mn>2</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>≠</mo><mo>−</mo><mn>2</mn><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math> <br>Vậy tập xác định của hàm số đã cho là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>\\</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>.",
+  "accepted_answers": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk2-6D3-q077-v4",
+  "original_number": 77,
+  "kind": "tf",
+  "based_on": "65fbbbe47442b4152b5003d50e6229d5840f279d0b2930f36e97b7b7e494fdd8",
+  "prompt": "<div class=\"with-figure\"><div>Cho ba số thực dương <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>b</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>c</mi></semantics></math> khác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>. Đồ thị các hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>a</mi><mi>x</mi></msup></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>b</mi><mi>x</mi></msup></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>c</mi><mi>x</mi></msup></mrow></semantics></math> được cho trong hình vẽ dưới đây. Mệnh đề nào dưới đây đúng?</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/f38fd319396effbf9b16965b5dca0962b32c3c5dbddd8ab47d04812b8d050cdb.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Hai hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>b</mi><mi>x</mi></msup></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>c</mi><mi>x</mi></msup></mrow></semantics></math> đồng biến trên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>ℝ</mi></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Từ đồ thị hàm số ta xác định được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mi>c</mi><mo>&lt;</mo><mi>b</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Hai hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>a</mi><mi>x</mi></msup></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>c</mi><mi>x</mi></msup></mrow></semantics></math> nghịch biến trên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>ℝ</mi></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Từ đồ thị hàm số ta xác định được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>c</mi></semantics></math> là một số dương nhỏ hơn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "solution": "Ta có hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>a</mi><mi>x</mi></msup></mrow></semantics></math> nghịch biến trên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ℝ</mi><mo>⇒</mo><mn>0</mn><mo>&lt;</mo><mi>a</mi><mo>&lt;</mo><mn>1</mn></mrow></semantics></math>.<br>Các hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>b</mi><mi>x</mi></msup></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>c</mi><mi>x</mi></msup></mrow></semantics></math> đồng biến trên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>ℝ</mi></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>b</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>c</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math>.<br>Ta lại có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∀</mo><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> thì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>b</mi><mi>x</mi></msup><mo>&gt;</mo><msup><mi>c</mi><mi>x</mi></msup><mo>⇒</mo><mi>b</mi><mo>&gt;</mo><mi>c</mi></mrow></semantics></math>.<br>Vậy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mi>b</mi><mo>&lt;</mo><mi>c</mi></mrow></semantics></math>.\n\t\t<ol class=\"alpha-list\"><li>Sai: Hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>a</mi><mi>x</mi></msup></mrow></semantics></math> nghịch biến trên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>ℝ</mi></semantics></math> còn hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>c</mi><mi>x</mi></msup></mrow></semantics></math> đồng biến trên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>ℝ</mi></semantics></math>.</li><li>Đúng: Hai hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>b</mi><mi>x</mi></msup></mrow></semantics></math> và  <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>c</mi><mi>x</mi></msup></mrow></semantics></math> đồng biến trên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>ℝ</mi></semantics></math>.</li><li>Sai: Từ đồ thị hàm số ta xác định được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>c</mi></semantics></math> là một số dương lớn hơn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>.</li><li>Đúng: Từ đồ thị hàm số ta xác định được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mi>b</mi><mo>&lt;</mo><mi>c</mi></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

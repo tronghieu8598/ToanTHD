@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D4-q069-v4",
+  "original_number": 69,
+  "kind": "mcq",
+  "based_on": "c9af07549cb8981a27afac88e1c5a1a673557de6ce4180487e3644d4a89389ae",
+  "prompt": "Tìm số nghiệm của phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mn>2</mn></msub><mi>x</mi><mo>+</mo><msub><mo>log</mo><mn>2</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>0</mn></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Điều kiện <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>&gt;</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>−</mo><mn>1</mn><mo>&gt;</mo><mn>0</mn></mtd></mtr></mtable></mrow><mo>⇔</mo><mi>x</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math>.<br>Ta có \n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msub><mo>log</mo><mn>2</mn></msub><mi>x</mi><mo>+</mo><msub><mo>log</mo><mn>2</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn><mo>⇔</mo><msub><mo>log</mo><mn>2</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mi>x</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow><mo>=</mo><mn>2</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇔</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mi>x</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mn>2</mn><mn>2</mn></msup><mo>⇔</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi><mo>−</mo><mn>4</mn><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇔</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>−</mo><msqrt><mn>17</mn></msqrt></mrow><mn>2</mn></mfrac></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mtext mathvariant=\"normal\">(loại)</mtext></mtd><mtd columnalign=\"left\" style=\"text-align: left\"/></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>+</mo><msqrt><mn>17</mn></msqrt></mrow><mn>2</mn></mfrac></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mtext mathvariant=\"normal\">(nhận)</mtext></mtd><mtd columnalign=\"left\" style=\"text-align: left\"><mi>.</mi></mtd></mtr></mtable></mrow></mtd></mtr></mtable></semantics></math></div>\n\t\tVậy phương trình đã cho có một nghiệm duy nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>+</mo><msqrt><mn>17</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

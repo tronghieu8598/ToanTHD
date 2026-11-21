@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-2D1-q053-v4",
+  "original_number": 53,
+  "kind": "tf",
+  "based_on": "8819fdf34492988763c035482bce524c900459c343a61ae357bbc71dd4e78ab3",
+  "prompt": "An mua bút và vở, biết rằng mỗi cây bút có giá <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> đồng và mỗi quyển vở có giá <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>10</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> đồng. Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>y</mi></semantics></math> lần lượt là số cây bút và số quyển vở An mua. Biết rằng  An chỉ có  <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>200</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> đồng. Mỗi khẳng định sau đây đúng hay sai?",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Bất phương trình biểu thị mối liên hệ của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>y</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>≥</mo><mn>40</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Miền nghiệm của bất phương trình biểu thị mối liên hệ giữa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>y</mi></semantics></math> có chứa cả những điểm thuộc đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>−</mo><mn>40</mn><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "An không thể mua được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20</mn></semantics></math> cây bút và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>11</mn></semantics></math> quyển vở"
+    },
+    {
+      "key": "d",
+      "text": "Nếu An dùng hết <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>200</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> đồng để mua bút và vở thì số bút An mua phải là số chẵn"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    true,
+    true
+  ],
+  "solution": "<div class=\"paragraph-gap\"></div>\t\t<ol class=\"alpha-list\"><li>Sai.<br>Bất phương trình biểu thị mối liên hệ của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>y</mi></semantics></math> là: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mspace width=\"0.167em\"/><mn>000</mn><mi>x</mi><mo>+</mo><mn>10</mn><mspace width=\"0.167em\"/><mn>000</mn><mi>y</mi><mo>≤</mo><mn>200</mn><mspace width=\"0.167em\"/><mn>000</mn><mo>⇔</mo><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>≤</mo><mn>40</mn></mrow></semantics></math>.</li><li>Đúng.<br>Thay <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>20</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>11</mn></mrow></semantics></math> vào bất phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>≤</mo><mn>40</mn></mrow></semantics></math> ta được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>20</mn><mo>+</mo><mn>2</mn><mo>⋅</mo><mn>11</mn><mo>≤</mo><mn>40</mn></mrow></semantics></math> (sai). <br>Do đó An không thể mua được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20</mn></semantics></math> cây bút và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>11</mn></semantics></math> quyển vở</li><li>Đúng.<br>An dùng hết <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>200</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> đồng để mua bút và vở nên ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>40</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>40</mn><mo>−</mo><mn>2</mn><mi>y</mi></mrow></semantics></math>. Suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> là số chẵn.</li><li>Đúng.<br>Bất phương trình biểu thị mối liên hệ của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>y</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mspace width=\"0.167em\"/><mn>000</mn><mi>x</mi><mo>+</mo><mn>10</mn><mspace width=\"0.167em\"/><mn>000</mn><mi>y</mi><mo>≤</mo><mn>200</mn><mspace width=\"0.167em\"/><mn>000</mn><mo>⇔</mo><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>≤</mo><mn>40</mn></mrow></semantics></math>.<br>Do đó miền nghiệm của bất phương trình biểu thị mối liên hệ giữa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>y</mi></semantics></math> có chứa cả những điểm thuộc đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>−</mo><mn>40</mn><mo>=</mo><mn>0</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

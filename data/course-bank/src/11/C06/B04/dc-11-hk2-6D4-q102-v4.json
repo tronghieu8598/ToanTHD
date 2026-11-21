@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk2-6D4-q102-v4",
+  "original_number": 102,
+  "kind": "tf",
+  "based_on": "693129a50e088c815380c00fdb753b41d105c69a953f7f3588597bbc707bf3d5",
+  "prompt": "Cho phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mn>5</mn></msub><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>21</mn></mrow></msqrt><mo>=</mo><mn>1</mn></mrow></semantics></math> <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>*</mo><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> , biết phương trình có hai nghiệm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub></mrow></semantics></math> <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>x</mi><mn>2</mn></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> . Khi đó:",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Tổng các nghiệm của phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>*</mo><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></munder><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><msub><mi>x</mi><mn>2</mn></msub></mrow></munder><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Ba số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><mn>8</mn></mrow></semantics></math> tạo thành một cấp số cộng"
+    },
+    {
+      "key": "d",
+      "text": "Phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>*</mo><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> có chung tập nghiệm với phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mrow><mi mathvariant=\"normal\">x</mi><mo mathvariant=\"normal\">−</mo><mn mathvariant=\"normal\">4</mn><mo mathvariant=\"normal\">=</mo><mn mathvariant=\"normal\">0</mn></mrow></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "solution": "Điều kiện: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mi mathvariant=\"normal\">x</mi><mo>+</mo><mn>21</mn><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>*</mo><mo>*</mo><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math><br><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mn>5</mn></msub><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mi mathvariant=\"normal\">x</mi><mo>+</mo><mn>21</mn></mrow></msqrt><mo>=</mo><mn>1</mn></mrow></semantics></math> <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mo>⇔</mo></semantics></math> <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mi mathvariant=\"normal\">x</mi><mo>+</mo><mn>21</mn></mrow></msqrt><mo>=</mo><mn>5</mn></mrow></semantics></math> <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mo>⇒</mo></semantics></math> <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mrow><mi mathvariant=\"normal\">x</mi><mo mathvariant=\"normal\">−</mo><mn mathvariant=\"normal\">4</mn><mo mathvariant=\"normal\">=</mo><mn mathvariant=\"normal\">0</mn></mrow></mrow></semantics></math> <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mo>⇔</mo></semantics></math> <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>4</mn><mi>.</mi></mtd></mtr></mtable></mrow></semantics></math> <br>Thay lần lượt hai giá trị này vào <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>*</mo><mo>*</mo><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> , ta thấy cả hai giá trị đều thỏa mãn.<br>Vậy tập nghiệm của phương trình là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></mrow></semantics></math> .",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-8D2-q060-v4",
+  "original_number": 60,
+  "kind": "mcq",
+  "based_on": "e584167defd56c5600dcf253bd494a87bf7978e265bc62ef2f4eb844827ceb43",
+  "prompt": "Trong hộp có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> chiếc bút xanh và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> chiếc bút đỏ. Chọn ngẫu nhiên ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> chiếc bút. Số cách chọn được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> bút xanh và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> bút đỏ là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>225</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>455</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>100</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>50</mn></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Mỗi chọn được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> bút xanh và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> bút đỏ được thực hiện qua hai công đoạn\n\t\t<ul><li>Công đoạn 1: Chọn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> bút xanh. Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msubsup><mi mathvariant=\"normal\">C</mi><mn>10</mn><mn>2</mn></msubsup></semantics></math> cách.</li><li>Công đoạn 2: Chọn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> bút đỏ. Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>1</mn></msubsup></semantics></math> cách.</li></ul>\n\t\tTheo quy tắc nhân, số cách chọn thỏa yêu cầu đề bài là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>10</mn><mn>2</mn></msubsup><mo>⋅</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>1</mn></msubsup><mo>=</mo><mn>225</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

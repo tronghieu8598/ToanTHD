@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk1-1D2-q063-v4",
+  "original_number": 63,
+  "kind": "short",
+  "based_on": "9ff230abb778dbbf7b17aff22ce1a2a5af04b3e8fbbec27802490d3d4e9d89a4",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>α</mi><mo>+</mo><mi>β</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>α</mi><mo>≠</mo><mo>cos</mo><mi>β</mi></mrow></semantics></math>. Tính giá trị của biểu thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mo>sin</mo><mi>α</mi><mo>−</mo><mo>sin</mo><mi>β</mi></mrow><mrow><mo>cos</mo><mi>α</mi><mo>−</mo><mo>cos</mo><mi>β</mi></mrow></mfrac></semantics></math> (kết quả làm tròn đến hàng phần mười).",
+  "choices": [],
+  "correct": "-1.7",
+  "solution": "Ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mo>sin</mo><mi>α</mi><mo>−</mo><mo>sin</mo><mi>β</mi></mrow><mrow><mo>cos</mo><mi>α</mi><mo>−</mo><mo>cos</mo><mi>β</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mo>cos</mo><mfrac displaystyle=\"true\"><mrow><mi>α</mi><mo>+</mo><mi>β</mi></mrow><mn>2</mn></mfrac><mo>⋅</mo><mo>sin</mo><mfrac displaystyle=\"true\"><mrow><mi>α</mi><mo>−</mo><mi>β</mi></mrow><mn>2</mn></mfrac></mrow><mrow><mo>−</mo><mn>2</mn><mo>sin</mo><mfrac displaystyle=\"true\"><mrow><mi>α</mi><mo>+</mo><mi>β</mi></mrow><mn>2</mn></mfrac><mo>⋅</mo><mo>sin</mo><mfrac displaystyle=\"true\"><mrow><mi>α</mi><mo>−</mo><mi>β</mi></mrow><mn>2</mn></mfrac></mrow></mfrac><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mo>cos</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>6</mn></mfrac></mrow><mrow><mo>sin</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>6</mn></mfrac></mrow></mfrac><mo>=</mo><mo>−</mo><mo>cot</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>6</mn></mfrac><mo>=</mo><mo>−</mo><msqrt><mn>3</mn></msqrt><mo>≈</mo><mo>−</mo><mn>1</mn><mo>,</mo><mn>7</mn><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

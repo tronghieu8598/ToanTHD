@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-8H5-q038-v4",
+  "original_number": 38,
+  "kind": "mcq",
+  "based_on": "3a7b91da00ae48b7dd6da2a1d52fec2333bc489feb84edf1a38e38a223b53d7e",
+  "prompt": "Cho hình lập phương <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mi>.</mi><mi>A</mi><mi>′</mi><mi>B</mi><mi>′</mi><mi>C</mi><mi>′</mi><mi>D</mi><mi>′</mi></mrow></semantics></math> có cạnh bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math>. Khoảng cách giữa hai mặt phẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>′</mi><mi>B</mi><mi>′</mi><mi>C</mi><mi>′</mi><mi>D</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mi>a</mi><mn>2</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mi>a</mi><mn>3</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "<div class=\"with-figure\"><div>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mi>.</mi><mi>A</mi><mi>′</mi><mi>B</mi><mi>′</mi><mi>C</mi><mi>′</mi><mi>D</mi><mi>′</mi></mrow></semantics></math> là hình lập phương nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>A</mi><mi>A</mi><mi>′</mi><mo>⊥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>′</mi><mi>B</mi><mi>′</mi><mi>C</mi><mi>′</mi><mi>D</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>A</mi><mi>A</mi><mi>′</mi><mo>⊥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mtd></mtr></mtable></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>A</mi><mi>′</mi><mo>=</mo><mi>a</mi></mrow></semantics></math> là khoảng cách giữa hai mặt phẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>′</mi><mi>B</mi><mi>′</mi><mi>C</mi><mi>′</mi><mi>D</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/1457e2e6f7e7a3d9964cbc60d16e9ac786665b78ee464e45008a1bdb0713c2d6.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

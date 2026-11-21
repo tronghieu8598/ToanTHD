@@ -1,0 +1,11 @@
+{
+  "id": "dc-10-hk2-9XS1-q060-v4",
+  "original_number": 60,
+  "kind": "short",
+  "based_on": "5f238abd026407328fb7c9a69947626cc2c887ed6cd44f5dbdf38fc300670d90",
+  "prompt": "Tung một đồng xu cân đối và đồng chất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> lần liên tiếp. Tính xác suất cuẩ biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> ““ tám lần xuất hiện mặt ngửa””. (kết quả làm tròn đến hàng phần trăm)",
+  "choices": [],
+  "correct": "0.04",
+  "solution": "Số phần tử không gian mẫu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Ω</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mn>2</mn><mn>10</mn></msup><mo>=</mo><mn>1024</mn></mrow></semantics></math>.<br><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là biến cố ““ tám lần xuất hiện mặt ngửa””, suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>10</mn><mn>8</mn></msubsup><mo>⋅</mo><mn>1</mn><mo>⋅</mo><mn>1</mn><mo>=</mo><mn>45</mn></mrow></semantics></math>.<br>Vậy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>45</mn><mn>1024</mn></mfrac><mo>≈</mo><mn>0</mn><mo>,</mo><mn>04</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

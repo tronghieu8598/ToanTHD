@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-8D1-q039-v4",
+  "original_number": 39,
+  "kind": "mcq",
+  "based_on": "34d9addb64f2271cc4fa4dab635bdb91fb915f5cb4cbdd82d085c6bd578db199",
+  "prompt": "Các thành phố A, B, C, D được nối với nhau bởi các con đường như hình vẽ. Hỏi có bao nhiêu cách đi từ A đến D rồi quay lại A?\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/abf35e73472eb497db4d8a90d3ebcb01fbea875d607663ebb1c7c38c5e50eccd.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>96</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>48</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>324</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>576</mn></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> cách đi từ A đến B, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> cách từ B đến C, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> cách từ C đến D.<br>Suy ra có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>=</mo><mn>24</mn></mrow></semantics></math> cách đi từ A đến D và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>24</mn></semantics></math> cách quay lại A.<br>Vậy có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>24</mn><mo>⋅</mo><mn>24</mn><mo>=</mo><mn>576</mn></mrow></semantics></math> cách đi từ A đến D rồi quay lại A.",
+  "accepted_answers": []
+}

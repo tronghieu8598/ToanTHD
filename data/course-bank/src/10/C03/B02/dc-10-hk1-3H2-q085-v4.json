@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-3H2-q085-v4",
+  "original_number": 85,
+  "kind": "tf",
+  "based_on": "041f65feab09dd2fa72dfad95436ad62522e269a24956c30d03fb7190a39db6c",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>C</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>60</mn><mo>∘</mo></msup></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi><mo>=</mo><mn>10</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>=</mo><mn>20</mn></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Độ dài đường trung tuyến hạ từ đỉnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> của tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>m</mi><mi>a</mi></msub><mo>=</mo><mn>10</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Độ dài cạnh còn lại của tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>c</mi><mo>=</mo><mn>10</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Độ dài đường cao hạ từ đỉnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> của tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>h</mi><mi>a</mi></msub><mo>=</mo><mn>10</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Bán kính đường tròn ngoại tiếp tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>=</mo><mn>10</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    true
+  ],
+  "solution": "<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/5410d2fd31fc1f69fb31bb52a09b1c287cf9b38379a323bd35f98e539f9ff680.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\t<ol class=\"alpha-list\"><li>Đúng.<br>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>c</mi><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>a</mi><mi>b</mi><mo>sin</mo><mi>C</mi><mo>=</mo><msup><mn>20</mn><mn>2</mn></msup><mo>+</mo><msup><mn>10</mn><mn>2</mn></msup><mo>−</mo><mn>2</mn><mo>⋅</mo><mn>20</mn><mo>⋅</mo><mn>10</mn><mo>⋅</mo><mo>cos</mo><msup><mn>60</mn><mo>∘</mo></msup><mo>=</mo><mn>300</mn><mo>⇒</mo><mi>c</mi><mo>=</mo><mn>10</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math>.</li><li>Đúng.<br>Định lí sin, suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mi>c</mi><mrow><mo>sin</mo><mi>C</mi></mrow></mfrac><mo>=</mo><mn>2</mn><mi>R</mi><mo>⇔</mo><mi>R</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>10</mn><msqrt><mn>3</mn></msqrt></mrow><mrow><mn>2</mn><mo>⋅</mo><mo>sin</mo><msup><mn>60</mn><mo>∘</mo></msup></mrow></mfrac><mo>=</mo><mn>10</mn></mrow></semantics></math>.</li><li>Đúng.<br>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi>m</mi><mi>a</mi><mn>2</mn></msubsup><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>b</mi><mn>2</mn></msup><mo>+</mo><msup><mi>c</mi><mn>2</mn></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>−</mo><msup><mi>a</mi><mn>2</mn></msup></mrow><mn>4</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>10</mn><mn>2</mn></msup><mo>+</mo><mn>300</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>−</mo><msup><mn>20</mn><mn>2</mn></msup></mrow><mn>4</mn></mfrac><mo>=</mo><mn>100</mn><mo>⇒</mo><msub><mi>m</mi><mi>a</mi></msub><mo>=</mo><mn>10</mn></mrow></semantics></math>.</li><li>Sai.<br>Diện tích tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><mi>b</mi><mo>sin</mo><mi>C</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>⋅</mo><mn>20</mn><mo>⋅</mo><mn>10</mn><mo>⋅</mo><mo>sin</mo><msup><mn>60</mn><mo>∘</mo></msup><mo>=</mo><mn>50</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math>.<br>Mặt khác \t\n\t\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><msub><mi>h</mi><mi>a</mi></msub><mo>⇔</mo><msub><mi>h</mi><mi>a</mi></msub><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>S</mi></mrow><mi>a</mi></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mo>⋅</mo><mn>50</mn><msqrt><mn>3</mn></msqrt></mrow><mn>20</mn></mfrac><mo>=</mo><mn>5</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

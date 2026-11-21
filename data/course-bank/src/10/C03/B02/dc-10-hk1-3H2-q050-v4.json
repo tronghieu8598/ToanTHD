@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-3H2-q050-v4",
+  "original_number": 50,
+  "kind": "mcq",
+  "based_on": "4d5342c87681995958efe5418ad0c483142de07f7f60ada06c2c79553f13cfb6",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi><mo>=</mo><mn>5</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>C</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>120</mn><mo>∘</mo></msup></mrow></semantics></math>. Độ dài cạnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi></mrow></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>9</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msqrt><mn>19</mn></msqrt></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>19</mn></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Áp dụng định lý côsin trong tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><msup><mi>B</mi><mn>2</mn></msup><mo>=</mo><mi>A</mi><msup><mi>C</mi><mn>2</mn></msup><mo>+</mo><mi>B</mi><msup><mi>C</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mo>⋅</mo><mi>A</mi><mi>B</mi><mo>⋅</mo><mi>A</mi><mi>C</mi><mo>⋅</mo><mo>cos</mo><mi>A</mi><mo>=</mo><msup><mn>5</mn><mn>2</mn></msup><mo>+</mo><msup><mn>3</mn><mn>2</mn></msup><mo>−</mo><mn>2</mn><mo>⋅</mo><mn>5</mn><mo>⋅</mo><mn>3</mn><mo>⋅</mo><mo>cos</mo><msup><mn>120</mn><mo>∘</mo></msup><mo>=</mo><mn>49</mn><mi>.</mi></mrow></semantics></math></div>\n\t\tVậy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mn>7</mn></mrow></semantics></math>,",
+  "accepted_answers": []
+}

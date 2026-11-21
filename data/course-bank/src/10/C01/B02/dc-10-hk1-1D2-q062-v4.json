@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-1D2-q062-v4",
+  "original_number": 62,
+  "kind": "tf",
+  "based_on": "d7ea08c23ae35c1769fb1a85101cdf52ff3a1cbd90da1c79ae71dcad7f02ebb0",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>9</mn><mo stretchy=\"false\" form=\"postfix\">]</mo></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>3</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>\\</mo><mi>B</mi></mrow></semantics></math> có chứa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> số nguyên"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo>\\</mo><mi>A</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">]</mo></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    false,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Sai.<br>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>3</mn><mo>;</mo><mn>9</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></mrow></semantics></math>.</li><li>Đúng.<br>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</li><li>Sai.<br>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo>\\</mo><mi>A</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>9</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</li><li>Sai.<br><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>\\</mo><mi>B</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>. Suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>\\</mo><mi>B</mi></mrow></semantics></math> chứa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> số nguyên là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

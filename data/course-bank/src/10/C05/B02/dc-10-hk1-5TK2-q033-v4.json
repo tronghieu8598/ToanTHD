@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-5TK2-q033-v4",
+  "original_number": 33,
+  "kind": "mcq",
+  "based_on": "54413712d77c654096b5233b5e9c2bf3e27ad1c580e30c96d337004d89c8704f",
+  "prompt": "Mẫu số liệu sau thống kê số xe đạp bán được hằng tháng (từ tháng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> đến tháng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>12</mn></semantics></math>) trong năm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2023</mn></semantics></math> của cửa hàng A là\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>15</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>25</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>16</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>17</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>9</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math></td></tr></tbody></table></div></div>\n\tHãy xác định trung vị của mẫu số liệu trên.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mo>,</mo><mn>5</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20</mn></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Sắp xếp mẫu số liệu theo thứ tự không giảm, ta được dãy\n\t\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>9</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>15</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>16</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>17</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>25</mn></semantics></math></td></tr></tbody></table></div></div>\n\t\tVì cỡ mẫu bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>12</mn></semantics></math> là số chẵn nên trung vị của mẫu số liệu là trung bình của số hạng thứ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> và thứ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math>, ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>M</mi><mi>e</mi></msub><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>8</mn><mo>+</mo><mn>9</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>8</mn><mo>,</mo><mn>5</mn><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

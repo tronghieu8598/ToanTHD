@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-1D2-q050-v4",
+  "original_number": 50,
+  "kind": "tf",
+  "based_on": "05674f6ac3dc5922150b42ec8b9c9a22c8babb196285ad4c03821d16f89ef552",
+  "prompt": "Cho góc lượng giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> thỏa mãn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mi>x</mi><mo>=</mo><msqrt><mn>3</mn></msqrt></mrow></semantics></math> (<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> có đơn vị độ).",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Có một giá trị của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><msup><mn>60</mn><mo>∘</mo></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Giá trị của biểu thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>cos</mo><mi>x</mi><mo>+</mo><msqrt><mn>3</mn></msqrt><mo>sin</mo><mi>x</mi></mrow><mrow><mn>3</mn><mo>cos</mo><mi>x</mi><mo>+</mo><mn>2</mn><msqrt><mn>3</mn></msqrt><mo>sin</mo><mi>x</mi></mrow></mfrac></mrow></semantics></math> bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>4</mn><mn>9</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mn>2</mn><mi>x</mi><mo>=</mo><msqrt><mn>3</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cot</mo><mi>x</mi><mo>=</mo><mo>−</mo><msqrt><mn>3</mn></msqrt></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Sai. Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mi>x</mi><mo>=</mo><msqrt><mn>3</mn></msqrt><mo>⇒</mo><mo>cot</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><msqrt><mn>3</mn></msqrt></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><msqrt><mn>3</mn></msqrt><mn>3</mn></mfrac></mrow></semantics></math>.</li><li>Đúng. Với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><msup><mn>60</mn><mo>∘</mo></msup><mo>⇒</mo><mo>tan</mo><msup><mn>60</mn><mo>∘</mo></msup><mo>=</mo><msqrt><mn>3</mn></msqrt></mrow></semantics></math>.</li><li>Sai. Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mn>2</mn><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mo>tan</mo><mi>x</mi></mrow><mrow><mn>1</mn><mo>−</mo><msup><mo>tan</mo><mn>2</mn></msup><mi>x</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msqrt><mn>3</mn></msqrt></mrow><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msqrt><mn>3</mn></msqrt><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mo>−</mo><msqrt><mn>3</mn></msqrt></mrow></semantics></math>.</li><li>Đúng. Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>sin</mo><mi>x</mi></mrow><mrow><mo>cos</mo><mi>x</mi></mrow></mfrac><mo>=</mo><msqrt><mn>3</mn></msqrt><mo>⇒</mo><mo>sin</mo><mi>x</mi><mo>=</mo><msqrt><mn>3</mn></msqrt><mo>cos</mo><mi>x</mi></mrow></semantics></math>. Khi đó,\n\t\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>cos</mo><mi>x</mi><mo>+</mo><msqrt><mn>3</mn></msqrt><mo>⋅</mo><msqrt><mn>3</mn></msqrt><mo>cos</mo><mi>x</mi></mrow><mrow><mn>3</mn><mo>cos</mo><mi>x</mi><mo>+</mo><mn>2</mn><msqrt><mn>3</mn></msqrt><mo>⋅</mo><msqrt><mn>3</mn></msqrt><mo>cos</mo><mi>x</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn><mo>cos</mo><mi>x</mi></mrow><mrow><mn>9</mn><mo>cos</mo><mi>x</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>4</mn><mn>9</mn></mfrac><mi>.</mi></mrow></semantics></math></div></li></ol>",
+  "accepted_answers": []
+}

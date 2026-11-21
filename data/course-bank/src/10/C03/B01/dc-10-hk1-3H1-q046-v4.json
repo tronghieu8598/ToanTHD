@@ -1,0 +1,11 @@
+{
+  "id": "dc-10-hk1-3H1-q046-v4",
+  "original_number": 46,
+  "kind": "short",
+  "based_on": "e43a5981c28b6f5f6e7efe5b728fd4d88ae5fa68f3136bb31a8d8288236c618d",
+  "prompt": "Rút gọn biểu thức sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>tan</mo><mi>x</mi><mo>+</mo><mo>cot</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>−</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>tan</mo><mi>x</mi><mo>−</mo><mo>cot</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></mrow></semantics></math>.",
+  "choices": [],
+  "correct": "4",
+  "solution": "Ta có \n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"><mi>A</mi></mtd><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>tan</mo><mi>x</mi><mo>+</mo><mo>cot</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>−</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>tan</mo><mi>x</mi><mo>−</mo><mo>cot</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><msup><mo>tan</mo><mn>2</mn></msup><mi>x</mi><mo>+</mo><mn>2</mn><mo>tan</mo><mi>x</mi><mo>cot</mo><mi>x</mi><mo>+</mo><msup><mo>cot</mo><mn>2</mn></msup><mi>x</mi><mo>−</mo><msup><mo>tan</mo><mn>2</mn></msup><mi>x</mi><mo>+</mo><mn>2</mn><mo>tan</mo><mi>x</mi><mo>cot</mo><mi>x</mi><mo>−</mo><msup><mo>cot</mo><mn>2</mn></msup><mi>x</mi></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"><mspace width=\"0.222em\"/></mtd><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mn>2</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>4</mn><mi>.</mi></mtd></mtr></mtable></semantics></math></div>",
+  "accepted_answers": []
+}

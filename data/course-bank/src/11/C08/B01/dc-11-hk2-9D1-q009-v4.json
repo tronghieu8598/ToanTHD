@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk2-9D1-q009-v4",
+  "original_number": 9,
+  "kind": "free",
+  "based_on": "78d80462dd810249bbca01960eaf89d82a78b6d912c711d7d72075dc1ef5d007",
+  "prompt": "Minh mua <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> bóng đèn. Theo một kết quả thống kê, tỉ lệ bị hỏng trong năm đầu sử dụng của loại bóng đèn Minh mua là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>23</mn><mi>%</mi></mrow></semantics></math>. Tính xác suất của các biến cố\n<ul><li>A: ““ Cả hai bóng đèn đều bị hỏng trong năm đầu sử dụng””;</li><li>B: ““ Cả hai bóng đèn đều không bị hỏng trong năm đầu sử dụng””.</li></ul>",
+  "choices": [],
+  "correct": null,
+  "solution": "Do tỉ lệ bóng bị hỏng trong năm đầu sử dụng là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>23</mn><mi>%</mi></mrow></semantics></math> nên xác suất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> bóng bị hỏng trong năm đầu sử dụng là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>23</mn></mrow></semantics></math>.\n<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>23</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>23</mn><mo>=</mo><mn>0</mn><mo>,</mo><mn>0529</mn><mo>;</mo><mspace width=\"1.0em\"/><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>23</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>23</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>5929</mn><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

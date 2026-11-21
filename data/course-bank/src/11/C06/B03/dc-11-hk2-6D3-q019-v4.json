@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D3-q019-v4",
+  "original_number": 19,
+  "kind": "mcq",
+  "based_on": "6fe87969c041a7e78171ab8592e20a8df53d88306293992ee93c2affa5e62e69",
+  "prompt": "Cho hai số thực <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>b</mi></semantics></math> sao cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>a</mi><mo>&lt;</mo><mn>1</mn><mo>&lt;</mo><mi>b</mi></mrow></semantics></math>. Tìm khẳng định đúng.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>b</mi><mn>1</mn></msup><mo>&lt;</mo><msup><mi>b</mi><mn>0</mn></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>a</mi><mi>b</mi></msup><mo>&lt;</mo><msup><mi>a</mi><mi>a</mi></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>b</mi><mi>a</mi></msup><mo>&gt;</mo><msup><mi>b</mi><mi>b</mi></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>a</mi><mi>b</mi></msup><mo>&gt;</mo><msup><mi>a</mi><mi>a</mi></msup></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mn>0</mn><mo>&lt;</mo><mi>a</mi><mo>&lt;</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>a</mi><mo>&lt;</mo><mi>b</mi></mtd></mtr></mtable></mrow><mo>⇒</mo><msup><mi>a</mi><mi>b</mi></msup><mo>&lt;</mo><msup><mi>a</mi><mi>a</mi></msup></mrow></semantics></math>.",
+  "accepted_answers": []
+}

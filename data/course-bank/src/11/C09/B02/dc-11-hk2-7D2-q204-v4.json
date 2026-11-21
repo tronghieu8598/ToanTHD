@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk2-7D2-q204-v4",
+  "original_number": 204,
+  "kind": "tf",
+  "based_on": "196774c7c9293ffd41415d7fc0e3d1462a74a956df7f39442d216f2d28fd27f4",
+  "prompt": "Một vật chuyển động theo quy luật <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>s</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><msup><mi>t</mi><mn>3</mn></msup><mo>+</mo><mn>12</mn><msup><mi>t</mi><mn>2</mn></msup></mrow></semantics></math>, trong đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>t</mi></semantics></math>(giây) là khoảng thời gian tính từ lúc vật bắt đầu chuyển động, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>s</mi></semantics></math> (mét) là quãng đường vật chuyển động được trong <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>t</mi></semantics></math> giây.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Vận tốc của vật có giá trị lớn nhất tại thời điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>10</mn></mrow></semantics></math> giây"
+    },
+    {
+      "key": "b",
+      "text": "Sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> giây kể từ lúc bắt đầu chuyển động, vật đi được quãng đường là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>44</mn></semantics></math> m"
+    },
+    {
+      "key": "c",
+      "text": "Vận tốc tức thời của vật tại thời điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>10</mn></mrow></semantics></math> giây bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>90</mn></semantics></math> m/s"
+    },
+    {
+      "key": "d",
+      "text": "Vật dừng hẳn tại thời điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>16</mn></mrow></semantics></math> giây"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> giây kể từ lúc bắt đầu chuyển động, vật đi được quãng đường là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>s</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>3</mn></msup><mo>+</mo><mn>12</mn><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>44</mn></mrow></semantics></math> m.</li><li>Biểu thức vận tốc của vật là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>s</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>24</mn><mi>t</mi></mrow></semantics></math>.<br>Vận tốc tức thời của vật tại thời điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>10</mn></mrow></semantics></math> giây là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>10</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac><mo>⋅</mo><msup><mn>10</mn><mn>2</mn></msup><mo>+</mo><mn>24</mn><mo>⋅</mo><mn>10</mn><mo>=</mo><mn>90</mn><mrow><mspace width=\"0.333em\"/><mtext mathvariant=\"normal\"> m/s</mtext></mrow></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>24</mn><mi>t</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo>−</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>96</mn><mo>≤</mo><mn>96</mn></mrow></semantics></math>.<br>Suy ra, vận tốc của vật có giá trị lớn nhất tại thời điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>8</mn></mrow></semantics></math> giây.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>24</mn><mi>t</mi><mo>=</mo><mn>0</mn><mo>⇒</mo><mi>t</mi><mo>=</mo><mn>16</mn></mrow></semantics></math> giây.</li></ol>",
+  "accepted_answers": []
+}

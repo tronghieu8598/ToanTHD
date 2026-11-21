@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-6D4-q094-v4",
+  "original_number": 94,
+  "kind": "tf",
+  "based_on": "a6574ae2b59d3381386fcd93a1a4877494e48c619663bc43d671dc9546340e16",
+  "prompt": "Cho phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msqrt><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow></msqrt><mo>=</mo><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn></mrow></msqrt></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Phương trình có đúng một nghiệm"
+    },
+    {
+      "key": "b",
+      "text": "Phương trình có hai nghiệm"
+    },
+    {
+      "key": "c",
+      "text": "Tổng các nghiệm của phương trình là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Tích các nghiệm của phương trình là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>6</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Sai. Ta có\n\t\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msqrt><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow></msqrt><mo>=</mo><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn></mrow></msqrt><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>+</mo><mn>3</mn><mo>≥</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>+</mo><mn>3</mn><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn></mtd></mtr></mtable></mrow><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>≥</mo><mo>−</mo><mn>3</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi><mo>−</mo><mn>6</mn><mo>=</mo><mn>0</mn></mtd></mtr></mtable></mrow><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>≥</mo><mo>−</mo><mn>3</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>3</mn><mo>∨</mo><mi>x</mi><mo>=</mo><mo>−</mo><mn>2</mn></mtd></mtr></mtable></mrow><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>3</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mo>−</mo><mn>2</mn><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math></div>\n\t\t\tVậy phương trình có hai nghiệm.</li><li>Đúng. Kết luận suy ra từ lời giải trên.</li><li>Sai. Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><mn>3</mn><mo>+</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math>. Nên kết luận sai.</li><li>Đúng. Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>⋅</mo><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><mn>3</mn><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>6</mn></mrow></semantics></math> nên kết luận đúng.</li></ol>",
+  "accepted_answers": []
+}

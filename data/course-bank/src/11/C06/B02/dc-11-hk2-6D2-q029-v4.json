@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D2-q029-v4",
+  "original_number": 29,
+  "kind": "mcq",
+  "based_on": "ee9a1142e1729eb42b6b8d0b89ae0a4c4f3513e89e4eb265ae69787adcaf7085",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>a</mi></msub><mi>x</mi><mo>=</mo><mn>3</mn><mo>,</mo><msub><mo>log</mo><mi>b</mi></msub><mi>x</mi><mo>=</mo><mn>4</mn></mrow></semantics></math> với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow></semantics></math> là các số thực lớn hơn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>. Tính <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><msub><mo>log</mo><mrow><mi>a</mi><mi>b</mi></mrow></msub><mi>x</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>12</mn><mn>7</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>12</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><mn>12</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>7</mn><mn>12</mn></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><msub><mo>log</mo><mrow><mi>a</mi><mi>b</mi></mrow></msub><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><msub><mo>log</mo><mi>x</mi></msub><mi>a</mi><mi>b</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><msub><mo>log</mo><mi>x</mi></msub><mi>a</mi><mo>+</mo><msub><mo>log</mo><mi>x</mi></msub><mi>b</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>4</mn></mfrac></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>12</mn><mn>7</mn></mfrac><mi>.</mi></mrow></semantics></math>",
+  "accepted_answers": []
+}

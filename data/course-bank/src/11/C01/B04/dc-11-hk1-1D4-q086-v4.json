@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-1D4-q086-v4",
+  "original_number": 86,
+  "kind": "tf",
+  "based_on": "fc6ce1f9aa7a8387046f7fbd42b91f3d4f81d3392618ade73a47b19059f37f42",
+  "prompt": "Xác định tính đúng hoặc sai của các khẳng định sau.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>x</mi><mo>=</mo><mn>1</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi><mo>,</mo><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>x</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi><mo>,</mo><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mi>x</mi><mo>=</mo><msqrt><mn>3</mn></msqrt><mo>⇔</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo>+</mo><mi>k</mi><mi>π</mi><mo>,</mo><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cot</mo><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi><mo>,</mo><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math> có nghiệm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi><mo>,</mo><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>.</li><li>Phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> có nghiệm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mi>k</mi><mi>π</mi><mo>,</mo><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>.</li><li>Phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mi>x</mi><mo>=</mo><msqrt><mn>3</mn></msqrt></mrow></semantics></math> có nghiệm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo>+</mo><mi>k</mi><mi>π</mi><mo>,</mo><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>.</li><li>Phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cot</mo><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math> có nghiệm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac><mo>+</mo><mi>k</mi><mi>π</mi><mo>,</mo><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-3H2-q032-v4",
+  "original_number": 32,
+  "kind": "mcq",
+  "based_on": "4a83f3e726ee9dbaf80fac348ac73ab24a7e79424b92fc223e667951fe816281",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có góc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>A</mi><mi>C</mi><mo>=</mo><msup><mn>60</mn><mo>∘</mo></msup></mrow></semantics></math> và cạnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi><mo>=</mo><msqrt><mn>3</mn></msqrt></mrow></semantics></math>. Tính bán kính của đường tròn ngoại tiếp tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Áp dụng định lí sin vào tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>R</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>B</mi><mi>C</mi></mrow><mrow><mo>sin</mo><mover><mrow><mi>B</mi><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">̂</mo></mover></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><msqrt><mn>3</mn></msqrt><mrow><mo>sin</mo><msup><mn>60</mn><mo>∘</mo></msup></mrow></mfrac><mo>=</mo><mn>2</mn><mo>⇒</mo><mi>R</mi><mo>=</mo><mn>1</mn><mi>.</mi></mrow></semantics></math></div>\n\t\tVậy bán kính đường tròn ngoại tiếp tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

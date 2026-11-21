@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-3H2-q023-v4",
+  "original_number": 23,
+  "kind": "mcq",
+  "based_on": "141a37366d8f0187ff83b89c4caca241c776bd31f88b6c11defad70c90232e4c",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mi>A</mi><mo>=</mo><mn>5</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>C</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>30</mn><mo>∘</mo></msup></mrow></semantics></math>. Độ dài cạnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi></mrow></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>≈</mo><mn>2</mn><mo>,</mo><mn>52</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>≈</mo><mn>4</mn><mo>,</mo><mn>87</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>≈</mo><mn>4</mn><mo>,</mo><mn>58</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>≈</mo><mn>5</mn><mo>,</mo><mn>57</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Áp dụng định lí Cosin trong tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math>, ta có <div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><msqrt><mrow><mi>C</mi><msup><mi>A</mi><mn>2</mn></msup><mo>+</mo><mi>C</mi><msup><mi>B</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mo>⋅</mo><mi>C</mi><mi>A</mi><mo>⋅</mo><mi>C</mi><mi>B</mi><mo>cos</mo><mover><mi>C</mi><mo accent=\"true\">̂</mo></mover></mrow></msqrt><mo>=</mo><msqrt><mrow><msup><mn>5</mn><mn>2</mn></msup><mo>+</mo><msup><mn>4</mn><mn>2</mn></msup><mo>−</mo><mn>2</mn><mo>⋅</mo><mn>5</mn><mo>⋅</mo><mn>4</mn><mo>cos</mo><msup><mn>30</mn><mo>∘</mo></msup></mrow></msqrt><mo>≈</mo><mn>2</mn><mo>,</mo><mn>52</mn><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

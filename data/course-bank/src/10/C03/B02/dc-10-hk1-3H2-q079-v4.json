@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-3H2-q079-v4",
+  "original_number": 79,
+  "kind": "tf",
+  "based_on": "723290b805e82884f26633d6950ffdaed5c2cc1f8e01e75b5a6a0a9987b0325a",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi><mo>=</mo><mi>a</mi></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mi>A</mi><mo>=</mo><mi>b</mi></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mi>c</mi></mrow></semantics></math>. Biết <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi><mo>=</mo><mn>5</mn></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>c</mi><mo>=</mo><mn>8</mn></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>A</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>60</mn><mo>∘</mo></msup></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Độ dài cạnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>=</mo><mn>7</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Bán kính đường tròn ngoại tiếp tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>7</mn><msqrt><mn>3</mn></msqrt></mrow><mn>3</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Số đo góc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>B</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>39</mn><mo>∘</mo></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Diện tích tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>20</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Diện tích <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>△</mi><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>⋅</mo><mi>b</mi><mo>⋅</mo><mi>c</mi><mo>⋅</mo><mo>sin</mo><mi>A</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>⋅</mo><mn>5</mn><mo>⋅</mo><mn>8</mn><mo>⋅</mo><mo>sin</mo><msup><mn>60</mn><mo>∘</mo></msup><mo>=</mo><mn>10</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>=</mo><msup><mi>b</mi><mn>2</mn></msup><mo>+</mo><msup><mi>c</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>b</mi><mi>c</mi><mo>cos</mo><mi>A</mi><mo>=</mo><msup><mn>5</mn><mn>2</mn></msup><mo>+</mo><msup><mn>8</mn><mn>2</mn></msup><mo>−</mo><mn>2</mn><mo>⋅</mo><mn>5</mn><mo>⋅</mo><mn>8</mn><mo>⋅</mo><mo>cos</mo><msup><mn>60</mn><mo>∘</mo></msup><mo>=</mo><mn>49</mn></mrow></semantics></math>.<br>Suy ra độ dài cạnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>=</mo><mn>7</mn></mrow></semantics></math>.</li><li>Áp dụng định lý <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mo>sin</mo></semantics></math> ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>R</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>a</mi><mrow><mo>sin</mo><mi>A</mi></mrow></mfrac><mo>⇒</mo><mi>R</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>7</mn><mrow><mn>2</mn><mo>sin</mo><msup><mn>60</mn><mo>∘</mo></msup></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>7</mn><msqrt><mn>3</mn></msqrt></mrow><mn>3</mn></mfrac></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>B</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>c</mi><mn>2</mn></msup><mo>−</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>a</mi><mi>c</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mn>7</mn><mn>2</mn></msup><mo>+</mo><msup><mn>8</mn><mn>2</mn></msup><mo>−</mo><msup><mn>5</mn><mn>2</mn></msup></mrow><mrow><mn>2</mn><mo>⋅</mo><mn>7</mn><mo>⋅</mo><mn>8</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>11</mn><mn>14</mn></mfrac></mrow></semantics></math>, suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>B</mi><mo accent=\"true\">̂</mo></mover><mo>≈</mo><msup><mn>38</mn><mo>∘</mo></msup></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

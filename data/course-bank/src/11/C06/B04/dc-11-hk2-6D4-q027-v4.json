@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D4-q027-v4",
+  "original_number": 27,
+  "kind": "mcq",
+  "based_on": "2803f08f1da295f75dca342cb2e3c5fc2c3d1b216c8b1c01018f8fc47786ecca",
+  "prompt": "Tìm tập nghiệm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>S</mi></semantics></math> của phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mn>2</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><msub><mo>log</mo><mn>2</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>3</mn></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><msqrt><mn>10</mn></msqrt><mo>;</mo><msqrt><mn>10</mn></msqrt><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>4</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>3</mn><mo>;</mo><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Điều kiện <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math>.<br>Ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msub><mo>log</mo><mn>2</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><msub><mo>log</mo><mn>2</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>3</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇔</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><msub><mo>log</mo><mn>2</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow><mo>=</mo><mn>3</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇔</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn><mo>=</mo><msup><mn>2</mn><mn>3</mn></msup></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇔</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mi>x</mi><mo>=</mo><mo>±</mo><mn>3</mn></mtd></mtr></mtable></semantics></math></div>\t\n\t\tSo sánh với điều kiện suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

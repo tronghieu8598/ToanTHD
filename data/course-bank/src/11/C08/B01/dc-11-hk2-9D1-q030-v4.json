@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-9D1-q030-v4",
+  "original_number": 30,
+  "kind": "mcq",
+  "based_on": "f7a245d78af055247df99d1b61234c96156f4734ac8bb646d46334df2fe97a7b",
+  "prompt": "Hai vận động viên cùng bắn độc lập vào một bia. Xác suất để người thứ nhất, người thứ hai bắn trúng đích lần lượt là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>4</mn></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>3</mn></mrow></semantics></math>. Xác suất để cả hai người cùng bắn trúng bằng?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>7</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>12</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>3</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>:</mo></mrow></semantics></math> ““ biến cố  người thứ nhất bắn trúng đích””.<br>Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo>:</mo></mrow></semantics></math> ““ biến cố  người thứ hai bắn trúng đích””.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math> độc lập và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>4</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>3</mn></mrow></semantics></math>.<br>Xác suất để cả hai người cùng bắn trúng là\n\t\t\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mtd><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⋅</mo><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mn>0</mn><mo>,</mo><mn>4</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>3</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mn>0</mn><mo>,</mo><mn>12</mn><mi>.</mi></mtd></mtr></mtable></semantics></math></div>",
+  "accepted_answers": []
+}

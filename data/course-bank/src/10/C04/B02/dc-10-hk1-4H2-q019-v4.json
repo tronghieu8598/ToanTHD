@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-4H2-q019-v4",
+  "original_number": 19,
+  "kind": "mcq",
+  "based_on": "26df8d8f863e4590c9bd8ed940fc6eef5252fc174156c81433e5a387135252fd",
+  "prompt": "Cho ba điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>D</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>E</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>G</mi></semantics></math>. Véc-tơ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>v</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>D</mi><mi>E</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mover><mrow><mi>D</mi><mi>G</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> bằng véc-tơ nào sau đây?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>E</mi><mi>G</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>G</mi><mi>E</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>G</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>E</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>D</mi><mi>E</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mover><mrow><mi>D</mi><mi>G</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mover><mrow><mi>D</mi><mi>E</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>G</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>G</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>D</mi><mi>E</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>G</mi><mi>E</mi></mrow><mo accent=\"true\">→</mo></mover><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

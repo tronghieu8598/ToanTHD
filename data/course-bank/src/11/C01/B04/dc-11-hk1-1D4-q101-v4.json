@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-1D4-q101-v4",
+  "original_number": 101,
+  "kind": "tf",
+  "based_on": "805f73337f212cbdde6a880ca63e4c08a364508d104310f4bded65bf0258d55b",
+  "prompt": "Cho phương trình lượng giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>sin</mo><mi>x</mi><mo>=</mo><mo>−</mo><msqrt><mn>2</mn></msqrt></mrow></semantics></math>. Các mệnh đề sau đúng hay sai?",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Số nghiệm của phương trình trong khoảng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mi>π</mi><mo>;</mo><mn>2</mn><mi>π</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> là bốn nghiệm"
+    },
+    {
+      "key": "b",
+      "text": "Phương trình có nghiệm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi></mrow></semantics></math>;  <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mi>π</mi></mrow><mn>4</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Phương trình tương đương <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>x</mi><mo>=</mo><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Phương trình có nghiệm dương nhỏ nhất bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    true,
+    false
+  ],
+  "solution": "Phương trình đã cho viết lại là\n\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><msqrt><mn>2</mn></msqrt><mn>2</mn></mfrac><mo>⇔</mo><mo>sin</mo><mi>x</mi><mo>=</mo><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn><mi>π</mi></mrow><mn>4</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi></mtd></mtr></mtable></mrow><mo>,</mo><mspace width=\"1.0em\"/><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>.\n\t\t<ol class=\"alpha-list\"><li><strong>Đúng</strong>.</li><li><strong>Sai</strong>.</li><li><strong>Sai</strong>.<br>Với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi></mrow></semantics></math> ta có các nghiệm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mi>⋯</mi><mo>,</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>9</mn><mi>π</mi></mrow><mn>4</mn></mfrac><mo>;</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac><mo>;</mo><mfrac displaystyle=\"true\"><mrow><mn>7</mn><mi>π</mi></mrow><mn>4</mn></mfrac><mo>;</mo><mi>⋯</mi><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></semantics></math>.<br>Với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn><mi>π</mi></mrow><mn>4</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi></mrow></semantics></math> ta có các nghiệm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mi>⋯</mi><mo>,</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>11</mn><mi>π</mi></mrow><mn>4</mn></mfrac><mo>;</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mi>π</mi></mrow><mn>4</mn></mfrac><mo>;</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn><mi>π</mi></mrow><mn>4</mn></mfrac><mo>;</mo><mi>⋯</mi><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></semantics></math>.<br>Phương trình có nghiệm dương nhỏ nhất là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>5</mn><mi>π</mi></mrow><mn>4</mn></mfrac></semantics></math>.</li><li><strong>Đúng</strong>.<br>Trong khoảng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mi>π</mi><mo>;</mo><mn>2</mn><mi>π</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, phương trình có các nghiệm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mi>π</mi></mrow><mn>4</mn></mfrac></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn><mi>π</mi></mrow><mn>4</mn></mfrac></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>7</mn><mi>π</mi></mrow><mn>4</mn></mfrac></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

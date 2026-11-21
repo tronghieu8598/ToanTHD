@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk1-2D2-q106-v4",
+  "original_number": 106,
+  "kind": "short",
+  "based_on": "03ef29fe9cd80662c940e1679425055edd2466febf939ddbe8ba35de6c226f76",
+  "prompt": "Giá của một chiếc xe ô tô lúc mới mua là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>680</mn></semantics></math> triệu đồng. Cứ sau mỗi năm sử dụng, giá của chiếc xe ô tô giảm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>55</mn></semantics></math> triệu đồng. Tính giá còn lại của chiếc xe sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> năm sử dụng.",
+  "choices": [],
+  "correct": "405",
+  "solution": "Giá trị của ô tô từ lúc mới mua và sau mỗi năm sử dụng lập thành một cấp số cộng có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>680</mn></mrow></semantics></math>, công sai <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>=</mo><mo>−</mo><mn>55</mn></mrow></semantics></math>.<br>Giá trị còn lại của chiếc xe sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> năm sử dụng là <div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>6</mn></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><mn>5</mn><mi>d</mi><mo>=</mo><mn>680</mn><mo>+</mo><mn>5</mn><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>55</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>405</mn><mrow><mspace width=\"0.333em\"/><mtext mathvariant=\"normal\"> (triệu đồng)</mtext></mrow><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

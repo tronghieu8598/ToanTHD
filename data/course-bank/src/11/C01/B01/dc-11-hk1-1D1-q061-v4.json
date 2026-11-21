@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-1D1-q061-v4",
+  "original_number": 61,
+  "kind": "tf",
+  "based_on": "96b82b24af2812559a03cce81162c75fc5024a287cfb41bcc31af15845048e0f",
+  "prompt": "Mỗi khẳng định dưới đây đúng hay sai?",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mspace width=\"0.167em\"/><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">d</mi></mrow><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>180</mn><mi>π</mi></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>∘</mo></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>7</mn><mi>π</mi></mrow><mn>4</mn></mfrac><mspace width=\"0.167em\"/><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">d</mi></mrow><mo>=</mo><mo>−</mo><msup><mn>315</mn><mo>∘</mo></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>π</mi><mspace width=\"0.167em\"/><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">d</mi></mrow><mo>=</mo><msup><mn>60</mn><mo>∘</mo></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>5</mn><mi>π</mi><mspace width=\"0.167em\"/><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">d</mi></mrow><mo>=</mo><mo>−</mo><msup><mn>900</mn><mo>∘</mo></msup></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    true
+  ],
+  "solution": "Ta có\n\t\t<ol class=\"alpha-list\"><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mspace width=\"0.167em\"/><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">d</mi></mrow><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>180</mn><mi>π</mi></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>∘</mo></msup></mrow></semantics></math>.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>7</mn><mi>π</mi></mrow><mn>4</mn></mfrac><mspace width=\"0.167em\"/><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">d</mi></mrow><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>7</mn><mi>π</mi></mrow><mn>4</mn></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>180</mn><mi>π</mi></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>∘</mo></msup><mo>=</mo><mo>−</mo><msup><mn>315</mn><mo>∘</mo></msup></mrow></semantics></math>.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>π</mi><mspace width=\"0.167em\"/><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">d</mi></mrow><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>π</mi><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>180</mn><mi>π</mi></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>∘</mo></msup><mo>=</mo><msup><mn>180</mn><mo>∘</mo></msup></mrow></semantics></math>.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>5</mn><mspace width=\"0.167em\"/><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">d</mi></mrow><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mrow><mi>α</mi><mo>⋅</mo><mn>180</mn></mrow><mi>π</mi></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>∘</mo></msup><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mn>5</mn><mi>π</mi><mo>⋅</mo><mn>180</mn></mrow><mi>π</mi></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>∘</mo></msup><mo>=</mo><mo>−</mo><msup><mn>900</mn><mo>∘</mo></msup></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-2D1-q019-v4",
+  "original_number": 19,
+  "kind": "mcq",
+  "based_on": "476a6872c5f51c08016d7024315fa5589339cb0e762fd83ba1fc812bf958c6ff",
+  "prompt": "Trong mặt phẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>O</mi><mi>x</mi><mi>y</mi></mrow></semantics></math>, nửa mặt phẳng không bị gạch chéo trong hình vẽ là miền nghiệm của bất phương trình nào?\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/1854e53e999e3d953adfab6bed19068e22c07d4118ad43e11ae6f91ea94af7b2.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>&lt;</mo><mn>6</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>&gt;</mo><mn>6</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>&lt;</mo><mn>6</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>&gt;</mo><mn>6</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>:</mo><mi>y</mi><mo>=</mo><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi></mrow></semantics></math> là bờ của nửa mặt phẳng. Dựa vào hình vẽ ta thấy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>d</mi></semantics></math> qua <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>:</mo><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mn>3</mn></mrow><mn>2</mn></mfrac><mi>x</mi><mo>+</mo><mn>3</mn></mrow></semantics></math> hay <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>:</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>6</mn></mrow></semantics></math>.<br>Lại có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> không thuộc miền nghiệm nên nửa mặt phẳng không bị gạch chéo trong hình vẽ là miền nghiệm của bất phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>&gt;</mo><mn>6</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

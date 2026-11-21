@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-2D3-q058-v4",
+  "original_number": 58,
+  "kind": "mcq",
+  "based_on": "c5906fb50d9751706c8c06f3b54ec2ae0e1f1305df7bfd9f4015ca356bb83868",
+  "prompt": "Tổng của cấp số nhân lùi vô hạn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>4</mn></mfrac></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>8</mn></mfrac></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>16</mn></mfrac></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>…</mi></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có tổng của cấp số nhân lùi vô hạn là\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mfrac displaystyle=\"true\"><msub><mi>u</mi><mn>1</mn></msub><mrow><mn>1</mn><mo>−</mo><mi>q</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mrow><mn>1</mn><mo>−</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

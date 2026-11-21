@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-3H1-q037-v4",
+  "original_number": 37,
+  "kind": "mcq",
+  "based_on": "2dfb35f5477831154e8a13254169072b76c0945cdb72836af1b51dff468c324b",
+  "prompt": "Trong các đẳng thức sau, đẳng thức nào <strong>sai</strong>?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><msup><mn>45</mn><mo>∘</mo></msup><mo>+</mo><mo>cos</mo><msup><mn>45</mn><mo>∘</mo></msup><mo>=</mo><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><msup><mn>60</mn><mo>∘</mo></msup><mo>+</mo><mo>cos</mo><msup><mn>150</mn><mo>∘</mo></msup><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><msup><mn>120</mn><mo>∘</mo></msup><mo>+</mo><mo>cos</mo><msup><mn>30</mn><mo>∘</mo></msup><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><msup><mn>30</mn><mo>∘</mo></msup><mo>+</mo><mo>cos</mo><msup><mn>60</mn><mo>∘</mo></msup><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><msup><mn>120</mn><mo>∘</mo></msup><mo>=</mo><mo>sin</mo><msup><mn>60</mn><mo>∘</mo></msup><mo>=</mo><mfrac displaystyle=\"true\"><msqrt><mn>3</mn></msqrt><mn>2</mn></mfrac></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><msup><mn>30</mn><mo>∘</mo></msup><mo>=</mo><mfrac displaystyle=\"true\"><msqrt><mn>3</mn></msqrt><mn>2</mn></mfrac></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><msup><mn>120</mn><mo>∘</mo></msup><mo>+</mo><mo>cos</mo><msup><mn>30</mn><mo>∘</mo></msup><mo>=</mo><msqrt><mn>3</mn></msqrt><mo>≠</mo><mn>0</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

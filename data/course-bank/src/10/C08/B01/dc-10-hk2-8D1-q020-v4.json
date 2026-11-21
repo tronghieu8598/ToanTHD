@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-8D1-q020-v4",
+  "original_number": 20,
+  "kind": "mcq",
+  "based_on": "face135e36da91aaf7c9ab74dceebc822ff309bea097f670bb718be132e89eb1",
+  "prompt": "Có bao nhiêu số tự nhiên có 3 chữ số (các chữ số không nhất thiết khác nhau), mà trong các chữ số này có ít nhất một chữ số 5?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>184</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>216</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>200</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>252</mn></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Số các số có 3 chữ số là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>9</mn><mo>⋅</mo><mn>10</mn><mo>⋅</mo><mn>10</mn><mo>=</mo><mn>900</mn></mrow></semantics></math> số.<br>Số các số có 3 chữ số mà không có số 5 là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mo>⋅</mo><mn>9</mn><mo>⋅</mo><mn>9</mn><mo>=</mo><mn>648</mn></mrow></semantics></math>.<br>Do đó số các số có 3 chữ số mà ít nhất có một chữ số 5 là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>900</mn><mo>−</mo><mn>648</mn><mo>=</mo><mn>252</mn></mrow></semantics></math> số.",
+  "accepted_answers": []
+}

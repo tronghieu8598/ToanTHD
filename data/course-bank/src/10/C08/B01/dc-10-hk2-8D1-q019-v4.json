@@ -1,0 +1,11 @@
+{
+  "id": "dc-10-hk2-8D1-q019-v4",
+  "original_number": 19,
+  "kind": "free",
+  "based_on": "0469fdc005a55761f8692d30d928f70a68ab1c3448bf66163fc3c72999b2283f",
+  "prompt": "An có thể đi từ nhà đến trường theo các con đường như hình dưới, trong đó có những con đường đi qua nhà sách.\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/e2bdd2ce5c049d9eb56765b718b11be62f4d1663e97e141a6c5ad88fe9c01cb5.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t<ol class=\"alpha-list\"><li>An có bao nhiêu cách đi từ nhà đến trường mà có đi qua nhà sách?</li><li>An có bao nhiêu cách đi từ nhà đến trường?</li></ol>\n<div class=\"theory-box note\"><div class=\"theory-label\">Chú ý</div>Chỉ tính những con đường đi qua các điểm (nhà An, nhà sách, trường) không quá một lần.</div>",
+  "choices": [],
+  "correct": null,
+  "solution": "<ol class=\"alpha-list\"><li>Công việc gồm hai bước:\n\t\t\t<ul><li><em>Bước 1:</em> Đi từ nhà An đến nhà sách, có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> con đường.</li><li><em>Bước 2:</em> Đi từ nhà sách đến trường, có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> con đường.</li></ul>\t\t\n\t\t\tÁp dụng quy tắc nhân, có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mo>⋅</mo><mn>2</mn><mo>=</mo><mn>6</mn></mrow></semantics></math> con đường để An đi từ nhà đến trường mà có đi qua nhà sách.</li><li>Công việc có hai phương án thực hiện:\n\t\t\t<ul><li><em>Phương án 1:</em> An đi qua nhà sách, theo câu a, có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> con đường.</li><li><em>Phương án 2:</em> An không đi qua nhà sách, có 2 con đường.</li></ul>\t\t\n\t\t\tÁp dụng quy tắc cộng, An có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>6</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>8</mn></mrow></semantics></math> con đường đi từ nhà đến trường.</li></ol>",
+  "accepted_answers": []
+}

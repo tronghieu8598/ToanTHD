@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-4H2-q060-v4",
+  "original_number": 60,
+  "kind": "mcq",
+  "based_on": "aec0c8ca9da9a438a16f75a54947b802648ed0fd9cffe50ac62d4e8c02f405d3",
+  "prompt": "Cho hình vuông <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> có độ dài cạnh bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math>. Hãy tính <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>A</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>10</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> là hình vuông nên\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>A</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>=</mo><mn>5</mn><msqrt><mn>2</mn></msqrt><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

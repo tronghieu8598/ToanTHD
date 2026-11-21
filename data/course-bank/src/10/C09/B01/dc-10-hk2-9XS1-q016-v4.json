@@ -1,0 +1,11 @@
+{
+  "id": "dc-10-hk2-9XS1-q016-v4",
+  "original_number": 16,
+  "kind": "free",
+  "based_on": "bda15f8a4dfc905abf543e28f9d2c97dcfcc897d60de8457a11a4c8a08c447d4",
+  "prompt": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> khách hàng nam và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> khách hàng nữ cùng đến một quầy giao dịch. Quầy giao dịch sẽ chọn ngẫu nhiên lần lượt từng khách hàng một để phục vụ. Tính số các kết quả thuận lợi cho biến cố\n\t<ol class=\"alpha-list\"><li>““ Các khách hàng nam và nữ được phục vụ xen kẽ nhau””.</li><li>““ Người được phục vụ đầu tiên là khách hàng nữ””.</li><li>““ Người được phục vụ cuối cùng là khách hàng nam””.</li></ol>",
+  "choices": [],
+  "correct": null,
+  "solution": "<ol class=\"alpha-list\"><li>Số kết quả thuận lợi cho biến cố ““ Các khách hàng nam và nữ được phục vụ xen kẽ nhau”” là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mi>!</mi><mo>⋅</mo><mn>3</mn><mi>!</mi></mrow></semantics></math>.</li><li>Số kết quả thuận lợi cho biến cố ““ Người được phục vụ đầu tiên là khách hàng nữ”” là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mo>⋅</mo><mn>6</mn><mi>!</mi></mrow></semantics></math>.</li><li>Số kết quả thuận lợi cho biến cố ““ Người được phục vụ cuối cùng là khách hàng nam”” là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mo>⋅</mo><mn>6</mn><mi>!</mi></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "dc-10-hk2-8D1-q008-v4",
+  "original_number": 8,
+  "kind": "free",
+  "based_on": "a6487d6bb7121bdb12474ab50d48a92e09daad87b0eb1c9c2d4dfb3f6de83186",
+  "prompt": "<div class=\"with-figure\"><div>Mã xác thực (OTP – One Time Password) do một ngân hàng gửi vào điện thoại của khách hàng cho mỗi lần giao dịch là một dãy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> kí tự từ các chữ số từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>0</mn></semantics></math> đến <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>9</mn></semantics></math>. Có thể tạo ra bao nhiêu mã xác thực khác nhau như vậy?</div><div class=\"side-figure\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td><code>Mã OTP xác thực giao</code></td></tr><tr><td><code>dịch là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>712892</mn></semantics></math>, hiệu</code></td></tr><tr><td><code>lực trong 1 phút</code> <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>…</mi></semantics></math></td></tr></tbody></table></div></div></div>",
+  "choices": [],
+  "correct": null,
+  "solution": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> cách chọn chữ số cho mỗi kí tự của mã xác nhận.<br>Do đó theo quy tắc nhân, số mã xác nhận có thể tạo ra là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>10</mn><mn>6</mn></msup><mo>=</mo><mn>1000000</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

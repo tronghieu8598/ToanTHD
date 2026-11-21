@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk2-6D2-q110-v4",
+  "original_number": 110,
+  "kind": "short",
+  "based_on": "a2fb63bfbeb9c9bb82a619970b5413faf350d7b48f84696d7540d3cad3ee0c82",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>b</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>c</mi></semantics></math> là các số thực dương khác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> thỏa mãn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>a</mi></msub><mi>c</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>. Tính giá trị biểu thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><msub><mo>log</mo><mfrac displaystyle=\"false\"><mi>a</mi><mi>b</mi></mfrac></msub><msqrt><mi>c</mi></msqrt></mrow></semantics></math>.",
+  "choices": [],
+  "correct": "-1",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><msub><mo>log</mo><mfrac displaystyle=\"false\"><mi>a</mi><mi>b</mi></mfrac></msub><msqrt><mi>c</mi></msqrt><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msub><mo>log</mo><mi>a</mi></msub><msqrt><mi>c</mi></msqrt></mrow><mrow><msub><mo>log</mo><mi>a</mi></msub><mfrac displaystyle=\"true\"><mi>a</mi><mi>b</mi></mfrac></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><msub><mo>log</mo><mi>a</mi></msub><mi>c</mi></mrow><mrow><msub><mo>log</mo><mi>a</mi></msub><mi>a</mi><mo>−</mo><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>⋅</mo><mn>4</mn></mrow><mrow><mn>1</mn><mo>−</mo><mn>3</mn></mrow></mfrac><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

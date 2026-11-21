@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-7H2-q027-v4",
+  "original_number": 27,
+  "kind": "mcq",
+  "based_on": "da2ead2b929efe02b623d12a0c82038d061647a1cbd5696be731673f10eda3a0",
+  "prompt": "Tìm phương trình tổng quát của đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>d</mi></semantics></math> vuông góc với đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Δ</mi><mo>:</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"><mi>x</mi><mo>=</mo><mo>−</mo><mn>3</mn><mo>+</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"><mi>y</mi><mo>=</mo><mn>2</mn><mo>−</mo><mn>3</mn><mi>t</mi></mtd></mtr></mtable></mrow></mrow></semantics></math> và đi qua giao điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> của đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>Δ</mi></semantics></math> với trục <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>O</mi><mi>y</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>:</mo><mn>3</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>−</mo><mn>7</mn><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>:</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>+</mo><mn>21</mn><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>:</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>2</mn><mi>y</mi><mo>−</mo><mn>14</mn><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>:</mo><mi>x</mi><mo>−</mo><mn>3</mn><mi>y</mi><mo>−</mo><mn>21</mn><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Giao điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> của đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>Δ</mi></semantics></math> với trục <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>O</mi><mi>y</mi></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mo>−</mo><mn>7</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.<br>Đường thẳng đi qua <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mo>−</mo><mn>7</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> và vuông góc với đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>Δ</mi></semantics></math> nên nhận véc-tơ chỉ phương của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>Δ</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mo>−</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> làm véc-tơ pháp tuyến có phương trình tổng quát là \n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>−</mo><mn>3</mn><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>y</mi><mo>+</mo><mn>7</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>−</mo><mn>3</mn><mi>y</mi><mo>−</mo><mn>21</mn><mo>=</mo><mn>0</mn><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

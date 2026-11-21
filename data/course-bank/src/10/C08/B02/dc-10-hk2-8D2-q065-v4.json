@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-8D2-q065-v4",
+  "original_number": 65,
+  "kind": "mcq",
+  "based_on": "f2e90521f98d401a3d5db805a83587c2f1407164ad3b611494994672c881b075",
+  "prompt": "Với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>n</mi></semantics></math> là số nguyên dương bất kì, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>4</mn></mrow></semantics></math>, công thức nào dưới đây đúng?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">A</mi><mi>n</mi><mn>4</mn></msubsup><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>n</mi><mi>!</mi></mrow><mrow><mn>4</mn><mi>!</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo>−</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>!</mi></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">A</mi><mi>n</mi><mn>4</mn></msubsup><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn><mi>!</mi></mrow><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo>−</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>!</mi></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">A</mi><mi>n</mi><mn>4</mn></msubsup><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>n</mi><mi>!</mi></mrow><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo>−</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>!</mi></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">A</mi><mi>n</mi><mn>4</mn></msubsup><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo>−</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>!</mi></mrow><mrow><mi>n</mi><mi>!</mi></mrow></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Công thức đúng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">A</mi><mi>n</mi><mn>4</mn></msubsup><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>n</mi><mi>!</mi></mrow><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo>−</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>!</mi></mrow></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

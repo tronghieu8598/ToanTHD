@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-4H5-q064-v4",
+  "original_number": 64,
+  "kind": "tf",
+  "based_on": "79a8678646b354474da21d0b44fcca8fa647362240d7d19214839d031c9a5b5b",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> vuông cân tại <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> có cạnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mn>4</mn><mi>a</mi></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>D</mi></semantics></math> là trung điểm của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>G</mi></semantics></math> là trọng tâm của tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>D</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>G</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>G</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>G</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mn>0</mn><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mrow><mi>B</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>4</mn><msup><mi>a</mi><mn>2</mn></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "solution": "<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/dc68f4c6bcab6eab62ad7fb04e9d93bcaa1ce136b14b405251e88b405311ace9.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\t\t\n\t\t<ol class=\"alpha-list\"><li>Ta có  <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>2</mn><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>G</mi></semantics></math> là trọng tâm của tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>D</mi></mrow></semantics></math> nên ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>G</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>G</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>G</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mn>0</mn><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.</li><li>Do <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>⊥</mo><mi>A</mi><mi>C</mi></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>0</mn></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi><mo>=</mo><msqrt><mrow><mi>A</mi><msup><mi>B</mi><mn>2</mn></msup><mo>+</mo><mi>A</mi><msup><mi>C</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><msqrt><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mi>a</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mi>a</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mn>4</mn><msqrt><mn>2</mn></msqrt><mi>a</mi></mrow></semantics></math>.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>B</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mover><mrow><mi>B</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>⋅</mo><mo>cos</mo><mover><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><mn>4</mn><mi>a</mi><mo>⋅</mo><mn>4</mn><msqrt><mn>2</mn></msqrt><mi>a</mi><mo>⋅</mo><mo>cos</mo><msup><mn>45</mn><mo>∘</mo></msup><mo>=</mo><mn>16</mn><msup><mi>a</mi><mn>2</mn></msup></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

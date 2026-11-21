@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-8H4-q064-v4",
+  "original_number": 64,
+  "kind": "mcq",
+  "based_on": "29717c88c5e8a69777a79036a1c5ffcc51d12d2994832142e90f5b2b3a5e1afc",
+  "prompt": "Cho hình chóp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>.</mi><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có đáy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> là tam giác vuông cân tại <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>A</mi><mo>⊥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>M</mi></semantics></math> là trung điểm của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi></mrow></semantics></math>. Mệnh đề nào dưới đây <strong>sai</strong>?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>M</mi><mo>⊥</mo><mi>A</mi><mi>C</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⊥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⊥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>B</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>B</mi><mi>M</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⊥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "<div class=\"with-figure\"><div>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>∩</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>S</mi><mi>A</mi></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>A</mi><mo>⊥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>,</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mover><mrow><mi>B</mi><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>45</mn><mo>∘</mo></msup></mrow></semantics></math> (do <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>△</mi><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> vuông cân tại <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math>).<br>Vậy mệnh đề sai là ““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⊥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>””.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/eb171462758c03d12dd412ad6416c1eb3044c57d2102ad50c870a5ce87ea0215.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-2D2-q089-v4",
+  "original_number": 89,
+  "kind": "tf",
+  "based_on": "b63a6e35ead117c40cab1eb5fa13ab367e95d0ddd3a8b3a9c8810dd67dbd7f6c",
+  "prompt": "Cho cấp số cộng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> thỏa mãn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msub><mi>u</mi><mn>4</mn></msub><mo>+</mo><msub><mi>u</mi><mn>6</mn></msub><mo>=</mo><mn>17</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msub><mi>S</mi><mn>16</mn></msub><mo>=</mo><mn>220</mn></mtd></mtr></mtable></mrow></semantics></math>. Khi đó",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Số hạng đầu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Số hạng thứ tư là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>4</mn></msub><mo>=</mo><mn>8</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Tổng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>700</mn></semantics></math> số hạng đầu tiên là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mn>700</mn></msub><mo>=</mo><mn>367</mn><mspace width=\"0.167em\"/><mn>825</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Công sai là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "solution": "Ta có\n\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msub><mi>u</mi><mn>4</mn></msub><mo>+</mo><msub><mi>u</mi><mn>6</mn></msub><mo>=</mo><mn>17</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msub><mi>S</mi><mn>16</mn></msub><mo>=</mo><mn>220</mn></mtd></mtr></mtable></mrow><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mn>2</mn><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><mn>8</mn><mi>d</mi><mo>=</mo><mn>17</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mn>8</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><mn>15</mn><mi>d</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>220</mn></mtd></mtr></mtable></mrow><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mn>2</mn><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><mn>8</mn><mi>d</mi><mo>=</mo><mn>17</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mn>2</mn><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><mn>15</mn><mi>d</mi><mo>=</mo><mfrac displaystyle=\"false\"><mn>55</mn><mn>2</mn></mfrac></mtd></mtr></mtable></mrow><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mfrac displaystyle=\"false\"><mn>5</mn><mn>2</mn></mfrac></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>d</mi><mo>=</mo><mfrac displaystyle=\"false\"><mn>3</mn><mn>2</mn></mfrac><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>\n\t\t<ol class=\"alpha-list\"><li></li><li></li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>4</mn></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><mn>3</mn><mi>d</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac><mo>+</mo><mn>3</mn><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac><mo>=</mo><mn>7</mn></mrow></semantics></math>.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mn>700</mn></msub><mo>=</mo><mfrac displaystyle=\"true\"><mn>700</mn><mn>2</mn></mfrac><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><mn>699</mn><mi>d</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>350</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac><mo>+</mo><mn>699</mn><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>367</mn><mspace width=\"0.167em\"/><mn>825</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

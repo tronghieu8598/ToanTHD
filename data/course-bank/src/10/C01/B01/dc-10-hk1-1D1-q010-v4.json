@@ -1,0 +1,11 @@
+{
+  "id": "dc-10-hk1-1D1-q010-v4",
+  "original_number": 10,
+  "kind": "free",
+  "based_on": "17b80bffe554067473a47dca9730ede46abbc4f318ee089fee456c37a609ac84",
+  "prompt": "Phát biểu mệnh đề đảo của các mệnh đề sau và xét tính đúng sai của mệnh đề đảo đó.\n\t<ol class=\"alpha-list\"><li>Nếu một số chia hết cho 6 thì nó chia hết cho 3.</li><li>Nếu tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mi>A</mi><mi>C</mi></mrow></semantics></math> thì tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> cân.</li><li>Nếu tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có 2 góc bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>60</mn><mo>∘</mo></msup></semantics></math> thì tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> đều.</li></ol>",
+  "choices": [],
+  "correct": null,
+  "solution": "<ol class=\"alpha-list\"><li>Nếu một số chia hết cho 3 thì nó chia hết cho 6. Mệnh đề này sai.</li><li>Nếu tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> cân thì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mi>A</mi><mi>C</mi></mrow></semantics></math>. Mệnh đề này sai.</li><li>Nếu tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> đều thì nó có hai góc bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>60</mn><mo>∘</mo></msup></semantics></math>. Mệnh đề này đúng.</li></ol>",
+  "accepted_answers": []
+}

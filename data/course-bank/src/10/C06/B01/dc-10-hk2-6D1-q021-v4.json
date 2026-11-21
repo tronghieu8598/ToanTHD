@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-6D1-q021-v4",
+  "original_number": 21,
+  "kind": "mcq",
+  "based_on": "c5c6912d1234f33f77c2123c681fb205fd988377c9e380ffc44052a2fc4be5ab",
+  "prompt": "Tập xác định <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>𝒟</mi></semantics></math> của hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><msqrt><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mn>6</mn></mrow></msqrt><mrow><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>5</mn></mrow></mfrac></mrow></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi><mo>\\</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mo>−</mo><mn>1</mn><mo>;</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>2</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>\\</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi><mo>\\</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>2</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Điều kiện xác định của hàm số là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mn>3</mn><mi>x</mi><mo>−</mo><mn>6</mn><mo>≥</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>5</mn><mo>≠</mo><mn>0</mn></mtd></mtr></mtable></mrow><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>≥</mo><mn>2</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>≠</mo><mo>−</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>≠</mo><mfrac displaystyle=\"false\"><mn>5</mn><mn>2</mn></mfrac></mtd></mtr></mtable></mrow></mrow></semantics></math>.\n\t\tVậy tập xác định là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>2</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"false\" form=\"postfix\">)</mo><mo>\\</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></mrow></semantics></math>.",
+  "accepted_answers": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk2-7D2-q187-v4",
+  "original_number": 187,
+  "kind": "tf",
+  "based_on": "6c2395cb0578446742fa2bfd103a1d4a9d064072c40c0138586d4727477144c5",
+  "prompt": "Cho hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>5</mn><mo>cot</mo><mi>x</mi><mo>−</mo><mn>3</mn></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>5</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mn>5</mn></mrow><mrow><msup><mo>sin</mo><mn>2</mn></msup><mi>x</mi></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>9</mn><mo>+</mo><mn>5</mn><msqrt><mn>3</mn></msqrt></mrow><mn>3</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mo>−</mo><mn>5</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mo>cot</mo><mn>2</mn></msup><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Đúng<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mn>5</mn></mrow><mrow><msup><mo>sin</mo><mn>2</mn></msup><mi>x</mi></mrow></mfrac><mo>=</mo><mo>−</mo><mn>5</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mo>cot</mo><mn>2</mn></msup><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</li><li>Đúng<br>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mn>5</mn></mrow><mrow><msup><mo>sin</mo><mn>2</mn></msup><mi>x</mi></mrow></mfrac></mrow></semantics></math>.</li><li>Sai<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mn>5</mn></mrow><mrow><msup><mo>sin</mo><mn>2</mn></msup><mi>x</mi></mrow></mfrac></mrow></semantics></math>.<br>Suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>5</mn></mrow></semantics></math>.</li><li>Đúng<br>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>5</mn><mo>cot</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>−</mo><mn>3</mn><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>9</mn><mo>+</mo><mn>5</mn><msqrt><mn>3</mn></msqrt></mrow><mn>3</mn></mfrac></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-9XS2-q070-v4",
+  "original_number": 70,
+  "kind": "tf",
+  "based_on": "1375ae5fda6e6849723f95e386f6e6d940e7a08b31e84ab8f862528575760a4b",
+  "prompt": "Một tổ gồm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> học sinh, trong đó có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> học sinh nam và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> học sinh nữ.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msubsup><mi mathvariant=\"normal\">C</mi><mn>6</mn><mn>1</mn></msubsup></semantics></math> cách chọn ra một cặp nam nữ của tổ để tham gia hát song ca"
+    },
+    {
+      "key": "b",
+      "text": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>10</mn><mi>!</mi></mrow></semantics></math> cách để xếp các học sinh đã cho thành một hàng ngang"
+    },
+    {
+      "key": "c",
+      "text": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msubsup><mi mathvariant=\"normal\">C</mi><mn>10</mn><mn>5</mn></msubsup></semantics></math> cách để phân chia tổ thành <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> nhóm sao cho mỗi nhóm có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> học sinh"
+    },
+    {
+      "key": "d",
+      "text": "Chọn ngẫu nhiên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> học sinh trong tổ. Xác suất để trong <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> học sinh được chọn có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> nam và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> nữ bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>10</mn><mn>21</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Số cách xếp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> học sinh thành một hàng ngang là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>10</mn><mi>!</mi></mrow></semantics></math>.</li><li>Số cách chia tổ thành <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> nhóm sao cho mỗi nhóm có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> học sinh là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msubsup><mi mathvariant=\"normal\">C</mi><mn>10</mn><mn>5</mn></msubsup></semantics></math>.</li><li>Số cách chọn một cặp nam nữ là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>6</mn><mn>1</mn></msubsup><mo>⋅</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>4</mn><mn>1</mn></msubsup><mo>=</mo><mn>6</mn><mo>⋅</mo><mn>4</mn><mo>=</mo><mn>24</mn></mrow></semantics></math>.</li><li>Xét phép thử ““ Chọn ngẫu nhiên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> học sinh trong tổ””.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Ω</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>10</mn><mn>5</mn></msubsup></mrow></semantics></math>.<br>Xét biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> ““ trong <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> học sinh được chọn có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> nam và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> nữ””  suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>6</mn><mn>3</mn></msubsup><mo>⋅</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>4</mn><mn>2</mn></msubsup></mrow></semantics></math>.<br>Vậy xác suất của biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>6</mn><mn>3</mn></msubsup><mo>⋅</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>4</mn><mn>2</mn></msubsup></mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>10</mn><mn>5</mn></msubsup></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>10</mn><mn>21</mn></mfrac></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk2-6D4-q106-v4",
+  "original_number": 106,
+  "kind": "tf",
+  "based_on": "48dd407b1a08a406063baf77e4d203947e3296b2d215bfca54f674ee5469f37f",
+  "prompt": "Cho hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mn>3</mn><mi>x</mi></msup></mrow></semantics></math> có đồ thị như hình vẽ. Xét tính đúng sai của các khẳng định sau\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/3f75e991d2ac5ffb21314871bd60574f570544c1ad83e1a49642114096492218.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Bất phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>3</mn><mi>x</mi></msup><mo>&gt;</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>9</mn></mfrac></mrow></semantics></math> có chung tập nghiệm với bất phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo>&lt;</mo><mn>0</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Đồ thị hàm số đã cho đi qua điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Hàm số đã cho có tập giá trị là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Hàm số đã cho đồng biến trên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>ℝ</mi></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mo>&gt;</mo><mn>1</mn></mrow></semantics></math> nên hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mn>3</mn><mi>x</mi></msup></mrow></semantics></math> đồng biến trên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>ℝ</mi></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>3</mn><mi>x</mi></msup><mo>&gt;</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>9</mn></mfrac><mo>⇔</mo><msup><mn>3</mn><mi>x</mi></msup><mo>&gt;</mo><msup><mn>3</mn><mrow><mo>−</mo><mn>2</mn></mrow></msup><mo>⇔</mo><mi>x</mi><mo>&gt;</mo><mo>−</mo><mn>2</mn></mrow></semantics></math>.<br>Vậy tập nghiệm của bất phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>3</mn><mi>x</mi></msup><mo>&gt;</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>9</mn></mfrac></mrow></semantics></math> có tập nghiệm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.<br>Mặt khác, ta có bất phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo>&lt;</mo><mn>0</mn></mrow></semantics></math> vô nghiệm.<br>Do đó, bất phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>3</mn><mi>x</mi></msup><mo>&gt;</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>9</mn></mfrac></mrow></semantics></math> không chung tập nghiệm với bất phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo>&lt;</mo><mn>0</mn></mrow></semantics></math>.</li><li>Thay <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math> vào <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mn>3</mn><mi>x</mi></msup></mrow></semantics></math>, ta được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mn>3</mn><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></mrow></semantics></math>.<br>Do đó, đồ thị hàm số đã cho đi qua điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.</li><li>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mn>3</mn><mi>x</mi></msup></mrow></semantics></math> là hàm số mũ nên có tập giá trị là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

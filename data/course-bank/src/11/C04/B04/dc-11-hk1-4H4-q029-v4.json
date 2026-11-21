@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-4H4-q029-v4",
+  "original_number": 29,
+  "kind": "mcq",
+  "based_on": "34c0d13f93dfa837c361c67e9c372dcf95d49bc1248d0bdeb9076594d7f99981",
+  "prompt": "<div class=\"with-figure\"><div>Cho hình hộp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mi>.</mi><msub><mi>A</mi><mn>1</mn></msub><msub><mi>B</mi><mn>1</mn></msub><msub><mi>C</mi><mn>1</mn></msub><msub><mi>D</mi><mn>1</mn></msub></mrow></semantics></math>. Mặt phẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><msub><mi>B</mi><mn>1</mn></msub><msub><mi>D</mi><mn>1</mn></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> song song với mặt phẳng nào sau đây?<div class=\"paragraph-gap\"></div></div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/54f250e6480bc5e537d44e37db595b30aa07f86ba3f1f553845e30c98eea6957.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>A</mi><mn>1</mn></msub><msub><mi>C</mi><mn>1</mn></msub><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mi>C</mi><msub><mi>A</mi><mn>1</mn></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><msub><mi>C</mi><mn>1</mn></msub><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mi>D</mi><msub><mi>A</mi><mn>1</mn></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "<div class=\"with-figure\"><div>Ta có<br>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>A</mi><msub><mi>D</mi><mn>1</mn></msub><mo>∥</mo><mi>B</mi><msub><mi>C</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msub><mi>D</mi><mn>1</mn></msub><msub><mi>B</mi><mn>1</mn></msub><mo>∥</mo><mi>D</mi><mi>B</mi></mtd></mtr></mtable></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><msub><mi>B</mi><mn>1</mn></msub><msub><mi>D</mi><mn>1</mn></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>∥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><msub><mi>C</mi><mn>1</mn></msub><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/01bd24fd3a57bec0dd925a61ffd9af908cf2c32e9d5c0ac58b104d00a49a4490.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

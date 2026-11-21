@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-8H4-q060-v4",
+  "original_number": 60,
+  "kind": "mcq",
+  "based_on": "8ac44500cc7da9aa125eb6b524e1a0fc6b0120f55d4792288390d3a7cf4d42e4",
+  "prompt": "Cho hình chóp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>.</mi><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>A</mi><mo>⊥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> và đáy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> là hình vuông. Mệnh đề nào dưới đây đúng?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi><mo>⊥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⊥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>B</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⊥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>B</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>D</mi><mo>⊥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "<div class=\"with-figure\"><div>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>D</mi><mo>⊥</mo><mi>A</mi><mi>C</mi></mrow></semantics></math> (do <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> là hình vuông) và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>D</mi><mo>⊥</mo><mi>S</mi><mi>A</mi></mrow></semantics></math> (do <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>A</mi><mo>⊥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>) nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>D</mi><mo>⊥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.<br>Suy ra, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>B</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⊥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/bc12f3407776f9607d890105f1f7842213e6113ff80f7d7bceae992c9d8b9bcf.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

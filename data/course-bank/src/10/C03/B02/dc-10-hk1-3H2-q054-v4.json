@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-3H2-q054-v4",
+  "original_number": 54,
+  "kind": "mcq",
+  "based_on": "a368d04701bfc1ec3e3f7900052fc5b36e0317a5714aa8afca3ab918c59e092c",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math>. Tìm công thức sai.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>C</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>c</mi><mo>sin</mo><mi>A</mi></mrow><mi>a</mi></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>A</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>a</mi><mrow><mn>2</mn><mi>R</mi></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mi>a</mi><mrow><mo>sin</mo><mi>A</mi></mrow></mfrac><mo>=</mo><mn>2</mn><mi>R</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi><mo>sin</mo><mi>B</mi><mo>=</mo><mn>2</mn><mi>R</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Theo định lý sin, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mi>b</mi><mrow><mo>sin</mo><mi>B</mi></mrow></mfrac><mo>=</mo><mn>2</mn><mi>R</mi></mrow></semantics></math>.",
+  "accepted_answers": []
+}

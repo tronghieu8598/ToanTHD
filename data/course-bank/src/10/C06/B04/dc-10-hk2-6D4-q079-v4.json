@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-6D4-q079-v4",
+  "original_number": 79,
+  "kind": "mcq",
+  "based_on": "2dbbbdd73943b1ad82887e2d1e4be8f72534235de0dd03c396fbb53c9ca37fde",
+  "prompt": "Tổng các nghiệm của phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msqrt><mrow><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>13</mn><mi>x</mi><mo>+</mo><mn>16</mn></mrow></msqrt><mo>=</mo><mn>7</mn><mo>−</mo><mi>x</mi></mrow></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>2</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>1</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"/><mtd columnalign=\"right\" style=\"text-align: right\"><msqrt><mrow><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>13</mn><mi>x</mi><mo>+</mo><mn>16</mn></mrow></msqrt><mo>=</mo><mn>7</mn><mo>−</mo><mi>x</mi></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇒</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>13</mn><mi>x</mi><mo>+</mo><mn>16</mn><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>7</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇒</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>13</mn><mi>x</mi><mo>+</mo><mn>16</mn><mo>=</mo><mn>49</mn><mo>−</mo><mn>14</mn><mi>x</mi><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇒</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo>−</mo><mn>33</mn><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇒</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mn>1</mn><mo>±</mo><msqrt><mn>133</mn></msqrt></mrow><mn>2</mn></mfrac><mi>.</mi></mtd></mtr></mtable></semantics></math></div>\n\t\tThử lại, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mn>1</mn><mo>±</mo><msqrt><mn>133</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></semantics></math> là nghiệm của phương trình.<br>Vậy tổng các nghiệm của phương trình là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mn>1</mn><mo>+</mo><msqrt><mn>133</mn></msqrt></mrow><mn>2</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mn>1</mn><mo>−</mo><msqrt><mn>133</mn></msqrt></mrow><mn>2</mn></mfrac><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

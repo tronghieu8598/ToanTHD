@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-8H5-q032-v4",
+  "original_number": 32,
+  "kind": "mcq",
+  "based_on": "a5662545d2db3030918a20d1ff28b57405caf6d8bb7f1780b7ec3ce85815c45e",
+  "prompt": "Cho hình hộp chữ nhật <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mi>.</mi><mi>A</mi><mi>′</mi><mi>B</mi><mi>′</mi><mi>C</mi><mi>′</mi><mi>D</mi><mi>′</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mi>a</mi></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>D</mi><mo>=</mo><mi>b</mi></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>A</mi><mi>′</mi><mo>=</mo><mi>c</mi></mrow></semantics></math>. Khẳng định nào sau đây là <strong>sai</strong>?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "Khoảng cách giữa đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi></mrow></semantics></math> và  <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>′</mi><mi>B</mi><mi>′</mi><mi>C</mi><mi>′</mi><mi>D</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "Khoảng cách giữa đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi></mrow></semantics></math> và đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>′</mi><mi>C</mi><mi>′</mi></mrow></semantics></math> bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>c</mi></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "Khoảng cách giữa đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>D</mi></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>′</mi><mi>B</mi><mi>′</mi><mi>C</mi><mi>′</mi><mi>D</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>c</mi></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "Khoảng cách giữa đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> và  <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mi>D</mi><mi>C</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>b</mi></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "<div class=\"with-figure\"><div>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>∥</mo><mi>A</mi><mi>′</mi><mi>B</mi><mi>′</mi></mrow></semantics></math>, suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>∥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>′</mi><mi>B</mi><mi>′</mi><mi>C</mi><mi>′</mi><mi>D</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.<br>Do đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">d</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mo>,</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>′</mi><mi>B</mi><mi>′</mi><mi>C</mi><mi>′</mi><mi>C</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi mathvariant=\"normal\">d</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo>,</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>′</mi><mi>B</mi><mi>′</mi><mi>C</mi><mi>′</mi><mi>D</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>A</mi><mi>A</mi><mi>′</mi><mo>=</mo><mi>c</mi></mrow></semantics></math>.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/96e1092740b693440ae88b5372f504bb15a3c5c91ecb271e196ab31c1f7dbdad.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure><div class=\"paragraph-gap\"></div></div></div>",
+  "accepted_answers": []
+}

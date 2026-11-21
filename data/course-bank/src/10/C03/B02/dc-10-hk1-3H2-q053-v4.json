@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-3H2-q053-v4",
+  "original_number": 53,
+  "kind": "mcq",
+  "based_on": "b37973d3f71a99f20078ebb0186581b60b743d414340c5f6c32db214d69b2875",
+  "prompt": "Tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>=</mo><mn>6</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi><mo>=</mo><mn>7</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>c</mi><mo>=</mo><mn>12</mn></mrow></semantics></math>. Khẳng định nào sau đây là đúng?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "Tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có 1 góc tù"
+    },
+    {
+      "key": "B",
+      "text": "Tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> là tam giác vuông"
+    },
+    {
+      "key": "C",
+      "text": "Tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> là tam giác đều"
+    },
+    {
+      "key": "D",
+      "text": "Tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có 3 góc nhọn"
+    }
+  ],
+  "correct": "A",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>C</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><msup><mi>c</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mi>a</mi><mi>b</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mn>6</mn><mn>2</mn></msup><mo>+</mo><msup><mn>7</mn><mn>2</mn></msup><mo>−</mo><msup><mn>12</mn><mn>2</mn></msup></mrow><mrow><mn>2</mn><mo>⋅</mo><mn>6</mn><mo>⋅</mo><mn>7</mn></mrow></mfrac><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>59</mn><mn>84</mn></mfrac><mo>&lt;</mo><mn>0</mn></mrow></semantics></math>.<br>Do đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>C</mi><mo accent=\"true\">̂</mo></mover><mo>&gt;</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow></semantics></math>.<br>Vậy tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có 1 góc tù.",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-7D2-q095-v4",
+  "original_number": 95,
+  "kind": "mcq",
+  "based_on": "d555729f0480390723017f068bfdf00fb69be40a6b3b123056486ed4661263d0",
+  "prompt": "Xét chuyển động có phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>s</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>A</mi><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>ω</mi><mi>t</mi><mo>+</mo><mi>φ</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>,</mo><mi>ω</mi><mo>,</mo><mi>φ</mi></mrow></semantics></math> là những hằng số. Tìm gia tốc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>γ</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> tại thời điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>t</mi></semantics></math> của chuyển động.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>γ</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>A</mi><mi>ω</mi><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>ω</mi><mi>t</mi><mo>+</mo><mi>φ</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>γ</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>A</mi><msup><mi>ω</mi><mn>2</mn></msup><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>ω</mi><mi>t</mi><mo>+</mo><mi>φ</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>γ</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mi>A</mi><msup><mi>ω</mi><mn>2</mn></msup><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>ω</mi><mi>t</mi><mo>+</mo><mi>φ</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>γ</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mi>A</mi><mi>ω</mi><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>ω</mi><mi>t</mi><mo>+</mo><mi>φ</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>s</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>A</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>ω</mi><mi>t</mi><mo>+</mo><mi>φ</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>ω</mi><mi>t</mi><mo>+</mo><mi>φ</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>A</mi><mi>ω</mi><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>ω</mi><mi>t</mi><mo>+</mo><mi>φ</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>. <br>Gia tốc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>γ</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>s</mi><mi>″</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mi>A</mi><mi>ω</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>ω</mi><mi>t</mi><mo>+</mo><mi>φ</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>ω</mi><mi>t</mi><mo>+</mo><mi>φ</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mi>A</mi><msup><mi>ω</mi><mn>2</mn></msup><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>ω</mi><mi>t</mi><mo>+</mo><mi>φ</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.",
+  "accepted_answers": []
+}

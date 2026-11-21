@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-7D2-q111-v4",
+  "original_number": 111,
+  "kind": "mcq",
+  "based_on": "e8f873c3cfaef342eb0ffdfa003d1c548b3c0019aa9c5cf12697fc4fa172487c",
+  "prompt": "Tính đạo hàm của hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msqrt><mrow><mo>cos</mo><mn>2</mn><mi>x</mi></mrow></msqrt></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>sin</mo><mn>2</mn><mi>x</mi></mrow><mrow><mn>2</mn><msqrt><mrow><mo>cos</mo><mn>2</mn><mi>x</mi></mrow></msqrt></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>sin</mo><mn>2</mn><mi>x</mi></mrow><msqrt><mrow><mo>cos</mo><mn>2</mn><mi>x</mi></mrow></msqrt></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mo>sin</mo><mn>2</mn><mi>x</mi></mrow><msqrt><mrow><mo>cos</mo><mn>2</mn><mi>x</mi></mrow></msqrt></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mo>sin</mo><mn>2</mn><mi>x</mi></mrow><mrow><mn>2</mn><msqrt><mrow><mo>cos</mo><mn>2</mn><mi>x</mi></mrow></msqrt></mrow></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>cos</mo><mn>2</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi></mrow><mrow><mn>2</mn><msqrt><mrow><mo>cos</mo><mn>2</mn><mi>x</mi></mrow></msqrt></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mo>sin</mo><mn>2</mn><mi>x</mi></mrow><msqrt><mrow><mo>cos</mo><mn>2</mn><mi>x</mi></mrow></msqrt></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

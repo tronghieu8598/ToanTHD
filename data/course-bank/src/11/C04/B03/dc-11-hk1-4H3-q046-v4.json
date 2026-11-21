@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-4H3-q046-v4",
+  "original_number": 46,
+  "kind": "mcq",
+  "based_on": "0536bdcd2e8379eef727c5d838f9062c29383f6214601d65df19014915b0ba2c",
+  "prompt": "Cho tứ diện <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>G</mi></semantics></math> là trọng tâm của tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>K</mi></semantics></math> là điểm thuộc cạnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>D</mi></mrow></semantics></math> sao cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>K</mi><mi>A</mi><mo>=</mo><mn>2</mn><mi>K</mi><mi>D</mi></mrow></semantics></math> Mặt phẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> song song với đường thẳng nào sau đây?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mi>K</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>G</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>K</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>K</mi><mi>G</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/8d59bee2c8a4820581e49a04e89056fc6f504d03c5474b92085316b17f6a610a.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tGọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>M</mi></semantics></math> là trung điểm của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi></mrow></semantics></math>.<br>Xét tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>M</mi><mi>D</mi></mrow></semantics></math>, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mi>A</mi><mi>G</mi></mrow><mrow><mi>A</mi><mi>M</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>A</mi><mi>K</mi></mrow><mrow><mi>A</mi><mi>D</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></mrow></semantics></math>, suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi><mi>K</mi><mo>∥</mo><mi>M</mi><mi>D</mi></mrow></semantics></math> (định lí Ta-lét đảo).<br>Mà <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mi>D</mi><mo>⊂</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi><mi>K</mi><mo>∥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.",
+  "accepted_answers": []
+}

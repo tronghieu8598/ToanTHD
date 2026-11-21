@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-4H1-q084-v4",
+  "original_number": 84,
+  "kind": "tf",
+  "based_on": "f1950a088c2266b7953352982ff29851ccaa852d24c5fdebd348041e69f7a321",
+  "prompt": "Cho hình chóp tứ giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>.</mi><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math>, biết đường thẳng chứa cạnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi></mrow></semantics></math> cắt đường thẳng chứa cạnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mi>D</mi></mrow></semantics></math> tại <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>E</mi></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>A</mi></mrow></semantics></math> là giao tuyến của hai mặt phẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>E</mi></mrow></semantics></math> <strong>không</strong> nằm trong mặt phẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>E</mi></mrow></semantics></math> nằm trong mặt phẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>C</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>E</mi></mrow></semantics></math> là giao tuyến của hai mặt phẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>C</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    true,
+    true
+  ],
+  "solution": "<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/32ddff41afa081608ab3c344bb48c23c409dcefdfc1ba3e7fd7b83e36fe2cb20.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\t<ol class=\"alpha-list\"><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>A</mi><mo>∈</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>∩</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>S</mi><mo>∈</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>∩</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mtd></mtr></mtable></mrow><mo>⇒</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>∩</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>S</mi><mi>A</mi></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>E</mi><mo>∈</mo><mi>A</mi><mi>B</mi><mo>⇒</mo><mi>E</mi><mo>∈</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⇒</mo><mi>S</mi><mi>E</mi><mo>⊂</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> (1).</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>E</mi><mo>∈</mo><mi>A</mi><mi>B</mi><mo>⇒</mo><mi>E</mi><mo>∈</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>C</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⇒</mo><mi>S</mi><mi>E</mi><mo>⊂</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>C</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> (2).</li><li>Từ (1) và (2) suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>E</mi></mrow></semantics></math> là giao tuyến của hai mặt phẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>C</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

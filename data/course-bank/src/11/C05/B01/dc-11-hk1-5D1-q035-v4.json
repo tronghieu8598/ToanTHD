@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-5D1-q035-v4",
+  "original_number": 35,
+  "kind": "mcq",
+  "based_on": "d46bfc74ac861e5e49781cfca326a20e91b372925d7b7ba514b974838dec7795",
+  "prompt": "Tính <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><msup><mn>3</mn><mi>n</mi></msup><mo>+</mo><mn>4</mn><mo>⋅</mo><msup><mn>7</mn><mi>n</mi></msup></mrow><mrow><msup><mn>7</mn><mi>n</mi></msup><mo>−</mo><mn>2</mn><mo>⋅</mo><msup><mn>3</mn><mi>n</mi></msup></mrow></mfrac></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>2</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>4</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><msup><mn>3</mn><mi>n</mi></msup><mo>+</mo><mn>4</mn><mo>⋅</mo><msup><mn>7</mn><mi>n</mi></msup></mrow><mrow><msup><mn>7</mn><mi>n</mi></msup><mo>−</mo><mn>2</mn><mo>⋅</mo><msup><mn>3</mn><mi>n</mi></msup></mrow></mfrac><mo>=</mo><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>7</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>n</mi></msup><mo>+</mo><mn>4</mn></mrow><mrow><mn>1</mn><mo>−</mo><mn>2</mn><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>7</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>n</mi></msup></mrow></mfrac><mo>=</mo><mn>4</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

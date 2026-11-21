@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-9D1-q044-v4",
+  "original_number": 44,
+  "kind": "mcq",
+  "based_on": "476fc9342efc9db339cefe4c41baa9b5a1c158228257580d9161af9ae24c207a",
+  "prompt": "Trong phòng làm việc có hai máy tính hoạt động độc lập với nhau, khả hoạt động tốt trong ngày của hai máy này tương ứng là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>75</mn></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>85</mn></mrow></semantics></math>. Xác suất để cả hai máy hoạt động không tốt trong ngày là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>0475</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>0375</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>0675</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>0575</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là biến cố ““ Máy thứ nhất hoạt động tốt”” và  <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math> là biến cố ““ Máy thứ hai hoạt động tốt””.<br>Theo giả thiết <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>75</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>85</mn></mrow></semantics></math>.<br>Suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>25</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>15</mn></mrow></semantics></math>.<br>Xác suất để cả hai máy hoạt động không tốt trong ngày là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover><mo>∩</mo><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⋅</mo><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>25</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>15</mn><mo>=</mo><mn>0</mn><mo>,</mo><mn>0375</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-5TK3-q040-v4",
+  "original_number": 40,
+  "kind": "tf",
+  "based_on": "5d8771e2399e978b9bba1e6dd43d5ac3c76286b554bf11dcf285e88dc441ef47",
+  "prompt": "Một lớp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math>A của trường THPT Kon Tum có điểm kiểm tra môn Toán giữa học kỳ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> vừa qua được thống kê trong bảng sau\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Điểm thi</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr><tr><td>Tần số</td><td>3</td><td>7</td><td>11</td><td>12</td><td>5</td><td>4</td></tr></tbody></table></div></div>",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Độ lệch chuẩn của mẫu số liệu thuộc khoảng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>,</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Mốt của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Tứ phân vị thứ nhất của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Trung vị của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>7</mn><mo>,</mo><mn>5</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Mốt của mẫu số liệu là số liệu có tần số lớn nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>M</mi><mi>o</mi></msub><mo>=</mo><mn>8</mn></mrow></semantics></math>.</li><li>Trung vị <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Q</mi><mn>2</mn></msub><mo>=</mo><msub><mi>M</mi><mi>e</mi></msub><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msub><mi>x</mi><mn>21</mn></msub><mo>+</mo><msub><mi>x</mi><mn>22</mn></msub></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>7</mn><mo>+</mo><mn>8</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>7</mn><mo>,</mo><mn>5</mn></mrow></semantics></math>.</li><li>Tứ phân vị thứ nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><msub><mi>x</mi><mn>11</mn></msub><mo>=</mo><mn>7</mn></mrow></semantics></math>.</li><li>Số trung bình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>x</mi><mo accent=\"true\">¯</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn><mo>⋅</mo><mn>3</mn><mo>+</mo><mn>6</mn><mo>⋅</mo><mn>7</mn><mo>+</mo><mn>7</mn><mo>⋅</mo><mn>11</mn><mo>+</mo><mn>8</mn><mo>⋅</mo><mn>12</mn><mo>+</mo><mn>9</mn><mo>⋅</mo><mn>5</mn><mo>+</mo><mn>10</mn><mo>⋅</mo><mn>4</mn></mrow><mn>42</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>315</mn><mn>42</mn></mfrac><mo>=</mo><mn>7</mn><mo>,</mo><mn>5</mn></mrow></semantics></math>.<br>Phương sai <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>s</mi><mn>2</mn></msup><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>5</mn><mo>−</mo><mn>7</mn><mo>,</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>7</mn><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>6</mn><mo>−</mo><mn>7</mn><mo>,</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>11</mn><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>7</mn><mo>−</mo><mn>7</mn><mo>,</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>12</mn><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>8</mn><mo>−</mo><mn>7</mn><mo>,</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>5</mn><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>9</mn><mo>−</mo><mn>7</mn><mo>,</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>4</mn><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>10</mn><mo>−</mo><mn>7</mn><mo>,</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></mrow><mn>42</mn></mfrac><mo>≈</mo><mn>1</mn><mo>,</mo><mn>821</mn></mrow></semantics></math>.<br>Độ lệch chuẩn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>s</mi><mo>=</mo><msqrt><msup><mi>s</mi><mn>2</mn></msup></msqrt><mo>≈</mo><mn>1</mn><mo>,</mo><mn>35</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

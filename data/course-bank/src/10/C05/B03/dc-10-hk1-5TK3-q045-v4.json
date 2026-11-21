@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-5TK3-q045-v4",
+  "original_number": 45,
+  "kind": "tf",
+  "based_on": "fc152bcd88b1a2a4ec71e31736a4f7a36a84506a993bb6c56b955820bb61bde3",
+  "prompt": "Cho mẫu số liệu: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>;</mo><mn>3</mn><mo>;</mo><mn>5</mn><mo>;</mo><mn>5</mn><mo>;</mo><mn>10</mn><mo>;</mo><mn>21</mn><mo>;</mo><mn>6</mn><mo>;</mo><mn>7</mn><mo>;</mo><mn>8</mn><mo>;</mo><mn>2</mn><mo>;</mo><mn>2</mn></mrow></semantics></math>",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Mốt của mẫu số liệu trên là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Trung vị của mẫu số liệu trên là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Giá trị <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>21</mn></mrow></semantics></math> là một giá trị ngoại lệ của mẫu số liệu"
+    },
+    {
+      "key": "d",
+      "text": "Phương sai của mẫu số liệu trên là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>3330</mn><mn>121</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    true,
+    true
+  ],
+  "solution": "Ta có bảng\n\t\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Số liệu</td><td>2</td><td>3</td><td>5</td><td>6</td><td>7</td><td>8</td><td>10</td><td>21</td></tr><tr><td>Tần số</td><td>3</td><td>1</td><td>2</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr></tbody></table></div></div>\n\t\t<ol class=\"alpha-list\"><li>Số liệu có tần số lớn nhất là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>M</mi><mn>0</mn></msub><mo>=</mo><mn>2</mn></mrow></semantics></math>.</li><li>Trung vị <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>M</mi><mi>e</mi></msub><mo>=</mo><msub><mi>x</mi><mn>6</mn></msub><mo>=</mo><mn>5</mn></mrow></semantics></math>.</li><li>Số trung bình cộng\n\t\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>x</mi><mo accent=\"true\">¯</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>+</mo><mn>3</mn><mo>⋅</mo><mn>1</mn><mo>+</mo><mn>5</mn><mo>⋅</mo><mn>2</mn><mo>+</mo><mn>6</mn><mo>⋅</mo><mn>1</mn><mo>+</mo><mn>7</mn><mo>⋅</mo><mn>1</mn><mo>+</mo><mn>8</mn><mo>⋅</mo><mn>1</mn><mo>+</mo><mn>10</mn><mo>⋅</mo><mn>1</mn><mo>+</mo><mn>21</mn><mo>⋅</mo><mn>1</mn></mrow><mn>11</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>71</mn><mn>11</mn></mfrac><mi>.</mi></mrow></semantics></math><br>Phương sai <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>S</mi><mn>2</mn></msup><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>−</mo><mfrac displaystyle=\"false\"><mn>71</mn><mn>11</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>−</mo><mfrac displaystyle=\"false\"><mn>71</mn><mn>11</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>5</mn><mo>−</mo><mfrac displaystyle=\"false\"><mn>71</mn><mn>11</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>6</mn><mo>−</mo><mfrac displaystyle=\"false\"><mn>71</mn><mn>11</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mi>⋯</mi><mo>+</mo><mn>1</mn><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>21</mn><mo>−</mo><mfrac displaystyle=\"false\"><mn>71</mn><mn>11</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></mrow><mn>11</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>3330</mn><mn>121</mn></mfrac></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Q</mi><mn>2</mn></msub><mo>=</mo><msub><mi>x</mi><mn>6</mn></msub><mo>=</mo><mn>5</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><msub><mi>x</mi><mn>3</mn></msub><mo>=</mo><mn>2</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><msub><mi>x</mi><mn>9</mn></msub><mo>=</mo><mn>8</mn></mrow></semantics></math>.\n\t\t\tDo đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Δ</mi><mi>Q</mi></msub><mo>=</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>−</mo><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>6</mn></mrow></semantics></math>.<br>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>+</mo><mn>1</mn><mo>,</mo><mn>5</mn><msub><mi>Δ</mi><mi>Q</mi></msub><mo>=</mo><mn>8</mn><mo>+</mo><mn>1</mn><mo>,</mo><mn>5</mn><mo>⋅</mo><mn>6</mn><mo>=</mo><mn>17</mn><mo>&lt;</mo><mn>21</mn></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>21</mn></semantics></math> là một giá trị ngoại lệ.</li></ol>",
+  "accepted_answers": []
+}

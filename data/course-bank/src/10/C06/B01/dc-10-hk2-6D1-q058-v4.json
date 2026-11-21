@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-6D1-q058-v4",
+  "original_number": 58,
+  "kind": "tf",
+  "based_on": "5af101a68346984fddb6058a8dd618dc4daa0f57169b62277189a1327c03cbc5",
+  "prompt": "<div class=\"with-figure\"><div>Cho hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có đồ thị như hình vẽ bên. Các phát biểu sau đúng hay <strong>sai</strong>?<div class=\"paragraph-gap\"></div></div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/cbf5f4f36f6def3a52ee75d816bc73807f63f5ad8dd1f4666aeeaf2a7df4618f.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>&lt;</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Hàm số đã cho xác định trên đoạn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>4</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Tập giá trị hàm số đã cho là đoạn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Hàm số đã cho đồng biến trên khoảng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Đúng.\n\t\t\tTa có hàm số đã cho xác định trên đoạn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>4</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>.</li><li>Sai.\n\t\t\tTa có hàm số đã cho nghịch biến trên khoảng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và đồng biến trên khoảng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.</li><li>Sai.\n\t\t\tVì đồ thị hàm số nằm phía trên trục hoành, tập giá trị của hàm số đã cho là đoạn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mi>a</mi><mo>;</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>.</li><li>Đúng.\n\t\t\tTa có hàm số đã cho đồng biến trên khoảng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>&lt;</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

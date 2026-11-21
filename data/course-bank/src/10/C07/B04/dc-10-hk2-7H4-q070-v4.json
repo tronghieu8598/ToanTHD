@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-7H4-q070-v4",
+  "original_number": 70,
+  "kind": "tf",
+  "based_on": "390f7ab98e9f30e68da9668c9a0fdc32d04a6d50dff140e2c86bdf1b245a2d72",
+  "prompt": "Cho phương trình chính tắc của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>E</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>:</mo><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>2</mn></msup><mn>100</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><msup><mi>y</mi><mn>2</mn></msup><mn>36</mn></mfrac><mo>=</mo><mn>1</mn></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Elip có hai tiêu điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>F</mi><mn>1</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>6</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>F</mi><mn>2</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>6</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>10</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> là một đỉnh của elip"
+    },
+    {
+      "key": "c",
+      "text": "Độ dài trục bé là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>12</mn></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Tổng khoảng cách từ một điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>;</mo><mi>y</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> thỏa mãn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>2</mn></msup><mn>100</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><msup><mi>y</mi><mn>2</mn></msup><mn>36</mn></mfrac><mo>=</mo><mn>1</mn></mrow></semantics></math> đến hai tiêu điểm bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20</mn></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Thay <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>10</mn></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> vào <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>E</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> ta được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><msup><mn>10</mn><mn>2</mn></msup><mn>100</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>0</mn><mn>36</mn></mfrac><mo>=</mo><mn>1</mn></mrow></semantics></math> (luôn đúng) nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>10</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> là một đỉnh của elip.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>c</mi><mo>=</mo><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><msqrt><mrow><mn>100</mn><mo>−</mo><mn>36</mn></mrow></msqrt><mo>=</mo><mn>8</mn></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>E</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> có hai tiêu điểm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>F</mi><mn>1</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>8</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>F</mi><mn>2</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>8</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</li><li>Độ dài trục bé là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>b</mi><mo>=</mo><mn>2</mn><mo>⋅</mo><mn>6</mn><mo>=</mo><mn>12</mn></mrow></semantics></math>.</li><li>Tổng khoảng cách từ một điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>;</mo><mi>y</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> thỏa mãn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>2</mn></msup><mn>100</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><msup><mi>y</mi><mn>2</mn></msup><mn>36</mn></mfrac><mo>=</mo><mn>1</mn></mrow></semantics></math> đến hai tiêu điểm bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>a</mi><mo>=</mo><mn>2</mn><mo>⋅</mo><mn>10</mn><mo>=</mo><mn>20</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

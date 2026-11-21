@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-4H2-q043-v4",
+  "original_number": 43,
+  "kind": "mcq",
+  "based_on": "f3b548dd5ec79d42d22b4cfe9031aa767e0475a05421f4ce8489a979845f19db",
+  "prompt": "Cho hình vuông <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> cạnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math>, tâm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>O</mi></semantics></math>. Tính độ dài của véc-tơ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>O</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mrow><mi>B</mi><mi>O</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mi>a</mi><mn>2</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>a</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "<div class=\"with-figure\"><div>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>O</mi></semantics></math> là trung điểm đường chéo <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>D</mi></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>B</mi><mi>O</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>O</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.<br>Do đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mover><mrow><mi>O</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mrow><mi>B</mi><mi>O</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mover><mrow><mi>O</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mrow><mi>O</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mover><mrow><mi>D</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>=</mo><mi>D</mi><mi>A</mi><mo>=</mo><mi>a</mi></mrow></semantics></math>.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/c4893168bfeb935b337c979a8fc54ce6e8c86ffd5af0a91a4523c76a095203a1.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

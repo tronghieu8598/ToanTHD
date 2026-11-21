@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-4H1-q088-v4",
+  "original_number": 88,
+  "kind": "tf",
+  "based_on": "ee74e2b0a5f3872ddb22cbd48098059355f5c7930b7de37d7c55acc7441d2b2f",
+  "prompt": "Xét tính đúng sai các khẳng định sau:",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Có một và chỉ một mặt phẳng đi qua ba điểm cho trước"
+    },
+    {
+      "key": "b",
+      "text": "Tồn tại bốn điểm không cùng nằm trên một mặt phẳng"
+    },
+    {
+      "key": "c",
+      "text": "Nếu hai mặt phẳng phân biệt có một điểm chung thì chúng có một đường thẳng chung duy nhất chứa tất cả các điểm chung của hai mặt phẳng đó"
+    },
+    {
+      "key": "d",
+      "text": "Có một và chỉ một đường thẳng đi qua hai điểm phân biệt cho trước"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Có một và chỉ một mặt phẳng đi qua ba điểm không thẳng hàng cho trước. Do đó, khẳng định ``Có một và chỉ một mặt phẳng đi qua ba điểm cho trước&#x27;&#x27; là khẳng định sai.</li><li>``Tồn tại bốn điểm không cùng nằm trên một mặt phẳng&#x27;&#x27; là khẳng định đúng.</li><li>``Nếu hai mặt phẳng phân biệt có một điểm chung thì chúng có một đường thẳng chung duy nhất chứa tất cả các điểm chung của hai mặt phẳng đó&#x27;&#x27; là khẳng định đúng.</li><li>``Có một và chỉ một đường thẳng đi qua hai điểm phân biệt cho trước&#x27;&#x27; là khẳng định đúng.</li></ol>",
+  "accepted_answers": []
+}

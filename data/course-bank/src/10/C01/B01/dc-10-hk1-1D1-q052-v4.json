@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-1D1-q052-v4",
+  "original_number": 52,
+  "kind": "tf",
+  "based_on": "c6b98e2ec0e4bce992350cb5d1198b56b0f1e306f0d68ab106cf5322fb74783c",
+  "prompt": "Cho mệnh đề chứa biến <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>:</mo></mrow></semantics></math> ““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>n</mi></mrow></semantics></math> chia hết cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>””  với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math>. Xác định tính đúng sai của các khẳng định dưới đây.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> là mệnh đề sai"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> là mệnh đề đúng"
+    },
+    {
+      "key": "c",
+      "text": "““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∀</mo><mi>n</mi><mo>∈</mo><mi>ℕ</mi><mo>,</mo><mspace width=\"0.167em\"/><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>””  là mệnh đề đúng"
+    },
+    {
+      "key": "d",
+      "text": "““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∃</mo><mi>n</mi><mo>∈</mo><mi>ℕ</mi><mo>,</mo><mspace width=\"0.167em\"/><mover><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mo accent=\"true\">¯</mo></mover></mrow></semantics></math>””  là mệnh đề đúng"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Ta có ““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>””  hay ““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>1</mn><mn>2</mn></msup><mo>+</mo><mn>3</mn><mo>⋅</mo><mn>1</mn></mrow></semantics></math> chia hết cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>””  là mệnh đề đúng.</li><li>Ta có ““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>””  hay ““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><mn>3</mn><mo>⋅</mo><mn>2</mn></mrow></semantics></math> chia hết cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>””  là mệnh đề đúng.</li><li>Ta có mệnh đề ““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∀</mo><mi>n</mi><mo>∈</mo><mi>ℕ</mi><mo>,</mo><mspace width=\"0.167em\"/><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>””  hay ““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∀</mo><mi>n</mi><mo>∈</mo><mi>ℕ</mi><mo>,</mo><mspace width=\"0.167em\"/><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>n</mi></mrow></semantics></math> chia hết cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>””  là mệnh đề đúng vì \n\t\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>n</mi><mo>=</mo><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo>+</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo>+</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mn>2</mn><mi>n</mi><mspace width=\"0.167em\"/><mi>⋮</mi><mspace width=\"0.167em\"/><mn>2</mn><mspace width=\"1.0em\"/><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>∀</mo><mi>n</mi><mo>∈</mo><mi>ℕ</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>.</mi></mrow></semantics></math></div></li><li>Do mệnh đề ““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∃</mo><mi>n</mi><mo>∈</mo><mi>ℕ</mi><mo>,</mo><mspace width=\"0.167em\"/><mover><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mo accent=\"true\">¯</mo></mover></mrow></semantics></math>””  là mệnh đề phủ định của mệnh đề ““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∀</mo><mi>n</mi><mo>∈</mo><mi>ℕ</mi><mo>,</mo><mspace width=\"0.167em\"/><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>””  nên nó là mệnh đề sai.</li></ol>",
+  "accepted_answers": []
+}

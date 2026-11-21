@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-1D3-q065-v4",
+  "original_number": 65,
+  "kind": "tf",
+  "based_on": "73f8ab3b228a9a826a38bebf3e4619ce8bb75edaf02ea9e09681bbbc022883e7",
+  "prompt": "Cho hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>2</mn><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mn>3</mn></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Hàm số tuần hoàn với chu kì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Hàm số đã cho là hàm số lẻ"
+    },
+    {
+      "key": "c",
+      "text": "Tập xác định của hàm số là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>ℝ</mi></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>M</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>m</mi></semantics></math> lần lượt là giá trị lớn nhất, giá trị nhỏ nhất của hàm số, khi đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>m</mi><mo>=</mo><mn>6</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>2</mn><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mn>3</mn></mrow></semantics></math> có tập xác định là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>ℝ</mi></semantics></math>.</li><li>Hàm số tuần hoàn với chu kì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo>=</mo><mn>2</mn><mi>π</mi></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>1</mn><mo>+</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mn>3</mn><mo>=</mo><mn>4</mn></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn><mo>cos</mo><mn>2</mn><mo>+</mo><mn>3</mn></mrow></semantics></math>.<br>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>≠</mo><mo>−</mo><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> nên hàm số đã cho không phải là hàm số lẻ.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>≤</mo><mn>2</mn><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mn>3</mn><mo>≤</mo><mn>5</mn><mo>,</mo><mo>∀</mo><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math>, do đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>=</mo><mn>5</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>. Do đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>m</mi><mo>=</mo><mn>6</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

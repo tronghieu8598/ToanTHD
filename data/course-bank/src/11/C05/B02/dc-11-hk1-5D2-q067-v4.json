@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-5D2-q067-v4",
+  "original_number": 67,
+  "kind": "tf",
+  "based_on": "98b68fefc72255a36347ab898eeb8ea9a7d364bc2ea63b7cc3a6e6fd32160d5e",
+  "prompt": "Chi phí (đơn vị: nghìn đồng) để sản xuất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> sản phẩm của một công ty được xác định bởi hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>600</mn><mo>+</mo><mn>500</mn><mi>x</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Chi phí để sản xuất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> sản phẩm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mspace width=\"0.167em\"/><mn>100</mn></mrow></semantics></math> đồng"
+    },
+    {
+      "key": "b",
+      "text": "Chi phí để sản xuất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> sản phẩm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>560</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> đồng"
+    },
+    {
+      "key": "c",
+      "text": "Nếu công ty sản xuất được số sản phẩm tăng lên rất nhiều thì chi phí trung bình của mỗi sản phẩm giảm dần về mức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>500</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> đồng"
+    },
+    {
+      "key": "d",
+      "text": "Công ty sản xuất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20</mn></semantics></math> sản phẩm thì chi phí trung bình của mỗi sản phẩm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>530</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> đồng"
+    }
+  ],
+  "correct": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Chi phí để sản xuất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> sản phẩm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>600</mn><mo>+</mo><mn>500</mn><mo>⋅</mo><mn>1</mn><mo>=</mo><mn>1</mn><mspace width=\"0.167em\"/><mn>100</mn></mrow></semantics></math> nghìn đồng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>=</mo><mn>1</mn><mspace width=\"0.167em\"/><mn>100</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> đồng.</li><li>Chi phí để sản xuất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> sản phẩm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>10</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>600</mn><mo>+</mo><mn>500</mn><mo>⋅</mo><mn>10</mn><mo>=</mo><mn>5</mn><mspace width=\"0.167em\"/><mn>600</mn></mrow></semantics></math> nghìn đồng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>=</mo><mn>5</mn><mspace width=\"0.167em\"/><mn>600</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> đồng.</li><li>Chi phí để sản xuất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20</mn></semantics></math> sản phẩm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>20</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>600</mn><mo>+</mo><mn>500</mn><mo>⋅</mo><mn>20</mn><mo>=</mo><mn>10</mn><mspace width=\"0.167em\"/><mn>600</mn></mrow></semantics></math> nghìn đồng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>=</mo><mn>10</mn><mspace width=\"0.167em\"/><mn>600</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> đồng.<br>Chi phí trung bình là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mi>C</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>20</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mn>20</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>10</mn><mspace width=\"0.167em\"/><mn>600</mn></mrow><mn>20</mn></mfrac><mo>=</mo><mn>530</mn></mrow></semantics></math> nghìn đồng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>=</mo><mn>530</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> đống.</li><li>Chi phí trung bình khi sản xuất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> sản phẩm là\n\t\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mi>C</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mi>x</mi></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>600</mn><mo>+</mo><mn>500</mn><mi>x</mi></mrow><mi>x</mi></mfrac><mo>=</mo><mn>500</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>600</mn><mi>x</mi></mfrac><mi>.</mi></mrow></semantics></math></div>\n\t\t\tKhi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></semantics></math>, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>600</mn><mi>x</mi></mfrac><mo>→</mo><mn>0</mn></mrow></semantics></math>, do đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mi>C</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mi>x</mi></mfrac><mo>→</mo><mn>500</mn></mrow></semantics></math> (nghìn đồng) <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>=</mo><mn>500</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> đồng.</li></ol>",
+  "accepted_answers": []
+}

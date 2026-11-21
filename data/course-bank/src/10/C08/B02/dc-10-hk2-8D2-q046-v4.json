@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-8D2-q046-v4",
+  "original_number": 46,
+  "kind": "mcq",
+  "based_on": "24c8fc4025aaf9046629cd97d81c030e64a9b046053f13090a5cf0555a954749",
+  "prompt": "Lớp học có 12 nữ, và 12 nam. Hỏi có bao nhiêu cách xếp tất cà các bạn trong lớp thành một hàng dọc, sao cho nam và nữ đứng xen kẽ nhau?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>12</mn><mi>!</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>12</mn><mi>!</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>24</mn><mi>!</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>12</mn><mi>!</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Xếp 12 bạn nữ vào vị trí lẻ có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>12</mn><mi>!</mi></mrow></semantics></math> cách, xếp 12 bạn nam vào vị trí chẵn có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>12</mn><mi>!</mi></mrow></semantics></math> cách.<br>Xếp 12 bạn nữ vào vị trí chắn có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>12</mn><mi>!</mi></mrow></semantics></math> cách, xếp 12 bạn nam vào vị trí lẻ có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>12</mn><mi>!</mi></mrow></semantics></math> cách.<br>Do đó có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>12</mn><mi>!</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></mrow></semantics></math> cách xếp.",
+  "accepted_answers": []
+}

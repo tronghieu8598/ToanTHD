@@ -1,0 +1,11 @@
+{
+  "id": "dc-10-hk2-8D1-q002-v4",
+  "original_number": 2,
+  "kind": "free",
+  "based_on": "82d1d7e62397197bd05e6a4692077abe791b208c3cade620354c8e686333f057",
+  "prompt": "<div class=\"with-figure\"><div>Tung một con xúc xắc ba lần liên tiếp và ghi lại kết quả (chẳng hạn, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>−</mo><mn>2</mn><mo>−</mo><mn>4</mn></mrow></semantics></math> nếu số chấm xuất hiện lần lượt là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>). Có tất cả bao nhiêu kết quả khác nhau có thể xảy ra?</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/deb825e772a0e6da843eb19100213d214a5badccbcded1d03de760c88b3f8bdd.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "choices": [],
+  "correct": null,
+  "solution": "Có thể coi việc tung con xúc xắc ba lần liên tiếp là công việc gồm ba công đoạn, mỗi công đoạn là một lần tung. Mỗi lần tung đều có 6 khả năng khác nhau xảy ra (số chấm xuất hiện là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>;</mo><mn>2</mn><mo>;</mo><mi>…</mi><mo>;</mo><mn>6</mn></mrow></semantics></math>). Do đó, theo quy tắc nhân, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>6</mn><mo>⋅</mo><mn>6</mn><mo>⋅</mo><mn>6</mn><mo>=</mo><mn>216</mn></mrow></semantics></math> kết quả khác nhau có thể xảy ra.",
+  "accepted_answers": []
+}

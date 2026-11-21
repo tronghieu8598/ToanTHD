@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-1D3-q029-v4",
+  "original_number": 29,
+  "kind": "mcq",
+  "based_on": "81e43f3981996c3ffbaebecae704f71a560abbed2f192852aa17b8ea062d3343",
+  "prompt": "Giá trị nhỏ nhất của hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msqrt><mn>3</mn></msqrt><mo>sin</mo><mi>x</mi><mo>+</mo><mo>cos</mo><mi>x</mi><mo>+</mo><mn>2020</mn></mrow></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2022</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2018</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2016</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2024</mn></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"><mi>y</mi></mtd><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><msqrt><mn>3</mn></msqrt><mo>sin</mo><mi>x</mi><mo>+</mo><mo>cos</mo><mi>x</mi><mo>+</mo><mn>2020</mn><mo>=</mo><mn>2</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><msqrt><mn>3</mn></msqrt><mn>2</mn></mfrac><mo>sin</mo><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>cos</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mn>2020</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mn>2</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>cos</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>6</mn></mfrac><mo>sin</mo><mi>x</mi><mo>+</mo><mo>sin</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>6</mn></mfrac><mo>cos</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mn>2020</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mn>2</mn><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>6</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mn>2020</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>≥</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mo>−</mo><mn>2</mn><mo>+</mo><mn>2020</mn><mo>=</mo><mn>2018</mn><mi>.</mi></mtd></mtr></mtable></semantics></math></div>\n\t\tLại có \n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"><mi>y</mi><mo>=</mo><mn>2018</mn></mtd><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇔</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>6</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇔</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>6</mn></mfrac><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇔</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>π</mi></mrow><mn>3</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi><mo>,</mo><mspace width=\"0.167em\"/><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mi>.</mi></mtd></mtr></mtable></semantics></math></div>\n\t\tVậy giá trị nhỏ nhất của hàm số là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2018</mn></semantics></math>.",
+  "accepted_answers": []
+}

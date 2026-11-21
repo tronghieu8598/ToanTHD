@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-9D2-q056-v4",
+  "original_number": 56,
+  "kind": "mcq",
+  "based_on": "89de0b972d493744dc5c6adff58716dd28da9ae94dc33f7ddea08e4f38fffdb1",
+  "prompt": "Xác suất câu được cá của người thứ nhất là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>5</mn></mrow></semantics></math>; xác suất câu được cá của người thứ hai là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>4</mn></mrow></semantics></math>; xác suất câu được cá của người thứ ba là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>2</mn></mrow></semantics></math>. Xác suất để có hai người câu được cá là bao nhiêu?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>26</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>45</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>34</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>12</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Do biến cố mỗi người câu được cá là độc lập nhau nên \n\t\t<ul><li>Xác suất để người thứ nhất và người thứ hai câu được cá là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>5</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>4</mn><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>16</mn></mrow></semantics></math>.</li><li>Xác suất để người thứ nhất và người thứ ba câu được cá là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>5</mn><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>=</mo><mn>0</mn><mo>,</mo><mn>06</mn></mrow></semantics></math>.</li><li>Xác suất để người thứ hai và người thứ ba câu được cá là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>4</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>=</mo><mn>0</mn><mo>,</mo><mn>04</mn></mrow></semantics></math>.</li></ul>\n\t\tVậy để chỉ có hai người câu được cá thì xác suất là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>16</mn><mo>+</mo><mn>0</mn><mo>,</mo><mn>06</mn><mo>+</mo><mn>0</mn><mo>,</mo><mn>04</mn><mo>=</mo><mn>0</mn><mo>,</mo><mn>26</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

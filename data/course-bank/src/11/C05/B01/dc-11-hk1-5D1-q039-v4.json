@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-5D1-q039-v4",
+  "original_number": 39,
+  "kind": "mcq",
+  "based_on": "7aa67ac4512bbd2e2b747e6ef3abf63956a26d5a6d67184f40d8a64593513cc6",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><msub><mi>u</mi><mi>n</mi></msub><mo>=</mo><mi>a</mi></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><msub><mi>v</mi><mi>n</mi></msub><mo>=</mo><mi>b</mi></mrow></semantics></math>. Mệnh đề nào sau đây là <strong>sai</strong>?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><msub><mi>u</mi><mi>n</mi></msub><msub><mi>v</mi><mi>n</mi></msub></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mi>a</mi><mi>b</mi></mfrac></mrow></semantics></math> với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi><mo>≠</mo><mn>0</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><msqrt><msub><mi>u</mi><mi>n</mi></msub></msqrt><mo>=</mo><msqrt><mi>a</mi></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo>+</mo><msub><mi>v</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>a</mi><mo>+</mo><mi>b</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mi>.</mi><msub><mi>v</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>a</mi><mi>.</mi><mi>b</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Mệnh đề <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><msqrt><msub><mi>u</mi><mi>n</mi></msub></msqrt><mo>=</mo><msqrt><mi>a</mi></msqrt></mrow></semantics></math> sai khi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mn>0</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

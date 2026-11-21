@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-9XS2-q017-v4",
+  "original_number": 17,
+  "kind": "mcq",
+  "based_on": "8803ea59e23ac742608dcd3b21b9749a266bd9858ee17f87a09fc72127a0c34e",
+  "prompt": "Gieo ngẫu nhiên một con xúc sắc cân đối đồng chất hai lần. Tính xác suất để số chấm của hai lần gieo là khác nhau.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>5</mn><mn>6</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>6</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Số phần tử của không gian mẫu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Ω</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>36</mn></mrow></semantics></math>.<br>Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là biến cố ““ số chấm của hai lần gieo là khác nhau””.<br>suy ra, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover></semantics></math> là biến cố ““ số chấm của hai lần gieo như nhau””.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>,</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>,</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>,</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>,</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>5</mn><mo>;</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>,</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>6</mn><mo>;</mo><mn>6</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>, suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>6</mn></mrow></semantics></math>.<br>Do đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>6</mn><mn>36</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>6</mn></mfrac></mrow></semantics></math>.<br>Vậy xác suất để số chấm của hai lần gieo khác nhau là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>6</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>6</mn></mfrac></mrow></semantics></math>.<div class=\"paragraph-gap\"></div>",
+  "accepted_answers": []
+}

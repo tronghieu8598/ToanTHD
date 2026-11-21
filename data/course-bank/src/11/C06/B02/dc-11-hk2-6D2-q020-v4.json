@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D2-q020-v4",
+  "original_number": 20,
+  "kind": "mcq",
+  "based_on": "a057466be492b0b9f72be45353539d74a2c2b260450e606a6ac51c590e3d0a30",
+  "prompt": "Cho các số thực dương <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>b</mi></semantics></math> với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>≠</mo><mn>1</mn></mrow></semantics></math>. Khẳng định nào sau đây là khẳng định đúng?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><msup><mi>a</mi><mn>2</mn></msup></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>a</mi><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>4</mn></mfrac><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><msup><mi>a</mi><mn>2</mn></msup></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>a</mi><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><msup><mi>a</mi><mn>2</mn></msup></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>a</mi><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn><mo>+</mo><mn>2</mn><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><msup><mi>a</mi><mn>2</mn></msup></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>a</mi><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Áp dụng công thức logarit của tích và cơ số lũy thừa: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><msup><mi>a</mi><mn>2</mn></msup></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>a</mi><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><msub><mo>log</mo><mi>a</mi></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>a</mi><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>+</mo><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow></semantics></math>.",
+  "accepted_answers": []
+}

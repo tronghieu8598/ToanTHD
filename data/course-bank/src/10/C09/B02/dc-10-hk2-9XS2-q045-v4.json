@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-9XS2-q045-v4",
+  "original_number": 45,
+  "kind": "mcq",
+  "based_on": "e01f4b09b601e4cc72a34d968da01a8221f7caf05728018f4e03a17d76db1217",
+  "prompt": "Một hộp có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> chiếc thẻ được đánh số từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> đến <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math>. Rút ngẫu nhiên đồng thời hai chiếc thẻ từ hộp. Tính xác suất của biến cố ““ Các số ghi trên hai thẻ đều là số lẻ””.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>3</mn><mn>5</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>2</mn><mn>5</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>3</mn><mn>10</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Không gian mẫu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Ω</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>2</mn></msubsup></mrow></semantics></math>.<br>Gọi biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>:</mo></mrow></semantics></math> ““ Các số ghi trên hai thẻ đều là số lẻ””. <br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>3</mn><mn>2</mn></msubsup></mrow></semantics></math>.<br>Vậy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><msubsup><mi mathvariant=\"normal\">C</mi><mn>3</mn><mn>2</mn></msubsup><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>2</mn></msubsup></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>10</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

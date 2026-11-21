@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-9XS2-q034-v4",
+  "original_number": 34,
+  "kind": "mcq",
+  "based_on": "9ff9ee3a9b1b6b19d3761b6b13417d58de462547b292c7b9f39616d004febb00",
+  "prompt": "Từ một hộp đựng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> quả cầu trắng và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> quả cầu đen, lấy ngẫu nhiên hai quả. Xác suất để lấy được cả hai quả cầu trắng là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>10</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>3</mn><mn>10</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>2</mn><mn>5</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Số phần tử của không gian mẫu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Ω</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>2</mn></msubsup><mo>=</mo><mn>10</mn></mrow></semantics></math>.<br>Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là biến cố ““ lấy được cả hai quả cầu trắng””.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>3</mn><mn>2</mn></msubsup><mo>=</mo><mn>3</mn></mrow></semantics></math>.<br>Vậy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Ω</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>10</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

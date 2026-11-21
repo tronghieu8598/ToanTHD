@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-7H4-q064-v4",
+  "original_number": 64,
+  "kind": "tf",
+  "based_on": "743ec382a1d4e05f46d548af87853224ee7eaef817cef7cb50781e04596cecaf",
+  "prompt": "Các mệnh đề sau đúng hay sai?",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mn>3</mn><mi>x</mi></mrow></semantics></math> có đường chuẩn là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Δ</mi><mo>:</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mn>2</mn><mi>x</mi></mrow></semantics></math> có đường chuẩn là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Δ</mi><mo>:</mo><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mn>3</mn><mi>x</mi></mrow></semantics></math> có tiêu điểm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mn>2</mn><mi>x</mi></mrow></semantics></math> có tiêu điểm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Parabol <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mn>3</mn><mi>x</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>p</mi><mo>=</mo><mn>3</mn><mo>⇒</mo><mi>p</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac></mrow></semantics></math> suy ra phương trình của đường chuẩn là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>p</mi><mn>2</mn></mfrac><mo>⇔</mo><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac></mrow></semantics></math>.</li><li>Parabol <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mn>3</mn><mi>x</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac></mrow></semantics></math> suy ra tiêu điểm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</li><li>Parabol <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mn>2</mn><mi>x</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi><mo>=</mo><mn>1</mn></mrow></semantics></math> suy ra tiêu điểm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</li><li>Parabol <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mn>2</mn><mi>x</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi><mo>=</mo><mn>1</mn></mrow></semantics></math> suy ra phương trình của đường chuẩn là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>p</mi><mn>2</mn></mfrac><mo>⇔</mo><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

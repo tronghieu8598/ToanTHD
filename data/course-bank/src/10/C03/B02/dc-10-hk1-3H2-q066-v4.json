@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-3H2-q066-v4",
+  "original_number": 66,
+  "kind": "mcq",
+  "based_on": "06b8d941541b1d47b56a60f23af649ce6d642af415e883015f4daf5a0866b2f4",
+  "prompt": "<div class=\"with-figure\"><div>Bác An cần đo khoảng cách từ một địa điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> trên bờ hồ đến một địa điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math> ở giữa hồ. Bác sử dụng giác kế để chọn một điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>C</mi></semantics></math> cùng nằm trên bờ với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> sao cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>B</mi><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>30</mn><mo>∘</mo></msup></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>C</mi><mi>B</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>100</mn><mo>∘</mo></msup></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi><mo>=</mo><mn>40</mn></mrow></semantics></math> m. Khoảng cách <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi></mrow></semantics></math> bằng bao nhiêu? (làm tròn kết quả đến hàng phần trăm).<br></div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/840e59cd27c5ed4b024fb8fdae0914ee5c9ce852b07838262afc78ccea1dd1cc.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>62</mn><mo>,</mo><mn>48</mn></mrow></semantics></math> m"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>48</mn><mo>,</mo><mn>47</mn></mrow></semantics></math> m"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>64</mn><mo>,</mo><mn>27</mn></mrow></semantics></math> m"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>51</mn><mo>,</mo><mn>42</mn></mrow></semantics></math> m"
+    }
+  ],
+  "correct": "D",
+  "solution": "Trong tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>B</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><mover><mi>A</mi><mo accent=\"true\">̂</mo></mover><mo>−</mo><mover><mi>C</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><msup><mn>30</mn><mo>∘</mo></msup><mo>−</mo><msup><mn>100</mn><mo>∘</mo></msup><mo>=</mo><msup><mn>50</mn><mo>∘</mo></msup></mrow></semantics></math>.<br>Theo định lí sin ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mi>A</mi><mi>B</mi></mrow><mrow><mo>sin</mo><mi>C</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>A</mi><mi>C</mi></mrow><mrow><mo>sin</mo><mi>B</mi></mrow></mfrac><mo>⇔</mo><mi>A</mi><mi>B</mi><mo>=</mo><mo>sin</mo><mi>C</mi><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mi>A</mi><mi>C</mi></mrow><mrow><mo>sin</mo><mi>B</mi></mrow></mfrac><mo>=</mo><mo>sin</mo><msup><mn>100</mn><mo>∘</mo></msup><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>40</mn><mrow><mo>sin</mo><msup><mn>50</mn><mo>∘</mo></msup></mrow></mfrac><mo>≈</mo><mn>51</mn><mo>,</mo><mn>42</mn><mi>.</mi></mrow></semantics></math></div>\n\t\tVậy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>≈</mo><mn>51</mn><mo>,</mo><mn>42</mn></mrow></semantics></math> m.",
+  "accepted_answers": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-9XS2-q064-v4",
+  "original_number": 64,
+  "kind": "tf",
+  "based_on": "92af259dcc5996b3d1add1a139434567ab88bcd015afb8853352d0e74bf2a10d",
+  "prompt": "Cho tập hợp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo>;</mo><mn>3</mn><mo>;</mo><mn>4</mn><mo>;</mo><mn>5</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> chọn ngẫu nhiên cùng lúc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> chữ số. Xác suất để chọn được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> số lẻ là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>3</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> chọn ngẫu nhiên cùng lúc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> số. Xác suất để chọn được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> số có tích là số chẵn là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>6</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> lập được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>62</mn></semantics></math> số có ba chữ số khác nhau"
+    },
+    {
+      "key": "d",
+      "text": "Từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> lập được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>120</mn></semantics></math> số có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> chữ số khác nhau"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> lập được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mi>!</mi><mo>=</mo><mn>120</mn></mrow></semantics></math> số có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> chữ số khác nhau.</li><li>Từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> lập được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">A</mi><mn>5</mn><mn>3</mn></msubsup><mo>=</mo><mn>60</mn></mrow></semantics></math> số có ba chữ số khác nhau.</li><li>Từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> chọn ngẫu nhiên cùng lúc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> chữ số. Xác suất để chọn được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> số lẻ là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mo>=</mo><mfrac displaystyle=\"true\"><msubsup><mi mathvariant=\"normal\">C</mi><mn>3</mn><mn>2</mn></msubsup><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>2</mn></msubsup></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>3</mn></mrow></semantics></math>.</li><li>Từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> chọn ngẫu nhiên cùng lúc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> số. Xác suất để chọn được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> số có tích là số chẵn là\n\t\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mo>=</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><msubsup><mi mathvariant=\"normal\">C</mi><mn>3</mn><mn>2</mn></msubsup><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>2</mn></msubsup></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>7</mn><mi>.</mi></mrow></semantics></math></div></li></ol>",
+  "accepted_answers": []
+}

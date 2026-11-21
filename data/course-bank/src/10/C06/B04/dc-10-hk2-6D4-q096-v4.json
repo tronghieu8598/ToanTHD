@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-6D4-q096-v4",
+  "original_number": 96,
+  "kind": "tf",
+  "based_on": "5218ff6748a5da83e858616e269d47927bf20eadef8dac9cd0a8a40ea1d733ec",
+  "prompt": "Phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msqrt><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mn>2</mn></mrow></msqrt><mo>=</mo><mi>x</mi></mrow></semantics></math> (1).",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Phương trình (1) có hai nghiệm phân biệt dương"
+    },
+    {
+      "key": "b",
+      "text": "Tổng các nghiệm của phương trình (1) bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Tích các nghiệm của phương trình (1) bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Phương trình (1) có nghiệm duy nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    true,
+    false
+  ],
+  "solution": "Ta có\n\t\t<ol class=\"alpha-list\"><li>Đúng. \t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msqrt><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mn>2</mn></mrow></msqrt><mo>=</mo><mi>x</mi><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>≥</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mn>3</mn><mi>x</mi><mo>−</mo><mn>2</mn><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mtd></mtr></mtable></mrow><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>≥</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mo>=</mo><mn>0</mn></mtd></mtr></mtable></mrow><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>≥</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>2</mn><mi>.</mi></mtd></mtr></mtable></mrow></mtd></mtr></mtable></mrow></mrow></semantics></math></div>\n\t\t\tVậy phương trình có hai nghiệm phân biệt <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>.</li><li>Sai. Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>=</mo><mn>3</mn></mrow></semantics></math>.</li><li>Đúng. Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>⋅</mo><mn>2</mn><mo>=</mo><mn>2</mn></mrow></semantics></math>.</li><li>Sai. Vì phương trình có hai nghiệm phân biệt <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

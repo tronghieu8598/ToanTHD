@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-4H2-q050-v4",
+  "original_number": 50,
+  "kind": "mcq",
+  "based_on": "79b17dc1e4f62f82ebc39705f9866a5917ceb3c5c3f9e0e22cf13a4a9cb5ff94",
+  "prompt": "Cho tứ diện <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math>. Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>I</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>J</mi></semantics></math> lần lượt là trọng tâm của tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>D</mi></mrow></semantics></math>. Chọn khẳng định đúng trong các khẳng định sau",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>I</mi><mi>J</mi></mrow></semantics></math> song song với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>I</mi><mi>J</mi></mrow></semantics></math> song song với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mi>D</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>I</mi><mi>J</mi></mrow></semantics></math> cắt <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>I</mi><mi>J</mi></mrow></semantics></math> chéo <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mi>D</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "<div class=\"with-figure\"><div>Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>M</mi></semantics></math> là trung điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi></mrow></semantics></math>.<br>Xét <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>△</mi><mi>M</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mfrac displaystyle=\"true\"><mrow><mi>M</mi><mi>I</mi></mrow><mrow><mi>M</mi><mi>C</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mrow><mspace width=\"0.333em\"/><mtext mathvariant=\"normal\"> (vì </mtext><mspace width=\"0.333em\"/></mrow><mi>I</mi><mrow><mspace width=\"0.333em\"/><mtext mathvariant=\"normal\"> là trọng tâm của </mtext><mspace width=\"0.333em\"/></mrow><mi>△</mi><mi>A</mi><mi>B</mi><mi>C</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mfrac displaystyle=\"true\"><mrow><mi>M</mi><mi>J</mi></mrow><mrow><mi>M</mi><mi>D</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mrow><mspace width=\"0.333em\"/><mtext mathvariant=\"normal\"> (vì </mtext><mspace width=\"0.333em\"/></mrow><mi>J</mi><mrow><mspace width=\"0.333em\"/><mtext mathvariant=\"normal\"> là trọng tâm của </mtext><mspace width=\"0.333em\"/></mrow><mi>△</mi><mi>A</mi><mi>B</mi><mi>D</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mtd></mtr></mtable></mrow><mo>⇒</mo><mfrac displaystyle=\"true\"><mrow><mi>M</mi><mi>I</mi></mrow><mrow><mi>M</mi><mi>C</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>M</mi><mi>J</mi></mrow><mrow><mi>M</mi><mi>D</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></mrow></semantics></math>.<br>Theo định lý Thales đảo, ta suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>I</mi><mi>J</mi><mo>∥</mo><mi>C</mi><mi>D</mi></mrow></semantics></math>.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/b8efeeacf1f652af03bbcb6d6f2404acd354e52acddf897d2c13797f0b78cd53.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-1D4-q092-v4",
+  "original_number": 92,
+  "kind": "tf",
+  "based_on": "2ee2be40a9b683c13fac795d4dcd7bba74fd96ae6a8c82d8e7d28d0305868f60",
+  "prompt": "Cho phương trình lượng giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><msqrt><mn>2</mn></msqrt><mn>2</mn></mfrac></mrow></semantics></math>  (1).",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> tương đương với phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>x</mi><mo>=</mo><mo>cos</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> có nghiệm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mi>π</mi></mrow><mn>4</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi></mrow></semantics></math> với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Phương trình có nghiệm âm lớn nhất là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>7</mn><mi>π</mi></mrow><mn>4</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Tổng các nghiệm của phương trình trong khoảng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>3</mn><mi>π</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>17</mn><mi>π</mi></mrow><mn>4</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    false
+  ],
+  "solution": "Ta có \n\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><msqrt><mn>2</mn></msqrt><mn>2</mn></mfrac><mo>⇔</mo><mo>cos</mo><mi>x</mi><mo>=</mo><mo>cos</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mfrac displaystyle=\"false\"><mi>π</mi><mn>4</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"false\"><mi>π</mi><mn>4</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi></mtd></mtr></mtable></mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>.</mi></mrow></semantics></math>\n\t\t<ol class=\"alpha-list\"><li>Phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> tương đương với phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>x</mi><mo>=</mo><mo>cos</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac></mrow></semantics></math>.</li><li>Phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> có nghiệm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi></mrow></semantics></math> với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>.</li><li>Phương trình có nghiệm âm lớn nhất là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac></mrow></semantics></math>.</li><li>Trong khoảng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>3</mn><mi>π</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, phương trình có các nghiệm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>9</mn><mi>π</mi></mrow><mn>4</mn></mfrac></semantics></math> nên tổng các nghiệm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>9</mn><mi>π</mi></mrow><mn>4</mn></mfrac></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

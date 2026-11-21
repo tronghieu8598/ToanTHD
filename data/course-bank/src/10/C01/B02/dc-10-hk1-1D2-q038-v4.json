@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-1D2-q038-v4",
+  "original_number": 38,
+  "kind": "mcq",
+  "based_on": "74ba9774237b4e59f3d2dcc53430ccb06f06b00f2e5ddfb86bdb1f99da5b3ba9",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mi>x</mi><mo>∈</mo><mi>ℝ</mi><mo>∣</mo><mi>x</mi><mo>≤</mo><mo>−</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></mrow></semantics></math>\tvà <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mi>x</mi><mo>∈</mo><mi>ℝ</mi><mo>∣</mo><mo>−</mo><mn>3</mn><mo>&lt;</mo><mi>x</mi><mo>≤</mo><mn>10</mn><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></mrow></semantics></math>. Khi đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow></semantics></math> bằng?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mn>10</mn><mo stretchy=\"false\" form=\"postfix\">]</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>3</mn><mo>;</mo><mn>10</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>⌀</mi></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mo>−</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mo>−</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mo>−</mo><mn>3</mn><mo>;</mo><mn>10</mn><mo stretchy=\"false\" form=\"postfix\">]</mo></mrow></semantics></math>.<br>Khi đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mn>10</mn><mo stretchy=\"false\" form=\"postfix\">]</mo></mrow></semantics></math>.",
+  "accepted_answers": []
+}

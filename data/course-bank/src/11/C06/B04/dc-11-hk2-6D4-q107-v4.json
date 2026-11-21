@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk2-6D4-q107-v4",
+  "original_number": 107,
+  "kind": "tf",
+  "based_on": "82441d23b8f3f574e6bec63bb3b1a2502ed32cc2b38cbff041b086d0d8af1cf1",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>b</mi></semantics></math> là hai số thực dương và biểu thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mn>3</mn><msub><mo>log</mo><mn>2</mn></msub><mi>a</mi><mo>+</mo><msub><mo>log</mo><mn>2</mn></msub><mi>b</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Nếu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>a</mi><mn>3</mn></msup><mi>b</mi><mo>=</mo><mn>8</mn></mrow></semantics></math> thì giá trị của biểu thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Nếu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> thì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mn>6</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Biểu thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><msub><mo>log</mo><mn>2</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>a</mi><mn>3</mn></msup><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Nghiệm của phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mn>2</mn></msub><mi>x</mi><mo>=</mo><mn>2</mn><mi>A</mi></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><msup><mi>a</mi><mn>3</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    true,
+    false
+  ],
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mn>3</mn><msub><mo>log</mo><mn>2</mn></msub><mi>a</mi><mo>+</mo><msub><mo>log</mo><mn>2</mn></msub><mi>b</mi><mo>=</mo><msub><mo>log</mo><mn>2</mn></msub><msup><mi>a</mi><mn>3</mn></msup><mo>+</mo><msub><mo>log</mo><mn>2</mn></msub><mi>b</mi><mo>=</mo><msub><mo>log</mo><mn>2</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>a</mi><mn>3</mn></msup><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.\n\t\t<ol class=\"alpha-list\"><li>Với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><msub><mo>log</mo><mn>2</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>4</mn><mn>3</mn></msup><mo>⋅</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>7</mn></mrow></semantics></math>.</li><li>Biểu thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><msub><mo>log</mo><mn>2</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>a</mi><mn>3</mn></msup><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</li><li>Nếu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>a</mi><mn>3</mn></msup><mi>b</mi><mo>=</mo><mn>8</mn></mrow></semantics></math> thì giá trị của biểu thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><msub><mo>log</mo><mn>28</mn></msub><mo>=</mo><mn>3</mn></mrow></semantics></math></li><li>Điều kiện <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>. Ta có\n\t\t\t\n\t\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"><msub><mo>log</mo><mn>2</mn></msub><mi>x</mi><mo>=</mo><mn>2</mn><mi>A</mi></mtd><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇔</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><msub><mo>log</mo><mn>2</mn></msub><mi>x</mi><mo>=</mo><mn>2</mn><msub><mo>log</mo><mn>2</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>a</mi><mn>3</mn></msup><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇔</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><msub><mo>log</mo><mn>2</mn></msub><mi>x</mi><mo>=</mo><msub><mo>log</mo><mn>2</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>a</mi><mn>6</mn></msup><msup><mi>b</mi><mn>2</mn></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇔</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mi>x</mi><mo>=</mo><msup><mi>a</mi><mn>6</mn></msup><msup><mi>b</mi><mn>2</mn></msup><mi>.</mi></mtd></mtr></mtable></semantics></math></div></li></ol>",
+  "accepted_answers": []
+}

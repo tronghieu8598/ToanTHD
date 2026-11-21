@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-7D2-q029-v4",
+  "original_number": 29,
+  "kind": "mcq",
+  "based_on": "5ca60d15111fb2c57f5a5dc8ff10ad4544b26994cd885150a8d9a93045da029a",
+  "prompt": "Tính đạo hàm của hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>m</mi><mo>−</mo><mi>n</mi><mi>x</mi></mrow><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math> với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></semantics></math> là tham số.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mi>m</mi><mo>−</mo><mi>n</mi></mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mi>n</mi><mo>−</mo><mn>3</mn><mi>m</mi></mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mi>m</mi><mo>+</mo><mn>3</mn><mi>n</mi></mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mi>m</mi><mo>−</mo><mn>3</mn><mi>n</mi></mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mi>n</mi><mi>x</mi><mo>+</mo><mi>m</mi></mrow><mrow><mn>3</mn><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>n</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>−</mo><mn>3</mn><mi>m</mi></mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>n</mi><mo>−</mo><mn>3</mn><mi>m</mi></mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></mfrac><mi>.</mi></mrow></semantics></math>",
+  "accepted_answers": []
+}

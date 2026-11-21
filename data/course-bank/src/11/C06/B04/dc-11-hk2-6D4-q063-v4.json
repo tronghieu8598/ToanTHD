@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D4-q063-v4",
+  "original_number": 63,
+  "kind": "mcq",
+  "based_on": "9daa77680d56b15f4dde20df0476c5b550949236d9ea2f10941c704e5739d923",
+  "prompt": "Tổng tất cả các nghiệm của phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mn>2</mn></msub><mi>x</mi><mo>+</mo><mn>2</mn><msub><mo>log</mo><mn>7</mn></msub><mi>x</mi><mo>=</mo><mn>2</mn><mo>+</mo><msub><mo>log</mo><mn>2</mn></msub><mi>x</mi><mo>⋅</mo><msub><mo>log</mo><mn>7</mn></msub><mi>x</mi></mrow></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>13</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>11</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>15</mn></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Điều kiện <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>, ta có\n\t\t\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msub><mo>log</mo><mn>2</mn></msub><mi>x</mi><mo>+</mo><mn>2</mn><msub><mo>log</mo><mn>7</mn></msub><mi>x</mi><mo>=</mo><mn>2</mn><mo>+</mo><msub><mo>log</mo><mn>2</mn></msub><mi>x</mi><mo>⋅</mo><msub><mo>log</mo><mn>7</mn></msub><mi>x</mi></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇔</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><msub><mo>log</mo><mn>2</mn></msub><mi>x</mi><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mo>log</mo><mn>7</mn></msub><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>−</mo><mn>2</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mo>log</mo><mn>7</mn></msub><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇔</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msub><mo>log</mo><mn>7</mn></msub><mi>x</mi><mo>=</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msub><mo>log</mo><mn>2</mn></msub><mi>x</mi><mo>=</mo><mn>2</mn></mtd></mtr></mtable></mrow></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇔</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>7</mn><mrow><mspace width=\"0.333em\"/><mtext mathvariant=\"normal\"> (thỏa mãn)</mtext></mrow></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>4</mn><mrow><mspace width=\"0.333em\"/><mtext mathvariant=\"normal\"> (thỏa mãn)</mtext></mrow><mi>.</mi></mtd></mtr></mtable></mrow></mtd></mtr></mtable></semantics></math></div>\n\t\tVậy tổng tất cả các nghiệm của phương trình đã cho là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>11</mn></semantics></math>.",
+  "accepted_answers": []
+}

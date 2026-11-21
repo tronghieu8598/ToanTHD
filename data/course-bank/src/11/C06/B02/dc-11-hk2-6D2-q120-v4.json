@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk2-6D2-q120-v4",
+  "original_number": 120,
+  "kind": "short",
+  "based_on": "8f17b3fb0ef10418949c8c813eb91964520ac617862297bdc278d3ef3d74dad2",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi><mo>=</mo><mn>3</mn></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>a</mi></msub><mi>c</mi><mo>=</mo><mn>5</mn></mrow></semantics></math>. Tính <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Q</mi><mo>=</mo><msub><mo>log</mo><mi>a</mi></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>b</mi><mn>4</mn></msup><msup><mi>c</mi><mn>3</mn></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.\n\t<div class=\"paragraph-gap\"></div>",
+  "choices": [],
+  "correct": "27",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Q</mi><mo>=</mo><msub><mo>log</mo><mi>a</mi></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>b</mi><mn>4</mn></msup><msup><mi>c</mi><mn>3</mn></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msub><mo>log</mo><mi>a</mi></msub><msup><mi>b</mi><mn>4</mn></msup><mo>+</mo><msub><mo>log</mo><mi>a</mi></msub><msup><mi>c</mi><mn>3</mn></msup><mo>=</mo><mn>4</mn><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi><mo>+</mo><mn>3</mn><msub><mo>log</mo><mi>a</mi></msub><mi>c</mi><mo>=</mo><mn>4</mn><mo>⋅</mo><mn>3</mn><mo>+</mo><mn>3</mn><mo>⋅</mo><mn>5</mn><mo>=</mo><mn>27</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

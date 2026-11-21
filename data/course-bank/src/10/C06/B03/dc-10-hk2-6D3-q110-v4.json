@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-6D3-q110-v4",
+  "original_number": 110,
+  "kind": "tf",
+  "based_on": "f659acc22c824266f795f325428482dc6c820ea42681ab21588c6383ae73ceaf",
+  "prompt": "Một tấm sắt hình chữ nhật có chu vi là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>96</mn></semantics></math> cm. Người ta cắt mỗi góc tấm sắt một hình vuông cạnh là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> cm.\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/b20e76f1ace8ee3e7220a7a5a10ae47044429d4bfe51061ce505c13c96ba586e.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Diện tích phần cắt đi là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mo>⋅</mo><msup><mn>4</mn><mn>2</mn></msup></mrow></semantics></math> (cm<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi/><mn>2</mn></msup></semantics></math>)"
+    },
+    {
+      "key": "b",
+      "text": "Gọi chiều dài của tấm sắt là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> (cm) thì chiều rộng của tấm sắt là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>96</mn><mo>−</mo><mi>x</mi></mrow></semantics></math> (cm)"
+    },
+    {
+      "key": "c",
+      "text": "Diện tích phần còn lại của tấm sắt là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>48</mn><mi>x</mi><mo>−</mo><mn>64</mn></mrow></semantics></math> (cm<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi/><mn>2</mn></msup></semantics></math>)"
+    },
+    {
+      "key": "d",
+      "text": "Diện tích phần còn lại của tấm sắt ít nhất bằng 448 (cm<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi/><mn>2</mn></msup></semantics></math>) khi và chỉ khi chiều dài của tấm sắt nằm trong đoạn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>16</mn><mo>;</mo><mn>32</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    true,
+    false
+  ],
+  "solution": "<div class=\"paragraph-gap\"></div>\t\t<ol class=\"alpha-list\"><li>Đúng. Người ta cắt ở mỗi góc của tấm sắt của một hình vuông cạnh bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math>(cm) nên diện tích phần cắt đi là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mo>⋅</mo><mn>4</mn><mo>⋅</mo><mn>4</mn><mo>=</mo><mn>64</mn></mrow></semantics></math> (cm<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi/><mn>2</mn></msup></semantics></math>).</li><li>Sai. Theo bài ra ta có nửa chu vi của tấm sắt là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>96</mn><mo>:</mo><mn>2</mn><mo>=</mo><mn>48</mn></mrow></semantics></math> (cm).<br>Gọi chiều dài của tấm sắt là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math>(cm). Khi đó chiều rộng của tấm sắt là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>48</mn><mo>−</mo><mi>x</mi></mrow></semantics></math> (cm).</li><li>Đúng. Do chiều dài lớn hơn chiều rộng nên ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>48</mn><mo>−</mo><mi>x</mi><mo>⇔</mo><mi>x</mi><mo>&gt;</mo><mn>24</mn></mrow></semantics></math> (cm).<br>Diện tích của tấm sắt ban đầu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>48</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> (cm<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi/><mn>2</mn></msup></semantics></math>).<br>Diện tích phần còn lại của tấm sắt là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>48</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>−</mo><mn>64</mn><mo>=</mo><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>48</mn><mi>x</mi><mo>−</mo><mn>64</mn></mrow></semantics></math> (cm<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi/><mn>2</mn></msup></semantics></math>).</li><li>Sai. Vì diện tích phần còn lại của tấm sắt ít nhất bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>448</mn></semantics></math> (cm<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi/><mn>2</mn></msup></semantics></math>) nên ta có <div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>48</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>−</mo><mn>64</mn><mo>≥</mo><mn>448</mn><mo>⇔</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>48</mn><mi>x</mi><mo>+</mo><mn>512</mn><mo>≤</mo><mn>0</mn><mo>⇔</mo><mn>16</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>32</mn><mi>.</mi></mrow></semantics></math></div> \n\t\t\tKết hợp với điều kiện ở lời giải ý <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>b</mi></semantics></math> ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>∈</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>24</mn><mo>;</mo><mn>32</mn><mo stretchy=\"false\" form=\"postfix\">]</mo></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk2-7D2-q179-v4",
+  "original_number": 179,
+  "kind": "tf",
+  "based_on": "9874563aceaebd7960cd3780efaf82c814cf30eebe92d38ee4cfcc92c100cfd8",
+  "prompt": "Cho đồ thị hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>:</mo><mi>y</mi><mo>=</mo><mo>−</mo><mn>2</mn><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn></mrow></semantics></math>. Biết rằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>Δ</mi></semantics></math> là tiếp tuyến của đồ thị <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> tại điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>. Xét tính Đ/S các khẳng định sau:",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Hệ số góc của tiếp tuyến là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>6</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Tiếp tuyến <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>Δ</mi></semantics></math> cắt trục hoành tại điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>N</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Tiếp tuyến <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>Δ</mi></semantics></math> cắt trục tung tại điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mo>−</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Phương trình tiếp tuyến của đồ thị <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Δ</mi><mo>:</mo><mi>y</mi><mo>=</mo><mo>−</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>8</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "solution": "Ta có: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mo>−</mo><mn>8</mn><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>2</mn><mi>x</mi><mo>⇒</mo><mi>y</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>6</mn></mrow></semantics></math>.<br>Vậy phương trình tiếp tuyến của đồ thị hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mn>2</mn><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn></mrow></semantics></math> tại điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> là \n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Δ</mi><mo>:</mo><mi>y</mi><mo>=</mo><mo>−</mo><mn>6</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mn>2</mn><mo>⇔</mo><mi>y</mi><mo>=</mo><mo>−</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>8</mn><mi>.</mi></mrow></semantics></math></div>\n\t\t<ol class=\"alpha-list\"><li>Đúng vì phương trình tiếp tuyến của đồ thị <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Δ</mi><mo>:</mo><mi>y</mi><mo>=</mo><mo>−</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>8</mn></mrow></semantics></math>.</li><li>Đúng vì hệ số góc của tiếp tuyến <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>6</mn></mrow></semantics></math>.</li><li>Sai vì thay <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mo>−</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> vào <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>Δ</mi></semantics></math> ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>8</mn><mo>=</mo><mo>−</mo><mn>6</mn><mo>⋅</mo><mn>0</mn><mo>+</mo><mn>8</mn></mrow></semantics></math> (vô lí).</li><li>Sai vì thay <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>N</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> vào <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>Δ</mi></semantics></math> ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>=</mo><mo>−</mo><mn>6</mn><mo>⋅</mo><mn>1</mn><mo>+</mo><mn>8</mn></mrow></semantics></math> (vô lí).</li></ol>",
+  "accepted_answers": []
+}

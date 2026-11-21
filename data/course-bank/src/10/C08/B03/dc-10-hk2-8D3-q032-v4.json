@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-8D3-q032-v4",
+  "original_number": 32,
+  "kind": "mcq",
+  "based_on": "0202a926885afd53de0aa5fe506172706e09720837220847ab8d8240a7a69db6",
+  "prompt": "Khai triển nhị thức Newton của biểu thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>5</mn></msup></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>5</mn></msup><mo>=</mo><msup><mi>x</mi><mn>5</mn></msup><mo>−</mo><mn>5</mn><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><mn>10</mn><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>10</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>−</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>5</mn></msup><mo>=</mo><mn>1</mn><mo>−</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>10</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>10</mn><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>5</mn><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>x</mi><mn>5</mn></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>5</mn></msup><mo>=</mo><mo>−</mo><mn>1</mn><mo>+</mo><mn>5</mn><mi>x</mi><mo>−</mo><mn>10</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>10</mn><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>5</mn><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>x</mi><mn>5</mn></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>5</mn></msup><mo>=</mo><mo>−</mo><msup><mi>x</mi><mn>5</mn></msup><mo>+</mo><mn>5</mn><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>10</mn><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>10</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Theo công thức khai triển nhị thức Newton, ta có \n\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>5</mn></msup><mo>=</mo><mo>−</mo><msup><mi>x</mi><mn>5</mn></msup><mo>+</mo><mn>5</mn><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>10</mn><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>10</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

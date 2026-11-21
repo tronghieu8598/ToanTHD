@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-1D1-q057-v4",
+  "original_number": 57,
+  "kind": "mcq",
+  "based_on": "d2c9d88a4ce13b231309d11fda5b41f2805a4230ad4cbf42c278a9f27126d4c1",
+  "prompt": "Biết <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>C</mi></semantics></math> là các góc của tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math>, khi đó:",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>C</mi><mo>=</mo><mo>−</mo><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cot</mo><mi>C</mi><mo>=</mo><mo>−</mo><mo>cot</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mi>C</mi><mo>=</mo><mo>tan</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>C</mi><mo>=</mo><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>A</mi><mo accent=\"true\">̂</mo></mover><mo>+</mo><mover><mi>B</mi><mo accent=\"true\">̂</mo></mover><mo>+</mo><mover><mi>C</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>⇔</mo><mover><mi>C</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>A</mi><mo accent=\"true\">̂</mo></mover><mo>+</mo><mover><mi>B</mi><mo accent=\"true\">̂</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.\n\t\tSuy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cot</mo><mi>C</mi><mo>=</mo><mo>cot</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mo>cot</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo>+</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.",
+  "accepted_answers": []
+}

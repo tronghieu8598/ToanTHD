@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-1D1-q062-v4",
+  "original_number": 62,
+  "kind": "tf",
+  "based_on": "4a9f4ecbc44c0f660608cf9b7b84518cbd0887197d0b40b733a2fc9fce343331",
+  "prompt": "<div class=\"with-figure\"><div>Cho góc hình học <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mi>O</mi><mi>y</mi></mrow></semantics></math> có số đo <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>80</mn><mo>∘</mo></msup></semantics></math> (tham khảo hình vẽ). Các mệnh đề sau đúng hay sai?</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/df66dcea39ce5afc810183a826420432c12c5eae8e95f3a37865b1210c4ff10a.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "choices": [
+    {
+      "key": "a",
+      "text": "sđ<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>O</mi><mi>x</mi><mo>,</mo><mi>O</mi><mi>y</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mn>80</mn><mo>∘</mo></msup><mo>+</mo><mi>k</mi><msup><mn>360</mn><mo>∘</mo></msup><mspace width=\"0.167em\"/><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "sđ<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>O</mi><mi>y</mi><mo>,</mo><mi>O</mi><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><msup><mn>80</mn><mo>∘</mo></msup><mo>+</mo><mi>k</mi><msup><mn>360</mn><mo>∘</mo></msup><mspace width=\"0.167em\"/><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "sđ<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>O</mi><mi>x</mi><mo>,</mo><mi>O</mi><mi>y</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mn>100</mn><mo>∘</mo></msup><mo>+</mo><mi>k</mi><msup><mn>360</mn><mo>∘</mo></msup><mspace width=\"0.167em\"/><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "sđ<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>O</mi><mi>y</mi><mo>,</mo><mi>O</mi><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mn>100</mn><mo>∘</mo></msup><mo>+</mo><mi>k</mi><msup><mn>360</mn><mo>∘</mo></msup><mspace width=\"0.167em\"/><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "solution": "<ul><li>Các góc lượng giác tia đầu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>O</mi><mi>x</mi></mrow></semantics></math>, tia cuối <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>O</mi><mi>y</mi></mrow></semantics></math> có số đo là sđ<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>O</mi><mi>x</mi><mo>,</mo><mi>O</mi><mi>y</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mn>80</mn><mo>∘</mo></msup><mo>+</mo><mi>k</mi><msup><mn>360</mn><mo>∘</mo></msup><mspace width=\"0.167em\"/><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</li><li>Các góc lượng giác tia đầu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>O</mi><mi>y</mi></mrow></semantics></math>, tia cuối <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>O</mi><mi>x</mi></mrow></semantics></math> có số đo là sđ<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>O</mi><mi>x</mi><mo>,</mo><mi>O</mi><mi>y</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><msup><mn>80</mn><mo>∘</mo></msup><mo>+</mo><mi>k</mi><msup><mn>360</mn><mo>∘</mo></msup><mspace width=\"0.167em\"/><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</li></ul>",
+  "accepted_answers": []
+}

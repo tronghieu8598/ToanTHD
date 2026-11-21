@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-7D2-q036-v4",
+  "original_number": 36,
+  "kind": "mcq",
+  "based_on": "90a096637e1950b044f7b1f01e3e7af1a871feddd320b78d989d7935ccfc45b1",
+  "prompt": "Đạo hàm cấp hai của hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>4</mn><mn>5</mn></mfrac><msup><mi>x</mi><mn>5</mn></msup><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi><mo>+</mo><mn>4</mn></mrow></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>16</mn><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>6</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>6</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>16</mn><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>6</mn><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>6</mn><mi>x</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>4</mn><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>6</mn><mi>x</mi><mo>−</mo><mn>1</mn><mo>,</mo></mrow></semantics></math> <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mi>″</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>16</mn><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>6</mn><mi>.</mi></mrow></semantics></math>",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-4H4-q041-v4",
+  "original_number": 41,
+  "kind": "mcq",
+  "based_on": "3108d7b7f6b747c1cd0e27c867907e2c81e41af395ca0c556ed92e6ab38a0ade",
+  "prompt": "Cho hình hộp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mi>.</mi><mi>A</mi><mi>′</mi><mi>B</mi><mi>′</mi><mi>C</mi><mi>′</mi><mi>D</mi><mi>′</mi></mrow></semantics></math>. \n<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/73854f7c3ea7c1391002d64e09e9e5e3bc97e024e254743f2a76db380f5c6b4d.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\nMệnh đề nào sau đây <strong>sai</strong>?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mi>B</mi><mi>′</mi><mi>A</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>∥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mi>D</mi><mi>D</mi><mi>′</mi><mi>C</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mi>C</mi><mi>C</mi><mi>′</mi><mi>B</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>∥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>D</mi><mi>D</mi><mi>′</mi><mi>A</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>C</mi><mi>C</mi><mi>′</mi><mi>A</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>∥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mi>B</mi><mi>′</mi><mi>D</mi><mi>′</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>∥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>′</mi><mi>B</mi><mi>′</mi><mi>C</mi><mi>′</mi><mi>D</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "<div class=\"with-figure\"><div>Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>O</mi><mo>=</mo><mi>A</mi><mi>C</mi><mo>∩</mo><mi>B</mi><mi>D</mi></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>O</mi><mi>′</mi><mo>=</mo><mi>A</mi><mi>′</mi><mi>C</mi><mi>′</mi><mo>∩</mo><mi>B</mi><mi>′</mi><mi>D</mi><mi>′</mi></mrow></semantics></math>.<br>Do đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>C</mi><mi>C</mi><mi>′</mi><mi>A</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>∩</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mi>B</mi><mi>′</mi><mi>D</mi><mi>′</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>O</mi><mi>O</mi><mi>′</mi></mrow></semantics></math>.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/5b0bb3e205665ef5f1c16f50b77e3c7e5033e4edcb4e6d40b28a15ed978eefb5.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "dc-10-hk2-9XS1-q015-v4",
+  "original_number": 15,
+  "kind": "free",
+  "based_on": "fb786917db8b5cc181797a3e8b944703ee0f93d2b99187548c9f1bb4b310337b",
+  "prompt": "Mật khẩu để kích hoạt một thiết bị là một dãy gồm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> kí tự, mỗi kí tự có thể là một trong <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> chữ cái <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi><mo>,</mo><mi>C</mi><mo>,</mo><mi>D</mi></mrow></semantics></math> hoặc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> chữ số từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>0</mn></semantics></math> đến <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>9</mn></semantics></math>. Hà chọn ngẫu nhiên một mật khẩu theo quy tắc trên. Tính số các kết quả thuận lợi cho biến cố\n\t<ol class=\"alpha-list\"><li>““ Mật khẩu được chọn chỉ gồm số””.</li><li>““ Mật khẩu được chọn có số và chữ cái xếp xen kẽ nhau””.</li><li>““ Mật khẩu được chọn có chứa đúng một chữ cái””.</li></ol>",
+  "choices": [],
+  "correct": null,
+  "solution": "<ol class=\"alpha-list\"><li>Số kết quả thuận lợi cho biến cố ““ Mật khẩu được chọn chỉ gồm số”” là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>10</mn><mn>6</mn></msup></semantics></math>.</li><li>Số kết quả thuận lợi cho biến cố ““ Mật khẩu được chọn có số và chữ cái xếp xen kẽ nhau”” là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>⋅</mo><msup><mn>40</mn><mn>3</mn></msup></mrow></semantics></math>.</li><li>Số kết quả thuận lợi cho biến cố ““ Mật khẩu được chọn có chứa đúng một chữ cái”” là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>24</mn><mo>⋅</mo><msup><mn>10</mn><mn>5</mn></msup></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

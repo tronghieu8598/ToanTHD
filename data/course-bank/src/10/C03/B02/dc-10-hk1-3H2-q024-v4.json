@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-3H2-q024-v4",
+  "original_number": 24,
+  "kind": "mcq",
+  "based_on": "e5f00c017b99a06052fa2f63173db617db661e81e368ad479bae6b3ecd7b6c21",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mn>9</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi><mo>=</mo><mn>8</mn></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>B</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>120</mn><mo>∘</mo></msup></mrow></semantics></math>. Tính độ dài <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msqrt><mn>113</mn></msqrt></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msqrt><mn>217</mn></msqrt></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msqrt><mn>73</mn></msqrt></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Áp dụng định lý cos trong tam giác ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><msup><mi>C</mi><mn>2</mn></msup><mo>=</mo><mi>A</mi><msup><mi>B</mi><mn>2</mn></msup><mo>+</mo><mi>B</mi><msup><mi>C</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mo>⋅</mo><mi>A</mi><mi>B</mi><mo>⋅</mo><mi>B</mi><mi>C</mi><mo>⋅</mo><mo>cos</mo><mover><mi>B</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>9</mn><mn>2</mn></msup><mo>+</mo><msup><mn>8</mn><mn>2</mn></msup><mo>−</mo><mn>2</mn><mo>⋅</mo><mn>9</mn><mo>⋅</mo><mn>8</mn><mo>⋅</mo><mo>cos</mo><msup><mn>120</mn><mo>∘</mo></msup><mo>=</mo><mn>217</mn><mo>⇔</mo><mi>A</mi><mi>C</mi><mo>=</mo><msqrt><mrow><mn>217</mn><mi>.</mi></mrow></msqrt></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk2-6D4-q110-v4",
+  "original_number": 110,
+  "kind": "tf",
+  "based_on": "6eb51d59dd235067474443ea3f1ad6ab9656fb0d40677735ec1415503c1fe694",
+  "prompt": "Cho số hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mn>5</mn><mi>x</mi></msup></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Hàm số đã cho đồng biến trên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>ℝ</mi></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Bất phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>5</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mi>x</mi><mo>−</mo><mn>5</mn></mrow></msup><mo>≥</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có đúng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> nghiệm nguyên dương"
+    },
+    {
+      "key": "c",
+      "text": "Phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mn>5</mn></msub><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>2</mn></mrow></semantics></math> có nghiệm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Đồ thị hàm số cắt trục tung tại điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "solution": "<div class=\"paragraph-gap\"></div>\t\t<ol class=\"alpha-list\"><li>Hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mn>5</mn><mi>x</mi></msup></mrow></semantics></math> có cơ số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>=</mo><mn>5</mn><mo>&gt;</mo><mn>1</mn></mrow></semantics></math>, suy ra hàm số đã cho đồng biến trên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>ℝ</mi></semantics></math>.</li><li>Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>, suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mn>5</mn><mn>0</mn></msup><mo>=</mo><mn>1</mn></mrow></semantics></math>.<br>Do đó đồ thị hàm số cắt trục tung tại điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.</li><li>Ta có \n\t\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>5</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mi>x</mi><mo>−</mo><mn>5</mn></mrow></msup><mo>≥</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⇔</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>5</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mi>x</mi><mo>−</mo><mn>5</mn></mrow></msup><mo>≥</mo><msup><mn>5</mn><mi>x</mi></msup><mo>⇔</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>5</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mi>x</mi><mo>−</mo><mn>5</mn></mrow></msup><mo>≥</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>5</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo>⇔</mo><mi>x</mi><mo>−</mo><mn>5</mn><mo>≤</mo><mo>−</mo><mi>x</mi><mo>⇔</mo><mi>x</mi><mo>≤</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac><mi>.</mi></mrow></semantics></math><br>Do <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> nguyên dương, suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>∈</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>.<br>Vậy bất phương trình đã cho có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> nghiệm nguyên dương.</li><li>Ta có\n\t\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mn>5</mn></msub><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>2</mn><mo>⇔</mo><msub><mo>log</mo><mn>5</mn></msub><msup><mn>5</mn><mi>x</mi></msup><mo>=</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>2</mn><mo>⇔</mo><msup><mn>5</mn><mi>x</mi></msup><mo>=</mo><msup><mn>5</mn><mrow><mn>2</mn><mi>x</mi><mo>−</mo><mn>2</mn></mrow></msup><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>2</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mn>2</mn><mi>.</mi></mrow></semantics></math><br>Vậy phương trình đã cho có nghiệm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

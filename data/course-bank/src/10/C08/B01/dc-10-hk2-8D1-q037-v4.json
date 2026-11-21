@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-8D1-q037-v4",
+  "original_number": 37,
+  "kind": "mcq",
+  "based_on": "85f2f0120fa1a9a2a92871910870e4dbdc3273b22248de57acfeb5c4e799b69a",
+  "prompt": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> nhà xe vận chuyển hành khách giữa Việt Trì và Hà Nội. Số cách để một người đi từ Việt Trì tới Hà Nội rồi sau đó quay lại Việt Trì bằng hai nhà xe khác nhau là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>30</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>11</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>12</mn></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Một người đi từ Việt Trì tới Hà Nội rồi sau đó quay lại Việt Trì bằng hai nhà xe khác nhau người đó cần thực hiện hai công đoạn\n\t\t<ul><li>Công đoạn chọn xe từ Việt Trì tới Hà Nội: có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> cách.</li><li>Công đoạn chọn xe từ Hà Nội về Việt Trì: có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> cách (không chọn nhà xe đã đi ở công đoạn trước).</li></ul>\n\t\tVậy theo quy tắc nhân, có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>6</mn><mo>⋅</mo><mn>5</mn><mo>=</mo><mn>30</mn></mrow></semantics></math> cách thỏa mãn.",
+  "accepted_answers": []
+}

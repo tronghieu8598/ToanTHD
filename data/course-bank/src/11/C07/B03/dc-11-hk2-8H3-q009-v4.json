@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-8H3-q009-v4",
+  "original_number": 9,
+  "kind": "mcq",
+  "based_on": "e218a6550e86a513c76608671da06dba093e8460617f51b3d8a540529d54be83",
+  "prompt": "Cho hình chóp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>.</mi><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> có đáy là hình vuông <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> cạnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>A</mi><mo>=</mo><mi>a</mi><msqrt><mn>5</mn></msqrt></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>A</mi></mrow></semantics></math> vuông góc với đáy. Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>α</mi></semantics></math> là góc giữa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>C</mi></mrow></semantics></math> và mặt phẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>. Giá trị của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mi>α</mi></mrow></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><msqrt><mn>5</mn></msqrt><mn>2</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><msqrt><mn>10</mn></msqrt><mn>2</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "<div class=\"with-figure\"><div>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>A</mi><mo>⊥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi></mrow></semantics></math> là hình chiếu của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>C</mi></mrow></semantics></math> trên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.<br>Suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>α</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>C</mi><mo>,</mo><mi>A</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mover><mrow><mi>S</mi><mi>C</mi><mi>A</mi></mrow><mo accent=\"true\">̂</mo></mover></mrow></semantics></math>.<br>Xét tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>A</mi><mi>C</mi></mrow></semantics></math> vuông tại <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi><mo>=</mo><mi>a</mi><msqrt><mn>2</mn></msqrt></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>A</mi><mo>=</mo><mi>a</mi><msqrt><mn>5</mn></msqrt></mrow></semantics></math>.<br>Do đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mi>α</mi><mo>=</mo><mo>tan</mo><mover><mrow><mi>S</mi><mi>C</mi><mi>A</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>S</mi><mi>A</mi></mrow><mrow><mi>A</mi><mi>C</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><msqrt><mn>5</mn></msqrt><msqrt><mn>2</mn></msqrt></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><msqrt><mn>10</mn></msqrt><mn>2</mn></mfrac></mrow></semantics></math>.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/54fabfee3faba96d89fdb704249885c6ed3a5f32109046eb489beb583519498d.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-2D2-q082-v4",
+  "original_number": 82,
+  "kind": "tf",
+  "based_on": "5517b2eb7104bee2e0d8d92ee66cdece5855ffad1ddb5052bf3d13204d8ab649",
+  "prompt": "Một nhà hát có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>25</mn></semantics></math> hàng ghế với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>16</mn></semantics></math> ghế ở hàng thứ nhất, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>18</mn></semantics></math> ghế ở hàng thứ hai, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20</mn></semantics></math> ghế ở hàng thứ ba và cứ tiếp tục theo quy luật đó, tức là hàng sau nhiều hơn hàng liền trước đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> ghế. Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>u</mi><mi>n</mi></msub></semantics></math> là số ghế ở hàng thứ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>n</mi></semantics></math> (<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>≤</mo><mi>n</mi><mo>≤</mo><mn>25</mn></mrow></semantics></math>).",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Tổng số ghế trong nhà hát nhiều hơn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> ghế"
+    },
+    {
+      "key": "b",
+      "text": "Số ghế ở hàng thứ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20</mn></semantics></math> nhỏ hơn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>54</mn></semantics></math> ghế"
+    },
+    {
+      "key": "c",
+      "text": "Dãy số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> là cấp số cộng có công sai <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>2</mn></msub><mo>=</mo><mn>18</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>u</mi><mi>n</mi></msub></semantics></math> là số ghế ở hàng thứ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>n</mi></semantics></math> (<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>≤</mo><mi>n</mi><mo>≤</mo><mn>25</mn></mrow></semantics></math>) nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>u</mi><mn>2</mn></msub></semantics></math> là số ghế ở hàng thứ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>. Do đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>2</mn></msub><mo>=</mo><mn>18</mn></mrow></semantics></math>.</li><li>Vì số ghế ở hàng sau nhiều hơn hàng liền trước đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> ghế nên dãy số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> lập thành cấp số cộng với số hạng đầu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>16</mn></mrow></semantics></math> và công sai <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>.</li><li>Số ghế ở hàng thứ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20</mn></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>20</mn></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><mn>19</mn><mi>d</mi><mo>=</mo><mn>16</mn><mo>+</mo><mn>19</mn><mo>⋅</mo><mn>2</mn><mo>=</mo><mn>54</mn></mrow></semantics></math>.</li><li>Tổng số ghế trong nhà hát là\n\t\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mn>25</mn></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><msub><mi>u</mi><mn>2</mn></msub><mo>+</mo><mi>⋯</mi><mo>+</mo><msub><mi>u</mi><mn>25</mn></msub><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><mn>24</mn><mi>d</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>25</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>⋅</mo><mn>16</mn><mo>+</mo><mn>24</mn><mo>⋅</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mn>2</mn></mfrac><mo>=</mo><mn>1</mn><mspace width=\"0.167em\"/><mn>000</mn><mi>.</mi></mrow></semantics></math></li></ol>",
+  "accepted_answers": []
+}

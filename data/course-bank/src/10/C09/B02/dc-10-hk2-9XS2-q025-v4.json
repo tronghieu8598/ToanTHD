@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-9XS2-q025-v4",
+  "original_number": 25,
+  "kind": "mcq",
+  "based_on": "d196203a4fba5e67cad9e587b92a436e6dfaad413b4f6b7a8269cba1c96e935c",
+  "prompt": "Trong hộp có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math> bi đỏ và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> bi xanh có kích thước và khối lượng như nhau. Lấy ngẫu nhiên từ trong hộp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> viên bi. Tính xác suất để lấy được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> viên bi xanh.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><msubsup><mi mathvariant=\"normal\">C</mi><mn>6</mn><mn>3</mn></msubsup><msubsup><mi mathvariant=\"normal\">C</mi><mn>13</mn><mn>3</mn></msubsup></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><msubsup><mi mathvariant=\"normal\">C</mi><mn>7</mn><mn>3</mn></msubsup><msubsup><mi mathvariant=\"normal\">C</mi><mn>13</mn><mn>3</mn></msubsup></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><msubsup><mi mathvariant=\"normal\">C</mi><mn>6</mn><mn>3</mn></msubsup><msubsup><mi mathvariant=\"normal\">C</mi><mn>7</mn><mn>3</mn></msubsup></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><msubsup><mi mathvariant=\"normal\">A</mi><mn>6</mn><mn>3</mn></msubsup><msubsup><mi mathvariant=\"normal\">C</mi><mn>13</mn><mn>3</mn></msubsup></mfrac></semantics></math>"
+    }
+  ],
+  "correct": null,
+  "solution": "Số cách chọn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> viên bi từ hộp là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msubsup><mi mathvariant=\"normal\">C</mi><mn>13</mn><mn>3</mn></msubsup></semantics></math>.<br>Số cách chọn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> viên bi xanh từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> viên bi xanh là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msubsup><mi mathvariant=\"normal\">C</mi><mn>6</mn><mn>3</mn></msubsup></semantics></math>.<br>Xác suất để lấy được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> viên bi xanh là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><msubsup><mi mathvariant=\"normal\">C</mi><mn>6</mn><mn>3</mn></msubsup><msubsup><mi mathvariant=\"normal\">C</mi><mn>13</mn><mn>3</mn></msubsup></mfrac></semantics></math>.",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-3H2-q030-v4",
+  "original_number": 30,
+  "kind": "mcq",
+  "based_on": "f341e4e93785f4064a1c7f302b3b9b539616ebef4365ebc4f57948ccba806d57",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>A</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>30</mn><mo>∘</mo></msup></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>B</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>120</mn><mo>∘</mo></msup></mrow></semantics></math>. Hãy chọn khẳng định đúng.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi><mo>=</mo><mn>4</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi><mo>=</mo><mn>2</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi><mo>=</mo><msqrt><mn>3</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi><mo>=</mo><mn>3</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Xét <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>△</mi><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>C</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>A</mi><mo accent=\"true\">̂</mo></mover><mo>+</mo><mover><mi>B</mi><mo accent=\"true\">̂</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mn>30</mn><mo>∘</mo></msup></mrow></semantics></math>.<br>Theo định lý sin, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mi>A</mi><mi>C</mi></mrow><mrow><mo>sin</mo><mi>B</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>A</mi><mi>B</mi></mrow><mrow><mo>sin</mo><mi>C</mi></mrow></mfrac></mrow></semantics></math>.<br>Suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>A</mi><mi>B</mi><mo>⋅</mo><mo>sin</mo><mi>B</mi></mrow><mrow><mo>sin</mo><mi>C</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mo>⋅</mo><mo>sin</mo><msup><mn>120</mn><mo>∘</mo></msup></mrow><mrow><mo>sin</mo><msup><mn>30</mn><mo>∘</mo></msup></mrow></mfrac><mo>=</mo><mn>3</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math> (đvđd).",
+  "accepted_answers": []
+}

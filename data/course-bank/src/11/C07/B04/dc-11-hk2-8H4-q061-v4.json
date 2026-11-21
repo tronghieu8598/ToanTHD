@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-8H4-q061-v4",
+  "original_number": 61,
+  "kind": "mcq",
+  "based_on": "e6f9912a06606506ea29a681303ca448e4d224a16a84dc6ce00a3eb6bbb96d83",
+  "prompt": "Cho hình chóp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>.</mi><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> có đáy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> là hình thoi tâm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>O</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>A</mi></mrow></semantics></math> nằm trên đường vuông góc với mặt phẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>. Trong các khẳng định sau, khằng định nào <strong>sai</strong>?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>O</mi><mo>⊥</mo><mi>B</mi><mi>D</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>C</mi><mo>⊥</mo><mi>B</mi><mi>D</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>D</mi><mo>⊥</mo><mi>S</mi><mi>C</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>A</mi><mo>⊥</mo><mi>B</mi><mi>D</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "<div class=\"with-figure\"><div>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>B</mi><mi>D</mi><mo>⊥</mo><mi>A</mi><mi>C</mi><mspace width=\"0.167em\"/><mtext mathvariant=\"normal\">tại</mtext><mspace width=\"0.167em\"/><mi>O</mi></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>B</mi><mi>D</mi><mo>⊥</mo><mi>S</mi><mi>A</mi><mspace width=\"0.167em\"/><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mo>⊥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mtd></mtr></mtable></mrow><mo>⇒</mo><mi>B</mi><mi>D</mi><mo>⊥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>A</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⇒</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>B</mi><mi>D</mi><mo>⊥</mo><mi>S</mi><mi>C</mi></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>B</mi><mi>D</mi><mo>⊥</mo><mi>S</mi><mi>A</mi></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>B</mi><mi>D</mi><mo>⊥</mo><mi>S</mi><mi>O</mi><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math></div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/baf32d7e2cb06e1b7159138bb0392e9882f7173c9d23d589fda5039df9884670.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

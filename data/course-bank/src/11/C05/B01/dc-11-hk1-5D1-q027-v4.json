@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-5D1-q027-v4",
+  "original_number": 27,
+  "kind": "mcq",
+  "based_on": "cece239b30f0266204ad35390f6b5494f3de0c6740a282b696898fac72566ea0",
+  "prompt": "Mệnh đề nào sau đây <strong>sai</strong>?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><msup><mi>n</mi><mi>k</mi></msup><mo>=</mo><mo>+</mo><mi>∞</mi></mrow></semantics></math> (với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>∈</mo><msup><mi>ℕ</mi><mo>*</mo></msup></mrow></semantics></math>)"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><msup><mi>q</mi><mi>n</mi></msup><mo>=</mo><mn>0</mn></mrow></semantics></math> (với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>q</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math>)"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mn>1</mn><msqrt><mi>n</mi></msqrt></mfrac><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mn>1</mn><msup><mi>n</mi><mi>k</mi></msup></mfrac><mo>=</mo><mn>0</mn></mrow></semantics></math> (với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>∈</mo><msup><mi>ℕ</mi><mo>*</mo></msup></mrow></semantics></math>)"
+    }
+  ],
+  "correct": "B",
+  "solution": "Mệnh đề ``<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><msup><mi>q</mi><mi>n</mi></msup><mo>=</mo><mn>0</mn></mrow></semantics></math> (với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>q</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math>)&#x27;&#x27; <strong>sai</strong> vì với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>q</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><msup><mi>q</mi><mi>n</mi></msup><mo>=</mo><mo>+</mo><mi>∞</mi></mrow></semantics></math>.",
+  "accepted_answers": []
+}

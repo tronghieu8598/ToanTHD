@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-4H2-q022-v4",
+  "original_number": 22,
+  "kind": "mcq",
+  "based_on": "9d85c3523feb36ea38ab5d2d507b0e05a90635cf2bd6e83d9ace1d1cfe093be7",
+  "prompt": "Cho hình chữ nhật <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math>, gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>O</mi></semantics></math> là giao điểm của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>D</mi></mrow></semantics></math>. Mệnh đề nào sau đây đúng?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>O</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>O</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>O</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>O</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>B</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mover><mrow><mi>O</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>O</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>O</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>O</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>=</mo><mover><mn>0</mn><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mrow><mi>A</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "<div class=\"with-figure\"><div>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mrow><mi>A</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>D</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/64b20b5ba870906821587a649f433e87a7fb4f22e9ff2c0fc487118f5fb3b939.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

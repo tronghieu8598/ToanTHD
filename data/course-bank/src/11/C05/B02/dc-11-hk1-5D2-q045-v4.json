@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-5D2-q045-v4",
+  "original_number": 45,
+  "kind": "mcq",
+  "based_on": "10d335070eda24b2e0e4a63474521bb2e8a8c6bab18579c19223f7a11e18ef96",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>−</mo><mi>∞</mi></mrow></munder><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>a</mi><mi>x</mi><mo>+</mo><mn>5</mn></mrow></msqrt><mo>+</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>5</mn></mrow></semantics></math>. Khi đó giá trị <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>6</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>10</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Ta có\n\t\t\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>−</mo><mi>∞</mi></mrow></munder><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>a</mi><mi>x</mi><mo>+</mo><mn>5</mn></mrow></msqrt><mo>+</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>5</mn><mo>⇔</mo><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>−</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>a</mi><mi>x</mi><mo>+</mo><mn>5</mn><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mrow><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>a</mi><mi>x</mi><mo>+</mo><mn>5</mn></mrow></msqrt><mo>−</mo><mi>x</mi></mrow></mfrac><mo>=</mo><mn>5</mn><mo>⇔</mo><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>−</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><mi>a</mi><mi>x</mi><mo>+</mo><mn>5</mn></mrow><mrow><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>a</mi><mi>x</mi><mo>+</mo><mn>5</mn></mrow></msqrt><mo>−</mo><mi>x</mi></mrow></mfrac><mo>=</mo><mn>5</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇔</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>−</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><mi>a</mi><mo>+</mo><mfrac displaystyle=\"false\"><mn>5</mn><mi>x</mi></mfrac></mrow><mrow><mo>−</mo><msqrt><mrow><mn>1</mn><mo>+</mo><mfrac displaystyle=\"false\"><mi>a</mi><mi>x</mi></mfrac><mo>+</mo><mfrac displaystyle=\"false\"><mn>5</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow></msqrt><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mn>5</mn><mo>⇔</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>a</mi><mn>2</mn></mfrac><mo>=</mo><mn>5</mn><mo>⇔</mo><mi>a</mi><mo>=</mo><mo>−</mo><mn>10</mn><mi>.</mi></mtd></mtr></mtable></semantics></math></div>",
+  "accepted_answers": []
+}

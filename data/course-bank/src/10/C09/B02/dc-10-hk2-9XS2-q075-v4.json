@@ -1,0 +1,11 @@
+{
+  "id": "dc-10-hk2-9XS2-q075-v4",
+  "original_number": 75,
+  "kind": "short",
+  "based_on": "6d7abdc4923c24667519e12df40542c947a28e11cf7095320e26c59de3f44285",
+  "prompt": "Gieo một đồng xu cân đối liên tiếp một số lần. Biết rằng xác suất để mặt ngửa không xuất hiện lần nào là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>1024</mn></mfrac></semantics></math>. Tính xác suất để mặt ngửa xuất hiện ít nhất một lần. <em>(Kết quả làm tròn đến hàng đơn vị)</em>",
+  "choices": [],
+  "correct": "1",
+  "solution": "Gọi biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math>: ““ Mặt ngửa không xuất hiện lần nào””. Khi đó biến cố ““ mặt ngửa xuất hiện ít nhất một lần”” là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mi>A</mi><mo accent=\"true\">‾</mo></mover></semantics></math>.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>1024</mn></mfrac></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>A</mi><mo accent=\"true\">‾</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>1024</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1023</mn><mn>1024</mn></mfrac><mo>≈</mo><mn>1</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

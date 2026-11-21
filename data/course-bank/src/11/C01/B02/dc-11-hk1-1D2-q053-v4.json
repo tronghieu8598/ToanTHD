@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-1D2-q053-v4",
+  "original_number": 53,
+  "kind": "tf",
+  "based_on": "4cd090dfffd92e2147f7f22ab08b6415743837e9a89c6513bc147a253c9bafcf",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></mrow></semantics></math> với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>a</mi><msqrt><mn>2</mn></msqrt></mrow><mi>b</mi></mfrac></mrow></semantics></math> với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>;</mo><mi>b</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mi>a</mi><mi>b</mi></mfrac></semantics></math> tối giản và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>=</mo><mn>11</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mn>2</mn><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn><msqrt><mn>2</mn></msqrt></mrow><mn>9</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mn>2</mn><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>7</mn><mn>9</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow><mn>3</mn></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "solution": "Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac></mrow></semantics></math> nên  <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>cos</mo><mi>x</mi><mo>&gt;</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>tan</mo><mi>x</mi><mo>&gt;</mo><mn>0</mn><mi>.</mi></mtd></mtr></mtable></mrow></semantics></math><br><ol class=\"alpha-list\"><li><strong>Đúng.</strong><br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mo>sin</mo><mn>2</mn></msup><mi>x</mi><mo>+</mo><msup><mo>cos</mo><mn>2</mn></msup><mi>x</mi><mo>=</mo><mn>1</mn><mo>⇔</mo><msup><mo>cos</mo><mn>2</mn></msup><mi>x</mi><mo>=</mo><mn>1</mn><mo>−</mo><msup><mo>sin</mo><mn>2</mn></msup><mi>x</mi><mo>=</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>9</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>8</mn><mn>9</mn></mfrac><mo>⇔</mo><mo>cos</mo><mi>x</mi><mo>=</mo><mo>±</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow><mn>3</mn></mfrac></mrow></semantics></math>.<br>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow><mn>3</mn></mfrac></mrow></semantics></math>.</li><li><strong>Sai</strong>.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mn>2</mn><mi>x</mi><mo>=</mo><mn>2</mn><mo>sin</mo><mi>x</mi><mo>cos</mo><mi>x</mi><mo>=</mo><mn>2</mn><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow><mn>3</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn><msqrt><mn>2</mn></msqrt></mrow><mn>9</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mn>2</mn><mi>x</mi><mo>=</mo><mn>1</mn><mo>−</mo><mn>2</mn><msup><mo>sin</mo><mn>2</mn></msup><mi>x</mi><mo>=</mo><mn>1</mn><mo>−</mo><mn>2</mn><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mfrac displaystyle=\"true\"><mn>7</mn><mn>9</mn></mfrac></mrow></semantics></math>.</li><li><strong>Sai</strong>.<br>Suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>sin</mo><mi>x</mi></mrow><mrow><mo>cos</mo><mi>x</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><msqrt><mn>2</mn></msqrt><mn>4</mn></mfrac></mrow></semantics></math>.<br>Do đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>a</mi><mo>=</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>b</mi><mo>=</mo><mn>4</mn></mtd></mtr></mtable></mrow><mo>⇒</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo>=</mo><mn>5</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

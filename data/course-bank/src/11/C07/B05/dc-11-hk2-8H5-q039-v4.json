@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-8H5-q039-v4",
+  "original_number": 39,
+  "kind": "mcq",
+  "based_on": "3cd2dbca1a11b729dde8f1d249f7d54314b333c3dc43da4413fb59dfe5dbabf6",
+  "prompt": "Cho tứ diện <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi><mo>=</mo><mi>a</mi></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>D</mi><mo>=</mo><mn>3</mn><mi>a</mi></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi></mrow></semantics></math> vuông góc với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>D</mi></mrow></semantics></math>. Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>M</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>N</mi></semantics></math> lần lượt là trung điểm của các cạnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>D</mi></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi></mrow></semantics></math>. Khi đó, độ dài đoạn thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mi>N</mi></mrow></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mi>a</mi><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mi>a</mi><msqrt><mn>10</mn></msqrt></mrow><mn>2</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>a</mi><msqrt><mn>3</mn></msqrt></mrow><mn>3</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mi>a</mi><msqrt><mn>6</mn></msqrt></mrow><mn>2</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "<div class=\"with-figure\"><div>Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi></semantics></math> là trung điểm của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mi>D</mi></mrow></semantics></math>.<br>Khi đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mi>N</mi></mrow></semantics></math> là đường trung bình của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>△</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math>, suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mi>N</mi><mo>∥</mo><mi>B</mi><mi>D</mi></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>N</mi><mi>P</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mi>B</mi><mi>D</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mi>a</mi></mrow><mn>2</mn></mfrac></mrow></semantics></math>.<br>Tương tự <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mi>P</mi><mo>∥</mo><mi>A</mi><mi>C</mi></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mi>P</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mi>A</mi><mi>C</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>a</mi><mn>2</mn></mfrac></mrow></semantics></math>.<br>Suy ra tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mi>N</mi><mi>P</mi></mrow></semantics></math> vuông tại <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi></semantics></math>.<br>Theo định lý Pythagore ta có\n\t\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mi>N</mi><mo>=</mo><msqrt><mrow><mi>M</mi><msup><mi>P</mi><mn>2</mn></msup><mo>+</mo><mi>N</mi><msup><mi>P</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>a</mi><msqrt><mn>10</mn></msqrt></mrow><mn>2</mn></mfrac><mi>.</mi></mrow></semantics></math></div></div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/caaf66ccfb55cf0400c76e97a3ab7630f3c945e5ce1ca25a2fc58037f50fdb4c.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

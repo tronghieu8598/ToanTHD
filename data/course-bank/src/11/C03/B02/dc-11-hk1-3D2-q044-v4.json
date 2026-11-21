@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-3D2-q044-v4",
+  "original_number": 44,
+  "kind": "mcq",
+  "based_on": "c8e7db73fb249e3fe9d7f61cca25a16af382a722ddbdf6510f637484d8fef67c",
+  "prompt": "Khảo sát chiều cao của học sinh lớp 11A thu được mẫu số liệu ghép nhóm sau\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Khoảng chiều cao (cm)</td></tr></tbody></table></div></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>145</mn><mo>;</mo><mn>150</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>150</mn><mo>;</mo><mn>155</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>155</mn><mo>;</mo><mn>160</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>160</mn><mo>;</mo><mn>165</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>165</mn><mo>;</mo><mn>170</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td></tr><tr><td>Số học sinh</td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>14</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>9</mn></semantics></math></td></tr></tbody></table></div></div>\n\tTìm mốt của mẫu số liệu ghép nhóm trên (làm tròn kết quả đến hàng phần trăm).",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">o</mi></msub><mo>=</mo><mn>152</mn><mo>,</mo><mn>25</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">o</mi></msub><mo>=</mo><mn>153</mn><mo>,</mo><mn>18</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">o</mi></msub><mo>=</mo><mn>170</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">o</mi></msub><mo>=</mo><mn>160</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Nhóm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>150</mn><mo>;</mo><mn>155</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math> là nhóm chứa mốt.<br>Mốt của mẫu số liệu trên là\n\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">M</mi><mi mathvariant=\"normal\">o</mi></msub><mo>=</mo><mn>150</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>14</mn><mo>−</mo><mn>7</mn></mrow><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>14</mn><mo>−</mo><mn>7</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>14</mn><mo>−</mo><mn>10</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>155</mn><mo>−</mo><mn>150</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>≈</mo><mn>153</mn><mo>,</mo><mn>18</mn><mi>.</mi></mrow></semantics></math>",
+  "accepted_answers": []
+}

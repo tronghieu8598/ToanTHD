@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-8D3-q059-v4",
+  "original_number": 59,
+  "kind": "tf",
+  "based_on": "a84988d00b17b09243771f633b3c33eaeab2218665d91bb3dadbb4bef28c212c",
+  "prompt": "Cho nhị thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>5</mn></msup></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Số hạng chứa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi>x</mi><mn>5</mn></msup></semantics></math> trong khai triển Newton của nhị thức trên là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>243</mn><msup><mi>x</mi><mn>5</mn></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Số hạng không chứa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> trong khai triển Newton của nhị thức trên là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>32</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Hệ số của số hạng chứa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi>x</mi><mn>2</mn></msup></semantics></math> trong khai triển Newton của nhị thức trên là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>720</mn></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Tổng các hệ số trong khai triển Newton của nhị thức trên bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    true
+  ],
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>5</mn></msup><mo>=</mo><mn>243</mn><msup><mi>x</mi><mn>5</mn></msup><mo>−</mo><mn>810</mn><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><mn>1080</mn><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>720</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>240</mn><mi>x</mi><mo>−</mo><mn>32</mn></mrow></semantics></math>.  (1)\n\t\t<ol class=\"alpha-list\"><li>Số hạng chứa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi>x</mi><mn>5</mn></msup></semantics></math> trong khai triển Newton của nhị thức trên là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>243</mn><msup><mi>x</mi><mn>5</mn></msup></mrow></semantics></math>.</li><li>Hệ số của số hạng chứa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi>x</mi><mn>2</mn></msup></semantics></math> trong khai triển Newton của nhị thức trên là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>720</mn></mrow></semantics></math>.</li><li>Số hạng không chứa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> trong khai triển Newton của nhị thức trên là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>32</mn></mrow></semantics></math>.</li><li>Thay <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math> vào (1) ta được bên phải là tổng của các hệ số và bên phải là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>⋅</mo><mn>1</mn><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>5</mn></msup><mo>=</mo><mn>1</mn></mrow></semantics></math>.<br>Tổng các hệ số trong khai triển Newton của nhị thức trên bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

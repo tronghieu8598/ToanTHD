@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-7D2-q157-v4",
+  "original_number": 157,
+  "kind": "mcq",
+  "based_on": "70096c95b74cc965854c4d39d6e656181281c655000a3895d150e90e255b44dd",
+  "prompt": "Cho hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>x</mi><mo>sin</mo><mi>x</mi></mrow></semantics></math>. Hệ thức nào sau đây đúng?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>″</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>2</mn><mo>cos</mo><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>″</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>2</mn><mo>sin</mo><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>″</mi><mo>−</mo><mi>y</mi><mo>=</mo><mn>2</mn><mo>sin</mo><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>″</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>2</mn><mo>cos</mo><mi>x</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Ta có: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mi>x</mi><mo>cos</mo><mi>x</mi></mrow></semantics></math>. Và\n\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>″</mi><mo>=</mo><mo>cos</mo><mi>x</mi><mo>+</mo><mo>cos</mo><mi>x</mi><mo>−</mo><mi>x</mi><mo>sin</mo><mi>x</mi><mo>=</mo><mn>2</mn><mo>cos</mo><mi>x</mi><mo>−</mo><mi>x</mi><mo>sin</mo><mi>x</mi></mrow></semantics></math>. <br>Vậy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>″</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>2</mn><mo>cos</mo><mi>x</mi><mo>−</mo><mi>x</mi><mo>sin</mo><mi>x</mi><mo>+</mo><mi>x</mi><mo>sin</mo><mi>x</mi><mo>=</mo><mn>2</mn><mo>cos</mo><mi>x</mi></mrow></semantics></math>.",
+  "accepted_answers": []
+}

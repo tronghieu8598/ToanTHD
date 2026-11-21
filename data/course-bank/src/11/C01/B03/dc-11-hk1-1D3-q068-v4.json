@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk1-1D3-q068-v4",
+  "original_number": 68,
+  "kind": "short",
+  "based_on": "88b2295c1092bf950b7d75f0b6c09b71f7976422250d7f6fa8d29ffcab16a9bb",
+  "prompt": "Tìm giá trị nhỏ nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>m</mi></semantics></math> của hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>−</mo><msqrt><mn>3</mn></msqrt><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2024</mn><mi>x</mi><mo>+</mo><mn>2025</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> (kết quả làm tròn đến hàng phần mười).",
+  "choices": [],
+  "correct": "-1.7",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>1</mn><mo>≤</mo><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2024</mn><mi>x</mi><mo>+</mo><mn>2025</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>≤</mo><mn>1</mn><mo>,</mo><mspace width=\"0.167em\"/><mo>∀</mo><mi>x</mi><mo>∈</mo><mi>ℝ</mi><mo>⇔</mo><msqrt><mn>3</mn></msqrt><mo>≥</mo><mo>−</mo><msqrt><mn>3</mn></msqrt><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2024</mn><mi>x</mi><mo>+</mo><mn>2025</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>≥</mo><mo>−</mo><msqrt><mn>3</mn></msqrt></mrow></semantics></math>.<br>Suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><msqrt><mn>3</mn></msqrt><mo>≤</mo><mi>y</mi><mo>≤</mo><msqrt><mn>3</mn></msqrt></mrow></semantics></math>. Vậy giá trị nhỏ nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>m</mi><mo>=</mo><mo>−</mo><msqrt><mn>3</mn></msqrt><mo>≈</mo><mo>−</mo><mn>1</mn><mo>,</mo><mn>7</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

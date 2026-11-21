@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D1-q042-v4",
+  "original_number": 42,
+  "kind": "mcq",
+  "based_on": "07a724483046a6d03c3c6b4a37277e77e254becf034c8a013c40002cddf36913",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math> là số thực dương. Rút gọn biểu thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mfrac displaystyle=\"true\"><msqrt><mi>a</mi></msqrt><mroot><mi>a</mi><mn>3</mn></mroot></mfrac></mrow></semantics></math>, ta được kết quả là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi>a</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi>a</mi><mfrac><mn>5</mn><mn>6</mn></mfrac></msup></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi>a</mi><mfrac><mn>1</mn><mn>6</mn></mfrac></msup></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mfrac displaystyle=\"true\"><msqrt><mi>a</mi></msqrt><mroot><mi>a</mi><mn>3</mn></mroot></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><msup><mi>a</mi><mfrac><mn>1</mn><mn>2</mn></mfrac></msup><msup><mi>a</mi><mfrac><mn>1</mn><mn>3</mn></mfrac></msup></mfrac><mo>=</mo><msup><mi>a</mi><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>−</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></msup><mo>=</mo><msup><mi>a</mi><mfrac><mn>1</mn><mn>6</mn></mfrac></msup></mrow></semantics></math>.",
+  "accepted_answers": []
+}

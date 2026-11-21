@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D2-q092-v4",
+  "original_number": 92,
+  "kind": "mcq",
+  "based_on": "690722d255cbe8e29ead44694e48dda562a0fec7875217108228ccc8369ff16a",
+  "prompt": "Bác An gửi tiết kiệm số tiền <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>100</mn></semantics></math> triệu đồng kì hạn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>12</mn></semantics></math> tháng với lãi suất kép <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mi>%</mi></mrow></semantics></math> một năm. Giả sử lãi suất không thay đổi, tính số tiền (cả vốn lẫn lãi) bác An thu được sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> năm (đơn vị: triệu đồng, kết quả làm tròn đến hàng phần nghìn).",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>130</mn><mo>,</mo><mn>432</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>125</mn><mo>,</mo><mn>000</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>125</mn><mo>,</mo><mn>628</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>127</mn><mo>,</mo><mn>628</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Ta có công thức lãi kép <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>T</mi><mi>n</mi></msub><mo>=</mo><msub><mi>T</mi><mn>0</mn></msub><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mi>%</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>n</mi></msup></mrow></semantics></math>. Trong đó <ul><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>T</mi><mn>0</mn></msub></semantics></math> là số tiền gửi ban đầu.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>r</mi><mi>%</mi></mrow></semantics></math> là lãi suất.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>T</mi><mi>n</mi></msub></semantics></math> là số tiền cả vốn lẫn lãi sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>n</mi></semantics></math> năm.</li></ul>\n\t\tSố tiền cả vốn lẫn lãi bác An thu được sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>T</mi><mn>5</mn></msub><mo>=</mo><mn>100</mn><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>+</mo><mn>5</mn><mi>%</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>5</mn></msup><mo>≈</mo><mn>127</mn><mo>,</mo><mn>628</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

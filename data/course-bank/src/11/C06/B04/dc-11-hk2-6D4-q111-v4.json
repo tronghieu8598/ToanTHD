@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk2-6D4-q111-v4",
+  "original_number": 111,
+  "kind": "tf",
+  "based_on": "440845fb5769e580897ed800cc94cae87249736eef59cbcde2330b48f888d741",
+  "prompt": "Cho hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msub><mo>log</mo><mn>3</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>3</mn><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Điều kiện xác định của hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Nghiệm của phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn><mo>−</mo><msub><mo>log</mo><mn>32</mn></msub></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Biết nghiệm của phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>x</mi></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow></semantics></math>. Giá trị của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mi>a</mi><mi>b</mi></mfrac></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Tập nghiệm của bất phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>&lt;</mo><mn>0</mn></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>1</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Ta có\n\t\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mn>3</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>3</mn><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>x</mi><mo>⇔</mo><msup><mn>3</mn><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>−</mo><mn>1</mn><mo>=</mo><msup><mn>3</mn><mi>x</mi></msup><mo>=</mo><mo>⇔</mo><mn>2</mn><mo>⋅</mo><msup><mn>3</mn><mi>x</mi></msup><mo>=</mo><mn>1</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><msub><mo>log</mo><mn>3</mn></msub><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mi>.</mi></mrow></semantics></math>\n\t\t\tKhi đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>=</mo><mn>3</mn></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>, nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mi>a</mi><mi>b</mi></mfrac><mo>=</mo><mn>6</mn></mrow></semantics></math>.</li><li>Ta có\n\t\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mn>3</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>3</mn><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo>⇔</mo><msup><mn>3</mn><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>−</mo><mn>1</mn><mo>=</mo><mn>1</mn><mo>⇔</mo><msup><mn>3</mn><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>=</mo><mn>2</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><msub><mo>log</mo><mn>32</mn></msub><mo>−</mo><mn>1</mn><mi>.</mi></mrow></semantics></math></li><li>Điều kiện\n\t\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>3</mn><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>−</mo><mn>1</mn><mo>&gt;</mo><mn>0</mn><mo>⇔</mo><msup><mn>3</mn><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>&gt;</mo><mn>1</mn><mo>⇔</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo>&gt;</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>&gt;</mo><mo>−</mo><mn>1</mn><mi>.</mi></mrow></semantics></math></li><li>Ta có\n\t\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>&lt;</mo><mn>0</mn><mo>⇔</mo><msup><mn>3</mn><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>−</mo><mn>1</mn><mo>&lt;</mo><mn>0</mn><mo>⇔</mo><msup><mn>3</mn><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>&lt;</mo><mn>1</mn><mo>⇔</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo>&lt;</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>&lt;</mo><mo>−</mo><mn>1</mn><mi>.</mi></mrow></semantics></math>\n\t\t\tVậy tập nghiệm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

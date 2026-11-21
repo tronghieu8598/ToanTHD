@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-6D4-q031-v4",
+  "original_number": 31,
+  "kind": "mcq",
+  "based_on": "9c2cc8dcfa09dd1f35bd500f30a572967b68c4be4fbe2e0563d8926b0ecaca5c",
+  "prompt": "Nghiệm của phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>7</mn><mi>x</mi><mo>+</mo><mn>10</mn></mrow></msqrt><mo>=</mo><mi>x</mi><mo>−</mo><mn>4</mn></mrow></semantics></math> thuộc tập nào dưới đây?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>5</mn><mo>;</mo><mn>6</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>5</mn><mo>;</mo><mn>6</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>4</mn><mo>;</mo><mn>5</mn><mo stretchy=\"false\" form=\"postfix\">]</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>5</mn><mo>;</mo><mn>6</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></mtd><mtd columnalign=\"left\" style=\"text-align: left\"><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>7</mn><mi>x</mi><mo>+</mo><mn>10</mn></mrow></msqrt><mo>=</mo><mi>x</mi><mo>−</mo><mn>4</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"><mo>⇒</mo></mtd><mtd columnalign=\"left\" style=\"text-align: left\"><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>7</mn><mi>x</mi><mo>+</mo><mn>10</mn><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>8</mn><mi>x</mi><mo>+</mo><mn>16</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"><mo>⇒</mo></mtd><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>6</mn><mi>.</mi></mtd></mtr></mtable></semantics></math><br>Thử lại: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>6</mn></mrow></semantics></math> thỏa phương trình.<br>Vậy nghiệm của phương trình là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>6</mn><mo>∈</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>5</mn><mo>;</mo><mn>6</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></mrow></semantics></math>.",
+  "accepted_answers": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-1D2-q058-v4",
+  "original_number": 58,
+  "kind": "tf",
+  "based_on": "4a49c7000647e69e3a25a001fe0ff3272c717cd1e42da5b02991496b389a3292",
+  "prompt": "Lớp 10A có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>45</mn></semantics></math> học sinh trong đó có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>18</mn></semantics></math> học sinh tham gia câu lạc bộ bóng đá và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>15</mn></semantics></math> học sinh tham gia câu lạc bộ bóng rổ. Biết rằng có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> học sinh tham gia cả hai câu lạc bộ trên. Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là tập hợp những học sinh lớp 10A tham gia câu lạc bộ bóng đá, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math> là tập hợp những học sinh lớp 10A tham gia câu lạc bộ bóng rổ.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow></semantics></math> là tập hợp những học sinh tham gia cả câu lạc bộ bóng đá và bóng rổ"
+    },
+    {
+      "key": "b",
+      "text": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>35</mn></semantics></math> học sinh lớp 10A không tham gia câu lạc bộ nào trong hai câu lạc bộ trên"
+    },
+    {
+      "key": "c",
+      "text": "Tập <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> phần tử"
+    },
+    {
+      "key": "d",
+      "text": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>23</mn></semantics></math> học sinh lớp 10A tham gia câu lạc bộ bóng đá hoặc bóng rổ"
+    }
+  ],
+  "correct": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Sai.<br><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow></semantics></math> là tập hợp những học sinh tham gia câu lạc bộ bóng đá hoặc bóng rổ.</li><li>Đúng.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>10</mn></mrow></semantics></math>.</li><li>Đúng.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>18</mn><mo>+</mo><mn>15</mn><mo>−</mo><mn>10</mn><mo>=</mo><mn>23</mn></mrow></semantics></math>.<br>Vậy có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>23</mn></semantics></math> học sinh lớp 10A tham gia câu lạc bộ bóng đá hoặc bóng rổ.</li><li>Sai.<br>Số học sinh lớp 10A không tham gia câu lạc bộ nào trong hai câu lạc bộ trên là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>45</mn><mo>−</mo><mn>23</mn><mo>=</mo><mn>22</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

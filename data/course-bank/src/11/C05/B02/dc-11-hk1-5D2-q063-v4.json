@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-5D2-q063-v4",
+  "original_number": 63,
+  "kind": "tf",
+  "based_on": "621ee77f24500df183f000915d727e6e31b8ee8ba323efa3541bd06c52275548",
+  "prompt": "Xét tính đúng sai của các giới hạn sau.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>−</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><msqrt><mrow><mn>4</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn></mrow></msqrt><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mn>5</mn><mo>+</mo></msup></mrow></munder><mfrac displaystyle=\"true\"><mn>6</mn><mrow><mi>x</mi><mo>−</mo><mn>5</mn></mrow></mfrac><mo>=</mo><mo>−</mo><mi>∞</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>2</mn></mrow></munder><mfrac displaystyle=\"true\"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><mn>4</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mrow><mn>8</mn><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>−</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><msqrt><mrow><mn>4</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn></mrow></msqrt><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>−</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><mo>−</mo><msqrt><mrow><mn>4</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow></msqrt></mrow><mrow><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>x</mi></mfrac></mrow></mfrac><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math></li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mn>5</mn><mo>+</mo></msup></mrow></munder><mfrac displaystyle=\"true\"><mn>6</mn><mrow><mi>x</mi><mo>−</mo><mn>5</mn></mrow></mfrac><mo>=</mo><mo>+</mo><mi>∞</mi></mrow></semantics></math> vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mn>5</mn><mo>+</mo></msup></mrow></munder><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mn>5</mn><mo>+</mo></msup></mrow></munder><mn>6</mn><mo>=</mo><mn>6</mn><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>−</mo><mn>5</mn><mo>&gt;</mo><mn>0</mn><mo>,</mo><mo>∀</mo><mi>x</mi><mo>&gt;</mo><mn>5</mn></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>2</mn></mrow></munder><mfrac displaystyle=\"true\"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn></mrow><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mfrac><mo>=</mo><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>2</mn></mrow></munder><mfrac displaystyle=\"true\"><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mfrac><mo>=</mo><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>2</mn></mrow></munder><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><mn>4</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mrow><mn>8</mn><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><mn>4</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>x</mi></mfrac></mrow><mrow><mn>8</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>x</mi></mfrac></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

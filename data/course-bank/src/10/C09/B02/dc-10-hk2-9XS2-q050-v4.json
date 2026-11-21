@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-9XS2-q050-v4",
+  "original_number": 50,
+  "kind": "mcq",
+  "based_on": "33d4e8a18a8268614588c32c52ae0f2c7147c7554f6fb99ec91b811563d99715",
+  "prompt": "Gieo một con xúc sắc cân đối, đồng chất và quan sát số chấm xuất hiện. Xác suất của biến cố ``Xuất hiện mặt có số chấm lẻ&#x27;&#x27; bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>5</mn><mn>6</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Gieo <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> con xúc sắc cân đối, đồng chất và quan sát số chấm xuất hiện, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Ω</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo>;</mo><mn>3</mn><mo>;</mo><mn>4</mn><mo>;</mo><mn>5</mn><mo>;</mo><mn>6</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>.<br>Xét biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math>: ``Xuất hiện mặt có số chấm lẻ&#x27;&#x27; thì\n\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo>;</mo><mn>5</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>.<br>Do đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Ω</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>6</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

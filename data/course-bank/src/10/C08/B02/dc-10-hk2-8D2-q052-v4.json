@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-8D2-q052-v4",
+  "original_number": 52,
+  "kind": "mcq",
+  "based_on": "c96fda33882be64a90c598b5f4a6577bdcf6ff574b9b973355e209f05fbda276",
+  "prompt": "Từ các chữ số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>0</mn></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math>. Có thể lập được bao nhiêu số có 4 chữ số, các chữ số đôi một khác nhau?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>840</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>720</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>35</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>70</mn></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Gọi số có 4 chữ số khác nhau được lập từ các số đã cho là \n\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>a</mi><mi>b</mi><mi>c</mi><mi>d</mi></mrow><mo accent=\"true\">¯</mo></mover></semantics></math>.<br>Chọn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math> có 6 cách chọn; chọn các số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>b</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>c</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>d</mi></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msubsup><mi mathvariant=\"normal\">A</mi><mn>3</mn><mn>6</mn></msubsup></semantics></math> cách chọn.<br>Như vậy có tất cả <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>6</mn><mo>⋅</mo><msubsup><mi mathvariant=\"normal\">A</mi><mn>3</mn><mn>6</mn></msubsup><mo>=</mo><mn>720</mn></mrow></semantics></math> số.<div class=\"paragraph-gap\"></div>",
+  "accepted_answers": []
+}

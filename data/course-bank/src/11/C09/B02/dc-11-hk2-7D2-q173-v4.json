@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-7D2-q173-v4",
+  "original_number": 173,
+  "kind": "mcq",
+  "based_on": "5cea104f77e2ff69edffe35a2eed070388f5789ed2cd7d0c6350f6aedb7072e9",
+  "prompt": "Đạo hàm của hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mo>cos</mo><mn>5</mn></msup><mi>x</mi></mrow></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mo>cos</mo><mi>x</mi><mo>⋅</mo><msup><mo>sin</mo><mn>4</mn></msup><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><msup><mo>cos</mo><mn>4</mn></msup><mi>x</mi><mo>⋅</mo><mo>sin</mo><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>5</mn><mo>cos</mo><mi>x</mi><mo>⋅</mo><msup><mo>sin</mo><mn>4</mn></msup><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>5</mn><msup><mo>cos</mo><mn>4</mn></msup><mi>x</mi><mo>⋅</mo><mo>sin</mo><mi>x</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mo>cos</mo><mn>5</mn></msup><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi><mo>=</mo><mn>5</mn><msup><mo>cos</mo><mn>4</mn></msup><mi>x</mi><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>cos</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi><mo>=</mo><mo>−</mo><mn>5</mn><msup><mo>cos</mo><mn>4</mn></msup><mi>x</mi><mo>⋅</mo><mo>sin</mo><mi>x</mi></mrow></semantics></math>.",
+  "accepted_answers": []
+}

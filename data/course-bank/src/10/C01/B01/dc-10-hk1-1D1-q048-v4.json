@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-1D1-q048-v4",
+  "original_number": 48,
+  "kind": "tf",
+  "based_on": "fdaa371cfbae6d5a22165095a3bff80c80a6c841e204ab04d5b6c91871c67d67",
+  "prompt": "Cho các mệnh đề chứa biến <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>:</mo></mrow></semantics></math> ““<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>&gt;</mo><mn>9</mn></mrow></semantics></math>””   và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Q</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>:</mo></mrow></semantics></math> ““<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>3</mn></mrow></semantics></math>””.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Mệnh đề <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> là một mệnh đề đúng"
+    },
+    {
+      "key": "b",
+      "text": "Mệnh đề <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Q</mi><mo>⇒</mo><mi>P</mi></mrow></semantics></math> là một mệnh đề đúng"
+    },
+    {
+      "key": "c",
+      "text": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math> số tự nhiên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>n</mi></semantics></math> không vượt quá <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> để mệnh đề <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> trở thành mệnh đề đúng"
+    },
+    {
+      "key": "d",
+      "text": "Mệnh đề <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>Q</mi></semantics></math> là hai mệnh đề tương đương"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li><strong>Đúng</strong>.<br>Với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>4</mn></mrow></semantics></math> thì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>&gt;</mo><mn>9</mn></mrow></semantics></math> (đúng).</li><li><strong>Đúng</strong>.<br>Các số tự nhiên không vượt quá <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> để <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> đúng là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>4</mn><mo>;</mo><mn>5</mn><mo>;</mo><mn>6</mn><mo>;</mo><mn>7</mn><mo>;</mo><mn>8</mn><mo>;</mo><mn>9</mn><mo>;</mo><mn>10</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math> số.</li><li><strong>Đúng</strong>.<br>Mệnh đề <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Q</mi><mo>⇒</mo><mi>P</mi></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>3</mn><mo>⇒</mo><msup><mi>n</mi><mn>2</mn></msup><mo>&gt;</mo><mn>9</mn></mrow></semantics></math> là mệnh đề đúng.</li><li><strong>Sai</strong>.<br>Mệnh đề <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>⇒</mo><mi>Q</mi></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>&gt;</mo><mn>9</mn><mo>⇒</mo><mi>n</mi><mo>&gt;</mo><mn>3</mn></mrow></semantics></math>  là mệnh đề sai (ví dụ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><mo>−</mo><mn>4</mn></mrow></semantics></math>) nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>Q</mi></semantics></math> không tương đương.</li></ol>",
+  "accepted_answers": []
+}

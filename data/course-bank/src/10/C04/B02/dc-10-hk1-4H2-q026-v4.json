@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-4H2-q026-v4",
+  "original_number": 26,
+  "kind": "mcq",
+  "based_on": "fc8205462fe25c4bffc82e8c391a83152cda47734a4d325c016380d360845621",
+  "prompt": "Cho hình bình hành <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math>, giao điểm của hai đường chéo là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>O</mi></semantics></math>. Tìm mệnh đề <strong>sai</strong>?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>D</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mrow><mi>D</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>O</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mrow><mi>O</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>D</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>D</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>D</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mn>0</mn><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>C</mi><mi>O</mi></mrow><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mrow><mi>O</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>B</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>D</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "<div class=\"with-figure\"><div>Theo quy tắc hình bình hành, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>D</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>D</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>D</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.<br>Do đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>D</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>D</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>D</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>D</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>D</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>≠</mo><mover><mn>0</mn><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.<br>Vậy mệnh đề “ “ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>D</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>D</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>D</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mn>0</mn><mo accent=\"true\">→</mo></mover></mrow></semantics></math> ” ”  là mệnh đề sai và dễ dàng kiểm tra được các mệnh đề còn lại là các mệnh đề đúng.<div class=\"paragraph-gap\"></div></div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/7857a94e5fa3c9dd8606db19acccc6eb1a68873bc9559a95d00e6ee302d34f52.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

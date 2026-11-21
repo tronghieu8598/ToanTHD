@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-5TK1-q034-v4",
+  "original_number": 34,
+  "kind": "tf",
+  "based_on": "ee4ae707418723ce89645079cc260eb0d26a1c23c235840dca9d6e768d9ec637",
+  "prompt": "Mỗi khẳng định sau đây đúng hay sai?",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Số gần đúng của số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi>π</mi><mn>2</mn></msup></semantics></math> chính xác đến hàng phần nghìn là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>9</mn><mo>,</mo><mn>87</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Cho số đúng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>b</mi><mo accent=\"true\">¯</mo></mover><mo>=</mo><mn>2</mn><mspace width=\"0.167em\"/><mn>024</mn><mo>±</mo><mn>25</mn></mrow></semantics></math>. Suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1999</mn><mo>≤</mo><mover><mi>b</mi><mo accent=\"true\">¯</mo></mover><mo>≤</mo><mn>2049</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math> là số gần đúng của số đúng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mi>a</mi><mo accent=\"true\">¯</mo></mover></semantics></math> với độ chính xác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>00007</mn></mrow></semantics></math>. Hàng lớn nhất của độ chính xác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>d</mi></semantics></math> là hàng phần chục nghìn"
+    },
+    {
+      "key": "d",
+      "text": "Cho số dương <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>m</mi></semantics></math> là số gần đúng của số đúng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mi>m</mi><mo accent=\"true\">¯</mo></mover></semantics></math> với độ chính xác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>d</mi></semantics></math>. Nếu sai số tuyệt đối và sai số tương đối của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>m</mi></semantics></math> lần lượt là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Δ</mi><mi>m</mi></msub><mo>=</mo><mn>45</mn></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>δ</mi><mi>m</mi></msub><mo>=</mo><mn>0</mn><mo>,</mo><mn>15</mn><mi>%</mi></mrow></semantics></math> thì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>m</mi><mo>=</mo><mn>67</mn><mspace width=\"0.167em\"/><mn>500</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>δ</mi><mi>m</mi></msub><mo>=</mo><mfrac displaystyle=\"true\"><msub><mi>Δ</mi><mi>m</mi></msub><mi>m</mi></mfrac><mo>⇒</mo><mi>m</mi><mo>=</mo><mfrac displaystyle=\"true\"><msub><mi>Δ</mi><mi>m</mi></msub><msub><mi>δ</mi><mi>m</mi></msub></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>45</mn><mrow><mn>0</mn><mo>,</mo><mn>15</mn><mi>%</mi></mrow></mfrac><mo>=</mo><mn>30</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math>.</li><li>Từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>b</mi><mo accent=\"true\">¯</mo></mover><mo>=</mo><mn>2</mn><mspace width=\"0.167em\"/><mn>024</mn><mo>±</mo><mn>25</mn></mrow></semantics></math> suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1999</mn><mo>≤</mo><mover><mi>b</mi><mo accent=\"true\">¯</mo></mover><mo>≤</mo><mn>2049</mn></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>π</mi><mn>2</mn></msup><mo>≈</mo><mn>9</mn><mo>,</mo><mn>869604401</mn></mrow></semantics></math> nên số gần đúng của số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi>π</mi><mn>2</mn></msup></semantics></math> chính xác đến hàng phần nghìn là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>9</mn><mo>,</mo><mn>87</mn></mrow></semantics></math>.</li><li>Hàng lớn nhất của độ chính xác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>00007</mn></mrow></semantics></math> là hàng phần trăm nghìn.</li></ol>",
+  "accepted_answers": []
+}

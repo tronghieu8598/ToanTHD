@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-8H1-q021-v4",
+  "original_number": 21,
+  "kind": "mcq",
+  "based_on": "34c1dce77e139585df85c412fb91323b1b56e5d0b07e3193702744cee3a8b40e",
+  "prompt": "<div class=\"with-figure\"><div>Cho hình chóp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>.</mi><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> có đáy là hình vuông và tất cả các cạnh đều bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math>. Tính số đo của góc giữa hai đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>D</mi></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>B</mi></mrow></semantics></math>.<div class=\"paragraph-gap\"></div></div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/18a7186ef7067efc5cd2f0543709d4394b522b287b1e1c4fa4602a2d86c320e0.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>30</mn><mo>∘</mo></msup></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>90</mn><mo>∘</mo></msup></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>60</mn><mo>∘</mo></msup></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>45</mn><mo>∘</mo></msup></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>.</mi><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> có tất cả các cạnh đều bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>△</mi><mi>S</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> là tam giác đều. Khi đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>B</mi><mo>,</mo><mi>B</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mn>60</mn><mo>∘</mo></msup></mrow></semantics></math>.<br><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> là hình vuông nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>D</mi><mo>∥</mo><mi>B</mi><mi>C</mi></mrow></semantics></math>. Suy ra\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>D</mi><mo>,</mo><mi>S</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mi>B</mi><mo>,</mo><mi>B</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mn>60</mn><mo>∘</mo></msup><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

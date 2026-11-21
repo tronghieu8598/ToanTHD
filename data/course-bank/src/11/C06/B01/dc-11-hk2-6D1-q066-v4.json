@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D1-q066-v4",
+  "original_number": 66,
+  "kind": "mcq",
+  "based_on": "8df972c45bdd0d47eab89122bab046c82d882a9b845b03e157073763f3539a45",
+  "prompt": "Cho hai số thực dương <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>b</mi></semantics></math> và hai số nguyên dương <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>m</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>n</mi></semantics></math> tùy ý. Khẳng định nào sau đây sai?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mroot><mi>a</mi><mi>n</mi></mroot><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>m</mi></msup><mo>=</mo><mroot><msup><mi>a</mi><mi>m</mi></msup><mi>n</mi></mroot></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mroot><mi>a</mi><mi>n</mi></mroot><mroot><mi>b</mi><mi>n</mi></mroot></mfrac><mo>=</mo><mroot><mfrac displaystyle=\"true\"><mi>a</mi><mi>b</mi></mfrac><mi>n</mi></mroot></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mroot><mi>a</mi><mi>n</mi></mroot><mo>⋅</mo><mroot><mi>b</mi><mi>m</mi></mroot><mo>=</mo><mroot><mrow><mi>a</mi><mo>⋅</mo><mi>b</mi></mrow><mrow><mi>n</mi><mo>⋅</mo><mi>m</mi></mrow></mroot></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mroot><mroot><mi>a</mi><mi>n</mi></mroot><mi>m</mi></mroot><mo>=</mo><mroot><mi>a</mi><mrow><mi>m</mi><mo>⋅</mo><mi>n</mi></mrow></mroot></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Khẳng định sai là ““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mroot><mi>a</mi><mi>n</mi></mroot><mo>⋅</mo><mroot><mi>b</mi><mi>m</mi></mroot><mo>=</mo><mroot><mrow><mi>a</mi><mo>⋅</mo><mi>b</mi></mrow><mrow><mi>n</mi><mo>⋅</mo><mi>m</mi></mrow></mroot></mrow></semantics></math>””.",
+  "accepted_answers": []
+}

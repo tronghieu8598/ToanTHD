@@ -1,0 +1,11 @@
+{
+  "id": "dc-10-hk2-8D3-q066-v4",
+  "original_number": 66,
+  "kind": "short",
+  "based_on": "b7c98060f0a73bb010c20890036071c21c6f8a58dd12991c7b92a6b4de24587f",
+  "prompt": "Tìm hệ số của số hạng không chứa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> trong khai triển <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mn>2</mn><mi>x</mi></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>4</mn></msup></semantics></math>.\n\t<div class=\"paragraph-gap\"></div>",
+  "choices": [],
+  "correct": "24",
+  "solution": "Số hạng tổng quát của khai triển là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>4</mn><mi>k</mi></msubsup><mo>⋅</mo><msup><mi>x</mi><mrow><mn>4</mn><mo>−</mo><mi>k</mi></mrow></msup><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>2</mn><mi>x</mi></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>k</mi></msup><mo>=</mo><msup><mn>2</mn><mi>k</mi></msup><mo>⋅</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>4</mn><mi>k</mi></msubsup><mo>⋅</mo><msup><mi>x</mi><mrow><mn>4</mn><mo>−</mo><mn>2</mn><mi>k</mi></mrow></msup></mrow></semantics></math>.<br>Theo bài ra ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mo>−</mo><mn>2</mn><mi>k</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>k</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>.<br>Vậy hệ số của số hạng không chứa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> trong khai triển là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>2</mn><mn>2</mn></msup><mo>⋅</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>4</mn><mn>2</mn></msubsup><mo>=</mo><mn>24</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

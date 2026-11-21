@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-2D1-q054-v4",
+  "original_number": 54,
+  "kind": "tf",
+  "based_on": "5ee89459911c7accb2184234e90d05b8382251723c7c408938be5276164cef8d",
+  "prompt": "Bình thích ăn hai loại trái cây là cam và xoài, mỗi tuần mẹ cho Bình tối đa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>200</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> đồng để mua trái cây. Biết rằng giá cam là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>15</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> đồng/<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>kg, giá xoài là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>30</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> đồng/<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>kg. Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>y</mi></semantics></math> (<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math>) lần lượt là số kg cam và xoài mà Bình có thể mua về trong một tuần.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Tổng số tiền mà Bình phải trả để mua cam và xoài trong vòng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> tuần là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>30</mn><mspace width=\"0.167em\"/><mn>000</mn><mi>x</mi><mo>+</mo><mn>15</mn><mspace width=\"0.167em\"/><mn>000</mn><mi>y</mi></mrow></semantics></math> đồng"
+    },
+    {
+      "key": "b",
+      "text": "Điều kiện về số tiền Bình có thể mua hai loại trái cây đó là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>+</mo><mn>6</mn><mi>y</mi><mo>≥</mo><mn>40</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Bình có thể mua <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> kg cam và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> kg xoài mỗi tuần mà không vượt quá số tiền cho phép"
+    },
+    {
+      "key": "d",
+      "text": "Nếu Bình phải mua cả cam và xoài trong tuần thì số kg cam tối đa có thể mua là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math>kg"
+    }
+  ],
+  "correct": [
+    false,
+    false,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Sai.<br>Vì tổng số tiền mà Bình phải trả để mua cam và xoài trong vòng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> tuần là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>15</mn><mspace width=\"0.167em\"/><mn>000</mn><mi>x</mi><mo>+</mo><mn>30</mn><mspace width=\"0.167em\"/><mn>000</mn><mi>y</mi></mrow></semantics></math> đồng.</li><li>Sai. <br>Vì Bình có tối đa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>200</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> đồng để mua trái cây nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>15</mn><mspace width=\"0.167em\"/><mn>000</mn><mi>x</mi><mo>+</mo><mn>30</mn><mspace width=\"0.167em\"/><mn>000</mn><mi>y</mi><mo>≤</mo><mn>200</mn><mspace width=\"0.167em\"/><mn>000</mn><mo>⇔</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>6</mn><mi>y</mi><mo>≤</mo><mn>40</mn></mrow></semantics></math>.</li><li>Đúng. <br>Vì với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>5</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>4</mn></mrow></semantics></math> thỏa mãn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>15</mn><mspace width=\"0.167em\"/><mn>000</mn><mo>⋅</mo><mn>5</mn><mo>+</mo><mn>30</mn><mspace width=\"0.167em\"/><mn>000</mn><mo>⋅</mo><mn>4</mn><mo>=</mo><mn>195</mn><mspace width=\"0.167em\"/><mn>000</mn><mo>&lt;</mo><mn>200</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> (thỏa mãn).</li><li>Sai. <br>Vì Bình phải mua cả hai loại và để mua cam nhiều nhất nên xoài chỉ mua <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> kg, tức là <div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>1</mn><mo>⇒</mo><mn>15</mn><mspace width=\"0.167em\"/><mn>000</mn><mi>x</mi><mo>+</mo><mn>30</mn><mspace width=\"0.167em\"/><mn>000</mn><mo>≤</mo><mn>200</mn><mspace width=\"0.167em\"/><mn>000</mn><mo>⇔</mo><mi>x</mi><mo>≤</mo><mfrac displaystyle=\"true\"><mn>34</mn><mn>3</mn></mfrac><mi>.</mi></mrow></semantics></math></div>\n\t\t\tDo <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℕ</mi></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> tối đa có thể bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>11</mn></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

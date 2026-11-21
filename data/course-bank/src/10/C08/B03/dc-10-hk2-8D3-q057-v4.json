@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-8D3-q057-v4",
+  "original_number": 57,
+  "kind": "tf",
+  "based_on": "1ae55d04eeae40ec32c6e2e30970aff031014b92df3fbee6051c22c68c2ce6b0",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mi>x</mi><mo>−</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>5</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>4</mn></msup><mo>=</mo><msub><mi>b</mi><mn>0</mn></msub><mo>+</mo><msub><mi>b</mi><mn>1</mn></msub><mi>x</mi><mo>+</mo><msub><mi>b</mi><mn>2</mn></msub><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msub><mi>b</mi><mn>3</mn></msub><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msub><mi>b</mi><mn>4</mn></msub><msup><mi>x</mi><mn>4</mn></msup></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Hệ số của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi>x</mi><mn>2</mn></msup></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>b</mi><mn>2</mn></msub><mo>=</mo><mfrac displaystyle=\"true\"><mn>216</mn><mn>25</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Tổng của các hệ số chứa lũy thừa lẻ của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn><mspace width=\"0.167em\"/><mn>496</mn></mrow><mn>125</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Hệ số của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi>x</mi><mn>3</mn></msup></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>b</mi><mn>3</mn></msub><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>96</mn><mn>125</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Tổng các hệ số của khai triển bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>28</mn><mspace width=\"0.167em\"/><mn>561</mn></mrow><mn>625</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    true
+  ],
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mi>x</mi><mo>−</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>5</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>4</mn></msup><mo>=</mo><mn>81</mn><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mfrac displaystyle=\"true\"><mn>216</mn><mn>5</mn></mfrac><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mfrac displaystyle=\"true\"><mn>216</mn><mn>25</mn></mfrac><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mfrac displaystyle=\"true\"><mn>96</mn><mn>125</mn></mfrac><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mn>16</mn><mn>625</mn></mfrac></mrow></semantics></math>.\n\t\t<ol class=\"alpha-list\"><li>Hệ số của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi>x</mi><mn>2</mn></msup></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>b</mi><mn>2</mn></msub><mo>=</mo><mfrac displaystyle=\"true\"><mn>216</mn><mn>25</mn></mfrac></mrow></semantics></math>.</li><li>Tổng các hệ số là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>81</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>216</mn><mn>5</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>216</mn><mn>25</mn></mfrac><mo>−</mo><mfrac displaystyle=\"true\"><mn>96</mn><mn>125</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>16</mn><mn>625</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>28</mn><mspace width=\"0.167em\"/><mn>561</mn></mrow><mn>625</mn></mfrac></mrow></semantics></math>.</li><li>Hệ số của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi>x</mi><mn>3</mn></msup></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>b</mi><mn>3</mn></msub><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>216</mn><mn>5</mn></mfrac></mrow></semantics></math>.</li><li>Tổng của các hệ số chứa lũy thừa lẻ của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mn>216</mn><mn>5</mn></mfrac><mo>−</mo><mfrac displaystyle=\"true\"><mn>96</mn><mn>125</mn></mfrac><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn><mspace width=\"0.167em\"/><mn>496</mn></mrow><mn>125</mn></mfrac></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

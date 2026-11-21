@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-1D4-q084-v4",
+  "original_number": 84,
+  "kind": "tf",
+  "based_on": "8dc1d38bd504bba88ad3545932d54b42c393ca4baba85cad25b99f3812d1a03e",
+  "prompt": "Cho phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mn>3</mn><mi>x</mi><mo>=</mo><mn>2</mn><mo>sin</mo><mi>x</mi><mo>⋅</mo><mo>cos</mo><mi>x</mi></mrow></semantics></math>",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>sin</mo><mi>x</mi><mo>⋅</mo><mo>cos</mo><mi>x</mi><mo>=</mo><mo>sin</mo><mn>2</mn><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Phương trình đã cho có nghiệm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>10</mn></mfrac><mo>+</mo><mi>k</mi><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>π</mi></mrow><mn>5</mn></mfrac></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>−</mo><mi>k</mi><mn>2</mn><mi>π</mi></mrow></semantics></math> <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Phương trình đã cho có hai nghiệm"
+    },
+    {
+      "key": "d",
+      "text": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mn>2</mn><mi>x</mi><mo>=</mo><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>−</mo><mn>2</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>sin</mo><mi>x</mi><mo>⋅</mo><mo>cos</mo><mi>x</mi><mo>=</mo><mo>sin</mo><mn>2</mn><mi>x</mi></mrow></semantics></math>.</li><li>Phương trình đã cho có hai họ nghiệm.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mn>2</mn><mi>x</mi><mo>=</mo><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>−</mo><mn>2</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</li><li>Khi đó phương trình đã cho tương đương với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mn>3</mn><mi>x</mi><mo>=</mo><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>−</mo><mn>2</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math><br><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mn>3</mn><mi>x</mi><mo>=</mo><mfrac displaystyle=\"false\"><mi>π</mi><mn>2</mn></mfrac><mo>−</mo><mn>2</mn><mi>x</mi><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mn>3</mn><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"false\"><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mn>2</mn><mi>x</mi><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math> <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mfrac displaystyle=\"false\"><mi>π</mi><mn>10</mn></mfrac><mo>+</mo><mi>k</mi><mfrac displaystyle=\"false\"><mrow><mn>2</mn><mi>π</mi></mrow><mn>5</mn></mfrac></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"false\"><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>.<br>Vậy phương trình đã cho có nghiệm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>10</mn></mfrac><mo>+</mo><mi>k</mi><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>π</mi></mrow><mn>5</mn></mfrac></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>−</mo><mi>k</mi><mn>2</mn><mi>π</mi></mrow></semantics></math> <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

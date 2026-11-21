@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-1D3-q028-v4",
+  "original_number": 28,
+  "kind": "mcq",
+  "based_on": "9541f10c694aff0bc7b37834a449385f898ac6e82eec57d836d72d4e760f3176",
+  "prompt": "Giá trị nhỏ nhất của hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>2</mn><mo>sin</mo><mi>x</mi><mo>+</mo><mn>5</mn></mrow></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>1</mn><mo>≤</mo><mo>sin</mo><mi>x</mi><mo>≤</mo><mn>1</mn><mo>,</mo><mspace width=\"0.222em\"/><mo>∀</mo><mi>x</mi><mo>∈</mo><mi>ℝ</mi><mo>⇒</mo><mo>−</mo><mn>2</mn><mo>≤</mo><mn>2</mn><mo>sin</mo><mi>x</mi><mo>≤</mo><mn>2</mn><mo>⇒</mo><mn>3</mn><mo>≤</mo><mn>2</mn><mo>sin</mo><mi>x</mi><mo>+</mo><mn>5</mn><mo>≤</mo><mn>8</mn><mo>⇒</mo><mn>3</mn><mo>≤</mo><mi>y</mi><mo>≤</mo><mn>8</mn></mrow></semantics></math>.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>sin</mo><mi>x</mi><mo>+</mo><mn>5</mn><mo>=</mo><mn>3</mn><mo>⇔</mo><mo>sin</mo><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn><mo>=</mo><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⇔</mo><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi></mrow></semantics></math>.<br>Vậy giá trị nhỏ nhất của hàm số là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math>.",
+  "accepted_answers": []
+}

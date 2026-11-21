@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-8D3-q017-v4",
+  "original_number": 17,
+  "kind": "mcq",
+  "based_on": "3d4d0319ed3f8da3dde99bb1bdde1bff100f804b5ca042498ca5aceed5414ff5",
+  "prompt": "Khai triển <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>4</mn></msup><mo>=</mo><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><msub><mi>a</mi><mn>1</mn></msub><mi>x</mi><mo>+</mo><msub><mi>a</mi><mn>2</mn></msub><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msub><mi>a</mi><mn>3</mn></msub><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msub><mi>a</mi><mn>4</mn></msub><msup><mi>x</mi><mn>4</mn></msup></mrow></semantics></math>. Tính giá trị biểu thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>a</mi><mn>2</mn></msub><mo>+</mo><msub><mi>a</mi><mn>3</mn></msub></mrow></semantics></math>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>310</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>311</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>313</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>312</mn></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mtd><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>4</mn></msup></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><msubsup><mi mathvariant=\"normal\">C</mi><mn>4</mn><mn>0</mn></msubsup><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>0</mn></msup><mo>⋅</mo><msup><mn>3</mn><mn>4</mn></msup><mo>+</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>4</mn><mn>1</mn></msubsup><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>1</mn></msup><mo>⋅</mo><msup><mn>3</mn><mn>3</mn></msup><mo>+</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>4</mn><mn>2</mn></msubsup><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>⋅</mo><msup><mn>3</mn><mn>2</mn></msup><mo>+</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>4</mn><mn>3</mn></msubsup><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>3</mn></msup><mo>⋅</mo><msup><mn>3</mn><mn>1</mn></msup><mo>+</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>4</mn><mn>4</mn></msubsup><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>4</mn></msup><mo>⋅</mo><msup><mn>3</mn><mn>0</mn></msup></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mn>81</mn><mo>+</mo><mn>216</mn><mi>x</mi><mo>+</mo><mn>216</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>96</mn><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>16</mn><msup><mi>x</mi><mn>4</mn></msup><mi>.</mi></mtd></mtr></mtable></semantics></math></div>\n\t\tDo đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>a</mi><mn>2</mn></msub><mo>=</mo><mn>216</mn></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>a</mi><mn>3</mn></msub><mo>=</mo><mn>96</mn></mrow></semantics></math>.<br>Vậy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>a</mi><mn>2</mn></msub><mo>+</mo><msub><mi>a</mi><mn>3</mn></msub><mo>=</mo><mn>216</mn><mo>+</mo><mn>96</mn><mo>=</mo><mn>312</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

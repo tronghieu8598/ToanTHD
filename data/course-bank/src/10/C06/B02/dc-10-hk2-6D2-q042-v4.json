@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-6D2-q042-v4",
+  "original_number": 42,
+  "kind": "mcq",
+  "based_on": "569a99180672da391c10e8125a43410abef54f72b7f70f28a751b6dbb30774dc",
+  "prompt": "Tại một buối khai trương, người ta làm một cổng chào có đường viền của mặt cắt là một đường parabol. Người ta đo khoảng cách giữa hai chân cổng là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mo>,</mo><mn>5</mn></mrow></semantics></math> m. Từ một điểm trên thân cổng người ta đo được khoảng cách tới mặt đất (điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>H</mi></semantics></math>) là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mn>8</mn></mrow></semantics></math> m và khoảng cách từ điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>H</mi></semantics></math> tới chân cổng gần nhất là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>m. Hãy tính chiều cao của cổng chào đó (tính theo đường viền trong) theo đơn vị mét và làm tròn kết quả đến hàng phần mười",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>,</mo><mn>7</mn></mrow></semantics></math> m"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>,</mo><mn>6</mn></mrow></semantics></math> m"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>,</mo><mn>5</mn></mrow></semantics></math> m"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>,</mo><mn>3</mn></mrow></semantics></math> m"
+    }
+  ],
+  "correct": "B",
+  "solution": "<div class=\"with-figure\"><div>Chọn hệ toạ độ như hình vẽ.<br>Cổng chào có dạng đường parabol có phương trình<br><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi></mrow></semantics></math>.<br>Theo bài ra parabol đi qua các điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>H</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>,</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> nên ta có hệ\n\t\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mfrac displaystyle=\"false\"><mn>81</mn><mn>4</mn></mfrac><mi>a</mi><mo>+</mo><mfrac displaystyle=\"false\"><mn>9</mn><mn>2</mn></mfrac><mi>b</mi><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>a</mi><mo>+</mo><mi>b</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>8</mn></mtd></mtr></mtable></mrow><mo>⇒</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>a</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"false\"><mn>18</mn><mn>35</mn></mfrac></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>b</mi><mo>=</mo><mfrac displaystyle=\"false\"><mn>81</mn><mn>35</mn></mfrac><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math><br>Toạ độ của đỉnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>I</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>9</mn><mn>4</mn></mfrac><mo>;</mo><mfrac displaystyle=\"true\"><mn>729</mn><mn>280</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.<br>Vậy chiều cao cổng chào là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>h</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>729</mn><mn>280</mn></mfrac><mo>≈</mo><mn>2</mn><mo>,</mo><mn>6</mn></mrow></semantics></math> (m).</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/d37cbde3659de8372e90f24df0537a32bb7006ba9c6730877e3f9d2e2d35f7fd.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

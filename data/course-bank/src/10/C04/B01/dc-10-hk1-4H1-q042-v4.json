@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-4H1-q042-v4",
+  "original_number": 42,
+  "kind": "tf",
+  "based_on": "e6d4700455553a469a0655946cdf004642c6e7e74a88506d42fbcbd0dee33fa7",
+  "prompt": "<div class=\"with-figure\"><div>Cho tam giác đều <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> cạnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>a</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>G</mi></semantics></math> là trọng tâm như hình vẽ. Xét tính đúng sai của các khẳng định sau:</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/afed12fb1ff89064eb4c0287e30b62ba400a5326dc996b743cf48acd6bb4cfa1.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Từ các điểm trên hình không thể tạo được các cặp vectơ cùng phương"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mover><mrow><mi>A</mi><mi>G</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>a</mi><msqrt><mn>3</mn></msqrt></mrow><mn>3</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>G</mi><mi>B</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>120</mn><mo>∘</mo></msup></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "solution": "<div class=\"with-figure\"><div><ol class=\"alpha-list\"><li>Khẳng định <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math> là sai vì hai vectơ bằng nhau phải cùng hướng và cùng độ dài.</li><li>Trên hình có nhiều cặp vectơ cùng phương như <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>B</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>H</mi><mo>=</mo><msqrt><mrow><mi>A</mi><msup><mi>B</mi><mn>2</mn></msup><mo>−</mo><mi>B</mi><msup><mi>H</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><msqrt><mrow><mn>4</mn><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mi>a</mi><msqrt><mn>2</mn></msqrt></mrow></semantics></math>.<br>Lại có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>G</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac><mi>A</mi><mi>H</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>a</mi><msqrt><mn>3</mn></msqrt></mrow><mn>3</mn></mfrac></mrow></semantics></math>.<br>Vậy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mover><mrow><mi>A</mi><mi>G</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>a</mi><msqrt><mn>3</mn></msqrt></mrow><mn>3</mn></mfrac></mrow></semantics></math>.</li><li>Trong tam giác đều <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi><mi>G</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><mover><mrow><mi>B</mi><mi>A</mi><mi>G</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>30</mn><mo>∘</mo></msup></mrow></semantics></math>.<br>Suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>G</mi><mi>B</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><msup><mn>30</mn><mo>∘</mo></msup><mo>−</mo><msup><mn>30</mn><mo>∘</mo></msup><mo>=</mo><msup><mn>120</mn><mo>∘</mo></msup></mrow></semantics></math>.</li></ol></div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/f36fa6b3693225bf62e0fc057e9f681717e34e5e96e640866eb35e0ad2edb70e.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

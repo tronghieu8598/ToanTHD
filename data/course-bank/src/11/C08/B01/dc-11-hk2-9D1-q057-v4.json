@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-9D1-q057-v4",
+  "original_number": 57,
+  "kind": "mcq",
+  "based_on": "ace5a6249697dfccbfb808b251e6c0b626b8efb58f6a5e6b0064b81087057b21",
+  "prompt": "Một hộp chứa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>21</mn></semantics></math> tấm thẻ cùng loại được đánh số từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> đến <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>21</mn></semantics></math>. Chọn ra ngẫu nhiên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> thẻ từ hộp. Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là biến cố ““ Số ghi trên thẻ được chọn chia hết cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>””, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math> là biến cố ““ Số ghi trên thẻ được chọn chia hết cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math>””.\n\tChọn khẳng định <strong>đúng</strong> trong các khẳng định sau:",
+  "choices": [
+    {
+      "key": "A",
+      "text": "Hai biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math> độc lập"
+    },
+    {
+      "key": "B",
+      "text": "Hai biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math> không độc lập"
+    },
+    {
+      "key": "C",
+      "text": "Hai biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover></semantics></math> đối nhau"
+    },
+    {
+      "key": "D",
+      "text": "Hai biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math> xung khắc"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>2</mn><mo>;</mo><mn>4</mn><mo>;</mo><mn>6</mn><mo>;</mo><mn>8</mn><mo>;</mo><mn>10</mn><mo>;</mo><mn>12</mn><mo>;</mo><mn>14</mn><mo>;</mo><mn>16</mn><mo>;</mo><mn>18</mn><mo>;</mo><mn>20</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>3</mn><mo>;</mo><mn>6</mn><mo>;</mo><mn>9</mn><mo>;</mo><mn>12</mn><mo>;</mo><mn>15</mn><mo>;</mo><mn>18</mn><mo>;</mo><mn>21</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>.<br>Suy ra\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>10</mn><mn>21</mn></mfrac></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>7</mn><mn>21</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></mrow></semantics></math> và  <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>21</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>7</mn></mfrac></mrow></semantics></math>.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>7</mn></mfrac><mo>≠</mo><mfrac displaystyle=\"true\"><mn>10</mn><mn>21</mn></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>10</mn><mn>63</mn></mfrac><mo>=</mo><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> nên hai biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math> không độc lập.",
+  "accepted_answers": []
+}

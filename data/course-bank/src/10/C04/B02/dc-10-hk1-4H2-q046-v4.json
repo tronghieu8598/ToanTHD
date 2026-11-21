@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-4H2-q046-v4",
+  "original_number": 46,
+  "kind": "mcq",
+  "based_on": "c16925da48e2e7ffbba541e453ba99773b86003c2d7388d76950841906997e35",
+  "prompt": "Một dòng sông chảy từ phía bắc xuống phía nam với vận tốc là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> km/h. Một chiếc canô chuyển động từ phía đông sang tây với vận tốc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>40</mn></semantics></math> km/h so với mặt nước. Tìm vận tốc của canô so với bờ sông.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>10</mn><msqrt><mn>15</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>10</mn><msqrt><mn>5</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>15</mn><msqrt><mn>15</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>15</mn><msqrt><mn>10</mn></msqrt></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/6c95ba2ccbbf8592691bccd3233b3b660723e40bcdd0eb623d7bab970385a54b.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tGọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>C</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> là vận tốc của canô, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>C</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> là vận tốc của canô theo phương vuông góc với bờ sông và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> là vận tốc của dòng nước. Ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>C</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>C</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>⇔</mo><mover><mrow><mi>C</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>C</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math></div>\n\t\tKhi đó\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mover><mrow><mi>C</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>=</mo><msqrt><mrow><msup><mover><mrow><mi>C</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mn>2</mn></msup><mo>−</mo><msup><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mn>2</mn></msup></mrow></msqrt><mo>=</mo><msqrt><mrow><msup><mn>40</mn><mn>2</mn></msup><mo>−</mo><msup><mn>10</mn><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mn>10</mn><msqrt><mn>15</mn></msqrt><mi>.</mi></mrow></semantics></math></div>\n\t\tVận tốc của canô là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>10</mn><msqrt><mn>15</mn></msqrt></mrow></semantics></math> km/h.",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-5TK2-q032-v4",
+  "original_number": 32,
+  "kind": "mcq",
+  "based_on": "27051077842c30b62c1758f1e9c231bb3faa5b781ff590ce689d15b3ff561158",
+  "prompt": "Tìm tứ phân vị thứ ba của mẫu số liệu sau: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>11</mn><mo>;</mo><mn>17</mn><mo>;</mo><mn>13</mn><mo>;</mo><mn>14</mn><mo>;</mo><mn>15</mn><mo>;</mo><mn>14</mn><mo>;</mo><mn>15</mn><mo>;</mo><mn>16</mn><mo>;</mo><mn>17</mn></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>15</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>15</mn><mo>,</mo><mn>5</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>16</mn><mo>,</mo><mn>5</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>16</mn></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Sắp xếp lại mẫu số liệu không giảm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>11</mn><mo>;</mo><mn>13</mn><mo>;</mo><mn>14</mn><mo>;</mo><mn>14</mn><mo>;</mo><mn>15</mn><mo>;</mo><mn>15</mn><mo>;</mo><mn>16</mn><mo>;</mo><mn>17</mn><mo>;</mo><mn>17</mn></mrow></semantics></math>.<br>Cỡ mẫu là  <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>9</mn></mrow></semantics></math> suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Q</mi><mn>2</mn></msub><mo>=</mo><msub><mi>x</mi><mn>5</mn></msub><mo>=</mo><mn>15</mn></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msub><mi>x</mi><mn>7</mn></msub><mo>+</mo><msub><mi>x</mi><mn>8</mn></msub></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>16</mn><mo>+</mo><mn>17</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>16</mn><mo>,</mo><mn>5</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

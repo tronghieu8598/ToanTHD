@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-1D4-q090-v4",
+  "original_number": 90,
+  "kind": "tf",
+  "based_on": "bbbd7b113eb364c217fb61a8451d552aa44bc3b5dda5d1a9dcacb9d83e7bdcb3",
+  "prompt": "Cho phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mo>cos</mo><mn>2</mn><mi>x</mi></mrow><mrow><mn>1</mn><mo>+</mo><mo>sin</mo><mn>2</mn><mi>x</mi></mrow></mfrac><mo>=</mo><mn>0</mn></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Nghiệm dương nhỏ nhất của phương trình có dạng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mi>a</mi><mi>π</mi></mrow><mi>b</mi></mfrac></semantics></math>, với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mi>a</mi><mi>b</mi></mfrac></semantics></math> là phân số tối giản. Khi đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>b</mi><mo>=</mo><mn>8</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Điều kiện xác định của phương trình là  <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mn>2</mn><mi>x</mi><mo>≠</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Phương trình có nghiệm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac><mo>+</mo><mi>k</mi><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Tổng các nghiệm nghiệm thuộc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>2</mn><mi>π</mi><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> của phương trình đã cho là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mi>π</mi></mrow><mn>2</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "solution": "Ta có điều kiện xác định của phương trình là  <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mn>2</mn><mi>x</mi><mo>≠</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>.<br>Phương trình đã cho suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mn>2</mn><mi>x</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mn>2</mn><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mi>k</mi><mi>π</mi></mrow></semantics></math>.<br>Do <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mn>2</mn><mi>x</mi><mo>≠</mo><mo>−</mo><mn>1</mn></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi><mo>⇔</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac><mo>+</mo><mi>k</mi><mi>π</mi></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>.\n\t\t<ol class=\"alpha-list\"><li><strong>Sai.</strong> Khi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> thì phương trình đã cho có nghiệm dương nhỏ nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac></mrow></semantics></math>.<br>Suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>. Khi đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>b</mi><mo>=</mo><msup><mn>1</mn><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo>⋅</mo><mn>4</mn><mo>=</mo><mn>9</mn></mrow></semantics></math>.</li><li><strong>Sai.</strong> Phương trình có nghiệm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac><mo>+</mo><mi>k</mi><mi>π</mi></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>.</li><li><strong>Đúng.</strong> Tổng các nghiệm thuộc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>2</mn><mi>π</mi><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> của phương trình đã cho là\n\t\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn><mi>π</mi></mrow><mn>4</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mi>π</mi></mrow><mn>2</mn></mfrac><mi>.</mi></mrow></semantics></math></div></li><li><strong>Đúng.</strong> Điều kiện xác định của phương trình là  <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mn>2</mn><mi>x</mi><mo>≠</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

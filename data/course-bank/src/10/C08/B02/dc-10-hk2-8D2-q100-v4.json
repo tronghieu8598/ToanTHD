@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-8D2-q100-v4",
+  "original_number": 100,
+  "kind": "tf",
+  "based_on": "0dddd44586233137f6f618fe2566db8b1c467035a5a80ee22a78193e975b7327",
+  "prompt": "Lớp 10C10 có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>18</mn></semantics></math> học sinh nam và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>21</mn></semantics></math> học sinh nữ. Giả sử tất cả các học sinh trong lớp đều có thể đảm nhận các vị trí, nhiệm vụ được giao.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Chọn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> học sinh nam vào các vị trí lớp trưởng, lớp phó học tập, Bí thư và Phó Bí thư. Khi đó, số cách chọn là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mspace width=\"0.167em\"/><mn>440</mn></mrow></semantics></math> (cách)"
+    },
+    {
+      "key": "b",
+      "text": "Chọn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> học sinh tham gia đội Thanh niên xung kích, trong đó có ít nhất một học sinh nữ. Khi đó, số cách chọn là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mspace width=\"0.167em\"/><mn>323</mn></mrow></semantics></math> (cách)"
+    },
+    {
+      "key": "c",
+      "text": "Chọn hai học sinh gồm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> học sinh nam và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> học sinh nữ. Khi đó, số cách chọn là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>318</mn></semantics></math> (cách)"
+    },
+    {
+      "key": "d",
+      "text": "Chọn một học sinh trong lớp vào vị trí Bí thư. Khi đó, số cách chọn là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>39</mn></semantics></math> (cách)"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Tổng số học sinh trong lớp là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>18</mn><mo>+</mo><mn>21</mn><mo>=</mo><mn>39</mn></mrow></semantics></math>.<br>Chọn một học sinh bất kỳ vào vị trí Bí Thư, có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>39</mn><mn>1</mn></msubsup><mo>=</mo><mn>39</mn></mrow></semantics></math> (cách).</li><li>Chọn hai học sinh gồm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> học sinh nam và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> học sinh nữ, có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>18</mn><mn>1</mn></msubsup><mo>⋅</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>21</mn><mn>1</mn></msubsup><mo>=</mo><mn>378</mn></mrow></semantics></math> (cách).</li><li>Chọn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> học sinh nam vào các vị trí lớp trưởng, lớp phó học tập, Bí thư và Phó Bí thư, có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">A</mi><mn>18</mn><mn>4</mn></msubsup><mo>=</mo><mn>73</mn><mspace width=\"0.167em\"/><mn>440</mn></mrow></semantics></math> (cách).</li><li>Chọn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> học sinh không có học sinh nữ, có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msubsup><mi mathvariant=\"normal\">C</mi><mn>18</mn><mn>3</mn></msubsup></semantics></math> (cách).<br>Do đó, số cách chọn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> học sinh tham gia đội Thanh niên xung kích, trong đó có ít nhất một học sinh nữ là<br><div><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>39</mn><mn>3</mn></msubsup><mo>−</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>18</mn><mn>3</mn></msubsup><mo>=</mo><mn>9</mn><mspace width=\"0.167em\"/><mn>139</mn><mo>−</mo><mn>816</mn><mo>=</mo><mn>8</mn><mspace width=\"0.167em\"/><mn>323</mn></mrow></semantics></math> (cách).</div></li></ol>",
+  "accepted_answers": []
+}

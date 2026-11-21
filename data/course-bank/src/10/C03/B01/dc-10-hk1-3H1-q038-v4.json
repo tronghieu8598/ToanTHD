@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-3H1-q038-v4",
+  "original_number": 38,
+  "kind": "tf",
+  "based_on": "276b4e52318b3568953e68ebe729161915d060be52e2933841425bd086d68b10",
+  "prompt": "Với mọi góc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>α</mi></semantics></math> thoả mãn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>0</mn><mo>∘</mo></msup><mo>&lt;</mo><mi>α</mi><mo>&lt;</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>α</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>α</mi><mo>&lt;</mo><mn>0</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mi>α</mi><mo>&lt;</mo><mn>0</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cot</mo><mi>α</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "solution": "Với mọi góc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>α</mi></semantics></math> thoả mãn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>0</mn><mo>∘</mo></msup><mo>&lt;</mo><mi>α</mi><mo>&lt;</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow></semantics></math>, ta có\n\t\t<ol class=\"alpha-list\"><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>α</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>α</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mi>α</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cot</mo><mi>α</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

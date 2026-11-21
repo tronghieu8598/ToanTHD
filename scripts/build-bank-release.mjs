@@ -98,8 +98,10 @@ export async function buildBankRelease(scope = '12-C06') {
     const lessonIds = new Set(chapter.lessons.map(lesson => lesson.id));
     const sourceCommit = git('rev-parse', '--verify', 'HEAD^{commit}');
     assertCommittedSource(scope);
-    const [bank, variantOverlay] = ['bank', 'variants'].map(part => compileContent(part, undefined, undefined, scope)[0]);
-    for (const {files} of [bank, variantOverlay]) {
+    const parts = chapter.variants === false ? ['bank'] : ['bank', 'variants'];
+    const outputs = parts.map(part => compileContent(part, undefined, undefined, scope)[0]);
+    const [bank, variantOverlay] = outputs;
+    for (const {files} of outputs) {
         for (const [file, bytes] of files) {
             assert(read(file).equals(bytes), 'Gói chưa đồng bộ với nguồn: ' + file + '. Chạy npm run content:build rồi commit.');
         }
@@ -116,18 +118,19 @@ export async function buildBankRelease(scope = '12-C06') {
         questions.length === bank.summary.questions && ids.size === questions.length && questions.every(question =>
         question.bank_fingerprint === sha256(courseRowPayload(question))),
         `Tài liệu, bài học hoặc dấu vân tay câu chuẩn ${scope} không khớp.`);
-    const sourceHolds = await verifyVariantSource(scope, questions);
-
+    const sourceHolds = variantOverlay ? await verifyVariantSource(scope, questions) : [];
     const variants = [];
-    for (const question of questions) {
-        for (const key of availableQuestionVariantKeys(question)) {
-            const variant = await resolveQuestionVariant(question, key);
-            assert(variant && variant.kind === question.kind,
-                'Không đọc được biến thể đã duyệt của ' + question.id);
-            variants.push(variant);
+    if (variantOverlay) {
+        for (const question of questions) {
+            for (const key of availableQuestionVariantKeys(question)) {
+                const variant = await resolveQuestionVariant(question, key);
+                assert(variant && variant.kind === question.kind,
+                    'Không đọc được biến thể đã duyệt của ' + question.id);
+                variants.push(variant);
+            }
         }
+        assert(variants.length === variantOverlay.summary.available, 'Số biến thể mà web dùng chưa khớp gói đã duyệt.');
     }
-    assert(variants.length === variantOverlay.summary.available, 'Số biến thể mà web dùng chưa khớp gói đã duyệt.');
     const assets = referencedAssets([...questions.map(question => decodeQuestion(question)), ...variants]);
     assertCommittedSource(scope, assets);
     assert(sourceCommit === git('rev-parse', '--verify', 'HEAD^{commit}'), 'Commit nguồn vừa đổi. Chạy lại bước đóng gói.');
@@ -136,14 +139,14 @@ export async function buildBankRelease(scope = '12-C06') {
     const sourceVersion = bank.summary.changed.length ? `${baseVersion}+${bank.summary.version}` : baseVersion;
     const release = {
         format: 'toanthd.bank-release/1', scope, source_commit: sourceCommit,
-        source_version: sourceVersion, variants_version: variantOverlay.summary.version,
+        source_version: sourceVersion, variants_version: variantOverlay?.summary.version ?? null,
         documents, lessons, questions, assets,
     };
     const data = Buffer.from(JSON.stringify(release));
     const summary = {
         scope, source_commit: sourceCommit, source_version: sourceVersion, variants_version: release.variants_version,
         documents: documents.length, lessons: lessons.length, questions: questions.length,
-        variants: variants.length, held: [...new Set([...sourceHolds.map(hold => hold.source_id), ...variantOverlay.summary.held])].sort(),
+        variants: variants.length, held: [...new Set([...sourceHolds.map(hold => hold.source_id), ...(variantOverlay?.summary.held ?? [])])].sort(),
         assets: assets.length, bytes: data.length, sha256: sha256(data),
     };
     return {data, summary};

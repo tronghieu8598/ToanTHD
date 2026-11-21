@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-8D2-q094-v4",
+  "original_number": 94,
+  "kind": "tf",
+  "based_on": "92589c60d114f6c93de61cfeaf72c5a11b330a6d6366c1f344bdaa09c2516a61",
+  "prompt": "Trên giá sách của Hoa có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math> quyển sách giáo khoa và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> quyển sách tham khảo. Tất cả quyển sách đó là khác nhau về nội dung và đều là sách cũ của bạn Hoa.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Vào dịp nhà trường vận động học sinh đóng góp sách cũ để giúp đỡ các em học sinh miền núi, Hoa quyết định chọn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> quyển sách để đóng góp sao cho luôn có ít nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> quyển sách giao khoa; bạn Hoa sẽ có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>826</mn></semantics></math> cách chọn như thế"
+    },
+    {
+      "key": "b",
+      "text": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>14</mn></semantics></math> cách lấy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> quyển sách từ giá sách để đọc lại"
+    },
+    {
+      "key": "c",
+      "text": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>48</mn></semantics></math> cách chọn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> quyển sách khác thể loại từ giá sách"
+    },
+    {
+      "key": "d",
+      "text": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mi>!</mi><mo>⋅</mo><mn>6</mn><mi>!</mi></mrow></semantics></math> cách sắp xếp các quyển sách trên giá theo hàng ngang mà sách cùng thể loại thì đứng cạnh nhau"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Tổng số sách trên giá là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>8</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>14</mn></mrow></semantics></math> nên có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>14</mn></semantics></math> cách lấy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> quyển sách từ giá sách để đọc lại.</li><li>Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math> cách chọn sách giáo khoa và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> cách chọn sách tham khảo.<br>Do đó có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>8</mn><mo>⋅</mo><mn>6</mn><mo>=</mo><mn>48</mn></mrow></semantics></math> cách chọn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> quyển sách khác thể loại từ giá sách.</li><li>Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mi>!</mi></mrow></semantics></math> cách xếp các sách giáo khoa thành một nhóm.<br>Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>6</mn><mi>!</mi></mrow></semantics></math> cách xếp các sách tham khảo thành một nhóm.<br>Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> cách để xếp hai nhóm sách lên giá theo hàng ngang.<br>Vậy có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>⋅</mo><mn>8</mn><mi>!</mi><mo>⋅</mo><mn>6</mn><mi>!</mi></mrow></semantics></math> cách sắp xếp các quyển sách trên giá theo hàng ngang mà sách cùng thể loại thì đứng cạnh nhau.</li><li>Để chọn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> quyển sách để đóng góp sao cho luôn có ít nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> quyển sách giao khoa, ta có các trường hợp\n\t\t\t<ul><li>Tặng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> sách giáo khoa và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> sách tham khảo, có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>8</mn><mn>2</mn></msubsup><mo>⋅</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>6</mn><mn>2</mn></msubsup></mrow></semantics></math> cách.</li><li>Tặng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> sách giáo khoa và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> sách tham khảo, có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>8</mn><mn>3</mn></msubsup><mo>⋅</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>6</mn><mn>1</mn></msubsup></mrow></semantics></math> cách.</li><li>Tặng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> sách giáo khoa, có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msubsup><mi mathvariant=\"normal\">C</mi><mn>8</mn><mn>4</mn></msubsup></semantics></math> cách.</li></ul>\n\t\t\tVậy có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo>=</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>8</mn><mn>2</mn></msubsup><mo>⋅</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>6</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>8</mn><mn>3</mn></msubsup><mo>⋅</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>6</mn><mn>1</mn></msubsup><mo>+</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>8</mn><mn>4</mn></msubsup><mo>=</mo><mn>826</mn></mrow></semantics></math> cách để tặng sách thỏa mãn bài toán.</li></ol>",
+  "accepted_answers": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-8D2-q097-v4",
+  "original_number": 97,
+  "kind": "tf",
+  "based_on": "d383a0e0e4f00f48a3f47dc31ba3975cb81d9ca10c8941f5ea87abc0930344a4",
+  "prompt": "Một nhóm gồm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math> học sinh trong đó có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> học sinh nam và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> học sinh nữ.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Số cách chọn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> học sinh nam và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> học sinh nữ từ nhóm học sinh trên đi tập văn nghệ là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>45</mn></semantics></math> (cách)"
+    },
+    {
+      "key": "b",
+      "text": "Số cách xếp nhóm học sinh trên theo một hàng dọc là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>40320</mn></semantics></math> (cách)"
+    },
+    {
+      "key": "c",
+      "text": "Số cách xếp nhóm học sinh trên theo một hàng dọc và học sinh cùng giới đứng cạnh nhau là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1440</mn></semantics></math> (cách)"
+    },
+    {
+      "key": "d",
+      "text": "Số cách chọn hai bạn từ nhóm học sinh trên để một bạn làm nhóm trưởng và một bạn làm nhóm phó là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>28</mn></semantics></math> (cách)"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Số cách chọn hai bạn từ nhóm học sinh trên để một bạn làm nhóm trưởng và một bạn làm nhóm phó là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">A</mi><mn>8</mn><mn>2</mn></msubsup><mo>=</mo><mn>56</mn></mrow></semantics></math> (cách).</li><li>Số cách chọn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> học sinh nam và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> học sinh nữ từ nhóm học sinh trên đi tập văn nghệ là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>3</mn></msubsup><mo>⋅</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>3</mn><mn>2</mn></msubsup><mo>=</mo><mn>30</mn></mrow></semantics></math> (cách).</li><li>Số cách xếp nhóm học sinh trên theo một hàng dọc là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mi>!</mi><mo>=</mo><mn>40320</mn></mrow></semantics></math> (cách).</li><li>Xem nhóm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> học sinh nam là một và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> học sinh nữ là một nhóm thì có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>!</mi></mrow></semantics></math> cách.<br>Số cách sắp xếp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> học sinh nam trong nhóm nam đó là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mi>!</mi></mrow></semantics></math> cách sắp xếp.<br>Số cách sắp xếp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> học sinh nữ trong nhóm nữ đó là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mi>!</mi></mrow></semantics></math> cách.<br>Số cách xếp nhóm học sinh trên theo một hàng dọc và học sinh cùng giới đứng cạnh nhau là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mi>!</mi><mo>⋅</mo><mn>3</mn><mi>!</mi><mo>⋅</mo><mn>2</mn><mi>!</mi><mo>=</mo><mn>1440</mn></mrow></semantics></math> (cách).</li></ol>",
+  "accepted_answers": []
+}

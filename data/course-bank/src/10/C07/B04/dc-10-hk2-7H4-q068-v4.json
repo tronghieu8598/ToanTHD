@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-7H4-q068-v4",
+  "original_number": 68,
+  "kind": "tf",
+  "based_on": "59062c857c2f3bdf07505e1ba16a8058bb594e8cffa3190d90dbdee6951b717c",
+  "prompt": "Trong mặt phẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>O</mi><mi>x</mi><mi>y</mi></mrow></semantics></math>, cho elip có phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>2</mn></msup><mn>25</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><msup><mi>y</mi><mn>2</mn></msup><mn>16</mn></mfrac><mo>=</mo><mn>1</mn></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Tổng các khoảng cách từ mỗi điểm thuộc elip tới hai tiêu điểm bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Tiêu cự của elip bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Tiêu điểm của elip là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>F</mi><mn>1</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>4</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>F</mi><mn>2</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>5</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> thuộc elip"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    true
+  ],
+  "solution": "Elip đã cho có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>=</mo><mn>25</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><mn>16</mn></mrow></semantics></math>. Suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>=</mo><mn>5</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>.\n\t\t<ol class=\"alpha-list\"><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mn>25</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><msup><mn>0</mn><mn>2</mn></msup><mn>16</mn></mfrac><mo>=</mo><mn>1</mn></mrow></semantics></math> nên điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>M</mi></semantics></math> thuộc elip.</li><li>Elip đã cho có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>c</mi><mo>=</mo><msqrt><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><msqrt><mrow><mn>25</mn><mo>−</mo><mn>16</mn></mrow></msqrt><mo>=</mo><mn>3</mn></mrow></semantics></math>. Do đó, elip có các tiêu điểm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>F</mi><mn>1</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>3</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>F</mi><mn>2</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</li><li>Tiêu cự của elip là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>c</mi><mo>=</mo><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>=</mo><mn>6</mn></mrow></semantics></math>.</li><li>Tổng các khoảng cách từ mỗi điểm thuộc elip tới hai tiêu điểm bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>a</mi><mo>=</mo><mn>2</mn><mo>⋅</mo><mn>5</mn><mo>=</mo><mn>10</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

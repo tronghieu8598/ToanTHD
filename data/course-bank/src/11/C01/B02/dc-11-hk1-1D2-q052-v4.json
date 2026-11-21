@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-1D2-q052-v4",
+  "original_number": 52,
+  "kind": "tf",
+  "based_on": "d84ff23c9e39bd82f22a135792541d155a4184603d6a3358a51b16dfee865c65",
+  "prompt": "Cho biểu thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>H</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>2024</mn><mi>π</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mrow><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>π</mi><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>π</mi><mo>+</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>−</mo><mn>2</mn></mrow></mfrac></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mspace width=\"0.167em\"/><mn>024</mn><mi>π</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mo>sin</mo><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>sin</mo><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>π</mi><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>sin</mo><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Rút gọn biểu thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>H</mi></semantics></math> ta được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>H</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>π</mi><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>sin</mo><mi>x</mi></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>sin</mo><mi>x</mi></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mspace width=\"0.167em\"/><mn>024</mn><mi>π</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>sin</mo><mi>x</mi></mrow></semantics></math>.</li><li>Ta có \n\t\t\t\n\t\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"><mi>H</mi></mtd><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mfrac displaystyle=\"true\"><mrow><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>2024</mn><mi>π</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mrow><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>π</mi><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>π</mi><mo>+</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>−</mo><mn>2</mn></mrow></mfrac></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mfrac displaystyle=\"true\"><mrow><mo>sin</mo><mi>x</mi><mo>+</mo><mo>sin</mo><mi>x</mi></mrow><mrow><mo>sin</mo><mi>x</mi><mo>−</mo><mo>sin</mo><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mfrac></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mo>sin</mo><mi>x</mi></mrow><mrow><mo>−</mo><mn>2</mn></mrow></mfrac></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mo>−</mo><mo>sin</mo><mi>x</mi><mi>.</mi></mtd></mtr></mtable></semantics></math></div></li></ol>",
+  "accepted_answers": []
+}

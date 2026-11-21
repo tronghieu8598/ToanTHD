@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-2D1-q056-v4",
+  "original_number": 56,
+  "kind": "tf",
+  "based_on": "68ff11fb9b541b6e333c450802db69296cdf9c294e32c34caa4e787ca6748913",
+  "prompt": "Một cửa hàng dành tối đa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> triệu đồng để nhập <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> tạ gạo và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>y</mi></semantics></math> tạ mì (<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>≥</mo><mn>0</mn></mrow></semantics></math>). Biết mỗi tạ gạo mua hết <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mn>5</mn></mrow></semantics></math> triệu đồng, mỗi tạ mì mua hết <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mn>2</mn></mrow></semantics></math> triệu đồng.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Bất phương trình biểu thị mối liên hệ giữa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>y</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo>,</mo><mn>2</mn><mi>y</mi><mo>≥</mo><mn>10</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Số tiền dùng để mua <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> tạ gạo và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>y</mi></semantics></math> tạ mì là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo>,</mo><mn>2</mn><mi>y</mi></mrow></semantics></math> (triệu)"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo>,</mo><mn>2</mn><mi>y</mi><mo>≥</mo><mn>10</mn></mrow></semantics></math> là bất phương trình bậc nhất hai ẩn"
+    },
+    {
+      "key": "d",
+      "text": "Miền nghiệm của bất phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo>,</mo><mn>2</mn><mi>y</mi><mo>≤</mo><mn>10</mn></mrow></semantics></math> là nửa mặt phẳng bờ là đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>:</mo><mn>1</mn><mo>,</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo>,</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>10</mn></mrow></semantics></math> chứa điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>O</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Đúng.<br>Số tiền dùng để mua <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> tạ gạo và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>y</mi></semantics></math> tạ mì là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo>,</mo><mn>2</mn><mi>y</mi></mrow></semantics></math> (triệu).</li><li>Sai.<br>Bất phương trình biểu thị mối liên hệ giữa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>y</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo>,</mo><mn>2</mn><mi>y</mi><mo>≤</mo><mn>10</mn></mrow></semantics></math>.</li><li>Đúng.<br><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo>,</mo><mn>2</mn><mi>y</mi><mo>≥</mo><mn>10</mn></mrow></semantics></math> là bất phương trình bậc nhất hai ẩn.</li><li>Đúng.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mn>5</mn><mo>⋅</mo><mn>0</mn><mo>+</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>⋅</mo><mn>0</mn><mo>≤</mo><mn>10</mn></mrow></semantics></math> đúng.<br>Do đó miền nghiệm của bất phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo>,</mo><mn>2</mn><mi>y</mi><mo>≤</mo><mn>10</mn></mrow></semantics></math> là nửa mặt phẳng bờ là đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>:</mo><mn>1</mn><mo>,</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo>,</mo><mn>2</mn><mi>y</mi><mo>=</mo><mn>10</mn></mrow></semantics></math> chứa điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>O</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

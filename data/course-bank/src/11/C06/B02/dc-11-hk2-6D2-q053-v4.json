@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D2-q053-v4",
+  "original_number": 53,
+  "kind": "mcq",
+  "based_on": "ea58d7a0e220da405a10f9b4aedec0c1bc00d7801c2246f31b36249afb919d00",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>b</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>c</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>≠</mo><mn>1</mn></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi><mo>≠</mo><mn>1</mn></mrow></semantics></math>. Trong các khẳng định sau, khẳng định nào <strong>sai</strong>?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi><mo>⋅</mo><msub><mo>log</mo><mi>b</mi></msub><mi>c</mi><mo>=</mo><msub><mo>log</mo><mi>a</mi></msub><mi>c</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><msub><mo>log</mo><mi>b</mi></msub><mi>a</mi></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>a</mi></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>b</mi><mi>c</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi><mo>+</mo><msub><mo>log</mo><mi>a</mi></msub><mi>c</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><msup><mi>a</mi><mi>c</mi></msup></msub><mi>b</mi><mo>=</mo><mi>c</mi><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Khẳng định sai là ““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><msup><mi>a</mi><mi>c</mi></msup></msub><mi>b</mi><mo>=</mo><mi>c</mi><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow></semantics></math>””.<br>Sửa đúng là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><msup><mi>a</mi><mi>c</mi></msup></msub><mi>b</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>c</mi></mfrac><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow></semantics></math>.",
+  "accepted_answers": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk1-5D1-q068-v4",
+  "original_number": 68,
+  "kind": "short",
+  "based_on": "c16c4d0434cda529f5ea17539fcb4e92e9d7e28012c5e0c9f68e5d95317d8624",
+  "prompt": "Tổng của cấp số nhân lùi vô hạn: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>5</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><msup><mn>5</mn><mn>2</mn></msup></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><msup><mn>5</mn><mn>3</mn></msup></mfrac><mo>+</mo><mi>…</mi><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><msup><mn>5</mn><mi>n</mi></msup></mfrac><mo>+</mo><mi>…</mi></mrow></semantics></math> bằng",
+  "choices": [],
+  "correct": "0.25",
+  "solution": "Tổng đã cho của cấp số nhân lùi vô hạn với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>5</mn></mfrac></mrow></semantics></math>, công bội <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>q</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>5</mn></mfrac></mrow></semantics></math>. Do đó\n<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mfrac displaystyle=\"true\"><msub><mi>u</mi><mn>1</mn></msub><mrow><mn>1</mn><mo>−</mo><mi>q</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mfrac displaystyle=\"true\"><mn>1</mn><mn>5</mn></mfrac><mrow><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>1</mn></mfrac><mn>5</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>4</mn></mfrac><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

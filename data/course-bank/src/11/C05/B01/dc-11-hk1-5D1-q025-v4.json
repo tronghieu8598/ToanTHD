@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-5D1-q025-v4",
+  "original_number": 25,
+  "kind": "mcq",
+  "based_on": "ec429d46371504c27c313ae02909fcb37df8a572954c90c74f9f74050539a1e4",
+  "prompt": "Giới hạn của dãy số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mn>10</mn><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>n</mi><mo>−</mo><mn>3</mn></mrow><mrow><mo>−</mo><mn>9</mn><mo>−</mo><mn>8</mn><msup><mi>n</mi><mn>2</mn></msup></mrow></mfrac></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>63</mn><mn>50</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>5</mn><mn>4</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>6</mn><mn>5</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>10</mn><mn>9</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mn>10</mn><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>n</mi><mo>−</mo><mn>3</mn></mrow><mrow><mo>−</mo><mn>9</mn><mo>−</mo><mn>8</mn><msup><mi>n</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mn>10</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>5</mn><mi>n</mi></mfrac><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac></mrow><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mn>9</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac><mo>−</mo><mn>8</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mn>10</mn></mrow><mrow><mo>−</mo><mn>8</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>4</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

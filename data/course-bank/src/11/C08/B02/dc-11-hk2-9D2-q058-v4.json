@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-9D2-q058-v4",
+  "original_number": 58,
+  "kind": "mcq",
+  "based_on": "f0306264db75f013104d1fbed41cd095b823b66b75f95a1eff708d2279e2dcfa",
+  "prompt": "Lớp 11A8 trường THPT X có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>25</mn></semantics></math> học sinh nam và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20</mn></semantics></math> học sinh nữ. Chọn ngẫu nhiên đồng thời hai bạn từ lớp này để tham dự cuộc họp của trường. Tính xác suất chọn được hai bạn có cùng giới tính để đi dự cuộc họp.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>49</mn><mn>99</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>10</mn><mn>33</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>29</mn><mn>99</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>19</mn><mn>99</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Ω</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>45</mn><mn>2</mn></msubsup></mrow></semantics></math>.<br>Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là biến cố: ``Chọn được hai bạn nam&#x27;&#x27;.<br>Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><msubsup><mi mathvariant=\"normal\">C</mi><mn>25</mn><mn>2</mn></msubsup><msubsup><mi mathvariant=\"normal\">C</mi><mn>45</mn><mn>2</mn></msubsup></mfrac></mrow></semantics></math>.<br>Gọi B là biến cố: ``Chọn được hai bạn nữ&#x27;&#x27;.<br>Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><msubsup><mi mathvariant=\"normal\">C</mi><mn>20</mn><mn>2</mn></msubsup><msubsup><mi mathvariant=\"normal\">C</mi><mn>45</mn><mn>2</mn></msubsup></mfrac></mrow></semantics></math>.<br>Do <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math> là hai biến cố xung khắc nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>25</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>20</mn><mn>2</mn></msubsup></mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>45</mn><mn>2</mn></msubsup></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>49</mn><mn>99</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

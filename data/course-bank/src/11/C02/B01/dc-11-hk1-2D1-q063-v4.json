@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk1-2D1-q063-v4",
+  "original_number": 63,
+  "kind": "short",
+  "based_on": "9c7a783d55ea2253a3d652884b6ab6c63051c0395ed6cc0cf3c9267f48886e8b",
+  "prompt": "Cho dãy số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, biết <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mo>−</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msub><mi>u</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><msub><mi>u</mi><mi>n</mi></msub><mo>+</mo><mn>3</mn></mtd></mtr></mtable></mrow></semantics></math> với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>∈</mo><msup><mi>ℕ</mi><mo>*</mo></msup></mrow></semantics></math>. Tích của ba số hạng đầu tiên của dãy số là?",
+  "choices": [],
+  "correct": "-10",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>2</mn></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>3</mn><mo>=</mo><mo>−</mo><mn>1</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>2</mn></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>3</mn></msub><mo>=</mo><msub><mi>u</mi><mn>2</mn></msub><mo>+</mo><mn>3</mn><mo>=</mo><mn>2</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>5</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

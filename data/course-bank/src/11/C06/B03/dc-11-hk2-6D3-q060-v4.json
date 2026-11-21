@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D3-q060-v4",
+  "original_number": 60,
+  "kind": "mcq",
+  "based_on": "6e3fed1caa5097721abc317491ab0b12269fe352993adae05d5964239a4ab440",
+  "prompt": "Một người gửi ngân hàng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>200</mn></semantics></math> triệu đồng theo hình thức lãi kép, lãi suất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>58</mn><mi>%</mi></mrow></semantics></math> một tháng. Hỏi sau ít nhất bao nhiêu tháng thì người đó có nhiều hơn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>225</mn></semantics></math> triệu đồng (cả gốc lẫn lãi)?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>30</mn></semantics></math> tháng"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>24</mn></semantics></math> tháng"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>21</mn></semantics></math> tháng"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>22</mn></semantics></math> tháng"
+    }
+  ],
+  "correct": "C",
+  "solution": "Số tiền người đó nhận được sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>n</mi></semantics></math> tháng là \n\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>200</mn><mo>⋅</mo><mn>1</mn><mo>,</mo><msup><mn>0058</mn><mi>n</mi></msup></mrow></semantics></math>. Suy ra \n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>&gt;</mo><mn>225</mn><mo>⇔</mo><mn>200</mn><mo>⋅</mo><mn>1</mn><mo>,</mo><msup><mn>0058</mn><mi>n</mi></msup><mo>&gt;</mo><mn>225</mn><mo>⇔</mo><mi>n</mi><mo>&gt;</mo><msub><mo>log</mo><mrow><mn>1</mn><mo>,</mo><mn>0058</mn></mrow></msub><mfrac displaystyle=\"true\"><mn>9</mn><mn>8</mn></mfrac><mo>≈</mo><mn>20</mn><mrow><mo>,</mo><mn>3</mn></mrow><mo>⇒</mo><mi>n</mi><mo>=</mo><mn>21</mn><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

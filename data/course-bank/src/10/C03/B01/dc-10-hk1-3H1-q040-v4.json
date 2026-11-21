@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-3H1-q040-v4",
+  "original_number": 40,
+  "kind": "tf",
+  "based_on": "580e23319ccf1b0d06a3d0e1f4b93c4840022d42c6b7eccf42d30ac4bdf3058f",
+  "prompt": "Với mọi góc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>α</mi></semantics></math> thoả mãn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>0</mn><mo>∘</mo></msup><mo>≤</mo><mi>α</mi><mo>≤</mo><msup><mn>180</mn><mo>∘</mo></msup></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><mi>α</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>sin</mo><mi>α</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><mi>α</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>cos</mo><mi>α</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><mi>α</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>tan</mo><mi>α</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>α</mi><mo>≠</mo><msup><mn>90</mn><mo>∘</mo></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cot</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><mi>α</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mo>cot</mo><mi>α</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>0</mn><mo>∘</mo></msup><mo>&lt;</mo><mi>α</mi><mo>&lt;</mo><msup><mn>180</mn><mo>∘</mo></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "solution": "Với mọi góc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>α</mi></semantics></math> thoả mãn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>0</mn><mo>∘</mo></msup><mo>≤</mo><mi>α</mi><mo>≤</mo><msup><mn>180</mn><mo>∘</mo></msup></mrow></semantics></math>, ta có\n\t\t<ol class=\"alpha-list\"><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><mi>α</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>sin</mo><mi>α</mi></mrow></semantics></math>.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><mi>α</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mo>cos</mo><mi>α</mi></mrow></semantics></math>.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><mi>α</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mo>tan</mo><mi>α</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>α</mi><mo>≠</mo><msup><mn>90</mn><mo>∘</mo></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cot</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><mi>α</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mo>cot</mo><mi>α</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>0</mn><mo>∘</mo></msup><mo>&lt;</mo><mi>α</mi><mo>&lt;</mo><msup><mn>180</mn><mo>∘</mo></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

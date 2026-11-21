@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-2D2-q090-v4",
+  "original_number": 90,
+  "kind": "tf",
+  "based_on": "273ab7c06a8ea338efcd117fd1c0c691c2291267c58cbb48877644d5ab8bf93d",
+  "prompt": "Một ruộng bậc thang có thửa ruộng thấp nhất (bậc thứ nhất) nằm ở độ cao <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>500</mn></semantics></math> m so với mực nước biển, độ chênh lệch giữa thửa trên và thửa dưới trung bình là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mn>2</mn></mrow></semantics></math> m. Kí hiệu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>u</mi><mi>n</mi></msub></semantics></math> là chiều cao của thửa ruộng ở bậc thứ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>n</mi></semantics></math> so với mực nước biển (đơn vị là mét).",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>500</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Tổng chiều cao <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>50</mn></semantics></math> thửa ruộng đầu tiên so với mực nước biển bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>26</mn><mspace width=\"0.167em\"/><mn>470</mn></mrow></semantics></math> m"
+    },
+    {
+      "key": "c",
+      "text": "Thửa ruộng ở bậc thứ 8 có chiều cao so với mực nước biển là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>509</mn><mo>,</mo><mn>6</mn></mrow></semantics></math> m"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> là một cấp số nhân với công bội <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>q</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>500</mn></mrow></semantics></math> (đã cho trong đề).</li><li>Dãy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> là một cấp số cộng với công sai <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>q</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn></mrow></semantics></math> vì độ chênh lệch giữa các thửa ruộng là một hằng số, tức là mỗi thửa ruộng cao hơn thửa trước đó một hằng số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mn>2</mn></mrow></semantics></math> m.</li><li>Thửa ruộng ở bậc thứ 8 có chiều cao so với mực nước biển là\n\t\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>8</mn></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>8</mn><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⋅</mo><mi>q</mi><mo>=</mo><mn>500</mn><mo>+</mo><mn>7</mn><mo>⋅</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>=</mo><mn>500</mn><mo>+</mo><mn>8</mn><mo>,</mo><mn>4</mn><mo>=</mo><mn>509</mn><mo>,</mo><mn>6</mn><mrow><mspace width=\"0.333em\"/><mtext mathvariant=\"normal\"> (m)</mtext></mrow><mi>.</mi></mrow></semantics></math></div>\n\t\t\tVậy chiều cao của thửa ruộng ở bậc thứ 8 là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>509</mn><mo>,</mo><mn>6</mn></mrow></semantics></math> m.</li><li>Chiều cao của thửa ruộng thứ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>50</mn></semantics></math> là \n\t\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>50</mn></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>50</mn><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⋅</mo><mi>q</mi><mo>=</mo><mn>500</mn><mo>+</mo><mn>49</mn><mo>⋅</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>=</mo><mn>500</mn><mo>+</mo><mn>58</mn><mo>,</mo><mn>8</mn><mo>=</mo><mn>558</mn><mo>,</mo><mn>8</mn><mrow><mspace width=\"0.333em\"/><mtext mathvariant=\"normal\"> (m)</mtext></mrow><mi>.</mi></mrow></semantics></math></div>\n\t\t\tTổng chiều cao <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>50</mn></semantics></math> thửa ruộng đầu tiên là\n\t\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mn>50</mn></msub><mo>=</mo><mfrac displaystyle=\"true\"><mn>50</mn><mn>2</mn></mfrac><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><msub><mi>u</mi><mn>50</mn></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>50</mn><mn>2</mn></mfrac><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>500</mn><mo>+</mo><mn>558</mn><mo>,</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>26</mn><mspace width=\"0.167em\"/><mn>470</mn><mrow><mspace width=\"0.333em\"/><mtext mathvariant=\"normal\"> (m)</mtext></mrow><mi>.</mi></mrow></semantics></math></div>\n\t\t\tVậy tổng chiều cao <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>50</mn></semantics></math> thửa ruộng đầu tiên so với mực nước biển là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>26</mn><mspace width=\"0.167em\"/><mn>470</mn></mrow></semantics></math> m.</li></ol>",
+  "accepted_answers": []
+}

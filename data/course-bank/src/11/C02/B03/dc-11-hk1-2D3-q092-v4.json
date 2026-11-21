@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk1-2D3-q092-v4",
+  "original_number": 92,
+  "kind": "short",
+  "based_on": "edfb20b9d89ed4d7432b7e263df45760bf8cc9fd125ed64e288a6f16178d510c",
+  "prompt": "Một nhà máy tuyển kỹ sư làm việc trong thời hạn 5 năm với mức lương năm đầu là 200 triệu đồng và cam kết sẽ tăng thêm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mi>%</mi></mrow></semantics></math> lương mỗi năm so với năm liền trước đó. Tính tổng số tiền lương mà kỹ sư nhận được sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> năm làm việc (Làm tròn đến triệu đồng).",
+  "choices": [],
+  "correct": "1105",
+  "solution": "Tổng số tiền lương mà kỹ sư nhận được sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> năm là tổng của cấp số nhân <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> số hạng, với số hạng đầu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>200</mn></mrow></semantics></math> (triệu), công bội <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>q</mi><mo>=</mo><mn>1</mn><mo>+</mo><mn>5</mn><mi>%</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>05</mn></mrow></semantics></math>.\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mn>5</mn></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>−</mo><msup><mi>q</mi><mn>5</mn></msup></mrow><mrow><mn>1</mn><mo>−</mo><mi>q</mi></mrow></mfrac><mo>=</mo><mn>200</mn><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>−</mo><mn>1</mn><mo>,</mo><msup><mn>05</mn><mn>5</mn></msup></mrow><mrow><mn>1</mn><mo>−</mo><mn>1</mn><mo>,</mo><mn>05</mn></mrow></mfrac><mo>≈</mo><mn>1</mn><mspace width=\"0.167em\"/><mn>105</mn><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

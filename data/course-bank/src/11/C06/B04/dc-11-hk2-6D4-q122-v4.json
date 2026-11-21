@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk2-6D4-q122-v4",
+  "original_number": 122,
+  "kind": "short",
+  "based_on": "aa2bc02530202e76ed7f987c03b23f6dab9f4202c7689a9f5ab48d32054c6558",
+  "prompt": "Tập nghiệm của bất phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mn>2</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>≤</mo><mn>2</mn></mrow></semantics></math> có bao nhiêu nghiệm nguyên?",
+  "choices": [],
+  "correct": "4",
+  "solution": "Điều kiện <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>−</mo><mn>2</mn><mo>&gt;</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>&gt;</mo><mn>2</mn></mrow></semantics></math>.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mn>2</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>≤</mo><mn>2</mn><mo>⇔</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo>≤</mo><mn>4</mn><mo>⇔</mo><mi>x</mi><mo>≤</mo><mn>6</mn></mrow></semantics></math>.<br>Kết hợp với điều kiện, bất phương trình có tập nghiệm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mn>6</mn><mo stretchy=\"false\" form=\"postfix\">]</mo></mrow></semantics></math>.<br>Khi đó, tập nghiệm của bất phương trình có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> nghiệm nguyên là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>3</mn><mo>;</mo><mn>4</mn><mo>;</mo><mn>5</mn><mo>;</mo><mn>6</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>.",
+  "accepted_answers": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-6D2-q051-v4",
+  "original_number": 51,
+  "kind": "tf",
+  "based_on": "306c709d2adda5a28d8bd7d608581ea937c933bb545a062f0f2e07dcb7ed8153",
+  "prompt": "Cho hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mi>x</mi><mo>−</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Đồ thị của hàm số đã cho là<br><figure class=\"tex-figure\"><img src=\"/bank-assets/54c92084e960ed67114f0d95e4cdf5029ba907f6c2fefc291b90b6bb18f213e9.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure>"
+    },
+    {
+      "key": "b",
+      "text": "Hàm số đã cho nghịch biến trên khoảng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và đồng biến trên khoảng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Tập xác định của hàm số đã cho là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>−</mo><mn>4</mn><mspace width=\"2.0em\"/></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mrow><mtext mathvariant=\"normal\">khi </mtext><mspace width=\"0.333em\"/></mrow><mi>x</mi><mo>&lt;</mo><mn>4</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>−</mo><mi>x</mi><mo>+</mo><mn>4</mn></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mrow><mtext mathvariant=\"normal\">khi </mtext><mspace width=\"0.333em\"/></mrow><mi>x</mi><mo>≥</mo><mn>4</mn></mtd></mtr></mtable></mrow></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Đúng.</li><li>Sai. Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>−</mo><mn>4</mn><mspace width=\"2.0em\"/></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mrow><mtext mathvariant=\"normal\">khi </mtext><mspace width=\"0.333em\"/></mrow><mi>x</mi><mo>≥</mo><mn>4</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>−</mo><mi>x</mi><mo>+</mo><mn>4</mn></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mrow><mtext mathvariant=\"normal\">khi </mtext><mspace width=\"0.333em\"/></mrow><mi>x</mi><mo>&lt;</mo><mn>4</mn><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math></li><li>Sai. Vì hàm số đã cho nghịch biến trên khoảng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>  và đồng biến trên khoảng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.</li><li>Đúng.</li></ol>",
+  "accepted_answers": []
+}

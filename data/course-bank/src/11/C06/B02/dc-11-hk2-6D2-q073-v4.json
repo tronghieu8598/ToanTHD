@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D2-q073-v4",
+  "original_number": 73,
+  "kind": "mcq",
+  "based_on": "96b38293558816d80c5e242d364eed641c6c877ae3b89f394a227948ab6abe3d",
+  "prompt": "Với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>log</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>100</mn><mi>a</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mo>log</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>10</mn><mi>a</mi></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>log</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>100</mn><mi>a</mi><mo>+</mo><mfrac displaystyle=\"true\"><mn>10</mn><mi>a</mi></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1000</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>+</mo><mn>2</mn><mo>log</mo><mi>a</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>log</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>100</mn><mi>a</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mo>log</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>10</mn><mi>a</mi></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>log</mo><mn>100</mn><mo>+</mo><mo>log</mo><mi>a</mi><mo>+</mo><mo>log</mo><mn>10</mn><mo>−</mo><mo>log</mo><mi>a</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

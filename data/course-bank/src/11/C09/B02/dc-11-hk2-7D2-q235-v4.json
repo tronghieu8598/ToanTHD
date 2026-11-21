@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk2-7D2-q235-v4",
+  "original_number": 235,
+  "kind": "short",
+  "based_on": "fc4ad975014b012483982316e283b3554fd2036f6796b5cf38e62452b6fc73ea",
+  "prompt": "Đạo hàm cấp hai của hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>5</mn></mfrac><msup><mi>x</mi><mn>5</mn></msup><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi><mo>+</mo><mn>4</mn></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mi>″</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>m</mi><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mi>n</mi></mrow></semantics></math>. Tính <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>m</mi><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup></mrow></semantics></math>.",
+  "choices": [],
+  "correct": "40",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>6</mn><mi>x</mi><mo>−</mo><mn>1</mn><mo>⇒</mo><mi>y</mi><mi>″</mi><mo>=</mo><mn>4</mn><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>6</mn><mo>⇒</mo><mi>m</mi><mo>=</mo><mn>4</mn><mo>,</mo><mi>n</mi><mo>=</mo><mo>−</mo><mn>6</mn></mrow></semantics></math>.<br>Vậy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>m</mi><mo>+</mo><msup><mi>n</mi><mn>2</mn></msup><mo>=</mo><mn>4</mn><mo>+</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>6</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>40</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

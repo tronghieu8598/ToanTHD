@@ -1,17 +1,20 @@
 # Góp nội dung cho Toán THĐ
 
-Mỗi yêu cầu ghi mã câu hoặc mã học liệu, thay đổi cần làm và người duyệt. Tạo nhánh công việc từ nhánh tích hợp ghi trong yêu cầu. Người sửa có thể dùng trình soạn thảo hoặc giao cùng yêu cầu cho AI. Cả sáu chương Toán 12 có nguồn biên tập theo từng câu. Học liệu Monty Hall có mã nguồn riêng.
+Mỗi yêu cầu ghi mã câu hoặc mã học liệu, thay đổi cần làm và người duyệt. Tạo nhánh công việc từ nhánh tích hợp ghi trong yêu cầu. Người sửa có thể dùng trình soạn thảo hoặc giao cùng yêu cầu cho AI. Ngân hàng Toán 10–12 có nguồn biên tập theo từng câu. Học liệu Monty Hall có mã nguồn riêng.
 
 [Sơ đồ mô-đun và bản đồ tệp](docs/KIEN_TRUC.md) chỉ đường dẫn cho từng chức năng.
 
 | Phần | Nguồn để sửa | Lệnh sau khi sửa |
 | --- | --- | --- |
+| Câu hỏi Toán 10–11 | `data/course-bank/src/<khối>/<chương>/<bài>/<id>.json`. Mỗi tệp chứa một câu. | `npm run content:build -- bank --chapter 11-C07` |
 | Câu hỏi Toán 12 | `data/course-bank/src/12/<chương>/<bài>/<id>.json`. Mỗi tệp chứa một câu. | `npm run content:build -- bank --chapter 12-C02` |
 | Biến thể Toán 12 | `data/chapter-variants/src/12/<chương>/<bài>/<id>.json`. Mỗi tệp chứa nhóm biến thể của một câu gốc. | `npm run content:build -- variants --chapter 12-C02` |
 | Monty Hall | `data/digital-library/src/12/C06/12-monty-hall-game-577dcd0/` | `npm run content:build -- library` |
 | Giao diện, quyền, cơ sở dữ liệu | `app/`, `lib/`, `drizzle/` | `npm run typecheck` và `npm test` |
 
-Thay `12-C02` bằng mã chương đang sửa, từ `12-C01` đến `12-C06`. Các thư mục chương tương ứng là `C01` đến `C06`.
+Thay mã trong ví dụ bằng chương đang sửa. Toán 10 và 11 dùng `10-C01`–`10-C09` và `11-C01`–`11-C09`. Toán 12 dùng `12-C01`–`12-C06`. Với Toán 11, đặt bài có mã gốc `8H` trong `11/C07`, `9D` trong `11/C08` và `7D` trong `11/C09` theo mục lục Kết nối tri thức. Giữ nguyên mã bài và mã câu gốc.
+
+Nguồn Toán 10–11 gồm 4.799 câu trong 58 bài. Khi tách tệp theo câu, giữ nội dung và trạng thái nguồn của 87 câu chờ duyệt và 1.035 câu tham khảo. Các câu tham khảo vẫn có trong ngân hàng để tra cứu. Việc duyệt thay đổi đáp án và khả năng chấm tự động đi qua quy trình duyệt nguồn.
 
 ## Thử một thay đổi
 
@@ -24,7 +27,7 @@ Khi hai người sửa hai câu khác nhau trong một bài, ghép các tệp c�
 
 Chương II gồm đủ ba bài. Câu `dc-12-hk1-2H1-q058-v4` của Bài 1 đã được giáo viên duyệt đổi nhãn lời giải ý b thành **Đúng**, giữ khóa đáp án gốc. Giáo viên đã duyệt thêm bảy câu gốc trong Chương II, IV và V. Các câu đã sửa đủ điều kiện chấm tự động. Hai mươi bốn biến thể gắn với dấu vân tay cũ tạm ẩn trong lần soạn đề tiếp theo. [Hướng dẫn nạp ngân hàng](docs/NAP_NGAN_HANG_HTTPS.md)
 
-Các tệp `questions.json.gz`, `data/chapter-variants/source/` và mô-đun biến thể cũ là dữ liệu nền của bản thử. Bộ đóng gói ghép bản sửa theo mã và giữ phiên bản gói riêng trong `generated/`. Sau khi duyệt câu hỏi, chạy bước cài đặt/nâng cấp cơ sở dữ liệu trên bản thử rồi dựng lại web. Bản cài sao lưu toàn thư mục lưu cả đề đã giao và dữ liệu của giáo viên.
+`questions.json.gz` chứa ngân hàng nền. `data/chapter-variants/source/` chứa nguồn biến thể Toán 12 đã nghiệm thu. Bộ đóng gói đối chiếu tệp biên tập trong `src/` với nguồn nền theo mã câu và sinh bản cập nhật theo chương trong `generated/`. Chạy `npm run local:setup` để cài hoặc cập nhật ngân hàng trên bản cục bộ. Trên HTTPS, đóng gói từ commit đã duyệt, xem trước, kích hoạt từng chương và kiểm tra biên nhận. Bản cài sao lưu toàn thư mục lưu cả đề đã giao và dữ liệu của giáo viên.
 
 ## Đưa bản thử lên GitHub
 

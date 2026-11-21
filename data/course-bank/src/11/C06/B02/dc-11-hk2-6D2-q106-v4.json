@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk2-6D2-q106-v4",
+  "original_number": 106,
+  "kind": "tf",
+  "based_on": "d373f31aa626806d1c5e7c7220482c357acf394a360ecac821ed8c8a20c7f683",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>=</mo><msub><mo>log</mo><mn>2</mn></msub><mn>5</mn></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mn>2</mn></msub><mfrac displaystyle=\"true\"><mn>1</mn><mn>5</mn></mfrac><mo>=</mo><mo>−</mo><mi>a</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mn>2</mn></msub><mn>10</mn><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>a</mi></mfrac><mo>+</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>=</mo><mn>5</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>4</mn><mi>a</mi></msup><mo>=</mo><mn>25</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mn>2</mn></msub><mn>10</mn><mo>=</mo><msub><mo>log</mo><mn>2</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>5</mn><mo>⋅</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msub><mo>log</mo><mn>2</mn></msub><mn>5</mn><mo>+</mo><msub><mo>log</mo><mn>2</mn></msub><mn>2</mn><mo>=</mo><mi>a</mi><mo>+</mo><mn>1</mn></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mn>2</mn></msub><mfrac displaystyle=\"true\"><mn>1</mn><mn>5</mn></mfrac><mo>=</mo><msub><mo>log</mo><mn>2</mn></msub><mn>1</mn><mo>−</mo><msub><mo>log</mo><mn>2</mn></msub><mn>5</mn><mo>=</mo><mn>0</mn><mo>−</mo><mi>a</mi><mo>=</mo><mo>−</mo><mi>a</mi></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>4</mn><mi>a</mi></msup><mo>=</mo><msup><mn>4</mn><mrow><msub><mo>log</mo><mn>2</mn></msub><mn>5</mn></mrow></msup><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>2</mn><mn>2</mn></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><msub><mo>log</mo><mn>2</mn></msub><mn>5</mn></mrow></msup><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>2</mn><mrow><msub><mo>log</mo><mn>2</mn></msub><mn>5</mn></mrow></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>=</mo><msup><mn>5</mn><mn>2</mn></msup><mo>=</mo><mn>25</mn></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mo>log</mo><mn>2</mn></msub><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>≈</mo><mn>5</mn><mo>,</mo><mn>59</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

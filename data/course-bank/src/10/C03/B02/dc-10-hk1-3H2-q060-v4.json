@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-3H2-q060-v4",
+  "original_number": 60,
+  "kind": "mcq",
+  "based_on": "248aa967f8c023cc4b09b01a6cc652f2a80079a987f5d29456ad9ce2e0da3524",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>60</mn><mo>∘</mo></msup></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>B</mi><mi>C</mi><mi>A</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>45</mn><mo>∘</mo></msup></mrow></semantics></math> và cạnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>. Cạnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi></mrow></semantics></math> bằng (làm tròn kết quả đến hàng phần chục).",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>,</mo><mn>7</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>,</mo><mn>2</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>,</mo><mn>4</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mo>,</mo><mn>3</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>B</mi><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>+</mo><mover><mrow><mi>B</mi><mi>C</mi><mi>A</mi></mrow><mo accent=\"true\">̂</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>60</mn><mo>∘</mo></msup><mo>+</mo><msup><mn>45</mn><mo>∘</mo></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mn>75</mn><mo>∘</mo></msup></mrow></semantics></math>.<br>Áp dụng định lí sin ta có \n\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mi>B</mi><mi>C</mi></mrow><mrow><mo>sin</mo><mover><mrow><mi>B</mi><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">̂</mo></mover></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>A</mi><mi>C</mi></mrow><mrow><mo>sin</mo><mover><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">̂</mo></mover></mrow></mfrac><mo>⇒</mo><mi>A</mi><mi>C</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>B</mi><mi>C</mi></mrow><mrow><mo>sin</mo><mover><mrow><mi>B</mi><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">̂</mo></mover></mrow></mfrac><mo>⋅</mo><mo>sin</mo><mover><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mrow><mo>sin</mo><msup><mn>75</mn><mo>∘</mo></msup></mrow></mfrac><mo>⋅</mo><mo>sin</mo><msup><mn>60</mn><mo>∘</mo></msup><mo>≈</mo><mn>2</mn><mo>,</mo><mn>7</mn><mi>.</mi></mrow></semantics></math>",
+  "accepted_answers": []
+}

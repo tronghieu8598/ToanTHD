@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk1-5D1-q010-v4",
+  "original_number": 10,
+  "kind": "free",
+  "based_on": "5f9009b6033f1f61d61508e4aa987f718f3d707a61a5cb1a3c2f6e0bde3bf817",
+  "prompt": "Tại một nhà máy, người ta đo được rằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>80</mn><mi>%</mi></mrow></semantics></math> lượng nước sau khi sử dụng được xử lí và tái sử dụng. Với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>100</mn></semantics></math> m<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi/><mn>3</mn></msup></semantics></math> ban đầu được sử dụng lần đầu tại nhà máy, khi quá trình xử lí và tái sử dụng lặp lại mãi mãi, nhà máy sử dụng được tổng lượng nước là bao nhiêu?",
+  "choices": [],
+  "correct": null,
+  "solution": "Tổng lượng nước sử dụng là <div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>100</mn><mo>+</mo><mn>100</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>8</mn><mo>+</mo><mn>100</mn><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>,</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>100</mn><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>,</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>3</mn></msup><mo>+</mo><mi>…</mi><mo>=</mo><mn>100</mn><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>8</mn></mrow></mfrac><mo>=</mo><mn>500</mn><mspace width=\"0.222em\"/><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi mathvariant=\"normal\">m</mi><mn>3</mn></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

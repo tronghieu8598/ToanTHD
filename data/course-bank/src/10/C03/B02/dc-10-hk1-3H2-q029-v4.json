@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-3H2-q029-v4",
+  "original_number": 29,
+  "kind": "mcq",
+  "based_on": "72424a0b1f39a82239b675dcdfc37d03ab0f0fce6dbbe55d60b405e4e62e6354",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math>. Đặt <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>=</mo><mi>B</mi><mi>C</mi></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi><mo>=</mo><mi>A</mi><mi>C</mi></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>c</mi><mo>=</mo><mi>A</mi><mi>B</mi></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>R</mi></semantics></math> là bán kính đường tròn ngoại tiếp của tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math>. Mệnh đề nào sau đây là mệnh đề <strong>sai</strong>?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>=</mo><mn>2</mn><mi>R</mi><mo>⋅</mo><mo>sin</mo><mi>A</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi><mo>⋅</mo><mo>sin</mo><mi>C</mi><mo>=</mo><mi>c</mi><mo>⋅</mo><mo>sin</mo><mi>B</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>a</mi><mi>b</mi><mi>c</mi></mrow><mrow><mn>2</mn><mi>R</mi></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mi>b</mi><mi>c</mi><mo>sin</mo><mi>A</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Công thức diện tích tam giác theo bán kính <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>R</mi></semantics></math> của đường tròn ngoại tiếp là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>a</mi><mi>b</mi><mi>c</mi></mrow><mrow><mn>4</mn><mi>R</mi></mrow></mfrac></mrow></semantics></math>.<br>Vậy mệnh đề <strong>sai</strong> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>a</mi><mi>b</mi><mi>c</mi></mrow><mrow><mn>2</mn><mi>R</mi></mrow></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

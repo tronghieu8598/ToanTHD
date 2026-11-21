@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-8D2-q036-v4",
+  "original_number": 36,
+  "kind": "mcq",
+  "based_on": "3a6ae7afdbcf0d843dc971d8293d66b1748c392e29fc74f4d56cc8a8fc3f5cc7",
+  "prompt": "<div class=\"with-figure\"><div>Cho hai đường thằng song song chứa các điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>C</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>D</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>E</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>F</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>G</mi></semantics></math> như hình vẽ. Hỏi có bao nhiêu tam giác được tạo thành từ các điểm đã cho?</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/dddd445acceca466d286bb1409ae51cb055ad1a654d47c5e2581974a21389af4.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>35</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>40</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>25</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20</mn></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Ta có hai trường hợp để tạo thành một tam giác từ các điểm đã cho.\n\t\t<ul><li>Tam giác có một đỉnh thuộc đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi></mrow></semantics></math>, hai đỉnh thuộc đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mi>D</mi></mrow></semantics></math>. Trường hợp này có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>2</mn><mn>1</mn></msubsup><mo>⋅</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>2</mn></msubsup></mrow></semantics></math> cách.</li><li>Tam giác có một đỉnh thuộc đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mi>D</mi></mrow></semantics></math>, hai đỉnh thuộc đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi></mrow></semantics></math>. Trường hợp này có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>1</mn></msubsup><mo>⋅</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>2</mn><mn>2</mn></msubsup></mrow></semantics></math> cách.</li></ul>\n\t\tVậy có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>2</mn><mn>1</mn></msubsup><mo>⋅</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>1</mn></msubsup><mo>⋅</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>2</mn><mn>2</mn></msubsup><mo>=</mo><mn>25</mn></mrow></semantics></math> tam giác được tạo thành.",
+  "accepted_answers": []
+}

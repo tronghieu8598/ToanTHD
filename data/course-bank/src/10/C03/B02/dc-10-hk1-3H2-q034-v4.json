@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-3H2-q034-v4",
+  "original_number": 34,
+  "kind": "mcq",
+  "based_on": "35a3def834f89843d72ff866d09f4304d73326c58ab1a356fc65d82b250fa25a",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>A</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>30</mn><mo>∘</mo></msup></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>B</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>105</mn><mo>∘</mo></msup></mrow></semantics></math> và bán kính đường tròn ngoại tiếp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>. Tính độ dài cạnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi></mrow></semantics></math>?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Xét tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math>, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>C</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><msup><mn>30</mn><mo>∘</mo></msup><mo>−</mo><msup><mn>105</mn><mo>∘</mo></msup><mo>=</mo><msup><mn>45</mn><mo>∘</mo></msup></mrow></semantics></math>.<br>Theo định lý sin thì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mi>A</mi><mi>B</mi></mrow><mrow><mo>sin</mo><mi>C</mi></mrow></mfrac><mo>=</mo><mn>2</mn><mi>R</mi><mo>⇒</mo><mi>A</mi><mi>B</mi><mo>=</mo><mn>2</mn><mi>R</mi><mo>sin</mo><mi>C</mi><mo>=</mo><mn>2</mn><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mo>sin</mo><msup><mn>45</mn><mo>∘</mo></msup><mo>=</mo><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>.",
+  "accepted_answers": []
+}

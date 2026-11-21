@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-5TK2-q031-v4",
+  "original_number": 31,
+  "kind": "mcq",
+  "based_on": "b86ebec3283d90b8ef2007d7792af062c1fa500eebfb495e4d25b1fb4b385ca8",
+  "prompt": "Khi kiểm tra ngẫu nhiên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>26</mn></semantics></math> công nhân trong một xí nghiệp, người ta thống kê lại độ tuổi của họ ở bảng sau:\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Tuổi</td><td>25</td><td>26</td><td>27</td><td>29</td><td>31</td><td>34</td></tr><tr><td>Số công nhân</td><td>4</td><td>9</td><td>8</td><td>3</td><td>1</td><td>1</td></tr></tbody></table></div></div>\n\tTìm trung bình cộng của mẫu số liệu trên.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>x</mi><mo accent=\"true\">¯</mo></mover><mo>=</mo><mn>27</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>x</mi><mo accent=\"true\">¯</mo></mover><mo>=</mo><mn>25</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>x</mi><mo accent=\"true\">¯</mo></mover><mo>=</mo><mn>26</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>x</mi><mo accent=\"true\">¯</mo></mover><mo>=</mo><mn>28</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>x</mi><mo accent=\"true\">¯</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>25</mn><mo>⋅</mo><mn>4</mn><mo>+</mo><mn>25</mn><mo>⋅</mo><mn>9</mn><mo>+</mo><mn>27</mn><mo>⋅</mo><mn>8</mn><mo>+</mo><mn>29</mn><mo>⋅</mo><mn>3</mn><mo>+</mo><mn>31</mn><mo>⋅</mo><mn>1</mn><mo>+</mo><mn>34</mn><mo>⋅</mo><mn>1</mn></mrow><mn>26</mn></mfrac><mo>=</mo><mn>27</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-3H2-q072-v4",
+  "original_number": 72,
+  "kind": "mcq",
+  "based_on": "31beb577dedc26744003be653d840376b9bdf463eaf14ce8b2c33e9c71a35a6b",
+  "prompt": "<div class=\"with-figure\"><div>Với số liệu đo được từ một bên bờ sông như hình vẽ bên, bạn hãy giúp nhân viên đo đạc tính khoảng cách giữa hai cái cây bên kia bờ sông (<em>kết quả làm tròn đến hàng phần trăm</em>).</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/1d00869e6932b3784d5b0fb6c050964331ee1ff5421cfd25351784d305d85c50.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>53</mn><mo>,</mo><mn>89</mn></mrow></semantics></math>  cm"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>168</mn><mo>,</mo><mn>36</mn></mrow></semantics></math>  m"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>168</mn><mo>,</mo><mn>36</mn></mrow></semantics></math> cm"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>53</mn><mo>,</mo><mn>89</mn></mrow></semantics></math>  m"
+    }
+  ],
+  "correct": "D",
+  "solution": "Ta có tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi><mo>=</mo><mn>100</mn></mrow></semantics></math> m; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mn>75</mn></mrow></semantics></math>m và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>A</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>32</mn><mo>∘</mo></msup></mrow></semantics></math>.<br>Áp dụng định lí côsin trong tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math>, ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><msup><mi>C</mi><mn>2</mn></msup><mo>=</mo><mi>A</mi><msup><mi>C</mi><mn>2</mn></msup><mo>+</mo><mi>A</mi><msup><mi>B</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mo>⋅</mo><mi>A</mi><mi>B</mi><mo>⋅</mo><mi>A</mi><mi>C</mi><mo>⋅</mo><mo>cos</mo><mi>A</mi><mo>=</mo><msup><mn>100</mn><mn>2</mn></msup><mo>+</mo><msup><mn>75</mn><mn>2</mn></msup><mo>−</mo><mn>2</mn><mo>⋅</mo><mn>100</mn><mo>⋅</mo><mn>75</mn><mo>⋅</mo><mo>cos</mo><msup><mn>32</mn><mo>∘</mo></msup><mo>=</mo><mn>15</mn><mspace width=\"0.167em\"/><mn>625</mn><mo>−</mo><mn>15</mn><mspace width=\"0.167em\"/><mn>000</mn><mo>⋅</mo><mo>cos</mo><msup><mn>32</mn><mo>∘</mo></msup><mi>.</mi></mrow></semantics></math></div>\n\t\tSuy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi><mo>=</mo><msqrt><mrow><mn>15</mn><mspace width=\"0.167em\"/><mn>625</mn><mo>−</mo><mn>15</mn><mspace width=\"0.167em\"/><mn>000</mn><mo>⋅</mo><mo>cos</mo><msup><mn>32</mn><mo>∘</mo></msup></mrow></msqrt><mo>≈</mo><mn>53</mn><mo>,</mo><mn>89</mn></mrow></semantics></math> m.<br>Vậy khoảng cách hai cây là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>53</mn><mo>,</mo><mn>89</mn></mrow></semantics></math> m.",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-9XS2-q039-v4",
+  "original_number": 39,
+  "kind": "mcq",
+  "based_on": "c7a87a1bc9459fc928c6ae35d750c9918ccd501cc803eab1d8e91cec29d4817b",
+  "prompt": "Gieo <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> con xúc sắc cân đối và đồng chất. Tính xác suất để số chấm xuất hiện trên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> con xúc sắc đó bằng nhau.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>5</mn><mn>36</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>18</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>6</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Gieo <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> con xúc sắc cân đối và đồng chất, không gian mẫu của phép thử này là\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Ω</mi><mo>=</mo><mo minsize=\"1.2\" maxsize=\"1.2\" stretchy=\"false\" form=\"prefix\">{</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>i</mi><mspace width=\"0.167em\"/><mi>j</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>∣</mo><mi>i</mi><mo>∈</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo>;</mo><mn>3</mn><mo>;</mo><mn>4</mn><mo>;</mo><mn>5</mn><mo>;</mo><mn>6</mn><mo stretchy=\"false\" form=\"postfix\">}</mo><mrow><mspace width=\"0.333em\"/><mtext mathvariant=\"normal\"> và </mtext><mspace width=\"0.333em\"/></mrow><mi>j</mi><mo>∈</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo>;</mo><mn>3</mn><mo>;</mo><mn>4</mn><mo>;</mo><mn>5</mn><mo>;</mo><mn>6</mn><mo stretchy=\"false\" form=\"postfix\">}</mo><mo minsize=\"1.2\" maxsize=\"1.2\" stretchy=\"false\" form=\"postfix\">}</mo><mi>.</mi></mrow></semantics></math></div>\n\t\tXét biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math>: ``số chấm xuất hiện trên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> con xúc sắc đó bằng nhau&#x27;&#x27; ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo minsize=\"1.2\" maxsize=\"1.2\" stretchy=\"false\" form=\"prefix\">{</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>11</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>,</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>22</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>,</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>33</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>,</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>44</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>,</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>55</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>,</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>66</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo minsize=\"1.2\" maxsize=\"1.2\" stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math></div>\n\t\tVậy xác suất của biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Ω</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>6</mn><mn>36</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>6</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

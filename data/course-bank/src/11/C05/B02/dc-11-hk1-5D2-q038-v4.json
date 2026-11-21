@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-5D2-q038-v4",
+  "original_number": 38,
+  "kind": "mcq",
+  "based_on": "6c9d5286a798715a0737dedbf804274b58d49613774cfeddebb84931e3c89529",
+  "prompt": "Một đơn vị sản xuất hàng thủ công ước tính chi phí để sản xuất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> đơn vị sản phẩm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>55</mn></mrow></semantics></math> (triệu đồng). Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> là hàm số biểu thị chi phí trung bình để sản xuất mỗi đơn vị sản phẩm. Hỏi khi số lượng sản phẩm càng lớn thì chi phí trung bình để sản xuất một đơn vị sản phẩm càng gần với giá trị nào sau đây?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>25</mn></semantics></math> triệu đồng"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> triệu đồng"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> triệu đồng"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>55</mn></semantics></math> triệu đồng"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có\n\t\t<ul><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>C</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mi>x</mi></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>55</mn></mrow><mi>x</mi></mfrac></mrow></semantics></math>.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>55</mn></mrow><mi>x</mi></mfrac><mo>=</mo><mn>2</mn></mrow></semantics></math>.</li></ul>\n\t\tKhi số lượng sản phẩm càng lớn thì chi phí trung bình để sản xuất một đơn vị sản phẩm càng gần với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> triệu đồng.",
+  "accepted_answers": []
+}

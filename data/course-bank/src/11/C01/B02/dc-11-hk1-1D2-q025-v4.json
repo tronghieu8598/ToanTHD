@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-1D2-q025-v4",
+  "original_number": 25,
+  "kind": "mcq",
+  "based_on": "ede114f0fe2c8c4f7504ac4750b50e50a234726e7bb3b4eda0fb13cd70cdabdb",
+  "prompt": "Giá trị của biểu thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>=</mo><mo>cos</mo><msup><mn>54</mn><mo>∘</mo></msup><mo>cos</mo><msup><mn>4</mn><mo>∘</mo></msup><mo>−</mo><mo>cos</mo><msup><mn>36</mn><mo>∘</mo></msup><mo>cos</mo><msup><mn>86</mn><mo>∘</mo></msup></mrow></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><msup><mn>58</mn><mo>∘</mo></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><msup><mn>58</mn><mo>∘</mo></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><msup><mn>50</mn><mo>∘</mo></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><msup><mn>50</mn><mo>∘</mo></msup></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Do <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><msup><mn>36</mn><mo>∘</mo></msup><mo>=</mo><mo>sin</mo><msup><mn>54</mn><mo>∘</mo></msup></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><msup><mn>86</mn><mo>∘</mo></msup><mo>=</mo><mo>sin</mo><msup><mn>4</mn><mo>∘</mo></msup></mrow></semantics></math> nên<br><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>=</mo><mo>cos</mo><msup><mn>54</mn><mo>∘</mo></msup><mo>cos</mo><msup><mn>4</mn><mo>∘</mo></msup><mo>−</mo><mo>cos</mo><msup><mn>36</mn><mo>∘</mo></msup><mo>cos</mo><msup><mn>86</mn><mo>∘</mo></msup><mo>=</mo><mo>cos</mo><msup><mn>54</mn><mo>∘</mo></msup><mo>cos</mo><msup><mn>4</mn><mo>∘</mo></msup><mo>−</mo><mo>sin</mo><msup><mn>54</mn><mo>∘</mo></msup><mo>sin</mo><msup><mn>4</mn><mo>∘</mo></msup><mo>=</mo><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>54</mn><mo>∘</mo></msup><mo>+</mo><msup><mn>4</mn><mo>∘</mo></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>cos</mo><msup><mn>58</mn><mo>∘</mo></msup></mrow></semantics></math>.",
+  "accepted_answers": []
+}

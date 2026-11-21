@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk2-7D2-q208-v4",
+  "original_number": 208,
+  "kind": "tf",
+  "based_on": "afa7b7e46e4a868dfc6ef1b88a7e3d881b63fe005285a03fb0bfbca295b09ad4",
+  "prompt": "Trong hệ trục <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>O</mi><mi>x</mi><mi>y</mi></mrow></semantics></math>, cho hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi></mrow></semantics></math> và đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Δ</mi><mo>:</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>−</mo><mn>2</mn><mo>=</mo><mn>0</mn></mrow></semantics></math>. Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>d</mi></semantics></math> là tiếp tuyến của đồ thị hàm số đã cho tại điểm có hoành độ bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>x</mi><mn>0</mn></msub></semantics></math>. Các mệnh đề sau đúng hay sai?",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Nếu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>∥</mo><mi>Δ</mi></mrow></semantics></math> thì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Nếu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>∥</mo><mi>Δ</mi></mrow></semantics></math> thì phương trình của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>d</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>:</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>−</mo><mn>1</mn><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Hệ số góc của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>d</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>=</mo><mn>4</mn><msub><mi>x</mi><mn>0</mn></msub><mo>−</mo><mn>3</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>Δ</mi></semantics></math> có hệ số góc bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    false,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Phương trình đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>Δ</mi></semantics></math> được viết lại là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mi>x</mi><mo>+</mo><mn>2</mn></mrow></semantics></math> và có hệ số góc bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>1</mn></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>4</mn><mi>x</mi><mo>−</mo><mn>3</mn></mrow></semantics></math> và hệ số góc của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>d</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>=</mo><mn>4</mn><msub><mi>x</mi><mn>0</mn></msub><mo>−</mo><mn>3</mn></mrow></semantics></math>.</li><li>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>∥</mo><mi>Δ</mi></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><msub><mi>x</mi><mn>0</mn></msub><mo>−</mo><mn>3</mn><mo>=</mo><mo>−</mo><mn>1</mn><mo>⇔</mo><mn>4</mn><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><mn>2</mn><mo>⇔</mo><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math> nên tung độ của tiếp điểm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>y</mi><mn>0</mn></msub><mo>=</mo><mn>2</mn><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>−</mo><mn>3</mn><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>.<br>Phương trình tiếp tuyến <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>d</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mn>1</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>−</mo><mn>1</mn><mo>⇔</mo><mi>y</mi><mo>=</mo><mo>−</mo><mi>x</mi><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>⇔</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>+</mo><mn>1</mn><mo>=</mo><mn>0</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

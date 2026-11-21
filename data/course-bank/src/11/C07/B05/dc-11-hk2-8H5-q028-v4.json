@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-8H5-q028-v4",
+  "original_number": 28,
+  "kind": "mcq",
+  "based_on": "87e3df91666599d930c084560c9f22164a64890e1016108ccfb50abfcf3a4b0f",
+  "prompt": "<div class=\"with-figure\"><div>Cho hình chóp tứ giác đều <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>.</mi><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> có cạnh đáy bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>a</mi></mrow></semantics></math>, cạnh bên bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mi>a</mi></mrow></semantics></math> (tham khảo hình vẽ).\n\t\tKhoảng cách từ điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>S</mi></semantics></math> đến mặt phẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> bằng:</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/483b768923e60ba038d629bfcca4cd3a50e383565a8483c1349503b190105e8a.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><msqrt><mn>7</mn></msqrt><mn>2</mn></mfrac><mi>a</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><msqrt><mn>7</mn></msqrt><mn>7</mn></mfrac><mi>a</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><msqrt><mn>7</mn></msqrt><mi>a</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msqrt><mn>7</mn></msqrt><mi>a</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "<div class=\"with-figure\"><div>Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>O</mi></semantics></math> là tâm của đáy, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>O</mi><mi>A</mi><mo>=</mo><mi>a</mi><msqrt><mn>2</mn></msqrt></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>O</mi><mo>⊥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>. Do đó\n\t\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">d</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>S</mi><mo>,</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>S</mi><mi>O</mi><mo>=</mo><msqrt><mrow><mi>S</mi><msup><mi>A</mi><mn>2</mn></msup><mo>−</mo><mi>O</mi><msup><mi>A</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><msqrt><mrow><mn>9</mn><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><msup><mi>a</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mi>a</mi><msqrt><mn>7</mn></msqrt><mi>.</mi></mrow></semantics></math></div></div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/dc56a934ac15dfc45ef53fe9de49a20f9b2ffddfa03a5ff9126ba0b363ed02c0.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

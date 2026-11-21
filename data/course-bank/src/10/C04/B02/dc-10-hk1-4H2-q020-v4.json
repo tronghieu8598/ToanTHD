@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-4H2-q020-v4",
+  "original_number": 20,
+  "kind": "mcq",
+  "based_on": "1d4db3d6ede0def7d6fadcd63e820495667fd72a1550745fd55b82c8266bea16",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math>, trọng tâm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>G</mi></semantics></math>. Kết luận nào sau đây đúng?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "Không xác định được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>G</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>G</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>G</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>G</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>G</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>G</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>G</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>G</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>G</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mn>0</mn><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>G</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>G</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>G</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Theo quy tắc trọng tâm của tam giác thì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>G</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>G</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>G</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mn>0</mn><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.",
+  "accepted_answers": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-1D4-q102-v4",
+  "original_number": 102,
+  "kind": "tf",
+  "based_on": "b4c48a8bd8d509fab313cd89e579c4708b4113cf0734b4e23a948f65919d4085",
+  "prompt": "<div class=\"with-figure\"><div>Trên đường tròn lượng giác lấy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>M</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>N</mi></semantics></math> có hoành độ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></semantics></math> (tham khảo hình vẽ). Xét phương trình lượng giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>cos</mo><mi>x</mi><mo>=</mo><msqrt><mn>3</mn></msqrt><mspace width=\"1.0em\"/><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>*</mo><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>. Xét tính đúng sai của các phát biểu sau:<div class=\"paragraph-gap\"></div></div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/e32742468ac22a88454aa75757e574f62461a7c312679c43a616090f06a8e13d.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>*</mo><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> có đúng một nghiệm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Trong khoảng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>*</mo><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> có một nghiệm duy nhất"
+    },
+    {
+      "key": "c",
+      "text": "Điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>M</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>N</mi></semantics></math> trong hình vẽ biểu diễn các nghiệm của phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>*</mo><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>*</mo><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> tương đương với phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><msqrt><mn>3</mn></msqrt><mn>2</mn></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>M</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>N</mi></semantics></math> trong hình vẽ biểu diễn các nghiệm của phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>.</li><li>Phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>*</mo><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⇔</mo><mo>cos</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><msqrt><mn>3</mn></msqrt><mn>2</mn></mfrac></mrow></semantics></math>.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>*</mo><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⇔</mo><mo>cos</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><msqrt><mn>3</mn></msqrt><mn>2</mn></mfrac><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi></mtd></mtr></mtable></mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</li><li>Trong khoảng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>*</mo><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> có một nghiệm duy nhất là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-2D2-q057-v4",
+  "original_number": 57,
+  "kind": "tf",
+  "based_on": "07d7aa5c7aa87e75dbdf1248e170ac2b8b05874cd0e604654e2839b2276a8e2d",
+  "prompt": "Bác Kim dự định trồng hai loại cây ăn trái là mít và xoài trong nông trại rộng 10 hecta. Biết mỗi hecta trồng mít cần 20 công chăm sóc và thu lại lợi nhuận 15 triệu đồng, mỗi hecta trồng xoài cần 40 công chăm sóc và thu lại lợi nhuận 18 triệu đồng. Biết rằng tổng số công chăm sóc không được vượt quá 280 công. Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>y</mi></semantics></math> (hecta) lần lượt là diện tích đất dùng để trồng mít và xoài. Xét tính đúng sai của các phát biểu sau",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>≤</mo><mn>10</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Tổng lợi nhuận thu được là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo>=</mo><mn>15</mn><mi>x</mi><mo>+</mo><mn>18</mn><mi>y</mi></mrow></semantics></math> (triệu đồng)"
+    },
+    {
+      "key": "c",
+      "text": "Lợi nhuận thu được lớn nhất là 180 triệu đồng"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>≤</mo><mn>14</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    true
+  ],
+  "solution": "Theo bài ra ta có hệ bất phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>10</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mn>0</mn><mo>≤</mo><mi>y</mi><mo>≤</mo><mn>10</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>+</mo><mi>y</mi><mo>≤</mo><mn>10</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mn>20</mn><mi>x</mi><mo>+</mo><mn>40</mn><mi>y</mi><mo>≤</mo><mn>280</mn></mtd></mtr></mtable></mrow><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>10</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mn>0</mn><mo>≤</mo><mi>y</mi><mo>≤</mo><mn>10</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>+</mo><mi>y</mi><mo>≤</mo><mn>10</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>≤</mo><mn>14</mn><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math> <br>Ta có miền nghiệm của hệ bất phương trình đã cho\n\t\t\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/363668a8ce0eec937d5ed9e64b15a4080e136cc949243dede684ba1b38543fc7.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\t\t\tVậy miền nghiệm là tứ giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>O</mi><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> kể cả các điểm bên trong và các cạnh của tứ giác, với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>10</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>6</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>7</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>. <br>Hàm lợi nhuận thu được của bác Kim là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mo>=</mo><mn>15</mn><mi>x</mi><mo>+</mo><mn>18</mn><mi>y</mi></mrow></semantics></math> (triệu đồng). <br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>10</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>150</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>6</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>162</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>F</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>7</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>126</mn></mrow></semantics></math>.  <br>Vậy lợi nhuận bác Kim thu được lớn nhất là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>162</mn></semantics></math> triệu đồng.\n\t\t\t\t<ol class=\"alpha-list\"><li>Khẳng định đã cho là đúng.</li><li>Khẳng định đã cho là sai.</li><li>Khẳng định đã cho là đúng.</li><li>Khẳng định đã cho là đúng.</li></ol>",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-1D2-q022-v4",
+  "original_number": 22,
+  "kind": "mcq",
+  "based_on": "110f3f2e294075007fe6b2d94c693999c33380fa47082fe4e58d70f612a5fe65",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mn>2</mn><mi>α</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>&lt;</mo><mi>α</mi><mo>&lt;</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac></mrow></semantics></math>. Tính giá trị của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>α</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>α</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><msqrt><mn>30</mn></msqrt><mn>6</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>α</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>6</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>α</mi><mo>=</mo><mfrac displaystyle=\"true\"><msqrt><mn>30</mn></msqrt><mn>6</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>α</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mn>5</mn></mrow><mn>6</mn></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Theo giả thiết <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>&lt;</mo><mi>α</mi><mo>&lt;</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac></mrow></semantics></math>, suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>sin</mo><mi>α</mi><mo>&lt;</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>cos</mo><mi>α</mi><mo>&gt;</mo><mn>0</mn><mi>.</mi></mtd></mtr></mtable></mrow></semantics></math> <br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mn>2</mn><mi>α</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac><mo>⇔</mo><mn>2</mn><msup><mo>cos</mo><mn>2</mn></msup><mi>α</mi><mo>−</mo><mn>1</mn><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac><mo>⇔</mo><mo>cos</mo><mi>α</mi><mo>=</mo><mo>±</mo><mfrac displaystyle=\"true\"><msqrt><mn>6</mn></msqrt><mn>6</mn></mfrac></mrow></semantics></math>. <br>Mà <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>α</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>α</mi><mo>=</mo><mfrac displaystyle=\"true\"><msqrt><mn>6</mn></msqrt><mn>6</mn></mfrac></mrow></semantics></math>. <br>Khi đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>α</mi><mo>=</mo><mo>−</mo><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mo>cos</mo><mn>2</mn></msup><mi>α</mi></mrow></msqrt><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><msqrt><mn>30</mn></msqrt><mn>6</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

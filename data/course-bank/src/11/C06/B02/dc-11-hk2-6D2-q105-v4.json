@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk2-6D2-q105-v4",
+  "original_number": 105,
+  "kind": "tf",
+  "based_on": "b9d394e4d88347dedd24ddadd64f64599a1a5608fcfddda94f4385a6c67d76f1",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow></semantics></math> là hai số thực dương tùy ý và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi><mo>≠</mo><mn>1</mn></mrow></semantics></math>. Xác định tính đúng sai của các khẳng định sau.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>ln</mo><mi>a</mi><mo>−</mo><mo>ln</mo><mi>b</mi><mo>=</mo><mo>ln</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>a</mi><mo>−</mo><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>ln</mo><mi>a</mi><mo>+</mo><mo>ln</mo><mi>b</mi><mo>=</mo><mo>ln</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>a</mi><mo>⋅</mo><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>ln</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>ln</mo><mi>a</mi><mo>⋅</mo><mo>ln</mo><mi>b</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>b</mi></msub><mi>a</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>ln</mo><mi>a</mi></mrow><mrow><mo>ln</mo><mi>b</mi></mrow></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "solution": "Theo tính chất của logarit ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>ln</mo><mi>a</mi><mo>+</mo><mo>ln</mo><mi>b</mi><mo>=</mo><mo>ln</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>a</mi><mo>⋅</mo><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>b</mi></msub><mi>a</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>ln</mo><mi>a</mi></mrow><mrow><mo>ln</mo><mi>b</mi></mrow></mfrac></mrow></semantics></math> là đúng.",
+  "accepted_answers": []
+}

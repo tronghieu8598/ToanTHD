@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-9XS2-q067-v4",
+  "original_number": 67,
+  "kind": "tf",
+  "based_on": "c9fd27a09a30080a65482b81ad6e85e76019aa4f2130082a8fe829aa2fed1f98",
+  "prompt": "Trong lớp 10A có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>25</mn></semantics></math> bạn nam và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>21</mn></semantics></math> bạn nữ. Giáo viên chọn ngẫu nhiên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> bạn trong lớp để làm cán bộ lớp.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Số cách chọn ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> bạn nam trong lớp 10A là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2300</mn></semantics></math> (cách)"
+    },
+    {
+      "key": "b",
+      "text": "Xác suất của các biến cố ““ Ba bạn được chọn đều là nam”” bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>5</mn><mn>33</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Số cách chọn ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> bạn trong lớp 10A là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>15180</mn></semantics></math> (cách)"
+    },
+    {
+      "key": "d",
+      "text": "Xác suất của các biến cố ““ Trong ba học sinh được chọn có hai bạn nam và một bạn nữ”” bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>105</mn><mn>253</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Số cách chọn ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> bạn trong lớp 10A là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>46</mn><mn>3</mn></msubsup><mo>=</mo><mn>15180</mn></mrow></semantics></math> (cách).</li><li>Số cách chọn ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> bạn nam trong lớp 10A là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>25</mn><mn>3</mn></msubsup><mo>=</mo><mn>2300</mn></mrow></semantics></math> (cách).</li><li>Xác suất của các biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math>: ““ Ba bạn được chọn đều là nam”” là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><msubsup><mi mathvariant=\"normal\">C</mi><mn>25</mn><mn>3</mn></msubsup><msubsup><mi mathvariant=\"normal\">C</mi><mn>46</mn><mn>3</mn></msubsup></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>33</mn></mfrac></mrow></semantics></math>.</li><li>Xác suất của các biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math>: ““ Trong ba học sinh được chọn có hai bạn nam và một bạn nữ”” là\n\t\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>25</mn><mn>2</mn></msubsup><mo>⋅</mo><mn>21</mn></mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>46</mn><mn>3</mn></msubsup></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>105</mn><mn>253</mn></mfrac><mi>.</mi></mrow></semantics></math></div></li></ol>",
+  "accepted_answers": []
+}

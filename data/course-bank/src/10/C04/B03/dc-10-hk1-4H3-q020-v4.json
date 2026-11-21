@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-4H3-q020-v4",
+  "original_number": 20,
+  "kind": "mcq",
+  "based_on": "089f9f7bbc4a206d81ecc5edf7960e259eb54e1e9a8daebcd10ac1709b240d91",
+  "prompt": "Cho hình bình hành <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>M</mi></semantics></math> là giao điểm của hai đường chéo. Mệnh đề nào sau đây <strong>sai</strong>?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>A</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>B</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>2</mn><mover><mrow><mi>B</mi><mi>M</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>M</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>M</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>M</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>M</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "<div class=\"with-figure\"><div>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> là hình bình hành nên theo quy tắc hình bình hành ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>A</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.<br>Theo quy tắc 3 điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.<br>Do <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>M</mi></semantics></math> là giao điểm của hai đường chéo nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>M</mi></semantics></math> là trung điểm của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>D</mi></mrow></semantics></math> nên\n\t\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>B</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>2</mn><mover><mrow><mi>B</mi><mi>M</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>M</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>M</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>M</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>M</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.<br>Vậy mệnh đề ““<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>M</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>M</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>M</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>M</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>”” sai.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/625c881754506228f9502c2718032ce9334fcad7f9252cc98f845ae4dd6fc28e.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

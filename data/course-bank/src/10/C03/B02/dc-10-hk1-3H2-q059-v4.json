@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-3H2-q059-v4",
+  "original_number": 59,
+  "kind": "mcq",
+  "based_on": "900a487b5c1898960ca7cdaf94d4d7c5d6b67788bd539e6631bbb70b989ade60",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>cm, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><msup><mn>60</mn><mo>∘</mo></msup></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo>=</mo><msup><mn>45</mn><mo>∘</mo></msup></mrow></semantics></math>. Độ dài <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi></mrow></semantics></math> (tính theo cm) bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msqrt><mn>6</mn></msqrt></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>+</mo><mn>2</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><msqrt><mn>3</mn></msqrt><mo>−</mo><mn>2</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><msqrt><mn>6</mn></msqrt></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>A</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><msup><mn>60</mn><mo>∘</mo></msup><mo>−</mo><msup><mn>45</mn><mo>∘</mo></msup><mo>=</mo><msup><mn>75</mn><mo>∘</mo></msup></mrow></semantics></math>.<br>Do đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mi>A</mi><mi>C</mi></mrow><mrow><mo>sin</mo><mi>B</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>B</mi><mi>C</mi></mrow><mrow><mo>sin</mo><mi>A</mi></mrow></mfrac><mo>⇒</mo><mfrac displaystyle=\"true\"><mn>4</mn><mrow><mo>sin</mo><msup><mn>45</mn><mo>∘</mo></msup></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>B</mi><mi>C</mi></mrow><mrow><mo>sin</mo><msup><mn>75</mn><mo>∘</mo></msup></mrow></mfrac><mo>⇒</mo><mi>B</mi><mi>C</mi><mo>=</mo><mn>2</mn><mo>+</mo><mn>2</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math>.",
+  "accepted_answers": []
+}

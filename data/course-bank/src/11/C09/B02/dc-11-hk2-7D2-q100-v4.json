@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-7D2-q100-v4",
+  "original_number": 100,
+  "kind": "mcq",
+  "based_on": "60220a8d96773d02ac9317fe4edecbf548433a4f767a4ca2c7786c15fd872128",
+  "prompt": "Hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msqrt><mrow><mo>cot</mo><mn>2</mn><mi>x</mi></mrow></msqrt></mrow></semantics></math> có đạo hàm là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>+</mo><msup><mo>cot</mo><mn>2</mn></msup><mn>2</mn><mi>x</mi></mrow><msqrt><mrow><mo>cot</mo><mn>2</mn><mi>x</mi></mrow></msqrt></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>+</mo><msup><mo>cot</mo><mn>2</mn></msup><mn>2</mn><mi>x</mi></mrow><mrow><mn>2</mn><msqrt><mrow><mo>cot</mo><mn>2</mn><mi>x</mi></mrow></msqrt></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>+</mo><msup><mo>tan</mo><mn>2</mn></msup><mn>2</mn><mi>x</mi></mrow><msqrt><mrow><mo>cot</mo><mn>2</mn><mi>x</mi></mrow></msqrt></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>+</mo><msup><mo>tan</mo><mn>2</mn></msup><mn>2</mn><mi>x</mi></mrow><mrow><mn>2</mn><msqrt><mrow><mo>cot</mo><mn>2</mn><mi>x</mi></mrow></msqrt></mrow></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>cot</mo><mn>2</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi></mrow><mrow><mn>2</mn><msqrt><mrow><mo>cot</mo><mn>2</mn><mi>x</mi></mrow></msqrt></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mn>2</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>+</mo><msup><mo>cot</mo><mn>22</mn></msup><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mrow><mn>2</mn><msqrt><mrow><mo>cot</mo><mn>2</mn><mi>x</mi></mrow></msqrt></mrow></mfrac><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>+</mo><msup><mo>cot</mo><mn>2</mn></msup><mn>2</mn><mi>x</mi></mrow><msqrt><mrow><mo>cot</mo><mn>2</mn><mi>x</mi></mrow></msqrt></mfrac><mi>.</mi></mrow></semantics></math>",
+  "accepted_answers": []
+}

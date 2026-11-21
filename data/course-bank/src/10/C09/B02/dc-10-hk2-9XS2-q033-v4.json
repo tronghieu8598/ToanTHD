@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-9XS2-q033-v4",
+  "original_number": 33,
+  "kind": "mcq",
+  "based_on": "b99b4a5d61bd165a0806579d9c41e2f851e4168b4aa242804d583b2277dd7018",
+  "prompt": "Trong một hộp có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>31</mn></semantics></math> quả bóng được đánh số từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> đến <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>31</mn></semantics></math>. Các quả bóng có kích thước và khối lượng như nhau. Chọn ngẫu nhiên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> quả. Xác suất để tích của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> số trên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> quả bóng lấy ra là số lẻ bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>16</mn><mn>31</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>7</mn><mn>31</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>24</mn><mn>31</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>8</mn><mn>31</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Trong <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>31</mn></semantics></math> số nguyên dương đầu tiên có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>16</mn></semantics></math> số lẻ và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>15</mn></semantics></math> số chẵn.<br>Chọn ngẫu nhiên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> quả bóng từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>31</mn></semantics></math> quả bóng đã cho, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Ω</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>31</mn><mn>2</mn></msubsup><mo>=</mo><mn>465</mn></mrow></semantics></math>.<br>Để tích <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> số được chọn ra là số lẻ thì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> số được lấy cùng là số lẻ, số cách lấy là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>16</mn><mn>2</mn></msubsup><mo>=</mo><mn>120</mn></mrow></semantics></math>.<br>Suy ra xác suất cần tìm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>120</mn><mn>465</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>8</mn><mn>31</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

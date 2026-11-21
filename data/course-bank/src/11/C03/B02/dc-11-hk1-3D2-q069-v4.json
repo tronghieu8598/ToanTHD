@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-3D2-q069-v4",
+  "original_number": 69,
+  "kind": "tf",
+  "based_on": "8a50a65fec45fbbbd2384461ecd4e20d7634681d2ab5e7414977fe46169d681e",
+  "prompt": "Người ta đo đường kính của một số cây gỗ được trồng sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>12</mn></semantics></math> năm (đơn vị: xăng-ti-mét), họ thu được bảng tần số ghép nhóm sau<br><div><figure class=\"tex-figure\"><img src=\"/bank-assets/713d6e411df1311e6c36fa004831a5887d6bdb62ba57c95247cf44c12cfb668e.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tXét tính đúng sai của các khẳng định dưới đây.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Cỡ mẫu của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>61</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Tứ phân vị thứ ba của mẫu số liệu ghép nhóm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>≈</mo><mn>36</mn><mo>,</mo><mn>44</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Tứ phân vị thứ nhất của mẫu số liệu ghép nhóm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>≈</mo><mn>28</mn><mo>,</mo><mn>69</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Tứ phân vị thứ hai của mẫu số liệu ghép nhóm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Q</mi><mn>2</mn></msub><mo>≈</mo><mn>32</mn><mo>,</mo><mn>79</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    true
+  ],
+  "solution": "<div><figure class=\"tex-figure\"><img src=\"/bank-assets/0d986a78f833a0a0e796c0ab4c065bef89e4c1ef01abc43e1aa274f2be72bfaf.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tCỡ mẫu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>61</mn></mrow></semantics></math>. Khi đó, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mi>n</mi><mn>4</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>61</mn><mn>4</mn></mfrac><mo>=</mo><mn>15</mn><mo>,</mo><mn>25</mn></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mi>n</mi><mn>2</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>61</mn><mn>2</mn></mfrac><mo>=</mo><mn>30</mn><mo>,</mo><mn>5</mn></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mi>n</mi></mrow><mn>4</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>183</mn><mn>4</mn></mfrac><mo>=</mo><mn>45</mn><mo>,</mo><mn>75</mn></mrow></semantics></math>.\n\t\t<ol class=\"alpha-list\"><li>Cỡ mẫu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>61</mn></mrow></semantics></math>.</li><li>Nhóm chứa tứ phân vị thứ ba là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>35</mn><mo>;</mo><mn>40</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>.<br>Tứ phân vị thứ ba của mẫu số liệu ghép nhóm đã cho là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mn>35</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>45</mn><mo>,</mo><mn>75</mn><mo>−</mo><mn>42</mn></mrow><mn>13</mn></mfrac><mo>⋅</mo><mn>5</mn><mo>≈</mo><mn>36</mn><mo>,</mo><mn>44</mn></mrow></semantics></math>.</li><li>Nhóm chứa tứ phân vị thứ hai là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>30</mn><mo>;</mo><mn>35</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>.<br>Tứ phân vị thứ hai của mẫu số liệu ghép nhóm đã cho là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Q</mi><mn>2</mn></msub><mo>=</mo><mn>30</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>30</mn><mo>,</mo><mn>5</mn><mo>−</mo><mn>16</mn></mrow><mn>26</mn></mfrac><mo>⋅</mo><mn>5</mn><mo>≈</mo><mn>32</mn><mo>,</mo><mn>79</mn></mrow></semantics></math>.</li><li>Nhóm chứa tứ phân vị thứ nhất là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>25</mn><mo>;</mo><mn>30</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>.<br>Tứ phân vị thứ nhất của mẫu số liệu ghép nhóm đã cho là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>25</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>15</mn><mo>,</mo><mn>25</mn><mo>−</mo><mn>4</mn></mrow><mn>12</mn></mfrac><mo>⋅</mo><mn>5</mn><mo>≈</mo><mn>29</mn><mo>,</mo><mn>69</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

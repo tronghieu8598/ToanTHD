@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-5D3-q031-v4",
+  "original_number": 31,
+  "kind": "mcq",
+  "based_on": "2099bbfad18028f1dbef2c63d9c7fa07e74883f4e61bc01c6cc2feb365ff7c39",
+  "prompt": "<div class=\"with-figure\"><div>Cho hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mrow><mtext mathvariant=\"normal\">khi </mtext><mspace width=\"0.333em\"/></mrow><mi>x</mi><mo>≤</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>−</mo><mn>1</mn></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mrow><mtext mathvariant=\"normal\">khi </mtext><mspace width=\"0.333em\"/></mrow><mi>x</mi><mo>&gt;</mo><mn>1</mn></mtd></mtr></mtable></mrow></mrow></semantics></math> có đồ thị như hình bên. Mệnh đề nào dưới đây là mệnh đề <strong>đúng</strong>?<div class=\"paragraph-gap\"></div></div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/8fad7956f8be89abc5b3e0b2dc665b63d135f45fff76142700d8aab4c7d1a3ef.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "Hàm số gián đoạn tại <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "Hàm số liên tục tại <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "Hàm số không liên tục tại <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mn>4</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "Hàm số liên tục tại <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Hàm số gián đoạn tại <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math> do <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mn>1</mn><mo>−</mo></msup></mrow></munder><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mn>1</mn><mo>−</mo></msup></mrow></munder><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>3</mn></mrow></semantics></math> nhưng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mn>1</mn><mo>+</mo></msup></mrow></munder><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><msup><mn>1</mn><mo>+</mo></msup></mrow></munder><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

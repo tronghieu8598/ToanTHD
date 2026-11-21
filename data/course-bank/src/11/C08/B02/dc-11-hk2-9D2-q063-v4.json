@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk2-9D2-q063-v4",
+  "original_number": 63,
+  "kind": "tf",
+  "based_on": "94fcac19e4e5f3330c5413185a230710571a821f5a4088679b359d5edf9058e4",
+  "prompt": "Trong một giải cầu lông có hai bạn An và Bình ở hai nhánh thi đấu khác nhau. Mỗi nhánh thi đấu chọn ra một người vào chung kết. Xác suất vào chung kết của hai bạn An và Bình lần lượt là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>6</mn></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>7</mn></mrow></semantics></math>. Xét các biến cố\n\t<ul><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>:</mo></mrow></semantics></math>““ An vào chung kết””.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo>:</mo></mrow></semantics></math>““ Bình vào chung kết””.</li></ul>",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Xác suất của biến cố ““ An và Bình vào chung kết”” là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>42</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow></semantics></math> là ““ An và Bình vào chung kết””"
+    },
+    {
+      "key": "c",
+      "text": "Biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow></semantics></math> là ““ An hoặc Bình vào chung kết””"
+    },
+    {
+      "key": "d",
+      "text": "Xác suất của biến cố ““ Có ít nhất một trong hai bán An và Bình vào chung kết”” là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>88</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow></semantics></math> là ““ An hoặc Bình vào chung kết””.</li><li>Biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow></semantics></math> là ““ An và Bình vào chung kết””.</li><li>Do <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math> là hai biến cố độc lập nhau nên xác suất của biến cố ““ An và Bình vào chung kết”” là \n\t\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⋅</mo><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>6</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>7</mn><mo>=</mo><mn>0</mn><mo>,</mo><mn>42</mn><mi>.</mi></mrow></semantics></math></div></li><li>Biến cố ““ Có ít nhất một trong hai bán An và Bình vào chung kết”” là biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow></semantics></math>. Do đó\n\t\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>−</mo><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>6</mn><mo>+</mo><mn>0</mn><mo>,</mo><mn>7</mn><mo>−</mo><mn>0</mn><mo>,</mo><mn>42</mn><mo>=</mo><mn>0</mn><mo>,</mo><mn>88</mn><mi>.</mi></mrow></semantics></math></div></li></ol>",
+  "accepted_answers": []
+}

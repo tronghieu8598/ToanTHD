@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk1-1D2-q054-v4",
+  "original_number": 54,
+  "kind": "short",
+  "based_on": "2daa3dac79f8c9ab5932ef77e427e1fb7d325a4a7448437113ccf3c474585d5b",
+  "prompt": "Tính giá trị của biểu thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>π</mi><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>sin</mo><mi>x</mi><mo>+</mo><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>cos</mo><mi>x</mi></mrow></semantics></math>.",
+  "choices": [],
+  "correct": "1",
+  "solution": "Ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>π</mi><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⋅</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⋅</mo><mo>cos</mo><mi>x</mi><mo>=</mo><mo>sin</mo><mi>x</mi><mo>⋅</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mo>cos</mo><mi>x</mi><mo>⋅</mo><mo>cos</mo><mi>x</mi><mo>=</mo><msup><mo>sin</mo><mn>2</mn></msup><mi>x</mi><mo>+</mo><msup><mo>cos</mo><mn>2</mn></msup><mi>x</mi><mo>=</mo><mn>1</mn><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

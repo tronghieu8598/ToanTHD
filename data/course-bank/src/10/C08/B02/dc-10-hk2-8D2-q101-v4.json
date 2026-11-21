@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-8D2-q101-v4",
+  "original_number": 101,
+  "kind": "tf",
+  "based_on": "8de976ad6b8694a903f61de5495ccdffb794224b2524847ee2cddea5013b3326",
+  "prompt": "Trong chương trình văn nghệ của buổi lễ kỉ niệm ngày giải phóng miền Nam và thống nhất đất nước <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>30</mn></semantics></math> tháng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math>, đội văn nghệ nhà trường thực hiện <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> tiết mục múa, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> tiết mục hát và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> tiết mục kịch.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>30</mn></semantics></math> cách chọn ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> tiết mục để tặng hoa, sao cho có đủ cả múa, hát và kịch"
+    },
+    {
+      "key": "b",
+      "text": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>50</mn></semantics></math> cách chọn ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> tiết mục văn nghệ để dự thi sao cho có đúng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> tiết mục múa"
+    },
+    {
+      "key": "c",
+      "text": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>40</mn></semantics></math> cách chọn ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> tiết mục văn nghệ để tặng hoa"
+    },
+    {
+      "key": "d",
+      "text": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>10</mn><mi>!</mi></mrow></semantics></math> cách xếp thứ tự các tiết mục văn nghệ đó trong chương trình biểu diễn"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Vì có tất cả <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> tiết mục tham gia biểu diễn đên có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>10</mn><mi>!</mi></mrow></semantics></math> cách xếp thứ tự các tiết mục văn nghệ đó trong chương trình biểu diễn.</li><li>Số cách chọn ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> tiết mục để tặng hoa là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>10</mn><mn>4</mn></msubsup><mo>=</mo><mn>210</mn></mrow></semantics></math>.</li><li>Số cách chọn ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> tiết mục để tặng hoa sao cho có đủ múa, hát và kịch là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>2</mn><mn>1</mn></msubsup><mo>⋅</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>1</mn></msubsup><mo>⋅</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>3</mn><mn>1</mn></msubsup><mo>=</mo><mn>30</mn></mrow></semantics></math>.</li><li>Số cách chọn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> tiết mục văn nghệ để dự thi sao cho có đúng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> tiết mục múa là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>2</mn><mn>1</mn></msubsup><mo>⋅</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>8</mn><mn>2</mn></msubsup><mo>=</mo><mn>2</mn><mo>⋅</mo><mn>28</mn><mo>=</mo><mn>56</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

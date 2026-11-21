@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-3H1-q020-v4",
+  "original_number": 20,
+  "kind": "mcq",
+  "based_on": "8290c506f74861ed23cb1e2586ddb2ec9f325a89c2b054847379d68a1e4f83dd",
+  "prompt": "Cho góc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>α</mi></semantics></math> (<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>0</mn><mo>∘</mo></msup><mo>≤</mo><mi>α</mi><mo>&lt;</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow></semantics></math>) thỏa mãn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>α</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>4</mn><mn>5</mn></mfrac></mrow></semantics></math>, giá trị của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mi>α</mi></mrow></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mn>4</mn><mn>3</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>3</mn><mn>5</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>4</mn><mn>3</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mo>sin</mo><mn>2</mn></msup><mi>α</mi><mo>+</mo><msup><mo>cos</mo><mn>2</mn></msup><mi>α</mi><mo>=</mo><mn>1</mn><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>cos</mo><mi>α</mi><mo>=</mo><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mo>sin</mo><mn>2</mn></msup><mi>α</mi></mrow></msqrt><mo>=</mo><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"false\"><mn>4</mn><mn>5</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mfrac displaystyle=\"false\"><mn>3</mn><mn>5</mn></mfrac></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>cos</mo><mi>α</mi><mo>=</mo><mo>−</mo><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mo>sin</mo><mn>2</mn></msup><mi>α</mi></mrow></msqrt><mo>=</mo><mo>−</mo><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"false\"><mn>4</mn><mn>5</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mo>−</mo><mfrac displaystyle=\"false\"><mn>3</mn><mn>5</mn></mfrac><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math><br>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>0</mn><mo>∘</mo></msup><mo>≤</mo><mi>α</mi><mo>&lt;</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>α</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>α</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>5</mn></mfrac></mrow></semantics></math>.\n\t\tKhi đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mi>α</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>sin</mo><mi>α</mi></mrow><mrow><mo>cos</mo><mi>α</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mfrac><mn>4</mn><mn>5</mn></mfrac><mfrac><mn>3</mn><mn>5</mn></mfrac></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>4</mn><mn>3</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

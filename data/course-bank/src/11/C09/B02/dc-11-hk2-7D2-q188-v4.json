@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk2-7D2-q188-v4",
+  "original_number": 188,
+  "kind": "tf",
+  "based_on": "0ac75286e20d036f1f26a34421ed61cbe7b5e05b74af8c3526a67794ebd1610a",
+  "prompt": "Cho hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>16</mn><mo>cos</mo><mi>x</mi><mo>+</mo><mn>17</mn><mo>sin</mo><mi>x</mi></mrow></semantics></math>. Xét tính đúng sai của các mệnh đề sau",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>″</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>16</mn><mo>sin</mo><mi>x</mi><mo>+</mo><mn>17</mn><mo>cos</mo><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>33</mn><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>″</mi><mo>=</mo><mo>−</mo><mn>16</mn><mo>cos</mo><mi>x</mi><mo>−</mo><mn>17</mn><mo>sin</mo><mi>x</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>17</mn><mo>cos</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac><mo>+</mo><mn>16</mn><mo>sin</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>33</mn><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></semantics></math>.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mo>−</mo><mn>16</mn><mo>sin</mo><mi>x</mi><mo>+</mo><mn>17</mn><mo>cos</mo><mi>x</mi></mrow></semantics></math>.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>″</mi><mo>=</mo><mo>−</mo><mn>16</mn><mo>cos</mo><mi>x</mi><mo>−</mo><mn>17</mn><mo>sin</mo><mi>x</mi></mrow></semantics></math>.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>″</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>16</mn><mo>cos</mo><mi>x</mi><mo>+</mo><mn>17</mn><mo>sin</mo><mi>x</mi><mo>−</mo><mn>16</mn><mo>cos</mo><mi>x</mi><mo>−</mo><mn>17</mn><mo>sin</mo><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

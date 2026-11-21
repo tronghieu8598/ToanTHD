@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-1D2-q059-v4",
+  "original_number": 59,
+  "kind": "tf",
+  "based_on": "6700fdeb3f96c19974e003f90e1778465fb4ca3d101da32e24727ddf79b68025",
+  "prompt": "Cho hai tập hợp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>2</mn><mo>;</mo><mn>5</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mi>x</mi><mo>∈</mo><mi>ℝ</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mn>3</mn><mo>&lt;</mo><mi>x</mi><mo>≤</mo><mn>8</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>\\</mo><mi>B</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>5</mn><mo>;</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>3</mn><mo>;</mo><mn>8</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>;</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Tập hợp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> có vô số phần tử"
+    }
+  ],
+  "correct": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li><strong>Đúng</strong>.</li><li><strong>Sai</strong>.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">(</mo><mn>3</mn><mo>;</mo><mn>8</mn><mo stretchy=\"false\" form=\"postfix\">]</mo></mrow></semantics></math>.</li><li><strong>Đúng</strong>.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>;</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</li><li><strong>Sai</strong>.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>\\</mo><mi>B</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>2</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

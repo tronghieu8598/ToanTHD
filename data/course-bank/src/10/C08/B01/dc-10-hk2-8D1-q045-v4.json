@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-8D1-q045-v4",
+  "original_number": 45,
+  "kind": "mcq",
+  "based_on": "6aa00bdea2171cb41bfcea5af5481ea1e5b9a016a4b68e8764bac63d257e0993",
+  "prompt": "Có 10 quả cầu đỏ được đánh số từ 1 đến 10, 7 quả cầu xanh được đánh số từ 1 đến 7 và 8 quả cầu vàng được đánh số từ 1 đến 8. Hỏi có bao nhiêu cách lấy ra 3 quả cầu khác màu và khác số?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>391</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3014</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1023</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>392</mn></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Chọn một quả xanh có 7 cách chọn.<br>Chọn một vàng có 7 cách chọn (bỏ số quả xanh đã chọn).<br>Chọn một đỏ có 8 cách chọn (bỏ số quả xanh và quả vàng đã chọn).<br>Áp dụng quy tắc nhân có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>7</mn><mo>⋅</mo><mn>7</mn><mo>⋅</mo><mn>8</mn><mo>=</mo><mn>392</mn></mrow></semantics></math> cách.",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-8D1-q054-v4",
+  "original_number": 54,
+  "kind": "mcq",
+  "based_on": "654369c3e32300f523bc7455941431a821b6dd80ca688aaa62b2149d9c0b1b92",
+  "prompt": "Cho tập <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>0</mn><mo>;</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo>;</mo><mn>3</mn><mo>;</mo><mn>4</mn><mo>;</mo><mn>5</mn><mo>;</mo><mn>6</mn><mo>;</mo><mn>7</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>. Từ các chữ số của tập hợp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> có thể lập được bao nhiêu số tự nhiên nhỏ hơn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>100</mn></semantics></math>?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>99</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>64</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>63</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>56</mn></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Số tự nhiên nhỏ hơn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>100</mn></semantics></math> gồm các số tự nhiên có một chữ số và các số tự nhiên có hai chữ số.\n\t\t<ul><li>Số các số tự nhiên có một chữ số từ tập <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math>.</li><li>Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><msub><mi>a</mi><mn>1</mn></msub><msub><mi>a</mi><mn>2</mn></msub></mrow><mo accent=\"true\">¯</mo></mover></semantics></math> là số tự nhiên có hai chữ số, trong đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>∈</mo><mi>A</mi></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>≠</mo><mn>0</mn></mrow></semantics></math>.\n\t\t\t<ul><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>a</mi><mn>1</mn></msub></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math> cách chọn.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>a</mi><mn>2</mn></msub></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math> cách chọn.</li></ul>\n\t\t\tSố các số tự nhiên có hai chữ số từ tập <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>7</mn><mo>⋅</mo><mn>8</mn><mo>=</mo><mn>56</mn></mrow></semantics></math>.</li></ul>\n\t\tVậy số các số tự nhiên thỏa mãn yêu cầu bài toán là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mo>+</mo><mn>56</mn><mo>=</mo><mn>64</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

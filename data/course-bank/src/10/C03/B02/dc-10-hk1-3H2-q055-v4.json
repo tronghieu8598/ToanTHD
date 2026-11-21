@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-3H2-q055-v4",
+  "original_number": 55,
+  "kind": "mcq",
+  "based_on": "bc70065ffdbb9abe119adf18265b94d7e95b79f81a8edc5aaa2a556d1933c4eb",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi><mo>=</mo><mi>a</mi></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi><mo>=</mo><mi>b</mi></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mi>c</mi></mrow></semantics></math> và có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>R</mi></semantics></math> là bán kính đường tròn ngoại tiếp. Hệ thức nào sau đây là đúng?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mi>b</mi><mrow><mo>sin</mo><mi>B</mi></mrow></mfrac><mo>=</mo><mn>2</mn><mi>R</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mi>a</mi><mrow><mo>sin</mo><mi>A</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>C</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>a</mi><mo>⋅</mo><mo>sin</mo><mi>A</mi></mrow><mi>c</mi></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>A</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>a</mi></mrow><mi>R</mi></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Áp dụng định lý sin trong tam giác, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mi>b</mi><mrow><mo>sin</mo><mi>B</mi></mrow></mfrac><mo>=</mo><mn>2</mn><mi>R</mi></mrow></semantics></math>.",
+  "accepted_answers": []
+}

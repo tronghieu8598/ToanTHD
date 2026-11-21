@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-9D2-q022-v4",
+  "original_number": 22,
+  "kind": "mcq",
+  "based_on": "9d43c593dd0a296efc1972a0c11a803a8f3aad6f69831a9b07ce6e3cb1b09415",
+  "prompt": "Lớp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>11</mn><mi>A</mi><mn>1</mn></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>50</mn></semantics></math> học sinh, trong đó có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>32</mn></semantics></math> bạn thích học môn Toán, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>17</mn></semantics></math> bạn thích học môn Hóa và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math> bạn thích cả hai môn trên. Chọn ngẫu nhiên một bạn. Xác suất để bạn đó thích môn Toán hoặc Hóa là?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>9</mn><mn>50</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>41</mn><mn>50</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>33</mn><mn>50</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>49</mn><mn>50</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Biến cố ““ Bạn đó thích môn Toán hoặc Hóa””  là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow></semantics></math>.<br>Theo công thức cộng xác suất ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>−</mo><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo>∩</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>32</mn><mn>50</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>17</mn><mn>50</mn></mfrac><mo>−</mo><mfrac displaystyle=\"true\"><mn>8</mn><mn>50</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>41</mn><mn>50</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

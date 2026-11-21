@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-5D2-q055-v4",
+  "original_number": 55,
+  "kind": "mcq",
+  "based_on": "65f5970b34234bf92603c8bb6a964b2f0b6a9ba2580cc6e67f91924e28783388",
+  "prompt": "Nếu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>3</mn></mrow></munder><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn></mrow></semantics></math> thì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>3</mn></mrow></munder><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>4</mn><mi>x</mi><mo>−</mo><mn>3</mn><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></mrow></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>3</mn></mrow></munder><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>4</mn><mi>x</mi><mo>−</mo><mn>3</mn><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow><mo>=</mo><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>3</mn></mrow></munder><mn>4</mn><mo>⋅</mo><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>3</mn></mrow></munder><mi>x</mi><mo>−</mo><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>3</mn></mrow></munder><mn>3</mn><mo>⋅</mo><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mn>3</mn></mrow></munder><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>4</mn><mo>⋅</mo><mn>3</mn><mo>−</mo><mn>3</mn><mo>⋅</mo><mn>2</mn><mo>=</mo><mn>6</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

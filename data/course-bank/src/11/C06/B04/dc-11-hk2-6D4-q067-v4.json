@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D4-q067-v4",
+  "original_number": 67,
+  "kind": "mcq",
+  "based_on": "c8c471341e8a9b17a98341c0387c0c2ee161349c486f51c0a6700b785ec919dd",
+  "prompt": "Số lượng cá thể vi khuẩn của một mẻ nuôi cấy tuân theo công thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>50</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mi>k</mi><mo>⋅</mo><mi>t</mi></mrow></msup></mrow></semantics></math>, trong đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>t</mi></semantics></math> là thời gian tính bằng giờ kể từ thời điểm bắt đầu nuôi cấy, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>k</mi></semantics></math> là hằng số. Biết rằng sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> giờ thì mẻ có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>100</mn></semantics></math> cá thể vi khuẩn. Hỏi sau ít nhất bao lâu thì số lượng cá thể vi khuẩn đạt <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>100</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> con (chọn kết quả gần nhất)?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>11</mn></semantics></math> giờ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>18</mn></semantics></math> phút"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> giờ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>58</mn></semantics></math> phút"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> giờ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>50</mn></semantics></math> phút"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> giờ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>40</mn></semantics></math> phút"
+    }
+  ],
+  "correct": "B",
+  "solution": "Sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> giờ thì mẻ có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>100</mn></semantics></math> cá thể vi khuẩn; suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>100</mn><mo>=</mo><mn>50</mn><mo>⋅</mo><msup><mn>10</mn><mi>k</mi></msup><mo>⇔</mo><mi>k</mi><mo>=</mo><mo>log</mo><mn>2</mn></mrow></semantics></math>. <br>Khi đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>50</mn><mo>⋅</mo><msup><mn>10</mn><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>log</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⋅</mo><mi>t</mi></mrow></msup><mo>=</mo><mn>50</mn><mo>⋅</mo><msup><mn>2</mn><mi>t</mi></msup></mrow></semantics></math>. <br>Số lượng vi khuẩn đạt <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>100</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> con, suy ra <div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>100</mn><mspace width=\"0.167em\"/><mn>000</mn><mo>=</mo><mn>50</mn><mo>⋅</mo><msup><mn>2</mn><mi>t</mi></msup><mo>⇔</mo><msup><mn>2</mn><mi>t</mi></msup><mo>=</mo><mn>2</mn><mspace width=\"0.167em\"/><mn>000</mn><mo>⇔</mo><mi>t</mi><mo>=</mo><msub><mo>log</mo><mn>2</mn></msub><mn>2</mn><mspace width=\"0.167em\"/><mn>000</mn><mo>≈</mo><mn>10</mn><mo>,</mo><mn>97</mn><mi>.</mi></mrow></semantics></math></div>\n\t\tSau ít nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> giờ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>58</mn></semantics></math> phút thì số lượng cá thể đạt <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>100</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> con.",
+  "accepted_answers": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk2-6D4-q139-v4",
+  "original_number": 139,
+  "kind": "short",
+  "based_on": "bfae2458c8cdc4ec071dede668dfe56fb8e28892797208068c8cf5b61e7c6efa",
+  "prompt": "Một người gửi tiền vào ngân hàng với lãi suất không thay đổi là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>6</mn><mi>%</mi></mrow></semantics></math> trên năm. Biết rằng nếu không rút tiền ra khỏi ngân hàng thì cứ sau mỗi năm, số tiền lãi sẽ được nhập vào vốn ban đầu (người ta gọi đó là lãi kép). Người đó định gửi tiền trong vòng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> năm, sau đó rút <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>500</mn></semantics></math> triệu đồng. Hỏi số tiền ít nhất người đó phải gửi vào ngân hàng (kết quả làm tròn đến hàng triệu) là bao nhiêu triệu đồng?",
+  "choices": [],
+  "correct": "420",
+  "solution": "Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>X</mi></semantics></math> (triệu đồng) là số tiền ban đầu người đó gửi vào ngân hàng.<br>Sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> năm sẽ có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>+</mo><mn>0</mn><mo>,</mo><mn>06</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>3</mn></msup></mrow></semantics></math>.<br>Theo đề bài ta có  <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>+</mo><mn>0</mn><mo>,</mo><mn>06</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>3</mn></msup><mo>≥</mo><mn>500</mn><mo>⇔</mo><mi>X</mi><mo>≥</mo><mn>419</mn><mo>,</mo><mn>8</mn></mrow></semantics></math>.<br>Vậy người đó phải gửi vào ngân hàng số tiền ít nhất là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>420</mn></semantics></math> triệu đồng.",
+  "accepted_answers": []
+}

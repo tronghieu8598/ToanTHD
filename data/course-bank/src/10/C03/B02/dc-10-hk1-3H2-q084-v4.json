@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-3H2-q084-v4",
+  "original_number": 84,
+  "kind": "tf",
+  "based_on": "2cfdfe38d0a8b4b6d950b131cbfc9bad9020f6bb079a487bce44714ecf363feb",
+  "prompt": "Tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>A</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>45</mn><mo>∘</mo></msup></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>B</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>15</mn><mo>∘</mo></msup></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Độ dài cạnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi></mrow></semantics></math> bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msqrt><mn>6</mn></msqrt></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>C</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>120</mn><mo>∘</mo></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Bán kính đường tròn ngoại tiếp tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>=</mo><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Diện tích tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mo>+</mo><msqrt><mn>3</mn></msqrt></mrow><mn>2</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Đúng. Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>C</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><mover><mi>A</mi><mo accent=\"true\">̂</mo></mover><mo>−</mo><mover><mi>B</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><msup><mn>45</mn><mo>∘</mo></msup><mo>−</mo><msup><mn>15</mn><mo>∘</mo></msup><mo>=</mo><msup><mn>120</mn><mo>∘</mo></msup></mrow></semantics></math>.</li><li>Sai. Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mi>B</mi><mi>C</mi></mrow><mrow><mo>sin</mo><mi>A</mi></mrow></mfrac><mo>=</mo><mn>2</mn><mi>R</mi></mrow></semantics></math>. Suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>R</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mrow><mo>sin</mo><msup><mn>45</mn><mo>∘</mo></msup></mrow></mfrac><mo>=</mo><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>. Do đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>=</mo><msqrt><mn>2</mn></msqrt></mrow></semantics></math>.</li><li>Đúng. Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mi>B</mi><mi>C</mi></mrow><mrow><mo>sin</mo><mi>A</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>A</mi><mi>B</mi></mrow><mrow><mo>sin</mo><mi>C</mi></mrow></mfrac><mo>⇒</mo><mi>A</mi><mi>B</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>B</mi><mi>C</mi><mo>⋅</mo><mo>sin</mo><mi>C</mi></mrow><mrow><mo>sin</mo><mi>A</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mo>sin</mo><msup><mn>120</mn><mo>∘</mo></msup></mrow><mrow><mo>sin</mo><msup><mn>45</mn><mo>∘</mo></msup></mrow></mfrac><mo>=</mo><msqrt><mn>6</mn></msqrt></mrow></semantics></math>.</li><li>Sai. Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">S</mi><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></msub><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mi>B</mi><mi>C</mi><mo>⋅</mo><mi>A</mi><mi>B</mi><mo>⋅</mo><mo>sin</mo><mi>B</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>⋅</mo><mn>2</mn><mo>⋅</mo><msqrt><mn>6</mn></msqrt><mo>sin</mo><msup><mn>15</mn><mo>∘</mo></msup><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mo>−</mo><msqrt><mn>3</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

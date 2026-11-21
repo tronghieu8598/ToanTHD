@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-1D3-q037-v4",
+  "original_number": 37,
+  "kind": "mcq",
+  "based_on": "ff2d283858c2defd833b5162aa1d9e3f2204f109a4b6d0893d50e9101e3a6211",
+  "prompt": "Tập xác định của hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mo>sin</mo><mn>3</mn><mi>x</mi></mrow></mfrac></mrow></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mi>x</mi><mo>∈</mo><mi>ℝ</mi><mo>∣</mo><mi>x</mi><mo>≠</mo><mi>k</mi><mi>π</mi><mo>,</mo><mspace width=\"0.167em\"/><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mi>x</mi><mo>∈</mo><mi>ℝ</mi><mo>∣</mo><mi>x</mi><mo>≠</mo><mfrac displaystyle=\"true\"><mrow><mi>k</mi><mn>2</mn><mi>π</mi></mrow><mn>3</mn></mfrac><mo>,</mo><mspace width=\"0.167em\"/><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mi>x</mi><mo>∈</mo><mi>ℝ</mi><mo>∣</mo><mi>x</mi><mo>≠</mo><mi>k</mi><mn>2</mn><mi>π</mi><mo>,</mo><mspace width=\"0.167em\"/><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mi>x</mi><mo>∈</mo><mi>ℝ</mi><mo>∣</mo><mi>x</mi><mo>≠</mo><mfrac displaystyle=\"true\"><mrow><mi>k</mi><mi>π</mi></mrow><mn>3</mn></mfrac><mo>,</mo><mspace width=\"0.167em\"/><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Hàm số xác định khi và chỉ khi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mn>3</mn><mi>x</mi><mo>≠</mo><mn>0</mn><mo>⇔</mo><mn>3</mn><mi>x</mi><mo>≠</mo><mi>k</mi><mi>π</mi><mo>⇔</mo><mi>x</mi><mo>≠</mo><mfrac displaystyle=\"true\"><mrow><mi>k</mi><mi>π</mi></mrow><mn>3</mn></mfrac></mrow></semantics></math> (<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>).<br>Vậy tập xác định của hàm số là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mi>x</mi><mo>∈</mo><mi>ℝ</mi><mo>∣</mo><mi>x</mi><mo>≠</mo><mfrac displaystyle=\"true\"><mrow><mi>k</mi><mi>π</mi></mrow><mn>3</mn></mfrac><mo>,</mo><mspace width=\"0.167em\"/><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></mrow></semantics></math>.",
+  "accepted_answers": []
+}

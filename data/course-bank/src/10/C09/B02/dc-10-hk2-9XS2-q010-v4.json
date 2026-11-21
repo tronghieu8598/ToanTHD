@@ -1,0 +1,11 @@
+{
+  "id": "dc-10-hk2-9XS2-q010-v4",
+  "original_number": 10,
+  "kind": "free",
+  "based_on": "9f10f9fd996f84f7e900bf94999dc4d7db259c332a6146cf3981303ed390adf7",
+  "prompt": "Bốn đội bóng A, B, C, D lọt vào vòng bán kết của một giải đấu. Ban tổ chức bốc thăm chia <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> đội này thành <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> cặp đấu một cách ngẫu nhiên. Tính xác suất của biến cố hai đội A và B đấu với nhau ở trận bán kết.\n\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></semantics></math>",
+  "choices": [],
+  "correct": null,
+  "solution": "Số kết quả chia <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> đội thành <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> cặp đấu (có tính thứ tự giữa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> cặp) là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Ω</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>4</mn><mn>2</mn></msubsup><mo>=</mo><mn>6</mn></mrow></semantics></math>.<br>Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> cách để đội A và đội B gặp nhau ở bán kết (là cặp đấu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> hoặc cặp đấu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>).<br>Vậy xác suất cần tìm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>6</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

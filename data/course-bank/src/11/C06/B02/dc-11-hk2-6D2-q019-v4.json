@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D2-q019-v4",
+  "original_number": 19,
+  "kind": "mcq",
+  "based_on": "f02464c6023b1ccda34a48a4bfdb0d85ef478d7627185fa91263b2ed77b9597b",
+  "prompt": "Bác An gửi tiết kiệm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>200</mn></semantics></math> triệu đồng ở một ngân hàng với lãi suất không đổi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>6</mn><mo>,</mo><mn>5</mn><mi>%</mi></mrow></semantics></math> một năm theo thể thức lãi kép kì hạn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>12</mn></semantics></math> tháng. Thời gian tối thiểu để bác An thu được ít nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>350</mn></semantics></math> triệu đồng (cả vốn và lãi) là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>9</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Ta có công thức lãi kép <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>T</mi><mi>n</mi></msub><mo>=</mo><msub><mi>T</mi><mn>0</mn></msub><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>+</mo><mi>r</mi><mi>%</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>n</mi></msup></mrow></semantics></math>. Trong đó <ul><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>T</mi><mn>0</mn></msub></semantics></math> là số tiền gửi ban đầu.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>r</mi><mi>%</mi></mrow></semantics></math> là lãi suất.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>T</mi><mi>n</mi></msub></semantics></math> là số tiền cả vốn lẫn lãi sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>n</mi></semantics></math> năm.</li></ul>\n\t\tDo đó số tiền gốc và lãi sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>n</mi></semantics></math> năm mà bác An thu được là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>200</mn><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>+</mo><mn>6</mn><mo>,</mo><mn>5</mn><mi>%</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>n</mi></msup></mrow></semantics></math> triệu đồng.\n\t\tĐể số tiền bác An thu được ít nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>350</mn></semantics></math> triệu đồng thì\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"/><mtd columnalign=\"right\" style=\"text-align: right\"><mn>200</mn><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>+</mo><mn>6</mn><mo>,</mo><mn>5</mn><mi>%</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>n</mi></msup><mo>≥</mo><mn>350</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇔</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mn>1</mn><mo>,</mo><msup><mn>065</mn><mi>n</mi></msup><mo>≥</mo><mfrac displaystyle=\"true\"><mn>35</mn><mn>20</mn></mfrac></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇔</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mi>n</mi><mo>≥</mo><msub><mo>log</mo><mrow><mn>1</mn><mo>,</mo><mn>065</mn></mrow></msub><mfrac displaystyle=\"true\"><mn>35</mn><mn>20</mn></mfrac><mo>≈</mo><mn>8</mn><mo>,</mo><mn>9</mn><mi>.</mi></mtd></mtr></mtable></semantics></math></div>\n\t\tVậy thời gian tối thiểu các An cần gửi là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>9</mn></semantics></math> năm.",
+  "accepted_answers": []
+}

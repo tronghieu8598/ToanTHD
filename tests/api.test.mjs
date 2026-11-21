@@ -11,6 +11,7 @@ import ts from 'typescript';
 import {newStaffPassword} from '../lib/auth.mjs';
 import {courseRowPayload} from '../lib/course-bank.mjs';
 import {bankReleaseChapters} from '../lib/bank-release-chapters.mjs';
+import {readFrozenCourseBank} from '../scripts/course-bank-data.mjs';
 import chapter01Overlay from '../data/chapter-variants/generated/12-C01.json' with {type: 'json'};
 import chapter02Overlay from '../data/chapter-variants/generated/12-C02.json' with {type: 'json'};
 import chapter03Overlay from '../data/chapter-variants/generated/12-C03.json' with {type: 'json'};
@@ -861,6 +862,70 @@ test('Chapters III–V stage independently with exact teacher-approved question 
     const saved=db.prepare('SELECT bank_status,bank_fingerprint FROM questions WHERE id=?').get(row.id);
     assert.equal(saved.bank_status,'auto');
     assert.equal(saved.bank_fingerprint,row.bank_fingerprint);
+   }
+  }
+ }finally{
+  delete env.BUCKET;
+ }
+});
+
+test('Grade 10 and remapped Grade 11 chapters retain review and reference rows without claiming variants', async ()=>{
+ const origin='http://test.local';
+ const {manifest,questions}=readFrozenCourseBank();
+ const objects=new Map();
+ env.BUCKET={async put(key,value){objects.set(key,value);},async get(key){const value=objects.get(key);return value?{async text(){return value;}}:null;}};
+ const post=(action,body,status=200)=>call('teacher/bank-release/'+action,{method:'POST',origin,body,status}).then(r=>r.data);
+ const total=()=>db.prepare('SELECT COUNT(*) AS count FROM questions').get().count;
+ try{
+  for(const [scope,count,reviewCount,referenceCount] of [['10-C01',136,11,39],['11-C07',433,5,80]]){
+   const definition=bankReleaseChapters[scope];
+   const lessonIds=new Set(definition.lessons.map(lesson=>lesson.id));
+   if(scope==='11-C07')assert.ok([...lessonIds].every(id=>id.startsWith('dc-11-hk2-8H')));
+   const frozen=questions.filter(question=>lessonIds.has(question.lesson_id));
+   const held=frozen.find(question=>question.bank_status==='review');
+   const reference=frozen.find(question=>question.bank_status==='reference');
+   assert.equal(frozen.length,count);
+   const release=releaseWithApprovedRows(scope,null,scope,frozen);
+   release.documents=manifest.documents.filter(document=>document.id===definition.documentId);
+   release.lessons=manifest.lessons.filter(lesson=>lessonIds.has(lesson.id));
+   const change=(id,patch)=>release.questions.map(row=>{
+    if(row.id!==id)return row;
+    const edited={...row,...patch};
+    return {...edited,bank_fingerprint:releaseFingerprint(edited)};
+   });
+
+   await post('stage',{...release,variants_version:chapter02Overlay.version},422);
+   await post('stage',{...release,questions:change(held.id,{bank_status:'auto'})},422);
+   await post('stage',{...release,questions:change(reference.id,{kind:'short',bank_status:'auto',correct:'2'})},422);
+   await post('stage',{...release,questions:change(reference.id,{correct:'2'})},422);
+   const before=total();
+   const staged=await post('stage',release);
+   assert.equal(staged.preview.added,count);
+   assert.equal(staged.release.variants_version,null);
+   assert.equal(staged.release.variants,0);
+   assert.equal(total(),before);
+
+   const prefix='bank-release/staged/'+scope+'/';
+   const oldStage=JSON.parse(objects.get(prefix+staged.digest+'.json'));
+   oldStage.release.questions=oldStage.release.questions.slice(1);
+   const oldText=JSON.stringify(oldStage);
+   const oldDigest=nodeCrypto.createHash('sha256').update(oldText).digest('hex');
+   objects.set(prefix+oldDigest+'.json',oldText);
+   await post('activate',{scope,digest:oldDigest},409);
+   assert.equal(total(),before);
+
+   assert.equal((await post('activate',{scope,digest:staged.digest})).replayed,false);
+   assert.equal((await post('activate',{scope,digest:staged.digest})).replayed,true);
+   assert.equal(total(),before+count);
+   const row=db.prepare('SELECT kind, bank_status, correct FROM questions WHERE id=?').get(reference.id);
+   assert.deepEqual({...row},{kind:'free',bank_status:'reference',correct:'null'});
+   const byStatus=status=>db.prepare(`SELECT COUNT(*) AS count FROM questions
+    WHERE lesson_id IN (SELECT value FROM json_each(?)) AND bank_status=?`).get(JSON.stringify([...lessonIds]),status).count;
+   assert.equal(byStatus('review'),reviewCount);
+   assert.equal(byStatus('reference'),referenceCount);
+   for(const blocked of [held,reference]){
+    await call('teacher/bank/select',{method:'POST',body:{mode:'numbers',lesson_id:blocked.lesson_id,
+     numbers_spec:String(blocked.original_number)},status:400});
    }
   }
  }finally{

@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D4-q065-v4",
+  "original_number": 65,
+  "kind": "mcq",
+  "based_on": "afb6c75ac4018d2b93517c75c064eb65387f577f1f8d08f3fb31fb2b74aea0bf",
+  "prompt": "Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>N</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> là số phần trăm cacbon <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>14</mn></semantics></math> còn lại trong một bộ phận của một cây sinh trưởng từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>t</mi></semantics></math> năm trước đây thì ta có công thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>N</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>100</mn><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>,</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mfrac><mi>t</mi><mi>A</mi></mfrac></msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>%</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là hằng số. Biết rằng một mẫu gỗ có tuổi khoảng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3574</mn></semantics></math> năm thì lượng cacbon <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>14</mn></semantics></math> còn lại là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>65</mn><mi>%</mi></mrow></semantics></math>. Phân tích mẫu gỗ từ một công trình kiến trúc cổ, người ta thấy lượng cacbon <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>14</mn></semantics></math> còn lại trong mẫu gỗ đó là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>63</mn><mi>%</mi></mrow></semantics></math>. Hãy xác định tuổi của mẫu gỗ được lấy từ công trình đó..",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3784</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3833</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3874</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3843</mn></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Theo bài ra ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>65</mn><mo>=</mo><mn>100</mn><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>,</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mfrac><mn>3754</mn><mi>A</mi></mfrac></msup><mo>⇔</mo><mn>0</mn><mo>,</mo><mn>65</mn><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>,</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mfrac><mn>3754</mn><mi>A</mi></mfrac></msup><mo>⇔</mo><mfrac><mn>3754</mn><mi>A</mi></mfrac><mo>=</mo><msub><mo>log</mo><mrow><mn>0</mn><mo>,</mo><mn>5</mn></mrow></msub><mn>0</mn><mo>,</mo><mn>65</mn><mo>⇔</mo><mi>A</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>3754</mn><mrow><msub><mo>log</mo><mrow><mn>0</mn><mo>,</mo><mn>5</mn></mrow></msub><mn>0</mn><mo>,</mo><mn>65</mn></mrow></mfrac><mi>.</mi></mrow></semantics></math></div>\t\t\n\t\tDo mẫu gỗ còn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>63</mn><mi>%</mi></mrow></semantics></math> lượng Cacbon <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>14</mn></semantics></math> nên ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>63</mn><mo>=</mo><mn>100</mn><mi>.</mi><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>,</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mfrac><mi>t</mi><mi>A</mi></mfrac></msup><mo>⇔</mo><mn>0</mn><mo>,</mo><mn>63</mn><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>,</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mfrac><mi>t</mi><mi>A</mi></mfrac></msup><mo>⇔</mo><mfrac><mi>t</mi><mi>A</mi></mfrac><mo>=</mo><msub><mo>log</mo><mrow><mn>0</mn><mo>,</mo><mn>5</mn></mrow></msub><mn>0</mn><mo>,</mo><mn>63</mn><mo>⇔</mo><mi>t</mi><mo>=</mo><mi>A</mi><mo>⋅</mo><msub><mo>log</mo><mrow><mn>0</mn><mo>,</mo><mn>5</mn></mrow></msub><mn>0</mn><mo>,</mo><mn>63</mn><mi>.</mi></mrow></semantics></math></div>\n\t\tDo đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mo>=</mo><mi>A</mi><mo>⋅</mo><msub><mo>log</mo><mrow><mn>0</mn><mo>,</mo><mn>5</mn></mrow></msub><mn>0</mn><mo>,</mo><mn>63</mn><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>3754</mn><mrow><msub><mo>log</mo><mrow><mn>0</mn><mo>,</mo><mn>5</mn></mrow></msub><mn>0</mn><mo>,</mo><mn>65</mn></mrow></mfrac><mo>≈</mo><mn>3833</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

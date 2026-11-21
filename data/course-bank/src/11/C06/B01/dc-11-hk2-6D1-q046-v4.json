@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D1-q046-v4",
+  "original_number": 46,
+  "kind": "mcq",
+  "based_on": "c9e587c8478881083d306dcce873470bd8b6a31ffaae4dda939dde26d4fd58b8",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math> là số thực dương tuỳ ý. Khẳng định nào sau đây <strong>sai</strong>?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><msup><mi>a</mi><mfrac displaystyle=\"false\"><mn>3</mn><mn>2</mn></mfrac></msup><mi>a</mi></mfrac><mo>=</mo><msqrt><mi>a</mi></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>a</mi><mfrac displaystyle=\"false\"><mn>3</mn><mn>2</mn></mfrac></msup><mo>⋅</mo><msup><mi>a</mi><mfrac displaystyle=\"false\"><mn>1</mn><mn>2</mn></mfrac></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>a</mi><mfrac displaystyle=\"false\"><mn>3</mn><mn>2</mn></mfrac></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>3</mn></msup><mo>=</mo><msup><mi>a</mi><mfrac displaystyle=\"false\"><mn>9</mn><mn>2</mn></mfrac></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>a</mi><mfrac displaystyle=\"false\"><mn>3</mn><mn>2</mn></mfrac></msup><mo>=</mo><mroot><msup><mi>a</mi><mn>2</mn></msup><mn>3</mn></mroot></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math> là số thực dương thì \n\t\t<ul><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mroot><msup><mi>a</mi><mn>2</mn></msup><mn>3</mn></mroot><mo>=</mo><msup><mi>a</mi><mfrac displaystyle=\"false\"><mn>2</mn><mn>3</mn></mfrac></msup><mo>=</mo></mrow></semantics></math> nên khẳng định sai.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>a</mi><mfrac displaystyle=\"false\"><mn>3</mn><mn>2</mn></mfrac></msup><mo>⋅</mo><msup><mi>a</mi><mfrac displaystyle=\"false\"><mn>1</mn><mn>2</mn></mfrac></msup><mo>=</mo><msup><mi>a</mi><mrow><mfrac displaystyle=\"false\"><mn>3</mn><mn>2</mn></mfrac><mo>+</mo><mfrac displaystyle=\"false\"><mn>1</mn><mn>2</mn></mfrac></mrow></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup></mrow></semantics></math> nên khẳng định đúng.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><msup><mi>a</mi><mfrac displaystyle=\"false\"><mn>3</mn><mn>2</mn></mfrac></msup><mi>a</mi></mfrac><mo>=</mo><msup><mi>a</mi><mrow><mfrac displaystyle=\"false\"><mn>3</mn><mn>2</mn></mfrac><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><msup><mi>a</mi><mfrac displaystyle=\"false\"><mn>1</mn><mn>2</mn></mfrac></msup><mo>=</mo><msqrt><mi>a</mi></msqrt></mrow></semantics></math> nên khẳng định đúng.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>a</mi><mfrac displaystyle=\"false\"><mn>3</mn><mn>2</mn></mfrac></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>3</mn></msup><mo>=</mo><msup><mi>a</mi><mrow><mfrac displaystyle=\"false\"><mn>3</mn><mn>2</mn></mfrac><mo>⋅</mo><mn>3</mn></mrow></msup><mo>=</mo><msup><mi>a</mi><mfrac displaystyle=\"false\"><mn>9</mn><mn>2</mn></mfrac></msup></mrow></semantics></math> nên khẳng định đúng.</li></ul>",
+  "accepted_answers": []
+}

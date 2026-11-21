@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-5TK3-q024-v4",
+  "original_number": 24,
+  "kind": "mcq",
+  "based_on": "c7a6a8e9a360a24ae152e87447c44e4d2541f7857f0c367bdeecf33cf88caf57",
+  "prompt": "Cho mẫu số liệu thống kê sau\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>52</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>86</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>80</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>44</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>49</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>57</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>41</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>44</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>55</mn></semantics></math></td></tr></tbody></table></div></div>\n\tMẫu số liệu có khoảng biến thiên bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>40</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>35</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>66</mn></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Sắp xếp các số liệu trong mẫu theo thứ tự không giảm ta có\n\t\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>41</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>44</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>44</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>49</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>52</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>55</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>57</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>80</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>86</mn></semantics></math></td></tr></tbody></table></div></div>\n\t\tTừ bảng số liệu ta tìm được số trung vị <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Q</mi><mn>2</mn></msub><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>49</mn><mo>+</mo><mn>52</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>50</mn><mo>,</mo><mn>5</mn></mrow></semantics></math>, \n\t\ttứ \tphân vị dưới <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>44</mn></mrow></semantics></math>, tứ phân vị trên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mn>57</mn></mrow></semantics></math> và khoảng tứ phân vị \n\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Δ</mi><mi>Q</mi></msub><mo>=</mo><mn>57</mn><mo>−</mo><mn>44</mn><mo>=</mo><mn>13</mn></mrow></semantics></math>.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><msub><mi>Q</mi><mn>1</mn></msub><mo>−</mo><mn>1</mn><mo>,</mo><mn>5</mn><mo>⋅</mo><msub><mi>Δ</mi><mi>Q</mi></msub><mo>;</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>+</mo><mn>1</mn><mo>,</mo><mn>5</mn><mo>⋅</mo><msub><mi>Δ</mi><mi>Q</mi></msub><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>24</mn><mo>,</mo><mn>5</mn><mo>;</mo><mn>76</mn><mo>,</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></mrow></semantics></math>.<br>Từ đó ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>80</mn></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20</mn></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>86</mn></semantics></math> là các số liệu bất thường.",
+  "accepted_answers": []
+}

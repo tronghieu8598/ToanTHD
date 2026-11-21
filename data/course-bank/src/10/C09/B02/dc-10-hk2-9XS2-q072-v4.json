@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-9XS2-q072-v4",
+  "original_number": 72,
+  "kind": "tf",
+  "based_on": "85c52477e299be4ae3fc45c7f768b535b223230eff204d45d837e189ce890b08",
+  "prompt": "Một hộp đựng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>17</mn></semantics></math> tấm thẻ được đánh số từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> đến <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>17</mn></semantics></math>. Chọn ngẫu nhiên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> tấm thẻ từ hộp.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Xác suất của biến cố ““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> thẻ lấy ra có đúng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> thẻ mang số chẵn và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> thẻ mang số lẻ””   là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>24</mn><mn>85</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Xác suất của biến cố ““ Tích <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> số trên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> thẻ lấy ra là số lẻ””  là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>9</mn><mn>170</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Xác suất của biến cố ““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> thẻ lấy ra đều là mang số chẵn””  là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>34</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Số phần tử của không gian mẫu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Ω</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>17</mn><mn>4</mn></msubsup><mo>=</mo><mn>2380</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Số phần tử của không gian mẫu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Ω</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>17</mn><mn>4</mn></msubsup><mo>=</mo><mn>2380</mn></mrow></semantics></math>.</li><li>Xác suất của biến cố ““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> thẻ lấy ra đều là mang số chẵn””  là\n\t\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><msubsup><mi mathvariant=\"normal\">C</mi><mn>8</mn><mn>4</mn></msubsup><msubsup><mi mathvariant=\"normal\">C</mi><mn>17</mn><mn>4</mn></msubsup></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>34</mn></mfrac></mrow></semantics></math>.</li><li>Xác suất của biến cố ““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> thẻ lấy ra có đúng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> thẻ mang số chẵn và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> thẻ mang số lẻ””  là\n\t\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>8</mn><mn>3</mn></msubsup><mo>⋅</mo><mn>9</mn></mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>17</mn><mn>4</mn></msubsup></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>18</mn><mn>85</mn></mfrac></mrow></semantics></math>.</li><li>Xác suất của biến cố ““ Tích <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> số trên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> thẻ lấy ra là số lẻ””  là\n\t\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><msubsup><mi mathvariant=\"normal\">C</mi><mn>9</mn><mn>4</mn></msubsup><msubsup><mi mathvariant=\"normal\">C</mi><mn>17</mn><mn>4</mn></msubsup></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>9</mn><mn>170</mn></mfrac></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

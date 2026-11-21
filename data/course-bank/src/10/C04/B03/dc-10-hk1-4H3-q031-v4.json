@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-4H3-q031-v4",
+  "original_number": 31,
+  "kind": "mcq",
+  "based_on": "5c81f207c03fe8a4439c899d46bfbf9bfcae3965caae0dc9d3959cc851746aec",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi><mi>H</mi><mi>I</mi></mrow></semantics></math> và điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>K</mi></semantics></math> thỏa mãn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>G</mi><mi>K</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mover><mrow><mi>K</mi><mi>I</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>. Mệnh đề nào sau đây đúng?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi><mi>K</mi><mo>=</mo><mn>3</mn><mi>G</mi><mi>I</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi><mi>I</mi><mo>=</mo><mn>3</mn><mi>G</mi><mi>K</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi><mi>I</mi><mo>=</mo><mi>G</mi><mi>K</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi><mi>K</mi><mo>=</mo><mn>2</mn><mi>G</mi><mi>I</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "<div class=\"with-figure\"><div>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>G</mi><mi>K</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mover><mrow><mi>K</mi><mi>I</mi></mrow><mo accent=\"true\">→</mo></mover><mo>⇔</mo><mover><mrow><mi>G</mi><mi>K</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mrow><mi>K</mi><mi>G</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>G</mi><mi>I</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⇔</mo><mover><mrow><mi>G</mi><mi>K</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mover><mrow><mi>G</mi><mi>I</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.<br>Do đó điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>K</mi></semantics></math> thuộc cạnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi><mi>I</mi></mrow></semantics></math> sao cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>G</mi><mi>K</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mi>G</mi><mi>I</mi></mrow></semantics></math>.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/8dc67757cf2297f169eeee32998816a89c583851b973e3730e2abbccc9bcdf1a.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

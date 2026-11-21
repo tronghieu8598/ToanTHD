@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk2-6D1-q070-v4",
+  "original_number": 70,
+  "kind": "tf",
+  "based_on": "51e4af44a6a74680b1c507a2bc4bdc982bb367759bcbd75e26236ba386cecb3c",
+  "prompt": "Các khẳng định sau đúng hay sai",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>b</mi></semantics></math> là hai số thực thỏa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>2025</mn><mi>a</mi></msup><mo>&gt;</mo><msup><mn>2025</mn><mi>b</mi></msup></mrow></semantics></math> thì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mi>b</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math> là số thực dương và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>m</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>n</mi></semantics></math> tùy ý ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>a</mi><mi>m</mi></msup><mo>⋅</mo><msup><mi>a</mi><mi>n</mi></msup><mo>=</mo><msup><mi>a</mi><mrow><mi>m</mi><mi>n</mi></mrow></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math> là số thực dương và khác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> thì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msqrt><msup><mi>a</mi><mn>3</mn></msup></msqrt><mo>=</mo><msup><mi>a</mi><mfrac displaystyle=\"false\"><mn>3</mn><mn>2</mn></mfrac></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Biết <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>9</mn><mi>x</mi></msup><mo>+</mo><msup><mn>9</mn><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo>=</mo><mn>23</mn></mrow></semantics></math> thì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><msup><mn>3</mn><mi>x</mi></msup><mo>+</mo><msup><mn>3</mn><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo>=</mo><mn>5</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Lý thuyết <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>a</mi><mi>m</mi></msup><mo>⋅</mo><msup><mi>a</mi><mi>n</mi></msup><mo>=</mo><msup><mi>a</mi><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></msup></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msqrt><msup><mi>a</mi><mn>3</mn></msup></msqrt><mo>=</mo><msup><mi>a</mi><mfrac><mn>3</mn><mn>2</mn></mfrac></msup></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>2025</mn><mi>a</mi></msup><mo>&gt;</mo><msup><mn>2025</mn><mi>b</mi></msup></mrow></semantics></math> thì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mi>b</mi></mrow></semantics></math> (vì cơ số lớn hơn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>).</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>, khi đó\n\t\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>P</mi><mo>=</mo><msup><mn>3</mn><mi>x</mi></msup><mo>+</mo><msup><mn>3</mn><mrow><mo>−</mo><mi>x</mi></mrow></msup></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇔</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><msup><mi>P</mi><mn>2</mn></msup><mo>=</mo><msup><mn>9</mn><mi>x</mi></msup><mo>+</mo><msup><mn>9</mn><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo>+</mo><mn>2</mn><mo>⋅</mo><msup><mn>3</mn><mi>x</mi></msup><mo>⋅</mo><msup><mn>3</mn><mrow><mo>−</mo><mi>x</mi></mrow></msup></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇔</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><msup><mi>P</mi><mn>2</mn></msup><mo>=</mo><mn>23</mn><mo>+</mo><mn>2</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇔</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><msup><mi>P</mi><mn>2</mn></msup><mo>=</mo><mn>25</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇔</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mi>P</mi><mo>=</mo><mn>5</mn><mi>.</mi></mtd></mtr></mtable></semantics></math></div></li></ol>",
+  "accepted_answers": []
+}

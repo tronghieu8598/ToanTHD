@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-8D2-q093-v4",
+  "original_number": 93,
+  "kind": "tf",
+  "based_on": "fb23753bfb6ec65438192405aacd52f52374391578ad7283f62150836929803b",
+  "prompt": "Xếp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> học sinh nam và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> học sinh nữ vào một ghế dài.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mspace width=\"0.167em\"/><mn>600</mn></mrow></semantics></math> cách xếp để <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> học sinh nữ không ngồi cạnh nhau"
+    },
+    {
+      "key": "b",
+      "text": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mspace width=\"0.167em\"/><mn>440</mn></mrow></semantics></math> cách xếp để <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> học sinh nữ ngồi cạnh nhau"
+    },
+    {
+      "key": "c",
+      "text": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mspace width=\"0.167em\"/><mn>040</mn></mrow></semantics></math> cách xếp nếu các học sinh ngồi ngẫu nhiên"
+    },
+    {
+      "key": "d",
+      "text": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>240</mn></semantics></math> cách xếp để học sinh cùng giới ngồi cạnh nhau"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Số cách xếp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> học sinh nam ngồi cạnh nhau là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mi>!</mi></mrow></semantics></math>.<br>Số cách xếp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> học sinh nữ ngồi cạnh nhau là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>!</mi></mrow></semantics></math>.<br>Số cách xếp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> nhóm (nam và nữ) là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>!</mi></mrow></semantics></math>.<br>Vậy có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mi>!</mi><mo>⋅</mo><mn>2</mn><mi>!</mi><mo>⋅</mo><mn>2</mn><mi>!</mi><mo>=</mo><mn>480</mn></mrow></semantics></math> cách xếp để học sinh cùng giới ngồi cạnh nhau.</li><li>Số cách xếp nếu các học sinh ngồi ngẫu nhiên là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>7</mn><mi>!</mi><mo>=</mo><mn>5</mn><mspace width=\"0.167em\"/><mn>040</mn></mrow></semantics></math>.</li><li>Số cách xếp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> học sinh nữ ngồi cạnh nhau là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>!</mi></mrow></semantics></math>.<br>Số cách xếp nhóm (<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> nữ) và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> nam là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>6</mn><mi>!</mi></mrow></semantics></math>.<br>Vậy có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>6</mn><mi>!</mi><mo>⋅</mo><mn>2</mn><mi>!</mi><mo>=</mo><mn>1</mn><mspace width=\"0.167em\"/><mn>440</mn></mrow></semantics></math> cách xếp để <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> học sinh nữ ngồi cạnh nhau.</li><li>Số cách xếp để <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> học sinh nữ không ngồi cạnh nhau là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>7</mn><mi>!</mi><mo>−</mo><mn>1</mn><mspace width=\"0.167em\"/><mn>440</mn><mo>=</mo><mn>3</mn><mspace width=\"0.167em\"/><mn>600</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

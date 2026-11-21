@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D3-q052-v4",
+  "original_number": 52,
+  "kind": "mcq",
+  "based_on": "0430f2ccdd0123a2753ff22fd6bf8a9939310c351c6902d14cf812e17e82d642",
+  "prompt": "<div class=\"with-figure\"><div>Hàm số nào có đồ thị như hình vẽ sau?</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/2df3e422ce28789beb5fc7cbafb47b01950bc50eeccb7506e9f696e8d0572ba6.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mn>5</mn><mi>x</mi></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>5</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>x</mi></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mo>log</mo><mn>5</mn></msub><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mo>log</mo><mfrac displaystyle=\"false\"><mn>1</mn><mn>5</mn></mfrac></msub><mi>x</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Ta thấy\thàm số nghịch biến trên khoảng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> nên hàm số có dạng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mo>log</mo><mi>a</mi></msub><mi>x</mi></mrow></semantics></math> với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>a</mi><mo>&lt;</mo><mn>1</mn></mrow></semantics></math>.<br>Do đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mo>log</mo><mfrac displaystyle=\"false\"><mn>1</mn><mn>5</mn></mfrac></msub><mi>x</mi></mrow></semantics></math> là hàm số của đồ thị đã cho.",
+  "accepted_answers": []
+}

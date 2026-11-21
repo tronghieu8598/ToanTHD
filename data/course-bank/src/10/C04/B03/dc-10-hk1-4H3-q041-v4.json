@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-4H3-q041-v4",
+  "original_number": 41,
+  "kind": "mcq",
+  "based_on": "7df3384e5cb60b52170f38a988381aaea8b8b77868341f06cb4995abed088917",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math>. Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>M</mi></semantics></math> là điểm nằm trên cạnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi></mrow></semantics></math> sao cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mi>B</mi><mo>=</mo><mn>2</mn><mi>M</mi><mi>C</mi></mrow></semantics></math>. Đẳng thức nào dưới đây đúng?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>M</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>M</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>M</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>M</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "<div class=\"with-figure\"><div>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mi>B</mi><mo>=</mo><mn>2</mn><mi>M</mi><mi>C</mi><mo>⇒</mo><mi>B</mi><mi>M</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>. <br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>M</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>B</mi><mi>M</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math> <br><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>=</mo><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>−</mo><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> <br><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/bfb5d510c407cbfd5ddb0a488581ad045aad90d4d0d564face9dbe19538ed0db.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

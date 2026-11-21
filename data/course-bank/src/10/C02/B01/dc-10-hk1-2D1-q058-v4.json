@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-2D1-q058-v4",
+  "original_number": 58,
+  "kind": "tf",
+  "based_on": "d7c6dd407fcfc0ca97f9215723eb550b634c6ba5a0475c4a1f16e2f5f289c565",
+  "prompt": "Một công ty viễn thông tính phí <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> nghìn đồng mỗi phút gọi nội mạng và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> nghìn đồng mỗi phút gọi ngoại mạng. Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>y</mi></semantics></math> lần lượt là số phút gọi nội mạng và ngoại mạng của Thảo trong một tháng. Biết số tiền Thảo phải trả cho tổng đài không quá <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>100</mn></semantics></math> nghìn đồng. Khi đó:",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Miền nghiệm của hệ bất phương trình bậc nhất hai ẩn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>y</mi></semantics></math> biểu thị số phút gọi của Thảo là một hình vuông"
+    },
+    {
+      "key": "b",
+      "text": "Bất phương trình biểu thị mối liên hệ giữa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>y</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>&lt;</mo><mn>100</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Số tiền Thảo phải trả cho cuộc gọi nội mạng và ngoại tháng mỗi tháng lần lượt là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> (nghìn đồng) và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>y</mi></mrow></semantics></math> (nghìn đồng)"
+    },
+    {
+      "key": "d",
+      "text": "Điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>60</mn><mo>;</mo><mn>20</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> thuộc miền nghiệm của hệ bất phương trình bậc nhất hai ẩn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>y</mi></semantics></math> biểu thị số phút gọi của Thảo"
+    }
+  ],
+  "correct": [
+    false,
+    false,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li><strong>Đúng</strong>.<br>Số tiền Thảo phải trả cho cuộc gọi nội mạng là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> nghìn đồng.<br>Số tiền Thảo phải trả cho cuộc gọi ngoại mạng là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>y</mi></mrow></semantics></math> nghìn đồng.<br></li><li><strong>Sai</strong>.<br>Vì số tiền Thảo phải trả cho tổng đài không quá <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>100</mn></semantics></math> nghìn đồng nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>≤</mo><mn>100</mn></mrow></semantics></math>.</li><li><strong>Sai</strong>.<br>Thay <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>60</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>20</mn></mrow></semantics></math> vào bất phương trình ta được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>60</mn><mo>+</mo><mn>2</mn><mo>⋅</mo><mn>20</mn><mo>&lt;</mo><mn>100</mn></mrow></semantics></math> (sai).<br>Vậy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>60</mn><mo>;</mo><mn>20</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> không không miền nghiệm bất phương trình trên.</li><li><strong>Sai</strong>.<br>Ta có hình vẽ sau biểu thị miền nghiệm của hệ bất phương trình \n\t\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>+</mo><mn>2</mn><mi>y</mi><mo>≤</mo><mn>100</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>≥</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>y</mi><mo>≥</mo><mn>0</mn></mtd></mtr></mtable></mrow></semantics></math>\n\t\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/b7b7e58172b17e5683b5151c034479fcfca9d6d750de516ae981af29eed4de06.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\t\tDựa vào hình vẽ ta thấy miền nghiệm của hệ bất phương trình là một hình tam giác.</li></ol>",
+  "accepted_answers": []
+}

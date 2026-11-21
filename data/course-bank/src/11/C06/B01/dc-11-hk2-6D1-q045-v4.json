@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D1-q045-v4",
+  "original_number": 45,
+  "kind": "mcq",
+  "based_on": "3b95d173d575cfd92303de6ef25fac5fe3614b62fbc707d8952c3cebf5f66ac4",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> thỏa mãn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>a</mi><mfrac><mn>1</mn><mn>2</mn></mfrac></msup><mo>&gt;</mo><msup><mi>a</mi><mfrac><mn>1</mn><mn>3</mn></mfrac></msup></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>b</mi><mfrac><mn>2</mn><mn>3</mn></mfrac></msup><mo>&gt;</mo><msup><mi>b</mi><mfrac><mn>3</mn><mn>4</mn></mfrac></msup></mrow></semantics></math>. Khi đó khẳng định nào đúng?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>b</mi><mo>&lt;</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>a</mi><mo>&lt;</mo><mn>1</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>b</mi><mo>&lt;</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>a</mi><mo>&lt;</mo><mn>1</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có \n\t\t<ul><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>&gt;</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msup><mi>a</mi><mfrac><mn>1</mn><mn>2</mn></mfrac></msup><mo>&gt;</mo><msup><mi>a</mi><mfrac><mn>1</mn><mn>3</mn></mfrac></msup></mtd></mtr></mtable></mrow><mo>⇒</mo><mi>a</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math>.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac><mo>&lt;</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msup><mi>b</mi><mfrac><mn>2</mn><mn>3</mn></mfrac></msup><mo>&gt;</mo><msup><mi>b</mi><mfrac><mn>3</mn><mn>4</mn></mfrac></msup></mtd></mtr></mtable></mrow><mo>⇒</mo><mn>0</mn><mo>&lt;</mo><mi>b</mi><mo>&lt;</mo><mn>1</mn></mrow></semantics></math>.</li></ul>\n\t\tVậy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>b</mi><mo>&lt;</mo><mn>1</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

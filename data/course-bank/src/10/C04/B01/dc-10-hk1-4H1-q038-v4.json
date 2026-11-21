@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-4H1-q038-v4",
+  "original_number": 38,
+  "kind": "tf",
+  "based_on": "d46325fa06240a31ebb168a7d97f74969b6f9a0cdb7f574e89bca490b74b7740",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math>, gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>M</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>N</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi></semantics></math> lần lượt là trung điểm của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mi>A</mi></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi></mrow></semantics></math>. Khi đó hãy xét tính đúng sai của các khẳng định sau",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Véc-tơ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> cùng phương với véc-tơ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>M</mi><mi>N</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> véc-tơ khác véc-tơ không và cùng phương với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> có điểm đầu, điểm cuối lấy từ các điểm đã cho"
+    },
+    {
+      "key": "c",
+      "text": "Véc-tơ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>A</mi><mi>P</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> ngược hướng với véc-tơ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>P</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> véc-tơ khác véc-tơ không và cùng hướng với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> có điểm đầu và điểm cuối lấy từ các điểm đã cho"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Véc-tơ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> cùng phương với véc-tơ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>M</mi><mi>N</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>.</li><li>Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math> véc-tơ khác véc-tơ không và cùng phương với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>A</mi><mi>P</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>P</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>B</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>B</mi><mi>P</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>P</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>M</mi><mi>N</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>N</mi><mi>M</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> có điểm đầu và điểm cuối lấy từ các điểm đã cho.</li><li>Véc-tơ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>A</mi><mi>P</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> cùng hướng với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>P</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>.</li><li>Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> Véc-tơ khác véc-tơ – không cùng hướng với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>A</mi><mi>P</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>P</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>N</mi><mi>M</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

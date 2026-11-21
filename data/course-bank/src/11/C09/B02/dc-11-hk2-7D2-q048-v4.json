@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-7D2-q048-v4",
+  "original_number": 48,
+  "kind": "mcq",
+  "based_on": "99775bd966a1a25876cf49a819e24733b1b5942b018a0a041e6c3ae053a70442",
+  "prompt": "Với mọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math>, đạo hàm của hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>2</mn><mo>sin</mo><mi>x</mi><mo>−</mo><mo>cos</mo><mi>x</mi></mrow></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>2</mn><mo>cos</mo><mi>x</mi><mo>+</mo><mo>sin</mo><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>2</mn><mo>cos</mo><mi>x</mi><mo>−</mo><mo>sin</mo><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mo>−</mo><mn>2</mn><mo>cos</mo><mi>x</mi><mo>−</mo><mo>sin</mo><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>2</mn><mo>cos</mo><mi>x</mi><mo>+</mo><mo>sin</mo><mi>x</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Ta có: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>sin</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi><mo>−</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>cos</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi><mo>=</mo><mn>2</mn><mo>cos</mo><mi>x</mi><mo>+</mo><mo>sin</mo><mi>x</mi></mrow></semantics></math>.",
+  "accepted_answers": []
+}

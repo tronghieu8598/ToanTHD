@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D3-q058-v4",
+  "original_number": 58,
+  "kind": "mcq",
+  "based_on": "7cac297d0c5aa085ae9a48d46d97306e95f0f01a418dfb6ebf7916abf6a40401",
+  "prompt": "Tập xác định của hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msub><mo>log</mo><mn>5</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>11</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>11</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>11</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mn>11</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mn>11</mn><mo stretchy=\"false\" form=\"postfix\">]</mo></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Điều kiện xác định: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>11</mn><mo>−</mo><mi>x</mi><mo>&gt;</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>&lt;</mo><mn>11</mn></mrow></semantics></math>.<br>Tập xác định của hàm số trên là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mn>11</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.",
+  "accepted_answers": []
+}

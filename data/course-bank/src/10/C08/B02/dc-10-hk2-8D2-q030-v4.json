@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-8D2-q030-v4",
+  "original_number": 30,
+  "kind": "mcq",
+  "based_on": "53a86238656515f79419247b4e7461a5a29e5948ada8a579d75003da15dc4716",
+  "prompt": "Một lớp học có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>15</mn></semantics></math> học sinh nam và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>17</mn></semantics></math> học sinh nữ. Có bao nhiêu cách chọn ra một học sinh từ lớp học này để tham dự Đại hội Đoàn trường?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>255</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>32</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>15</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>17</mn></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Chọn ra một học sinh từ lớp học này để tham dự Đại hội Đoàn trường, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> trường hợp sau:\n\t\t<ul><li>Trường hợp 1: Học sinh được chọn là nam, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>15</mn></semantics></math> cách chọn.</li><li>Trường hợp 2: Học sinh được chọn là nữ, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>17</mn></semantics></math> cách chọn.</li></ul>\n\t\tTheo quy tắc cộng, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>15</mn><mo>+</mo><mn>17</mn><mo>=</mo><mn>32</mn></mrow></semantics></math> cách chọn.",
+  "accepted_answers": []
+}

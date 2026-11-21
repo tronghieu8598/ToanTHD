@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-3H2-q035-v4",
+  "original_number": 35,
+  "kind": "mcq",
+  "based_on": "99aedeb2bd58930512bf021696c5719d0b49a9d902d6c3e58da097cdc241c665",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>B</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>60</mn><mo>∘</mo></msup></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>C</mi><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>75</mn><mo>∘</mo></msup></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi><mo>=</mo><mn>9</mn></mrow></semantics></math>. Khi đó, độ dài cạnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi></mrow></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>9</mn><msqrt><mn>6</mn></msqrt></mrow><mn>2</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>3</mn><msqrt><mn>6</mn></msqrt></mrow><mn>2</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><msqrt><mn>6</mn></msqrt></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><msup><mn>60</mn><mo>∘</mo></msup><mo>−</mo><msup><mn>75</mn><mo>∘</mo></msup><mo>=</mo><msup><mn>45</mn><mo>∘</mo></msup></mrow></semantics></math>.<br>Áp dụng định lí Sin cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math>, ta có\n\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mi>B</mi><mi>C</mi></mrow><mrow><mo>sin</mo><mi>A</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>A</mi><mi>C</mi></mrow><mrow><mo>sin</mo><mi>B</mi></mrow></mfrac><mo>⇔</mo><mi>B</mi><mi>C</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>A</mi><mi>C</mi><mo>⋅</mo><mo>sin</mo><mi>A</mi></mrow><mrow><mo>sin</mo><mi>B</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>9</mn><mo>⋅</mo><mo>sin</mo><msup><mn>45</mn><mo>∘</mo></msup></mrow><mrow><mo>sin</mo><msup><mn>60</mn><mo>∘</mo></msup></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>9</mn><msqrt><mn>6</mn></msqrt></mrow><mn>3</mn></mfrac><mo>=</mo><mn>3</mn><msqrt><mn>6</mn></msqrt><mi>.</mi></mrow></semantics></math>",
+  "accepted_answers": []
+}

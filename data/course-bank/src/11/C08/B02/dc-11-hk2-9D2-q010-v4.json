@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk2-9D2-q010-v4",
+  "original_number": 10,
+  "kind": "free",
+  "based_on": "8243f0ec6a6df76a5c3d61418f374af3a5c895ccd8de136383307424529803f5",
+  "prompt": "Một hộp chứa 10 quả bóng xanh và 10 quả bóng đỏ có kích thước và khối lượng như nhau. Lấy ra ngẫu nhiên đồng thời 5 quả bóng từ hộp. Sử dụng sơ đồ hình cây, tính xác suất của biến cố <span>““</span>Có ít nhất 3 quả bóng xanh trong 5 quả bóng lấy ra<span>””</span>.",
+  "choices": [],
+  "correct": null,
+  "solution": "<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/1151cd032690f0560bc06f854044b18c1f9b35e1c821c0dc788b579b75d3323e.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tXác suất của biến cố <span>““</span>Có ít nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> quả bóng xanh trong <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> quả bóng lấy ra<span>””</span> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>10</mn><mn>3</mn></msubsup><msubsup><mi mathvariant=\"normal\">C</mi><mn>10</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>10</mn><mn>4</mn></msubsup><msubsup><mi mathvariant=\"normal\">C</mi><mn>10</mn><mn>1</mn></msubsup><mo>+</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>10</mn><mn>5</mn></msubsup></mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>20</mn><mn>5</mn></msubsup></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

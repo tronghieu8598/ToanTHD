@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-1D2-q023-v4",
+  "original_number": 23,
+  "kind": "mcq",
+  "based_on": "01027399a9498b0a9df0830a85b4e6f2adc543aeef4ede0bd55be34be5f2850d",
+  "prompt": "Cho tập hợp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo>;</mo><mn>5</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>. Tập hợp nào dưới đây <strong>không</strong> phải là tập con của tập hợp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>X</mi></semantics></math>?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>0</mn><mo>;</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo>;</mo><mn>5</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>⌀</mi></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>∈</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>0</mn><mo>;</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math> mà <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>∉</mo><mi>X</mi></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>0</mn><mo>;</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">}</mo><mo>⊄</mo><mi>X</mi></mrow></semantics></math>.",
+  "accepted_answers": []
+}

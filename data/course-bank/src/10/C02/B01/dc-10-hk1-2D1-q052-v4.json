@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-2D1-q052-v4",
+  "original_number": 52,
+  "kind": "tf",
+  "based_on": "79c46c5d8e66a33a02040d6cec69c478508ebfd6bf2a5d8798dd96e0bb881737",
+  "prompt": "Cho bất phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>≥</mo><mn>3</mn></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Cặp số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>;</mo><mi>y</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> là một nghiệm của bất phương trình đã cho"
+    },
+    {
+      "key": "b",
+      "text": "Bất phương trình đã cho vô nghiệm"
+    },
+    {
+      "key": "c",
+      "text": "Gốc tọa độ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>O</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> thuộc miền nghiệm của bất phương trình đã cho"
+    },
+    {
+      "key": "d",
+      "text": "Miền nghiệm của bất phương trình đã cho là nửa mặt phẳng có bờ là đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>:</mo><mn>3</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>3</mn></mrow></semantics></math> không chứa gốc tọa độ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>O</mi></semantics></math>  (kể cả bờ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>d</mi></semantics></math>)"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li><strong>Sai</strong>.<br>Bất phương trình đã cho có vô số nghiệm.</li><li><strong>Đúng</strong>. <br>Với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>3</mn></mrow></semantics></math> ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>3</mn><mo>⋅</mo><mn>1</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>6</mn><mo>≥</mo><mn>3</mn></mrow></semantics></math>. Do đó cặp số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>;</mo><mi>y</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> là một nghiệm của bất phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>≥</mo><mn>3</mn></mrow></semantics></math>.</li><li><strong>Sai</strong>.<br>Với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>3</mn><mo>⋅</mo><mn>0</mn><mo>+</mo><mn>0</mn><mo>=</mo><mn>0</mn><mo>&lt;</mo><mn>3</mn></mrow></semantics></math>. Do đó  <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>O</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> không thuộc miền nghiệm của bất phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>≥</mo><mn>3</mn></mrow></semantics></math>.</li><li><strong>Đúng</strong>.<br>Miền nghiệm của bất phương trình đã cho là nửa mặt phẳng có bờ là đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>:</mo><mn>3</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>3</mn></mrow></semantics></math> không chứa gốc tọa độ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>O</mi></semantics></math>  (kể cả bờ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>d</mi></semantics></math>).</li></ol>",
+  "accepted_answers": []
+}

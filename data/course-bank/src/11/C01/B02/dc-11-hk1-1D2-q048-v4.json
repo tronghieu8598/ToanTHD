@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-1D2-q048-v4",
+  "original_number": 48,
+  "kind": "tf",
+  "based_on": "371a7979f083567e01a532eb65510770733a876aa883548bca58bd6e9cde48f4",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cot</mo><mi>x</mi><mo>=</mo><mo>−</mo><mn>3</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mi>π</mi></mrow><mn>2</mn></mfrac><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>2</mn><mi>π</mi></mrow></semantics></math>. Khi đó",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mn>2</mn><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>4</mn><mn>5</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><msqrt><mn>10</mn></msqrt><mn>10</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mo>sin</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo>cos</mo><mi>x</mi></mrow><mrow><mn>2</mn><mo>sin</mo><mi>x</mi><mo>+</mo><mo>cos</mo><mi>x</mi></mrow></mfrac><mo>=</mo><mo>−</mo><mn>9</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Sai. Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mi>π</mi></mrow><mn>2</mn></mfrac><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>2</mn><mi>π</mi></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>x</mi><mo>&lt;</mo><mn>0</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mrow><msup><mo>sin</mo><mn>2</mn></msup><mi>x</mi></mrow></mfrac><mo>=</mo><mn>1</mn><mo>+</mo><msup><mo>cot</mo><mn>2</mn></msup><mi>x</mi><mo>⇔</mo><mo>sin</mo><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><msqrt><mn>10</mn></msqrt><mn>10</mn></mfrac></mrow></semantics></math>.</li><li>Sai.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mo>sin</mo><mn>2</mn></msup><mi>x</mi><mo>+</mo><msup><mo>cos</mo><mn>2</mn></msup><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math> mà <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><msqrt><mn>10</mn></msqrt></mrow><mn>10</mn></mfrac></mrow></semantics></math>.<br>Vậy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mn>2</mn><mi>x</mi><mo>=</mo><mn>2</mn><mo>sin</mo><mi>x</mi><mo>cos</mo><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>5</mn></mfrac></mrow></semantics></math>.</li><li>Đúng. Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mo>cot</mo><mi>x</mi></mrow></mfrac><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></mrow></semantics></math>.</li><li>Đúng. Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cot</mo><mi>x</mi><mo>=</mo><mo>−</mo><mn>3</mn><mo>⇔</mo><mfrac displaystyle=\"true\"><mrow><mo>cos</mo><mi>x</mi></mrow><mrow><mo>sin</mo><mi>x</mi></mrow></mfrac><mo>=</mo><mo>−</mo><mn>3</mn><mo>⇔</mo><mo>cos</mo><mi>x</mi><mo>=</mo><mo>−</mo><mn>3</mn><mo>sin</mo><mi>x</mi></mrow></semantics></math>.<br>Vậy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mo>sin</mo><mi>x</mi><mo>+</mo><mn>6</mn><mo>sin</mo><mi>x</mi></mrow><mrow><mn>2</mn><mo>sin</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo>sin</mo><mi>x</mi></mrow></mfrac><mo>=</mo><mo>−</mo><mn>9</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

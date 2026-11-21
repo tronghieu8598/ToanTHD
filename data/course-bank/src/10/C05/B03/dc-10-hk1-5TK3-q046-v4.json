@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-5TK3-q046-v4",
+  "original_number": 46,
+  "kind": "tf",
+  "based_on": "fc16ff0f51e5b5e8a11ca32151a9bc99eae6e19a704b124b0caaed98798f43db",
+  "prompt": "Sản lượng lúa (đơn vị là tạ) của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> thửa ruộng thí nghiệm  được trình bày trong bảng \n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mo>,</mo><mn>5</mn></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mo>,</mo><mn>5</mn></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mo>,</mo><mn>5</mn></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mo>,</mo><mn>5</mn></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math></td></tr></tbody></table></div></div>",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Trung vị của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Độ lệch chuẩn của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>54</mn></mrow></semantics></math> (kết quả làm tròn đến hàng phần trăm)"
+    },
+    {
+      "key": "c",
+      "text": "Số trung bình là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mo>,</mo><mn>9</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Khoảng biến thiên của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    true,
+    false
+  ],
+  "solution": "Sắp xếp số liệu theo thứ tự không giảm\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mspace width=\"1.0em\"/><mn>4</mn><mo>,</mo><mn>5</mn><mspace width=\"1.0em\"/><mn>4</mn><mo>,</mo><mn>5</mn><mspace width=\"1.0em\"/><mn>4</mn><mo>,</mo><mn>5</mn><mspace width=\"1.0em\"/><mn>5</mn><mspace width=\"1.0em\"/><mn>5</mn><mspace width=\"1.0em\"/><mn>5</mn><mspace width=\"1.0em\"/><mn>5</mn><mspace width=\"1.0em\"/><mn>5</mn><mo>,</mo><mn>5</mn><mspace width=\"1.0em\"/><mn>6</mn><mi>.</mi></mrow></semantics></math></div>\n\t\t<ol class=\"alpha-list\"><li>Khoảng biến thiên của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>6</mn><mo>−</mo><mn>4</mn><mo>=</mo><mn>2</mn></mrow></semantics></math>.</li><li>Số trung bình là  <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>x</mi><mo accent=\"true\">¯</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>⋅</mo><mn>4</mn><mo>+</mo><mn>3</mn><mo>⋅</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>+</mo><mn>4</mn><mo>⋅</mo><mn>5</mn><mo>+</mo><mn>1</mn><mo>⋅</mo><mn>5</mn><mo>,</mo><mn>5</mn><mo>+</mo><mn>1</mn><mo>⋅</mo><mn>6</mn></mrow><mn>10</mn></mfrac><mo>=</mo><mn>4</mn><mo>,</mo><mn>9</mn></mrow></semantics></math>.</li><li>Phương sai là \n\t\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>s</mi><mn>2</mn></msup><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo>−</mo><mn>4</mn><mo>,</mo><mn>9</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>3</mn><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo>,</mo><mn>5</mn><mo>−</mo><mn>4</mn><mo>,</mo><mn>9</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>4</mn><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>5</mn><mo>−</mo><mn>4</mn><mo>,</mo><mn>9</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>5</mn><mo>,</mo><mn>5</mn><mo>−</mo><mn>4</mn><mo>,</mo><mn>9</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>6</mn><mo>−</mo><mn>4</mn><mo>,</mo><mn>9</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></mrow><mn>10</mn></mfrac><mo>≈</mo><mn>0</mn><mo>,</mo><mn>29</mn><mi>.</mi></mrow></semantics></math><br>Độ lệch chuẩn của dãy số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>s</mi><mo>=</mo><msqrt><msup><mi>s</mi><mn>2</mn></msup></msqrt><mo>≈</mo><mn>0</mn><mo>,</mo><mn>54</mn></mrow></semantics></math>.</li><li>Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> số liệu nên trung vị là trung bình cộng của số thứ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> và số thứ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math>: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>M</mi><mi>e</mi></msub><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn><mo>+</mo><mn>5</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>5</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

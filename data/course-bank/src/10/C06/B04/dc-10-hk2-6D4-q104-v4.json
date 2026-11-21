@@ -1,0 +1,11 @@
+{
+  "id": "dc-10-hk2-6D4-q104-v4",
+  "original_number": 104,
+  "kind": "short",
+  "based_on": "5c260761dd9f0c02ef84b6747acf94b8b7ba98f12026935ff73ad3762fddeefc",
+  "prompt": "Tính tổng các nghiệm của phương trình sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msqrt><mrow><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>5</mn><mi>x</mi><mo>−</mo><mn>9</mn></mrow></msqrt><mo>=</mo><mi>x</mi><mo>−</mo><mn>1</mn></mrow></semantics></math>.",
+  "choices": [],
+  "correct": "5",
+  "solution": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msqrt><mrow><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>5</mn><mi>x</mi><mo>−</mo><mn>9</mn></mrow></msqrt><mo>=</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo>⇒</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>5</mn><mi>x</mi><mo>−</mo><mn>9</mn><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>⇔</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>10</mn><mo>=</mo><mn>0</mn><mo>⇒</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mo>−</mo><mn>2</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>5</mn><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math><br>Thử lại, ta thấy phương trình có nghiệm duy nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>5</mn></mrow></semantics></math>. Nên tổng các nghiệm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math>.",
+  "accepted_answers": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-6D3-q111-v4",
+  "original_number": 111,
+  "kind": "tf",
+  "based_on": "b96eae2c1cfac87958df8ee0860d35a46dd655d1177addc8ef74c3013dc41461",
+  "prompt": "Một trận bóng đá được tổ chức ở một sân vận động có sức chứa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>15000</mn></semantics></math> người. Với giá vé <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>14</mn></semantics></math> USD thì trung bình các trận đấu gần đây có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>9500</mn></semantics></math> khán giả. Theo một khảo sát thị trường đã chỉ ra rằng cứ giảm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> USD mỗi vé thì trung bình số khán giả tăng lên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1000</mn></semantics></math> người. Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> (USD) là giá vé.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Số tiền giá vé được giảm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>14</mn><mo>−</mo><mi>x</mi></mrow></semantics></math> (USD)"
+    },
+    {
+      "key": "b",
+      "text": "Số khán giả tăng lên là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1000</mn><mi>x</mi></mrow></semantics></math> (người)"
+    },
+    {
+      "key": "c",
+      "text": "Doanh thu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>9500</mn><mo>+</mo><mn>1000</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Giá vé từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> USD đến <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>13</mn></semantics></math> USD thì đơn vị không bị lỗ"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Đúng. Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> (USD) là giá vé (<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>). Nên số tiền giá vé được giảm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>14</mn><mo>−</mo><mi>x</mi></mrow></semantics></math> USD.</li><li>Sai. Với giá vé giảm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>14</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> USD thì số khán giả tăng lên là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1000</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>14</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> người. Khi đó số khán giá sau khi tăng là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>9500</mn><mo>+</mo><mn>1000</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>14</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> (Điều kiện <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>9500</mn><mo>+</mo><mn>1000</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>14</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>≤</mo><mn>15000</mn><mo>⇔</mo><mi>x</mi><mo>≥</mo><mn>8</mn><mo>,</mo><mn>5</mn></mrow></semantics></math>).</li><li>Sai. Vì doanh thu bằng tổng số tiền thu được từ bán vé, nên số doanh thu sau khi giảm là <div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>x</mi><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>9500</mn><mo>+</mo><mn>1000</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>14</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow><mo>=</mo><mo>−</mo><mn>1000</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>23500</mn><mi>x</mi><mi>.</mi></mrow></semantics></math></div></li><li>Đúng. Để đơn vị tổ chức không bị lỗ thì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>≥</mo><mn>135000</mn><mo>⇔</mo><mo>−</mo><mn>1000</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>23500</mn><mi>x</mi><mo>≥</mo><mn>135000</mn><mo>⇔</mo><mn>10</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>13</mn><mo>,</mo><mn>5</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

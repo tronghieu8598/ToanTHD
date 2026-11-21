@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-9XS2-q066-v4",
+  "original_number": 66,
+  "kind": "tf",
+  "based_on": "fb4089dff4d607981a1cfce7599fe4ecbdacd5d47cf397e147753b7debc6d2af",
+  "prompt": "Trong hộp có chứa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> viên bi xanh, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> viên bi đỏ, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> viên bi vàng có kích thước khác nhau. Lấy ra ngẫu nhiên đồng thời <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> viên bi từ trong hộp.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> viên bi đó không thể có cùng một màu giống nhau"
+    },
+    {
+      "key": "b",
+      "text": "Có tất cả <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>462</mn></semantics></math> cách lấy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> viên bi từ trong hộp"
+    },
+    {
+      "key": "c",
+      "text": "Có duy nhất một cách lấy để <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> viên bi đó chỉ có hai màu đỏ và vàng"
+    },
+    {
+      "key": "d",
+      "text": "Xác suất để <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> viên bi đó có ít nhất hai trong ba màu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>76</mn><mn>77</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> viên bi đó có thể cùng màu xanh.</li><li>Số cách lấy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> viên bi từ hộp là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>11</mn><mn>5</mn></msubsup><mo>=</mo><mn>462</mn></mrow></semantics></math>.</li><li>Số cách lấy để <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> viên bi đó chỉ có hai màu đỏ và vàng là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>5</mn></msubsup><mo>=</mo><mn>1</mn></mrow></semantics></math> (cách).</li><li>Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là biến cố ““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> viên bi đó có ít nhất hai trong ba màu””.<br>Khi đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover></semantics></math> là biến cố ““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> viên bi đó chỉ một màu”” .\n\t\t\tTa có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>6</mn><mn>5</mn></msubsup></mrow></semantics></math>.<br>Vậy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><msubsup><mi mathvariant=\"normal\">C</mi><mn>6</mn><mn>5</mn></msubsup><msubsup><mi mathvariant=\"normal\">C</mi><mn>11</mn><mn>5</mn></msubsup></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>76</mn><mn>77</mn></mfrac></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

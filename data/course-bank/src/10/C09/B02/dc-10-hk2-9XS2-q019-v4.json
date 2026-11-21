@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-9XS2-q019-v4",
+  "original_number": 19,
+  "kind": "mcq",
+  "based_on": "e0015446a2833f9865451e869b979c386b2cabefd8b7a8669ea7ae507d73efd8",
+  "prompt": "Giải bóng đá nam dành cho học sinh khối <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> trường THPT Trưng Vương có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math> đội tham gia, trong đó có đội lớp 10A1 và đội lớp 10A2. Ban tổ chức cho bốc thăm để chia thành <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> bảng, gồm bảng A và bảng B (mỗi bảng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> đội). Tính xác suất để đội lớp 10A1 và đội lớp 10A2 nằm chung bảng.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>3</mn><mn>7</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>4</mn><mn>7</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Số cách chia <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math> đội bóng thành <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> bảng A và bảng B (mỗi bảng có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> đội) là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Ω</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>8</mn><mn>2</mn></msubsup><mo>=</mo><mn>70</mn></mrow></semantics></math>.<br>Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>C</mi></semantics></math> là biến cố ““ lớp 10A1 và 10A2 vào cùng một bảng””.<br>Ta có, chọn lớp 10A1 vào bảng A hoặc B có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> cách chọn.<br>Sau đó chọn lớp 10A2 vào bảng có lớp 10A1 có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> cách chọn.<br>Chọn thêm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> đội nữa vào cùng bảng có lớp 10A1 và 10A2 có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>6</mn><mn>2</mn></msubsup><mo>=</mo><mn>15</mn></mrow></semantics></math> cách chọn.<br>Suy ra, số cách chọn 10A1 và 10A2 cùng một đội là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2</mn><mo>⋅</mo><mn>1</mn><mo>⋅</mo><mn>15</mn><mo>=</mo><mn>30</mn></mrow></semantics></math>.<br>Vậy xác suất để đội lớp 10A1 và đội lớp 10A2 nằm chung bảng là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>30</mn><mn>70</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>7</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-1D2-q057-v4",
+  "original_number": 57,
+  "kind": "tf",
+  "based_on": "bbae14a85c048773b1a282e28a33f284fd480d64e88c79433e78dc28ae9a7379",
+  "prompt": "Cho hai tập hợp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">[</mo><mo>−</mo><mn>4</mn><mo>;</mo><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>N</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">[</mo><mo>−</mo><mn>2</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>. Xét tính đúng sai của các khẳng định sau",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>N</mi><mo>\\</mo><mi>M</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>3</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>∩</mo><mi>N</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>C</mi><mi>ℝ</mi></msub><mi>M</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">[</mo><mo>−</mo><mn>4</mn><mo>;</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>∪</mo><mi>N</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">[</mo><mo>−</mo><mn>4</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>C</mi><mi>ℝ</mi></msub><mi>M</mi><mo>=</mo><mi>ℝ</mi><mo>\\</mo><mi>M</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mi>∞</mi><mo>;</mo><mo>−</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>∪</mo><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>3</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>. <br>Khẳng định đã cho là sai.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>N</mi><mo>\\</mo><mi>M</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>3</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>. <br>Khẳng định đã cho là đúng.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>∪</mo><mi>N</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">[</mo><mo>−</mo><mn>4</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>. <br>Khẳng định đã cho là đúng.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>∩</mo><mi>N</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">[</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>. <br>Khẳng định đã cho là sai.</li></ol>",
+  "accepted_answers": []
+}

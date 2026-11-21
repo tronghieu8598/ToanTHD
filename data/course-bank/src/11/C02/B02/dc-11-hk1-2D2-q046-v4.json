@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-2D2-q046-v4",
+  "original_number": 46,
+  "kind": "mcq",
+  "based_on": "24a40745ce480c40c3059fc0d4a768840281b1d32bf628e587b94e3d9c9a835e",
+  "prompt": "Một rạp hát có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>30</mn></semantics></math> dãy ghế, dãy đầu tiên có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>25</mn></semantics></math> ghế. Biết rằng mỗi dãy sau có hơn dãy trước <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> ghế, hỏi rạp hát có tất cả bao nhiêu ghế?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1792</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2055</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3125</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1635</mn></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Số ghế của mỗi dãy cho ta một cấp số cộng có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>25</mn></mrow></semantics></math> và công sai <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>. Số ghế của rạp là\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mn>30</mn></msub><mo>=</mo><mfrac displaystyle=\"true\"><mn>30</mn><mn>2</mn></mfrac><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><mn>29</mn><mi>d</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>15</mn><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>⋅</mo><mn>25</mn><mo>+</mo><mn>29</mn><mo>⋅</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>2055</mn><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-3D2-q062-v4",
+  "original_number": 62,
+  "kind": "tf",
+  "based_on": "7e0ecc0dea119a1587b9fe7a4b93aac56390b4fe373a1c3ebf4276b59ef35e35",
+  "prompt": "Số lượng người đi xem một bộ phim mới theo độ tuổi trong một rạp chiếu phim (sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> giờ đầu công chiếu) được ghi lại theo bảng phân phối ghép nhóm sau\n\t<div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Độ tuổi</td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>10</mn><mo>;</mo><mn>20</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>20</mn><mo>;</mo><mn>30</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>30</mn><mo>;</mo><mn>40</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>40</mn><mo>;</mo><mn>50</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>50</mn><mo>;</mo><mn>60</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td></tr><tr><td>Số người</td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>12</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>16</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math></td></tr></tbody></table></div>",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Giá trị đại diện nhóm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>40</mn><mo>;</mo><mn>50</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>45</mn></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Độ tuổi được dự báo là ít xem phim đó nhất là thuộc nhóm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>50</mn><mo>;</mo><mn>60</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Độ tuổi được dự báo là thích xem phim đó nhất là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>32</mn></semantics></math> tuổi"
+    },
+    {
+      "key": "d",
+      "text": "Nhóm chứa mốt là nhóm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>20</mn><mo>;</mo><mn>30</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Nhóm chứa mốt là nhóm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>30</mn><mo>;</mo><mn>40</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>.</li><li>Giá trị đại diện nhóm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>40</mn><mo>;</mo><mn>50</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>45</mn></semantics></math>.</li><li>Mốt của mẫu số liệu thuộc nhóm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>30</mn><mo>;</mo><mn>40</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>.<br>Suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>M</mi><mn>0</mn></msub><mo>=</mo><mn>30</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>16</mn><mo>−</mo><mn>12</mn></mrow><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>16</mn><mo>−</mo><mn>12</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>16</mn><mo>−</mo><mn>7</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>40</mn><mo>−</mo><mn>30</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>430</mn><mn>13</mn></mfrac><mo>≈</mo><mn>33</mn></mrow></semantics></math>.</li><li>Độ tuổi được dự báo là ít xem phim đó nhất là thuộc nhóm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>50</mn><mo>;</mo><mn>60</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

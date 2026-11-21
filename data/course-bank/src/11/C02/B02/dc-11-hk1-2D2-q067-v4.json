@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-2D2-q067-v4",
+  "original_number": 67,
+  "kind": "mcq",
+  "based_on": "7fee4d780176eafcac1baf33852b0f18cc655939e07daad407edb4f3b3a45084",
+  "prompt": "Người ta trồng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6724</mn></semantics></math> cây theo một hình tam giác như sau: hàng thứ nhất trồng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> cây, kể từ hàng thứ hai trở đi, số cây trồng mỗi hàng nhiều hơn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> cây so với hàng liền trước nó. Hỏi có tất cả bao nhiêu hàng cây?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>81</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>79</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>80</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>82</mn></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Theo giả thiết ta có số cây ở mỗi hàng lập thành một cấp số cộng với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn></mrow></semantics></math> và công sai <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo><mfrac displaystyle=\"true\"><mi>n</mi><mn>2</mn></mfrac><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>d</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⇔</mo><mn>6724</mn><mo>=</mo><mfrac displaystyle=\"true\"><mi>n</mi><mn>2</mn></mfrac><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>⋅</mo><mn>1</mn><mo>+</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⋅</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⇔</mo><msup><mi>n</mi><mn>2</mn></msup><mo>=</mo><mn>6724</mn><mo>⇔</mo><mi>n</mi><mo>=</mo><mn>82</mn><mi>.</mi></mrow></semantics></math>",
+  "accepted_answers": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "dc-10-hk1-4H2-q005-v4",
+  "original_number": 5,
+  "kind": "free",
+  "based_on": "203e9c8c1dff27727471cba5761b2099ed993561eb8b61e5abe3184da755df05",
+  "prompt": "<div class=\"with-figure\"><div>Một máy bay có véc-tơ vận tốc chỉ theo hướng bắc, vận tốc gió là một véc-tơ theo hướng đông như hình vẽ. Tính độ dài véc-tơ tổng của hai véc-tơ nói trên.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/6268d7e65216950cb2640394629c1f6a7b61e805974f23333731b59083b55bac.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "choices": [],
+  "correct": null,
+  "solution": "Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math> lần lượt là véc-tơ vận tốc của máy bay và vận tốc của gió.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.<br>Suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi><mo>=</mo><msqrt><mrow><mi>A</mi><msup><mi>B</mi><mn>2</mn></msup><mo>+</mo><mi>B</mi><msup><mi>C</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><msqrt><mrow><msup><mn>200</mn><mn>2</mn></msup><mo>+</mo><msup><mn>60</mn><mn>2</mn></msup></mrow></msqrt><mo>≈</mo><mn>209</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>k</mi><mi>m</mi><mi>/</mi><mi>h</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math><br>Vậy độ dài véc-tơ tổng của hai véc-tơ nói trên là khoảng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>209</mn></semantics></math>(km/h).",
+  "accepted_answers": []
+}

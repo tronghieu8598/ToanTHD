@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-1D1-q046-v4",
+  "original_number": 46,
+  "kind": "mcq",
+  "based_on": "014e116706ed1153e7b0f2aeed6421f66d2e5ad1a9574391918cedf721f7698f",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>a</mi><mo>&lt;</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>a</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>5</mn></mfrac></mrow></semantics></math>. Tính <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>a</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>a</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msqrt><mn>5</mn></msqrt></mrow><mn>5</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>a</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msqrt><mn>6</mn></msqrt></mrow><mn>5</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>a</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msqrt><mn>5</mn></msqrt></mrow><mn>5</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>a</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msqrt><mn>6</mn></msqrt></mrow><mn>5</mn></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mo>sin</mo><mn>2</mn></msup><mi>a</mi><mo>=</mo><mn>1</mn><mo>−</mo><msup><mo>cos</mo><mn>2</mn></msup><mi>a</mi><mo>=</mo><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>5</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mfrac displaystyle=\"true\"><mn>24</mn><mn>25</mn></mfrac></mrow></semantics></math>.<br>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>a</mi><mo>&lt;</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>a</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>.<br>Suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>a</mi><mo>=</mo><msqrt><mfrac displaystyle=\"true\"><mn>24</mn><mn>25</mn></mfrac></msqrt><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msqrt><mn>6</mn></msqrt></mrow><mn>5</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

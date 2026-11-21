@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk2-7D2-q192-v4",
+  "original_number": 192,
+  "kind": "tf",
+  "based_on": "af07e7e0293830ca959396dce19a5d0577c186817cd95e9945808f794e1c4d78",
+  "prompt": "Cho hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msub><mo>log</mo><mn>2</mn></msub><mi>x</mi><mo>−</mo><mi>x</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Tập xác định của hàm số là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Đạo hàm của hàm số là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mi>x</mi><mo>⋅</mo><mo>ln</mo><mn>2</mn></mrow></mfrac><mo>−</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Nghiệm của bất phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>≥</mo><mn>0</mn></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>≤</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mo>ln</mo><mn>2</mn></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Nghiệm của phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mo>ln</mo><mn>2</mn></mrow></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Ta có hàm số xác định khi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>, do đó tập xác định là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mo>+</mo><mi>∞</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mi>x</mi><mo>ln</mo><mn>2</mn></mrow></mfrac><mo>−</mo><mn>1</mn></mrow></semantics></math>.</li><li>Điều kiện <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo>⇔</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mi>x</mi><mo>ln</mo><mn>2</mn></mrow></mfrac><mo>−</mo><mn>1</mn><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mo>ln</mo><mn>2</mn></mrow></mfrac></mrow></semantics></math> (nhận).</li><li>Điều kiện <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>≥</mo><mn>0</mn><mo>⇔</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mi>x</mi><mo>ln</mo><mn>2</mn></mrow></mfrac><mo>−</mo><mn>1</mn><mo>≥</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>≤</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mo>ln</mo><mn>2</mn></mrow></mfrac></mrow></semantics></math>.<br>Kết hợp với điều kiện ta được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>x</mi><mo>≤</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mo>ln</mo><mn>2</mn></mrow></mfrac></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

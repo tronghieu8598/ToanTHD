@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-5TK2-q022-v4",
+  "original_number": 22,
+  "kind": "mcq",
+  "based_on": "96cd703e2af32f6223835f350e7a27fb6fdaf529d11034585a1a0d86513ec86a",
+  "prompt": "Cho mẫu số liệu như bảng sau\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Giá trị <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>x</mi><mi>i</mi></msub></semantics></math></td><td>4</td><td>6</td><td>8</td><td>10</td><td>12</td></tr><tr><td>Tần số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>n</mi><mi>i</mi></msub></semantics></math></td><td>1</td><td>4</td><td>9</td><td>5</td><td>2</td></tr></tbody></table></div></div>\n\tSố trung bình của mẫu số liệu gần bằng số nào sau đây?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mo>,</mo><mn>37</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mo>,</mo><mn>73</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>9</mn><mo>,</mo><mn>28</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mo>,</mo><mn>29</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>x</mi><mo accent=\"true\">¯</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn><mo>⋅</mo><mn>1</mn><mo>+</mo><mn>6</mn><mo>⋅</mo><mn>4</mn><mo>+</mo><mn>8</mn><mo>⋅</mo><mn>9</mn><mo>+</mo><mn>10</mn><mo>⋅</mo><mn>5</mn><mo>+</mo><mn>12</mn><mo>⋅</mo><mn>4</mn></mrow><mn>21</mn></mfrac><mo>≈</mo><mn>8</mn><mo>,</mo><mn>29</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

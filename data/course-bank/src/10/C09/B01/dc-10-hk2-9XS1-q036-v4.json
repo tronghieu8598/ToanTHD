@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-9XS1-q036-v4",
+  "original_number": 36,
+  "kind": "mcq",
+  "based_on": "618f30679583298db30afce4b3cc8c34c9b720a0ce4b557123df5e3d2c073218",
+  "prompt": "Gieo một đồng tiền cân đối và đồng chất ba lần liên tiếp. Kí hiệu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>S</mi></semantics></math> để chỉ kết quả “ “ Mặt sấp xuất hiện” ”  và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>N</mi></semantics></math> để chỉ kết quả “ “ Mặt ngửa xuất hiện” ”. Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là biến cố  “ “ Lần đầu xuất hiện mặt sấp” ”. Khẳng định nào dưới đây đúng?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mi>N</mi><mi>S</mi><mi>S</mi><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mi>S</mi><mi>S</mi><mi>S</mi><mo>,</mo><mi>S</mi><mi>S</mi><mi>N</mi><mo>,</mo><mi>S</mi><mi>N</mi><mi>S</mi><mo>,</mo><mi>S</mi><mi>N</mi><mi>N</mi><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mi>S</mi><mi>N</mi><mi>N</mi><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mi>S</mi><mi>N</mi><mi>N</mi><mo>,</mo><mi>S</mi><mi>N</mi><mi>S</mi><mo>,</mo><mi>S</mi><mi>S</mi><mi>N</mi><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mi>S</mi><mi>S</mi><mi>S</mi><mo>,</mo><mi>S</mi><mi>S</mi><mi>N</mi><mo>,</mo><mi>S</mi><mi>N</mi><mi>S</mi><mo>,</mo><mi>S</mi><mi>N</mi><mi>N</mi><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math> là khẳng định đúng.",
+  "accepted_answers": []
+}

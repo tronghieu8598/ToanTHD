@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-7D2-q132-v4",
+  "original_number": 132,
+  "kind": "mcq",
+  "based_on": "8d8300cf78c2e0784164b490bccbe1e2066f994c82dcfa7c84dabc54e5af5d1a",
+  "prompt": "Cho hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mi>x</mi><mo>+</mo><mn>1</mn><mo>+</mo><mo>ln</mo><mi>x</mi></mrow></mfrac></mrow></semantics></math> với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>. Khi đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mi>y</mi><mi>′</mi></mrow><msup><mi>y</mi><mn>2</mn></msup></mfrac></mrow></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>x</mi></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mi>x</mi><mrow><mn>1</mn><mo>+</mo><mi>x</mi><mo>+</mo><mo>ln</mo><mi>x</mi></mrow></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mi>x</mi><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mrow><mn>1</mn><mo>+</mo><mi>x</mi><mo>+</mo><mo>ln</mo><mi>x</mi></mrow></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mi>x</mi><mo>+</mo><mn>1</mn><mo>+</mo><mo>ln</mo><mi>x</mi></mrow></mfrac><mo>⇒</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>y</mi></mfrac><mo>=</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo>+</mo><mo>ln</mo><mi>x</mi><mo>⇒</mo><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>y</mi></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo>+</mo><mo>ln</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi><mo>⇔</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mi>y</mi><mi>′</mi></mrow><msup><mi>y</mi><mn>2</mn></msup></mfrac><mo>=</mo><mn>1</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>x</mi></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

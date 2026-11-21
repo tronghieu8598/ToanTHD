@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D3-q050-v4",
+  "original_number": 50,
+  "kind": "mcq",
+  "based_on": "045391469b4abbd77b2bf53f9b628640cb4bfdf9de39d77dfadb61e21ec14081",
+  "prompt": "Biết rằng khi độ cao tăng lên, áp suất không khí sẽ giảm và công thức tính áp suất dựa trên độ cao là: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>=</mo><mn>15500</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>5</mn><mo>−</mo><mo>log</mo><mi>p</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, trong đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math> là độ cao so với mực nước biển (tính bằng mét) và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>p</mi></semantics></math> là áp suất không khí (tính bằng pascal). Tính áp suất không khí ở đỉnh Everest có độ cao <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8850</mn><mrow><mspace width=\"0.222em\"/><mi mathvariant=\"normal\">m</mi></mrow></mrow></semantics></math> so với mực nước biển (làm tròn đến hàng đơn vị).",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>26885</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>26855</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>16322</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>16332</mn></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Theo đề bài, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>=</mo><mn>8850</mn></mrow></semantics></math>, nên ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>15500</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>5</mn><mo>−</mo><mo>log</mo><mi>p</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>8850</mn><mo>⇔</mo><mo>log</mo><mi>p</mi><mo>=</mo><mn>5</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>177</mn><mn>310</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1373</mn><mn>310</mn></mfrac><mo>⇒</mo><mi>p</mi><mo>=</mo><mn>26855</mn><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

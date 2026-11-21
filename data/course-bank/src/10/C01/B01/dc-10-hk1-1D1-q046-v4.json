@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-1D1-q046-v4",
+  "original_number": 46,
+  "kind": "tf",
+  "based_on": "ce1d6c76de3b1c7d5a31efe429320b5fcf6c0e2d09a9533dc8d3d6ffa88735e1",
+  "prompt": "Cho khẳng định <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi></semantics></math>: ““ Có một số thực mà bình phương của nó bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>””.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi></semantics></math> là một mệnh đề"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi></semantics></math> có thể được viết lại là ““<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∃</mo><mi>x</mi><mo>∈</mo><mi>ℝ</mi><mo>:</mo><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mi>x</mi></mrow></semantics></math>””"
+    },
+    {
+      "key": "c",
+      "text": "Phủ định của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mi>P</mi><mo accent=\"true\">¯</mo></mover></semantics></math>: ““ Mọi số thực đều có bình phương khác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>””"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi></semantics></math> là một mệnh đề sai"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li><strong>Đúng</strong>. <br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi></semantics></math> là một mệnh đề.</li><li><strong>Sai</strong>.<br>Ta có thể viết lại <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi></semantics></math> dưới dạng ký hiệu như sau  ““<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∃</mo><mi>x</mi><mo>∈</mo><mi>ℝ</mi><mo>:</mo><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn></mrow></semantics></math>””.</li><li><strong>Đúng</strong>.<br>Phủ định của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mi>P</mi><mo accent=\"true\">¯</mo></mover></semantics></math>: ““ Mọi số thực đều có bình phương khác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>””.</li><li><strong>Sai</strong>.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>1</mn><mn>2</mn></msup><mo>=</mo><mn>1</mn></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mn>1</mn></mrow></semantics></math>. Do đó Mệnh đề <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi></semantics></math> đúng.</li></ol>",
+  "accepted_answers": []
+}

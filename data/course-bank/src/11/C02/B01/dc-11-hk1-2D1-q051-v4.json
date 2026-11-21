@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-2D1-q051-v4",
+  "original_number": 51,
+  "kind": "tf",
+  "based_on": "06dd3163ee756ab7aa90930d6054a175ea4fd1e706007bab70fa064ae492d430",
+  "prompt": "Cho dãy số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> gồm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>u</mi><mn>1</mn></msub></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>u</mi><mn>2</mn></msub></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>…</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>u</mi><mi>n</mi></msub></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>…</mi></semantics></math>, với mọi số nguyên dương <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>n</mi></semantics></math>. Xét tính đúng sai các mệnh đề sau",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Dãy số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> là một dãy số hữu hạn"
+    },
+    {
+      "key": "b",
+      "text": "Số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>u</mi><mn>1</mn></msub></semantics></math> gọi là số hạng đầu"
+    },
+    {
+      "key": "c",
+      "text": "Số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>u</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></semantics></math> được gọi là số hạng tổng quát của dãy số"
+    },
+    {
+      "key": "d",
+      "text": "Nếu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mi>n</mi></msub><mo>&lt;</mo><msub><mi>u</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></semantics></math> thì dãy số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> được gọi là dãy số tăng"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Dãy số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> là một dãy số vô hạn. Do đó mệnh đề ``Dãy số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> là một dãy số hữu hạn&#x27;&#x27; là mệnh đề sai.</li><li>Số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>u</mi><mn>1</mn></msub></semantics></math> gọi là số hạng đầu.</li><li>Số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>u</mi><mi>n</mi></msub></semantics></math> được gọi là số hạng tổng quát của dãy số. Do đó mệnh đề ``<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>u</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></semantics></math> là số hạng tổng quát của dãy số&#x27;&#x27; là mệnh đề sai.</li><li>Nếu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mi>n</mi></msub><mo>&lt;</mo><msub><mi>u</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></semantics></math> thì dãy số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> được gọi là dãy số tăng</li></ol>",
+  "accepted_answers": []
+}

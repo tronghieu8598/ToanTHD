@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-3H2-q073-v4",
+  "original_number": 73,
+  "kind": "mcq",
+  "based_on": "59bb78f250056ebfd179f9f25a52be458895ede194f33a19c38738f06f4bb354",
+  "prompt": "<div class=\"with-figure\"><div>Một chiếc máy bay của hàng không VietJet được quan sát bởi hai người điều khiển không lưu cách nhau 1.000 ft trên mặt đất. Máy bay bay trên đường nối liền giữa hai người và mỗi người quan sát nó theo một góc nâng được chỉ ra trong hình vẽ. Hỏi độ cao của chiếc máy bay so với mặt đất là bao nhiêu ft? (làm tròn kết quả đến hàng đơn vị).<div class=\"paragraph-gap\"></div></div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/61939697416641a9bc47d6ef72896797b6f5d6cfc60e32a1c8055933ca1b23db.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>381</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>382</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>383</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>380</mn></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/915307ad8143b8de26cc5859ac48dc7e9ed0d1bdb86734ae14d3b8fc460b5741.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tTa có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>40</mn><mo>∘</mo></msup><mo>+</mo><msup><mn>35</mn><mo>∘</mo></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mn>105</mn><mo>∘</mo></msup></mrow></semantics></math>.<br>Sử dụng định lý sin, ta có <div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mi>A</mi><mi>C</mi></mrow><mrow><mo>sin</mo><msup><mn>40</mn><msup><mi/><mo>∘</mo></msup></msup></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1000</mn><mrow><mo>sin</mo><msup><mn>105</mn><msup><mi/><mo>∘</mo></msup></msup></mrow></mfrac><mo>⇔</mo><mi>A</mi><mi>C</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>1000</mn><mo>×</mo><mo>sin</mo><msup><mn>40</mn><msup><mi/><mo>∘</mo></msup></msup></mrow><mrow><mo>sin</mo><msup><mn>105</mn><msup><mi/><mo>∘</mo></msup></msup></mrow></mfrac><mo>≈</mo><mn>665</mn><mo>,</mo><mn>46</mn><mi>.</mi></mrow></semantics></math></div>\n\t\tSuy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>h</mi><mo>=</mo><mi>A</mi><mi>C</mi><mo>⋅</mo><mo>sin</mo><msup><mn>35</mn><mo>∘</mo></msup><mo>≈</mo><mn>382</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

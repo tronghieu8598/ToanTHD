@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-7D2-q169-v4",
+  "original_number": 169,
+  "kind": "mcq",
+  "based_on": "2fd93f401c90a9c999b081fd7230384f5603fc638ab1b0aa17e8e7e2a9bf95e0",
+  "prompt": "Mệnh đề nào sau đây đúng?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>cos</mo><mrow><mn>2</mn><mi>x</mi></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi></msup><mo>=</mo><mn>2</mn><mo>sin</mo><mn>2</mn><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mo>cos</mo><mn>2</mn></msup><mrow><mn>2</mn><mi>x</mi></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi></msup><mo>=</mo><mo>−</mo><mn>2</mn><mo>sin</mo><mn>4</mn><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mo>sin</mo><mn>2</mn></msup><mrow><mn>2</mn><mi>x</mi></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi></msup><mo>=</mo><mo>sin</mo><mn>4</mn><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>sin</mo><mrow><mn>2</mn><mi>x</mi></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi></msup><mo>=</mo><mo>−</mo><mn>2</mn><mo>cos</mo><mn>2</mn><mi>x</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mo>sin</mo><mn>2</mn></msup><mrow><mn>2</mn><mi>x</mi></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi></msup><mo>=</mo><mn>2</mn><mo>sin</mo><mn>2</mn><mi>x</mi><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>sin</mo><mn>2</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi></msup><mo>=</mo><mn>2</mn><mo>sin</mo><mn>2</mn><mi>x</mi><mo>⋅</mo><mn>2</mn><mo>cos</mo><mn>2</mn><mi>x</mi><mo>=</mo><mn>2</mn><mo>sin</mo><mn>4</mn><mi>x</mi><mi>.</mi></mrow></semantics></math></div>\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>cos</mo><mrow><mn>2</mn><mi>x</mi></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi></msup><mo>=</mo><mo>−</mo><mo>sin</mo><mn>2</mn><mi>x</mi><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi></msup><mo>=</mo><mo>−</mo><mn>2</mn><mo>sin</mo><mn>2</mn><mi>x</mi><mi>.</mi></mrow></semantics></math></div>\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mo>cos</mo><mn>2</mn></msup><mrow><mn>2</mn><mi>x</mi></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi></msup><mo>=</mo><mn>2</mn><mo>cos</mo><mn>2</mn><mi>x</mi><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>cos</mo><mn>2</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi></msup><mo>=</mo><mo>−</mo><mn>2</mn><mo>⋅</mo><mn>2</mn><mo>cos</mo><mn>2</mn><mi>x</mi><mo>⋅</mo><mo>sin</mo><mn>2</mn><mi>x</mi><mo>=</mo><mo>−</mo><mn>2</mn><mo>sin</mo><mn>4</mn><mi>x</mi><mi>.</mi></mrow></semantics></math></div>\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>sin</mo><mrow><mn>2</mn><mi>x</mi></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi></msup><mo>=</mo><mo>cos</mo><mn>2</mn><mi>x</mi><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi></msup><mo>=</mo><mn>2</mn><mo>cos</mo><mn>2</mn><mi>x</mi><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

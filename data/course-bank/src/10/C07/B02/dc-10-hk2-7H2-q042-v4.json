@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-7H2-q042-v4",
+  "original_number": 42,
+  "kind": "mcq",
+  "based_on": "71d47b8c00e76d94aba5036db8a1c65ff7213d1f11ead24edcdb2a9fb301bcf3",
+  "prompt": "Tìm cô-sin góc giữa hai đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Δ</mi><mn>1</mn></msub><mo>:</mo><mn>10</mn><mi>x</mi><mo>+</mo><mn>5</mn><mi>y</mi><mo>−</mo><mn>1</mn><mo>=</mo><mn>0</mn></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Δ</mi><mn>2</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>2</mn><mo>+</mo><mi>t</mi></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>y</mi><mo>=</mo><mn>1</mn><mo>−</mo><mi>t</mi><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>3</mn><mn>10</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><msqrt><mn>10</mn></msqrt><mn>10</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>3</mn><msqrt><mn>10</mn></msqrt></mrow><mn>10</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>3</mn><mn>5</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>Δ</mi><mn>1</mn></msub></semantics></math> có một véc-tơ pháp tuyến là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mover><mi>n</mi><mo accent=\"true\">→</mo></mover><mn>1</mn></msub><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>10</mn><mo>;</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.<br>Đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>Δ</mi><mn>2</mn></msub></semantics></math> có một véc-tơ chỉ phương <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>u</mi><mo accent=\"true\">→</mo></mover><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> nên nó có một véc-tơ pháp tuyến là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mover><mi>n</mi><mo accent=\"true\">→</mo></mover><mn>2</mn></msub><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.<br>Cô-sin của góc giữa hai đường thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>Δ</mi><mn>1</mn></msub></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>Δ</mi><mn>2</mn></msub></semantics></math> là\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>Δ</mi><mn>1</mn></msub><mo>,</mo><msub><mi>Δ</mi><mn>2</mn></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mn>10</mn><mo>⋅</mo><mn>1</mn><mo>+</mo><mn>5</mn><mo>⋅</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mrow><msqrt><mrow><msup><mn>10</mn><mn>2</mn></msup><mo>+</mo><msup><mn>5</mn><mn>2</mn></msup></mrow></msqrt><mo>⋅</mo><msqrt><mrow><msup><mn>1</mn><mn>2</mn></msup><mo>+</mo><msup><mn>1</mn><mn>2</mn></msup></mrow></msqrt></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><msqrt><mn>10</mn></msqrt></mrow><mn>10</mn></mfrac><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

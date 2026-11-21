@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-7D2-q115-v4",
+  "original_number": 115,
+  "kind": "mcq",
+  "based_on": "3f11af6ee67394122267576a7be633fa1651041d734582f4182c5c007cdb5bfb",
+  "prompt": "Tính đạo hàm của hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>x</mi><mo>sin</mo><mi>x</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mo>sin</mo><mi>x</mi><mo>−</mo><mi>x</mi><mo>cos</mo><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mi>x</mi><mo>sin</mo><mi>x</mi><mo>+</mo><mo>cos</mo><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mi>x</mi><mo>sin</mo><mi>x</mi><mo>−</mo><mo>cos</mo><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mi>x</mi><mo>cos</mo><mi>x</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>sin</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi><mo>=</mo><mo>sin</mo><mi>x</mi><mo>+</mo><mi>x</mi><mo>cos</mo><mi>x</mi></mrow></semantics></math>.",
+  "accepted_answers": []
+}

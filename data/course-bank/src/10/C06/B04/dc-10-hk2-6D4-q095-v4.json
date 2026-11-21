@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-6D4-q095-v4",
+  "original_number": 95,
+  "kind": "tf",
+  "based_on": "1d61a6dca5375d2632c27f23953c8614ee013aaab86058f0c3dd3a00e12b8061",
+  "prompt": "Phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msqrt><mrow><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn></mrow></msqrt><mo>=</mo><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn><mi>x</mi><mo>−</mo><mn>2</mn></mrow></msqrt><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Phương trình (1) có hai nghiệm phân biệt"
+    },
+    {
+      "key": "b",
+      "text": "Phương trình (1) vô nghiệm"
+    },
+    {
+      "key": "c",
+      "text": "Tích các nghiệm của phương trình (1) bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>0</mn></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Phương trình (1) có nghiệm duy nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    false,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Sai. \tBình phương hai vế phương trình  ta được\n\t\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn><mi>x</mi><mo>−</mo><mn>2</mn><mo>⇔</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>x</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><mn>4</mn><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math></div>\n\t\t\tThử lại phương trình (1) chỉ có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>4</mn></mrow></semantics></math> thỏa. Vậy phương trình có nghiệm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>.</li><li>Sai. Kết luận rút ra từ lời giải trên.</li><li>Sai.</li><li>Đúng. Phương trình có nghiệm duy nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>.</li></ol><div class=\"paragraph-gap\"></div>",
+  "accepted_answers": []
+}

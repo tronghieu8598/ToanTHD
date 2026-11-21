@@ -6,6 +6,7 @@ import {readCourseBank, readFrozenCourseBank} from '../scripts/course-bank-data.
 import {availableQuestionVariantKeys} from '../lib/accepted-variants.mjs';
 import {canEnterSession, decodeQuestion} from '../lib/course-bank.mjs';
 import {BACKUP_TABLES, sealBackup, validateBackup} from '../lib/backup-model.mjs';
+import {bankReleaseChapters} from '../lib/bank-release-chapters.mjs';
 
 const root = new URL('../', import.meta.url);
 const read = file => readFileSync(new URL(file, root));
@@ -219,3 +220,50 @@ for (const expected of chapterExpectations) {
         }
     });
 }
+
+test('Grades 10 and 11 compile every original question without variant packs or status changes', () => {
+    const {questions} = readFrozenCourseBank();
+    const scopes = Object.entries(bankReleaseChapters).filter(([, chapter]) => chapter.variants === false);
+    assert.equal(scopes.length, 18);
+    assert.equal(bankReleaseChapters['11-C07'].lessons[0].id, 'dc-11-hk2-8H1-v4');
+    assert.equal(bankReleaseChapters['11-C08'].lessons[0].id, 'dc-11-hk2-9D1-v4');
+    assert.equal(bankReleaseChapters['11-C09'].lessons[0].id, 'dc-11-hk2-7D1-v4');
+
+    const totals = {10: 0, 11: 0};
+    const statuses = {review: 0, reference: 0, auto: 0};
+    const installed = new Map(readCourseBank().questions.map(row => [row.id, row]));
+    const seen = new Set();
+    for (const [scope, chapter] of scopes) {
+        const [bank, ...other] = compileContent('all', read, list, scope);
+        assert.deepEqual(other, []);
+        assert.deepEqual(bank.summary.changed, []);
+        for (const [file, bytes] of bank.files) assert.deepEqual(read(file), bytes);
+
+        for (const lesson of chapter.lessons) {
+            const originals = questions.filter(row => row.lesson_id === lesson.id);
+            assert.equal(originals.length, lesson.count);
+            totals[chapter.grade] += originals.length;
+            for (const original of originals) {
+                assert.ok(!seen.has(original.id), original.id);
+                seen.add(original.id);
+                statuses[original.bank_status]++;
+                assert.deepEqual(bank.effective.get(original.id), original);
+                assert.deepEqual(installed.get(original.id), original);
+            }
+        }
+    }
+    assert.deepEqual(totals, {10: 2118, 11: 2681});
+    assert.deepEqual(statuses, {review: 87, reference: 1035, auto: 3677});
+    assert.throws(() => compileContent('variants', read, list, '10-C01'), /chưa có gói biến thể/);
+});
+
+test('A grade 10 reference question keeps its status and chapter source path', () => {
+    const scope = '10-C01';
+    const lessons = new Set(bankReleaseChapters[scope].lessons.map(lesson => lesson.id));
+    const original = readFrozenCourseBank().questions.find(row => lessons.has(row.lesson_id) && row.bank_status === 'reference');
+    const file = Object.keys(frozenLessonInputs(scope)).find(name => name.endsWith('/' + original.id + '.json'));
+    assert.match(file, /^data\/course-bank\/src\/10\/C01\/B0[12]\//);
+    const input = JSON.parse(read(file));
+    const draft = {...input, bank_status: 'review'};
+    assert.throws(() => compileContent('bank', name => name === file ? toBytes(draft) : read(name), list, scope), /trạng thái/);
+});

@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-5D1-q050-v4",
+  "original_number": 50,
+  "kind": "mcq",
+  "based_on": "f56ee45cd354419b303bc2c8c603c0538840c645aeb686a48c73d625c2707cb1",
+  "prompt": "Tổng của cấp số nhân lùi vô hạn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>=</mo><mn>1</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><msup><mn>4</mn><mn>2</mn></msup></mfrac><mo>+</mo><mi>⋯</mi><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><msup><mn>4</mn><mi>n</mi></msup></mfrac><mo>+</mo><mi>⋯</mi></mrow></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>5</mn><mn>4</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>4</mn><mn>3</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>6</mn><mn>5</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Dãy số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>;</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>4</mn></mfrac><mo>;</mo><mfrac displaystyle=\"true\"><mn>1</mn><msup><mn>4</mn><mn>2</mn></msup></mfrac><mo>;</mo><mi>…</mi><mo>;</mo><mfrac displaystyle=\"true\"><mn>1</mn><msup><mn>4</mn><mi>n</mi></msup></mfrac><mo>;</mo><mi>…</mi></mrow></semantics></math> là một cấp số nhân lùi vô hạn với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn></mrow></semantics></math>, công bội <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>q</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>4</mn></mfrac></mrow></semantics></math>.<br>Vậy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>=</mo><mn>1</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>4</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><msup><mn>4</mn><mn>2</mn></msup></mfrac><mo>+</mo><mi>⋯</mi><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><msup><mn>4</mn><mi>n</mi></msup></mfrac><mo>+</mo><mi>⋯</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>4</mn><mn>3</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

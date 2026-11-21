@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-4H5-q055-v4",
+  "original_number": 55,
+  "kind": "mcq",
+  "based_on": "e92d85daad4e945df49f77a054661a10fff6e0bf549bd9305d7889b1034a7aaa",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>△</mi><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> đều, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mn>6</mn></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>M</mi></semantics></math> là trung điểm của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi></mrow></semantics></math>. Tích vô hướng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mrow><mi>M</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>27</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>18</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>18</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>27</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "<div class=\"with-figure\"><div>Vì tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> đều nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>M</mi><mo>=</mo><mn>3</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>B</mi><mi>A</mi><mi>M</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>30</mn><mo>∘</mo></msup></mrow></semantics></math>. <br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mrow><mi>M</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mo>−</mo><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mrow><mi>A</mi><mi>M</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mo>−</mo><mi>A</mi><mi>B</mi><mo>⋅</mo><mi>A</mi><mi>M</mi><mo>⋅</mo><mo>cos</mo><mover><mrow><mi>B</mi><mi>A</mi><mi>M</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><mo>−</mo><mn>6</mn><mo>⋅</mo><mn>3</mn><msqrt><mn>3</mn></msqrt><mo>⋅</mo><mo>cos</mo><msup><mn>30</mn><mo>∘</mo></msup><mo>=</mo><mo>−</mo><mn>27</mn></mrow></semantics></math>.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/e62778776d8089edfca6392714f5d21cdeb589d73383d765165a03e53f447202.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

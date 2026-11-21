@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-7D1-q036-v4",
+  "original_number": 36,
+  "kind": "mcq",
+  "based_on": "b73739f3aed708f3d0f7f74b2ca79d9a9f9dfe189b444b82eb90bea356ef78c0",
+  "prompt": "Một viên đạn bắn lên cao theo phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>s</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>200</mn><mi>t</mi><mo>−</mo><mn>5</mn><msup><mi>t</mi><mn>2</mn></msup></mrow></semantics></math>, trong đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>t</mi></semantics></math> tính bằng giây kể từ thời điểm viên đạn được bắn lên cao và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>s</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> là khoảng cách của viên đạn so với mặt đất được tính bằng mét. Tại thời điểm vận tốc của viên đạn bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>0</mn></semantics></math> thì viên đạn cách mặt đất bao nhiêu mét?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "1000 (mét)"
+    },
+    {
+      "key": "B",
+      "text": "2000 (mét)"
+    },
+    {
+      "key": "C",
+      "text": "Đáp án khác"
+    },
+    {
+      "key": "D",
+      "text": "4000 (mét)"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>s</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>10</mn><mi>t</mi><mo>+</mo><mn>200</mn></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>v</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo>⇔</mo><mi>t</mi><mo>=</mo><mn>20</mn></mrow></semantics></math> (giây). <br>Suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>s</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>20</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>200</mn><mo>⋅</mo><mn>20</mn><mo>−</mo><mn>5</mn><mo>⋅</mo><msup><mn>20</mn><mn>2</mn></msup><mo>=</mo><mn>2000</mn></mrow></semantics></math> mét.",
+  "accepted_answers": []
+}

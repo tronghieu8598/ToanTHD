@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-3H2-q081-v4",
+  "original_number": 81,
+  "kind": "tf",
+  "based_on": "241ae91b1276d8abf48eaac4504b896df8294188af5780a8a594a8c5222e20c1",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi><mo>=</mo><mn>8</mn></mrow></semantics></math> cm, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi><mo>=</mo><mn>10</mn></mrow></semantics></math> cm, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mn>13</mn></mrow></semantics></math> cm.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Đường cao <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>H</mi></mrow></semantics></math> (<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>H</mi><mo>∈</mo><mi>B</mi><mi>C</mi></mrow></semantics></math>) của tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có độ dài là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>H</mi><mo>≈</mo><mn>4</mn><mo>,</mo><mn>996</mn><mi>c</mi><mi>m</mi></mrow></semantics></math> (kết quả làm tròn đến hàng phần nghìn)"
+    },
+    {
+      "key": "b",
+      "text": "Diện tích của tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> (kết quả làm tròn đến hàng phần trăm) là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>≈</mo><mn>39</mn><mo>,</mo><mn>98</mn></mrow></semantics></math> cm<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi/><mn>2</mn></msup></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>B</mi><mi>C</mi><mi>A</mi></mrow><mo accent=\"true\">̂</mo></mover></semantics></math> là góc nhọn"
+    },
+    {
+      "key": "d",
+      "text": "Nửa chu vi của tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>15</mn><mo>,</mo><mn>5</mn></mrow></semantics></math> cm"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Nửa chu vi tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>8</mn><mo>+</mo><mn>10</mn><mo>+</mo><mn>13</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>15</mn><mo>,</mo><mn>5</mn></mrow></semantics></math>.</li><li>Theo công thức Heron ta có\n\t\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><msqrt><mrow><mi>p</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>p</mi><mo>−</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>p</mi><mo>−</mo><mn>10</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>p</mi><mo>−</mo><mn>13</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></msqrt><mo>≈</mo><mn>39</mn><mo>,</mo><mn>98</mn></mrow></semantics></math> cm<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi/><mn>2</mn></msup></semantics></math>.</li><li>Theo định lý Cô-sin ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mover><mrow><mi>B</mi><mi>C</mi><mi>A</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mn>8</mn><mn>2</mn></msup><mo>+</mo><msup><mn>10</mn><mn>2</mn></msup><mo>−</mo><msup><mn>13</mn><mn>2</mn></msup></mrow><mrow><mn>2</mn><mo>⋅</mo><mn>8</mn><mo>⋅</mo><mn>10</mn></mrow></mfrac><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>32</mn></mfrac><mo>&lt;</mo><mn>0</mn></mrow></semantics></math>.<br>Nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>B</mi><mi>C</mi><mi>A</mi></mrow><mo accent=\"true\">̂</mo></mover></semantics></math> là góc tù.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>H</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>S</mi></mrow><mrow><mi>B</mi><mi>C</mi></mrow></mfrac><mo>≈</mo><mn>7</mn><mo>,</mo><mn>996</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

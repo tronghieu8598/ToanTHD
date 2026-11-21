@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-1D2-q060-v4",
+  "original_number": 60,
+  "kind": "tf",
+  "based_on": "7f8c3e419b70a0c15e6175f0eb0437022efb64280d22b31634f7640997cf8db9",
+  "prompt": "Cho hai tập hợp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>2</mn><mo>;</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>0</mn><mo>;</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo>;</mo><mn>4</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>. Khi đó",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo>\\</mo><mi>A</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>4</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>\\</mo><mi>B</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>2</mn><mo>;</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo>;</mo><mn>4</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>2</mn><mo>;</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>0</mn><mo>;</mo><mn>1</mn><mo>;</mo><mn>2</mn><mo>;</mo><mn>4</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math></li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>0</mn><mo>;</mo><mn>2</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math></li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo>\\</mo><mi>A</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>4</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math></li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>\\</mo><mi>B</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math></li></ol>",
+  "accepted_answers": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk2-7D2-q209-v4",
+  "original_number": 209,
+  "kind": "tf",
+  "based_on": "8e4660ed1baff8ac12987ac1e94b34ee142bb4cdce1a57fbe48d6fc523b364f9",
+  "prompt": "Nhiệt độ cơ thể của một người trong thời gian bị bệnh được cho bởi công thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>0</mn><mo>,</mo><mn>1</mn><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>,</mo><mn>2</mn><mi>t</mi><mo>+</mo><mn>98</mn><mo>,</mo><mn>6</mn></mrow></semantics></math>, trong đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>T</mi></semantics></math> là nhiệt độ (tính theo đơn vị đo nhiệt độ Fahrenheit) tại thời điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>t</mi></semantics></math> (tính theo ngày).<br>(Nguồn: https://www.algebra.com/algebra/homework/ Trigonometry-basics/Trigonometrybasics.faq.question. <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1111985</mn></semantics></math> html).",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Tại thời điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> tốc độ thay đổi nhiệt độ cơ thể người bệnh bé hơn tại thời điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Hàm số biểu thị tốc độ thay đổi nhiệt độ cơ thể người trong thời gian bị bệnh là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>0</mn><mo>,</mo><mn>2</mn><mi>t</mi><mo>+</mo><mn>1</mn><mo>,</mo><mn>2</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Tốc độ thay đổi nhiệt độ cơ thể người ở thời điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>4</mn></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><msup><mn>4</mn><mo>∘</mo></msup></mrow></semantics></math> F/ngày"
+    },
+    {
+      "key": "d",
+      "text": "Tại thời điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>5</mn></mrow></semantics></math> nhiệt độ cơ thể người bệnh đã vượt quá <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>102</mn><mo>∘</mo></msup></semantics></math>F"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Hàm số biểu thị tốc độ thay đổi nhiệt độ cơ thể người trong thời gian bị bệnh là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>0</mn><mo>,</mo><mn>2</mn><mi>t</mi><mo>+</mo><mn>1</mn><mo>,</mo><mn>2</mn></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>0</mn><mo>,</mo><mn>2</mn><mi>t</mi><mo>+</mo><mn>1</mn><mo>,</mo><mn>2</mn></mrow></semantics></math>.<br><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>0</mn><mo>,</mo><mn>4</mn><mo>+</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>=</mo><mn>0</mn><mo>,</mo><mn>8</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>0</mn><mo>,</mo><mn>6</mn><mo>+</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>=</mo><mn>0</mn><mo>,</mo><mn>6</mn></mrow></semantics></math>. Khi đó tại thời điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> tốc độ thay đổi nhiệt độ cơ thể người bệnh lớn hơn tại thời điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>⋅</mo><msup><mn>5</mn><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>⋅</mo><mn>5</mn><mo>+</mo><mn>98</mn><mo>,</mo><mn>6</mn><mo>=</mo><mn>102</mn><mo>,</mo><mn>1</mn></mrow></semantics></math> (F) <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>&gt;</mo><mn>102</mn></mrow></semantics></math> (F).</li><li>Tốc độ thay đổi nhiệt độ cơ thể người ở thời điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>4</mn></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo>⋅</mo><mn>4</mn><mo>+</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>=</mo><mn>0</mn><mo>,</mo><msup><mn>4</mn><mo>∘</mo></msup></mrow></semantics></math> F/ngày.</li></ol>",
+  "accepted_answers": []
+}

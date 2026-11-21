@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-1D4-q103-v4",
+  "original_number": 103,
+  "kind": "tf",
+  "based_on": "c01c4f0667276b211e7a4bc99fc7960f0bc31f9ff5cf21a84d7fdd295c3fca20",
+  "prompt": "Độ sâu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>m</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> của mực nước ở một cảng biển vào thời điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>t</mi></semantics></math> (giờ) sau khi thuỷ triều lên lần đầu tiên trong ngày được tính xấp xỉ bởi công thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>6</mn><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>,</mo><mn>5</mn><mi>π</mi><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mn>3</mn></mrow></semantics></math>.\n\tCác mệnh đề sau đúng hay sai?",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Một con tàu cần mực nước sâu tối thiểu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mo>,</mo><mn>3</mn></mrow></semantics></math> m để có thể di chuyển ra vào cảng an toàn thì cần di chuyển trong khoảng thời gian từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>0</mn></semantics></math> giờ đến <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> giờ"
+    },
+    {
+      "key": "b",
+      "text": "Chu kỳ của hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mi>π</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Độ sâu của nước vào thời điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> m"
+    },
+    {
+      "key": "d",
+      "text": "Độ sâu lớn nhất của nước là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mo>,</mo><mn>6</mn></mrow></semantics></math> m"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li><strong>Sai</strong>.<br>Khi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>t</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mn>6</mn><mo>cos</mo><mi>π</mi><mo>+</mo><mn>3</mn><mo>=</mo><mn>2</mn><mo>,</mo><mn>4</mn></mrow></semantics></math> m.</li><li><strong>Đúng</strong>.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>,</mo><mn>5</mn><mi>π</mi><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>≤</mo><mn>1</mn></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>≤</mo><mn>0</mn><mo>,</mo><mn>6</mn><mo>⋅</mo><mn>1</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>3</mn><mo>,</mo><mn>6</mn></mrow></semantics></math>.<br>Vậy độ sâu lớn nhất của nước là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mo>,</mo><mn>6</mn></mrow></semantics></math> m.</li><li><strong>Đúng</strong>.<br>Chu kì hàm số là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>π</mi></mrow><mrow><mn>0</mn><mo>,</mo><mn>5</mn><mi>π</mi></mrow></mfrac><mo>=</mo><mn>4</mn></mrow></semantics></math>.</li><li><strong>Đúng</strong>.<br>Yêu cầu bài toán, ta phải có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>h</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>≥</mo><mn>3</mn><mo>,</mo><mn>3</mn></mrow></semantics></math> hay là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi><mo>≤</mo><mn>0</mn><mo>,</mo><mn>5</mn><mi>π</mi><mi>t</mi><mo>≤</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi></mrow></semantics></math> với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>.<br>Giải ra ta được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>t</mi><mo>≤</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac><mo>&lt;</mo><mn>2</mn></mrow></semantics></math> giờ.</li></ol>",
+  "accepted_answers": []
+}

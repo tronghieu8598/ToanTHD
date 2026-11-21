@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-9D2-q047-v4",
+  "original_number": 47,
+  "kind": "mcq",
+  "based_on": "209b1edbb588dbd9f75a36e61dddb6776c75af3d73ec54715d758ae3ed5b9f88",
+  "prompt": "Một hộp chứa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> bi xanh, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> bi đỏ, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> bi vàng. Lấy ngẫu nhiên từ hộp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> bi. Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là biến cố ““ Lấy được bi màu xanh””, gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math> là biến cố ““ Lấy được bi màu đỏ””. Khi đó biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "““ Lấy được bi màu vàng””"
+    },
+    {
+      "key": "B",
+      "text": "““ Lấy được bi màu xanh hoặc bi màu đỏ””"
+    },
+    {
+      "key": "C",
+      "text": "““ Lấy được bi màu xanh””"
+    },
+    {
+      "key": "D",
+      "text": "““ Lấy được bi màu xanh và bi màu đỏ””"
+    }
+  ],
+  "correct": "B",
+  "solution": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow></semantics></math> là biến cố ““ Lấy được bi màu xanh hoặc bi màu đỏ””.",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-2D2-q065-v4",
+  "original_number": 65,
+  "kind": "mcq",
+  "based_on": "73697286d5397440d15153908e1dbd2e5f0f9679a8c3ee05437270299f42eb0a",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> là cấp số cộng biết <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>3</mn></msub><mo>+</mo><msub><mi>u</mi><mn>13</mn></msub><mo>=</mo><mn>80</mn></mrow></semantics></math>. Tổng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>15</mn></semantics></math> số hạng đầu của cấp số cộng đó bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>800</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>600</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>570</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>630</mn></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>d</mi></semantics></math> là công sai của cấp số cộng đã cho.\n\t\tTheo tính chất của cấp số cộng ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msub><mi>u</mi><mn>3</mn></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><mn>2</mn><mi>d</mi></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msub><mi>u</mi><mn>13</mn></msub><mo>=</mo><msub><mi>u</mi><mn>15</mn></msub><mo>−</mo><mn>2</mn><mi>d</mi></mtd></mtr></mtable></mrow><mo>⇒</mo><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><msub><mi>u</mi><mn>15</mn></msub><mo>=</mo><msub><mi>u</mi><mn>3</mn></msub><mo>+</mo><msub><mi>u</mi><mn>13</mn></msub><mo>=</mo><mn>80</mn><mi>.</mi></mrow></semantics></math></div>\n\t\tGọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>S</mi><mn>15</mn></msub></semantics></math> là tổng của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>15</mn></semantics></math> số hạng đầu của cấp số cộng. Ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mn>15</mn></msub><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>15</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><msub><mi>u</mi><mn>15</mn></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mn>2</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>15</mn><mo>⋅</mo><mn>80</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>600</mn><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

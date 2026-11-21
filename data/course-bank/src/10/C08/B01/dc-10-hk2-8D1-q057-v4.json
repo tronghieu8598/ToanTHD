@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-8D1-q057-v4",
+  "original_number": 57,
+  "kind": "tf",
+  "based_on": "be202a724015dc56b693f0845ceb0bb787d91e819a6abac9e778d1fc732f5198",
+  "prompt": "Trên giá sách có hai thể loại sách gồm tiểu thuyết và truyện tranh, biết rằng có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math> quyển tiểu thuyết và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> quyển truyện tranh khác nhau. Một học sinh đến giá sách đó để lấy sách.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>14</mn></semantics></math> cách chọn một quyển sách để đọc"
+    },
+    {
+      "key": "b",
+      "text": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>48</mn></semantics></math> cách chọn hai quyển sách khác thể loại để đọc"
+    },
+    {
+      "key": "c",
+      "text": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>14</mn></semantics></math> cách chọn hai quyển sách cùng thể loại để đọc"
+    },
+    {
+      "key": "d",
+      "text": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>196</mn></semantics></math> cách chọn hai quyển sách khác nhau để đọc"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Học sinh có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>14</mn></mrow></semantics></math> cách chọn một quyển sách để đọc.</li><li><ul><li>Học sinh chọn hai quyển tiểu thuyết: có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mo>⋅</mo><mn>7</mn><mo>=</mo><mn>56</mn></mrow></semantics></math> cách chọn.</li><li>Học sinh chọn hai quyển truyện tranh: có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>6</mn><mo>⋅</mo><mn>5</mn><mo>=</mo><mn>30</mn></mrow></semantics></math> cách chọn.</li></ul>\n\t\t\tVậy có tổng cộng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>56</mn><mo>+</mo><mn>30</mn><mo>=</mo><mn>86</mn></mrow></semantics></math> cách chọn hai quyển sách cùng thể loại.</li><li>Học sinh có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mo>⋅</mo><mn>6</mn><mo>=</mo><mn>48</mn></mrow></semantics></math> cách chọn mỗi thể loại một quyển sách.</li><li>Trên giá sách có tổng cộng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mo>+</mo><mn>6</mn><mo>=</mo><mn>14</mn></mrow></semantics></math> quyển sách. <br>Học sinh có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>14</mn><mo>⋅</mo><mn>13</mn><mo>=</mo><mn>182</mn></mrow></semantics></math> cách chọn hai quyển sách khác nhau.</li></ol>",
+  "accepted_answers": []
+}

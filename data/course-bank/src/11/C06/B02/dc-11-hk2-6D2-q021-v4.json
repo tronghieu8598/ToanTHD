@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D2-q021-v4",
+  "original_number": 21,
+  "kind": "mcq",
+  "based_on": "d5b8def13970f16388a24f8580bf163e1a5deaa3069c25da0cd00af0683a480c",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math> là số thực dương khác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>. Mệnh đề nào dưới đây đúng với mọi số dương <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>y</mi></semantics></math>?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>a</mi></msub><mfrac displaystyle=\"true\"><mi>x</mi><mi>y</mi></mfrac><mo>=</mo><msub><mo>log</mo><mi>a</mi></msub><mi>x</mi><mo>+</mo><msub><mo>log</mo><mi>a</mi></msub><mi>y</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>a</mi></msub><mfrac displaystyle=\"true\"><mi>x</mi><mi>y</mi></mfrac><mo>=</mo><msub><mo>log</mo><mi>a</mi></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><mi>y</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>a</mi></msub><mfrac displaystyle=\"true\"><mi>x</mi><mi>y</mi></mfrac><mo>=</mo><msub><mo>log</mo><mi>a</mi></msub><mi>x</mi><mo>−</mo><msub><mo>log</mo><mi>a</mi></msub><mi>y</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>a</mi></msub><mfrac displaystyle=\"true\"><mi>x</mi><mi>y</mi></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msub><mo>log</mo><mi>a</mi></msub><mi>x</mi></mrow><mrow><msub><mo>log</mo><mi>a</mi></msub><mi>y</mi></mrow></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>a</mi></msub><mfrac displaystyle=\"true\"><mi>x</mi><mi>y</mi></mfrac><mo>=</mo><msub><mo>log</mo><mi>a</mi></msub><mi>x</mi><mo>−</mo><msub><mo>log</mo><mi>a</mi></msub><mi>y</mi></mrow></semantics></math>.",
+  "accepted_answers": []
+}

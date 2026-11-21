@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-5D1-q062-v4",
+  "original_number": 62,
+  "kind": "tf",
+  "based_on": "4d677614d7c573528789e6a75ff826b9e8969931bcdb1cc47205a56da2be7670",
+  "prompt": "Biết giới hạn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><mn>5</mn><mi>n</mi><mo>+</mo><msup><mn>10</mn><mn>2025</mn></msup></mrow><mrow><mn>1</mn><mo>−</mo><mn>2</mn><mi>n</mi></mrow></mfrac><mo>=</mo><mi>a</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Cho cấp số cộng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> với công sai <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>3</mn></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mi>a</mi></mrow></semantics></math>, thì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>3</mn></msub><mo>=</mo><mn>6</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mi>a</mi></mrow></semantics></math> là trục đối xứng của parabol <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>P</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>:</mo><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Giá trị <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math> nhỏ hơn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>0</mn></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Phương trình lượng giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>x</mi><mo>=</mo><mi>a</mi></mrow></semantics></math> vô nghiệm"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Tính giới hạn\n\t\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>=</mo><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><mn>5</mn><mi>n</mi><mo>+</mo><msup><mn>10</mn><mn>2025</mn></msup></mrow><mrow><mn>1</mn><mo>−</mo><mn>2</mn><mi>n</mi></mrow></mfrac><mo>=</mo><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><mn>5</mn><mo>+</mo><mfrac displaystyle=\"true\"><msup><mn>10</mn><mn>2025</mn></msup><mi>n</mi></mfrac></mrow><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mi>n</mi></mfrac><mo>−</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn><mo>+</mo><mn>0</mn></mrow><mrow><mn>0</mn><mo>−</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>5</mn><mrow><mo>−</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac><mi>.</mi></mrow></semantics></math></div></li><li>Trục đối xứng của parabol <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>P</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>:</mo><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow></semantics></math> là đường thẳng\n\t\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>b</mi><mrow><mn>2</mn><mi>a</mi></mrow></mfrac><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac><mi>.</mi></mrow></semantics></math></div>\n\t\t\tSo sánh với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac></mrow></semantics></math>, ta thấy mệnh đề đúng.</li><li>Phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>x</mi><mo>=</mo><mi>a</mi></mrow></semantics></math> chỉ có nghiệm khi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>1</mn><mo>≤</mo><mi>a</mi><mo>≤</mo><mn>1</mn></mrow></semantics></math>. Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac></mrow></semantics></math> không thỏa mãn điều kiện này, nên phương trình vô nghiệm.</li><li>Với cấp số cộng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> có công sai <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>3</mn></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mi>a</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac></mrow></semantics></math>, ta có\n\t\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>3</mn></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><mn>2</mn><mi>d</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac><mo>+</mo><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac><mo>+</mo><mn>6</mn><mo>=</mo><mfrac displaystyle=\"true\"><mn>7</mn><mn>2</mn></mfrac><mi>.</mi></mrow></semantics></math></div></li></ol>",
+  "accepted_answers": []
+}

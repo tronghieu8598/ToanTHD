@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-9XS1-q052-v4",
+  "original_number": 52,
+  "kind": "tf",
+  "based_on": "67fc9b215b5c9fbd667de46c21d36b57722876ebb07d628f4abf18385baf42ea",
+  "prompt": "Một tổ có 10 học sinh nam và 5 học sinh nữ. Chọn ngẫu nhiên 3 học sinh.\n\tGọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là biến cố: ““ Chọn ra 3 học sinh nữ””.\n\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math> là biến cố: ““ Chọn ra 3 học sinh nam””. Khi đó",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Xác suất để có số nam nhiều hơn nữ và có cả nam và nữ là  <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>45</mn><mn>91</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Công thức tính xác suất của biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Ω</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Số phần tử của không gian mẫu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msubsup><mi mathvariant=\"normal\">C</mi><mn>15</mn><mn>3</mn></msubsup></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Xác suất của biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>3</mn></msubsup><msubsup><mi mathvariant=\"normal\">C</mi><mn>15</mn><mn>3</mn></msubsup></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Chọn ngẫu nhiên 3 học sinh từ 15 học sinh, có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msubsup><mi mathvariant=\"normal\">C</mi><mn>15</mn><mn>3</mn></msubsup></semantics></math> cách chọn.</li><li>Theo lý thuyết, công thức tính xác suất của biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Ω</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac></mrow></semantics></math>.</li><li>Chọn ra 3 học sinh nam, có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msubsup><mi mathvariant=\"normal\">C</mi><mn>10</mn><mn>3</mn></msubsup></semantics></math> cách chọn.<br>Vậy xác suất của biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><msubsup><mi mathvariant=\"normal\">C</mi><mn>10</mn><mn>3</mn></msubsup><msubsup><mi mathvariant=\"normal\">C</mi><mn>15</mn><mn>3</mn></msubsup></mfrac></mrow></semantics></math>.</li><li>Để có số nam nhiều hơn nữ và có cả nam và nữ thì ta chọn 2 học sinh nam và 1 học sinh nữ.<br>Số cách chọn là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>10</mn><mn>2</mn></msubsup><mo>⋅</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>1</mn></msubsup></mrow></semantics></math>.<br>Xác suất của biến cố là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>10</mn><mn>2</mn></msubsup><mo>⋅</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>1</mn></msubsup></mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>15</mn><mn>3</mn></msubsup></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>45</mn><mn>91</mn></mfrac></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

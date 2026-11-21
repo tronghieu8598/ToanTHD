@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-1D3-q041-v4",
+  "original_number": 41,
+  "kind": "mcq",
+  "based_on": "d7d149098a0b7389e5ec51d8dcfaff672041d172444db34b932ae362f40f415c",
+  "prompt": "Tìm tập giá trị <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>T</mi></semantics></math> của hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>2</mn><msup><mo>sin</mo><mn>2</mn></msup><mi>x</mi><mo>+</mo><mn>1</mn></mrow></semantics></math>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>5</mn><mo>;</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>2</mn><mo>;</mo><mn>8</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>3</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>≤</mo><msup><mo>sin</mo><mn>2</mn></msup><mi>x</mi><mo>≤</mo><mn>1</mn><mo>⇔</mo><mn>0</mn><mo>≤</mo><mn>2</mn><msup><mo>sin</mo><mn>2</mn></msup><mi>x</mi><mo>≤</mo><mn>2</mn><mo>⇔</mo><mn>1</mn><mo>≤</mo><mn>2</mn><msup><mo>sin</mo><mn>2</mn></msup><mi>x</mi><mo>+</mo><mn>1</mn><mo>≤</mo><mn>3</mn></mrow></semantics></math>.<br>Vậy tập giá trị của hàm số là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></mrow></semantics></math>.",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-7D2-q023-v4",
+  "original_number": 23,
+  "kind": "mcq",
+  "based_on": "4336a7f321257c6edf9d319232557be6c6466a77e3fab11f0c97e3a1e07c9570",
+  "prompt": "Cho hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>x</mi><msup><mo>ln</mo><mn>2</mn></msup><mi>x</mi></mrow></semantics></math>. Biết phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math> có hai nghiệm phân biệt là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>x</mi><mn>1</mn></msub></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>x</mi><mn>2</mn></msub></semantics></math>. Tính <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><msub><mi>x</mi><mn>1</mn></msub><mo>⋅</mo><msub><mi>x</mi><mn>2</mn></msub></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><msup><mi mathvariant=\"normal\">e</mi><mrow><mo>−</mo><mn>2</mn></mrow></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><mi mathvariant=\"normal\">e</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi mathvariant=\"normal\">e</mi></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi><msup><mo>ln</mo><mn>2</mn></msup><mi>x</mi><mo>+</mo><mi>x</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mo>ln</mo><mn>2</mn></msup><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi><mo>=</mo><msup><mo>ln</mo><mn>2</mn></msup><mi>x</mi><mo>+</mo><mi>x</mi><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>ln</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi><mo>⋅</mo><mo>ln</mo><mi>x</mi><mo>=</mo><msup><mo>ln</mo><mn>2</mn></msup><mi>x</mi><mo>+</mo><mi>x</mi><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>x</mi></mfrac><mo>⋅</mo><mo>ln</mo><mi>x</mi><mo>=</mo><msup><mo>ln</mo><mn>2</mn></msup><mi>x</mi><mo>+</mo><mn>2</mn><mo>ln</mo><mi>x</mi></mrow></semantics></math>.\n\t\t<br><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo>⇔</mo><msup><mo>ln</mo><mn>2</mn></msup><mi>x</mi><mo>+</mo><mn>2</mn><mo>ln</mo><mi>x</mi><mo>=</mo><mn>0</mn><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>ln</mo><mi>x</mi><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>ln</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo>=</mo><mn>0</mn></mtd></mtr></mtable></mrow><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><msup><mi mathvariant=\"normal\">e</mi><mn>0</mn></msup><mo>=</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>=</mo><msup><mi mathvariant=\"normal\">e</mi><mrow><mo>−</mo><mn>2</mn></mrow></msup><mi>.</mi></mtd></mtr></mtable></mrow></mrow></semantics></math>\n\t\t<br>Vậy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><msub><mi>x</mi><mn>1</mn></msub><mo>⋅</mo><msub><mi>x</mi><mn>2</mn></msub><mo>=</mo><mn>1</mn><mo>⋅</mo><msup><mi mathvariant=\"normal\">e</mi><mrow><mo>−</mo><mn>2</mn></mrow></msup><mo>=</mo><msup><mi mathvariant=\"normal\">e</mi><mrow><mo>−</mo><mn>2</mn></mrow></msup></mrow></semantics></math>.",
+  "accepted_answers": []
+}

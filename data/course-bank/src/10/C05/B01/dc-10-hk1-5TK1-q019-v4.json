@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-5TK1-q019-v4",
+  "original_number": 19,
+  "kind": "mcq",
+  "based_on": "7c0f53320ca496ab1b23f6ecdfcd4e8edaab57be162185597c6915a4362de1a2",
+  "prompt": "Một công ty sử dụng 3 dây chuyền I, II, III để đóng gói ngũ cốc lần lượt có thông tin trên bao bì như sau: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mn>5</mn><mo>±</mo><mn>0</mn><mo>,</mo><mn>06</mn></mrow></semantics></math> kg, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>±</mo><mn>0</mn><mo>,</mo><mn>1</mn></mrow></semantics></math> kg, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mo>±</mo><mn>0</mn><mo>,</mo><mn>15</mn></mrow></semantics></math> kg. Nếu dựa vào tiêu chí sai số tương đối để đánh giá chất lượng của các dây chuyền thì khẳng định nào sau đây đúng?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "Chất lượng của dây chuyền I tốt hơn dây chuyền III"
+    },
+    {
+      "key": "B",
+      "text": "Chất lượng của dây chuyền II tốt hơn dây chuyền I"
+    },
+    {
+      "key": "C",
+      "text": "Chất lượng của dây chuyền I tốt nhất trong ba dây chuyền"
+    },
+    {
+      "key": "D",
+      "text": "Chất lượng của dây chuyền III tốt hơn dây chuyền II"
+    }
+  ],
+  "correct": "D",
+  "solution": "Sai số tương đối của dây chuyền I là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>δ</mi><mrow><mn>1</mn><mo>,</mo><mn>5</mn></mrow></msub><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>0</mn><mo>,</mo><mn>06</mn></mrow><mrow><mn>1</mn><mo>,</mo><mn>5</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>04</mn></mrow></semantics></math>.<br>Sai số tương đối của dây chuyền II là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>δ</mi><mn>2</mn></msub><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>0</mn><mo>,</mo><mn>1</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>05</mn></mrow></semantics></math>.<br>Sai số tương đối của dây chuyền III là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>δ</mi><mn>5</mn></msub><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>0</mn><mo>,</mo><mn>15</mn></mrow><mn>5</mn></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>03</mn></mrow></semantics></math>.<br>Ta thấy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>δ</mi><mn>5</mn></msub><mo>&lt;</mo><msub><mi>δ</mi><mn>2</mn></msub></mrow></semantics></math> nên chất lượng của dây chuyền III tốt hơn dây chuyền II.",
+  "accepted_answers": []
+}

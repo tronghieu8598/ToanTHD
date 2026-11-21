@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-1D3-q024-v4",
+  "original_number": 24,
+  "kind": "mcq",
+  "based_on": "8d43241da5f1aa2637cfb696dd88c55a6fd0e02b66cf90cdd99f2909edfdbe43",
+  "prompt": "Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>M</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>m</mi></semantics></math> lần lượt là giá trị lớn nhất, giá trị nhỏ nhất của hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>2</mn><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>. Tính <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><mi>M</mi><mo>−</mo><mi>m</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msqrt><mn>2</mn></msqrt></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>1</mn><mo>≤</mo><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>≤</mo><mn>1</mn></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>2</mn><mo>≤</mo><mi>y</mi><mo>≤</mo><mn>2</mn></mrow></semantics></math>. <br>Lại có \n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>1</mn><mo>⇔</mo><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo>=</mo><mi>π</mi><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi><mo>⇔</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>π</mi></mrow><mn>3</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi><mo>,</mo><mspace width=\"0.167em\"/><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mo>;</mo></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>1</mn><mo>⇔</mo><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo>=</mo><mi>k</mi><mn>2</mn><mi>π</mi><mo>⇔</mo><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi><mo>,</mo><mspace width=\"0.167em\"/><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mi>.</mi></mtd></mtr></mtable></semantics></math></div>\n\t\tVậy giá trị nhỏ nhất của hàm số là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>m</mi><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math>, giá trị lớn nhất của hàm số là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>. Suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>−</mo><mi>m</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "dc-10-hk1-3H1-q005-v4",
+  "original_number": 5,
+  "kind": "free",
+  "based_on": "8c3b59c2ad1366aa7f269623d4c781682629a64ce8d568a5cb05f1bbb56a04b9",
+  "prompt": "Chứng minh rằng\n\t<ol class=\"alpha-list\"><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><msup><mn>138</mn><mo>∘</mo></msup><mo>=</mo><mo>sin</mo><msup><mn>42</mn><mo>∘</mo></msup></mrow></semantics></math>;</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><msup><mn>125</mn><mo>∘</mo></msup><mo>=</mo><mo>−</mo><mo>cot</mo><msup><mn>35</mn><mo>∘</mo></msup></mrow></semantics></math>.</li></ol>",
+  "choices": [],
+  "correct": null,
+  "solution": "<ol class=\"alpha-list\"><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><msup><mn>138</mn><mo>∘</mo></msup><mo>=</mo><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><msup><mn>138</mn><mo>∘</mo></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>sin</mo><msup><mn>42</mn><mo>∘</mo></msup></mrow></semantics></math>;</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><msup><mn>125</mn><mo>∘</mo></msup><mo>=</mo><mo>−</mo><mo>tan</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><msup><mn>125</mn><mo>∘</mo></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mo>tan</mo><msup><mn>55</mn><mo>∘</mo></msup><mo>=</mo><mo>−</mo><mo>cot</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>90</mn><mo>∘</mo></msup><mo>−</mo><msup><mn>55</mn><mo>∘</mo></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mo>cot</mo><msup><mn>35</mn><mo>∘</mo></msup></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

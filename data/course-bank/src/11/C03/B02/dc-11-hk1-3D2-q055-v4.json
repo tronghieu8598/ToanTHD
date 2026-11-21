@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-3D2-q055-v4",
+  "original_number": 55,
+  "kind": "mcq",
+  "based_on": "258c5f37185a4a7ab728cc57d705a596d914257c5b54765c79f88726a18b5dcf",
+  "prompt": "Hằng ngày bạn An đều đi xe buýt từ nhà đến trường. Dưới đây là bảng thống kê thời gian của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>100</mn></semantics></math> lần bạn An đi xe buýt đến trường\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Thời gian (phút)</td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>15</mn><mo>;</mo><mn>18</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>18</mn><mo>;</mo><mn>21</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>21</mn><mo>;</mo><mn>24</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>24</mn><mo>;</mo><mn>27</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>27</mn><mo>;</mo><mn>30</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>30</mn><mo>;</mo><mn>33</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td></tr><tr><td>Số lần</td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>22</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>38</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>27</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math></td></tr></tbody></table></div></div>\n\tTứ phân vị thứ nhất của mẫu số liệu ghép nhóm trên bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>69</mn><mn>38</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>68</mn><mn>3</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>69</mn><mn>8</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>693</mn><mn>38</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Cỡ mẫu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>100</mn></mrow></semantics></math>. Ta có\n\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>∈</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>18</mn><mo>;</mo><mn>21</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⇒</mo><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>18</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mfrac displaystyle=\"false\"><mrow><mn>1</mn><mo>⋅</mo><mn>100</mn></mrow><mn>4</mn></mfrac><mo>−</mo><mn>22</mn></mrow><mn>38</mn></mfrac><mo>⋅</mo><mn>3</mn><mo>=</mo><mfrac displaystyle=\"true\"><mn>693</mn><mn>38</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D2-q064-v4",
+  "original_number": 64,
+  "kind": "mcq",
+  "based_on": "68545c2fd13354e7e99442d80f34beb5d021a1d1b5b50ce6272315d2c520f9ea",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>. Mệnh đề nào sau đây là <strong>sai</strong>?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>ln</mo><msup><mi>e</mi><mi>x</mi></msup><mo>=</mo><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>ln</mo><mn>1</mn><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>ln</mo><mi>e</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>x</mi><mrow><mo>ln</mo><mi>x</mi></mrow></msup><mo>=</mo><mi>x</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> ta có<br>Vế trái là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>ln</mo><mn>2</mn></mrow></semantics></math>, vế phải là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>.<br>Mà <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>ln</mo><mn>2</mn><mo>≠</mo><mn>2</mn></mrow></semantics></math> nên mệnh đề <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>x</mi><mrow><mo>ln</mo><mi>x</mi></mrow></msup><mo>=</mo><mi>x</mi></mrow></semantics></math> sai.",
+  "accepted_answers": []
+}

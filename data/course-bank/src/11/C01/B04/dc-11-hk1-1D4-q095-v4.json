@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-1D4-q095-v4",
+  "original_number": 95,
+  "kind": "tf",
+  "based_on": "43dfa1ff2f5afeba34e53e3d8c62cf246a7c08dc8294f411a58793b8267a01ae",
+  "prompt": "Cho hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>cos</mo><mi>x</mi></mrow></semantics></math> có đồ thị như hình bên dưới\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/a2ecd2cfd0f9b6b9152f41b03bb18b91b38fc27e725f31f7f683b29cc1a17f69.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Hàm số đã cho có đồ thị đối xứng qua trục <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>O</mi><mi>y</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Hàm số đã cho là hàm số chẵn"
+    },
+    {
+      "key": "c",
+      "text": "Phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math> có hai nghiệm phân biệt trên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mi>π</mi><mo>;</mo><mi>π</mi><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math> có tập nghiệm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mrow><mo>±</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>6</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>cos</mo><mi>x</mi></mrow></semantics></math> là hàm số chẵn. Suy ra hàm số đã cho có đồ thị đối xứng qua trục <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>O</mi><mi>y</mi></mrow></semantics></math>.</li><li>Hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>cos</mo><mi>x</mi></mrow></semantics></math> là hàm số chẵn.</li><li>Trên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mi>π</mi><mo>;</mo><mi>π</mi><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> đồ thị <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math> cắt đồ thị hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>cos</mo><mi>x</mi></mrow></semantics></math> tại 2 điểm.<br>Do đó phương trình có hai nghiệm phân biệt trên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mi>π</mi><mo>;</mo><mi>π</mi><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>⇔</mo><mo>cos</mo><mi>x</mi><mo>=</mo><mo>cos</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo>⇔</mo><mo>cos</mo><mi>x</mi><mo>=</mo><mo>±</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi><mo>,</mo><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mi>.</mi></mrow></semantics></math></li></ol>",
+  "accepted_answers": []
+}

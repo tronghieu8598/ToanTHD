@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D2-q032-v4",
+  "original_number": 32,
+  "kind": "mcq",
+  "based_on": "56c233f87a4d707f0c87e82ae4f76e17285f85f00346e7551ed9b48b140553e9",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><msub><mo>log</mo><mi>a</mi></msub><msup><mi>a</mi><mn>2</mn></msup><msup><mi>b</mi><mn>10</mn></msup></mrow></semantics></math> với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>. Tìm khẳng định đúng.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><mn>20</mn><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><mn>12</mn><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><mn>2</mn><mo>+</mo><mn>10</mn><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><mn>2</mn><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><msub><mo>log</mo><mi>a</mi></msub><msup><mi>a</mi><mn>2</mn></msup><msup><mi>b</mi><mn>10</mn></msup><mo>=</mo><msub><mo>log</mo><mi>a</mi></msub><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msub><mo>log</mo><mi>a</mi></msub><msup><mi>b</mi><mn>10</mn></msup><mo>=</mo><mn>2</mn><mo>+</mo><mn>10</mn><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow></semantics></math>.",
+  "accepted_answers": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-1D4-q082-v4",
+  "original_number": 82,
+  "kind": "tf",
+  "based_on": "8e35ac5cf853ddf92d546b7e262692b8aa9f93cc377342fbf47c92f7b56cd7a6",
+  "prompt": "Các mệnh đề sau đây là đúng hay sai?",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mi>x</mi><mo>−</mo><msup><mn>15</mn><mo>∘</mo></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>1</mn></mrow></semantics></math> có nghiệm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><msup><mn>30</mn><mo>∘</mo></msup><mo>+</mo><mi>k</mi><mo>⋅</mo><msup><mn>90</mn><mo>∘</mo></msup><mo>,</mo><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Cho biết <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mn>2</mn><mi>α</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>4</mn></mfrac></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>π</mi><mo>&lt;</mo><mi>α</mi><mo>&lt;</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mi>π</mi></mrow><mn>2</mn></mfrac></mrow></semantics></math>. Khi đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>α</mi><mo>=</mo><mfrac displaystyle=\"true\"><msqrt><mn>6</mn></msqrt><mn>4</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cot</mo><mn>3</mn><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><msqrt><mn>3</mn></msqrt></mfrac></mrow></semantics></math> tương đương phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cot</mo><mn>3</mn><mi>x</mi><mo>=</mo><mo>cot</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>6</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Cho biết <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>α</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>12</mn><mn>13</mn></mfrac></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mi>π</mi></mrow><mn>2</mn></mfrac><mo>&lt;</mo><mi>α</mi><mo>&lt;</mo><mn>2</mn><mi>π</mi></mrow></semantics></math>. Khi đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>α</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Do <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mi>π</mi></mrow><mn>2</mn></mfrac><mo>&lt;</mo><mi>α</mi><mo>&lt;</mo><mn>2</mn><mi>π</mi></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>α</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mn>2</mn><mi>α</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>4</mn></mfrac><mo>⇔</mo><mn>2</mn><msup><mo>cos</mo><mn>2</mn></msup><mi>α</mi><mo>−</mo><mn>1</mn><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>4</mn></mfrac><mo>⇔</mo><msup><mo>cos</mo><mn>2</mn></msup><mi>α</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>8</mn></mfrac><mo>⇔</mo><mo>cos</mo><mi>α</mi><mo>=</mo><mo>±</mo><mfrac displaystyle=\"true\"><msqrt><mn>6</mn></msqrt><mn>4</mn></mfrac></mrow></semantics></math>.<br>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>π</mi><mo>&lt;</mo><mi>α</mi><mo>&lt;</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mi>π</mi></mrow><mn>2</mn></mfrac></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>α</mi><mo>&lt;</mo><mn>0</mn></mrow></semantics></math>.<br>Suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>α</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><msqrt><mn>6</mn></msqrt><mn>4</mn></mfrac></mrow></semantics></math>.</li><li>Do <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><msqrt><mn>3</mn></msqrt></mfrac><mo>=</mo><mo>cot</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cot</mo><mn>3</mn><mi>x</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><msqrt><mn>3</mn></msqrt></mfrac><mo>⇔</mo><mo>cot</mo><mn>3</mn><mi>x</mi><mo>=</mo><mo>cot</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mi>x</mi><mo>−</mo><msup><mn>15</mn><mo>∘</mo></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>1</mn><mo>⇔</mo><mn>2</mn><mi>x</mi><mo>−</mo><msup><mn>15</mn><mo>∘</mo></msup><mo>=</mo><msup><mn>45</mn><mo>∘</mo></msup><mo>+</mo><mi>k</mi><mo>⋅</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>⇔</mo><mi>x</mi><mo>=</mo><msup><mn>30</mn><mo>∘</mo></msup><mo>+</mo><mi>k</mi><mo>⋅</mo><msup><mn>90</mn><mo>∘</mo></msup><mo>,</mo><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

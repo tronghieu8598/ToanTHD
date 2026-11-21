@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-7D2-q082-v4",
+  "original_number": 82,
+  "kind": "mcq",
+  "based_on": "f142dced0565be7a62e573371bf42a98d7bafe52384379fae8c6a7f985214542",
+  "prompt": "Đạo hàm của hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup><mo>⋅</mo><mo>cos</mo><mi>x</mi></mrow></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup><mo>−</mo><mo>sin</mo><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup><mo>+</mo><mo>sin</mo><mi>x</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mi mathvariant=\"normal\">e</mi><mn>2</mn></msup><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>cos</mo><mi>x</mi><mo>+</mo><mo>sin</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>cos</mo><mi>x</mi><mo>−</mo><mo>sin</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>f</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi><mo>⋅</mo><mo>cos</mo><mi>x</mi><mo>+</mo><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>cos</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi><mo>=</mo><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup><mo>⋅</mo><mo>cos</mo><mi>x</mi><mo>−</mo><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup><mo>⋅</mo><mo>sin</mo><mi>x</mi><mo>=</mo><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>cos</mo><mi>x</mi><mo>−</mo><mo>sin</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.",
+  "accepted_answers": []
+}

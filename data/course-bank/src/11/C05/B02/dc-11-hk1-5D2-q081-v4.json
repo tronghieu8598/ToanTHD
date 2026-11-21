@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk1-5D2-q081-v4",
+  "original_number": 81,
+  "kind": "short",
+  "based_on": "a484774837f3e2402558e1d85a4c4099d2d1a11995f0dbbac6dd85fbdc08b58e",
+  "prompt": "Một công ty sản xuất máy tính đã xác định được rằng, tính trung bình một nhân viên có thể lắp ráp được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>N</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>45</mn><mi>t</mi></mrow><mrow><mi>t</mi><mo>+</mo><mn>4</mn></mrow></mfrac></mrow></semantics></math> <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo>≥</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> bộ phận mỗi ngày sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>t</mi></semantics></math> ngày đào tạo. Tính <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>t</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mi>N</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.\n\t<div class=\"paragraph-gap\"></div>",
+  "choices": [],
+  "correct": "45",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>t</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mi>N</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>t</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><munder><mo>lim</mo><mrow><mi>t</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><mn>45</mn><mi>t</mi></mrow><mrow><mi>t</mi><mo>+</mo><mn>4</mn></mrow></mfrac><mo>=</mo><munder><mo>lim</mo><mrow><mi>t</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mn>45</mn><mrow><mn>1</mn><mo>+</mo><mfrac><mn>4</mn><mi>t</mi></mfrac></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>45</mn><mrow><mn>1</mn><mo>+</mo><mn>0</mn></mrow></mfrac><mo>=</mo><mn>45</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

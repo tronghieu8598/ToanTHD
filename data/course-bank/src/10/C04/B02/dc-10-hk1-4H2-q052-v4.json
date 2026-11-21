@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-4H2-q052-v4",
+  "original_number": 52,
+  "kind": "mcq",
+  "based_on": "976d8956c89ecf4d019e7ec7a20e68efba6a0788b4605d2250b9002116936681",
+  "prompt": "Một máy bay đang bay từ hướng Đông sang hướng Tây với tốc độ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>650</mn></semantics></math> km/h thì gặp luồng gió thổi từ hướng Đông Bắc sang hướng Tây Nam với vận tốc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>35</mn></semantics></math> km/h. Máy bay bị thay đổi vận tốc sau khi gặp gió thổi.\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/e1c657c6707adfca7c9f6ce685a71b22a60fc8dff5e9b1551ba095efebf13f8b.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure>\n\t\t<br><figure class=\"tex-figure\"><img src=\"/bank-assets/19543cd543626b81c3d0640b2551db2871d54cf0fbb447d793bb628f27c1dae0.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tTìm tốc độ mới của máy bay (kết quả làm tròn đến hàng đơn vị, đơn vị: km/h).",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>675</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>674</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>673</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>676</mn></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Dựng hình bình hành <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mi>N</mi><mi>P</mi><mi>Q</mi></mrow></semantics></math> thỏa mãn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mover><mrow><mi>M</mi><mi>N</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>=</mo><mn>650</mn><mo>,</mo><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mover><mrow><mi>M</mi><mi>Q</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>=</mo><mn>35</mn></mrow></semantics></math>.<br><div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/e86017d90026e41c62d0046a21ef5a7bfb1f3051f1092f03fad91cf462a272f3.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tKhi đó hướng bay và vận tốc mới của máy bay chính là vectơ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>M</mi><mi>P</mi></mrow><mo accent=\"true\">→</mo></mover></semantics></math>.<br>Theo định lý cosin trong tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mi>N</mi><mi>P</mi></mrow></semantics></math>, ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mi>P</mi><mo>=</mo><msqrt><mrow><mi>M</mi><msup><mi>N</mi><mn>2</mn></msup><mo>+</mo><mi>M</mi><msup><mi>Q</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mo>⋅</mo><mi>M</mi><mi>N</mi><mo>⋅</mo><mi>M</mi><mi>Q</mi><mo>⋅</mo><mo>cos</mo><msup><mn>135</mn><mo>∘</mo></msup></mrow></msqrt><mo>=</mo><msqrt><mrow><mn>423725</mn><mo>+</mo><mn>22750</mn><msqrt><mn>2</mn></msqrt></mrow></msqrt><mo>≈</mo><mn>675</mn><mi>.</mi></mrow></semantics></math></div>\n\t\tTốc độ mới của máy bay là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>675</mn></semantics></math> km/h.",
+  "accepted_answers": []
+}

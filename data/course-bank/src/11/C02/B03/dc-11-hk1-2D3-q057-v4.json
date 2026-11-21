@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-2D3-q057-v4",
+  "original_number": 57,
+  "kind": "mcq",
+  "based_on": "6ad0866fdc0feb6495cc564c9c5e59ffaaf60fcf75c6d9b8c3a82d86bacf4ab5",
+  "prompt": "Ông H có một căn hộ cho thuê, năm đầu tiên cho thuê với giá <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>60</mn></semantics></math> triệu đồng/năm, kể từ năm thứ hai trở đi, giá cho thuê mỗi năm tăng so với năm liền trước đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mi>%</mi></mrow></semantics></math>. Hỏi sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> năm, tổng số tiền ông <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>H</mi></semantics></math> thu về từ cho thuê căn hộ đó là bao nhiêu? (kết quả làm tròn đến hàng phần trăm).",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>332</mn><mo>,</mo><mn>54</mn></mrow></semantics></math> triệu đồng"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>333</mn><mo>,</mo><mn>54</mn></mrow></semantics></math> triệu đồng"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>330</mn><mo>,</mo><mn>54</mn></mrow></semantics></math> triệu đồng"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>331</mn><mo>,</mo><mn>54</mn></mrow></semantics></math> triệu đồng"
+    }
+  ],
+  "correct": "D",
+  "solution": "Giá thuê nhà lập thành cấp số nhân với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>60</mn></mrow></semantics></math> và công bội <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>q</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>60</mn><mo>+</mo><mn>60</mn><mo>⋅</mo><mn>5</mn><mi>%</mi></mrow><mn>60</mn></mfrac><mo>=</mo><mn>1</mn><mo>,</mo><mn>05</mn></mrow></semantics></math>.<br>Tổng số tiền ông H thu được sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> năm là\n\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mn>5</mn></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>−</mo><msup><mi>q</mi><mn>5</mn></msup></mrow><mrow><mn>1</mn><mo>−</mo><mi>q</mi></mrow></mfrac><mo>=</mo><mn>60</mn><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>−</mo><mn>1</mn><mo>,</mo><msup><mn>05</mn><mn>5</mn></msup></mrow><mrow><mn>1</mn><mo>−</mo><mn>1</mn><mrow><mo>,</mo><mn>05</mn></mrow></mrow></mfrac><mo>=</mo><mn>331</mn><mo>,</mo><mn>54</mn><mrow><mspace width=\"0.333em\"/><mtext mathvariant=\"normal\"> triệu đồng</mtext></mrow><mi>.</mi></mrow></semantics></math>",
+  "accepted_answers": []
+}

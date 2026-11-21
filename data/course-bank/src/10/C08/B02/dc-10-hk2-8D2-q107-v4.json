@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-8D2-q107-v4",
+  "original_number": 107,
+  "kind": "tf",
+  "based_on": "4054e9788102af0aece5093504a18b84d057bd8a63cd129a15c6353c902c5a64",
+  "prompt": "Một cửa hàng kem có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> vị: trà xanh, sôcôla, cà phê, dâu, vani. Bạn An muốn mua một cốc kem.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Số cách chọn cốc kem có đủ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> vị là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>1</mn></msubsup></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Số cách chọn cốc kem có đúng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> vị là là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>2</mn></msubsup></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Số cách chọn cốc kem có ít nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> vị là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>3</mn></msubsup><mo>+</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>4</mn></msubsup><mo>+</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>5</mn></msubsup></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Số cách chọn cốc kem có đúng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> vị sôcôla là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Số cách chọn cốc kem có đúng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> vị là là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>2</mn></msubsup></semantics></math>.</li><li>Số cách chọn cốc kem có đủ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> vị là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>5</mn></msubsup></semantics></math>.</li><li>Số cách chọn cốc kem có ít nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> vị là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>3</mn></msubsup><mo>+</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>4</mn></msubsup><mo>+</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>5</mn></msubsup></mrow></semantics></math>.</li><li>Số cách chọn cốc kem có đúng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> vị sôcôla là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>1</mn></msubsup><mo>=</mo><mn>1</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

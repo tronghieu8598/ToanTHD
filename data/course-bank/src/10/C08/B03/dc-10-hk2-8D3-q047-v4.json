@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-8D3-q047-v4",
+  "original_number": 47,
+  "kind": "mcq",
+  "based_on": "3eb07d57d2326ab28f719b34a4514cdb50dca8abe28dd2d261932f90cf830825",
+  "prompt": "Tổng tất cả các hệ số trong khai triển <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>5</mn></msup></semantics></math> bằng kết quả nào sau đây?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>0</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>7</mn><mn>5</mn></msup></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>4</mn><mn>5</mn></msup></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>5</mn></msup><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mn>5</mn></msubsup><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mi>k</mi></msubsup><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mn>5</mn><mo>−</mo><mi>k</mi></mrow></msup><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>k</mi></msup><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mn>5</mn></msubsup><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mi>k</mi></msubsup><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>k</mi></msup><mo>⋅</mo><msup><mn>3</mn><mrow><mn>5</mn><mo>−</mo><mi>k</mi></mrow></msup><mo>⋅</mo><msup><mi>x</mi><mrow><mn>5</mn><mo>−</mo><mi>k</mi></mrow></msup></mrow></semantics></math>.<br>Thay <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></semantics></math> ta có tổng các hệ số trong khai triển <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mi>x</mi><mo>−</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>5</mn></msup></semantics></math> là\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><munderover><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mn>5</mn></munderover><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mi>k</mi></msubsup><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>k</mi></msup><mo>⋅</mo><msup><mn>3</mn><mrow><mn>5</mn><mo>−</mo><mi>k</mi></mrow></msup><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>3</mn><mo>⋅</mo><mn>1</mn><mo>−</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>5</mn></msup><mo>=</mo><mo>−</mo><mn>1</mn><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

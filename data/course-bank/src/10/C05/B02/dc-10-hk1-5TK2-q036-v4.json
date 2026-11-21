@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-5TK2-q036-v4",
+  "original_number": 36,
+  "kind": "tf",
+  "based_on": "bdd27d619b6170bf5ddbdc34b6c1736981363df498ec95f3da56a826e5a40f91",
+  "prompt": "Mẫu số liệu sau cho biết sĩ số của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> lớp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> của một trường THPT: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>41</mn></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>45</mn></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>46</mn></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>43</mn></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>40</mn></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Trung vị của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>44</mn></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Mốt <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>M</mi><mn>0</mn></msub><mo>=</mo><mn>43</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Số trung bình của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>x</mi><mo accent=\"true\">¯</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>5</mn></mfrac><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>41</mn><mo>+</mo><mn>45</mn><mo>+</mo><mn>46</mn><mo>+</mo><mn>43</mn><mo>+</mo><mn>40</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Tứ phân vị thứ ba <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mn>46</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    false,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Sắp xếp các giá trị của mẫu số liệu theo thứ tự không giảm ta được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>40</mn></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>41</mn></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>43</mn></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>45</mn></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>46</mn></semantics></math>.<br>Suy ra trung vị của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>43</mn></semantics></math>.</li><li>Dãy số liệu có tần số bằng nhau nên không có Mốt.</li><li>Số trung bình của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>x</mi><mo accent=\"true\">¯</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>5</mn></mfrac><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>41</mn><mo>+</mo><mn>45</mn><mo>+</mo><mn>46</mn><mo>+</mo><mn>43</mn><mo>+</mo><mn>40</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>43</mn></mrow></semantics></math>.</li><li>Tứ phân vị thứ ba <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mn>45</mn><mo>,</mo><mn>5</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

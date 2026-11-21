@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-7D2-q073-v4",
+  "original_number": 73,
+  "kind": "mcq",
+  "based_on": "f7117de4530cdd22cccb52d8610c3ecff9026e281c465d4f0098f202f0c17f5d",
+  "prompt": "Tính đạo hàm của hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mo>sin</mo><mi>x</mi><mo>+</mo><msup><mn>19</mn><mi>x</mi></msup></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>2</mn><mi>x</mi><mo>+</mo><mo>cos</mo><mi>x</mi><mo>+</mo><msup><mn>19</mn><mi>x</mi></msup><mo>⋅</mo><mo>ln</mo><mn>19</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>2</mn><mi>x</mi><mo>−</mo><mo>cos</mo><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><msup><mn>19</mn><mi>x</mi></msup><mrow><mo>ln</mo><mn>19</mn></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>2</mn><mi>x</mi><mo>−</mo><mo>cos</mo><mi>x</mi><mo>+</mo><mi>x</mi><msup><mn>19</mn><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>2</mn><mi>x</mi><mo>−</mo><mo>cos</mo><mi>x</mi><mo>+</mo><msup><mn>19</mn><mi>x</mi></msup><mo>⋅</mo><mo>ln</mo><mn>19</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Theo quy tắc tính đạo hàm, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>2</mn><mi>x</mi><mo>+</mo><mo>cos</mo><mi>x</mi><mo>+</mo><msup><mn>19</mn><mi>x</mi></msup><mo>⋅</mo><mo>ln</mo><mn>19</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

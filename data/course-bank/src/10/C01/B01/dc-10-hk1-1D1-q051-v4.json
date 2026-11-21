@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-1D1-q051-v4",
+  "original_number": 51,
+  "kind": "tf",
+  "based_on": "963e72a04ed55c75eed5704c00ca82e6412024e9948cd48465d9153c66811ffa",
+  "prompt": "Cho mệnh đề ““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∃</mo><mi>n</mi><mo>∈</mo><mi>ℕ</mi><mo>:</mo><mspace width=\"0.167em\"/><mn>3</mn><mi>n</mi><mo>+</mo><mn>2</mn></mrow></semantics></math> là số chẵn””. Xác định tính đúng sai của các mệnh đề sau.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mi>n</mi><mo>+</mo><mn>2</mn></mrow></semantics></math>””  là một mệnh đề"
+    },
+    {
+      "key": "b",
+      "text": "Mệnh đề đã cho là mệnh đề đúng"
+    },
+    {
+      "key": "c",
+      "text": "Phủ định của mệnh đề đã cho là ““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∀</mo><mi>n</mi><mo>∈</mo><mi>ℕ</mi><mo>,</mo><mspace width=\"0.167em\"/><mn>3</mn><mi>n</mi><mo>+</mo><mn>2</mn></mrow></semantics></math> là số chẵn””"
+    },
+    {
+      "key": "d",
+      "text": "““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∀</mo><mi>n</mi><mo>∈</mo><mi>ℕ</mi><mo>,</mo><mspace width=\"0.167em\"/><mn>3</mn><mi>n</mi><mo>+</mo><mn>2</mn></mrow></semantics></math> là số lẻ””  là mệnh đề sai"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mi>n</mi><mo>+</mo><mn>2</mn></mrow></semantics></math>””  không phải là một mệnh đề mà là một mệnh đề chứa biến.</li><li>Mệnh đề đã cho là mệnh đề đúng (với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>).</li><li>Phủ định của mệnh đề đã cho là ““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∀</mo><mi>n</mi><mo>∈</mo><mi>ℕ</mi><mo>,</mo><mspace width=\"0.167em\"/><mn>3</mn><mi>n</mi><mo>+</mo><mn>2</mn></mrow></semantics></math> là số lẻ””.</li><li>““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>∀</mo><mi>n</mi><mo>∈</mo><mi>ℕ</mi><mo>,</mo><mspace width=\"0.167em\"/><mn>3</mn><mi>n</mi><mo>+</mo><mn>2</mn></mrow></semantics></math> là số lẻ””  là mệnh đề sai (chẳng hạn với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>).</li></ol>",
+  "accepted_answers": []
+}

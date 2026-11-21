@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-2D3-q065-v4",
+  "original_number": 65,
+  "kind": "tf",
+  "based_on": "1886e87a618584f204e4bfd043cd49ca680af37ef93335c8b07c7aef36491881",
+  "prompt": "Một người lên kế hoạch để đọc một cuốn sách có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>256</mn></semantics></math> trang như sau: ngày thứ nhất đọc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> trang sách, từ ngày thứ hai mỗi ngày đọc số trang gấp đôi số trang đã đọc của ngày liền trước đó. Xét tính đúng sai của các phát biểu sau:",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Ngày thứ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math>, người đó đọc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>16</mn></semantics></math> trang sách"
+    },
+    {
+      "key": "b",
+      "text": "Số trang sách người đó đọc theo thứ tự lập thành cấp số nhân với công bội là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Người đó đọc hết cuốn sách trong một tuần"
+    },
+    {
+      "key": "d",
+      "text": "Số trang sách người đó đọc trong ngày thứ sáu bằng tổng số trang sách đã đọc trong năm ngày trước đó"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "solution": "Số trang sách đọc được lập thành một cấp số nhân <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>:</mo><mn>1</mn><mo>;</mo><mspace width=\"0.222em\"/><mn>2</mn><mo>;</mo><mspace width=\"0.222em\"/><mn>4</mn><mo>;</mo><mi>…</mi></mrow></semantics></math> nên có số hạng đầu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn></mrow></semantics></math> và công bội <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>q</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>.\n\t\t<ol class=\"alpha-list\"><li>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>5</mn></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><msup><mi>q</mi><mn>4</mn></msup><mo>=</mo><mn>1</mn><mo>⋅</mo><msup><mn>2</mn><mn>4</mn></msup><mo>=</mo><mn>16</mn></mrow></semantics></math> nên ngày thứ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math>, người đó đọc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>16</mn></semantics></math> trang sách.</li><li>Đúng.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msub><mi>u</mi><mn>6</mn></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><msup><mi>q</mi><mn>5</mn></msup><mo>=</mo><mn>1</mn><mo>⋅</mo><msup><mn>2</mn><mn>5</mn></msup><mo>=</mo><mn>32</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msub><mi>S</mi><mn>5</mn></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>−</mo><msup><mi>q</mi><mn>5</mn></msup></mrow><mrow><mn>1</mn><mo>−</mo><mi>q</mi></mrow></mfrac><mo>=</mo><mn>1</mn><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>−</mo><msup><mn>2</mn><mn>5</mn></msup></mrow><mrow><mn>1</mn><mo>−</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mn>31</mn></mtd></mtr></mtable></mrow></semantics></math> nên số trang sách người đó đọc trong ngày thứ sáu <strong>khác</strong> tổng số trang sách đã đọc trong năm ngày trước đó.</li><li>Xét <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mi>n</mi></msub><mo>=</mo><mn>256</mn></mrow></semantics></math> và cần tìm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>n</mi></semantics></math>. Khi đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><msup><mi>q</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mn>256</mn><mo>⇔</mo><mn>1</mn><mo>⋅</mo><msup><mn>2</mn><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mn>256</mn><mo>⇔</mo><mi>n</mi><mo>=</mo><mn>9</mn></mrow></semantics></math>. Do đó, người đó đọc hết cuốn sách <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>256</mn></semantics></math> trang trong hơn một tuần.</li></ol>",
+  "accepted_answers": []
+}

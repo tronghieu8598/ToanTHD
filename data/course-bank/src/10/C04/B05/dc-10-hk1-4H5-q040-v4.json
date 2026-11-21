@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-4H5-q040-v4",
+  "original_number": 40,
+  "kind": "mcq",
+  "based_on": "994ec0bdf0c41ef72f758f5d750aa05ad6798e6904a9fcf9b40470670d6940e2",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> đều có cạnh bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math> và đường cao <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mi>H</mi></mrow></semantics></math>. Tích vô hướng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mrow><mi>C</mi><mi>H</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><msup><mi>a</mi><mn>2</mn></msup></mrow><mn>4</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>3</mn><msup><mi>a</mi><mn>2</mn></msup></mrow><mn>4</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><msup><mi>a</mi><mn>2</mn></msup><msqrt><mn>3</mn></msqrt></mrow><mn>2</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mrow><msup><mi>a</mi><mn>2</mn></msup><msqrt><mn>3</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "<div class=\"with-figure\"><div>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>,</mo><mover><mrow><mi>C</mi><mi>H</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mrow><mi>C</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>,</mo><mover><mrow><mi>C</mi><mi>H</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mn>180</mn><mo>∘</mo></msup><mo>−</mo><msup><mn>30</mn><mo>∘</mo></msup><mo>=</mo><msup><mn>150</mn><mo>∘</mo></msup></mrow></semantics></math>. <br><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mi>H</mi><mo>=</mo><mi>C</mi><mi>B</mi><mo>⋅</mo><mo>sin</mo><mi>B</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>a</mi><msqrt><mn>3</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></semantics></math>.<br>Vậy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>⋅</mo><mover><mrow><mi>C</mi><mi>H</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mi>B</mi><mi>C</mi><mo>⋅</mo><mi>C</mi><mi>H</mi><mo>⋅</mo><mo>cos</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mrow><mi>B</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>,</mo><mover><mrow><mi>C</mi><mi>H</mi></mrow><mo accent=\"true\">→</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>a</mi><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mi>a</mi><msqrt><mn>3</mn></msqrt></mrow><mn>2</mn></mfrac><mo>⋅</mo><mo>cos</mo><msup><mn>150</mn><mo>∘</mo></msup><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><msup><mi>a</mi><mn>2</mn></msup></mrow><mn>4</mn></mfrac></mrow></semantics></math>.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/1723d55418edb632db164db2e070fd71c6edabba3c1e507625457c735ccc0b7c.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

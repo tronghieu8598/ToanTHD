@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk2-7D2-q197-v4",
+  "original_number": 197,
+  "kind": "tf",
+  "based_on": "de8b55c3b72fc76ac880be7f12e98cb1aa728bf16143eabe91dc76b79a011702",
+  "prompt": "Cho hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mo>cos</mo><mn>2</mn></msup><mi>x</mi></mrow></semantics></math>. Xét tính đúng sai của các khẳng định sau.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math> có nghiệm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac><mo>+</mo><mi>k</mi><mi>π</mi><mo>,</mo><mspace width=\"0.222em\"/><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mo>−</mo><mo>sin</mo><mn>2</mn><mi>x</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mo>cos</mo><mn>2</mn></msup><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi><mo>=</mo><mn>2</mn><mo>cos</mo><mi>x</mi><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mo>sin</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mo>sin</mo><mn>2</mn><mi>x</mi></mrow></semantics></math>.\n\t\t<ol class=\"alpha-list\"><li>Sai vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mo>cos</mo><mn>2</mn></msup><mn>0</mn><mo>=</mo><mn>1</mn></mrow></semantics></math>.</li><li>Đúng vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mn>2</mn><mi>.</mi><mo>cos</mo><mi>x</mi><mi>.</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mo>sin</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mo>sin</mo><mn>2</mn><mi>x</mi></mrow></semantics></math>.</li><li>Sai vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mo>sin</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mi>.</mi><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn></mrow></semantics></math>.</li><li>Đúng vì phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mo>−</mo><mn>1</mn><mo>⇔</mo><mo>−</mo><mo>sin</mo><mn>2</mn><mi>x</mi><mo>=</mo><mo>−</mo><mn>1</mn><mo>⇔</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac><mo>+</mo><mi>k</mi><mi>π</mi><mo>,</mo><mspace width=\"0.222em\"/><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mi>.</mi></mrow></semantics></math></li></ol><div class=\"paragraph-gap\"></div>",
+  "accepted_answers": []
+}

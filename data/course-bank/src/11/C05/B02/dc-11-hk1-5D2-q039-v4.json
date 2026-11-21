@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-5D2-q039-v4",
+  "original_number": 39,
+  "kind": "mcq",
+  "based_on": "d5657577c8a0b3c9efaf9d0cb62b64253e5d16a3edb9d1ca87b88cd322ff4653",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>c</mi></semantics></math> là hằng số, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>k</mi></semantics></math> là một số nguyên dương. Quy tắc nào sau đây sai?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mi>c</mi><mo>=</mo><mi>c</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><msup><mi>x</mi><mi>k</mi></msup><mo>=</mo><mo>+</mo><mi>∞</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mn>1</mn><msup><mi>x</mi><mi>k</mi></msup></mfrac><mo>=</mo><mn>0</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mn>1</mn><msup><mi>x</mi><mi>k</mi></msup></mfrac><mo>=</mo><mo>+</mo><mi>∞</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Quy tắc sai là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mn>1</mn><msup><mi>x</mi><mi>k</mi></msup></mfrac><mo>=</mo><mo>+</mo><mi>∞</mi></mrow></semantics></math>.",
+  "accepted_answers": []
+}

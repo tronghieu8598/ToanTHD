@@ -1,0 +1,11 @@
+{
+  "id": "dc-10-hk2-8D2-q116-v4",
+  "original_number": 116,
+  "kind": "short",
+  "based_on": "58a87435cc8b93ac032b4832221b5d420e69c10837657bccc97fd21f723ae85c",
+  "prompt": "Một tổ có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> học sinh nữ và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math> học sinh nam. Số cách chọn ngẫu nhiên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> học sinh của tổ trong đó có cả học sinh nam và học sinh nữ là bao nhiêu?",
+  "choices": [],
+  "correct": "770",
+  "solution": "Số cách chọn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> học sinh nữ là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>5</mn></msubsup></semantics></math>.<br>Số cách chọn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> học sinh nam là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msubsup><mi mathvariant=\"normal\">C</mi><mn>7</mn><mn>5</mn></msubsup></semantics></math>.<br>Số cách chọn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> học sinh có cả nam và nữ là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>12</mn><mn>5</mn></msubsup><mo>−</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>5</mn></msubsup><mo>+</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>7</mn><mn>5</mn></msubsup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>770</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

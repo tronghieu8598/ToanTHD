@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-2D3-q071-v4",
+  "original_number": 71,
+  "kind": "tf",
+  "based_on": "5672b295270ec1a29f48fc92642addd509c7e63761ef0aa46e423303c9e3a341",
+  "prompt": "Cho cấp số nhân <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> thỏa mãn: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>2</mn></msub><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>3</mn></msub><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>8</mn></mfrac></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Số hạng đầu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac></mrow></semantics></math> và công bội <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>q</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> là dãy số tăng"
+    },
+    {
+      "key": "c",
+      "text": "Số hạng tổng quát là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mi>n</mi></msub><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mspace width=\"0.167em\"/><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo>∈</mo><msup><mi>ℕ</mi><mo>*</mo></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Số hạng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>5</mn></msub><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>32</mn></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>q</mi><mo>=</mo><mfrac displaystyle=\"true\"><msub><mi>u</mi><mn>3</mn></msub><msub><mi>u</mi><mn>2</mn></msub></mfrac><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>.<br>Khi đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>2</mn></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mo>⋅</mo><mi>q</mi><mo>⇒</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mn>1</mn></mrow><mn>2</mn></mfrac><mo>⇒</mo><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac></mrow></semantics></math>.<div class=\"paragraph-gap\"></div></li><li>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>3</mn></msub><mo>&lt;</mo><msub><mi>u</mi><mn>2</mn></msub></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>u</mi><mi>n</mi></msub></semantics></math> không là dãy tăng.<div class=\"paragraph-gap\"></div></li><li>Số hạng tổng quát là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mi>n</mi></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mo>⋅</mo><msup><mi>q</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mspace width=\"0.167em\"/><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo>∈</mo><msup><mi>ℕ</mi><mo>*</mo></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.<div class=\"paragraph-gap\"></div></li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>5</mn></msub><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>4</mn></msup><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>32</mn></mfrac></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

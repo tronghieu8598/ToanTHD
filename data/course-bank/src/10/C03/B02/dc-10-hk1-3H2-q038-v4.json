@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-3H2-q038-v4",
+  "original_number": 38,
+  "kind": "mcq",
+  "based_on": "840018946d0bc5c4c4bdc0a27810cfd342276da62b806045705ad34eb4e55524",
+  "prompt": "Tính bán kính đường tròn ngoại tiếp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>△</mi><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> biết <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mn>6</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi><mo>=</mo><mn>12</mn></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>B</mi><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>30</mn><mo>∘</mo></msup></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>6</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><msqrt><mn>3</mn></msqrt></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi><mo>=</mo><msqrt><mrow><mi>A</mi><msup><mi>B</mi><mn>2</mn></msup><mo>+</mo><mi>A</mi><msup><mi>C</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mo>⋅</mo><mi>A</mi><mi>B</mi><mo>⋅</mo><mi>A</mi><mi>C</mi><mo>⋅</mo><mo>cos</mo><mi>A</mi></mrow></msqrt><mo>=</mo><msqrt><mrow><mn>108</mn><mo>+</mo><mn>144</mn><mo>−</mo><mn>2</mn><mo>⋅</mo><mn>6</mn><msqrt><mn>3</mn></msqrt><mo>⋅</mo><mn>12</mn><mo>⋅</mo><mo>cos</mo><msup><mn>30</mn><mo>∘</mo></msup></mrow></msqrt><mo>=</mo><mn>6</mn></mrow></semantics></math>.<br>Bán kính đường tròn ngoại tiếp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>△</mi><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math>\tlà <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>B</mi><mi>C</mi></mrow><mrow><mn>2</mn><mo>sin</mo><mi>A</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>6</mn><mrow><mn>2</mn><mo>⋅</mo><mo>sin</mo><msup><mn>30</mn><mo>∘</mo></msup></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>6</mn><mrow><mn>2</mn><mo>⋅</mo><mfrac displaystyle=\"false\"><mn>1</mn><mn>2</mn></mfrac></mrow></mfrac><mo>=</mo><mn>6</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

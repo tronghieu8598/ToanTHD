@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-9XS1-q050-v4",
+  "original_number": 50,
+  "kind": "tf",
+  "based_on": "310c9cd27ad6b1dcf7b767307009a912166542f4f3aa77afac854fab2b00455b",
+  "prompt": "Trong kì thi tốt nghiệp THPT năm 2025, thí sinh thi bắt buộc 2 môn, gồm: Ngữ Văn, Toán và 2 môn tự chọn trong số các môn còn lại được học ở lớp 12, gồm: Ngoại ngữ, Lịch sử, Vật lý, Hoá học, Sinh học, Địa lý, Giáo dục kinh tế và pháp luật, Tin học, Công nghệ.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Thí sinh có tối đa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>72</mn></semantics></math> cách chọn ra 2 môn tự chọn để thi"
+    },
+    {
+      "key": "b",
+      "text": "Xác suất để thí sinh thi môn tự chọn là Vật lí bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>9</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Bạn Tuấn muốn dùng điểm thi tốt nghiệp THPT năm 2025 để xét tuyển đại học khối D01 (gồm các môn: Toán, Ngữ văn, Ngoại ngữ) thì bạn Tuấn có tất cả <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>9</mn></semantics></math> cách chọn môn thi"
+    },
+    {
+      "key": "d",
+      "text": "Bạn An và bạn Hoà cùng tham gia thi tốt nghiệp THPT năm 2025, xác suất để hai bạn không có môn thi tự chọn nào giống nhau là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>36</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    false,
+    false,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Số cách chọn 2 môn tự chọn của thí sinh là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>9</mn><mn>2</mn></msubsup><mo>=</mo><mn>36</mn></mrow></semantics></math> (cách).</li><li>Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>36</mn></semantics></math> tổ hợp 2 môn tự chọn.<br>Để thí sinh thi môn tự chọn là Vật lí, thì thí sinh cần chọn môn Vật lí và 1 trong 8 môn còn lại.<br>Do đó xác suất cần tìm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>⋅</mo><mn>8</mn></mrow><mn>36</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>9</mn></mfrac></mrow></semantics></math>.</li><li>Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>36</mn></semantics></math> cách chọn 2 môn tự chọn cho mỗi thí sinh An và Hoà. Do đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Ω</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>36</mn><mo>×</mo><mn>36</mn><mo>=</mo><mn>1296</mn></mrow></semantics></math>.<br>Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là biến cố: ““ Hai bạn An và Hoà không có môn thi tự chọn nào giống nhau””.<br><ul><li>Bạn An chọn 2 môn tự chọn, có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>36</mn></semantics></math> cách.</li><li>Để không có môn thi tự chọn nào giống nhau, bạn Hoà cần chọn 2 môn trong 7 môn còn lại, có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>7</mn><mn>2</mn></msubsup><mo>=</mo><mn>21</mn></mrow></semantics></math> (cách).</li></ul>\n\t\t\tTheo quy tắc nhân, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>36</mn><mo>×</mo><mn>21</mn><mo>=</mo><mn>756</mn></mrow></semantics></math>.<br>Vậy xác suất cần tìm là \n\t\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Ω</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>756</mn><mn>1296</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>21</mn><mn>36</mn></mfrac><mi>.</mi></mrow></semantics></math></div></li><li>Để xét tuyển đại học khối D01, bạn Tuấn cần chọn thi môn Ngoại ngữ và 1 môn trong 8 môn còn lại. Do đó bạn Tuấn có 8 cách chọn môn thi.</li></ol>",
+  "accepted_answers": []
+}

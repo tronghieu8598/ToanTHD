@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-6D2-q030-v4",
+  "original_number": 30,
+  "kind": "mcq",
+  "based_on": "43ab0fa9f409ef167877b85b356154f0a0c69dc370c1aefede598c7714dd1d17",
+  "prompt": "Một cửa hàng bán balo tiến hành khảo sát thị trường và thấy rằng, nếu giá bán mỗi chiếc balo là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> (nghìn đồng) thì số lượng bán được là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>200</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> chiếc. Tính lợi nhuận cao nhất mà cửa hàng có thể thu được trong mỗi ngày biết rằng mỗi chiếc balo của hàng nhập về có giá <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>60</mn></semantics></math> nghìn đồng.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mspace width=\"0.278em\"/><mn>900</mn><mspace width=\"0.278em\"/><mn>000</mn></mrow></semantics></math> đồng"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mspace width=\"0.278em\"/><mn>800</mn><mspace width=\"0.278em\"/><mn>000</mn></mrow></semantics></math> đồng"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mspace width=\"0.278em\"/><mn>100</mn><mspace width=\"0.278em\"/><mn>000</mn></mrow></semantics></math> đồng"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mspace width=\"0.278em\"/><mn>000</mn><mspace width=\"0.278em\"/><mn>000</mn></mrow></semantics></math> đồng"
+    }
+  ],
+  "correct": "A",
+  "solution": "Số tiền lợi nhuận mà cửa hàng bán được với giá <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> (nghìn đồng) là\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>200</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>x</mi><mo>−</mo><mn>60</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>200</mn><mo>−</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>260</mn><mi>x</mi><mo>−</mo><mn>1200</mn><mi>.</mi></mrow></semantics></math></div>\n\t\tTa có bảng biến thiên của hàm số trên là\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/45172bb736202cc63e5a5e396dbf0bcbb9eb3abf3cdc7d320874a72ebf6500d4.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tVậy lợi nhuận cao nhất mà của hàng có thể thu được trong mỗi ngày là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mspace width=\"0.278em\"/><mn>900</mn></mrow></semantics></math> nghìn đồng.",
+  "accepted_answers": []
+}

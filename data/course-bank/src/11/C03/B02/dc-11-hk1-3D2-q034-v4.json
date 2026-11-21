@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-3D2-q034-v4",
+  "original_number": 34,
+  "kind": "mcq",
+  "based_on": "aadceafa000a5046ee7ea0bcbd090baee41031c49810f7069fc7c50e92424384",
+  "prompt": "Đế chuẩn bị cho đồ án tốt nghiệp, một sinh viên y khoa đã khảo sát huyết áp tối đa của một số bệnh nhân và lập được bảng tần số ghép nhóm sau\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Huyết áp</td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>90</mn><mo>;</mo><mn>110</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>110</mn><mo>;</mo><mn>130</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>130</mn><mo>;</mo><mn>150</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>150</mn><mo>;</mo><mn>170</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>170</mn><mo>;</mo><mn>190</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>190</mn><mo>;</mo><mn>210</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td></tr><tr><td>Tần số</td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>27</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>32</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>48</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>35</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>22</mn></semantics></math></td></tr></tbody></table></div></div>\n\tXác định mốt của mẫu số liệu trên (kết quả làm tròn đến hàng phần trăm).",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>M</mi><mn>0</mn></msub><mo>≈</mo><mn>177</mn><mo>,</mo><mn>35</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>M</mi><mn>0</mn></msub><mo>≈</mo><mn>161</mn><mo>,</mo><mn>03</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>M</mi><mn>0</mn></msub><mo>≈</mo><mn>176</mn><mo>,</mo><mn>03</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>M</mi><mn>0</mn></msub><mo>≈</mo><mn>158</mn><mo>,</mo><mn>97</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Nhóm chứa mốt của mẫu số liệu là nhóm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>150</mn><mo>;</mo><mn>170</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>. Do đó\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>M</mi><mi>o</mi></msub><mo>=</mo><mn>150</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>48</mn><mo>−</mo><mn>32</mn></mrow><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>48</mn><mo>−</mo><mn>32</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>48</mn><mo>−</mo><mn>35</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac><mo>⋅</mo><mn>20</mn><mo>≈</mo><mn>161</mn><mo>,</mo><mn>03</mn><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

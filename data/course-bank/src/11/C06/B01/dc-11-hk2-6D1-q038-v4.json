@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D1-q038-v4",
+  "original_number": 38,
+  "kind": "mcq",
+  "based_on": "d3ddcc6b7d4960a5b848fa580ade7f2aad93a50a1394c849515c37e1d84db66f",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>b</mi></semantics></math> là các số thực dương; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>α</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>β</mi></semantics></math> là các số thực tùy ý. Khẳng định nào sau đây <strong>sai</strong>?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>a</mi><mi>α</mi></msup><mo>⋅</mo><msup><mi>a</mi><mi>β</mi></msup><mo>=</mo><msup><mi>a</mi><mrow><mi>α</mi><mo>+</mo><mi>β</mi></mrow></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>a</mi><mi>α</mi></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>β</mi></msup><mo>=</mo><msup><mi>a</mi><msup><mi>α</mi><mi>β</mi></msup></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>a</mi><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>α</mi></msup><mo>=</mo><msup><mi>a</mi><mi>α</mi></msup><mo>⋅</mo><msup><mi>b</mi><mi>α</mi></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><msup><mi>a</mi><mi>α</mi></msup><msup><mi>a</mi><mi>β</mi></msup></mfrac><mo>=</mo><msup><mi>a</mi><mrow><mi>α</mi><mo>−</mo><mi>β</mi></mrow></msup></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>a</mi><mi>α</mi></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>β</mi></msup><mo>=</mo><msup><mi>a</mi><mrow><mi>α</mi><mi>β</mi></mrow></msup></mrow></semantics></math>. Do đó khẳng định <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>a</mi><mi>α</mi></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>β</mi></msup><mo>=</mo><msup><mi>a</mi><msup><mi>α</mi><mi>β</mi></msup></msup></mrow></semantics></math> là sai.",
+  "accepted_answers": []
+}

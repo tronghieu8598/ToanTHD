@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-4H4-q033-v4",
+  "original_number": 33,
+  "kind": "mcq",
+  "based_on": "b32f294be3addb3126f16bc54f4cd9c09d61e1730be0ee2e324cf07538ddcf07",
+  "prompt": "<div class=\"with-figure\"><div>Một kệ để đồ bằng gỗ có mâm tầng dưới <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và mâm tầng trên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>E</mi><mi>F</mi><mi>G</mi><mi>H</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> song song với nhau. Bác thợ mộc đo được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>E</mi><mo>=</mo><mn>117</mn></mrow></semantics></math> cm, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mi>G</mi><mo>=</mo><mn>135</mn></mrow></semantics></math> cm và muốn đóng thêm mâm tầng giữa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>I</mi><mi>J</mi><mi>K</mi><mi>L</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> song song với hai mâm tầng trên, tầng dưới và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>E</mi><mi>I</mi><mo>=</mo><mn>39</mn></mrow></semantics></math> cm. Tính độ dài đoạn thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>K</mi><mi>G</mi></mrow></semantics></math>.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/9b74b535e15058610b11ff31a1a80118d3a1d1cd26a9b9a80e875bbe7071ca9a.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>50</mn></semantics></math> cm"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>90</mn></semantics></math> cm"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>45</mn></semantics></math> cm"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>48</mn></semantics></math> cm"
+    }
+  ],
+  "correct": "C",
+  "solution": "Áp dụng định lí Ta-lét trong không gian ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mi>E</mi><mi>I</mi></mrow><mrow><mi>E</mi><mi>A</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>K</mi><mi>G</mi></mrow><mrow><mi>G</mi><mi>C</mi></mrow></mfrac><mo>⇒</mo><mi>K</mi><mi>G</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>39</mn><mo>⋅</mo><mn>135</mn></mrow><mn>117</mn></mfrac><mo>=</mo><mn>45</mn><mrow><mspace width=\"0.333em\"/><mtext mathvariant=\"normal\"> cm</mtext></mrow><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

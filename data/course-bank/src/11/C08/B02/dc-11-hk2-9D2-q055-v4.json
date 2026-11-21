@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-9D2-q055-v4",
+  "original_number": 55,
+  "kind": "mcq",
+  "based_on": "6991c4e703a7be8e217e1e8b89a495cba8cfb6850e0fe6f81788bd131c42d5b6",
+  "prompt": "Một hộp đựng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20</mn></semantics></math> tấm thẻ cùng loại được đánh số từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> đến <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20</mn></semantics></math>. Rút ngẫu nhiên một tấm thẻ trong hộp. Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là biến cố ““ Rút được tấm thẻ ghi số chẵn lớn hơn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>9</mn></semantics></math>””, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math> là biến cố ““ Rút được tấm thẻ ghi số không nhỏ hơn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math> và không lớn hơn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>14</mn></semantics></math>””. Số phần tử của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow></semantics></math> là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>11</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>12</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>13</mn></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mn>10</mn><mo>;</mo><mn>12</mn><mo>;</mo><mn>14</mn><mo>;</mo><mn>16</mn><mo>;</mo><mn>18</mn><mo>;</mo><mn>20</mn><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mn>8</mn><mo>;</mo><mn>9</mn><mo>;</mo><mn>10</mn><mo>;</mo><mn>11</mn><mo>;</mo><mn>12</mn><mo>;</mo><mn>13</mn><mo>;</mo><mn>14</mn><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></mrow></semantics></math>.<br>Do đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mn>8</mn><mo>;</mo><mn>9</mn><mo>;</mo><mn>10</mn><mo>;</mo><mn>11</mn><mo>;</mo><mn>12</mn><mo>;</mo><mn>13</mn><mo>;</mo><mn>14</mn><mo>;</mo><mn>16</mn><mo>;</mo><mn>18</mn><mo>;</mo><mn>20</mn><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow><mo>⇒</mo><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo>∪</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>10</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

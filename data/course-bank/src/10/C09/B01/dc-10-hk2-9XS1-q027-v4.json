@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-9XS1-q027-v4",
+  "original_number": 27,
+  "kind": "mcq",
+  "based_on": "ecd5c56a756366d533ac5e55b9750a563f1c1e7e71a02ff2f5e24d8604b73d61",
+  "prompt": "Chọn ngẫu nhiên một học sinh trong lớp 11A. Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là biến cố ““ Học sinh được chọn là học sinh giỏi Toán””  và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math> là biến cố ““ Học sinh được chọn là học sinh giỏi Hóa””. Ký hiệu biến cố ““ Học sinh được chọn là học sinh giỏi Toán và giỏi Hóa””  là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover><mo>∪</mo><mi>B</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∪</mo><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Biến cố ““ Học sinh được chọn là học sinh giỏi Toán và giỏi Hóa””  tương ứng với giao của hai biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math>, tức là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow></semantics></math>.",
+  "accepted_answers": []
+}

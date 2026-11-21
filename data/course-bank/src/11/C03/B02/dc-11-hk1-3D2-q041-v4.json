@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-3D2-q041-v4",
+  "original_number": 41,
+  "kind": "mcq",
+  "based_on": "6b7844aff19192be5c93ced03e1526eeb543785587e34abc9bf0ac66ffca1215",
+  "prompt": "Mức thưởng Tết (triệu đồng) của các công nhân trong một nhà máy được cho trong bảng sau\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td><strong>Mức thưởng</strong></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>5</mn><mo>;</mo><mn>10</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>10</mn><mo>;</mo><mn>15</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>15</mn><mo>;</mo><mn>20</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>20</mn><mo>;</mo><mn>25</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>25</mn><mo>;</mo><mn>30</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td></tr><tr><td><strong>Số công nhân</strong></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>19</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>30</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>42</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math></td></tr></tbody></table></div></div>\n\tTính mốt của mẫu số liệu ghép nhóm.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>21</mn><mo>,</mo><mn>25</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>15</mn><mo>,</mo><mn>25</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>20</mn><mo>,</mo><mn>25</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>16</mn><mo>,</mo><mn>25</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Nhóm chứa mốt là: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>15</mn><mo>;</mo><mn>20</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>.<br>Mốt của mẫu số liệu ghép nhóm là: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>M</mi><mo>∘</mo></msub><mo>=</mo><mn>15</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>42</mn><mo>−</mo><mn>30</mn></mrow><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>42</mn><mo>−</mo><mn>30</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>42</mn><mo>−</mo><mn>6</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>20</mn><mo>−</mo><mn>15</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>16</mn><mo>,</mo><mn>25</mn><mi>.</mi></mrow></semantics></math>",
+  "accepted_answers": []
+}

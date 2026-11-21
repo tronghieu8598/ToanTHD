@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-1D1-q047-v4",
+  "original_number": 47,
+  "kind": "tf",
+  "based_on": "1d726a38a1655196b91e77086d5099c3097854277984c4bfaaa25fd9412ac704",
+  "prompt": "Với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>n</mi></semantics></math> là số thực, xét mệnh đề chứa biến <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>:</mo><mtext mathvariant=\"normal\">“</mtext><msup><mi>n</mi><mn>2</mn></msup><mo>&gt;</mo><mn>9</mn><mtext mathvariant=\"normal\">”</mtext></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Q</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>:</mo><mtext mathvariant=\"normal\">“</mtext><mi>n</mi><mo>&gt;</mo><mn>3</mn><mtext mathvariant=\"normal\">”</mtext></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Phát biểu mệnh đề đảo của mệnh đề <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>⇒</mo><mi>Q</mi></mrow></semantics></math> là ``Nếu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>3</mn></mrow></semantics></math> thì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>&gt;</mo><mn>9</mn></mrow></semantics></math>&#x27;&#x27;"
+    },
+    {
+      "key": "b",
+      "text": "Mệnh đề <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>⇒</mo><mi>Q</mi></mrow></semantics></math> là một mệnh đề đúng"
+    },
+    {
+      "key": "c",
+      "text": "Mệnh đề <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> là một mệnh đề đúng"
+    },
+    {
+      "key": "d",
+      "text": "Mệnh đề <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>Q</mi></semantics></math> là hai mệnh đề tương đương"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Giả sử với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><mo>−</mo><mn>4</mn><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math> thì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>&gt;</mo><mn>9</mn><mo>⇒</mo><mo>−</mo><mn>4</mn><mo>&gt;</mo><mn>3</mn></mrow></semantics></math> (vô lý).</li><li>Mệnh đề đảo của mệnh đề <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>⇒</mo><mi>Q</mi></mrow></semantics></math> là ``Nếu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>3</mn></mrow></semantics></math> thì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>&gt;</mo><mn>9</mn></mrow></semantics></math>&#x27;&#x27;.</li><li>Với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>5</mn></mrow></semantics></math> thì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>:</mo><msup><mn>5</mn><mn>2</mn></msup><mo>&gt;</mo><mn>9</mn></mrow></semantics></math> (đúng).</li><li>Xét mệnh đề đảo của mệnh đề <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>⇒</mo><mi>Q</mi></mrow></semantics></math>.<br>Mệnh đề đảo là mệnh đề đúng.<br>Mệnh đề <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>⇒</mo><mi>Q</mi></mrow></semantics></math> là mệnh đề sai.<br>Do đó, hai mệnh đề <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>Q</mi></semantics></math> không phải hai mệnh đề tương đương.</li></ol>",
+  "accepted_answers": []
+}

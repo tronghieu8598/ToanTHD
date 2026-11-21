@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D4-q088-v4",
+  "original_number": 88,
+  "kind": "mcq",
+  "based_on": "c919d90105098847ccdb9cc689b510fb11be6b59ec6226c13d50ec97627830a1",
+  "prompt": "Trên một chiếc đài Radio FM có vạch chia để người đùng có thể dò sóng cần tìm. Vạch ngoài cùng bên trái và vạch ngoài cùng bên phải tương ứng với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>88</mn></semantics></math> Mhz và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>108</mn></semantics></math> Mhz. Hai vạch này cách nhau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> cm. Biết vị trí của vạch cách vạch ngoài cùng bên trái <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>d</mi></semantics></math> cm thì có tần số bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>⋅</mo><msup><mi>a</mi><mi>d</mi></msup></mrow></semantics></math> Mhz với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>k</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math> là hai hằng số. Tìm vị trí tốt nhất của vạch để bắt sóng VOH - Đài Tiếng nói Nhân dân Thành phố Hồ Chí Minh với tần số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>99</mn><mo>,</mo><mn>9</mn></mrow></semantics></math> Mhz(làm tròn đến hàng phần trăm).",
+  "choices": [
+    {
+      "key": "A",
+      "text": "Cách vạch ngoài cùng bên phải <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mo>,</mo><mn>98</mn></mrow></semantics></math> cm"
+    },
+    {
+      "key": "B",
+      "text": "Cách vạch ngoài cùng bên trái <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>6</mn><mo>,</mo><mn>19</mn></mrow></semantics></math> cm"
+    },
+    {
+      "key": "C",
+      "text": "Cách vạch ngoài cùng bên trái <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>7</mn><mo>,</mo><mn>35</mn></mrow></semantics></math> cm"
+    },
+    {
+      "key": "D",
+      "text": "Cách vạch ngoài cùng bên phải <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>,</mo><mn>46</mn></mrow></semantics></math> cm"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ở tần số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>88</mn></semantics></math> Mhz, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>0</mn></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>⋅</mo><msup><mi>a</mi><mn>0</mn></msup><mo>=</mo><mn>88</mn><mo>⇔</mo><mi>k</mi><mo>=</mo><mn>88</mn></mrow></semantics></math>.<br>Ở tần số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>108</mn></semantics></math> Mhz, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>10</mn></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>⋅</mo><msup><mi>a</mi><mn>10</mn></msup><mo>=</mo><mn>108</mn><mo>⇔</mo><msup><mi>a</mi><mn>10</mn></msup><mo>=</mo><mfrac displaystyle=\"true\"><mn>108</mn><mi>k</mi></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>108</mn><mn>88</mn></mfrac><mo>⇔</mo><mi>a</mi><mo>=</mo><mroot><mfrac displaystyle=\"true\"><mn>108</mn><mn>88</mn></mfrac><mn>10</mn></mroot></mrow></semantics></math>.<br>Để bắt được sóng ở tần số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>99</mn><mo>,</mo><mn>9</mn></mrow></semantics></math> Mhz thì\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>⋅</mo><msup><mi>a</mi><mi>d</mi></msup><mo>=</mo><mn>99</mn><mo>,</mo><mn>9</mn><mo>⇔</mo><msup><mi>a</mi><mi>d</mi></msup><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>99</mn><mo>,</mo><mn>9</mn></mrow><mi>k</mi></mfrac><mo>⇔</mo><mi>d</mi><mo>=</mo><msub><mo>log</mo><mi>a</mi></msub><mfrac displaystyle=\"true\"><mrow><mn>99</mn><mo>,</mo><mn>9</mn></mrow><mi>k</mi></mfrac><mo>=</mo><msub><mo>log</mo><mroot><mfrac displaystyle=\"false\"><mn>108</mn><mn>88</mn></mfrac><mn>10</mn></mroot></msub><mfrac displaystyle=\"true\"><mrow><mn>99</mn><mo>,</mo><mn>9</mn></mrow><mn>88</mn></mfrac><mo>≈</mo><mn>6</mn><mo>,</mo><mn>19</mn><mrow><mspace width=\"0.333em\"/><mtext mathvariant=\"normal\"> cm.</mtext></mrow></mrow></semantics></math></div>\n\t\tVậy vạch của máy cách vạch ngoài cùng bên trái <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>6</mn><mo>,</mo><mn>19</mn></mrow></semantics></math> cm.",
+  "accepted_answers": []
+}

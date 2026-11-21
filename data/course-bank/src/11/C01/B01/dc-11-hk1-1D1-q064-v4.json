@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-1D1-q064-v4",
+  "original_number": 64,
+  "kind": "tf",
+  "based_on": "433c51b085399dc9edeb45e26b3dc32e60d1b3bea30672368e063db873a0b85b",
+  "prompt": "Hãy cho biết tính đúng sai của mỗi khẳng định sau.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Chu vi của đường tròn có bán kính <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>R</mi></semantics></math> bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>π</mi><mi>R</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Độ dài của một cung tròn có số đo <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> rad bằng bán kính <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>R</mi></semantics></math> của cung tròn đó"
+    },
+    {
+      "key": "c",
+      "text": "Độ dài của một cung tròn có bán kính <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>R</mi></semantics></math>, có số đo <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>α</mi></semantics></math> rad bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>⋅</mo><mi>α</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Cung tròn có số đo <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>π</mi></semantics></math> rad thì có độ dài bằng nửa chu vi của đường tròn tương ứng"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "solution": "Ta có\n\t\t<ol class=\"alpha-list\"><li>Chu vi của đường tròn bán kính <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>R</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mo>=</mo><mn>2</mn><mi>π</mi><mi>R</mi></mrow></semantics></math>.</li><li>Độ dài <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>l</mi></semantics></math> của một cung tròn bán kính <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>R</mi></semantics></math>, có số đo <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> rad là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>l</mi><mo>=</mo><mi>R</mi></mrow></semantics></math>.</li><li>Độ dài <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>l</mi></semantics></math> của một cung tròn có bán kính <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>R</mi></semantics></math>, có số đo <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>α</mi></semantics></math> rad là  <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>l</mi><mo>=</mo><mi>R</mi><mo>⋅</mo><mi>α</mi></mrow></semantics></math>.</li><li>Cung tròn có số đo <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>π</mi></semantics></math> rad thì có độ dài bằng nửa chu vi của đường tròn tương ứng.</li></ol>",
+  "accepted_answers": []
+}

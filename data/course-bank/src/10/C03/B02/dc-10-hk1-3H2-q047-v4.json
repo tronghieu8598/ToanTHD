@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-3H2-q047-v4",
+  "original_number": 47,
+  "kind": "mcq",
+  "based_on": "4b4c364cab19e96182755db6174424e90b59cbcde33f523a5c3dc2b98536d0e6",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi><mo>=</mo><mn>2</mn><msqrt><mn>21</mn></msqrt></mrow></semantics></math>, góc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>60</mn><mo>∘</mo></msup></semantics></math> và góc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math> bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>71</mn><mo>∘</mo></msup></semantics></math>. Độ dài cạnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi></mrow></semantics></math> là(kết quả làm tròn đến hàng đơn vị).",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi><mo>=</mo><mn>10</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi><mo>=</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi><mo>=</mo><mn>9</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi><mo>=</mo><mn>8</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Áp dụng định lí sin cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math>, ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mi>A</mi><mi>C</mi></mrow><mrow><mo>sin</mo><mi>B</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>B</mi><mi>C</mi></mrow><mrow><mo>sin</mo><mi>A</mi></mrow></mfrac><mo>⇒</mo><mi>A</mi><mi>C</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>B</mi><mi>C</mi><mo>⋅</mo><mo>sin</mo><mi>B</mi></mrow><mrow><mo>sin</mo><mi>A</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msqrt><mn>21</mn></msqrt><mo>⋅</mo><mo>sin</mo><msup><mn>71</mn><mo>∘</mo></msup></mrow><mrow><mo>sin</mo><msup><mn>60</mn><mo>∘</mo></msup></mrow></mfrac><mo>≈</mo><mn>9</mn><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

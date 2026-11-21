@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-1D2-q052-v4",
+  "original_number": 52,
+  "kind": "tf",
+  "based_on": "cefdea6bfa67b2fcdefc0ba9b371a5cac4dc5d9552e457ed8c49f662855ef224",
+  "prompt": "Cho hai tập hợp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo>;</mo><mn>7</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo>;</mo><mn>7</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>. Khi đó",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Tập hợp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo>⊂</mo><mi>A</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Tập hợp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>⊂</mo><mi>B</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Có đúng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> tập hợp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>X</mi></semantics></math> thoả mãn điều kiện sau: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>⊂</mo><mi>X</mi><mo>⊂</mo><mi>B</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Tập hợp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math> tập con"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li><strong>Đúng</strong>.<br><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo>;</mo><mn>7</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math> tập con gồm: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>⌀</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>1</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>7</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">{</mo><mn>3</mn><mo>;</mo><mn>7</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>7</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo>;</mo><mn>7</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>.</li><li><strong>Sai</strong>.<br>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>∈</mo><mi>B</mi></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>∉</mo><mi>A</mi></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo>⊄</mo><mi>A</mi></mrow></semantics></math>.</li><li><strong>Đúng</strong>.<br>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>1</mn><mo>∈</mo><mi>B</mi></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mo>∈</mo><mi>B</mi></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>7</mn><mo>∈</mo><mi>B</mi></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo>;</mo><mn>7</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>⊂</mo><mi>B</mi></mrow></semantics></math>.</li><li><strong>Sai</strong>.<br>Với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo>;</mo><mn>7</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math> hoặc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>X</mi><mo>=</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo>;</mo><mn>3</mn><mo>;</mo><mn>7</mn><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math> ta đều có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>⊂</mo><mi>X</mi><mo>⊂</mo><mi>B</mi></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

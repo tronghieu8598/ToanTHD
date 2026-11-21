@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk1-2D3-q083-v4",
+  "original_number": 83,
+  "kind": "short",
+  "based_on": "300d6c8daf95b91ba06631ca1462f3383fa45ce665af0b533894f27dfee3b443",
+  "prompt": "Vào đầu mỗi tháng, ông An đều gửi vào ngân hàng số tiền cố định 30 triệu đồng theo hình thức lãi kép với lãi suất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>6</mn><mi>%</mi></mrow></semantics></math>/tháng. Tính số tiền ông An có được sau đúng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> tháng gửi tiết kiệm (kết quả làm tròn đến hàng phần mười).",
+  "choices": [],
+  "correct": "60.5",
+  "solution": "Số tiền ông An có được\n\t\t<ul><li>Sau tháng thứ nhất: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>T</mi><mn>1</mn></msub><mo>=</mo><mn>30</mn><mo>+</mo><mn>30</mn><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>0</mn><mo>,</mo><mn>6</mn></mrow><mn>100</mn></mfrac><mo>=</mo><mn>30</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>0</mn><mo>,</mo><mn>6</mn></mrow><mn>100</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>30</mn><mo>,</mo><mn>18</mn></mrow></semantics></math> (triệu đồng).</li><li>Sau tháng thứ hai: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>T</mi><mn>2</mn></msub><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>30</mn><mo>,</mo><mn>18</mn><mo>+</mo><mn>30</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mn>0</mn><mo>,</mo><mn>6</mn><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>30</mn><mo>,</mo><mn>18</mn><mo>+</mo><mn>30</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>≈</mo><mn>60</mn><mo>,</mo><mn>5</mn></mrow></semantics></math> (triệu đồng).</li></ul>",
+  "accepted_answers": []
+}

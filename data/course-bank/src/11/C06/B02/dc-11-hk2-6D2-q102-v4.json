@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk2-6D2-q102-v4",
+  "original_number": 102,
+  "kind": "tf",
+  "based_on": "6c65ad7ebcfd4e823b6b0aa3c39b149b00b1fb5f861d75083e4a2dc1666ad4d0",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>, với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>b</mi></semantics></math> là hai số dương khác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Giá trị của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>b</mi></msub><mroot><mi>a</mi><mn>3</mn></mroot></mrow></semantics></math> bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>12</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Giá trị của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mrow><msup><mi>a</mi><mn>3</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mrow></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>a</mi><mn>2</mn></msup><msup><mi>b</mi><mn>3</mn></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Giá trị của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><msup><mi>a</mi><mn>2</mn></msup></msub><mi>b</mi></mrow></semantics></math> bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Giá trị của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>a</mi></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>a</mi><mn>2</mn></msup><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><msup><mi>a</mi><mn>2</mn></msup></msub><mi>b</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>⋅</mo><mn>4</mn><mo>=</mo><mn>2</mn></mrow></semantics></math>. <br>Vậy mệnh đề đã cho sai.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>a</mi></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>a</mi><mn>2</mn></msup><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msub><mo>log</mo><mi>a</mi></msub><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi><mo>=</mo><mn>2</mn><mo>+</mo><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi><mo>=</mo><mn>2</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>6</mn></mrow></semantics></math>. <br>Vậy mệnh đề đã cho đúng.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>b</mi></msub><mroot><mi>a</mi><mn>3</mn></mroot><mo>=</mo><msub><mo>log</mo><mi>b</mi></msub><msup><mi>a</mi><mfrac displaystyle=\"false\"><mn>1</mn><mn>3</mn></mfrac></msup><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><msub><mo>log</mo><mi>b</mi></msub><mi>a</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>12</mn></mfrac></mrow></semantics></math>. <br>Vậy mệnh đề đã cho đúng.</li><li>Ta có \n\t\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mrow><msup><mi>a</mi><mn>3</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mrow></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>a</mi><mn>2</mn></msup><msup><mi>b</mi><mn>3</mn></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msub><mo>log</mo><mi>a</mi></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>a</mi><mn>2</mn></msup><msup><mi>b</mi><mn>3</mn></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mrow><msub><mo>log</mo><mi>a</mi></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>a</mi><mn>3</mn></msup><msup><mi>b</mi><mn>2</mn></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msub><mo>log</mo><mi>a</mi></msub><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msub><mo>log</mo><mi>a</mi></msub><msup><mi>b</mi><mn>3</mn></msup></mrow><mrow><msub><mo>log</mo><mi>a</mi></msub><msup><mi>a</mi><mn>3</mn></msup><mo>+</mo><msub><mo>log</mo><mi>a</mi></msub><msup><mi>b</mi><mn>2</mn></msup></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msub><mo>log</mo><mi>a</mi></msub><mi>a</mi><mo>+</mo><mn>3</mn><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow><mrow><mn>3</mn><msub><mo>log</mo><mi>a</mi></msub><mi>a</mi><mo>+</mo><mn>2</mn><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mo>+</mo><mn>3</mn><mo>⋅</mo><mn>4</mn></mrow><mrow><mn>3</mn><mo>+</mo><mn>2</mn><mo>⋅</mo><mn>4</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>14</mn><mn>11</mn></mfrac></mrow></semantics></math>.<br>Vậy mệnh đề đã cho sai.</li></ol>",
+  "accepted_answers": []
+}

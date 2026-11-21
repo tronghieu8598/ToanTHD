@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-8D1-q032-v4",
+  "original_number": 32,
+  "kind": "mcq",
+  "based_on": "396d1e4edf98bb19bd036e0dbfa32063c908de24b9ef71eb24266add37a7055e",
+  "prompt": "Từ thành phố A đến thành phố B có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> con đường, từ thành phố B đến thành phố C có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math> con đường. Có bao nhiêu cách để đi từ thành phố A đến thành phố C mà phải đi qua thành phố B?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>15</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>21</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>24</mn></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Từ thành phố A đến thành phố B có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> con đường.<br>Ứng với mỗi con đường trên có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math> con đường để đi từ thành phố B đến thành phố C.<br>Vậy có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mo>⋅</mo><mn>7</mn><mo>=</mo><mn>21</mn></mrow></semantics></math> cách có thể đi từ \tthành phố A đến thành phố C mà phải đi qua thành phố B.",
+  "accepted_answers": []
+}

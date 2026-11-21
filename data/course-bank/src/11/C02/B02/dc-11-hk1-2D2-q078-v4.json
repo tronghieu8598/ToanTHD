@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-2D2-q078-v4",
+  "original_number": 78,
+  "kind": "tf",
+  "based_on": "dd243d1af1f82d50194732707589954ced827c62a8cc7bcf4029864370b79ea0",
+  "prompt": "Cho cấp số cộng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mi>n</mi></msub><mo>:</mo><mn>1</mn><mo>;</mo><mspace width=\"0.222em\"/><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac><mo>;</mo><mspace width=\"0.222em\"/><mn>2</mn><mo>;</mo><mspace width=\"0.222em\"/><mfrac displaystyle=\"true\"><mn>5</mn><mn>2</mn></mfrac><mo>;</mo><mspace width=\"0.222em\"/><mn>3</mn><mo>;</mo><mi>…</mi></mrow></semantics></math>. Xét tính đúng sai của các phát biểu sau:",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Tổng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>99</mn></semantics></math> số hạng đầu của cấp số cộng là một số nguyên"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> là một dãy số tăng"
+    },
+    {
+      "key": "c",
+      "text": "Số hạng thứ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>11</mn></semantics></math> của cấp số cộng là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>11</mn></msub><mo>=</mo><mfrac displaystyle=\"true\"><mn>41</mn><mn>2</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Cấp số cộng có số hạng đầu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn></mrow></semantics></math> và công sai <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    false,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Cấp số cộng có số hạng đầu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn></mrow></semantics></math> và công sai <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>11</mn></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><mn>10</mn><mi>d</mi><mo>=</mo><mn>1</mn><mo>+</mo><mn>10</mn><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>=</mo><mn>6</mn></mrow></semantics></math>.</li><li>Ta thấy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>&gt;</mo><msub><mi>u</mi><mi>n</mi></msub></mrow></semantics></math> (<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>∈</mo><msup><mi>ℕ</mi><mo>*</mo></msup></mrow></semantics></math>), nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> là một dãy số tăng.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mn>99</mn></msub><mo>=</mo><mfrac displaystyle=\"true\"><mn>99</mn><mn>2</mn></mfrac><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><mn>98</mn><mi>d</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>99</mn><mn>2</mn></mfrac><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>⋅</mo><mn>1</mn><mo>+</mo><mn>98</mn><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>5049</mn><mn>2</mn></mfrac></mrow></semantics></math>. Vậy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mn>99</mn></msub><mo>∉</mo><mi>ℤ</mi></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

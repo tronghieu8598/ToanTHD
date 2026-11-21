@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-8D3-q029-v4",
+  "original_number": 29,
+  "kind": "mcq",
+  "based_on": "4f9db0f013b4fa58b8589bb65573fc2093a3cf244211662c6028cd6c982b393b",
+  "prompt": "Tìm số hạng chứa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi>x</mi><mn>3</mn></msup></semantics></math> trong khai triển <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo>−</mo><mn>3</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>5</mn></msup></semantics></math>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4320</mn><msup><mi>x</mi><mn>3</mn></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>4320</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>4320</mn><msup><mi>x</mi><mn>3</mn></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4320</mn></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Ta có \n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo>−</mo><mn>3</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>5</mn></msup></mtd><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><msup><mn>4</mn><mn>5</mn></msup><mo>+</mo><mn>5</mn><mo>⋅</mo><msup><mn>4</mn><mn>4</mn></msup><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>3</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mn>10</mn><mo>⋅</mo><msup><mn>4</mn><mn>3</mn></msup><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>3</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>10</mn><mo>⋅</mo><msup><mn>4</mn><mn>2</mn></msup><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>3</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>3</mn></msup><mo>+</mo><mn>5</mn><mo>⋅</mo><mn>4</mn><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>3</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>4</mn></msup><mo>+</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>3</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>5</mn></msup></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mn>1024</mn><mo>−</mo><mn>3840</mn><mi>x</mi><mo>+</mo><mn>5760</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>4320</mn><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>1620</mn><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>243</mn><msup><mi>x</mi><mn>5</mn></msup><mi>.</mi></mtd></mtr></mtable></semantics></math></div>\n\t\tVậy số hạng chứa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi>x</mi><mn>3</mn></msup></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>4320</mn><msup><mi>x</mi><mn>3</mn></msup></mrow></semantics></math>.",
+  "accepted_answers": []
+}

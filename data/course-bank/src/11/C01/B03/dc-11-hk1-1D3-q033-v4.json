@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-1D3-q033-v4",
+  "original_number": 33,
+  "kind": "mcq",
+  "based_on": "66351341d02061e83d40977c05df21a45659c1b6bd24fe0e35e517d883dd2639",
+  "prompt": "Tìm tập xác định <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>𝒟</mi></semantics></math> của hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>2024</mn><mrow><mo>cos</mo><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi><mo>\\</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mi>π</mi><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi><mo>,</mo><mspace width=\"0.167em\"/><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi><mo>\\</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mi>k</mi><mi>π</mi><mo>,</mo><mspace width=\"0.167em\"/><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi><mo>\\</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mi>k</mi><mn>2</mn><mi>π</mi><mo>,</mo><mspace width=\"0.167em\"/><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Hàm số xác định khi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>x</mi><mo>≠</mo><mo>−</mo><mn>1</mn><mo>⇔</mo><mi>x</mi><mo>≠</mo><mi>π</mi><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi><mo>,</mo><mspace width=\"0.167em\"/><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>.<br>Tập xác định của hàm số là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi><mo>\\</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mi>π</mi><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi><mo>,</mo><mspace width=\"0.167em\"/><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></mrow></semantics></math>.",
+  "accepted_answers": []
+}

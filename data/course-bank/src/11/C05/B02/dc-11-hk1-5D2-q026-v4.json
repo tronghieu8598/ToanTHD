@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-5D2-q026-v4",
+  "original_number": 26,
+  "kind": "mcq",
+  "based_on": "9fdd454b382ae075a0447a6a15eae81ea4852037f1772393d19271779964eb70",
+  "prompt": "Kết quả của giới hạn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>−</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>2</mn></mrow></mfrac></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mi>∞</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>0</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>+</mo><mi>∞</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có\n\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>−</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><msup><mi>x</mi><mn>2</mn></msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>−</mo><mfrac displaystyle=\"false\"><mn>3</mn><mi>x</mi></mfrac><mo>+</mo><mfrac displaystyle=\"false\"><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"false\"><mn>2</mn><msup><mi>x</mi><mn>3</mn></msup></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac><mo>=</mo><munder><mo>lim</mo><mrow><mi>x</mi><mo>→</mo><mo>−</mo><mi>∞</mi></mrow></munder><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>x</mi></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mo>−</mo><mfrac displaystyle=\"false\"><mn>3</mn><mi>x</mi></mfrac><mo>+</mo><mfrac displaystyle=\"false\"><mn>1</mn><msup><mi>x</mi><mn>2</mn></msup></mfrac></mrow><mrow><mn>1</mn><mo>−</mo><mfrac displaystyle=\"false\"><mn>2</mn><msup><mi>x</mi><mn>3</mn></msup></mfrac></mrow></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mi>.</mi></mrow></semantics></math>",
+  "accepted_answers": []
+}

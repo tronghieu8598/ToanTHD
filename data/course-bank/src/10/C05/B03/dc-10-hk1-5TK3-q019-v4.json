@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-5TK3-q019-v4",
+  "original_number": 19,
+  "kind": "mcq",
+  "based_on": "f36bf6cacfbdfb3ff958a7e940770b8e5204a6b6bd2bd498e7df97c2b2b01e57",
+  "prompt": "Tiền thưởng (triệu đồng) cho cán bộ và nhân viên trong công ty X được trình bày trong bảng tần số sau đây\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Tiền thưởng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math></td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td></td></tr><tr><td>Tần số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math></td><td>5</td><td>15</td><td>10</td><td>6</td><td>7</td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>43</mn></mrow></semantics></math></td></tr></tbody></table></div></div>\n\tPhương sai của bảng số liệu trên là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mn>61</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mn>57</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mn>58</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mn>59</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Giá trị trung bình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>x</mi><mo accent=\"true\">¯</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn><mo>⋅</mo><mn>2</mn><mo>+</mo><mn>15</mn><mo>⋅</mo><mn>3</mn><mo>+</mo><mn>10</mn><mo>⋅</mo><mn>4</mn><mo>+</mo><mn>6</mn><mo>⋅</mo><mn>5</mn><mo>+</mo><mn>7</mn><mo>⋅</mo><mn>6</mn></mrow><mn>43</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>167</mn><mn>43</mn></mfrac></mrow></semantics></math>.<br>Phương sai <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>S</mi><mn>2</mn></msup><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn><mo>⋅</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><mn>15</mn><mo>⋅</mo><msup><mn>3</mn><mn>2</mn></msup><mo>+</mo><mn>10</mn><mo>⋅</mo><msup><mn>4</mn><mn>2</mn></msup><mo>+</mo><mn>6</mn><mo>⋅</mo><msup><mn>5</mn><mn>2</mn></msup><mo>+</mo><mn>7</mn><mo>⋅</mo><msup><mn>6</mn><mn>2</mn></msup></mrow><mn>43</mn></mfrac><mo>−</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>167</mn><mn>43</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>≈</mo><mn>1</mn><mo>,</mo><mn>59</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

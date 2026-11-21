@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk2-9D2-q004-v4",
+  "original_number": 4,
+  "kind": "free",
+  "based_on": "939b5788d50f01d736acd72939978e1538ca3f74493594be5044748025e1720a",
+  "prompt": "Một nhóm gồm 8 học sinh nam và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>12</mn></semantics></math> học sinh nữ. Chọn ra ngẫu nhiên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> học sinh từ nhóm. Sử dụng sơ đồ hình cây, hãy tính xác suất của biến cố ““ Có it nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> học sinh nữ trong <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> học sinh vừa chọn””.",
+  "choices": [],
+  "correct": null,
+  "solution": "Ta có sơ đồ hình cây:\n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/cc09783f76f19b9eaf3afa78edd7253718f0bbce190637f398bfb897cd541896.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tXác suất của biến cố <br>lq“ Có ít nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> học sinh nữ trong <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> học sinh vừa chọn”” là\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>12</mn><mn>3</mn></msubsup><msubsup><mi mathvariant=\"normal\">C</mi><mn>8</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>12</mn><mn>4</mn></msubsup><msubsup><mi mathvariant=\"normal\">C</mi><mn>8</mn><mn>1</mn></msubsup><mo>+</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>12</mn><mn>5</mn></msubsup></mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>20</mn><mn>5</mn></msubsup></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>682</mn><mn>969</mn></mfrac><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "dc-10-hk2-8D3-q009-v4",
+  "original_number": 9,
+  "kind": "free",
+  "based_on": "fa31b0cf83cfe644adecd2d12d9584b30fff73270ba83a5f74e48f44fda3b46d",
+  "prompt": "Biết rằng trong khai triển của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>a</mi><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>x</mi></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>4</mn></msup></semantics></math>, số hạng không chứa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> là 24 . Hãy tìm giá trị của tham số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math>.",
+  "choices": [],
+  "correct": null,
+  "solution": "<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>a</mi><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>x</mi></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>4</mn></msup><mo>=</mo><msup><mi>a</mi><mn>4</mn></msup><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><mn>4</mn><msup><mi>a</mi><mn>3</mn></msup><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>6</mn><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn><mi>a</mi></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><msup><mi>x</mi><mn>4</mn></msup></mfrac><mi>.</mi></mrow></semantics></math></div>\n\t\tTheo giả thiết, ta có: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>6</mn><msup><mi>a</mi><mn>2</mn></msup><mo>=</mo><mn>24</mn></mrow></semantics></math> hay <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>=</mo><mn>4</mn></mrow></semantics></math> suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> hoặc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

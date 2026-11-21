@@ -1,0 +1,11 @@
+{
+  "id": "dc-10-hk2-8D2-q128-v4",
+  "original_number": 128,
+  "kind": "short",
+  "based_on": "20269a4ca3eb631e51b5928225f6ec11eff67847f5ade6746507fc4de7801c07",
+  "prompt": "Một nhóm gồm 7 học sinh trong đó có 5 nam và 2 nữ. Có bao nhiêu cách xếp 7 học sinh này thành một hàng ngang sao cho 2 học sinh nữ đứng ở đầu và cuối hàng?",
+  "choices": [],
+  "correct": "240",
+  "solution": "Số cách xếp 2 học sinh nữ đứng ở đầu và cuối hàng là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>!</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>.<br>Số cách xếp 5 học sinh nam còn lại vào hàng là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mi>!</mi><mo>=</mo><mn>120</mn></mrow></semantics></math>.<br>Theo quy tắc nhân, số cách xếp 7 học sinh này thành một hàng ngang sao cho 2 học sinh nữ đứng ở đầu và cuối hàng là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>⋅</mo><mn>120</mn><mo>=</mo><mn>240</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

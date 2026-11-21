@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-1D3-q021-v4",
+  "original_number": 21,
+  "kind": "mcq",
+  "based_on": "b25390a0aac798781cbe0df4e5a481cfab5561ea007114b6866e00c406f065b4",
+  "prompt": "Hàm số nào sau đây có tập xác định là tập số thực <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>ℝ</mi></semantics></math>?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mrow><mn>2</mn><mo>sin</mo><mi>x</mi><mo>−</mo><mn>3</mn></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>sin</mo><mi>x</mi></mrow><mrow><mn>2</mn><mo>cos</mo><mi>x</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mo>cot</mo><mi>x</mi></mrow><mrow><mo>cos</mo><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mo>cos</mo><mi>x</mi></mrow><mrow><mn>3</mn><mo>sin</mo><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>1</mn><mo>≤</mo><mo>sin</mo><mi>x</mi><mo>≤</mo><mn>1</mn><mo>⇒</mo><mn>2</mn><mo>sin</mo><mi>x</mi><mo>−</mo><mn>3</mn><mo>≠</mo><mn>0</mn><mo>,</mo><mspace width=\"0.222em\"/><mo>∀</mo><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math>.<br>Suy ra hàm số  <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mrow><mn>2</mn><mo>sin</mo><mi>x</mi><mo>−</mo><mn>3</mn></mrow></mfrac></mrow></semantics></math> có tập xác định là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>ℝ</mi><mi>.</mi></mrow></semantics></math>",
+  "accepted_answers": []
+}

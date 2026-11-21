@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-7D2-q031-v4",
+  "original_number": 31,
+  "kind": "mcq",
+  "based_on": "854281471931a1e76c6335feced57f4057feb69bff1adf17d5720ee7d075219f",
+  "prompt": "Cho hai hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>u</mi><mo>=</mo><mi>u</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>v</mi><mo>=</mo><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có đạo hàm tại điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> thuộc tập xác định. Phát biểu nào sau đây là <strong>sai</strong>?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>u</mi><mo>+</mo><mi>v</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi></msup><mo>=</mo><msup><mi>u</mi><mi>′</mi></msup><mo>+</mo><msup><mi>v</mi><mi>′</mi></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>u</mi><mo>−</mo><mi>v</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi></msup><mo>=</mo><msup><mi>u</mi><mi>′</mi></msup><mo>−</mo><msup><mi>v</mi><mi>′</mi></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mi>u</mi><mi>v</mi></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi></msup><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mi>u</mi><mi>′</mi></msup><mo>⋅</mo><mi>v</mi><mo>−</mo><mi>u</mi><mo>⋅</mo><msup><mi>v</mi><mi>′</mi></msup></mrow><msup><mi>v</mi><mn>2</mn></msup></mfrac></mrow></semantics></math>, với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>v</mi><mo>=</mo><mi>v</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>≠</mo><mn>0</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>u</mi><mo>⋅</mo><mi>v</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi></msup><mo>=</mo><msup><mi>u</mi><mi>′</mi></msup><mo>⋅</mo><msup><mi>v</mi><mi>′</mi></msup></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Theo công thức tính đạo hàm\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>u</mi><mo>⋅</mo><mi>v</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi></msup><mo>=</mo><msup><mi>u</mi><mi>′</mi></msup><mo>⋅</mo><mi>v</mi><mo>+</mo><mi>u</mi><mo>⋅</mo><msup><mi>v</mi><mi>′</mi></msup><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

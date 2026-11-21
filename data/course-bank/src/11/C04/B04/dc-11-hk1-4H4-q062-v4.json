@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-4H4-q062-v4",
+  "original_number": 62,
+  "kind": "tf",
+  "based_on": "e84471fc1a1c66a931f05c82fdeaf5dc40a2a12125aa1a074ca7178a660c4b28",
+  "prompt": "Cho hình hộp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi><mi>.</mi><mi>A</mi><mi>′</mi><mi>B</mi><mi>′</mi><mi>C</mi><mi>′</mi><mi>D</mi><mi>′</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Hai mặt phẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mi>B</mi><mi>′</mi><mi>A</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mi>D</mi><mi>D</mi><mi>′</mi><mi>C</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> song song với nhau"
+    },
+    {
+      "key": "b",
+      "text": "Diện tích hai mặt bên bất kỳ luôn bằng nhau"
+    },
+    {
+      "key": "c",
+      "text": "Hình hộp trên luôn có tất cả các mặt đều là hình chữ nhật"
+    },
+    {
+      "key": "d",
+      "text": "Hai mặt phẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mi>D</mi><mi>A</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mi>′</mi><mi>D</mi><mi>′</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> song song với nhau"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "solution": "<div class=\"with-figure\"><div><ol class=\"alpha-list\"><li>Hình hộp có các mặt là hình bình hành.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mi>B</mi><mi>′</mi><mi>A</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>∥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mi>D</mi><mi>D</mi><mi>′</mi><mi>C</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mrow><mtext mathvariant=\"normal\">Trong </mtext><mspace width=\"0.333em\"/></mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mi>′</mi><mi>D</mi><mi>′</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>,</mo><mspace width=\"0.222em\"/><mi>D</mi><mi>′</mi><mi>C</mi><mo>∩</mo><mi>B</mi><mi>′</mi><mi>D</mi><mi>′</mi><mo>=</mo><mi>D</mi><mi>′</mi></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>A</mi><mi>′</mi><mi>B</mi><mo>∥</mo><mi>D</mi><mi>′</mi><mi>C</mi></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>B</mi><mi>D</mi><mo>∥</mo><mi>B</mi><mi>′</mi><mi>D</mi><mi>′</mi></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mrow><mtext mathvariant=\"normal\">Trong </mtext><mspace width=\"0.333em\"/></mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mi>D</mi><mi>A</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>,</mo><mspace width=\"0.222em\"/><mi>A</mi><mi>′</mi><mi>B</mi><mo>∩</mo><mi>B</mi><mi>D</mi><mo>=</mo><mi>B</mi></mtd></mtr></mtable></mrow><mo>⇒</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mi>D</mi><mi>A</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>∥</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mi>′</mi><mi>D</mi><mi>′</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.</li><li>Diện tích hai mặt bên kề nhau không bằng nhau.</li></ol></div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/8b1526361960ea0aaca227c8e2e56bb3de26a886c6caeb507d986c1f8f3828d4.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

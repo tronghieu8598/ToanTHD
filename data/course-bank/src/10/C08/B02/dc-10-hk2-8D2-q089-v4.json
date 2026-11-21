@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-8D2-q089-v4",
+  "original_number": 89,
+  "kind": "mcq",
+  "based_on": "ff66a42ba99e7273ade17d8161e076fd9552c1dbadfceca3a7892220e3302073",
+  "prompt": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> cặp vợ chồng mua <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> vé xem phim với các chỗ ngồi liên tiếp nhau trên cùng một hàng ghế. Hỏi có bao nhiêu cách xếp chỗ ngồi sao cho mỗi cặp vợ chồng đều ngồi cạnh nhau?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>48</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>120</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>24</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>36</mn></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Trước hết, xét mỗi cặp vợ chồng như là một khối.<br>Số cách xếp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> khối vào <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> vị trí là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mi>!</mi><mo>=</mo><mn>3</mn><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mn>1</mn><mo>=</mo><mn>6</mn></mrow></semantics></math>.<br>Mỗi cặp vợ chồng (của một khối) có thể đổi chỗ cho nhau để có một cách xếp mới. Số cách đổi chỗ mỗi cặp vợ chồng là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>!</mi><mo>=</mo><mn>2</mn><mo>⋅</mo><mn>1</mn><mo>=</mo><mn>2</mn></mrow></semantics></math>.<br>Vậy số cách xếp chỗ cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> người với yêu cầu của bài toán là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>6</mn><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mn>2</mn><mo>⋅</mo><mn>2</mn><mo>=</mo><mn>48</mn></mrow></semantics></math> (cách).",
+  "accepted_answers": []
+}

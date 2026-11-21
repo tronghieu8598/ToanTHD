@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-8H1-q052-v4",
+  "original_number": 52,
+  "kind": "mcq",
+  "based_on": "8e29d596dea482461b038f3b30d217b398f73ef14b6d7063ae1f7b6cee823c34",
+  "prompt": "<div class=\"with-figure\"><div>Cho hình lăng trụ tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mo>⋅</mo><msup><mi>A</mi><mi>′</mi></msup><msup><mi>B</mi><mi>′</mi></msup><msup><mi>C</mi><mi>′</mi></msup></mrow></semantics></math> có tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> đều (tham khảo hình vẽ). Phát biểu nào sau đây là <strong>sai</strong>?<div class=\"paragraph-gap\"></div></div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/1f5c081cd8166b86e2ac2ba0d62fe58eba44a61eba7f505c17e85fbef3499832.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>′</mi><mi>B</mi><mo>,</mo><mi>A</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>′</mi><mi>B</mi><mo>,</mo><mi>A</mi><mi>′</mi><mi>C</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mi>′</mi><mi>B</mi><mi>′</mi><mo>,</mo><mi>A</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mn>60</mn><mo>∘</mo></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mi>B</mi><mo>,</mo><mi>A</mi><mi>′</mi><mi>C</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mn>90</mn><mo>∘</mo></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mi>′</mi><mi>B</mi><mo>,</mo><mi>A</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>′</mi><mi>A</mi><mo>,</mo><mi>A</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Ta có \n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mi>B</mi><mo>,</mo><mi>A</mi><mi>′</mi><mi>C</mi><mi>′</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mi>B</mi><mo>,</mo><mi>A</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mover><mrow><mi>A</mi><mi>C</mi><mi>B</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>60</mn><mo>∘</mo></msup><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-3H1-q043-v4",
+  "original_number": 43,
+  "kind": "tf",
+  "based_on": "3229bc4a9e72ec69863b81b9825f8ca672948e25909cfa9badd3b3b553149437",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>α</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>90</mn><mo>∘</mo></msup><mo>&lt;</mo><mi>α</mi><mo>&lt;</mo><msup><mn>180</mn><mo>∘</mo></msup></mrow></semantics></math>. Các mệnh đề sau đúng hay sai?",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>α</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cot</mo><mi>α</mi><mo>=</mo><mo>−</mo><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mo>cos</mo><mi>α</mi><mo>=</mo><mn>8</mn><mo>tan</mo><mi>α</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>α</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><msqrt><mn>2</mn></msqrt><mn>3</mn></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Sai. Góc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>α</mi></semantics></math> tù nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>α</mi><mo>&lt;</mo><mn>0</mn></mrow></semantics></math>.</li><li>Sai. Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>α</mi><mo>=</mo><mo>−</mo><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mo>sin</mo><mn>2</mn></msup><mi>α</mi></mrow></msqrt><mo>=</mo><mo>−</mo><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow><mn>3</mn></mfrac></mrow></semantics></math>;</li><li>Đúng. Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cot</mo><mi>α</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>cos</mo><mi>α</mi></mrow><mrow><mo>sin</mo><mi>α</mi></mrow></mfrac><mo>=</mo><mo>−</mo><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>.</li><li>Đúng. Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mo>cos</mo><mi>α</mi><mo>=</mo><mn>3</mn><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow><mn>3</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>;<br><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mo>tan</mo><mi>α</mi><mo>=</mo><mn>8</mn><mo>⋅</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mn>2</mn><msqrt><mn>2</mn></msqrt></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

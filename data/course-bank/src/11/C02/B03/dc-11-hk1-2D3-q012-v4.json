@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk1-2D3-q012-v4",
+  "original_number": 12,
+  "kind": "free",
+  "based_on": "faf02c4f9d0382c3c1065b71d304bef4a2f6c994b1a6ba87b23d44aed1649086",
+  "prompt": "Một loại vi khuẩn được nuôi cấy trong ống nghiệm, cứ 20 phút lại phân đôi một lần. Nếu ban đầu có 200 vi khuẩn, tính số lượng vi khuẩn có trong ống nghiệm sau 2 giờ.",
+  "choices": [],
+  "correct": null,
+  "solution": "Ta có 2 giờ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>=</mo><mn>120</mn></mrow></semantics></math> phút <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>=</mo><mn>6</mn><mo>⋅</mo><mn>20</mn></mrow></semantics></math> phút. Do đó, sau 2 giờ vi khuẩn phân đôi 6 lần.<br>Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>u</mi><mi>n</mi></msub></semantics></math> là số lượng vi khuẩn có trong ống nghiệm sau lần phân đôi thứ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></semantics></math>.<br>Khi đó, dãy số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> là một cấp số nhân với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>200</mn></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>q</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>7</mn></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mo>⋅</mo><msup><mi>q</mi><mn>6</mn></msup><mo>=</mo><mn>200</mn><mo>⋅</mo><msup><mn>2</mn><mn>6</mn></msup><mo>=</mo><mn>12800</mn></mrow></semantics></math>.<br>Vậy sau 2 giờ, trong ống nghiệm có 12800 vi khuẩn.",
+  "accepted_answers": []
+}

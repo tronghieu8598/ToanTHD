@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-4H5-q038-v4",
+  "original_number": 38,
+  "kind": "tf",
+  "based_on": "09b535e021e899d10046994fe8820eb39194c1f33cf63db86756a5b6acd2d717",
+  "prompt": "Cho các đoạn thẳng và đường thẳng không song song hoặc không trùng với phương chiếu. Cho biết tính đúng sai của các mệnh đề sau, nếu mệnh đề sai thì phát biểu lại cho đúng.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Phép chiếu song song không làm thay đổi tỉ số độ dài của hai đoạn thẳng"
+    },
+    {
+      "key": "b",
+      "text": "Phép chiếu song song bảo toàn thứ tự ba điểm thẳng hàng"
+    },
+    {
+      "key": "c",
+      "text": "Hình chiếu song song của một đường thẳng là một đường thẳng"
+    },
+    {
+      "key": "d",
+      "text": "Hình chiếu của hai đường thẳng song song là hai đường thẳng song song hoặc trùng nhau"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Mệnh đề ““ Phép chiếu song song không làm thay đổi tỉ số độ dài của hai đoạn thẳng””  là sai.<br>Phát biểu đúng là ““ Phép chiếu song song không làm thay đổi tỉ số độ dài của hai đoạn thẳng cùng nằm trên một đường thẳng hoặc nằm trên hai đường thẳng song song””.</li><li>Mệnh đề ““ Phép chiếu song song bảo toàn thứ tự ba điểm thẳng hàng””  là đúng.</li><li>Mệnh đề ““ Hình chiếu song song của một đường thẳng là một đường thẳng””  là đúng.</li><li>Mệnh đề ““ Hình chiếu của hai đường thẳng song song là hai đường thẳng song song hoặc trùng nhau””  là đúng.</li></ol>",
+  "accepted_answers": []
+}

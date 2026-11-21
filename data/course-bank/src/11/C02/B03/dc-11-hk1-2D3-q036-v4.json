@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-2D3-q036-v4",
+  "original_number": 36,
+  "kind": "mcq",
+  "based_on": "48502af9157de7fde6148029a48da97a118859deaf7bf781c2e8c401bfaf2588",
+  "prompt": "Cho cấp số nhân <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> với công bội <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>q</mi><mo>≠</mo><mn>1</mn></mrow></semantics></math>. Đặt <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><msub><mi>u</mi><mn>2</mn></msub><mo>+</mo><mi>…</mi><mo>+</mo><msub><mi>u</mi><mi>n</mi></msub></mrow></semantics></math>. Khẳng định nào sau đây đúng?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo><mfrac displaystyle=\"true\"><msub><mi>u</mi><mn>1</mn></msub><mrow><mn>1</mn><mo>−</mo><mi>q</mi></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>−</mo><mi>q</mi></mrow><mrow><mn>1</mn><mo>−</mo><msup><mi>q</mi><mi>n</mi></msup></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>−</mo><msup><mi>q</mi><mi>n</mi></msup></mrow><mrow><mn>1</mn><mo>−</mo><mi>q</mi></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>−</mo><msup><mi>q</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><mrow><mn>1</mn><mo>−</mo><mi>q</mi></mrow></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Công thức tổng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>n</mi></semantics></math> số hạng đầu của cấp số nhân <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>−</mo><msup><mi>q</mi><mi>n</mi></msup></mrow><mrow><mn>1</mn><mo>−</mo><mi>q</mi></mrow></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

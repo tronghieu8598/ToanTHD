@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-5TK3-q050-v4",
+  "original_number": 50,
+  "kind": "tf",
+  "based_on": "946487da6b33f49573384c1ba3f55c1a351c8657f5d9ac91297f9aa6d99906dd",
+  "prompt": "Cung thủ A đã ghi lại kết quả từng lần bắn của mình ở bảng sau\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>6</td><td>6</td><td>7</td><td>7</td><td>8</td><td>8</td><td>9</td><td>9</td><td>9</td><td>10</td></tr></tbody></table></div></div>",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Trung vị của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>M</mi><mtext mathvariant=\"normal\">e</mtext></msub><mo>=</mo><mn>8</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Khoảng tứ phân vị của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Δ</mi><mi>Q</mi></msub><mo>=</mo><mn>3</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Khoảng biến thiên của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>=</mo><mn>6</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Mốt của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>M</mi><mtext mathvariant=\"normal\">o</mtext></msub><mo>=</mo><mn>9</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Giá trị <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mn>9</mn></mrow></semantics></math> xuất hiện <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> lần nên mốt của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>M</mi><mtext mathvariant=\"normal\">o</mtext></msub><mo>=</mo><mn>9</mn></mrow></semantics></math>.</li><li>Khoảng biến thiên của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>R</mi><mo>=</mo><mn>10</mn><mo>−</mo><mn>6</mn><mo>=</mo><mn>4</mn></mrow></semantics></math>.</li><li>Trung vị của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>M</mi><mtext mathvariant=\"normal\">e</mtext></msub><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>8</mn><mo>+</mo><mn>8</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>8</mn></mrow></semantics></math>.</li><li>Tứ phân vị thứ nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>7</mn></mrow></semantics></math>.<br>Tứ phân vị thứ ba <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mn>9</mn></mrow></semantics></math>.<br>Khoảng tứ phân vị của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>Δ</mi><mi>Q</mi></msub><mo>=</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>−</mo><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>9</mn><mo>−</mo><mn>7</mn><mo>=</mo><mn>2</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

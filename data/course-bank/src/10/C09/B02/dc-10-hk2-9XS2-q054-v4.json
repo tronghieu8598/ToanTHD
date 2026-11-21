@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-9XS2-q054-v4",
+  "original_number": 54,
+  "kind": "mcq",
+  "based_on": "8061c3394d4dc6ad5c0f8f23c5fdafddeb789eda0d667980f4a0ce683c9342d6",
+  "prompt": "Từ một hộp gồm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>13</mn></semantics></math> quả cầu cân đối và đồng chất, trong đó có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math> quả cầu màu trắng và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> quả cầu màu đen. Lấy ngẫu nhiên đồng thời <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> quả cầu từ hộp. Tính xác suất lấy được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> quả cầu cùng màu.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>20</mn><mn>39</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>3</mn><mn>13</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>70</mn><mrow><mn>1</mn><mspace width=\"0.167em\"/><mn>521</mn></mrow></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>19</mn><mn>39</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Xác suất lấy được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> quả cầu cùng màu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>8</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>2</mn></msubsup></mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>13</mn><mn>2</mn></msubsup></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>19</mn><mn>39</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

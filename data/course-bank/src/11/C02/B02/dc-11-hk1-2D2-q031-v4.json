@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-2D2-q031-v4",
+  "original_number": 31,
+  "kind": "mcq",
+  "based_on": "2dc8ec35fd8b9af4b84a6dffa6bbfc41aa0de6d9f2a1d69464fc0b6971b4e288",
+  "prompt": "Một rạp chiếu phim có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>16</mn></semantics></math> hàng ghế dành cho người xem. Hàng thứ nhất có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>14</mn></semantics></math> ghế, hàng thứ hai có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>15</mn></semantics></math> ghế, hàng thứ ba có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>16</mn></semantics></math> ghế, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>…</mi></semantics></math> cứ như thế, số ghế ở hàng sau nhiều hơn số ghế ở hàng liền trước là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> ghế. Trong một buổi chiếu phim nhà rạp đã bán được hết vé, với giá <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>110</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> đồng mỗi vé, biết rằng số vé bán ra bằng số ghế dành cho người xem. Tổng số tiền bán vé bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>37</mn><mspace width=\"0.167em\"/><mn>840</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> đồng"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>25</mn><mspace width=\"0.167em\"/><mn>520</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> đồng"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>75</mn><mspace width=\"0.167em\"/><mn>680</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> đồng"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>344</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> đồng"
+    }
+  ],
+  "correct": "A",
+  "solution": "Ta có số hàng ghế lập thành <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> cấp số cộng với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>14</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>2</mn></msub><mo>=</mo><mn>15</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>3</mn></msub><mo>=</mo><mn>16</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>…</mi></semantics></math>, công sai <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>.<br>Vì rạp chiếu phim có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>16</mn></semantics></math> hàng ghế nên tổng số ghế là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mn>16</mn></msub><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>16</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><mn>15</mn><mi>d</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mn>2</mn></mfrac><mo>=</mo><mn>8</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>⋅</mo><mn>14</mn><mo>+</mo><mn>15</mn><mo>⋅</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>344</mn></mrow></semantics></math> ghế.<br>Tổng số tiền bán vé là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>344</mn><mo>⋅</mo><mn>110</mn><mspace width=\"0.167em\"/><mn>000</mn><mo>=</mo><mn>37</mn><mspace width=\"0.167em\"/><mn>840</mn><mspace width=\"0.167em\"/><mn>000</mn></mrow></semantics></math> đồng.",
+  "accepted_answers": []
+}

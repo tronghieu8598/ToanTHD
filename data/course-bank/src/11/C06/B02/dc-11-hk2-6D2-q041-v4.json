@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D2-q041-v4",
+  "original_number": 41,
+  "kind": "mcq",
+  "based_on": "9bd8142b7688eff4664487e67b7e7bb7d46965a3bd90a46ba4bdc3b8754cddfd",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>b</mi></semantics></math> là hai số thực dương tùy ý, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>a</mi></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>a</mi><msup><mi>b</mi><mn>3</mn></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>+</mo><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>+</mo><mn>3</mn><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mo>+</mo><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>a</mi></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>a</mi><msup><mi>b</mi><mn>3</mn></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msub><mo>log</mo><mi>a</mi></msub><mi>a</mi><mo>+</mo><msub><mo>log</mo><mi>a</mi></msub><msup><mi>b</mi><mn>3</mn></msup><mo>=</mo><mn>1</mn><mo>+</mo><mn>3</mn><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow></semantics></math>.",
+  "accepted_answers": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk2-6D2-q122-v4",
+  "original_number": 122,
+  "kind": "short",
+  "based_on": "33359b8d19896be64b41b17f5dc15d42c540cb0324b8a19f8950b507e3a4042a",
+  "prompt": "Ông An gửi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>200</mn></semantics></math> triệu đồng vào ngân hàng theo hình thức lãi kép theo kì hạn năm, với lãi suất là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>6</mn><mo>,</mo><mn>5</mn><mi>%</mi></mrow></semantics></math> một năm và lãi suất không đổi trong thời gian gửi. Sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> năm, số tiền lãi (làm tròn đến hàng triệu) của ông là bao nhiêu?",
+  "choices": [],
+  "correct": "92",
+  "solution": "Đặt số tiền gốc của ông An là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>=</mo><mn>200</mn></mrow></semantics></math> triệu.<br>Hết năm thứ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> số tiền cả gốc và lãi ông An nhận được là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">A</mi><mn>6</mn></msub><mo>=</mo><mn>200</mn><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>+</mo><mn>6</mn><mo>,</mo><mn>5</mn><mi>%</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>6</mn></msup></mrow></semantics></math>.<br>Vậy sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> năm số tiền lãi ông An nhận được là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">A</mi><mn>6</mn></msub><mo>−</mo><mi>A</mi><mo>≈</mo><mn>92</mn></mrow></semantics></math> triệu.",
+  "accepted_answers": []
+}

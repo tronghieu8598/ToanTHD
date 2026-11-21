@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-3H2-q088-v4",
+  "original_number": 88,
+  "kind": "tf",
+  "based_on": "078ec40554942c5c09e1bdb65dca7b8fc96045dc7439037b9bbbf2ed17cc1f8a",
+  "prompt": "<div class=\"with-figure\"><div>Từ vị trí <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> người ta quan sát một cây cao (hình vē). Biết rằng độ dài <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>H</mi><mo>=</mo><mn>5</mn></mrow></semantics></math>  m, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>H</mi><mi>B</mi><mo>=</mo><mn>15</mn></mrow></semantics></math> m, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>B</mi><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>60</mn><mo>∘</mo></msup></mrow></semantics></math>. Các mệnh đề sau đúng hay sai?</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/9b6964753c18d9902e45d063bfb3186e20428c42ac8f2b3906d356ef21aac8ca.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure><div class=\"paragraph-gap\"></div></div></div>",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>C</mi><mi>B</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>≈</mo><msup><mn>48</mn><mo>∘</mo></msup><msup><mn>26</mn><mi>′</mi></msup></mrow></semantics></math> (làm tròn đến phút)"
+    },
+    {
+      "key": "b",
+      "text": "Chiều cao của cây gần bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>18</mn></semantics></math> m (làm tròn đến hàng đơn vị)"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mover><mrow><mi>B</mi><mi>A</mi><mi>H</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Độ dài canh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mn>5</mn><msqrt><mn>10</mn></msqrt></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    true
+  ],
+  "solution": "<div class=\"with-figure\"><div><ol class=\"alpha-list\"><li>Sai.<br>Trong tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>H</mi><mi>B</mi></mrow></semantics></math>, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mover><mrow><mi>B</mi><mi>A</mi><mi>H</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>B</mi><mi>H</mi></mrow><mrow><mi>A</mi><mi>H</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>15</mn><mn>5</mn></mfrac><mo>=</mo><mn>3</mn></mrow></semantics></math>.</li><li>Đúng.<br><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mover><mrow><mi>B</mi><mi>A</mi><mi>H</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><mn>3</mn><mo>⇒</mo><mover><mrow><mi>B</mi><mi>A</mi><mi>H</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>≈</mo><msup><mn>71</mn><mo>∘</mo></msup><mn>33</mn><mi>′</mi><mn>54</mn><mi>″</mi></mrow></semantics></math>.<br>Suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>C</mi><mi>B</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>360</mn><mo>∘</mo></msup><mo>−</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>71</mn><mo>∘</mo></msup><mn>33</mn><mi>′</mi><mn>54</mn><mi>″</mi><mo>+</mo><msup><mn>60</mn><mo>∘</mo></msup><mo>+</mo><msup><mn>90</mn><mo>∘</mo></msup><mo>+</mo><msup><mn>90</mn><mo>∘</mo></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>≈</mo><msup><mn>48</mn><mo>∘</mo></msup><mn>26</mn><mi>′</mi><mn>6</mn><mi>″</mi></mrow></semantics></math>.<br>Làm tròn đến đơn vị phút, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>C</mi><mi>B</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>≈</mo><msup><mn>48</mn><mo>∘</mo></msup><mn>26</mn><mi>′</mi></mrow></semantics></math>.</li><li>Đúng.<br><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><msqrt><mrow><msup><mn>15</mn><mn>2</mn></msup><mo>+</mo><msup><mn>5</mn><mn>2</mn></msup></mrow></msqrt><mo>=</mo><mn>5</mn><msqrt><mn>10</mn></msqrt></mrow></semantics></math> m.</li><li>Đúng.<br>Áp dụng định lý sin trong tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math>, ta được<br><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mi>C</mi><mi>B</mi></mrow><mrow><mo>sin</mo><mover><mrow><mi>B</mi><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">̂</mo></mover></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>A</mi><mi>B</mi></mrow><mrow><mo>sin</mo><mover><mrow><mi>A</mi><mi>C</mi><mi>B</mi></mrow><mo accent=\"true\">̂</mo></mover></mrow></mfrac><mo>⇒</mo><mi>C</mi><mi>B</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>A</mi><mi>B</mi><mo>⋅</mo><mo>sin</mo><mover><mrow><mi>B</mi><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">̂</mo></mover></mrow><mrow><mo>sin</mo><mover><mrow><mi>A</mi><mi>C</mi><mi>B</mi></mrow><mo accent=\"true\">̂</mo></mover></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn><msqrt><mn>10</mn></msqrt><mo>⋅</mo><mo>sin</mo><msup><mn>60</mn><mo>∘</mo></msup></mrow><mrow><mo>sin</mo><msup><mn>48</mn><mo>∘</mo></msup><mn>26</mn><mi>′</mi><mn>6</mn><mi>″</mi></mrow></mfrac><mo>≈</mo><mn>18</mn></mrow></semantics></math> m.</li></ol></div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/7abf06e92e73b0be05b7595dbf48f50d7e8f167c8ecb0ce5bb3d55ef0f780d1e.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

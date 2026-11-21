@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-2D2-q046-v4",
+  "original_number": 46,
+  "kind": "tf",
+  "based_on": "0d5d60f3924862716355169c2b49a4cf3f5e4c472d3e67a6c26243d0c21adbcf",
+  "prompt": "Cho hệ bất phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mi>x</mi><mo>−</mo><mn>2</mn><mi>y</mi><mo>≥</mo><mo>−</mo><mn>2</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mn>7</mn><mi>x</mi><mo>−</mo><mn>4</mn><mi>y</mi><mo>≤</mo><mn>16</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>≥</mo><mo>−</mo><mn>4</mn><mi>.</mi></mtd></mtr></mtable></mrow></semantics></math>",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Miền nghiệm của hệ bất phương trình trên là một miền tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> (kể cả cảc cạnh) với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>;</mo><mo>−</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Cặp số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> là một nghiệm của hệ bất phương trình trên"
+    },
+    {
+      "key": "c",
+      "text": "Cặp số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> không phải là một nghiệm của hệ bất phương trình trên"
+    },
+    {
+      "key": "d",
+      "text": "Hệ trên là một hệ bất phương trình bậc nhất hai ẩn"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Đúng.<br>Theo định nghĩa thì hệ bất phương trình đã cho là hệ bất phương trình bậc nhất hai ẩn.</li><li>Đúng. <br>Cặp số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> thỏa mãn cả ba bất phương trình trong hệ nên cặp số này là một nghiệm của hệ đã cho.</li><li>Đúng.<br>Vì cặp số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>;</mo><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> không thỏa mãn bất phương trình\n\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>7</mn><mi>x</mi><mo>−</mo><mn>4</mn><mi>y</mi><mo>≤</mo><mn>16</mn></mrow></semantics></math> nên không thỏa mãn hệ bất phương trình đã cho.</li><li>Sai.<br>Biểu diễn miền nghiệm của hệ ta được miền tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mi>N</mi><mi>P</mi></mrow></semantics></math> như hình vẽ. \n\t\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/75d345cd6f13a5832f22e282eb29346aee4199b2fb5c936bb6e2153aad051a39.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t\tMiền nghiệm này không phải là miền tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> như đề bài vì điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo>;</mo><mn>0</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> không phải là một trong ba đỉnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>M</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>N</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

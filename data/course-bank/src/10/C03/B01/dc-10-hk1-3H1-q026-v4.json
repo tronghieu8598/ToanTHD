@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-3H1-q026-v4",
+  "original_number": 26,
+  "kind": "mcq",
+  "based_on": "05eb9ac38b1b3d66fee4f5b819fa71e4eef25b4767d3aa010f9304c5ef15d7bb",
+  "prompt": "Cho góc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>α</mi></semantics></math> <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>0</mn><mo>∘</mo></msup><mo>&lt;</mo><mi>α</mi><mo>&lt;</mo><msup><mn>180</mn><mo>∘</mo></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> thoả mãn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cot</mo><mi>α</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>. Giá trị <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>α</mi></mrow></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><msqrt><mn>5</mn></msqrt><mn>2</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><msqrt><mn>5</mn></msqrt><mn>5</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>±</mo><mfrac displaystyle=\"true\"><msqrt><mn>5</mn></msqrt><mn>5</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><msqrt><mn>5</mn></msqrt><mn>5</mn></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Do <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cot</mo><mi>α</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>&lt;</mo><mn>0</mn></mrow></semantics></math> nên góc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>α</mi></semantics></math> là góc tù <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>⇒</mo><mo>cos</mo><mi>α</mi><mo>&lt;</mo><mn>0</mn></mrow></semantics></math>.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mi>α</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mo>cot</mo><mi>α</mi></mrow></mfrac><mo>=</mo><mo>−</mo><mn>2</mn></mrow></semantics></math>, suy ra\n\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>α</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><msqrt><mrow><mn>1</mn><mo>+</mo><msup><mo>tan</mo><mn>2</mn></msup><mi>α</mi></mrow></msqrt></mfrac><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><msqrt><mrow><mn>1</mn><mo>+</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mfrac><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><msqrt><mn>5</mn></msqrt><mn>5</mn></mfrac><mi>.</mi></mrow></semantics></math>",
+  "accepted_answers": []
+}

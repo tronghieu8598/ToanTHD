@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk1-2D3-q009-v4",
+  "original_number": 9,
+  "kind": "free",
+  "based_on": "6efed3f65d45dd8668fd2b60021b35951ca38f0d4388c3cc771f36e08f2abd86",
+  "prompt": "Cho cấp số nhân <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>2</mn></msub><mo>=</mo><mn>10</mn></mrow></semantics></math>. Tìm công bội của cấp số nhân đó.",
+  "choices": [],
+  "correct": null,
+  "solution": "Áp dụng công thức số hạng tổng quát của cấp số nhân, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mi>n</mi></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mo>⋅</mo><msup><mi>q</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></semantics></math>, suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>2</mn></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mo>⋅</mo><mi>q</mi></mrow></semantics></math>, suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>10</mn><mo>=</mo><mn>2</mn><mi>q</mi></mrow></semantics></math>, suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>q</mi><mo>=</mo><mn>5</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

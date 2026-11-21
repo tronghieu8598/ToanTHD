@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-5TK3-q043-v4",
+  "original_number": 43,
+  "kind": "tf",
+  "based_on": "1c573ecc291d7e6c1000d42a18b05e106c1cf756d3901ca40493839633df7ac9",
+  "prompt": "Bạn Lan và bạn Huy thống kê chiều cao (đơn vị: xăng-ti-mét, kí hiệu cm) của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> cây hoa hồng mà mỗi người trồng sau một thời gian như sau\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Cây của bạn Lan</td><td>50</td><td>52</td><td>51</td><td>49</td><td>48</td><td>53</td></tr><tr><td>Cây của bạn Huy</td><td>45</td><td>55</td><td>50</td><td>60</td><td>40</td><td>50</td></tr></tbody></table></div></div>",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Số trung bình cộng của mẫu số liệu cây của bạn Huy là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>50</mn><mo>,</mo><mn>5</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Các cây hoa hồng của bạn Lan phát triển chiều cao đồng đều hơn của bạn Huy"
+    },
+    {
+      "key": "c",
+      "text": "Số trung bình cộng của mẫu số liệu cây của bạn Lan là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>50</mn></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Phương sai của mẫu số liệu cây của bạn Lan nhỏ hơn phương sai của mẫu số liệu cây của bạn Huy"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Số trung bình cộng của mẫu số liệu cây của bạn Lan là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mover><mi>x</mi><mo accent=\"true\">¯</mo></mover><mi>L</mi></msub><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>50</mn><mo>+</mo><mn>52</mn><mo>+</mo><mn>51</mn><mo>+</mo><mn>49</mn><mo>+</mo><mn>48</mn><mo>+</mo><mn>53</mn></mrow><mn>6</mn></mfrac><mo>=</mo><mn>50</mn><mo>,</mo><mn>5</mn></mrow></semantics></math>.</li><li>Số trung bình cộng của mẫu số liệu cây của bạn Huy là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mover><mi>x</mi><mo accent=\"true\">¯</mo></mover><mi>H</mi></msub><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>45</mn><mo>+</mo><mn>55</mn><mo>+</mo><mn>50</mn><mo>+</mo><mn>60</mn><mo>+</mo><mn>40</mn><mo>+</mo><mn>50</mn></mrow><mn>6</mn></mfrac><mo>=</mo><mn>50</mn></mrow></semantics></math>.</li><li><ul><li>Phương sai của mẫu số liệu cây của bạn Lan là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi>S</mi><mi>L</mi><mn>2</mn></msubsup><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mn>50</mn><mn>2</mn></msup><mo>+</mo><msup><mn>52</mn><mn>2</mn></msup><mo>+</mo><msup><mn>51</mn><mn>2</mn></msup><mo>+</mo><msup><mn>49</mn><mn>2</mn></msup><mo>+</mo><msup><mn>48</mn><mn>2</mn></msup><mo>+</mo><msup><mn>53</mn><mn>2</mn></msup></mrow><mn>6</mn></mfrac><mo>−</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>50</mn><mo>,</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>=</mo><mfrac displaystyle=\"true\"><mn>35</mn><mn>12</mn></mfrac></mrow></semantics></math>.</li><li>Phương sai của mẫu số liệu cây của bạn Huy là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi>S</mi><mi>H</mi><mn>2</mn></msubsup><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mn>45</mn><mn>2</mn></msup><mo>+</mo><msup><mn>55</mn><mn>2</mn></msup><mo>+</mo><msup><mn>50</mn><mn>2</mn></msup><mo>+</mo><msup><mn>60</mn><mn>2</mn></msup><mo>+</mo><msup><mn>40</mn><mn>2</mn></msup><mo>+</mo><msup><mn>50</mn><mn>2</mn></msup></mrow><mn>6</mn></mfrac><mo>−</mo><msup><mn>50</mn><mn>2</mn></msup><mo>=</mo><mfrac displaystyle=\"true\"><mn>125</mn><mn>3</mn></mfrac></mrow></semantics></math>.</li></ul>\n\t\t\tTa có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi>S</mi><mi>L</mi><mn>2</mn></msubsup><mo>&lt;</mo><msubsup><mi>S</mi><mi>H</mi><mn>2</mn></msubsup></mrow></semantics></math>.</li><li>Vì phương sai mẫu số liệu cây của bạn Lan nhỏ hơn phương sai mẫu số liệu cây của bạn Huy nên các cây hoa hồng của bạn Lan phát triển đồng đều hơn.</li></ol>",
+  "accepted_answers": []
+}

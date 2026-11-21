@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D2-q061-v4",
+  "original_number": 61,
+  "kind": "mcq",
+  "based_on": "02d1328e6484421a178ab4a33375539c2949d436098a88355e803cf22f40a0a0",
+  "prompt": "Tính giá trị biểu thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><msub><mo>log</mo><mn>2</mn></msub><mfrac displaystyle=\"true\"><mn>64</mn><mn>3</mn></mfrac><mo>+</mo><msub><mo>log</mo><mn>2</mn></msub><mn>96</mn></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>16</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>22</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>11</mn></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Ta có\n\t\t\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"><mi>P</mi></mtd><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><msub><mo>log</mo><mn>2</mn></msub><mfrac displaystyle=\"true\"><mn>64</mn><mn>3</mn></mfrac><mo>+</mo><msub><mo>log</mo><mn>2</mn></msub><mn>96</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><msub><mo>log</mo><mn>2</mn></msub><mfrac displaystyle=\"true\"><msup><mn>2</mn><mn>6</mn></msup><mn>3</mn></mfrac><mo>+</mo><msub><mo>log</mo><mn>2</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>2</mn><mn>5</mn></msup><mo>⋅</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mo>log</mo><mn>2</mn></msub><msup><mn>2</mn><mn>6</mn></msup><mo>−</mo><msub><mo>log</mo><mn>2</mn></msub><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mo>log</mo><mn>2</mn></msub><msup><mn>2</mn><mn>5</mn></msup><mo>+</mo><msub><mo>log</mo><mn>2</mn></msub><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mn>6</mn><mo>−</mo><msub><mo>log</mo><mn>2</mn></msub><mn>3</mn><mo>+</mo><mn>5</mn><mo>+</mo><msub><mo>log</mo><mn>2</mn></msub><mn>3</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>6</mn><mo>+</mo><mn>5</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mo>−</mo><msub><mo>log</mo><mn>2</mn></msub><mn>3</mn><mo>+</mo><msub><mo>log</mo><mn>2</mn></msub><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mn>11</mn><mi>.</mi></mtd></mtr></mtable></semantics></math></div>",
+  "accepted_answers": []
+}

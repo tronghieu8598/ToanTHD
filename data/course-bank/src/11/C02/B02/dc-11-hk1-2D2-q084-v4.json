@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-2D2-q084-v4",
+  "original_number": 84,
+  "kind": "tf",
+  "based_on": "36ea9542efcf1f353be5fb7643818d24be0c6ddc70b66656feb44870bef72f9b",
+  "prompt": "Giá của một chiếc xe ô tô lúc mới mua là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>680</mn></semantics></math> triệu đồng. Cứ sau mỗi năm sử dụng, giá của chiếc xe ô tô giảm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>50</mn></semantics></math> triệu đồng. Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>u</mi><mi>n</mi></msub></semantics></math> (triệu đồng) là giá của chiếc ô tô sau năm thứ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>n</mi></semantics></math> sử dụng. Xét tính đúng sai của các khẳng định sau:",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Giá của chiếc ô tô sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> năm sử dụng lớn hơn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>500</mn></semantics></math> triệu đồng"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>2</mn></msub><mo>=</mo><mn>630</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Dãy số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> là cấp số cộng với công sai <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>50</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Sau ít nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math> năm sử dụng thì giá của chiếc ô tô nhỏ hơn một nửa giá trị ban đầu của nó"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "solution": "Giá của chiếc xe ô tô  sau một năm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>2</mn></msub><mo>=</mo><mn>680</mn><mo>−</mo><mn>50</mn><mo>=</mo><mn>630</mn></mrow></semantics></math> triệu đồng.<br>Giá của chiếc xe ô tô  sau hai năm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>3</mn></msub><mo>=</mo><mn>680</mn><mo>−</mo><mn>2</mn><mo>⋅</mo><mn>50</mn><mo>=</mo><mn>580</mn></mrow></semantics></math> triệu đồng.<br><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>⋯</mi></semantics></math><br>Giá của chiếc xe ô tô sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>n</mi></semantics></math> năm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>=</mo><mn>680</mn><mo>−</mo><mi>n</mi><mo>⋅</mo><mn>50</mn><mo>=</mo><mn>680</mn><mo>−</mo><mn>50</mn><mi>n</mi></mrow></semantics></math> triệu đồng.<br><ol class=\"alpha-list\"><li><strong>Đúng.</strong><br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>2</mn></msub><mo>=</mo><mn>730</mn><mo>−</mo><mn>50</mn><mo>⋅</mo><mn>2</mn><mo>=</mo><mn>630</mn></mrow></semantics></math>.</li><li><strong>Sai</strong>.<br>Ta thấy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>−</mo><msub><mi>u</mi><mi>n</mi></msub><mo>=</mo><mn>680</mn><mo>−</mo><mn>50</mn><mi>n</mi><mo>−</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>680</mn><mo>−</mo><mn>50</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow><mo>=</mo><mo>−</mo><mn>50</mn></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> là cấp số cộng với công sai <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>=</mo><mo>−</mo><mn>50</mn></mrow></semantics></math>.</li><li><strong>Đúng</strong>.<br>Sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> năm sử dụng, giá của chiếc xe là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>4</mn></msub><mo>=</mo><mn>680</mn><mo>−</mo><mn>50</mn><mo>⋅</mo><mn>3</mn><mo>=</mo><mn>530</mn><mo>&gt;</mo><mn>500</mn></mrow></semantics></math> triệu đồng.</li><li><strong>Sai</strong>.<br>Xét <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>&lt;</mo><mfrac displaystyle=\"true\"><mn>680</mn><mn>2</mn></mfrac><mo>⇔</mo><mn>680</mn><mo>−</mo><mn>50</mn><mi>n</mi><mo>&lt;</mo><mn>340</mn><mo>⇔</mo><mn>50</mn><mi>n</mi><mo>&gt;</mo><mn>340</mn><mo>⇔</mo><mi>n</mi><mo>&gt;</mo><mn>6</mn><mo>,</mo><mn>8</mn></mrow></semantics></math> suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>7</mn></mrow></semantics></math>.<br>Như vậy sau ít nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math> năm thì giá của chiếc ô tô nhỏ hơn một nửa giá trị ban đầu của nó.</li></ol>",
+  "accepted_answers": []
+}

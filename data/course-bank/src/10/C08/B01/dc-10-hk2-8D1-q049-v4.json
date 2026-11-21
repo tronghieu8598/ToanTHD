@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-8D1-q049-v4",
+  "original_number": 49,
+  "kind": "mcq",
+  "based_on": "46846c84cadd8516d63a3b2e0e1ea0e94b9b3d6026355750c3353ffc59435873",
+  "prompt": "Một mạng đường giao thông nối các tỉnh A, B, C, D, E, F và G như hình vẽ, trong đó số viết trên mỗi cạnh nối <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> tỉnh với nhau thể hiện số con đường nối <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> tỉnh đó. Hỏi có bao nhiêu cách đi từ tỉnh A đến tỉnh G?\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/b92bc282966acd17d07312aabca51c4ef00cdb777f4effb3cb0c8aac8929f491.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>262</mn><mspace width=\"0.167em\"/><mn>080</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mspace width=\"0.167em\"/><mn>538</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>786</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>361</mn></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta xét các trường hợp sau\n\t\t<ul><li>Trường hợp 1: Đi theo đường A-B-D-E-G.<br>Số cách đi là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>⋅</mo><mn>5</mn><mo>⋅</mo><mn>7</mn><mo>=</mo><mn>210</mn></mrow></semantics></math> cách.</li><li>Trường hợp 2: Đi theo đường A-B-D-F-G.<br>Số cách đi là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>⋅</mo><mn>3</mn><mo>⋅</mo><mn>4</mn><mo>=</mo><mn>72</mn></mrow></semantics></math> cách.</li><li>Trường hợp 3: Đi theo đường A-C-D-E-G.<br>Số cách đi là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mo>⋅</mo><mn>6</mn><mo>⋅</mo><mn>5</mn><mo>⋅</mo><mn>7</mn><mo>=</mo><mn>1</mn><mspace width=\"0.167em\"/><mn>680</mn></mrow></semantics></math> cách.</li><li>Trường hợp 4: Đi theo đường A-C-D-F-G.<br>Số cách đi là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mo>⋅</mo><mn>6</mn><mo>⋅</mo><mn>3</mn><mo>⋅</mo><mn>4</mn><mo>=</mo><mn>576</mn></mrow></semantics></math> cách.</li></ul>\n\t\tVậy có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>210</mn><mo>+</mo><mn>72</mn><mo>+</mo><mn>1</mn><mspace width=\"0.167em\"/><mn>680</mn><mo>+</mo><mn>676</mn><mo>=</mo><mn>2</mn><mspace width=\"0.167em\"/><mn>538</mn></mrow></semantics></math> cách đi từ tỉnh A đến tỉnh G.",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-7D2-q083-v4",
+  "original_number": 83,
+  "kind": "mcq",
+  "based_on": "e63bcfd7bef4f0ee96c6e2648dd8a7d9f60ea63aea2162bbdd5bf097616addf8",
+  "prompt": "Tìm đạo hàm của hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mn>2024</mn><mi>x</mi></msup></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><msup><mn>2024</mn><mi>x</mi></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mfrac displaystyle=\"true\"><msup><mn>2024</mn><mi>x</mi></msup><mrow><mo>ln</mo><mn>2024</mn></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><msup><mn>2024</mn><mi>x</mi></msup><mo>⋅</mo><mo>ln</mo><mn>2024</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mi>x</mi><mo>⋅</mo><msup><mn>2024</mn><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Theo quy tắc tính đạo hàm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>a</mi><mi>x</mi></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi><mo>=</mo><msup><mi>a</mi><mi>x</mi></msup><mo>⋅</mo><mo>ln</mo><mi>a</mi></mrow></semantics></math> nên ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><msup><mn>2024</mn><mi>x</mi></msup><mo>⋅</mo><mo>ln</mo><mn>2024</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

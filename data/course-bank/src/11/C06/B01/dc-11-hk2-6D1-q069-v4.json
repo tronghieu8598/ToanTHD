@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D1-q069-v4",
+  "original_number": 69,
+  "kind": "mcq",
+  "based_on": "4f8a18a1cd702a3bc1722bb101e6454e1d6fc0b1b4a62a903da1a096492aacdb",
+  "prompt": "Biết <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><msup><mi>x</mi><msup><mi>a</mi><mn>2</mn></msup></msup><msup><mi>x</mi><msup><mi>b</mi><mn>2</mn></msup></msup></mfrac><mo>=</mo><msup><mi>x</mi><mn>16</mn></msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>&gt;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>. Tính giá trị của biểu thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>=</mo><mi>a</mi><mo>−</mo><mi>b</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>18</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>16</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>14</mn></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Ta có với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>1</mn></mrow></semantics></math> thì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><msup><mi>x</mi><msup><mi>a</mi><mn>2</mn></msup></msup><msup><mi>x</mi><msup><mi>b</mi><mn>2</mn></msup></msup></mfrac><mo>=</mo><msup><mi>x</mi><mn>16</mn></msup><mo>⇔</mo><msup><mi>x</mi><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></msup><mo>=</mo><msup><mi>x</mi><mn>16</mn></msup><mo>⇔</mo><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><msup><mi>b</mi><mn>2</mn></msup><mo>=</mo><mn>16</mn><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>a</mi><mo>−</mo><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>16</mn></mrow></semantics></math>.<br>Mà <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>=</mo><mn>2</mn></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>−</mo><mi>b</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>16</mn><mn>2</mn></mfrac><mo>=</mo><mn>8</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-1D2-q043-v4",
+  "original_number": 43,
+  "kind": "mcq",
+  "based_on": "05f80ba9ea18ce216cb5aef5673fef4dfcc6173be6261cefb5bcd686e610b84b",
+  "prompt": "Theo quy định tại Thông tư 22/2021/TT-BGDĐT quy định về đánh giá học sinh trung học cơ sở và học sinh trung học phổ thông, một học sinh được khen thưởng danh hiệu ““ Học sinh giỏi”” cuối năm học khi học sinh có kết quả rèn luyện (KQRL) cả năm được đánh giá mức Tốt và kết quả học tập (KQHT) cả năm học được đánh giá mức Tốt. Nếu gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math> lần lượt là tập hợp tất cả học sinh trường THPT Hồ Thị Bi có KQRL cả năm được đánh giá mức Tốt và tập hợp tất cả học sinh trường THPT Hồ Thị Bi có KQHT cả năm được đánh giá mức Tốt thì tập hợp tất cả học sinh trường THPT Hồ Thị Bi được khen thưởng danh hiệu ““ Học sinh giỏi”” là tập hợp nào dưới đây?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mo>\\</mo><mi>A</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∪</mo><mi>B</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>\\</mo><mi>B</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Nếu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> là một học sinh giỏi thì phải vừa là học sinh có KQRL cả năm được đánh giá tốt và KQHT được đánh giá mức tốt. Vậy có nghĩa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>x</mi></semantics></math> vừa thuộc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> vừa thuộc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math> nên tập hợp các học sinh giỏi là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>B</mi></mrow></semantics></math>.",
+  "accepted_answers": []
+}

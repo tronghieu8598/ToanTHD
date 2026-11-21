@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-1D1-q050-v4",
+  "original_number": 50,
+  "kind": "tf",
+  "based_on": "10de427ab2258e0f43a96d8dd39d20fc7fb764c7b5e3d37c553d7ae5e22da410",
+  "prompt": "Cho các mệnh đề sau\n\t<ul><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>:</mo></mrow></semantics></math>““ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>π</mi></semantics></math> là một số hữu tỉ””.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Q</mi><mo>:</mo></mrow></semantics></math>““ Tổng của độ dài hai cạnh một tam giác lớn hơn độ dài cạnh thứ ba””.</li></ul>",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi></semantics></math> là mệnh đề đúng"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>Q</mi></semantics></math> là mệnh đề đúng"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>⇒</mo><mi>Q</mi></mrow></semantics></math> là mệnh đề đúng"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>P</mi><mo accent=\"true\">¯</mo></mover><mo>⇒</mo><mi>Q</mi></mrow></semantics></math> là mệnh đề sai"
+    }
+  ],
+  "correct": [
+    false,
+    true,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Sai. Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>π</mi></semantics></math> là một số là một số vô tỉ.</li><li>Đúng. Vì theo bất đẳng thức trong tam giác, tổng của độ dài hai cạnh một tam giác lớn hơn độ dài cạnh thứ ba.</li><li>Đúng. Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi></semantics></math> là mệnh đề sai nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>⇒</mo><mi>Q</mi></mrow></semantics></math> là mệnh đề đúng.</li><li>Sai. Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi></semantics></math> là mệnh đề sai nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mi>P</mi><mo accent=\"true\">¯</mo></mover></semantics></math> là mệnh đề đúng và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>Q</mi></semantics></math> cũng là mệnh đề đúng nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>P</mi><mo accent=\"true\">¯</mo></mover><mo>⇒</mo><mi>Q</mi></mrow></semantics></math> là mệnh đề đúng.</li></ol>",
+  "accepted_answers": []
+}

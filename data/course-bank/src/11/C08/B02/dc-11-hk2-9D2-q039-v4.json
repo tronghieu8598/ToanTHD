@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-9D2-q039-v4",
+  "original_number": 39,
+  "kind": "mcq",
+  "based_on": "c6128a3aa69d8a0d81f1159be67892658824d3f3f0318d943afcbc1817b255c9",
+  "prompt": "Trong một lớp học gồm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>15</mn></semantics></math> học sinh nam và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> học sinh nữ. Giáo viên gọi ngẫu nhiên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> học sinh lên giải bài tập. Xác suất để <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> học sinh được gọi đó có cả nam và nữ là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>219</mn><mn>323</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>442</mn><mn>506</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>443</mn><mn>506</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>219</mn><mn>233</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Số cách chọn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> học sinh từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>25</mn></semantics></math> học sinh là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msubsup><mi mathvariant=\"normal\">C</mi><mn>25</mn><mn>4</mn></msubsup></semantics></math>.<br>Số cách chọn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> học sinh trong đó chỉ có nam hoặc nữ là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>15</mn><mn>4</mn></msubsup><mo>+</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>10</mn><mn>4</mn></msubsup></mrow></semantics></math>.<br>Xác suất để <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> học sinh được gọi có cả nam và nữ là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>15</mn><mn>4</mn></msubsup><mo>+</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>10</mn><mn>4</mn></msubsup></mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>25</mn><mn>4</mn></msubsup></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>443</mn><mn>506</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

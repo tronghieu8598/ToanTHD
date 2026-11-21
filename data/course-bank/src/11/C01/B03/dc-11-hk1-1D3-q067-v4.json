@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-1D3-q067-v4",
+  "original_number": 67,
+  "kind": "tf",
+  "based_on": "c90d48dc5cd787a080bf8b3b6e125b43319ddda4056384f6c4e8b5c129c6c0d7",
+  "prompt": "Cho hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mn>3</mn><mo>−</mo><mo>sin</mo><mn>2</mn><mi>x</mi></mrow></semantics></math>, khi đó",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Giá trị nhỏ nhất của hàm số bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Hàm số có tập xác định <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>ℝ</mi></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Tập giá trị của hàm số là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>2</mn><mo>;</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Chu kỳ của hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo>=</mo><mi>π</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li><strong>Đúng</strong>.</li><li><strong>Đúng</strong>.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mn>2</mn><mi>x</mi><mo>∈</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mo>−</mo><mn>1</mn><mo>;</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow><mo>,</mo><mo>∀</mo><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mo>−</mo><mo>sin</mo><mn>2</mn><mi>x</mi><mo>∈</mo><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>2</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></mrow></semantics></math>. Vậy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>min</mo><mi>y</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>.</li><li><strong>Đúng</strong>.<br>Hàm số đã cho tuần hoàn với chu kì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>π</mi></mrow><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mn>2</mn><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow></mfrac><mo>=</mo><mi>π</mi></mrow></semantics></math>.</li><li><strong>Sai</strong>.<br>Tập giá trị của hàm số là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>2</mn><mo>;</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

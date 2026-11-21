@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk2-6D4-q144-v4",
+  "original_number": 144,
+  "kind": "short",
+  "based_on": "aa7fd23ec7924dbf53703772cb3b075c88dd8824273dd671f1eeb40ff230458a",
+  "prompt": "Ông Minh gửi ngân hàng số tiền <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>100</mn></semantics></math> triệu đồng với lãi suất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>7</mn><mi>%</mi></mrow></semantics></math> một năm theo hình thức lãi kép. Biết rằng trong suốt quá trình gửi ông không rút tiền lãi. Hỏi sau ít nhất bao nhiêu năm thì ông có nhiều hơn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>500</mn></semantics></math> triệu?",
+  "choices": [],
+  "correct": "24",
+  "solution": "Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>n</mi></semantics></math> là số năm ông Minh gửi, số tiền ông Minh khi gửi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>n</mi></semantics></math> năm  là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>100</mn><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>+</mo><mn>0</mn><mo>,</mo><mn>07</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>n</mi></msup></mrow></semantics></math>. Theo giả thiết ta có \n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>100</mn><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>+</mo><mn>0</mn><mo>,</mo><mn>07</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>n</mi></msup><mo>&gt;</mo><mn>500</mn><mo>⇔</mo><mi>n</mi><mo>&gt;</mo><msub><mo>log</mo><mrow><mn>1</mn><mo>,</mo><mn>07</mn></mrow></msub><mn>5</mn><mo>≈</mo><mn>23</mn><mo>,</mo><mn>787</mn></mrow></semantics></math></div>\n\t\tVậy ông Minh cần ít nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>24</mn></semantics></math> năm.",
+  "accepted_answers": []
+}

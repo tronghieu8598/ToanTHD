@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-3H2-q063-v4",
+  "original_number": 63,
+  "kind": "mcq",
+  "based_on": "7a49957da9b0810989891a7a89320739bfb926b3943488b0068403ede76a3346",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mi>N</mi><mi>P</mi></mrow></semantics></math>, có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mi>N</mi><mo>=</mo><mn>6</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mi>P</mi><mo>=</mo><mn>8</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>N</mi><mi>M</mi><mi>P</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><msup><mn>60</mn><mo>∘</mo></msup></mrow></semantics></math>. Tính độ dài cạnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>N</mi><mi>P</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><msqrt><mn>13</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><msqrt><mn>37</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msqrt><mn>62</mn></msqrt></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "<div class=\"with-figure\"><div>Sử dụng định lý cô-sin trong tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mi>N</mi><mi>P</mi></mrow></semantics></math>, ta có\n\t\t\t\n\t\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"><mi>N</mi><msup><mi>P</mi><mn>2</mn></msup></mtd><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mi>M</mi><msup><mi>N</mi><mn>2</mn></msup><mo>+</mo><mi>M</mi><msup><mi>P</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mo>⋅</mo><mi>M</mi><mi>N</mi><mo>⋅</mo><mi>M</mi><mi>P</mi><mo>⋅</mo><mo>cos</mo><mover><mrow><mi>N</mi><mi>M</mi><mi>P</mi></mrow><mo accent=\"true\">̂</mo></mover></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><msup><mn>6</mn><mn>2</mn></msup><mo>+</mo><msup><mn>8</mn><mn>2</mn></msup><mo>−</mo><mn>2</mn><mo>⋅</mo><mn>6</mn><mo>⋅</mo><mn>8</mn><mo>⋅</mo><mo>cos</mo><msup><mn>60</mn><mo>∘</mo></msup></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mn>52</mn><mi>.</mi></mtd></mtr></mtable></semantics></math></div>\n\t\t\tSuy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>N</mi><mi>P</mi><mo>=</mo><msqrt><mn>52</mn></msqrt><mo>=</mo><mn>2</mn><msqrt><mn>13</mn></msqrt></mrow></semantics></math>.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/11841ecd314e397a1dcab02dc3b0660c2f156f9947be04ac8c243180081197a4.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div><div class=\"paragraph-gap\"></div>",
+  "accepted_answers": []
+}

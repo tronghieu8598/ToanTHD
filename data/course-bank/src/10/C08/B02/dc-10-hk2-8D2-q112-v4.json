@@ -1,0 +1,11 @@
+{
+  "id": "dc-10-hk2-8D2-q112-v4",
+  "original_number": 112,
+  "kind": "short",
+  "based_on": "b3b048678c06e3523ace4c99a76fae51ab1f417331ae1c04f1cef5f85b826dae",
+  "prompt": "Có bao nhiêu hình chữ nhật ở hình vẽ dưới đây?<br><div><figure class=\"tex-figure\"><img src=\"/bank-assets/7ca406009f8c8887f67550bbc25901936f218339ebfccb81c7b9984f2e0d21e1.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\t<div class=\"paragraph-gap\"></div>",
+  "choices": [],
+  "correct": "150",
+  "solution": "Mỗi một hình chữ nhật được tạo thành từ hai cặp đường thẳng song song (một cặp dọc và một cặp ngang).<br>Trong hình vẽ đã cho có tất cả <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> đường thẳng dọc và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> đường thẳng ngang.<br>Số cách chọn hai đường thẳng dọc song song với nhau là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>5</mn><mn>2</mn></msubsup><mo>=</mo><mn>10</mn></mrow></semantics></math>.<br>Số cách chọn hai đường thẳng ngang song song với nhau là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>6</mn><mn>2</mn></msubsup><mo>=</mo><mn>15</mn></mrow></semantics></math>.<br>Vậy có tất cả <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>10</mn><mo>⋅</mo><mn>15</mn><mo>=</mo><mn>150</mn></mrow></semantics></math> hình chữ nhật trong hình vẽ đã cho.",
+  "accepted_answers": []
+}

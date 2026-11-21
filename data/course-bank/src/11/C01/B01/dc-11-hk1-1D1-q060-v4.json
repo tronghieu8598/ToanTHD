@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-1D1-q060-v4",
+  "original_number": 60,
+  "kind": "tf",
+  "based_on": "f924c656c027ff9ee4b8c566b59f2429fcc1fc46db8b926d9cdab3a6eb1d526b",
+  "prompt": "Mỗi khẳng định dưới đây đúng hay sai?",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>1</mn><mo>∘</mo></msup><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>180</mn></mfrac><mspace width=\"0.167em\"/><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">d</mi></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>70</mn><mo>∘</mo></msup><mo>=</mo><mfrac displaystyle=\"true\"><mn>7</mn><mrow><mn>18</mn><mi>π</mi></mrow></mfrac><mspace width=\"0.167em\"/><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">d</mi></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>108</mn><mo>∘</mo></msup><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mi>π</mi></mrow><mn>5</mn></mfrac><mspace width=\"0.167em\"/><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">d</mi></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>45</mn><mo>∘</mo></msup><mn>30</mn><mi>′</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>91</mn><mi>π</mi></mrow><mn>360</mn></mfrac><mspace width=\"0.167em\"/><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">d</mi></mrow></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    true,
+    true
+  ],
+  "solution": "Ta có \n\t\t<ol class=\"alpha-list\"><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>1</mn><mo>∘</mo></msup><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>180</mn></mfrac><mspace width=\"0.167em\"/><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">d</mi></mrow></mrow></semantics></math>.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>70</mn><mo>∘</mo></msup><mo>=</mo><mn>70</mn><mo>⋅</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>180</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>7</mn><mi>π</mi></mrow><mn>18</mn></mfrac><mspace width=\"0.167em\"/><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">d</mi></mrow></mrow></semantics></math>.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>108</mn><mo>∘</mo></msup><mo>=</mo><mn>108</mn><mo>⋅</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>180</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mi>π</mi></mrow><mn>5</mn></mfrac><mspace width=\"0.167em\"/><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">d</mi></mrow></mrow></semantics></math>.</li><li><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>45</mn><mo>∘</mo></msup><mn>30</mn><mi>′</mi><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>45</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>∘</mo></msup><mo>=</mo><mn>45</mn><mo>,</mo><msup><mn>5</mn><mo>∘</mo></msup><mo>=</mo><mn>45</mn><mo>,</mo><mn>5</mn><mo>⋅</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>180</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>91</mn><mi>π</mi></mrow><mn>360</mn></mfrac><mspace width=\"0.167em\"/><mrow><mi mathvariant=\"normal\">r</mi><mi mathvariant=\"normal\">a</mi><mi mathvariant=\"normal\">d</mi></mrow></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

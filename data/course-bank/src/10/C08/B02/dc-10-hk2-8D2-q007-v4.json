@@ -1,0 +1,11 @@
+{
+  "id": "dc-10-hk2-8D2-q007-v4",
+  "original_number": 7,
+  "kind": "free",
+  "based_on": "007468679a96ded4305161dcd9c55dc1c4fb6471c8e2b1b3e56e7b57334f5b6a",
+  "prompt": "Cô giáo đã biên soạn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> câu hỏi trắc nghiệm. Từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> câu hỏi này, cô giáo chọn ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> câu hỏi và sắp xếp theo thứ tự để tạo nên một đề trắc nghiệm. Hỏi cô giáo có thể tạo bao nhiêu đề kiểm tra trắc nghiệm khác nhau?",
+  "choices": [],
+  "correct": null,
+  "solution": "Mỗi đề được tạo ra là một chỉnh hợp chập <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> câu hỏi. Do đó, số đề có thể được tạo ra là <div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">A</mi><mn>10</mn><mn>6</mn></msubsup><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>10</mn><mi>!</mi></mrow><mrow><mn>4</mn><mi>!</mi></mrow></mfrac><mo>=</mo><mn>151200</mn><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

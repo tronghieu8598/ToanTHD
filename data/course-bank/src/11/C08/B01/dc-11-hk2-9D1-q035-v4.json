@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-9D1-q035-v4",
+  "original_number": 35,
+  "kind": "mcq",
+  "based_on": "7c1059e776167f318f575e87558be9800dd9563cc4f16bd0cc42e5ee8127fccc",
+  "prompt": "Gieo một con súc sắc cân đối và đồng chất ba lần liên tiếp. Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi></semantics></math> là tích của ba số ở ba lần gieo (mỗi số là số chấm trên mặt súc sắc). Tính xác suất sao cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>P</mi></semantics></math> không chia hết cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>82</mn><mn>216</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>60</mn><mn>216</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>90</mn><mn>216</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>83</mn><mn>216</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Gieo <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> con xúc sắc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> lần liên tiếp có số phần tử không gian mẫu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">|</mo><mi>Ω</mi><mo stretchy=\"true\" form=\"postfix\">|</mo></mrow><mo>=</mo><msup><mn>6</mn><mn>3</mn></msup><mo>=</mo><mn>216</mn></mrow></semantics></math>.<br>Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là biến cố ““ tích ba số ở ba lần tung là số không chia hết cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math>””.\n\t\t<ul><li>Cả ba lần gieo đều không xuất hiện mặt <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> và mặt <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> nên có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>4</mn><mn>3</mn></msup><mo>=</mo><mn>64</mn></mrow></semantics></math> khả năng.</li><li>Có xuất hiện mặt <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> (ít nhất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> lần) và không xuất hiện mặt chẵn nên có  <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mo>⋅</mo><msup><mn>2</mn><mn>2</mn></msup><mo>+</mo><mn>3</mn><mo>⋅</mo><mn>2</mn><mo>+</mo><mn>1</mn><mo>=</mo><mn>19</mn></mrow></semantics></math> khá năng.</li></ul>\t\t\n\t\tSuy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>64</mn><mo>+</mo><mn>19</mn></mrow><msup><mn>6</mn><mn>3</mn></msup></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>83</mn><mn>216</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

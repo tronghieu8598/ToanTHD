@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D1-q049-v4",
+  "original_number": 49,
+  "kind": "mcq",
+  "based_on": "21669858088d42dbb0def1aadae42950ffeb6852c72d13bae7b876ee36b5cbed",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mi>x</mi><mfrac displaystyle=\"false\"><mn>1</mn><mn>3</mn></mfrac></msup><mroot><mi>x</mi><mn>6</mn></mroot></mrow><mroot><mi>x</mi><mn>4</mn></mroot></mfrac></mrow></semantics></math>, với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>. Khẳng định nào sau đây đúng?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><msup><mi>x</mi><mrow><mo>−</mo><mfrac displaystyle=\"false\"><mn>1</mn><mn>6</mn></mfrac></mrow></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><msqrt><mi>x</mi></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><mroot><mi>x</mi><mn>4</mn></mroot></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><msup><mi>x</mi><mfrac displaystyle=\"false\"><mn>1</mn><mn>6</mn></mfrac></msup></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mi>x</mi><mfrac displaystyle=\"false\"><mn>1</mn><mn>3</mn></mfrac></msup><mroot><mi>x</mi><mn>6</mn></mroot></mrow><mroot><mi>x</mi><mn>4</mn></mroot></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mi>x</mi><mfrac displaystyle=\"false\"><mn>1</mn><mn>3</mn></mfrac></msup><mo>⋅</mo><msup><mi>x</mi><mfrac displaystyle=\"false\"><mn>1</mn><mn>6</mn></mfrac></msup></mrow><msup><mi>x</mi><mfrac displaystyle=\"false\"><mn>1</mn><mn>4</mn></mfrac></msup></mfrac><mo>=</mo><msup><mi>x</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"false\"><mn>1</mn><mn>3</mn></mfrac><mo>+</mo><mfrac displaystyle=\"false\"><mn>1</mn><mn>6</mn></mfrac><mo>−</mo><mfrac displaystyle=\"false\"><mn>1</mn><mn>4</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></msup><mo>=</mo><msup><mi>x</mi><mfrac displaystyle=\"false\"><mn>1</mn><mn>4</mn></mfrac></msup><mo>=</mo><mroot><mi>x</mi><mn>4</mn></mroot></mrow></semantics></math>.",
+  "accepted_answers": []
+}

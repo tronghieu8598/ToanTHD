@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk2-6D3-q109-v4",
+  "original_number": 109,
+  "kind": "tf",
+  "based_on": "ba36cddfd8b98dc36f5ae0d65c84126d61af48bbd17c59552b912d6d13530a6f",
+  "prompt": "Tổng chi phí <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>T</mi></semantics></math> (nghìn đồng) để sản xuất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>n</mi></semantics></math> sản phẩm được cho bởi biểu thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mo>=</mo><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mn>70</mn><mi>n</mi><mo>+</mo><mn>3000</mn></mrow></semantics></math>. Giá bán của một sản phẩm là 200 nghìn đồng. (Giả sử các sản phẩm sản xuất ra đều được bán hết). Khi đó",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Số sản phẩm được sản xuất phải lớn hơn 100 thì sẽ bị lỗ"
+    },
+    {
+      "key": "b",
+      "text": "Số sản phẩm được sản xuất phải lớn hơn 50 thì sẽ không bị lỗ"
+    },
+    {
+      "key": "c",
+      "text": "Số sản phẩm được sản xuất phải trong giai đoạn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>50</mn><mo>;</mo><mn>130</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> thì sẽ không bị lỗ"
+    },
+    {
+      "key": "d",
+      "text": "Số sản phẩm được sản xuất phải trong đoạn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>30</mn><mo>;</mo><mn>100</mn><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> thì sẽ không bị lỗ"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "solution": "Với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>n</mi></semantics></math> sản phẩm thì tổng chi phí sản xuất là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>T</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>n</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mn>70</mn><mi>n</mi><mo>+</mo><mn>3000</mn></mrow></semantics></math> (nghìn đồng) và doanh thu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>200</mn><mi>n</mi></mrow></semantics></math> (nghìn đồng).<br>Suy ra lợi nhuận là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>L</mi><mo>=</mo><mn>200</mn><mi>n</mi><mo>−</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mn>70</mn><mi>n</mi><mo>+</mo><mn>3000</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mn>130</mn><mi>n</mi><mo>−</mo><mn>3000</mn></mrow></semantics></math> (nghìn đồng).<br>Để không bị lỗ thì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>L</mi><mo>≥</mo><mn>0</mn><mo>⇔</mo><mo>−</mo><msup><mi>n</mi><mn>2</mn></msup><mo>+</mo><mn>130</mn><mi>n</mi><mo>−</mo><mn>3000</mn><mo>≥</mo><mn>0</mn><mo>⇔</mo><mn>30</mn><mo>≤</mo><mi>n</mi><mo>≤</mo><mn>100</mn></mrow></semantics></math>.\n\t\t<ol class=\"alpha-list\"><li>Đúng.</li><li>Sai.</li><li>Sai.</li><li>Đúng.</li></ol>",
+  "accepted_answers": []
+}

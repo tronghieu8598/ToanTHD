@@ -1,0 +1,11 @@
+{
+  "id": "dc-10-hk2-8D1-q064-v4",
+  "original_number": 64,
+  "kind": "short",
+  "based_on": "a6be80296ae3ab0d7a9fa0617790710728fd5c6201bde2668e9e2c9b164d478f",
+  "prompt": "<div class=\"with-figure\"><div>Mã xác thực (OTP - One Time Password) do một ngân hàng gửi vào điện thoại của khách hàng cho mỗi lần giao dịch là một dãy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math> kí tự từ các chữ số từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>0</mn></semantics></math> đến <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>9</mn></semantics></math>. Số mật khẩu có thể tạo ra để gửi cho khách hàng là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>10</mn><mi>a</mi></msup></semantics></math>. Giá trị của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math> bằng bao nhiêu?</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/c1287dd0d1898452f20fc4b0c3465418ab4af5481f77718cdb43f949613a7ad3.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "choices": [],
+  "correct": "6",
+  "solution": "Mỗi kí tự đều có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> cách chọn khác nhau nên ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>10</mn><mo>⋅</mo><mn>10</mn><mo>⋅</mo><mn>10</mn><mo>⋅</mo><mn>10</mn><mo>⋅</mo><mn>10</mn><mo>⋅</mo><mn>10</mn><mo>=</mo><msup><mn>10</mn><mn>6</mn></msup></mrow></semantics></math> (cách).<br>Do đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>=</mo><mn>6</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

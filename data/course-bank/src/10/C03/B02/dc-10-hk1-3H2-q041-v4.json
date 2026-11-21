@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-3H2-q041-v4",
+  "original_number": 41,
+  "kind": "mcq",
+  "based_on": "b0dfc3d141e65c32062b4156dd449b48cef1994ab20ef59174f0bd822a6ab8c2",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mi>c</mi></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi><mo>=</mo><mi>b</mi></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi><mo>=</mo><mi>a</mi></mrow></semantics></math>. Khẳng định nào sau đây đúng?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mi>a</mi><mrow><mo>cos</mo><mi>B</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mi>b</mi><mrow><mo>cos</mo><mi>A</mi></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mi>a</mi><mrow><mo>cos</mo><mi>A</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mi>b</mi><mrow><mo>cos</mo><mi>B</mi></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mi>a</mi><mrow><mo>sin</mo><mi>B</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mi>b</mi><mrow><mo>sin</mo><mi>A</mi></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mi>a</mi><mrow><mo>sin</mo><mi>A</mi></mrow></mfrac></semantics></math>=<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mi>b</mi><mrow><mo>sin</mo><mi>B</mi></mrow></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Áp dụng định lí sin cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math>, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mi>a</mi><mrow><mo>sin</mo><mi>A</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mi>b</mi><mrow><mo>sin</mo><mi>B</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mi>c</mi><mrow><mo>sin</mo><mi>C</mi></mrow></mfrac><mo>=</mo><mn>2</mn><mi>R</mi></mrow></semantics></math>.",
+  "accepted_answers": []
+}

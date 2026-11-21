@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-4H1-q030-v4",
+  "original_number": 30,
+  "kind": "mcq",
+  "based_on": "1de73e8ec4a8ab91a27888d7a185f05550f6e993c92fa4c15f5ac9cb04a7a3c3",
+  "prompt": "<div class=\"with-figure\"><div>Hai chiếc ca nô cùng xuất phát từ cảng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math>, đi thẳng theo hai hướng tạo với nhau góc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>60</mn><mo>∘</mo></msup></semantics></math>. Ca nô <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>B</mi></semantics></math> chạy với vận tốc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20</mn></semantics></math> hải lí một giờ. Ca nô <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>C</mi></semantics></math> chạy với tốc độ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>25</mn></semantics></math> hải lí một giờ. Hỏi sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> giờ, hai ca nô cách nhau một khoảng xấp xỉ bao nhiêu hải lí (kết quả làm tròn đến hàng đơn vị)? (<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> hải lí <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>≈</mo><mn>1</mn><mo>,</mo><mn>852</mn></mrow></semantics></math> km).</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/2b1a049e585436fa2b6997d70b4189a0aa104c04da2a6e8b97f0fa6cc06fe2a9.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>43</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>45</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>44</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>46</mn></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Sau hai giờ ca nô đi theo hướng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi></mrow></semantics></math> được quãng đường là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mn>20</mn><mo>⋅</mo><mn>2</mn><mo>=</mo><mn>40</mn></mrow></semantics></math> (hải lí), ca nô đi theo hướng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi></mrow></semantics></math> được quãng đường là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>C</mi><mo>=</mo><mn>25</mn><mo>⋅</mo><mn>2</mn><mo>=</mo><mn>50</mn></mrow></semantics></math> (hải lí).<br>Xét tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math>, áp dụng định lý hàm số cô-sin ta được\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"><mi>B</mi><mi>C</mi></mtd><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><msqrt><mrow><mi>A</mi><msup><mi>B</mi><mn>2</mn></msup><mo>+</mo><mi>A</mi><msup><mi>C</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mo>⋅</mo><mi>A</mi><mi>B</mi><mo>⋅</mo><mi>A</mi><mi>C</mi><mo>⋅</mo><mo>cos</mo><msup><mn>60</mn><mo>∘</mo></msup></mrow></msqrt></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><msqrt><mrow><msup><mn>40</mn><mn>2</mn></msup><mo>+</mo><msup><mn>50</mn><mn>2</mn></msup><mo>−</mo><mn>2</mn><mo>⋅</mo><mn>40</mn><mo>⋅</mo><mn>50</mn><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></msqrt></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>=</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mn>20</mn><msqrt><mn>21</mn></msqrt><mo>≈</mo><mn>46</mn><mi>.</mi></mtd></mtr></mtable></semantics></math></div>\n\t\tVậy sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> giờ, hai ca nô cách nhau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>46</mn></semantics></math> hải lí.",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-3H2-q048-v4",
+  "original_number": 48,
+  "kind": "mcq",
+  "based_on": "39959c4a3053689211698dbe48483d354823d8e38c605816374131ba86b20da6",
+  "prompt": "Cho tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>B</mi><mi>C</mi><mo>=</mo><mn>15</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>C</mi><mi>A</mi><mo>=</mo><mn>13</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mn>14</mn></mrow></semantics></math>. Bán kính đường tròn nội tiếp của tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mo>,</mo><mn>125</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>16</mn><mo>,</mo><mn>25</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>p</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>A</mi><mi>B</mi><mo>+</mo><mi>B</mi><mi>C</mi><mo>+</mo><mi>C</mi><mi>A</mi></mrow><mn>2</mn></mfrac><mo>=</mo><mn>21</mn></mrow></semantics></math>. <br>Áp dụng công thức Heron, ta có diện tích tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mrow><mi>△</mi><mi>A</mi><mi>B</mi><mi>C</mi></mrow></msub><mo>=</mo><msqrt><mrow><mi>p</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>p</mi><mo>−</mo><mi>a</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>p</mi><mo>−</mo><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>p</mi><mo>−</mo><mi>c</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></msqrt><mo>=</mo><msqrt><mrow><mn>21</mn><mo>⋅</mo><mn>6</mn><mo>⋅</mo><mn>8</mn><mo>⋅</mo><mn>7</mn></mrow></msqrt><mo>=</mo><mn>84</mn></mrow></semantics></math>. <br>Mặt khác, ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mrow><mi>△</mi><mi>A</mi><mi>B</mi><mi>C</mi></mrow></msub><mo>=</mo><mi>p</mi><mi>r</mi><mo>⇔</mo><mn>84</mn><mo>=</mo><mn>21</mn><mo>⋅</mo><mi>r</mi><mo>⇔</mo><mi>r</mi><mo>=</mo><mn>4</mn></mrow></semantics></math>. <br>Vậy bán kính đường tròn nội tiếp của tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi></mrow></semantics></math> bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math>.",
+  "accepted_answers": []
+}

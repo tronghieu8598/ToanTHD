@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D1-q026-v4",
+  "original_number": 26,
+  "kind": "mcq",
+  "based_on": "9a2c85f38d5f8c312ccc2917eed76df8acbc62cc4904f1772bb3638eb7be076f",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>&gt;</mo><mn>0</mn></mrow></semantics></math>. Viết biểu thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>x</mi><mfrac displaystyle=\"false\"><mn>3</mn><mn>5</mn></mfrac></msup><mo>⋅</mo><mroot><mrow><msup><mi>x</mi><mn>5</mn></msup><msqrt><mi>x</mi></msqrt></mrow><mn>7</mn></mroot></mrow></semantics></math> về dạng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi>x</mi><mi>m</mi></msup></semantics></math> và biểu thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>y</mi><mfrac displaystyle=\"false\"><mn>2</mn><mn>5</mn></mfrac></msup><mo>:</mo><mroot><mrow><msup><mi>y</mi><mn>5</mn></msup><msqrt><mi>y</mi></msqrt></mrow><mn>7</mn></mroot></mrow></semantics></math> về dạng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi>y</mi><mi>n</mi></msup></semantics></math>. Tính <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>2</mn><mn>5</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>3</mn><mn>5</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>5</mn><mn>14</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>x</mi><mfrac displaystyle=\"false\"><mn>3</mn><mn>5</mn></mfrac></msup><mo>⋅</mo><mroot><mrow><msup><mi>x</mi><mn>5</mn></msup><msqrt><mi>x</mi></msqrt></mrow><mn>7</mn></mroot><mo>=</mo><msup><mi>x</mi><mfrac displaystyle=\"false\"><mn>3</mn><mn>5</mn></mfrac></msup><mo>⋅</mo><mroot><mrow><msup><mi>x</mi><mn>5</mn></msup><mo>⋅</mo><msup><mi>x</mi><mfrac displaystyle=\"false\"><mn>1</mn><mn>2</mn></mfrac></msup></mrow><mn>7</mn></mroot><mo>=</mo><msup><mi>x</mi><mfrac displaystyle=\"false\"><mn>3</mn><mn>5</mn></mfrac></msup><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>x</mi><mfrac displaystyle=\"false\"><mn>11</mn><mn>2</mn></mfrac></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mfrac displaystyle=\"false\"><mn>1</mn><mn>7</mn></mfrac></msup><mo>=</mo><msup><mi>x</mi><mfrac displaystyle=\"false\"><mn>97</mn><mn>70</mn></mfrac></msup><mo>⇒</mo><mi>m</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>97</mn><mn>70</mn></mfrac></mrow></semantics></math>.<br>Ta lại có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>y</mi><mfrac displaystyle=\"false\"><mn>2</mn><mn>5</mn></mfrac></msup><mo>:</mo><mroot><mrow><msup><mi>y</mi><mn>5</mn></msup><msqrt><mi>y</mi></msqrt></mrow><mn>7</mn></mroot><mo>=</mo><msup><mi>y</mi><mfrac displaystyle=\"false\"><mn>2</mn><mn>5</mn></mfrac></msup><mo>:</mo><mroot><mrow><msup><mi>y</mi><mn>5</mn></msup><mo>⋅</mo><msup><mi>y</mi><mfrac displaystyle=\"false\"><mn>1</mn><mn>2</mn></mfrac></msup></mrow><mn>7</mn></mroot><mo>=</mo><msup><mi>y</mi><mfrac displaystyle=\"false\"><mn>2</mn><mn>5</mn></mfrac></msup><mo>:</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mi>y</mi><mfrac displaystyle=\"false\"><mn>11</mn><mn>2</mn></mfrac></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mfrac displaystyle=\"false\"><mn>1</mn><mn>7</mn></mfrac></msup><mo>=</mo><msup><mi>y</mi><mrow><mo>−</mo><mfrac displaystyle=\"false\"><mn>27</mn><mn>70</mn></mfrac></mrow></msup><mo>⇒</mo><mi>n</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>27</mn><mn>70</mn></mfrac></mrow></semantics></math>.<br>Vậy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>m</mi><mo>+</mo><mi>n</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

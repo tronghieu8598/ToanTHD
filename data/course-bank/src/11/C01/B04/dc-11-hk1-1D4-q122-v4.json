@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk1-1D4-q122-v4",
+  "original_number": 122,
+  "kind": "short",
+  "based_on": "a23c2c42e4f2413a85034c90776c5bdb53e17b79e76fd1338e0f2230adaccc7c",
+  "prompt": "Có bao nhiêu giá trị nguyên của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>m</mi></semantics></math> để phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2025</mn><mo>sin</mo><mi>x</mi><mo>=</mo><mi>m</mi><mo>−</mo><mn>1</mn></mrow></semantics></math> có nghiệm?",
+  "choices": [],
+  "correct": "4051",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2025</mn><mo>sin</mo><mi>x</mi><mo>=</mo><mi>m</mi><mo>−</mo><mn>1</mn><mo>⇔</mo><mo>sin</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>m</mi><mo>−</mo><mn>1</mn></mrow><mn>2025</mn></mfrac></mrow></semantics></math>.<br>Phương trình có nghiệm khi và chỉ khi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>1</mn><mo>≤</mo><mfrac displaystyle=\"true\"><mrow><mi>m</mi><mo>−</mo><mn>1</mn></mrow><mn>2025</mn></mfrac><mo>≤</mo><mn>1</mn><mo>⇔</mo><mo>−</mo><mn>2024</mn><mo>≤</mo><mi>m</mi><mo>≤</mo><mn>2026</mn></mrow></semantics></math>.<br>Vậy số các giá trị nguyên của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>m</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4051</mn></semantics></math>.<div class=\"paragraph-gap\"></div>",
+  "accepted_answers": []
+}

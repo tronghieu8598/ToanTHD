@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-2D2-q080-v4",
+  "original_number": 80,
+  "kind": "tf",
+  "based_on": "e5cf74c6886bbc3c2b00b67cb8e83ba47fb37cb8369ec90618b8faffc6b10f3c",
+  "prompt": "Cho dãy số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>3</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msub><mi>u</mi><mi>n</mi></msub><mo>=</mo><mn>3</mn><msub><mi>u</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mi>.</mi></mtd></mtr></mtable></mrow></semantics></math>",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Tổng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>11</mn></semantics></math> số hạng đầu của dãy số trên  là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>88572</mn></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Dãy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> là cấp số nhân với công bội bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Số hạng thứ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> của dãy số này là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>10</mn></msub><mo>=</mo><mn>59049</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Ba số hạng đầu của dãy là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>9</mn></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>26</mn></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    true,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>2</mn></msub><mo>=</mo><mn>3</mn><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>3</mn><mo>⋅</mo><mn>3</mn><mo>=</mo><mn>9</mn></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>3</mn></msub><mo>=</mo><mn>3</mn><msub><mi>u</mi><mn>2</mn></msub><mo>=</mo><mn>9</mn><mo>⋅</mo><mn>3</mn><mo>=</mo><mn>27</mn></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>q</mi><mo>=</mo><mfrac displaystyle=\"true\"><msub><mi>u</mi><mi>n</mi></msub><msub><mi>u</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mfrac><mo>=</mo><mn>3</mn></mrow></semantics></math>.</li><li>Dãy số đã cho là cấp số nhân có công bội <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>q</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>3</mn></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>10</mn></msub><mo>=</mo><mn>3</mn><mo>⋅</mo><msup><mn>3</mn><mn>9</mn></msup><mo>=</mo><mn>59049</mn></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>S</mi><mn>10</mn></msub><mo>=</mo><mn>3</mn><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>−</mo><msup><mn>3</mn><mn>10</mn></msup></mrow><mrow><mn>1</mn><mo>−</mo><mn>3</mn></mrow></mfrac><mo>=</mo><mn>88572</mn></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

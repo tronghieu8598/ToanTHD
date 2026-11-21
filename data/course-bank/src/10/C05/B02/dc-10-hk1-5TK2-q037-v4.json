@@ -1,0 +1,33 @@
+{
+  "id": "dc-10-hk1-5TK2-q037-v4",
+  "original_number": 37,
+  "kind": "tf",
+  "based_on": "d6c80a9e92f729191e3991a3ecd0c14449ef5954a7a58b79951f182ff855a0e6",
+  "prompt": "Bảng sau đây cho biết số chỗ ngồi của một số sân vận động được sử dụng trong giải đấu bóng đá vô địch Quốc gia năm 2018 (số liệu gần đúng).\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Sân vận động</td><td>Cẩm Phả</td><td>Thiên Trường</td><td>Hàng Đẩy</td><td>Thanh Hóa</td><td>Mỹ Đình</td></tr><tr><td>Chỗ ngồi</td><td>20120</td><td>21315</td><td>23405</td><td>20120</td><td>37546</td></tr></tbody></table></div></div>",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Nếu bỏ đi số liệu chỗ ngồi của sân vận động Mỹ Đình thì mốt của mẫu số liệu không thay đổi"
+    },
+    {
+      "key": "b",
+      "text": "Số trung bình của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>24501</mn><mo>,</mo><mn>3</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Mốt của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20120</mn></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Trung vị của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>21315</mn></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Mốt của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20120</mn></semantics></math> vì có tần số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>.</li><li>Số trung bình của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>x</mi><mo accent=\"true\">¯</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>20120</mn><mo>+</mo><mn>21315</mn><mo>+</mo><mn>23405</mn><mo>+</mo><mn>20120</mn><mo>+</mo><mn>37546</mn></mrow><mn>5</mn></mfrac><mo>=</mo><mn>24501</mn><mo>,</mo><mn>2</mn></mrow></semantics></math>.</li><li>Sắp xếp: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20120</mn></semantics></math> <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20120</mn></semantics></math> <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>21315</mn></semantics></math> <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>23405</mn></semantics></math> <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>37546</mn></semantics></math>. Vậy trung vị của mẫu số liệu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>x</mi><mn>3</mn></msub><mo>=</mo><mn>21315</mn></mrow></semantics></math>.</li><li>Nếu bỏ đi số liệu chỗ ngồi của sân vận động Mỹ Đình thì mốt  của mẫu số liệu vẫn là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20120</mn></semantics></math> (không thay đổi).</li></ol>",
+  "accepted_answers": []
+}

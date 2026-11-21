@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-8H4-q080-v4",
+  "original_number": 80,
+  "kind": "mcq",
+  "based_on": "dce6329473af4d41ffa9acef8fe9465c481a834c007e8ab37b9245c7f7fe848b",
+  "prompt": "Trong hình vẽ bên dưới, chiếc laptop được mở gợi nên hình ảnh của một góc nhị diện. Ta gọi số đo góc nhị diện đó là độ mở của laptop.\n\t<div class=\"tex-center\"><figure class=\"tex-figure\"><img src=\"/bank-assets/d0b4e2cd8fd444c0a360289f634a64d45b0a445ee9496787a1d9efa0d7d96923.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tĐộ mở của chiếc laptop đó bằng bao nhiêu độ (làm tròn kết quả đến hàng đơn vị)?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>106</mn><mo>∘</mo></msup></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>107</mn><mo>∘</mo></msup></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>73</mn><mo>∘</mo></msup></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>74</mn><mo>∘</mo></msup></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Độ mở của chiếc laptop tương ứng với góc <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mrow><mi>B</mi><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">̂</mo></mover></semantics></math>.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mover><mrow><mi>B</mi><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">̂</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>A</mi><msup><mi>B</mi><mn>2</mn></msup><mo>+</mo><mi>A</mi><msup><mi>C</mi><mn>2</mn></msup><mo>−</mo><mi>B</mi><msup><mi>C</mi><mn>2</mn></msup></mrow><mrow><mn>2</mn><mo>⋅</mo><mi>A</mi><mi>B</mi><mo>⋅</mo><mi>A</mi><mi>C</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mn>25</mn><mn>2</mn></msup><mo>+</mo><msup><mn>25</mn><mn>2</mn></msup><mo>−</mo><msup><mn>40</mn><mn>2</mn></msup></mrow><mrow><mn>2</mn><mo>⋅</mo><mn>25</mn><mo>⋅</mo><mn>25</mn></mrow></mfrac><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>7</mn><mn>25</mn></mfrac></mrow></semantics></math>.<br>Do đó độ mở của chiếc laptop bằng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mn>106</mn><mo>∘</mo></msup></semantics></math>.",
+  "accepted_answers": []
+}

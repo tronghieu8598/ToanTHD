@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-9D1-q031-v4",
+  "original_number": 31,
+  "kind": "mcq",
+  "based_on": "05552869d51f2c1ede3a38363c5a68902d04637d47686f16d17b8db0f02dcbc5",
+  "prompt": "Hai người độc lập nhau ném bóng vào rổ. Mỗi người ném vào rổ của mình một quả bóng. Biết rằng xác suất ném bóng trúng vào rổ của từng người tương ứng là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>3</mn><mn>7</mn></mfrac></semantics></math>. Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là biến cố: ““  Cả hai cùng ném bóng trúng vào rổ ””. Khi đó, xác suất của biến cố <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là bao nhiêu?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>3</mn><mn>7</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>21</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>7</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Do hai người ném bóng vào rổ là độc lập nên theo quy tắc nhân xác suất của hai biến cố độc lập suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>7</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>7</mn></mfrac><mi>.</mi></mrow></semantics></math>",
+  "accepted_answers": []
+}

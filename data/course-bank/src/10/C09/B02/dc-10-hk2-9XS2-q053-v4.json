@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-9XS2-q053-v4",
+  "original_number": 53,
+  "kind": "mcq",
+  "based_on": "e3358940e0c5bd2bab00f293c4dfaad0da3db3fa0b9a47c198c5eabd8800976c",
+  "prompt": "Một hộp có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> bi đỏ và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>9</mn></semantics></math> bi xanh, các viên bi có kích thước và khối lượng như nhau. Một người lấy ngẫu nhiên từ hộp đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math> viên bi. Xác suất để trong <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math> viên bi được chọn có ít nhất một viên bi đỏ là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>10</mn><mrow><mn>4</mn><mspace width=\"0.167em\"/><mn>199</mn></mrow></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>4</mn><mspace width=\"0.167em\"/><mn>189</mn></mrow><mrow><mn>4</mn><mspace width=\"0.167em\"/><mn>199</mn></mrow></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>3</mn><mrow><mn>4</mn><mspace width=\"0.167em\"/><mn>199</mn></mrow></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>4</mn><mspace width=\"0.167em\"/><mn>196</mn></mrow><mrow><mn>4</mn><mspace width=\"0.167em\"/><mn>199</mn></mrow></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Ω</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>19</mn><mn>7</mn></msubsup><mo>=</mo><mn>50</mn><mspace width=\"0.167em\"/><mn>388</mn></mrow></semantics></math>.<br>Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là biến cố “ “ Trong <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math> viên bi được chọn không có viên bi màu đỏ” ”. Suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>9</mn><mn>7</mn></msubsup><mo>=</mo><mn>36</mn></mrow></semantics></math>.<br>Khi đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover></semantics></math> là biến cố “ “ Trong <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math> viên bi được chọn có ít nhất một viên bi đỏ” ”.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mrow><mi>n</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Ω</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac><mo>=</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>36</mn><mrow><mn>50</mn><mspace width=\"0.167em\"/><mn>388</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn><mspace width=\"0.167em\"/><mn>196</mn></mrow><mrow><mn>4</mn><mspace width=\"0.167em\"/><mn>199</mn></mrow></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

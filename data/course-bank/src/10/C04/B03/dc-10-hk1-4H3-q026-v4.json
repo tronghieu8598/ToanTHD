@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-4H3-q026-v4",
+  "original_number": 26,
+  "kind": "mcq",
+  "based_on": "dabc21a9f2db18a3dffba190223313b1a0d9061ebd159f772de2942059050225",
+  "prompt": "Cho hình vuông <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> có tâm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>O</mi></semantics></math>. Tìm mệnh đề <strong>sai</strong>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>A</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>2</mn><mover><mrow><mi>A</mi><mi>O</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>D</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>4</mn><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>O</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>O</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mover><mrow><mi>C</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>D</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>D</mi><mi>O</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mover><mrow><mi>C</mi><mi>A</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "<div class=\"with-figure\"><div>Ta có\n\t\t\t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>D</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>2</mn><mover><mrow><mi>A</mi><mi>O</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mn>2</mn><mover><mrow><mi>O</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>2</mn><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math>.\n\t\t\tVậy khẳng định <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mrow><mi>A</mi><mi>C</mi></mrow><mo accent=\"true\">→</mo></mover><mo>+</mo><mover><mrow><mi>D</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover><mo>=</mo><mn>4</mn><mover><mrow><mi>A</mi><mi>B</mi></mrow><mo accent=\"true\">→</mo></mover></mrow></semantics></math> là khẳng định sai và dễ dàng kiểm tra các khẳng định còn lại đều là khẳng định đúng.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/d2d936698b4b47a1682acfe484b61626c0b246e25b35974a8296694fd7a0b8ab.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

@@ -111,7 +111,7 @@ function baseBank() {
 function compileBank(read, list, scope) {
     const {manifest, questions} = baseBank();
     const rows = [], approvedSources = [], effective = new Map();
-    const {lessons, approvedReviews} = bankReleaseChapters[scope];
+    const {lessons, approvedReviews, variants} = bankReleaseChapters[scope];
     for (const lesson of lessons) {
         const folder = bankSource(scope, lesson.folder);
         const originals = new Map(questions.filter(row => row.lesson_id === lesson.id).map(row => [row.id, row]));
@@ -123,8 +123,9 @@ function compileBank(read, list, scope) {
             const keys = ['id', 'original_number', 'kind', 'based_on', ...fields];
             const hasStatus = Object.hasOwn(input, 'bank_status');
             const approval = input.bank_status === 'auto' && approvedReviews?.[input.id];
+            const markForReview = input.bank_status === 'review' && (variants !== false || original.bank_status !== 'reference');
             if (hasStatus) keys.push('bank_status');
-            fail(shape(input, keys) && (!hasStatus || input.bank_status === 'review' || approval && original.bank_status === 'review') &&
+            fail(shape(input, keys) && (!hasStatus || markForReview || approval && original.bank_status === 'review') &&
                 input.original_number === original.original_number && input.kind === original.kind && input.based_on === original.bank_fingerprint,
             label + ' · Mã, số gốc, dạng câu, trạng thái hoặc dấu vân tay nguồn không hợp lệ.');
             const baseContent = questionContent(original);
@@ -259,10 +260,12 @@ function compileLibrary(read) {
 export function compileContent(part = 'all', read = readDisk, list = listDisk, scope = defaultScope) {
     fail(part === 'all' || parts.includes(part), 'Chọn bank, variants, library hoặc all.');
     fail(Object.hasOwn(bankReleaseChapters, scope), 'Chương chưa có cấu hình biên tập.');
+    const hasVariants = bankReleaseChapters[scope].variants !== false;
+    fail(part !== 'variants' || hasVariants, `Chương ${scope} chưa có gói biến thể đã duyệt.`);
     const bank = part !== 'library' ? compileBank(read, list, scope) : null;
     const results = [];
     if (part === 'all' || part === 'bank') results.push(bank);
-    if (part === 'all' || part === 'variants') results.push(compileVariants(read, list, bank.effective, scope));
+    if (hasVariants && (part === 'all' || part === 'variants')) results.push(compileVariants(read, list, bank.effective, scope));
     if (part === 'library' || (part === 'all' && scope === defaultScope)) results.push(compileLibrary(read));
     return results;
 }
@@ -283,17 +286,18 @@ function writeGenerated(relative, bytes) {
 export function frozenLessonInputs(scope = defaultScope) {
     fail(Object.hasOwn(bankReleaseChapters, scope), 'Chương chưa có cấu hình biên tập.');
     const {questions} = baseBank();
-    const frozenVariants = frozenVariantsFor(scope);
+    const chapter = bankReleaseChapters[scope];
+    const frozenVariants = chapter.variants === false ? null : frozenVariantsFor(scope);
     const files = {};
-    for (const lesson of bankReleaseChapters[scope].lessons) {
+    for (const lesson of chapter.lessons) {
         const bankFolder = bankSource(scope, lesson.folder);
         const variantFolder = variantSource(scope, lesson.folder);
         for (const row of questions.filter(row => row.lesson_id === lesson.id)) {
             const filename = row.id + '.json';
             files[bankFolder + '/' + filename] = jsonBytes({id: row.id, original_number: row.original_number,
                 kind: row.kind, based_on: row.bank_fingerprint, ...questionContent(row)});
-            files[variantFolder + '/' + filename] = jsonBytes({id: row.id, source_fingerprint: row.bank_fingerprint,
-                variants: frozenVariants[row.id]});
+            if (frozenVariants) files[variantFolder + '/' + filename] = jsonBytes({id: row.id,
+                source_fingerprint: row.bank_fingerprint, variants: frozenVariants[row.id]});
         }
     }
     return files;
@@ -305,8 +309,11 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
         const [command = 'check', part = 'all'] = positionals;
         fail(positionals.length <= 2 && ['check', 'build', 'preview'].includes(command),
             `Dùng content-pilot.mjs check|build|preview [bank|variants|library|all] [--chapter ${Object.keys(bankReleaseChapters).join('|')}].`);
+        const allScopes = Object.keys(bankReleaseChapters);
         const scopes = values.chapter ? [values.chapter]
-            : command === 'check' && part !== 'library' ? Object.keys(bankReleaseChapters) : [defaultScope];
+            : command === 'check' && part !== 'library'
+                ? allScopes.filter(scope => part !== 'variants' || bankReleaseChapters[scope].variants !== false)
+                : [defaultScope];
         const outputs = scopes.flatMap(scope => compileContent(part, readDisk, listDisk, scope)
             .map(output => ({...output, scope})));
         for (const {files, scope} of outputs) for (const [file, bytes] of files) {

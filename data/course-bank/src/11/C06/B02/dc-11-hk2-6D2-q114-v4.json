@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk2-6D2-q114-v4",
+  "original_number": 114,
+  "kind": "short",
+  "based_on": "094f3a0db87aa0b1e16bde4bd7d25acc7b370d64c0c4a5bd253d922085a286fd",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>a</mi></msub><mi>x</mi><mo>=</mo><mn>2</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>b</mi></msub><mi>x</mi><mo>=</mo><mn>3</mn></mrow></semantics></math>. Giá trị của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><msub><mo>log</mo><mfrac displaystyle=\"false\"><msup><mi>a</mi><mn>2</mn></msup><mi>b</mi></mfrac></msub><mi>x</mi></mrow></semantics></math> bằng bao nhiêu?",
+  "choices": [],
+  "correct": "1.5",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mi>b</mi></msub><mi>x</mi><mo>=</mo><mn>3</mn><mo>⇔</mo><mfrac displaystyle=\"true\"><mrow><msub><mo>log</mo><mi>a</mi></msub><mi>x</mi></mrow><mrow><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow></mfrac><mo>=</mo><mn>3</mn><mo>⇔</mo><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></mrow></semantics></math>.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>P</mi><mo>=</mo><msub><mo>log</mo><mfrac displaystyle=\"false\"><msup><mi>a</mi><mn>2</mn></msup><mi>b</mi></mfrac></msub><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msub><mo>log</mo><mi>a</mi></msub><mi>x</mi></mrow><mrow><msub><mo>log</mo><mi>a</mi></msub><mfrac displaystyle=\"true\"><msup><mi>a</mi><mn>2</mn></msup><mi>b</mi></mfrac></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mrow><msub><mo>log</mo><mi>a</mi></msub><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><msub><mo>log</mo><mi>a</mi></msub><mi>b</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mrow><mn>2</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac><mo>=</mo><mn>1</mn><mo>,</mo><mn>5</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

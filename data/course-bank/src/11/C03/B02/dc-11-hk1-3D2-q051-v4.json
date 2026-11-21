@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-3D2-q051-v4",
+  "original_number": 51,
+  "kind": "mcq",
+  "based_on": "59d98d3105b847562205768a66b93066323220550f3d2698e67571efa47b5c3d",
+  "prompt": "Đo chiều cao (cm) của 40 học sinh lớp 11 ta thu được bảng số liệu ghép nhóm sau\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Chiều cao</td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>150</mn><mo>;</mo><mn>155</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>155</mn><mo>;</mo><mn>160</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>160</mn><mo>;</mo><mn>165</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>165</mn><mo>;</mo><mn>170</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>170</mn><mo>;</mo><mn>175</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>175</mn><mo>;</mo><mn>180</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math></td></tr><tr><td>Số học sinh</td><td>5</td><td>10</td><td>15</td><td>5</td><td>3</td><td>2</td></tr></tbody></table></div></div>\n\tNhóm chứa trung vị là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>170</mn><mo>;</mo><mn>175</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>160</mn><mo>;</mo><mn>165</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>155</mn><mo>;</mo><mn>160</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>165</mn><mo>;</mo><mn>170</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có cỡ mẫu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><mn>40</mn></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mi>n</mi><mn>2</mn></mfrac><mo>=</mo><mn>20</mn></mrow></semantics></math>.<br>Mà <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>15</mn><mo>&lt;</mo><mn>20</mn><mo>&lt;</mo><mn>30</mn></mrow></semantics></math> nên nhóm chứa trung vị là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"false\" form=\"prefix\">[</mo><mn>160</mn><mo>;</mo><mn>165</mn><mo stretchy=\"false\" form=\"postfix\">)</mo></mrow></semantics></math>.",
+  "accepted_answers": []
+}

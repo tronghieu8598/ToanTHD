@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk2-9D2-q064-v4",
+  "original_number": 64,
+  "kind": "tf",
+  "based_on": "41aad2de7a9e1bd13a740b3b45e3715867964dd4da8ce875777c2b88cd1d0b70",
+  "prompt": "Trong một bài thi trắc nghiệm khách quan gồm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> câu. Mỗi câu có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math> phương án trả lời, trong đó chỉ có một phương án đúng. Một học sinh chuẩn bị bài không tốt nên làm bài bằng cách: Với mỗi câu, chọn ngẫu nhiên một phương án trả lời. Xét tính đúng sai trong các khẳng định sau.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Xác suất để học sinh đó trả lời đúng mỗi câu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>25</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Xác suất để học sinh đó trả lời đúng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> câu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>10</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>25</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Xác suất để học sinh đó trả lời sai mỗi câu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>75</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Xác suất để học sinh đó trả lời sai cả <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>10</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>75</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    true,
+    false
+  ],
+  "solution": "Mỗi câu, xác suất để học sinh chọn sai là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>75</mn></mrow></semantics></math>.<br>Mỗi câu, xác suất để học sinh chọn đúng là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>4</mn></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>25</mn></mrow></semantics></math>.<br>Khi đó, xác suất để học sinh chọn sai cả 10 câu là\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><munder><mrow><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac><mi>⋯</mi><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac></mrow><mo accent=\"true\">⏟</mo></munder><mn>10</mn></munder><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>10</mn></msup><mo>=</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>0</mn><mo>,</mo><mn>75</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>10</mn></msup><mi>.</mi></mrow></semantics></math></div>\n\t\tXác suất để học sinh chọn đúng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> câu là\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>10</mn><mn>1</mn></msubsup><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>4</mn></mfrac><mo>=</mo><mn>10</mn><mo>⋅</mo><mn>0</mn><mo>,</mo><mn>25</mn><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

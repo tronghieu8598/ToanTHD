@@ -1,0 +1,11 @@
+{
+  "id": "dc-10-hk2-8D2-q117-v4",
+  "original_number": 117,
+  "kind": "short",
+  "based_on": "818555f458d1877f588274ac3d3e7c5e333019d0f393e60c89d10ad079d57090",
+  "prompt": "Có bao nhiêu số tự nhiên chẵn gồm bốn chữ số khác nhau được lập từ các chữ số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>;</mo><mspace width=\"0.167em\"/><mn>2</mn><mo>;</mo><mspace width=\"0.167em\"/><mn>3</mn><mo>;</mo><mspace width=\"0.167em\"/><mn>4</mn><mo>;</mo><mspace width=\"0.167em\"/><mn>6</mn><mo>;</mo><mspace width=\"0.167em\"/><mn>9</mn></mrow></semantics></math>?\n\t<div class=\"paragraph-gap\"></div>",
+  "choices": [],
+  "correct": "180",
+  "solution": "Để số lập được là số tự nhiên chẵn thì chữ số tận cùng của nó phải là số chẵn.<br>Chọn chữ số tận cùng có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> cách.<br>Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msubsup><mi mathvariant=\"normal\">A</mi><mn>5</mn><mn>3</mn></msubsup></semantics></math> cách chọn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> trong <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> chữ số còn lại để viết các chữ số còn lại.<br>Vậy có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mo>⋅</mo><msubsup><mi mathvariant=\"normal\">A</mi><mn>5</mn><mn>3</mn></msubsup><mo>=</mo><mn>180</mn></mrow></semantics></math> số tự nhiên chẵn có bốn chữ số khác nhau lấy từ tập hợp trên.",
+  "accepted_answers": []
+}

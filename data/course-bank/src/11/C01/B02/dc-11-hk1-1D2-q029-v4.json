@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-1D2-q029-v4",
+  "original_number": 29,
+  "kind": "mcq",
+  "based_on": "8f46815bc4fe3b8a59a9e150a2fcd7abad31aff6a2d483d090346528f4f5c234",
+  "prompt": "Với mọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>b</mi></semantics></math> thỏa mãn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>≠</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mi>k</mi><mi>π</mi></mrow></semantics></math> (<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>), ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mo>tan</mo><mi>a</mi><mo>+</mo><mo>tan</mo><mi>b</mi></mrow><mrow><mn>1</mn><mo>−</mo><mo>tan</mo><mi>a</mi><mo>⋅</mo><mo>tan</mo><mi>b</mi></mrow></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mo>sin</mo><mi>a</mi><mo>+</mo><mo>sin</mo><mi>b</mi></mrow><mrow><mo>cos</mo><mi>a</mi><mo>+</mo><mo>cos</mo><mi>b</mi></mrow></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mo>tan</mo><mi>a</mi><mo>+</mo><mo>tan</mo><mi>b</mi></mrow><mrow><mn>1</mn><mo>+</mo><mo>tan</mo><mi>a</mi><mo>⋅</mo><mo>tan</mo><mi>b</mi></mrow></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mi>a</mi><mo>−</mo><mo>tan</mo><mi>b</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>b</mi></semantics></math> thỏa mãn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>≠</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mi>k</mi><mi>π</mi></mrow></semantics></math> (<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>), ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>tan</mo><mi>a</mi><mo>+</mo><mo>tan</mo><mi>b</mi></mrow><mrow><mn>1</mn><mo>−</mo><mo>tan</mo><mi>a</mi><mo>⋅</mo><mo>tan</mo><mi>b</mi></mrow></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

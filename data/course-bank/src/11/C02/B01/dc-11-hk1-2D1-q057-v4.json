@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-2D1-q057-v4",
+  "original_number": 57,
+  "kind": "tf",
+  "based_on": "51f7d4f3c6e3e4cfdf0cd7b98a222fab0fc7c008738ceceebf66b3a1e5d332bc",
+  "prompt": "Cho dãy số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> được xác định bởi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mi>n</mi></msub><mo>=</mo><msub><mi>u</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><mn>2</mn><mi>n</mi></mrow></semantics></math> với mọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>2</mn></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Ba số hạng đầu tiên của dãy số lần lượt là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>11</mn></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>4</mn></msub><mo>&gt;</mo><msub><mi>u</mi><mn>3</mn></msub></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> là một dãy số giảm"
+    },
+    {
+      "key": "d",
+      "text": "Số hạng thứ tư của dãy là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>17</mn></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>2</mn></msub><mo>=</mo><msub><mi>u</mi><mn>1</mn></msub><mo>+</mo><mn>2</mn><mo>⋅</mo><mn>2</mn><mo>=</mo><mn>1</mn><mo>+</mo><mn>2</mn><mo>⋅</mo><mn>2</mn><mo>=</mo><mn>5</mn></mrow></semantics></math>.<br><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>3</mn></msub><mo>=</mo><msub><mi>u</mi><mn>2</mn></msub><mo>+</mo><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>=</mo><mn>5</mn><mo>+</mo><mn>2</mn><mo>⋅</mo><mn>3</mn><mo>=</mo><mn>11</mn></mrow></semantics></math>.<br></li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>4</mn></msub><mo>=</mo><msub><mi>u</mi><mn>3</mn></msub><mo>+</mo><mn>2</mn><mo>⋅</mo><mn>4</mn><mo>=</mo><mn>11</mn><mo>+</mo><mn>2</mn><mo>⋅</mo><mn>4</mn><mo>=</mo><mn>17</mn></mrow></semantics></math>.</li><li>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>4</mn></msub><mo>=</mo><mn>17</mn><mo>&gt;</mo><msub><mi>u</mi><mn>3</mn></msub><mo>=</mo><mn>11</mn></mrow></semantics></math>.</li><li>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>1</mn><mo>&lt;</mo><msub><mi>u</mi><mn>2</mn></msub><mo>=</mo><mn>5</mn><mo>&lt;</mo><msub><mi>u</mi><mn>3</mn></msub><mo>=</mo><mn>11</mn></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> là một dãy số không giảm.</li></ol>",
+  "accepted_answers": []
+}

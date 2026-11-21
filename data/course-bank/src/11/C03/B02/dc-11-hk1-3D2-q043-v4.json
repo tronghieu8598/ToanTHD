@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-3D2-q043-v4",
+  "original_number": 43,
+  "kind": "mcq",
+  "based_on": "c0d2ff8efcd64df5035c87fa6904caaa8c145f13e25366b5a81699653645a57f",
+  "prompt": "Giả sử mẫu số liệu được cho dưới dạng bảng tần số ghép nhóm<br><div><figure class=\"tex-figure\"><img src=\"/bank-assets/7b06bb459b27cd013c43d76c60f01de7448893cd0a74dfbcca8e0076a4df652d.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div>\n\tĐặt <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>=</mo><msub><mi>n</mi><mn>1</mn></msub><mo>+</mo><msub><mi>n</mi><mn>2</mn></msub><mo>+</mo><mi>⋯</mi><mo>+</mo><msub><mi>n</mi><mi>k</mi></msub></mrow></semantics></math>.<br>Số trung bình của mẫu số liệu ghép nhóm, kí hiệu <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mover><mi>x</mi><mo accent=\"true\">¯</mo></mover></semantics></math>, được tính theo công thức nào dưới đây?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>x</mi><mo accent=\"true\">¯</mo></mover><mo>=</mo><msqrt><mfrac displaystyle=\"true\"><mrow><msub><mi>n</mi><mn>1</mn></msub><msub><mi>c</mi><mn>1</mn></msub><mo>+</mo><msub><mi>n</mi><mn>2</mn></msub><msub><mi>c</mi><mn>2</mn></msub><mo>+</mo><mi>⋯</mi><mo>+</mo><msub><mi>n</mi><mi>k</mi></msub><msub><mi>c</mi><mi>k</mi></msub></mrow><mi>n</mi></mfrac></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>x</mi><mo accent=\"true\">¯</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msubsup><mi>n</mi><mn>1</mn><mn>2</mn></msubsup><msub><mi>c</mi><mn>1</mn></msub><mo>+</mo><msubsup><mi>n</mi><mn>2</mn><mn>2</mn></msubsup><msub><mi>c</mi><mn>2</mn></msub><mo>+</mo><mi>⋯</mi><mo>+</mo><msubsup><mi>n</mi><mi>k</mi><mn>2</mn></msubsup><msub><mi>c</mi><mi>k</mi></msub></mrow><mi>n</mi></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>x</mi><mo accent=\"true\">¯</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msub><mi>n</mi><mn>1</mn></msub><msub><mi>c</mi><mn>1</mn></msub><mo>+</mo><msub><mi>n</mi><mn>2</mn></msub><msub><mi>c</mi><mn>2</mn></msub><mo>+</mo><mi>⋯</mi><mo>+</mo><msub><mi>n</mi><mi>k</mi></msub><msub><mi>c</mi><mi>k</mi></msub></mrow><msqrt><mi>n</mi></msqrt></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>x</mi><mo accent=\"true\">¯</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msub><mi>n</mi><mn>1</mn></msub><msub><mi>c</mi><mn>1</mn></msub><mo>+</mo><msub><mi>n</mi><mn>2</mn></msub><msub><mi>c</mi><mn>2</mn></msub><mo>+</mo><mi>⋯</mi><mo>+</mo><msub><mi>n</mi><mi>k</mi></msub><msub><mi>c</mi><mi>k</mi></msub></mrow><mi>n</mi></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Số trung bình của mẫu số liệu ghép nhóm trong bảng đã cho là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>x</mi><mo accent=\"true\">¯</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msub><mi>n</mi><mn>1</mn></msub><msub><mi>c</mi><mn>1</mn></msub><mo>+</mo><msub><mi>n</mi><mn>2</mn></msub><msub><mi>c</mi><mn>2</mn></msub><mo>+</mo><mi>⋯</mi><mo>+</mo><msub><mi>n</mi><mi>k</mi></msub><msub><mi>c</mi><mi>k</mi></msub></mrow><mi>n</mi></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

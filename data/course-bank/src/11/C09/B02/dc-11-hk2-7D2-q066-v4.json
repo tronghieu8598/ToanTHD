@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-7D2-q066-v4",
+  "original_number": 66,
+  "kind": "mcq",
+  "based_on": "232a93316b89957ffdedfe9b7316ce0357caef7c388ccc1afc792e9463e09efd",
+  "prompt": "Hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>cot</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><msup><mn>2</mn><mi>x</mi></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> có đạo hàm là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><msup><mn>2</mn><mi>x</mi></msup><mo>⋅</mo><mo>ln</mo><mn>2</mn></mrow><mrow><msup><mo>sin</mo><mn>2</mn></msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><msup><mn>2</mn><mi>x</mi></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><msup><mn>2</mn><mi>x</mi></msup><mo>⋅</mo><mo>ln</mo><mn>2</mn></mrow><mrow><msup><mo>cos</mo><mn>2</mn></msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><msup><mn>2</mn><mi>x</mi></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mn>2</mn><mi>x</mi></msup><mo>⋅</mo><mo>ln</mo><mn>2</mn></mrow><mrow><msup><mo>sin</mo><mn>2</mn></msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><msup><mn>2</mn><mi>x</mi></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msup><mn>2</mn><mi>x</mi></msup><mo>⋅</mo><mo>ln</mo><mn>2</mn></mrow><mrow><msup><mo>cos</mo><mn>2</mn></msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><msup><mn>2</mn><mi>x</mi></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Ta có \t<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><msup><mn>2</mn><mi>x</mi></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi></mrow><mrow><msup><mo>sin</mo><mn>2</mn></msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><msup><mn>2</mn><mi>x</mi></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><msup><mn>2</mn><mi>x</mi></msup><mo>⋅</mo><mo>ln</mo><mn>2</mn></mrow><mrow><msup><mo>sin</mo><mn>2</mn></msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><msup><mn>2</mn><mi>x</mi></msup><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

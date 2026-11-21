@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-5TK3-q035-v4",
+  "original_number": 35,
+  "kind": "mcq",
+  "based_on": "e1513c16a4dcb94fb18e1ebd541ac67196a5c853dac70caac33a7cef7bf9b31e",
+  "prompt": "Sản lượng lúa (đơn vị ha) của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>40</mn></semantics></math> thửa ruộng có cùng diện tích được trình bày trong bảng sau\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Sản lượng (ha)</td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>20</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>21</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>22</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>23</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>24</mn></semantics></math></td><td></td></tr><tr><td>Tần số</td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>11</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math></td><td>N=<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>40</mn></semantics></math></td></tr></tbody></table></div></div>\n\tTìm phương sai của bảng số liệu trên.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mn>54</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mn>75</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mn>24</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>,</mo><mn>76</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mover><mi>x</mi><mo accent=\"true\">¯</mo></mover><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>40</mn></mfrac><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>20</mn><mo>⋅</mo><mn>5</mn><mo>+</mo><mn>21</mn><mo>⋅</mo><mn>8</mn><mo>+</mo><mn>22</mn><mo>⋅</mo><mn>11</mn><mo>+</mo><mn>23</mn><mo>⋅</mo><mn>10</mn><mo>+</mo><mn>24</mn><mo>⋅</mo><mn>6</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>22</mn><mo>,</mo><mn>1</mn></mrow></semantics></math>.<br>Khi đó phương sai của mẫu số liệu trên là\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mi>s</mi><mn>2</mn></msup><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>22</mn><mo>,</mo><mn>1</mn><mo>−</mo><mn>20</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>8</mn><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>22</mn><mo>,</mo><mn>1</mn><mo>−</mo><mn>21</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>11</mn><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>22</mn><mo>,</mo><mn>1</mn><mo>−</mo><mn>22</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>10</mn><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>22</mn><mo>,</mo><mn>1</mn><mo>−</mo><mn>23</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mn>6</mn><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>22</mn><mo>,</mo><mn>1</mn><mo>−</mo><mn>24</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>2</mn></msup></mrow><mn>40</mn></mfrac><mo>=</mo><mn>1</mn><mo>,</mo><mn>54</mn><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-5D1-q051-v4",
+  "original_number": 51,
+  "kind": "mcq",
+  "based_on": "f34254f58ccd9051503901142b74ae314bc8004a73b541b4d5f2c96927f361c4",
+  "prompt": "Tính <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></mfrac></mrow></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mi>∞</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>+</mo><mi>∞</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow></mfrac><mo>=</mo><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>1</mn><mi>n</mi></mfrac></mrow><mrow><mn>1</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>2</mn><mi>n</mi></mfrac></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>3</mn><mo>+</mo><mn>0</mn></mrow><mrow><mn>1</mn><mo>+</mo><mn>0</mn></mrow></mfrac><mo>=</mo><mn>3</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

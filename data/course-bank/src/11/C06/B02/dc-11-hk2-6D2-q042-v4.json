@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D2-q042-v4",
+  "original_number": 42,
+  "kind": "mcq",
+  "based_on": "2d54d47f5e628f9434c159174d36ba395565f2c18b0af895e86a1e2a9e9ca486",
+  "prompt": "Đặt <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>=</mo><msub><mo>log</mo><mn>23</mn></msub></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>b</mi><mo>=</mo><msub><mo>log</mo><mn>53</mn></msub></mrow></semantics></math>. Hãy biểu diễn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mo>log</mo><mn>6270</mn></msub></semantics></math> theo <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>b</mi></semantics></math>",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mn>6270</mn></msub><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mn>3</mn><mi>a</mi><mi>b</mi></mrow><mrow><mi>a</mi><mi>b</mi><mo>+</mo><mi>b</mi></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mn>6270</mn></msub><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mn>3</mn><mi>a</mi><mi>b</mi></mrow><mrow><mi>a</mi><mi>b</mi><mo>−</mo><mi>b</mi></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mn>6270</mn></msub><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>−</mo><mn>3</mn><mi>a</mi><mi>b</mi></mrow><mrow><mi>a</mi><mi>b</mi><mo>+</mo><mi>b</mi></mrow></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mn>6270</mn></msub><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>a</mi><mo>+</mo><mn>2</mn><mi>a</mi><mi>b</mi></mrow><mrow><mi>a</mi><mi>b</mi><mo>+</mo><mi>b</mi></mrow></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mn>25</mn></msub><mo>=</mo><msub><mo>log</mo><mn>23</mn></msub><mo>⋅</mo><msub><mo>log</mo><mn>35</mn></msub><mo>=</mo><mfrac displaystyle=\"true\"><mi>a</mi><mi>b</mi></mfrac></mrow></semantics></math>.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mn>6</mn></msub><mn>270</mn><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msub><mo>log</mo><mn>2</mn></msub><mrow><mo minsize=\"1.2\" maxsize=\"1.2\" stretchy=\"false\" form=\"prefix\">(</mo><mn>2</mn><mo>⋅</mo><msup><mn>3</mn><mn>3</mn></msup><mo>⋅</mo><mn>5</mn><mo minsize=\"1.2\" maxsize=\"1.2\" stretchy=\"false\" form=\"postfix\">)</mo></mrow></mrow><mrow><msub><mo>log</mo><mn>2</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>⋅</mo><mn>3</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><msub><mo>log</mo><mn>22</mn></msub><mo>+</mo><mn>3</mn><msub><mo>log</mo><mn>23</mn></msub><mo>+</mo><msub><mo>log</mo><mn>25</mn></msub></mrow><mrow><msub><mo>log</mo><mn>22</mn></msub><mo>+</mo><msub><mo>log</mo><mn>23</mn></msub></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>1</mn><mo>+</mo><mn>3</mn><mi>a</mi><mo>+</mo><mfrac displaystyle=\"true\"><mi>a</mi><mi>b</mi></mfrac></mrow><mrow><mn>1</mn><mo>+</mo><mi>a</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>b</mi><mo>+</mo><mn>3</mn><mi>a</mi><mi>b</mi><mo>+</mo><mi>a</mi></mrow><mrow><mi>b</mi><mo>+</mo><mi>a</mi><mi>b</mi></mrow></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

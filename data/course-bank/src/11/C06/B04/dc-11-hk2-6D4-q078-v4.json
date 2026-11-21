@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D4-q078-v4",
+  "original_number": 78,
+  "kind": "mcq",
+  "based_on": "de44d30ae412d7906128f96b931c286eb6fbea91c67daf863d6bb1faf8416d02",
+  "prompt": "Bất phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msup><mn>2</mn><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>+</mo><mn>4</mn><mo>⋅</mo><msup><mn>2</mn><mrow><mo>−</mo><mi>x</mi></mrow></msup><mo>−</mo><mn>9</mn><mo>&lt;</mo><mn>0</mn></mrow></semantics></math> có bao nhiêu nghiệm nguyên?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>4</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có \n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mn>2</mn><mo>⋅</mo><msup><mn>2</mn><mrow><mn>2</mn><mi>x</mi></mrow></msup><mo>−</mo><mn>9</mn><mo>⋅</mo><msup><mn>2</mn><mi>x</mi></msup><mo>+</mo><mn>4</mn><mo>&lt;</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mo>⇔</mo></mtd><mtd columnalign=\"right\" style=\"text-align: right\"><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>⋅</mo><msup><mn>2</mn><mi>x</mi></msup><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>2</mn><mi>x</mi></msup><mo>−</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>&lt;</mo><mn>0</mn></mtd></mtr></mtable></semantics></math></div>\n\t\tVì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>⋅</mo><msup><mn>2</mn><mi>x</mi></msup><mo>−</mo><mn>1</mn><mo>&gt;</mo><msup><mn>2</mn><mi>x</mi></msup><mo>−</mo><mn>4</mn></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>⋅</mo><msup><mn>2</mn><mi>x</mi></msup><mo>−</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msup><mn>2</mn><mi>x</mi></msup><mo>−</mo><mn>4</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>&lt;</mo><mn>0</mn><mo>⇔</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mtable><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><mn>2</mn><mo>⋅</mo><msup><mn>2</mn><mi>x</mi></msup><mo>−</mo><mn>1</mn><mo>&gt;</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign=\"right\" style=\"text-align: right\"/><mtd columnalign=\"left\" style=\"text-align: left\"><msup><mn>2</mn><mi>x</mi></msup><mo>−</mo><mn>4</mn><mo>&lt;</mo><mn>0</mn></mtd></mtr></mtable></mrow><mo>⇔</mo><mo>−</mo><mn>1</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>2</mn></mrow></semantics></math>.<br>Vậy số nghiệm nguyên của bất phương trình đã cho là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math>.",
+  "accepted_answers": []
+}

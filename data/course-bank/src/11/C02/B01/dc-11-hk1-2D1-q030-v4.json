@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-2D1-q030-v4",
+  "original_number": 30,
+  "kind": "mcq",
+  "based_on": "bf9dd40ba13bd9ba417c6f5a3e1cc9bd14b3f98dc6b537f3a8ae6e005a961ecb",
+  "prompt": "Xét tính bị chặn của dãy số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math>, biết <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mi>n</mi></msub><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "Chỉ bị chặn trên"
+    },
+    {
+      "key": "B",
+      "text": "Chỉ bị chặn dưới"
+    },
+    {
+      "key": "C",
+      "text": "Bị chặn"
+    },
+    {
+      "key": "D",
+      "text": "Không bị chặn trên, không bị chặn dưới"
+    }
+  ],
+  "correct": "C",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mi>n</mi></msub><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mrow></semantics></math>.<br>Với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></semantics></math> ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mfrac displaystyle=\"true\"><mn>3</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>≤</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>2</mn></mfrac></mrow></semantics></math>.<br>Do đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac><mo>≤</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>&lt;</mo><mn>1</mn></mrow></semantics></math>. Suy ra dãy số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></semantics></math> bị chặn.",
+  "accepted_answers": []
+}

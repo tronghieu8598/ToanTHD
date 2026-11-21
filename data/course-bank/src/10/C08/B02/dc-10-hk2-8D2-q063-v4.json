@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-8D2-q063-v4",
+  "original_number": 63,
+  "kind": "mcq",
+  "based_on": "d9e7bdcbc5271e746fa338eb81d7cf26904db7fbcee0e014ff8a3d1ced43fe75",
+  "prompt": "Trong một cuộc thi điền kinh gồm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math> vận động viên chạy trên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math> đường chạy. Số cách xếp các vận động viên đó vào các đường chạy là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mi>!</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>64</mn></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Mỗi cách xếp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math> vận động viên vào <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math> đường chạy là một hoán vị của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math> phần tử.<br>Vậy số cách xếp các vận động viên đó vào các đường chạy là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi mathvariant=\"normal\">P</mi><mn>8</mn></msub><mo>=</mo><mn>8</mn><mi>!</mi></mrow></semantics></math>.",
+  "accepted_answers": []
+}

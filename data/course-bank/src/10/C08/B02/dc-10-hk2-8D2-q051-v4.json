@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-8D2-q051-v4",
+  "original_number": 51,
+  "kind": "mcq",
+  "based_on": "5cc7d8cd3d732a754b48d69b5b1367011295cea3807691de8d23d1b9cd8f05b0",
+  "prompt": "Cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> điểm phân biệt cùng thuộc một đường tròn. Hỏi có bao nhiêu tam giác mà ba đỉnh của nó được chọn từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> điểm trên?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>360</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>720</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>60</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>120</mn></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Số tam giác là số cách chọn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> điểm từ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> điểm nên có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>10</mn><mn>3</mn></msubsup><mo>=</mo><mn>120</mn></mrow></semantics></math> tam giác.",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-8D2-q026-v4",
+  "original_number": 26,
+  "kind": "mcq",
+  "based_on": "2af059c2a5e1761b69bd6c9c4121bb285904cb7e2e74ecf430fb920bd9ced1bf",
+  "prompt": "Sắp xếp 5 bạn học sinh An, Bình, Chi, Dũng, Lệ vào một hàng ghế dài có 5 chỗ ngồi. Hỏi có bao nhiêu cách sắp xếp sao cho An và Dũng không ngồi cạnh nhau?",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>12</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>72</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>24</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>48</mn></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mi>!</mi></mrow></semantics></math> cách sắp xếp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> bạn bất kỳ.<br>Nếu An và Dũng ngồi cạnh nhau, ta xem nhóm này như một phần tử, khi đó có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>4</mn><mi>!</mi></mrow></semantics></math> cách sắp xếp và trong nhóm có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>!</mi></mrow></semantics></math> cách hoán vị.<br>Số cách thỏa mãn đề bài\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mi>!</mi><mo>−</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mi>!</mi><mo>×</mo><mn>2</mn><mi>!</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>120</mn><mo>−</mo><mn>48</mn><mo>=</mo><mn>72</mn><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

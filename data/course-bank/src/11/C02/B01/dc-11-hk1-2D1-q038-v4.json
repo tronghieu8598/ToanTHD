@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-2D1-q038-v4",
+  "original_number": 38,
+  "kind": "mcq",
+  "based_on": "d944199453f1c05cc6efc951b4d5550003c3153c792091606afb9e59b8bacfe3",
+  "prompt": "Cho dãy số có các số hạng đầu là: <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><msup><mn>3</mn><mn>2</mn></msup></mfrac></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><msup><mn>3</mn><mn>3</mn></msup></mfrac></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><msup><mn>3</mn><mn>4</mn></msup></mfrac></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><msup><mn>3</mn><mn>5</mn></msup></mfrac><mo>;</mo><mi>…</mi></mrow></semantics></math> Số hạng tổng quát của dãy số này là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mi>n</mi></msub><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><msup><mn>3</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mi>n</mi></msub><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><msup><mn>3</mn><mi>n</mi></msup></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mi>n</mi></msub><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mn>1</mn><msup><mn>3</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mi>n</mi></msub><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><msup><mn>3</mn><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Số hạng tổng quát của dãy số này là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mi>n</mi></msub><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><msup><mn>3</mn><mi>n</mi></msup></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-8H4-q081-v4",
+  "original_number": 81,
+  "kind": "mcq",
+  "based_on": "e47c87d9d9afdc21d339dec84f233e94e8b1c712425b8c0c1ca2318b63a6d313",
+  "prompt": "Cho hình chóp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>.</mi><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> có đáy <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> là hình vuông cạnh <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math>. Tam giác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mi>A</mi><mi>B</mi></mrow></semantics></math> là tam giác vuông tại <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>S</mi></semantics></math> và nằm trong mặt phẳng vuông góc với mặt phẳng chứa đáy. Biết <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>I</mi></semantics></math> là một điểm trong không gian cách đều các điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi><mo>,</mo><mi>C</mi><mo>,</mo><mi>D</mi></mrow></semantics></math> và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>S</mi></semantics></math>. Tính độ dài đoạn thẳng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>I</mi><mi>S</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>I</mi><mi>S</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>a</mi><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>I</mi><mi>S</mi><mo>=</mo><mi>a</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>I</mi><mi>S</mi><mo>=</mo><mi>a</mi><msqrt><mn>2</mn></msqrt></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>I</mi><mi>S</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>a</mi><mn>2</mn></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "<div class=\"with-figure\"><div>Gọi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>M</mi></semantics></math> là trung điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>I</mi></semantics></math> là tâm hình vuông vuông <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math>. Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>I</mi><mi>M</mi></mrow></semantics></math> là trục đường tròn ngoại tiếp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Δ</mi><mi>S</mi><mi>A</mi><mi>B</mi><mo>⇒</mo><mi>I</mi><mi>A</mi><mo>=</mo><mi>I</mi><mi>B</mi><mo>=</mo><mi>I</mi><mi>S</mi></mrow></semantics></math>. Lại vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>I</mi></semantics></math> là tâm của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mi>B</mi><mi>C</mi><mi>D</mi></mrow></semantics></math> nên có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>I</mi><mi>A</mi><mo>=</mo><mi>I</mi><mi>B</mi><mo>=</mo><mi>I</mi><mi>C</mi><mo>=</mo><mi>I</mi><mi>D</mi></mrow></semantics></math>. Từ đó suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>I</mi></semantics></math> là điểm cách đều các điểm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi><mo>,</mo><mi>C</mi><mo>,</mo><mi>D</mi><mo>,</mo><mi>S</mi></mrow></semantics></math>. Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>I</mi><mi>S</mi><mo>=</mo><msqrt><mrow><mi>I</mi><msup><mi>M</mi><mn>2</mn></msup><mo>+</mo><mi>S</mi><msup><mi>M</mi><mn>2</mn></msup></mrow></msqrt><mo>=</mo><msqrt><mrow><mfrac displaystyle=\"true\"><mrow><mi>A</mi><msup><mi>B</mi><mn>2</mn></msup></mrow><mn>4</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mi>A</mi><msup><mi>B</mi><mn>2</mn></msup></mrow><mn>4</mn></mfrac></mrow></msqrt><mo>=</mo><msqrt><mrow><mfrac displaystyle=\"true\"><msup><mi>a</mi><mn>2</mn></msup><mn>4</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><msup><mi>a</mi><mn>2</mn></msup><mn>4</mn></mfrac></mrow></msqrt><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>a</mi><msqrt><mn>2</mn></msqrt></mrow><mn>2</mn></mfrac></mrow></semantics></math>.</div><div class=\"side-figure\"><figure class=\"tex-figure\"><img src=\"/bank-assets/c224e77d8d4c25e453e03d31908376be2f2c034bfb9dedb94ee57e4e5e4aafc8.svg\" alt=\"Hình minh họa\" loading=\"lazy\"><span class=\"figure-zoom\" aria-hidden=\"true\">⤢</span></figure></div></div>",
+  "accepted_answers": []
+}

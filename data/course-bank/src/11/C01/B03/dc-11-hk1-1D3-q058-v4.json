@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-1D3-q058-v4",
+  "original_number": 58,
+  "kind": "mcq",
+  "based_on": "8e37a4d88e47108fb657577b780af8c6b7e21124c9777157a8ecbeba51c3c1e4",
+  "prompt": "Tìm tập xác định <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>𝒟</mi></semantics></math> của hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>cot</mo><mi>x</mi><mo>+</mo><mo>sin</mo><mn>5</mn><mi>x</mi><mo>+</mo><mo>cos</mo><mi>x</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi><mo>\\</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mi>k</mi><mi>π</mi><mo>,</mo><mi>k</mi><mo>∈</mo><mi>Z</mi><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi><mo>\\</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mi>k</mi><mi>π</mi><mo>,</mo><mi>k</mi><mo>∈</mo><mi>Z</mi><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi><mo>\\</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mi>k</mi><mn>2</mn><mi>π</mi><mo>,</mo><mi>k</mi><mo>∈</mo><mi>Z</mi><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi><mo>\\</mo><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi><mo>,</mo><mi>k</mi><mo>∈</mo><mi>Z</mi><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></mrow></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Hàm số xác định khi <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>x</mi><mo>≠</mo><mn>0</mn><mo>⇔</mo><mi>x</mi><mo>≠</mo><mi>k</mi><mi>π</mi></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math>.<br>Vậy tập xác định <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>𝒟</mi><mo>=</mo><mi>ℝ</mi><mo>\\</mo><mo stretchy=\"false\" form=\"prefix\">{</mo><mi>k</mi><mi>π</mi><mo>,</mo><mi>k</mi><mo>∈</mo><mi>Z</mi><mo stretchy=\"false\" form=\"postfix\">}</mo></mrow></semantics></math>.",
+  "accepted_answers": []
+}

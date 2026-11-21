@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D2-q062-v4",
+  "original_number": 62,
+  "kind": "mcq",
+  "based_on": "fae0f2ca782a4578d5b2e62b2c5e90364ef6aef52af81eada6c3d7d4bf445635",
+  "prompt": "Với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math> là số thực dương tùy ý, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mn>4</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mi>a</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>+</mo><mi>a</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>+</mo><msub><mo>log</mo><mn>4</mn></msub><mi>a</mi></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>−</mo><msub><mo>log</mo><mn>4</mn></msub><mi>a</mi></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mo>log</mo><mn>4</mn></msub><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>4</mn><mi>a</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><msub><mo>log</mo><mn>4</mn></msub><mn>4</mn><mo>+</mo><msub><mo>log</mo><mn>4</mn></msub><mi>a</mi><mo>=</mo><mn>1</mn><mo>+</mo><msub><mo>log</mo><mn>4</mn></msub><mi>a</mi></mrow></semantics></math>.",
+  "accepted_answers": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk1-2D3-q093-v4",
+  "original_number": 93,
+  "kind": "short",
+  "based_on": "5aae3f1a79acb5de5aadebc73452af875ae774c344f068c97a80e1806df4f833",
+  "prompt": "Trong một buổi sinh hoạt trải nghiệm của học sinh trường THPT chuyên Nguyễn Tất Thành, học sinh được tham gia trò chơi mang tên: <strong>ĐI TÌM TỪ KHÓA</strong> và trò chơi sẽ kết thúc khi có học sinh nói đúng từ khoá. Học sinh sẽ trả lời từ khoá sau mỗi gợi ý của Ban tổ chức.<br><strong>Quy tắc của trò chơi:</strong>\n\t<ul><li>Học sinh nào trả lời đúng đáp án sau gợi ý thứ nhất sẽ được nhận nửa số kẹo Ban tổ chức đang có.</li><li>Nếu học sinh trả lời đúng đáp án sau gợi ý thứ hai thì số kẹo nhận được sẽ bị giảm một nửa.</li><li>Tiếp tục quy luật đó: mỗi lần thêm một gợi ý, số kẹo nhận được sẽ bị giảm một nửa.</li><li>Sau mỗi lượt gợi ý, nếu không có học sinh nào nói đúng từ khoá thì sẽ chuyển số kẹo ở lượt đó cho câu lạc bộ CKTU - CKT Union.</li></ul>\n\tBiết rằng trong buổi sinh hoạt này, học sinh trả lời đúng đáp án sau 6 gợi ý và Ban tổ chức chỉ còn lại 1 cái kẹo sau khi kết thúc trò chơi.\n\tHỏi câu lạc bộ CKTU - CKT Union nhận được từ Ban tổ chức bao nhiêu cái kẹo?",
+  "choices": [],
+  "correct": "62",
+  "solution": "Vì không có ai trả lời đúng trước gợi ý thứ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math>, câu lạc bộ CKTU - CKT Union nhận được số kẹo của 5 lượt đầu tiên. Ban tổ chức chỉ còn lại <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> cái kẹo sau khi kết thúc trò chơi. Do đó ở lượt thứ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> câu lạc bộ CKTU - CKT Union nhận được <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> cái kẹo và cứ thế ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>8</mn><mo>+</mo><mn>16</mn><mo>+</mo><mn>32</mn><mo>=</mo><mn>62</mn></mrow></semantics></math> cái kẹo.",
+  "accepted_answers": []
+}

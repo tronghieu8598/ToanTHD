@@ -1,0 +1,11 @@
+{
+  "id": "dc-11-hk1-2D3-q101-v4",
+  "original_number": 101,
+  "kind": "short",
+  "based_on": "8476aeb709da554c4c5e71917503370f9cfcd2dfda765b4731fd9b630607eb69",
+  "prompt": "Một người gửi vào ngân hàng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> tỉ đồng theo hình thức lãi kép với lãi suất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>,</mo><mn>5</mn><mi>%</mi></mrow></semantics></math> một tháng. Hỏi sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> năm, người đó có bao nhiêu tiền? (bao gồm cả gốc và lãi, kết quả làm tròn đến hàng phần trăm, đơn vị: tỉ đồng).",
+  "choices": [],
+  "correct": "1.13",
+  "solution": "Số chu kì tính lãi là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>=</mo><mn>2</mn><mo>⋅</mo><mn>12</mn><mo>=</mo><mn>24</mn></mrow></semantics></math>.<br>Số tiền cả gốc và lãi sau <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>2</mn></semantics></math> năm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>1</mn><mo>⋅</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>+</mo><mn>0</mn><mo>,</mo><mn>5</mn><mi>%</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mn>24</mn></msup><mo>≈</mo><mn>1</mn><mo>,</mo><mn>13</mn></mrow></semantics></math> (tỉ đồng).<div class=\"paragraph-gap\"></div>",
+  "accepted_answers": []
+}

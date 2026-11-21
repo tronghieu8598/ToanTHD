@@ -1,0 +1,11 @@
+{
+  "id": "dc-10-hk1-5TK1-q014-v4",
+  "original_number": 14,
+  "kind": "free",
+  "based_on": "32ed961a007025d4f8cc319ab1cbf5ed9511847ddef4cdc7e546788a5e9da2df",
+  "prompt": "Cho số gần đúng <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>a</mi><mo>=</mo><mn>6547</mn></mrow></semantics></math> với độ chính xác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>100</mn></mrow></semantics></math>. Hãy viết số quy tròn của số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math> và ước lượng sai số tương đối của số quy tròn đó.",
+  "choices": [],
+  "correct": null,
+  "solution": "Hàng lớn nhất của độ chính xác <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>=</mo><mn>100</mn></mrow></semantics></math> là hàng trăm nên ta quy tròn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math> đến hàng nghìn. Vậy số quy tròn của <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>a</mi></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7000</mn></semantics></math>.<br>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>6447</mn><mo>&lt;</mo><mover><mi>a</mi><mo accent=\"true\">¯</mo></mover><mo>&lt;</mo><mn>6647</mn></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>6447</mn><mo>−</mo><mn>7000</mn><mo>&lt;</mo><mover><mi>a</mi><mo accent=\"true\">¯</mo></mover><mo>−</mo><mn>7000</mn><mo>&lt;</mo><mn>6447</mn><mo>−</mo><mn>7000</mn></mrow></semantics></math>. Do đó sai số tuyệt đối <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>Δ</mi><mo>&lt;</mo><mn>553</mn></mrow></semantics></math>, sai số tương đối <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>δ</mi><mo>&lt;</mo><mfrac displaystyle=\"true\"><mn>553</mn><mn>7000</mn></mfrac><mo>=</mo><mn>7</mn><mo>,</mo><mn>9</mn><mi>%</mi></mrow></semantics></math>.<div class=\"paragraph-gap\"></div>",
+  "accepted_answers": []
+}

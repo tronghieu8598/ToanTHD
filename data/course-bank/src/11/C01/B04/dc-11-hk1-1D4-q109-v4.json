@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-1D4-q109-v4",
+  "original_number": 109,
+  "kind": "tf",
+  "based_on": "dc8b02e23e42e8c5a8045ddf7756bd5a39aac2317a680ddaa39d4cea82a48a48",
+  "prompt": "Cho phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mi>x</mi><mo>=</mo><msqrt><mn>3</mn></msqrt></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Phương trình có đúng hai nghiệm phân biệt trên đoạn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>2</mn><mi>π</mi><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac></semantics></math> là một nghiệm của phương trình"
+    },
+    {
+      "key": "c",
+      "text": "Tập nghiệm của phương trình là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>π</mi></mrow><mn>3</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi><mo>;</mo><mo>−</mo><mfrac displaystyle=\"true\"><mrow><mn>2</mn><mi>π</mi></mrow><mn>3</mn></mfrac><mo>+</mo><mi>k</mi><mn>2</mn><mi>π</mi><mo>;</mo><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Tổng các nghiệm của phương trình trên đoạn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>2</mn><mi>π</mi><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math> là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mrow><mn>4</mn><mi>π</mi></mrow><mn>3</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    true,
+    false,
+    false
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Đúng.<br>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo>=</mo><msqrt><mn>3</mn></msqrt></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac></semantics></math> là một nghiệm của phương trình <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mi>x</mi><mo>=</mo><msqrt><mn>3</mn></msqrt></mrow></semantics></math>.</li><li>Sai.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mi>x</mi><mo>=</mo><msqrt><mn>3</mn></msqrt><mo>⇔</mo><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo>+</mo><mi>k</mi><mi>π</mi></mrow></semantics></math>. Tập nghiệm của phương trình là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">{</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo>+</mo><mi>k</mi><mi>π</mi><mo>;</mo><mi>k</mi><mo>∈</mo><mi>ℤ</mi><mo stretchy=\"true\" form=\"postfix\">}</mo></mrow></semantics></math>.</li><li>Đúng.<br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>0</mn><mo>≤</mo><mi>x</mi><mo>≤</mo><mn>2</mn><mi>π</mi><mo>⇔</mo><mn>0</mn><mo>≤</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo>+</mo><mi>k</mi><mi>π</mi><mo>≤</mo><mn>2</mn><mi>π</mi><mo>⇔</mo><mo>−</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo>≤</mo><mi>k</mi><mi>π</mi><mo>≤</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn><mi>π</mi></mrow><mn>3</mn></mfrac><mo>⇔</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mo>≤</mo><mi>k</mi><mo>≤</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>3</mn></mfrac></mrow></semantics></math>. Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>∈</mo><mi>ℤ</mi></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow></semantics></math>.<br>Vậy phương trình có đúng hai nghiệm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn><mi>π</mi></mrow><mn>3</mn></mfrac></mrow></semantics></math> nằm trong đoạn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>2</mn><mi>π</mi><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>.</li><li>Sai.<br>Phương trình có đúng hai nghiệm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac></mrow></semantics></math>; <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>x</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn><mi>π</mi></mrow><mn>3</mn></mfrac></mrow></semantics></math> nằm trong đoạn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mn>0</mn><mo>;</mo><mn>2</mn><mi>π</mi><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></semantics></math>.<br>Do đó tổng các nghiệm là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mi>π</mi><mn>3</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn><mi>π</mi></mrow><mn>3</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn><mi>π</mi></mrow><mn>3</mn></mfrac></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-7D2-q107-v4",
+  "original_number": 107,
+  "kind": "mcq",
+  "based_on": "ed262ac45c348d5165b29b6bad24b4038d275861f12cb2863fd420728039cf03",
+  "prompt": "Hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi mathvariant=\"normal\">e</mi><mrow><mn>2</mn><mi>x</mi></mrow></msup></mrow></semantics></math> có đạo hàm là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msup><mi mathvariant=\"normal\">e</mi><mrow><mn>2</mn><mi>x</mi></mrow></msup></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mo>+</mo><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><mi>x</mi><msup><mi mathvariant=\"normal\">e</mi><mi>x</mi></msup></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>2</mn><msup><mi mathvariant=\"normal\">e</mi><mrow><mn>2</mn><mi>x</mi></mrow></msup></mrow></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi mathvariant=\"normal\">e</mi><mrow><mn>2</mn><mi>x</mi></mrow></msup><mo>⇒</mo><mi>y</mi><mi>′</mi><mo>=</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>2</mn><mi>x</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>′</mi><mo>⋅</mo><msup><mi mathvariant=\"normal\">e</mi><mrow><mn>2</mn><mi>x</mi></mrow></msup><mo>=</mo><mn>2</mn><msup><mi mathvariant=\"normal\">e</mi><mrow><mn>2</mn><mi>x</mi></mrow></msup></mrow></semantics></math>.",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-5D1-q045-v4",
+  "original_number": 45,
+  "kind": "mcq",
+  "based_on": "4bf7750dbe36dbb43eba7b23264b2abddfbc7ac7a6ff10cafb72aec6814686d4",
+  "prompt": "Giới hạn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><msup><mn>3</mn><mi>n</mi></msup><mo>−</mo><msup><mn>4</mn><mi>n</mi></msup><mo>+</mo><msup><mn>5</mn><mi>n</mi></msup></mrow><mrow><msup><mn>3</mn><mi>n</mi></msup><mo>+</mo><msup><mn>4</mn><mi>n</mi></msup><mo>−</mo><msup><mn>5</mn><mi>n</mi></msup></mrow></mfrac></mrow></semantics></math> bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>0</mn></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>1</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><msup><mn>3</mn><mi>n</mi></msup><mo>−</mo><msup><mn>4</mn><mi>n</mi></msup><mo>+</mo><msup><mn>5</mn><mi>n</mi></msup></mrow><mrow><msup><mn>3</mn><mi>n</mi></msup><mo>+</mo><msup><mn>4</mn><mi>n</mi></msup><mo>−</mo><msup><mn>5</mn><mi>n</mi></msup></mrow></mfrac><mo>=</mo><munder><mo>lim</mo><mrow><mi>n</mi><mo>→</mo><mo>+</mo><mi>∞</mi></mrow></munder><mfrac displaystyle=\"true\"><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>5</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>n</mi></msup><mo>−</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>4</mn><mn>5</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>n</mi></msup><mo>+</mo><mn>1</mn></mrow><mrow><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>5</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>n</mi></msup><mo>+</mo><msup><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mfrac displaystyle=\"true\"><mn>4</mn><mn>5</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mrow><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

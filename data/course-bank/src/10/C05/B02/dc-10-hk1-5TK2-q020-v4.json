@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk1-5TK2-q020-v4",
+  "original_number": 20,
+  "kind": "mcq",
+  "based_on": "447ebfa2452fcd17523b844a6ca645ef18daf407d55cd9db102c14eeeee2d818",
+  "prompt": "Một tổ học sinh gồm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> học sinh có điểm kiểm tra giữa học kì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>1</mn></semantics></math> môn Toán như sau\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>9</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math></td><td><math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math></td></tr></tbody></table></div></div>\n\t Tìm trung vị của mẫu số liệu.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>7</mn><mo>,</mo><mn>5</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>8</mn></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Sắp xếp số liệu theo thứ tự không giảm\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>5</mn><mspace width=\"1.0em\"/><mn>5</mn><mspace width=\"1.0em\"/><mn>6</mn><mspace width=\"1.0em\"/><mn>7</mn><mspace width=\"1.0em\"/><mn>7</mn><mspace width=\"1.0em\"/><mn>8</mn><mspace width=\"1.0em\"/><mn>8</mn><mspace width=\"1.0em\"/><mn>8</mn><mspace width=\"1.0em\"/><mn>9</mn><mspace width=\"1.0em\"/><mn>10</mn><mi>.</mi></mrow></semantics></math></div>\n\t\tHai số ở chính giữa là số thứ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>5</mn></semantics></math> và thứ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>6</mn></semantics></math>. Do đó trung vị là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>M</mi><mi>e</mi></msub><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>7</mn><mo>+</mo><mn>8</mn></mrow><mn>2</mn></mfrac><mo>=</mo><mn>7</mn><mo>,</mo><mn>5</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

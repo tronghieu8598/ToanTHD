@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-6D2-q049-v4",
+  "original_number": 49,
+  "kind": "mcq",
+  "based_on": "3c058447e5146b215dcb1b865395b0127401caa3792d7dc1ba4dd09b98a1d255",
+  "prompt": "Cường độ một trận động đất <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>M</mi></semantics></math>(Richter) được cho bởi công thức <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>M</mi><mo>=</mo><mo>log</mo><mi>A</mi><mo>−</mo><mo>log</mo><msub><mi>A</mi><mn>0</mn></msub></mrow></semantics></math>, với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là biên độ rung chấn tối đa và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>A</mi><mn>0</mn></msub></semantics></math> là một biên độ chuẩn(hằng số). Đầu thế kỷ 20 , một trận động đât ở San Francisco có cường độ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>7</mn><mo>,</mo><mn>8</mn></mrow></semantics></math> độ Richter. Trong cùng năm đó, trận động đất khác ở Nam Mỹ có biên độ mạnh hơn gấp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> lần. Cường độ của trận động đất ở Nam Mỹ gần bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mo>,</mo><mn>9</mn></mrow></semantics></math> độ Richter"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mo>,</mo><mn>1</mn></mrow></semantics></math> độ Richter"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>8</mn><mo>,</mo><mn>3</mn></mrow></semantics></math> dộ Richter"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>23</mn><mo>,</mo><mn>4</mn></mrow></semantics></math> độ Richter"
+    }
+  ],
+  "correct": "C",
+  "solution": "Giả sử <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>A</mi></semantics></math> là biên độ rung chấn tối đa tại San-Francisco, ta có\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>M</mi><mtext mathvariant=\"normal\">San Francisco</mtext></msub><mo>=</mo><mo>log</mo><mi>A</mi><mo>−</mo><mo>log</mo><msub><mi>A</mi><mn>0</mn></msub><mo>⇔</mo><mo>log</mo><mi>A</mi><mo>−</mo><mo>log</mo><msub><mi>A</mi><mn>0</mn></msub><mo>=</mo><mn>7</mn><mo>,</mo><mn>8</mn><mi>.</mi></mrow></semantics></math></div>\n\t\tĐộng đất ở Nam Mỹ có độ rung chấn gấp <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> lần nên có biến độ là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mi>A</mi></mrow></semantics></math>, cường độ của trận động đất đó là\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>M</mi><mtext mathvariant=\"normal\">Nam Mỹ</mtext></msub><mo>=</mo><mo>log</mo><mn>3</mn><mi>A</mi><mo>−</mo><mo>log</mo><msub><mi>A</mi><mn>0</mn></msub><mo>=</mo><mo>log</mo><mn>3</mn><mo>+</mo><mo>log</mo><mi>A</mi><mo>−</mo><mo>log</mo><msub><mi>A</mi><mn>0</mn></msub><mo>=</mo><mo>log</mo><mn>3</mn><mo>+</mo><mn>7</mn><mo>,</mo><mn>8</mn><mo>≈</mo><mn>8</mn><mo>,</mo><mn>3</mn><mrow><mspace width=\"0.333em\"/><mtext mathvariant=\"normal\"> độ Richter.</mtext></mrow></mrow></semantics></math></div>",
+  "accepted_answers": []
+}

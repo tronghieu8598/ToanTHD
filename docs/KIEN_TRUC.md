@@ -2,7 +2,7 @@
 
 [Bản đồ tệp v0.14](#bản-đồ-tệp-v014) · [Cây thư mục](#cây-thư-mục) · [Tìm và sửa câu](#tìm-và-sửa-câu) · [Giao việc trên GitHub](#giao-việc-trên-github) · [Lộ trình](#lộ-trình)
 
-V0.14 tổ chức dữ liệu chuẩn theo khối, chương và bài. Cả sáu chương Toán 12 có **một tệp nguồn cho mỗi câu** và một tệp riêng cho nhóm biến thể của câu đó. Monty Hall có thư mục riêng cho thông tin học liệu và bìa. Các phần còn lại có vị trí tra cứu trong bản đồ bên dưới. Tên dưới `features/` và `server/` là cấu trúc đích khi tách mã ứng dụng.
+V0.14 tổ chức dữ liệu chuẩn theo khối, chương và bài. Toán 10–12 có **một tệp nguồn cho mỗi câu**. Sáu chương Toán 12 có thêm tệp nhóm biến thể theo mã câu. Monty Hall có thư mục riêng cho thông tin học liệu và bìa. Các phần còn lại có vị trí tra cứu trong bản đồ bên dưới. Tên dưới `features/` và `server/` là cấu trúc đích khi tách mã ứng dụng.
 
 ## Các mô-đun nối với nhau thế nào
 
@@ -90,7 +90,7 @@ Các đường dẫn ở cột giữa mở được từ thư mục gốc của 
 | Điều hướng và Hôm nay | `app/workspace.tsx`, `app/studio-navigation.tsx`, `app/studio-plan.tsx`, `app/studio.css` | Màn hình đầu, danh mục, tìm nhanh và giao diện kế hoạch của lớp. |
 | Đồng bộ kế hoạch | `app/use-studio-plan.ts`, `lib/studio-plan.mjs`, `drizzle/0007_studio_plans.sql` | Đọc, thêm, bỏ học liệu và chuyển kế hoạch cũ theo tài khoản và lớp. |
 | Chương, bài và đề cương | `data/curriculum/kntt-math.json`, `data/course-bank/manifest.json`, `app/admin-panels.tsx`, `lib/admin.mjs` | Mục lục chương theo khối, tài liệu, bài và phiên bản đề cương. |
-| Ngân hàng chuẩn | `data/course-bank/src/12/`, `lib/course-bank.mjs` | Nguồn chuẩn cho Chương I–VI, tra cứu và trạng thái duyệt. |
+| Ngân hàng chuẩn | `data/course-bank/src/{10,11,12}/`, `lib/course-bank.mjs` | Tệp theo câu, tra cứu và trạng thái duyệt của Toán 10–12. |
 | Biến thể | `data/chapter-variants/src/12/`, `lib/accepted-variants.mjs` | Nhóm biến thể cho Chương I–VI, điều kiện khả dụng và tra phiên bản câu gốc. |
 | Nạp ngân hàng theo chương | `lib/bank-release-chapters.mjs`, `lib/bank-release.mjs`, `scripts/build-bank-release.mjs` | Danh sách bài mỗi chương, đóng gói, xem trước và kích hoạt trên HTTPS. |
 | Giao diện ngân hàng và soạn đề | `app/workspace.tsx`, `app/studio-library-bank.css`, `app/admin-panels.tsx`, `lib/api.ts` | Bộ lọc, xem câu, giỏ câu, sửa ngân hàng nội bộ và chọn câu. |
@@ -166,6 +166,8 @@ data/
 ├── curriculum/
 │   └── kntt-math.json
 ├── course-bank/
+│   ├── src/10/                 # 2.118 câu trong 27 bài
+│   ├── src/11/                 # 2.681 câu trong 31 bài
 │   ├── src/12/C06/
 │   │   ├── B01/                 # 48 câu Xác suất có điều kiện
 │   │   └── B02/                 # 70 câu Xác suất toàn phần và Bayes
@@ -187,7 +189,11 @@ data/
 
 Đường dẫn `12/C06/B02/` cho biết khối, chương và bài. Mã `dc-12-hk2-6D2-q013-v4` xác định câu 13 của đúng đề cương và bài. Đổi tiêu đề bài hoặc lời giải vẫn dùng cùng mã. `v4` trong mã thuộc phiên bản đề cương gốc. Phiên bản sửa câu và phiên bản gói được theo dõi riêng. Mỗi câu giữ chung đề, phương án, đáp án và lời giải để một người duyệt đủ ngữ cảnh. Tệp biến thể cùng mã chứa nhóm tối đa bốn biến thể của câu đó.
 
-`data/course-bank/questions.json.gz` giữ nguồn nền của toàn ngân hàng, gồm cả câu khối 10 và 11. Danh mục bài và tài liệu nằm trong `data/course-bank/manifest.json`. Các gói nguồn biến thể Toán 12 nằm trong `data/chapter-variants/source/12-C01.json.gz` đến `12-C06.json.gz`, có thông tin bàn giao trong `data/chapter-variants/release.json`.
+`data/course-bank/questions.json.gz` giữ nguồn nền của 5.837 câu. Danh mục bài và tài liệu nằm trong `data/course-bank/manifest.json`. Toán 10–11 có 18 gói chương chỉ chứa câu gốc. Mã chương trong thư mục theo mục lục Kết nối tri thức. Ở Toán 11, nhóm bài mang mã gốc `8H`, `9D`, `7D` lần lượt thuộc `C07`, `C08`, `C09`; mã bài và mã câu giữ theo nguồn.
+
+Bộ đóng gói ghép tệp biên tập với ngân hàng nền theo mã câu và ghi bản cập nhật vào `data/course-bank/generated/`. Bản cài cục bộ đọc nguồn nền cùng các bản cập nhật. Trên HTTPS, `stage` cho xem trước chương, còn `activate` nạp chương vào D1 và trả biên nhận. [Hướng dẫn nạp ngân hàng](NAP_NGAN_HANG_HTTPS.md)
+
+Các gói nguồn biến thể Toán 12 nằm trong `data/chapter-variants/source/12-C01.json.gz` đến `12-C06.json.gz`, có thông tin bàn giao trong `data/chapter-variants/release.json`.
 
 ```mermaid
 flowchart TD
@@ -240,7 +246,7 @@ Trước khi tách kho công khai, đưa các tệp ngân hàng đóng gói, ch�
 
 | Việc | Tiêu chí nghiệm thu |
 | --- | --- |
-| Mở rộng nguồn theo từng câu tới khối 10–11 | Ánh xạ bài học vào mã chương đã kiểm tra. Mở nguồn theo từng chương. Đối chiếu mã, loại, trạng thái, câu hỏi, đáp án, hình và dấu vân tay với gói đã duyệt. Toàn ngân hàng nền hiện có 5.837 câu. |
+| Kiểm tra phát hành ngân hàng Toán 10–11 trên bản thử HTTPS | Xem trước và kích hoạt từng chương. Đối chiếu tổng số câu, 87 câu chờ duyệt, 1.035 câu tham khảo và biên nhận từng chương. Kiểm tra đề đã giao và điểm đã nộp sau lần nạp. |
 | Chuẩn hóa gói theo phần và mã chương | Dùng mã chương chung như `kntt-12-c06`. Kiểm tra gói đúng chương, nhập lại cho cùng kết quả, xem trước và quay về gói trước. Khi ghép gói mới, đối chiếu đề và bài làm cũ. |
 | Tách mã ứng dụng theo nhóm | Bắt đầu từ bộ chọn câu và thư viện. Giữ điểm vào web/API đang dùng, tách dần theo màn hình và kiểm tra lưu đề, tải học liệu, cấp quyền. |
 | Tạo bản nguồn công khai khi có phạm vi chia sẻ | Bản mã công khai chạy được với dữ liệu mẫu. Bản dùng trong tổ nạp riêng gói nội dung được duyệt. |

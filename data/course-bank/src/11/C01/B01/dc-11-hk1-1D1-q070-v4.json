@@ -1,0 +1,33 @@
+{
+  "id": "dc-11-hk1-1D1-q070-v4",
+  "original_number": 70,
+  "kind": "tf",
+  "based_on": "8f94b701a61af54d973e955bc6a8ee494bbd4a4b0414fad373e235ad2f6e349d",
+  "prompt": "Cho biết <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>sin</mo><mi>α</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>5</mn></mfrac></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>&lt;</mo><mi>α</mi><mo>&lt;</mo><mi>π</mi></mrow></semantics></math>. Xét tính đúng sai của các mệnh đề sau",
+  "choices": [
+    {
+      "key": "a",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>α</mi><mo>&lt;</mo><mn>0</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mi>α</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>α</mi><mo>+</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>7</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>α</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>4</mn><mn>5</mn></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": [
+    true,
+    false,
+    false,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Đúng. <br>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>&lt;</mo><mi>α</mi><mo>&lt;</mo><mi>π</mi></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>α</mi><mo>&lt;</mo><mn>0</mn></mrow></semantics></math>.</li><li>Sai. <br>Vì <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mi>π</mi><mn>2</mn></mfrac><mo>&lt;</mo><mi>α</mi><mo>&lt;</mo><mi>π</mi></mrow></semantics></math> nên <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mi>α</mi><mo>&lt;</mo><mn>0</mn></mrow></semantics></math>.</li><li>Đúng. <br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>cos</mo><mi>α</mi><mo>=</mo><mo>−</mo><msqrt><mrow><mn>1</mn><mo>−</mo><msup><mo>sin</mo><mn>2</mn></msup><mi>α</mi></mrow></msqrt><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>4</mn><mn>5</mn></mfrac></mrow></semantics></math>.</li><li>Sai. <br>Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mi>α</mi><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>sin</mo><mi>α</mi></mrow><mrow><mo>cos</mo><mi>α</mi></mrow></mfrac><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac></mrow></semantics></math>. <br>Suy ra <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>tan</mo><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>α</mi><mo>+</mo><mfrac displaystyle=\"true\"><mi>π</mi><mn>4</mn></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>tan</mo><mi>α</mi><mo>+</mo><mn>1</mn></mrow><mrow><mn>1</mn><mo>−</mo><mo>tan</mo><mi>α</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mo>−</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac><mo>+</mo><mn>1</mn></mrow><mrow><mn>1</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>7</mn></mfrac></mrow></semantics></math>.</li></ol>",
+  "accepted_answers": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": "dc-10-hk2-9XS2-q016-v4",
+  "original_number": 16,
+  "kind": "mcq",
+  "based_on": "58e54e361a34d723f0e90a965929deb9f9e3c10b3560f07b05afe4f0762d6c06",
+  "prompt": "Một hộp chứa <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>10</mn></semantics></math> quả cầu gồm <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math> quả cầu màu xanh và <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>7</mn></semantics></math> quả cầu màu đỏ, các quả cầu đôi một khác nhau. Chọn ngẫu nhiên lần lượt hai quả cầu từ hộp đó. Xác suất để hai quả cầu được chọn ra cùng màu bằng",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>7</mn><mn>30</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>5</mn><mn>11</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>7</mn><mn>15</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mfrac displaystyle=\"true\"><mn>8</mn><mn>15</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Số cách chọn được hai quả cầu trong hộp là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>10</mn><mn>2</mn></msubsup><mo>=</mo><mn>45</mn></mrow></semantics></math>.<br>Khi đó xác suất chọn được hai quả cầu cùng màu là <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>3</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi mathvariant=\"normal\">C</mi><mn>7</mn><mn>2</mn></msubsup></mrow><mn>45</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>8</mn><mn>15</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

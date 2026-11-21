@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk1-5D1-q022-v4",
+  "original_number": 22,
+  "kind": "mcq",
+  "based_on": "c61e3796acef0940dade88942802d27741e859c718f7bf65f5f61c37b69bc713",
+  "prompt": "Tính tổng cấp số nhân lùi vô hạn <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mn>2</mn><mo>+</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>9</mn></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>27</mn></mfrac><mo>+</mo><mi>…</mi><mo>+</mo><mfrac displaystyle=\"true\"><mn>2</mn><msup><mn>3</mn><mi>n</mi></msup></mfrac><mo>+</mo><mi>…</mi></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>3</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><msup><mn>3</mn><mi>n</mi></msup></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mo>−</mo><mn>3</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mn>3</mn></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mn>3</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><msup><mn>3</mn><mi>n</mi></msup></mfrac><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mi>S</mi></semantics></math> là tổng của cấp số nhân lùi vô hạn với <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>q</mi><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></mrow></semantics></math>.<br>Khi đó <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>S</mi><mo>=</mo><mfrac displaystyle=\"true\"><msub><mi>u</mi><mn>1</mn></msub><mrow><mn>1</mn><mo>−</mo><mi>q</mi></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mrow><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></mrow></mfrac><mo>=</mo><mn>3</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

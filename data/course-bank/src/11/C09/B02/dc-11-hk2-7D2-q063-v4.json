@@ -1,0 +1,28 @@
+{
+  "id": "dc-11-hk2-7D2-q063-v4",
+  "original_number": 63,
+  "kind": "mcq",
+  "based_on": "02a3bccf385b26f8d6806c94659b7771906a8e1b46f23c43b0225dd9924ed003",
+  "prompt": "Viết phương trình tiếp tuyến của đồ thị hàm số <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mo>−</mo><mfrac displaystyle=\"true\"><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac><mo>+</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi></mrow></semantics></math> tại điểm có hoành độ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>x</mi><mn>0</mn></msub></semantics></math> sao cho <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>″</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>6</mn></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>:</mo><mi>y</mi><mo>=</mo><mo>−</mo><mn>8</mn><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mn>8</mn><mn>3</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>:</mo><mi>y</mi><mo>=</mo><mo>−</mo><mn>8</mn><mi>x</mi><mo>−</mo><mfrac displaystyle=\"true\"><mn>8</mn><mn>3</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>:</mo><mi>y</mi><mo>=</mo><mn>8</mn><mi>x</mi><mo>−</mo><mfrac displaystyle=\"true\"><mn>8</mn><mn>3</mn></mfrac></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>d</mi><mo>:</mo><mi>y</mi><mo>=</mo><mn>8</mn><mi>x</mi><mo>+</mo><mfrac displaystyle=\"true\"><mn>8</mn><mn>3</mn></mfrac></mrow></semantics></math>"
+    }
+  ],
+  "correct": "B",
+  "solution": "Ta có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>′</mi><mo>=</mo><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn><mi>x</mi><mo>−</mo><mn>3</mn></mrow></semantics></math>, <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>″</mi><mo>=</mo><mo>−</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>4</mn></mrow></semantics></math>.<br>Giả thiết bài toán có <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mi>″</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>6</mn><mo>⇔</mo><mo>−</mo><mn>2</mn><msub><mi>x</mi><mn>0</mn></msub><mo>+</mo><mn>4</mn><mo>=</mo><mn>6</mn><mo>⇔</mo><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><mo>−</mo><mn>1</mn></mrow></semantics></math>.<br>Tiếp tuyến tại điểm có hoành độ <math display=\"inline\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><msub><mi>x</mi><mn>0</mn></msub></semantics></math> có phương trình là\n\t\t<div class=\"math-display\"><math display=\"block\" xmlns=\"http://www.w3.org/1998/Math/MathML\"><semantics><mrow><mi>y</mi><mo>=</mo><mi>y</mi><mi>′</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>−</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><msub><mi>y</mi><mn>0</mn></msub><mo>=</mo><mo>−</mo><mn>8</mn><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mfrac displaystyle=\"true\"><mn>16</mn><mn>3</mn></mfrac><mo>=</mo><mo>−</mo><mn>8</mn><mi>x</mi><mo>−</mo><mfrac displaystyle=\"true\"><mn>8</mn><mn>3</mn></mfrac><mi>.</mi></mrow></semantics></math></div>",
+  "accepted_answers": []
+}
