@@ -2,13 +2,13 @@
 
 Chạy từ checkout của mã đã duyệt. Trình đóng gói đọc câu chuẩn cùng bản chỉnh theo mã câu và đối chiếu biến thể đã duyệt. Mỗi gói ghi commit nguồn, phiên bản nội dung, danh sách câu và SHA-256 từng hình. Bảng dưới liệt kê các phạm vi có thể đóng gói trong kho mã. Kiểm tra biên nhận của từng chương trên bản thử để xác định gói đang hoạt động. [Quy trình sửa một câu](../CONTRIBUTING.md)
 
-| Chương | Mã gói | Số câu chuẩn | Số biến thể |
+| Chương | Mã gói | Số câu chuẩn | Số biến thể khả dụng |
 | --- | --- | ---: | ---: |
 | I | `12-C01` | 230 | 900 |
-| II | `12-C02` | 218 | 700 |
+| II | `12-C02` | 218 | 696 |
 | III | `12-C03` | 151 | 604 |
-| IV | `12-C04` | 153 | 576 |
-| V | `12-C05` | 168 | 636 |
+| IV | `12-C04` | 153 | 568 |
+| V | `12-C05` | 168 | 624 |
 | VI | `12-C06` | 118 | 436 |
 
 Triển khai mã cùng phiên bản biến thể và tệp hình lên bản thử trước. Cấp cấu hình cho lệnh nạp qua `TOANTHD_RELEASE_ORIGIN`, `TOANTHD_RELEASE_ADMIN_PASSWORD` và `TOANTHD_RELEASE_SITES_TOKEN` khi dùng Sites. Lệnh cũng nhận một dòng JSON trên stdin với các trường `origin`, `password` và `sitesToken`. Giữ thông tin xác thực ngoài Git.
@@ -26,7 +26,7 @@ node scripts/publish-bank-release.mjs activate <digest-tu-buoc-stage> --chapter 
 
 ## Kiểm tra gói Chương II–V trên máy
 
-Phạm vi `12-C02` gồm cả ba bài B01, B02 và B03. Câu `dc-12-hk1-2H1-q058-v4` đã được giáo viên duyệt sửa nhãn ý b trong lời giải thành **Đúng**, giữ khóa đáp án gốc và đủ điều kiện chấm tự động. Bảy câu gốc chờ duyệt trong phần mở rộng Chương II–V giữ nguyên trạng thái `review` và được loại khỏi lựa chọn chấm tự động.
+Phạm vi `12-C02` gồm cả ba bài B01, B02 và B03. Câu `dc-12-hk1-2H1-q058-v4` đã được giáo viên duyệt sửa nhãn ý b trong lời giải thành **Đúng** và giữ khóa đáp án gốc. Giáo viên đã duyệt thêm bảy câu gốc sau khi đối chiếu lời giải, phương án và đáp số. Các bản sửa đã duyệt đủ điều kiện chấm tự động. Hai mươi bốn biến thể tạm ẩn vì còn gắn với dấu vân tay cũ của các câu gốc vừa sửa.
 
 ```powershell
 npm run content:preview -- bank --chapter 12-C02
@@ -35,4 +35,4 @@ npm run content:check -- all --chapter 12-C02
 node --test tests/content-pilot.test.mjs
 ```
 
-Đối chiếu số câu và biến thể với bảng. Trong đợt này, mục `changed` của gói câu hỏi Chương II chỉ có mã câu 58 đã duyệt. Sau khi commit, chạy `node scripts/build-bank-release.mjs --chapter 12-C02` để kiểm tra phiên bản và dấu vân tay hình trên máy. Dùng mã chương tương ứng khi kiểm tra Chương III–V. Chỉ chạy các bước `stage` và `activate` khi người phụ trách duyệt phạm vi phát hành HTTPS.
+Đối chiếu số câu và biến thể với bảng. Mục `changed` của gói câu hỏi Chương II có hai mã câu đã duyệt, Chương IV và V có ba mã mỗi chương. Sau khi commit, chạy `node scripts/build-bank-release.mjs --chapter 12-C02` để kiểm tra phiên bản và dấu vân tay hình trên máy. Dùng mã chương tương ứng khi kiểm tra Chương III–V. Chỉ chạy các bước `stage` và `activate` khi người phụ trách duyệt phạm vi phát hành HTTPS.

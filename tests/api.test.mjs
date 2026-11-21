@@ -17,6 +17,8 @@ import chapter03Overlay from '../data/chapter-variants/generated/12-C03.json' wi
 import chapter04Overlay from '../data/chapter-variants/generated/12-C04.json' with {type: 'json'};
 import chapter05Overlay from '../data/chapter-variants/generated/12-C05.json' with {type: 'json'};
 import chapter02Bank from '../data/course-bank/generated/12-C02.json' with {type: 'json'};
+import chapter04Bank from '../data/course-bank/generated/12-C04.json' with {type: 'json'};
+import chapter05Bank from '../data/course-bank/generated/12-C05.json' with {type: 'json'};
 import variantOverlay from '../data/chapter-variants/generated/12-C06.json' with {type: 'json'};
 import variantManifest from '../data/chapter-variants/manifest.json' with {type: 'json'};
 // Exercise the real API module. Only the Cloudflare env binding is substituted;
@@ -744,21 +746,26 @@ test('Chapter I release keeps pending review and cannot change the active Chapte
  }
 });
 
-test('Chapter II release stages all three lessons and uses the approved question 58 answer key', async ()=>{
- const origin='http://test.local';
- const scope='12-C02';
- const lessonId='dc-12-hk1-2H1-v4';
- const approvedId='dc-12-hk1-2H1-q058-v4';
- const pendingId='dc-12-hk1-2H2-q037-v4';
- const receiptKey='course_bank_release:'+scope;
- const approved=chapter02Bank.rows.find(row=>row.id===approvedId);
- const release=sampleRelease(scope,chapter02Overlay.version,'Chương II',new Set([pendingId]));
- release.questions=release.questions.map(row=>row.id===approvedId?approved:row);
- const paths=new Set(JSON.stringify(approved).match(/\/bank-assets\/[a-f0-9]{64}\.svg/g));
+function releaseWithApprovedRows(scope, version, chapter, approvedRows){
+ const release=sampleRelease(scope,version,chapter);
+ const byId=new Map(approvedRows.map(row=>[row.id,row]));
+ release.questions=release.questions.map(row=>byId.get(row.id)??row);
+ const paths=new Set(JSON.stringify(approvedRows).match(/\/bank-assets\/[a-f0-9]{64}\.svg/g));
  release.assets=[...paths].map(path=>{
   const bytes=readFileSync(new URL('../public'+path,import.meta.url));
   return {path,bytes:bytes.length,sha256:nodeCrypto.createHash('sha256').update(bytes).digest('hex')};
  });
+ return release;
+}
+
+test('Chapter II release stages all three lessons with approved questions 58 and 37', async ()=>{
+ const origin='http://test.local';
+ const scope='12-C02';
+ const lessonId='dc-12-hk1-2H1-v4';
+ const approvedId='dc-12-hk1-2H1-q058-v4';
+ const approved37Id='dc-12-hk1-2H2-q037-v4';
+ const receiptKey='course_bank_release:'+scope;
+ const release=releaseWithApprovedRows(scope,chapter02Overlay.version,'Chương II',chapter02Bank.rows);
  const objects=new Map();
  env.BUCKET={async put(key,value){objects.set(key,value);},async get(key){const value=objects.get(key);return value?{async text(){return value;}}:null;}};
  const post=(action,body,status=200)=>call('teacher/bank-release/'+action,{method:'POST',origin,body,status}).then(r=>r.data);
@@ -783,8 +790,8 @@ test('Chapter II release stages all three lessons and uses the approved question
    const invalid=await post('stage',{...release,questions:replaceQuestion(approvedId,patch)},422);
    assert.match(invalid.error,/q058-v4.*bản đã duyệt/);
   }
-  const pending=await post('stage',{...release,questions:replaceQuestion(pendingId,{bank_status:'auto'})},422);
-  assert.match(pending.error,/2H2-q037-v4.*chờ duyệt/);
+  const stale37=await post('stage',{...release,questions:replaceQuestion(approved37Id,{bank_status:'review'})},422);
+  assert.match(stale37.error,/2H2-q037-v4.*bản đã duyệt/);
   const pastEnd='dc-12-hk1-2H1-q108-v4';
   await post('stage',{...release,questions:replaceQuestion(approvedId,{id:pastEnd,family_id:pastEnd,original_number:108})},422);
   const otherId=approvedId.replace('2H1','3D1');
@@ -798,7 +805,7 @@ test('Chapter II release stages all three lessons and uses the approved question
   assert.deepEqual([...objects.keys()],['bank-release/staged/'+scope+'/'+staged.digest+'.json']);
   const stagedPrefix='bank-release/staged/'+scope+'/';
   const oldStage=JSON.parse(objects.get(stagedPrefix+staged.digest+'.json'));
-  oldStage.release.questions=replaceQuestion(approvedId,{bank_status:'review'});
+  oldStage.release.questions=replaceQuestion(approved37Id,{bank_status:'review'});
   const oldStageText=JSON.stringify(oldStage);
   const oldDigest=nodeCrypto.createHash('sha256').update(oldStageText).digest('hex');
   objects.set(stagedPrefix+oldDigest+'.json',oldStageText);
@@ -810,7 +817,7 @@ test('Chapter II release stages all three lessons and uses the approved question
   assert.equal((await post('activate',{scope,digest:staged.digest})).replayed,false);
   assert.equal(count(),218);
   assert.deepEqual(priorState(),before);
-  assert.deepEqual(db.prepare('SELECT bank_status FROM questions WHERE id=?').get(pendingId).bank_status,'review');
+  assert.equal(db.prepare('SELECT bank_status FROM questions WHERE id=?').get(approved37Id).bank_status,'auto');
   const {data:review}=await call('teacher/bank?status=review&lesson_id='+lessonId);
   assert.deepEqual(review.questions,[]);
   const {data:selection}=await call('teacher/bank/select',{method:'POST',body:{mode:'numbers',lesson_id:lessonId,numbers_spec:'57–59'}});
@@ -821,26 +828,26 @@ test('Chapter II release stages all three lessons and uses the approved question
  }
 });
 
-test('Chapters III–V each stage independently and keep canonical review questions pending', async ()=>{
+test('Chapters III–V stage independently with exact teacher-approved question fingerprints', async ()=>{
  const origin='http://test.local';
  const chapters=[
   ['12-C03',chapter03Overlay.version,151,[]],
-  ['12-C04',chapter04Overlay.version,153,['dc-12-hk2-4D2-q026-v4','dc-12-hk2-4D3-q039-v4','dc-12-hk2-4D3-q056-v4']],
-  ['12-C05',chapter05Overlay.version,168,['dc-12-hk2-5H2-q057-v4','dc-12-hk2-5H3-q028-v4','dc-12-hk2-5H3-q034-v4']],
+  ['12-C04',chapter04Overlay.version,153,chapter04Bank.rows],
+  ['12-C05',chapter05Overlay.version,168,chapter05Bank.rows],
  ];
  const objects=new Map();
  env.BUCKET={async put(key,value){objects.set(key,value);},async get(key){const value=objects.get(key);return value?{async text(){return value;}}:null;}};
  const post=(action,body,status=200)=>call('teacher/bank-release/'+action,{method:'POST',origin,body,status}).then(r=>r.data);
  const total=()=>db.prepare('SELECT COUNT(*) AS count FROM questions').get().count;
  try{
-  for(const [scope,version,count,pendingIds] of chapters){
+  for(const [scope,version,count,approvedRows] of chapters){
    const before=total();
-   const release=sampleRelease(scope,version,scope,new Set(pendingIds));
-   for(const id of pendingIds){
+   const release=releaseWithApprovedRows(scope,version,scope,approvedRows);
+   for(const {id} of approvedRows){
     const questions=release.questions.map(row=>{
      if(row.id!==id) return row;
-     const promoted={...row,bank_status:'auto'};
-     return {...promoted,bank_fingerprint:releaseFingerprint(promoted)};
+     const stale={...row,bank_status:'review'};
+     return {...stale,bank_fingerprint:releaseFingerprint(stale)};
     });
     const invalid=await post('stage',{...release,questions},422);
     assert.ok(invalid.error.includes(id));
@@ -850,10 +857,11 @@ test('Chapters III–V each stage independently and keep canonical review questi
    assert.equal(total(),before);
    assert.equal((await post('activate',{scope,digest:staged.digest})).replayed,false);
    assert.equal(total(),before+count);
-   const lessonIds=release.lessons.map(lesson=>lesson.id);
-   const lessonParams=lessonIds.map(()=>'?').join(',');
-   const pending=db.prepare("SELECT id FROM questions WHERE bank_status='review' AND lesson_id IN ("+lessonParams+") ORDER BY id").all(...lessonIds);
-   assert.deepEqual(pending.map(row=>row.id),pendingIds);
+   for(const row of approvedRows){
+    const saved=db.prepare('SELECT bank_status,bank_fingerprint FROM questions WHERE id=?').get(row.id);
+    assert.equal(saved.bank_status,'auto');
+    assert.equal(saved.bank_fingerprint,row.bank_fingerprint);
+   }
   }
  }finally{
   delete env.BUCKET;

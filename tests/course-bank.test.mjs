@@ -34,7 +34,7 @@ test('Vietnamese MathML text and overlines display with the bundled math font',(
  assert.match(layoutMathHtml(statistics.solution), />̅<\/mo>/u);
 });
 test('v0.6: all 5,837 original identities, 75 lessons, answer keys, assets and review flags survive an idempotent installation',async()=>{
- const m=bundle.manifest;assert.deepEqual(Object.fromEntries(Object.entries(m.summary.by_grade).map(([g,v])=>[g,v.total])),{10:2118,11:2681,12:1038});assert.equal(m.lessons.length,75);assert.equal(m.summary.by_status.auto,4654);assert.equal(m.summary.by_status.review,110);assert.equal(m.summary.by_status.reference,1073);
+ const m=bundle.manifest;assert.deepEqual(Object.fromEntries(Object.entries(m.summary.by_grade).map(([g,v])=>[g,v.total])),{10:2118,11:2681,12:1038});assert.equal(m.lessons.length,75);assert.equal(m.summary.by_status.auto,4661);assert.equal(m.summary.by_status.review,103);assert.equal(m.summary.by_status.reference,1073);
  assert.equal(db.prepare('SELECT COUNT(*) n FROM questions').get().n,5867);
  const before=db.prepare("SELECT prompt FROM questions WHERE id='q11-1'").get();for(const sql of courseBankSQL(bundle))db.exec(sql);assert.equal(db.prepare('SELECT COUNT(*) n FROM questions').get().n,5867);if(before)assert.deepEqual(db.prepare("SELECT prompt FROM questions WHERE id='q11-1'").get(),before);
  const ids=new Set(),refs=new Set();for(const q of bundle.questions){assert.ok(!ids.has(q.id));ids.add(q.id);assert.equal(q.bank_fingerprint,await sha256(courseRowPayload(q)));assert.equal(JSON.parse(q.bank_meta).sourceNumber,q.original_number);assert.equal(canAutoGrade(decodeQuestion(q)),q.bank_status==='auto');for(const s of (q.prompt+q.choices+q.solution).matchAll(/\/bank-assets\/[a-f0-9]{64}\.svg/g))refs.add(s[0]);}

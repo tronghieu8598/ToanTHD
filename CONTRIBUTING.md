@@ -22,7 +22,7 @@ Thay `12-C02` bằng mã chương đang sửa, từ `12-C01` đến `12-C06`. C�
 
 Khi hai người sửa hai câu khác nhau trong một bài, ghép các tệp câu trên nhánh tích hợp mới nhất rồi chạy lại `content:build` cho phần đó. Công cụ sẽ tạo gói từ các bài được cấu hình trong phạm vi đang biên tập.
 
-Chương II gồm đủ ba bài. Câu `dc-12-hk1-2H1-q058-v4` của Bài 1 đã được giáo viên duyệt đổi nhãn lời giải ý b thành **Đúng**, giữ khóa đáp án gốc. Bảy câu chờ duyệt trong đợt mở rộng Chương II–V giữ nguyên nội dung nguồn và trạng thái `review`. [Hướng dẫn nạp ngân hàng](docs/NAP_NGAN_HANG_HTTPS.md)
+Chương II gồm đủ ba bài. Câu `dc-12-hk1-2H1-q058-v4` của Bài 1 đã được giáo viên duyệt đổi nhãn lời giải ý b thành **Đúng**, giữ khóa đáp án gốc. Giáo viên đã duyệt thêm bảy câu gốc trong Chương II, IV và V. Các câu đã sửa đủ điều kiện chấm tự động. Hai mươi bốn biến thể gắn với dấu vân tay cũ tạm ẩn trong lần soạn đề tiếp theo. [Hướng dẫn nạp ngân hàng](docs/NAP_NGAN_HANG_HTTPS.md)
 
 Các tệp `questions.json.gz`, `data/chapter-variants/source/` và mô-đun biến thể cũ là dữ liệu nền của bản thử. Bộ đóng gói ghép bản sửa theo mã và giữ phiên bản gói riêng trong `generated/`. Sau khi duyệt câu hỏi, chạy bước cài đặt/nâng cấp cơ sở dữ liệu trên bản thử rồi dựng lại web. Bản cài sao lưu toàn thư mục lưu cả đề đã giao và dữ liệu của giáo viên.
 
