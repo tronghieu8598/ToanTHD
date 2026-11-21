@@ -9,7 +9,7 @@ Mỗi yêu cầu ghi mã câu hoặc mã học liệu, thay đổi cần làm v�
 | Câu hỏi Toán 10–11 | `data/course-bank/src/<khối>/<chương>/<bài>/<id>.json`. Mỗi tệp chứa một câu. | `npm run content:build -- bank --chapter 11-C07` |
 | Câu hỏi Toán 12 | `data/course-bank/src/12/<chương>/<bài>/<id>.json`. Mỗi tệp chứa một câu. | `npm run content:build -- bank --chapter 12-C02` |
 | Biến thể Toán 12 | `data/chapter-variants/src/12/<chương>/<bài>/<id>.json`. Mỗi tệp chứa nhóm biến thể của một câu gốc. | `npm run content:build -- variants --chapter 12-C02` |
-| Monty Hall | `data/digital-library/src/12/C06/12-monty-hall-game-577dcd0/` | `npm run content:build -- library` |
+| Học liệu số | `data/digital-library/src/<khối>/<chương>/<id>/` | `npm run library:build` và `npm run library:check` |
 | Giao diện, quyền, cơ sở dữ liệu | `app/`, `lib/`, `drizzle/` | `npm run typecheck` và `npm test` |
 
 Thay mã trong ví dụ bằng chương đang sửa. Toán 10 và 11 dùng `10-C01`–`10-C09` và `11-C01`–`11-C09`. Toán 12 dùng `12-C01`–`12-C06`. Với Toán 11, đặt bài có mã gốc `8H` trong `11/C07`, `9D` trong `11/C08` và `7D` trong `11/C09` theo mục lục Kết nối tri thức. Giữ nguyên mã bài và mã câu gốc.
@@ -20,7 +20,7 @@ Nguồn Toán 10–11 gồm 4.799 câu trong 58 bài. Khi tách tệp theo câu,
 
 1. Mở [câu 13 trong thư mục B02](data/course-bank/src/12/C06/B02/dc-12-hk2-6D2-q013-v4.json). Sửa trường `solution` và giữ mã, số câu gốc, dạng câu và `based_on`. Nội dung dùng HTML và MathML giống các câu bên cạnh. Với đáp án số, kiểm tra cả `accepted_answers`. Khi giao cả phần, ghi thư mục bài và danh sách mã hoặc dạng câu cần soát.
 2. Chạy `npm run content:preview -- bank --chapter 12-C06` để xem câu bị đổi và dấu vân tay mới. Chạy `npm run content:build -- bank --chapter 12-C06` để sinh gói câu hỏi của chương. Các biến thể gắn với dấu vân tay cũ tạm ẩn trong lần soạn đề tiếp theo. Muốn phát hành lại chúng, soát từng biến thể, cập nhật `source_fingerprint` trong tệp biến thể tương ứng, rồi đóng gói phần `variants` của chương đó.
-3. Trên một nhánh khác, thay `cover.jpg` của Monty Hall bằng ảnh JPEG phù hợp. Chỉnh tên hoặc mô tả trong `manifest.json` nếu cần. Chạy `npm run content:build -- library`. Bìa được xuất với đường dẫn theo SHA-256 và gói học liệu nhận phiên bản riêng.
+3. Trên một nhánh khác, mở thư mục Monty Hall trong `data/digital-library/src/12/C06/`. Chỉnh tên hoặc mô tả trong `library-item.json`, thay `cover.jpg` hoặc `preview.mp4` nếu cần. Chạy `npm run library:build` để xuất danh mục và tệp truyền thông. Khi đổi bìa Monty Hall, chạy thêm `npm run content:build -- library` để đồng bộ gói thử cũ. [Quy trình học liệu số](docs/NAP_HOC_LIEU_HTTPS.md)
 4. Chạy `npm run content:check` và mở pull request. Đính kèm tệp nguồn cùng tệp sinh ra của phần vừa chỉnh. Người phụ trách kiểm tra nội dung toán hoặc bìa. Tác vụ GitHub Actions kiểm gói, kiểu dữ liệu, bộ kiểm thử và bản build.
 
 Khi hai người sửa hai câu khác nhau trong một bài, ghép các tệp câu trên nhánh tích hợp mới nhất rồi chạy lại `content:build` cho phần đó. Công cụ sẽ tạo gói từ các bài được cấu hình trong phạm vi đang biên tập.

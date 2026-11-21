@@ -1,6 +1,6 @@
-import { bundledLibraryCatalog as catalog } from '../library-resources.mjs';
+import { bundledLibraryCatalog as catalog, releasedLibraryCatalog as released } from '../library-resources.mjs';
 import curriculum from '../../data/curriculum/kntt-math.json';
-import montyPilot from '../../data/digital-library/generated/monty-hall.json';
+import cards from '../../data/digital-library/generated/items.json';
 
 export type ResourceKind = 'lesson' | 'book' | 'document' | 'elearning' | 'archive';
 export type MathGrade = 10 | 11 | 12;
@@ -23,6 +23,7 @@ export type LibraryResource = {
     offline: boolean;
     description: string;
     cover?: string;
+    preview?: { src: string; durationSeconds: number };
     upload?: {
         visibility: LibraryVisibility;
         owned: boolean;
@@ -36,17 +37,16 @@ export type LibraryResource = {
     };
 };
 
-// The source labels are retained for search; the publisher taxonomy drives navigation.
-export const libraryResources: LibraryResource[] = catalog.map(item => {
-    if (item.id === montyPilot.resource.id) return {...item, ...montyPilot.resource, kind: item.kind as ResourceKind};
+type EditableCard = Pick<LibraryResource, 'title' | 'description' | 'chapterNumber' | 'cover' | 'preview'>;
+function toResource(item: (typeof catalog | typeof released)[number]): LibraryResource {
+    const edited = (cards as Partial<Record<string, EditableCard>>)[item.id];
+    if (edited) return {...item, ...edited, kind: item.kind as ResourceKind};
     const fromFolder = Number(normalizeLibraryText(item.chapter).match(/^(?:c|chuong)\s*(\d+)\b/)?.[1]);
-    const chapterNumber = item.id === '12-phong-thi-nghiem-toi-uu-bang-dao-57a0923' ? 1 : fromFolder || undefined;
-    const coverId = item.kind === 'archive' ? '11-index-38727bd' : item.id;
-    const title = item.id === '12-ung-dung-tich-phan-fb504a8' ? 'Ứng dụng tích phân · Bản gốc'
-        : item.id === '12-lop-12-cong-cu-mo-phong-tinh-die-f4bf074' ? 'Mô phỏng diện tích và thể tích · Bản 2' : item.title;
-    return {...item, title, kind: item.kind as ResourceKind, chapterNumber, cover: `/studio/covers/${coverId}.jpg`};
-});
-export const libraryById = new Map(libraryResources.map(resource => [resource.id, resource]));
+    return {...item, kind: item.kind as ResourceKind, chapterNumber: fromFolder || undefined, cover: `/studio/covers/${item.id}.jpg`};
+}
+export const libraryResources = catalog.map(toResource);
+export const releasedLibraryResources = released.map(toResource);
+export const libraryById = new Map([...libraryResources, ...releasedLibraryResources].map(resource => [resource.id, resource]));
 
 export const resourceKinds: Record<ResourceKind, string> = {
     lesson: 'Bài giảng tương tác',

@@ -15,3 +15,64 @@
 /* Main-dashboard integration; no global style overrides. */
 .dl-overview-section{margin:24px 0 22px;background:white;border:1px solid #e2e9ee;padding:21px 23px 23px;border-radius:10px}.dl-overview-title{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:16px}.dl-overview-title span{font-size:10px;font-weight:750;color:#16675d;letter-spacing:1.2px}.dl-overview-title h2{font-size:19px;color:#18374e;margin:7px 0}.dl-overview-title p{font-size:12px;color:#687a85;margin:0}.dl-overview-title>button{display:flex;align-items:center;gap:5px;border:0;background:transparent;color:#16675d;font-size:12px;font-weight:700}.dl-overview-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}.dl-overview-grid>button{display:grid;grid-template-columns:1fr auto;gap:6px;align-items:start;text-align:left;border:1px solid #e2e9ee;border-radius:8px;background:#fcfdfd;padding:16px;color:#18374e;cursor:pointer}.dl-overview-grid>button:hover{border-color:#8ebbb2;background:#f7fbfa}.dl-overview-grid>button>svg:first-child{grid-column:1/-1;color:#176b61}.dl-overview-grid>button b{font-size:13px}.dl-overview-grid>button small{font-size:11px;line-height:1.5;color:#6c7a86;grid-column:1/-1}.dl-overview-grid>button>svg:last-of-type{grid-column:2;grid-row:2;color:#7d949d}
 @media(max-width:720px){.dl-overview-grid{grid-template-columns:1fr}.dl-overview-title{align-items:start;flex-direction:column}.dl-overview-section{padding:17px}}
+
+.studio-resource-slot {
+  display: grid;
+  position: relative;
+  min-width: 0;
+}
+
+.studio-resource-visual {
+  display: block;
+  position: relative;
+  margin-bottom: 9px;
+}
+
+.studio-library-v13 .studio-resource .studio-resource-visual > .studio-cover {
+  margin-bottom: 0;
+}
+
+.studio-demo-video {
+  position: absolute;
+  inset: 1px;
+  display: block;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  border-radius: 9px;
+  object-fit: contain;
+  background: #102b23;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .18s ease;
+}
+
+.studio-demo-video[data-playing='true'] { opacity: 1; }
+
+.studio-demo-trigger {
+  position: absolute;
+  z-index: 1;
+  inset: 14px auto auto 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 6px 10px;
+  border: 1px solid #ffffff4d;
+  border-radius: 10px;
+  background: #102b23f2;
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 750;
+}
+
+.studio-demo-trigger:hover,
+.studio-demo-trigger[aria-pressed='true'] {
+  border-color: #c9f241;
+  color: #c9f241;
+}
+
+@media (max-width: 760px) {
+  .studio-demo-trigger { inset: 10px auto auto 10px; }
+}

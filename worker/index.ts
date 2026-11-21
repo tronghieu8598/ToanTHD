@@ -3,11 +3,19 @@ import { runWithConnectorBinding } from "../lib/connector-context";
 import type { ConnectorBinding } from "../lib/connector-contract.mjs";
 import { libraryPath } from "../lib/library-http.mjs";
 import { serveHostedLibrary } from "../lib/library-hosted.mjs";
+import release from "../data/digital-library/generated/library-release.json";
+import { createLibraryRelease, libraryReleasePath, libraryReleaseStatusPath } from "./library-release.mjs";
+
+const {handleLibraryRelease, serveLibraryRelease} = createLibraryRelease(release);
 
 const worker = {
-  fetch(request: Request, env: Cloudflare.Env, ctx: ExecutionContext<{ CONNECTORS?: ConnectorBinding }>) {
-    if (env.BUCKET && new URL(request.url).pathname.startsWith(libraryPath)) {
-      return serveHostedLibrary(request, env.BUCKET);
+  async fetch(request: Request, env: Cloudflare.Env, ctx: ExecutionContext<{ CONNECTORS?: ConnectorBinding }>) {
+    const {pathname} = new URL(request.url);
+    if (pathname === libraryReleasePath || pathname.startsWith(libraryReleasePath + '/') || pathname === libraryReleaseStatusPath) {
+      return handleLibraryRelease(request, env);
+    }
+    if (env.BUCKET && pathname.startsWith(libraryPath)) {
+      return (await serveLibraryRelease(request, env)) ?? serveHostedLibrary(request, env.BUCKET);
     }
     let binding = ctx.props?.CONNECTORS;
     // Local preview emulates the same request-scoped capability. This branch and

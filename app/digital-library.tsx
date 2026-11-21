@@ -4,12 +4,13 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   ArrowLeft, ArrowRight, BookOpen, Check, ClipboardList, Download, ExternalLink, Info, LockKeyhole, Maximize2, Plus, Search, Trash2, Users, X,
 } from 'lucide-react';
-import { libraryResources, libraryById, chapterRoman, mathChapters, mathGrades, resourceKinds, normalizeLibraryText, type LibraryResource, type LibraryVisibility, type MathGrade, type ResourceKind } from '../lib/client/library-catalog';
+import { libraryResources, releasedLibraryResources, chapterRoman, mathChapters, mathGrades, resourceKinds, normalizeLibraryText, type LibraryResource, type LibraryVisibility, type MathGrade, type ResourceKind } from '../lib/client/library-catalog';
 import { StudioCover, resourceMeta } from './studio-cover';
-import { resourceFitsRoom } from '../lib/library-resources.mjs';
+import { libraryReleaseStatusPath, resourceFitsRoom } from '../lib/library-resources.mjs';
 import { StudioPlanStatus, StudioRoomPicker } from './studio-plan';
 import type { StudioPlan } from './use-studio-plan';
 import { LibraryUploadDialog, type LibraryUploads, type UploadAction } from './library-uploads';
+import { LibraryResourceCard } from './library-preview';
 
 type Kind = 'all' | ResourceKind;
 const filters: { kind: Kind; label: string }[] = [
@@ -60,10 +61,28 @@ export function DigitalLibrary({ initialKind = 'all', embedded = false, plan, on
   const previewRef = useRef<HTMLElement>(null);
   const quickDialog = useRef<HTMLDialogElement>(null);
   const previewOpener = useRef<HTMLButtonElement>(null);
+  const activeClip = useRef<(() => void) | null>(null);
   const [library, setLibrary] = useState<{base:string; isolated:boolean} | null>(null);
-  const catalog = useMemo(() => [...libraryResources, ...(uploads?.items ?? [])], [uploads?.items]);
+  const [releasedIds, setReleasedIds] = useState<string[] | null>(releasedLibraryResources.length ? null : []);
+  const catalog = useMemo(() => {
+    const activeIds = new Set(releasedIds);
+    return [...libraryResources, ...releasedLibraryResources.filter(item => activeIds.has(item.id)), ...(uploads?.items ?? [])];
+  }, [releasedIds, uploads?.items]);
   const resourceUrl = (item: LibraryResource) => !item.upload && library ? new URL(item.url, library.base).href : item.url;
   const downloadUrl = (item: LibraryResource) => item.upload ? item.url + '&download=1' : resourceUrl(item);
+
+  useEffect(() => {
+    if (!releasedLibraryResources.length) return;
+    const ctrl = new AbortController();
+    fetch(libraryReleaseStatusPath, {signal: ctrl.signal, cache: 'no-store'})
+      .then(response => response.ok ? response.json() : null)
+      .then(data => {
+        if (ctrl.signal.aborted) return;
+        const ids = data && typeof data === 'object' && 'resourceIds' in data ? data.resourceIds : null;
+        setReleasedIds(Array.isArray(ids) ? ids.filter((id): id is string => typeof id === 'string') : []);
+      }).catch(() => { if (!ctrl.signal.aborted) setReleasedIds([]); });
+    return () => ctrl.abort();
+  }, []);
 
   useEffect(() => {
     const ctrl = new AbortController();
@@ -101,15 +120,16 @@ export function DigitalLibrary({ initialKind = 'all', embedded = false, plan, on
       setFileState('loading');
       setSelected(item);
     }
+    if (!item && releasedIds === null) return;
     onOpenHandled?.();
-  }, [catalog, openId, onOpenHandled]);
+  }, [catalog, openId, onOpenHandled, releasedIds]);
   useEffect(() => {
-    if (!embedded) {
+    if (!embedded && releasedIds !== null) {
       const id = new URLSearchParams(window.location.search).get('tai-lieu');
-      const resource = id ? libraryById.get(id) : undefined;
+      const resource = catalog.find(item => !item.upload && item.id === id);
       if (resource && resource.kind !== 'archive') setSelected(resource);
     }
-  }, [embedded]);
+  }, [catalog, embedded, releasedIds]);
   useEffect(() => {
     if (!preview) return;
     if (wide) {
@@ -310,13 +330,9 @@ export function DigitalLibrary({ initialKind = 'all', embedded = false, plan, on
         </header>
         {resources.length ? visibleGroups.map(group => <section className="studio-chapter-group" key={group.value}>
           {acrossChapters && <h3>{group.value ? `Chương ${chapterRoman[group.value]} · ` : ''}{group.name}</h3>}
-          <div className="studio-library-grid">{resources.filter(item => getChapter(item) === group.value).map(item => <button type="button" key={item.id}
-            className="studio-resource" aria-label={`Xem ${item.title}`} aria-expanded={wide ? preview?.id === item.id : undefined} aria-haspopup={wide ? undefined : 'dialog'}
-            onClick={event => { previewOpener.current = event.currentTarget; setActionError(''); setPreview(item); }}>
-            {!item.upload?.deletedAt && <StudioCover kind={item.kind} chapter={item.chapter} cover={item.cover} arrow />}
-            <small>{resourceKinds[item.kind]}{item.upload?.visibility === 'private' ? ' · Riêng tư' : ''}</small><strong>{item.title}</strong>
-            {item.upload && !item.upload.deletedAt && <small>{item.upload.owned ? 'Của bạn' : item.upload.ownerName}</small>}
-          </button>)}</div>
+          <div className="studio-library-grid">{resources.filter(item => getChapter(item) === group.value).map(item => <LibraryResourceCard
+            key={item.id} item={item} activeClip={activeClip} expanded={wide ? preview?.id === item.id : undefined} popup={wide ? undefined : 'dialog'}
+            onOpen={event => { activeClip.current?.(); previewOpener.current = event.currentTarget; setActionError(''); setPreview(item); }} />)}</div>
         </section>) : <div className="studio-library-empty"><BookOpen size={27} /><p>{scope === 'trash' && !search.trim() ? 'Chưa có học liệu trong Thùng rác ở khối này.' :
           search.trim() || kind !== 'all' ? 'Không tìm thấy học liệu phù hợp.' : scope === 'mine' ? 'Bạn chưa đăng học liệu ở chương này.' : 'Chưa có học liệu ở chương này.'}</p>
           {search.trim() || kind !== 'all' ? <button type="button" className="text-btn" onClick={() => { setSearch(''); setKind('all'); }}>Đặt lại bộ lọc</button> :

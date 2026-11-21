@@ -24,7 +24,10 @@
     "content:check": "node scripts/content-pilot.mjs check",
     "content:build": "node scripts/content-pilot.mjs build",
     "content:preview": "node scripts/content-pilot.mjs preview",
-    "library:install-asset": "node scripts/install-library-asset.mjs"
+    "library:install-asset": "node scripts/install-library-asset.mjs",
+    "library:build": "node scripts/library-catalog.mjs build",
+    "library:check": "node scripts/library-catalog.mjs check",
+    "library:stage": "node scripts/library-catalog.mjs stage"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

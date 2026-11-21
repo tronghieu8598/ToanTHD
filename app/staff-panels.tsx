@@ -1,7 +1,7 @@
 'use client';
 
 import {useEffect, useState} from 'react';
-import {Archive, BookOpen, Check, ClipboardList, Copy, Eye, EyeOff, History, KeyRound, Plus, Search, ShieldCheck, Users} from 'lucide-react';
+import {Archive, BookOpen, Check, ClipboardList, Copy, Eye, EyeOff, History, KeyRound, Plus, Search, ShieldCheck, Upload, Users} from 'lucide-react';
 import {adminApi, Dialog} from './admin-panels';
 import {normalizeLibraryText} from '../lib/client/library-catalog';
 
@@ -111,6 +111,7 @@ export function AccountsPanel({rooms, customPassword, onSettings}: {
     <div className="studio-page-heading">
       <div><div className="eyebrow">KHÔNG GIAN QUẢN TRỊ</div><h1>Tài khoản giáo viên<span>.</span></h1></div>
       <div className="studio-page-actions">
+        {customPassword && <a className="btn secondary" href="/quan-tri/nap-hoc-lieu"><Upload size={16} /> Nạp học liệu</a>}
         <button type="button" className="btn secondary" disabled={!customPassword} onClick={()=>void openAudit()}><History size={16}/> Nhật ký</button>
         <button type="button" className="btn primary" disabled={!customPassword} onClick={()=>open()}><Plus size={16}/> Cấp tài khoản</button>
       </div>
