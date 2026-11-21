@@ -5,6 +5,7 @@ import {can,canUseClass,canUseSession,requireTeacherRoute,teacherWriteGuard} fro
 import {handleAccounts} from './accounts.mjs';
 import {handleLibraryUploads} from './library-uploads.mjs';
 import {handleStudioPlan} from './studio-plan.mjs';
+import {handleBankRelease} from './bank-release.mjs';
 import {handleAdmin,currentBankSQL} from './admin.mjs';
 import {handleBackup} from './backup-service.mjs';
 import {decodeQuestion,publicQuestion,canAutoGrade,canEnterSession,bankFilter,parseNumberSelection,isCourseDocument} from './course-bank.mjs';
@@ -20,11 +21,14 @@ const first = async (sql: string, ...args: any[]): Promise<Row | null> => await 
 const json = (value: unknown, status = 200, headers: Record<string, string> = {}) => Response.json(value, { status, headers: { 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff', ...headers } });
 const must = (condition: unknown, message: string, status = 400) => { if (!condition)
     throw new ApiError(status, message); };
-const getVerifiedOverrides = async (): Promise<Record<string, any>> => {
+const verifiedOverrideValue = async (): Promise<string | null> => {
     const row = await first("SELECT value FROM workspace_settings WHERE key='verified_course_keys'");
-    if (!row || !row.value) return {};
-    try { return JSON.parse(row.value) || {}; } catch { return {}; }
+    return row?.value ?? null;
 };
+const decodeVerifiedOverrides = (value: string | null): Record<string, any> => {
+    try { return value ? JSON.parse(value) || {} : {}; } catch { return {}; }
+};
+const getVerifiedOverrides = async () => decodeVerifiedOverrides(await verifiedOverrideValue());
 const getSession = async (id: string) => {
     const s = await first('SELECT s.*, c.label AS class_label FROM sessions s JOIN classrooms c ON c.id=s.classroom_id WHERE s.id=?', id);
     if (!s)
@@ -273,6 +277,8 @@ export async function handleApi(request: Request) {
             const teacherAuth=await authTools.requireTeacher(request);
             requireTeacherRoute(teacherAuth,path,method,must);
             if(path==='teacher/studio-plan')return await handleStudioPlan(request,{all,first,database,must,json,readBody,auth:teacherAuth,authTools});
+            if(path==='teacher/bank-release/stage'||path==='teacher/bank-release/activate')
+                return await handleBankRelease(path,request,{env,first,database,must,json,readBody,auth:teacherAuth,authTools});
             const uploads=await handleLibraryUploads(path,request,{all,first,database,must,json,readBody,auth:teacherAuth,authTools});
             if(uploads)return uploads;
             const accountResponse=await handleAccounts(path,request,{all,first,database,must,json,readBody,auth:teacherAuth,authTools});
@@ -469,7 +475,8 @@ export async function handleApi(request: Request) {
                 const b=await readBody(request),qid=String(b.id||'');
                 const row=await first('SELECT * FROM questions WHERE id=?',qid);
                 must(row,'Câu hỏi không tồn tại.',404);
-                const overrides=await getVerifiedOverrides();
+                const previous=await verifiedOverrideValue();
+                const overrides=decodeVerifiedOverrides(previous);
                 if(b.reset){
                     delete overrides[qid];
                 }else{
@@ -480,7 +487,11 @@ export async function handleApi(request: Request) {
                     else must(false,'Chỉ chốt khóa đáp án tự động cho câu trắc nghiệm, Đúng/Sai hoặc trả lời ngắn.');
                     overrides[qid]={correct:kind==='short'?String(correct).trim():correct,updated_at:Date.now()};
                 }
-                await database().prepare("INSERT INTO workspace_settings(key,value) VALUES('verified_course_keys',?) ON CONFLICT(key) DO UPDATE SET value=excluded.value").bind(JSON.stringify(overrides)).run();
+                const updatedSetting=await database().prepare(`INSERT INTO workspace_settings(key,value)
+                    SELECT 'verified_course_keys',? WHERE EXISTS(SELECT 1 FROM questions WHERE id=? AND bank_fingerprint IS ?)
+                        AND (SELECT value FROM workspace_settings WHERE key='verified_course_keys') IS ?
+                    ON CONFLICT(key) DO UPDATE SET value=excluded.value`).bind(JSON.stringify(overrides),qid,row!.bank_fingerprint,previous).run();
+                must(updatedSetting.meta.changes===1,'Câu hỏi hoặc đáp án vừa đổi. Tải lại trước khi xác nhận.',409);
                 const updated=(await all(currentBankSQL+' AND q.id=?',qid))[0]||row;
                 return json({ok:true,question:decodeQuestion(updated,overrides)});
             }

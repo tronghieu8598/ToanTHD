@@ -9,6 +9,8 @@ import path from 'node:path';
 import {pathToFileURL} from 'node:url';
 import ts from 'typescript';
 import {newStaffPassword} from '../lib/auth.mjs';
+import {courseRowPayload} from '../lib/course-bank.mjs';
+import variantOverlay from '../data/chapter-variants/generated/12-C06.json' with {type: 'json'};
 // Exercise the real API module. Only the Cloudflare env binding is substituted;
 // SQL is executed by SQLite using the generated D1 schema and the actual seed.
 const db=new DatabaseSync(':memory:');
@@ -581,4 +583,104 @@ test('Studio plans synchronize by teacher and classroom and respect library acce
   await post('teacher/accounts',{...accounts.find(a=>a.id===author.id),allowed_class_ids:[classroomA]});
   await plan(author,classroomB,null,403);
  } finally {cookie=admin;}
+});
+
+test('bank release stages privately, applies atomically, preserves history and rejects stale previews', async () => {
+ const admin=cookie;
+ const origin='http://test.local';
+ const chapters=[['dc-12-hk2-6D1-v4',48],['dc-12-hk2-6D2-v4',70]];
+ const documentId='dc-12-hk2-v4';
+ const fingerprint=question=>nodeCrypto.createHash('sha256').update(courseRowPayload(question)).digest('hex');
+ const release={format:'toanthd.bank-release/1',scope:'12-C06',source_commit:'a'.repeat(40),source_version:'sample-pilot.1',
+  variants_version:variantOverlay.version,documents:[{id:documentId,grade:12,title:'Đề cương kiểm thử',edition:'Mẫu',parent_id:null,is_sample:0}],
+  lessons:chapters.map(([id])=>({id,document_id:documentId,chapter:'Chương VI',title:'Bài mẫu '+id})),assets:[],
+  questions:chapters.flatMap(([lesson,n])=>Array.from({length:n},(_,index)=>{
+   const number=index+1,id=lesson.slice(0,-3)+'-q'+String(number).padStart(3,'0')+'-v4';
+   const item={id,lesson_id:lesson,original_number:number,revision:1,kind:'short',prompt:'Tính giá trị 1+1',choices:'[]',correct:'"2"',
+    solution:'Hai',family_id:id,source_json:null,archived_at:null,updated_at:0,bank_status:'auto',bank_origin:'qa:'+id,bank_tex:null,
+    bank_meta:'{}',bank_note:'',bank_search:'tinh gia tri'};
+   return {...item,bank_fingerprint:fingerprint(item)};
+  })),
+ };
+ const objects=new Map();
+ env.BUCKET={async put(key,value){objects.set(key,value);},async get(key){const value=objects.get(key);return value?{async text(){return value;}}:null;}};
+ const post=(action,body,options={})=>call('teacher/bank-release/'+action,{method:'POST',origin,body,...options}).then(r=>r.data);
+ const receipt=()=>db.prepare("SELECT value FROM workspace_settings WHERE key='course_bank_release:12-C06'").get();
+ const count=()=>db.prepare('SELECT COUNT(*) AS count FROM questions WHERE lesson_id IN (?,?)').get(...chapters.map(([id])=>id)).count;
+ const probe=release.questions[0];
+ const batch=env.DB.batch;
+ try{
+  await post('stage',release,{auth:false,status:401});
+  await post('stage',release,{origin:undefined,status:403});
+  await post('stage',release,{origin:'https://other.test',status:403});
+  await post('stage',{...release,scope:'12-C05'},{status:422});
+  await post('stage',{...release,variants_version:'bad-version'},{status:422});
+  const staff=newStaffPassword('pilot-staff-password');
+  db.prepare(`INSERT INTO teacher_accounts(id,username,display_name,password_salt,password_hash,auth_epoch,permissions,selected_class_ids,must_change_password)
+   VALUES (?,?,?,?,?,?,?,'[]',0)`).run('bank-pilot-staff','bank-pilot-staff','Giáo viên mẫu',staff.salt,staff.hash,staff.epoch,'{"edit_bank":true}');
+  const login=await call('teacher/login',{method:'POST',body:{username:'bank-pilot-staff',password:'pilot-staff-password'}});
+  cookie=login.response.headers.get('set-cookie').split(';')[0];
+  await post('stage',release,{status:403});
+  cookie=admin;
+
+  const staged=await post('stage',release);
+  assert.equal(staged.preview.added,118);
+  assert.equal(staged.release.questions,118);
+  assert.equal(count(),0);
+  assert.equal(receipt(),undefined);
+  assert.ok([...objects.keys()].every(key=>key.startsWith('bank-release/staged/12-C06/')));
+  const stale=await post('stage',{...release,source_version:'sample-pilot.stale'});
+  db.exec(`CREATE TRIGGER reject_release_probe BEFORE INSERT ON questions WHEN NEW.id='${release.questions[50].id}'
+   BEGIN SELECT RAISE(ABORT,'synthetic batch failure'); END`);
+  try{await post('activate',{digest:staged.digest},{status:500});}
+  finally{db.exec('DROP TRIGGER reject_release_probe');}
+  assert.equal(count(),0);
+  assert.equal(receipt(),undefined);
+  assert.equal((await post('activate',{digest:staged.digest})).replayed,false);
+  assert.equal((await post('activate',{digest:staged.digest})).replayed,true);
+  const restaged=await post('stage',release);
+  assert.equal(restaged.preview.unchanged,118);
+  assert.equal((await post('activate',{digest:restaged.digest})).replayed,true);
+  await post('activate',{digest:stale.digest},{status:409});
+  assert.equal(count(),118);
+
+  const firstSession=db.prepare('SELECT id FROM sessions ORDER BY id LIMIT 1').get().id;
+  const firstAttempt=db.prepare('SELECT id,score FROM attempts ORDER BY id LIMIT 1').get();
+  const sessionSnapshot=JSON.stringify(probe);
+  db.prepare('INSERT INTO session_questions(id,session_id,position,source_id,snapshot) VALUES(?,?,?,?,?)')
+   .run('bank-pilot-session-snapshot',firstSession,9999,probe.id,sessionSnapshot);
+  db.prepare('UPDATE questions SET archived_at=42,updated_at=43 WHERE id=?').run(probe.id);
+  const keep=release.questions[1].id;
+  const overrides={ [probe.id]:{correct:'3'}, [keep]:{correct:'2'} };
+  db.prepare(`INSERT INTO workspace_settings(key,value) VALUES('verified_course_keys',?) ON CONFLICT(key) DO UPDATE SET value=excluded.value`)
+   .run(JSON.stringify(overrides));
+  const edited={...probe,correct:'"4"',prompt:'Tính giá trị 2+2',solution:'Bốn',archived_at:null,updated_at:0};
+  edited.bank_fingerprint=fingerprint(edited);
+  const next={...release,source_version:'sample-pilot.2',questions:[edited,...release.questions.slice(1)]};
+  const update=await post('stage',next);
+  assert.deepEqual(update.preview.changed_ids,[probe.id]);
+  assert.equal(db.prepare('SELECT correct FROM questions WHERE id=?').get(probe.id).correct,probe.correct);
+
+  const priorReceipt=receipt().value;
+  const shuffledFingerprint='f'.repeat(64);
+  env.DB.batch=async items=>{
+   db.prepare('UPDATE questions SET bank_fingerprint=? WHERE id=?').run(shuffledFingerprint,keep);
+   return batch(items);
+  };
+  try{await post('activate',{digest:update.digest},{status:409});}
+  finally{env.DB.batch=batch;}
+  assert.equal(receipt().value,priorReceipt);
+  assert.equal(db.prepare('SELECT correct FROM questions WHERE id=?').get(probe.id).correct,probe.correct);
+  db.prepare('UPDATE questions SET bank_fingerprint=? WHERE id=?').run(release.questions[1].bank_fingerprint,keep);
+  await post('activate',{digest:update.digest});
+  const changed=db.prepare('SELECT correct,archived_at,updated_at FROM questions WHERE id=?').get(probe.id);
+  assert.deepEqual({...changed},{correct:edited.correct,archived_at:42,updated_at:43});
+  assert.deepEqual(JSON.parse(db.prepare("SELECT value FROM workspace_settings WHERE key='verified_course_keys'").get().value),{[keep]:overrides[keep]});
+  assert.equal(db.prepare("SELECT snapshot FROM session_questions WHERE id='bank-pilot-session-snapshot'").get().snapshot,sessionSnapshot);
+  assert.deepEqual(db.prepare('SELECT id,score FROM attempts WHERE id=?').get(firstAttempt.id),firstAttempt);
+ }finally{
+  cookie=admin;
+  env.DB.batch=batch;
+  delete env.BUCKET;
+ }
 });
