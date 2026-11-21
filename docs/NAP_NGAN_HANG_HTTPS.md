@@ -20,6 +20,8 @@ Mỗi gói chương Toán 10–11 chứa câu gốc và trả số biến thể 
 
 Triển khai mã và tệp hình lên bản thử trước. Với Toán 12, bản triển khai dùng đúng phiên bản biến thể của gói. Cấp cấu hình cho lệnh nạp qua `TOANTHD_RELEASE_ORIGIN`, `TOANTHD_RELEASE_ADMIN_PASSWORD` và `TOANTHD_RELEASE_SITES_TOKEN` khi dùng Sites. Lệnh cũng nhận một dòng JSON trên stdin với các trường `origin`, `password` và `sitesToken`. Giữ thông tin xác thực ngoài Git.
 
+Quản trị viên có thể nạp lô ngay trên web. Đăng nhập tại trang chính rồi mở `/quan-tri/nap-ngan-hang` và chọn tệp JSON có trường `format` là `toanthd.bank-release-batch/1` cùng mảng `packs` chứa các gói từng chương đã đóng từ cùng một commit. Trang gửi từng chương qua các bước xem trước và kích hoạt, kiểm tra biên nhận rồi đọc lại số câu. Giữ tab mở đến khi hiện tổng số câu đã đối chiếu.
+
 ```powershell
 New-Item -ItemType Directory -Force .wrangler | Out-Null
 node scripts/build-bank-release.mjs --chapter 12-C01 --output .wrangler/chuong-i.json
