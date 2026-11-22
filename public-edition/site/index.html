@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tìm học liệu Toán THĐ theo khối lớp và chương trong chương trình Toán 10–12.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; media-src 'self'; base-uri 'none'; form-action 'none'">
+  <!-- ROBOTS -->
+  <title>Học liệu Toán THĐ</title>
+  <link rel="stylesheet" href="library.css">
+  <script defer src="catalog.js"></script>
+  <script defer src="library.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Trang chủ Toán THĐ">
+      <span class="brand-mark" aria-hidden="true">∑</span>
+      <span>Toán THĐ</span>
+    </a>
+    <a href="#hoc-lieu">Học liệu</a>
+  </header>
+  <main>
+    <header class="intro">
+      <div class="intro-content">
+        <p>Tổ Toán · THPT Trịnh Hoài Đức</p>
+        <h1>Học liệu Toán 10–12</h1>
+        <a class="intro-link" href="#hoc-lieu">Tìm học liệu</a>
+      </div>
+    </header>
+    <section class="catalog" id="hoc-lieu" aria-labelledby="catalog-title">
+      <h2 id="catalog-title">Kho học liệu</h2>
+      <div class="filters" aria-label="Bộ lọc học liệu" role="group">
+        <label for="library-search">
+          Tìm kiếm
+          <input type="search" id="library-search" placeholder="Nhập tên hoặc chủ đề">
+        </label>
+        <label for="library-grade">
+          Khối lớp
+          <select id="library-grade">
+            <option value="">Tất cả khối</option>
+            <option value="10">Toán 10</option>
+            <option value="11">Toán 11</option>
+            <option value="12">Toán 12</option>
+          </select>
+        </label>
+        <label for="library-chapter">
+          Chương
+          <select id="library-chapter">
+            <option value="">Tất cả chương</option>
+          </select>
+        </label>
+      </div>
+      <p id="library-status" class="results-status" role="status" aria-live="polite"></p>
+      <div id="library-results" class="results"></div>
+      <noscript><p>Bật JavaScript để tìm và lọc học liệu.</p></noscript>
+    </section>
+  </main>
+  <footer class="footer">Toán THĐ · THPT Trịnh Hoài Đức</footer>
+</body>
+</html>

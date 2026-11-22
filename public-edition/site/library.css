@@ -1,0 +1,150 @@
+:root {
+  color-scheme: light;
+  font: 100%/1.5 system-ui, sans-serif;
+  color: #15342b;
+  background: #f7faf8;
+  --ink: #15342b;
+  --muted: #476459;
+  --park: #0a3e30;
+  --trim: #d5e0d9;
+  --focus: #127469;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+
+.topbar, .catalog, .footer {
+  width: min(100% - 2.5rem, 72rem);
+  margin-inline: auto;
+}
+
+.topbar {
+  min-height: 4.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  font-weight: 650;
+}
+
+.brand { display: inline-flex; gap: .75rem; align-items: center; text-decoration: none; }
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: .65rem;
+  color: #fff;
+  background-color: var(--park);
+  font-size: 1.35rem;
+}
+.topbar > a:last-child { text-underline-offset: .28em; }
+
+.intro {
+  color: #fff;
+  background: radial-gradient(ellipse at 82% 25%, #157161, transparent 62%), #092c25;
+}
+
+.intro-content {
+  width: min(100% - 2.5rem, 72rem);
+  margin-inline: auto;
+  padding-block: clamp(2.5rem, 8vw, 5.5rem);
+}
+
+.intro p { margin: 0; color: #c2e6d8; }
+.intro h1 { margin-block: .35rem 1.25rem; font-size: clamp(2.25rem, 6vw, 4.5rem); line-height: 1.1; letter-spacing: -.045em; }
+.intro-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;
+  padding: .5rem 1rem;
+  border-radius: .65rem;
+  color: #173627;
+  background: #e2f3a0;
+  font-weight: 700;
+  text-decoration: none;
+}
+.intro-link:hover { background: #f2fac9; }
+.intro-link:focus-visible { outline-color: #e2f3a0; }
+
+.catalog { padding-block: clamp(2.25rem, 5vw, 4rem); scroll-margin-top: .75rem; }
+.catalog h2 { margin: 0 0 1.1rem; font-size: clamp(1.65rem, 4vw, 2.2rem); line-height: 1.2; }
+.filters { display: grid; grid-template-columns: 2fr 1fr 1.5fr; gap: .9rem; }
+.filters label { min-width: 0; display: grid; gap: .3rem; font-weight: 650; }
+.filters input, .filters select {
+  width: 100%;
+  min-width: 0;
+  min-height: 2.75rem;
+  padding: .55rem .75rem;
+  border: 1px solid #93ab9e;
+  border-radius: .65rem;
+  color: var(--ink);
+  background-color: #fff;
+  font: inherit;
+  font-weight: 450;
+}
+.filters select {
+  appearance: none;
+  padding-right: 2rem;
+  background:
+    linear-gradient(45deg, transparent 52%, #315749 53%) right 1.05rem center / .4rem .4rem no-repeat,
+    linear-gradient(135deg, #315749 48%, transparent 49%) right .65rem center / .4rem .4rem no-repeat,
+    #fff;
+}
+.results-status { margin-block: 1rem; color: var(--muted); }
+.results { display: grid; gap: 1.5rem; }
+.results:empty { display: none; }
+.lesson-group h3 { margin: 0 0 .65rem; font-size: 1.15rem; }
+.lesson-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 1rem;
+}
+.lesson {
+  display: grid;
+  align-content: start;
+  overflow: clip;
+  min-width: 0;
+  border: 1px solid var(--trim);
+  border-radius: .9rem;
+  background: #fff;
+}
+.lesson:hover { border-color: #82b7a0; }
+.lesson-visual { position: relative; aspect-ratio: 16 / 9; background-color: #e5f4ea; }
+.lesson-visual img, .lesson-visual video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.lesson-visual video { opacity: 0; pointer-events: none; }
+.lesson-visual video[data-playing="true"] { opacity: 1; }
+.preview-button {
+  position: absolute;
+  right: .6rem;
+  bottom: .6rem;
+  min-height: 2.75rem;
+  max-width: calc(100% - 1.2rem);
+  padding: .45rem .65rem;
+  border: 1px solid #c7eadd;
+  border-radius: .65rem;
+  color: #fff;
+  background: var(--park);
+  font: inherit;
+  font-size: .9rem;
+  font-weight: 650;
+  cursor: pointer;
+}
+@media (hover: hover) and (pointer: fine) {
+  .preview-button:not(:focus-visible) { opacity: 0; pointer-events: none; }
+}
+.lesson-body { padding: 1rem; }
+.lesson h4 { margin: 0; font-size: 1.1rem; line-height: 1.35; }
+.lesson p { margin: .45rem 0 0; color: var(--muted); }
+.lesson-link { display: inline-block; margin-top: .65rem; font-weight: 700; color: #095a48; text-underline-offset: .2em; }
+.footer { padding-block: 1.15rem 1.75rem; border-top: 1px solid var(--trim); color: var(--muted); }
+
+@media (max-width: 42rem) {
+  .filters { grid-template-columns: 1fr 1fr; }
+  .filters label:first-child { grid-column: 1 / -1; }
+}
+@media (max-width: 25rem) {
+  .filters { grid-template-columns: 1fr; }
+}
