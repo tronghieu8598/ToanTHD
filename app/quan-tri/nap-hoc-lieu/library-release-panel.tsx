@@ -6,7 +6,7 @@ type JsonRecord = Record<string, unknown>;
 type ReleaseFile = { path: string; bytes: number; sha256: string; ready: boolean };
 type Summary = { version: string; activeVersion: string | null; total: number; readyCount: number; ready: boolean };
 type Release = Summary & { files: ReleaseFile[] };
-type Selection = { name: string; byPath: Map<string, File> };
+type Selection = { name: string; byPath: Map<string, Blob> };
 type Session = 'checking' | 'signin' | 'denied' | 'setup' | 'ready' | 'error';
 
 const endpoint = '/api/teacher/library-release';
@@ -70,7 +70,7 @@ async function readRelease(): Promise<Release> {
 }
 
 function prepareFolder(files: FileList, expected: ReleaseFile[]): Selection {
-    const byPath = new Map<string, File>();
+    const byPath = new Map<string, Blob>();
     const expectedByPath = new Map(expected.map(file => [file.path, file]));
     const name = files[0]?.webkitRelativePath.split('/')[0];
     if (!name) throw new Error('Hãy chọn thư mục đã giải nén có chứa các tệp trong gói học liệu.');
@@ -85,6 +85,34 @@ function prepareFolder(files: FileList, expected: ReleaseFile[]): Selection {
     const missing = expected.filter(file => !byPath.has(file.path));
     if (missing.length) throw new Error(`Thiếu ${missing.length} tệp, bắt đầu từ ${missing[0].path}.`);
     return { name, byPath };
+}
+
+async function prepareArchive(archive: File, expected: ReleaseFile[]): Promise<Selection> {
+    const maxBytes = expected.reduce((total, file) => total + file.bytes, 0) + 1_000_000;
+    if (archive.size > maxBytes) throw new Error('Tệp ZIP lớn hơn dung lượng của gói học liệu.');
+    const expectedByPath = new Map(expected.map(file => [file.path, file.bytes]));
+    const seen = new Set<string>();
+    let invalid = '';
+    const { unzipSync } = await import('fflate');
+    const files = unzipSync(new Uint8Array(await archive.arrayBuffer()), {
+        filter: entry => {
+            const bytes = expectedByPath.get(entry.name);
+            if (bytes !== entry.originalSize || seen.has(entry.name)) {
+                invalid ||= entry.name;
+                return false;
+            }
+            seen.add(entry.name);
+            return true;
+        },
+    });
+    if (invalid) throw new Error(`Tệp ZIP có mục sai dung lượng, trùng hoặc ngoài danh mục · ${invalid}`);
+    const byPath = new Map<string, Blob>();
+    for (const item of expected) {
+        const bytes = files[item.path];
+        if (!bytes || bytes.byteLength !== item.bytes) throw new Error(`Tệp ZIP thiếu dữ liệu khớp với ${item.path}.`);
+        byPath.set(item.path, new Blob([new Uint8Array(bytes)], {type: 'application/octet-stream'}));
+    }
+    return {name: archive.name, byPath};
 }
 
 const isActive = (release: Summary) => release.activeVersion === release.version && release.ready;
@@ -128,6 +156,17 @@ export default function LibraryReleasePanel() {
         catch (cause) { setError(cause instanceof Error ? cause.message : 'Không đọc được thư mục học liệu.'); }
     }
 
+    async function selectArchive(file?: File) {
+        if (!release || !file) return;
+        setSelection(null);
+        setError('');
+        setBusy(true);
+        setMessage('Đang kiểm tra gói ZIP…');
+        try { setSelection(await prepareArchive(file, release.files)); }
+        catch (cause) { setError(cause instanceof Error ? cause.message : 'Không đọc được gói ZIP.'); }
+        finally { setBusy(false); setMessage(''); }
+    }
+
     async function publish() {
         if (!release || releasing.current || session !== 'ready' || (!selection && !release.ready)) return;
         releasing.current = true;
@@ -146,7 +185,7 @@ export default function LibraryReleasePanel() {
                 if (item.ready) continue;
                 currentPath = item.path;
                 const file = selection?.byPath.get(item.path);
-                if (!file) throw new Error('Chọn lại thư mục học liệu để bổ sung tệp còn thiếu.');
+                if (!file) throw new Error('Chọn lại gói học liệu để bổ sung tệp còn thiếu.');
                 setMessage(`Đang nạp ${verified + 1}/${latest.total} · ${item.path}`);
                 const result = await requestJson(`${endpoint}/files/${item.path.split('/').map(encodeURIComponent).join('/')}`, {
                     method: 'PUT',
@@ -203,9 +242,15 @@ export default function LibraryReleasePanel() {
                 <p>Bản học liệu <code>{release.version.slice(0, 12)}</code> · {release.total} tệp · {sizeLabel(release.files.reduce((total, file) => total + file.bytes, 0))}</p>
                 {isActive(release) ? <p>Đang sử dụng bản này trong <a href="/hoc-lieu-so">kho học liệu</a>.</p> : <>
                     {!release.ready && <>
-                        <label className="release-file-label" htmlFor="library-release-folder">Thư mục gói học liệu đã giải nén</label>
-                        <input id="library-release-folder" className="release-file" type="file" {...{ webkitdirectory: '' }}
-                            multiple disabled={busy} onChange={event => selectFolder(event.currentTarget.files)} />
+                        <label className="release-file-label" htmlFor="library-release-archive">Gói học liệu ZIP</label>
+                        <input id="library-release-archive" className="release-file" type="file" accept=".zip,application/zip"
+                            disabled={busy} onChange={event => void selectArchive(event.currentTarget.files?.[0])} />
+                        <details>
+                            <summary>Chọn thư mục đã giải nén</summary>
+                            <label className="release-file-label" htmlFor="library-release-folder">Thư mục gói học liệu đã giải nén</label>
+                            <input id="library-release-folder" className="release-file" type="file" {...{ webkitdirectory: '' }}
+                                multiple disabled={busy} onChange={event => selectFolder(event.currentTarget.files)} />
+                        </details>
                         {selection && <p>Đã kiểm tra đủ {selection.byPath.size} tệp trong <strong>{selection.name}</strong>.</p>}
                     </>}
                     <div className="release-actions">

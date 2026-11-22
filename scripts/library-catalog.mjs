@@ -2,6 +2,7 @@ import {createHash} from 'node:crypto';
 import {copyFile, mkdir, readFile, readdir, writeFile} from 'node:fs/promises';
 import path from 'node:path';
 import {parseArgs} from 'node:util';
+import {zipSync} from 'fflate';
 import {libraryPath, validLibraryPath} from '../lib/library-http.mjs';
 
 const root = path.resolve(import.meta.dirname, '..');
@@ -115,11 +116,15 @@ for (const [file, bytes] of outputs) {
 if (command === 'stage') {
     ensure(values.out, 'Thêm --out <thư mục bàn giao>.');
     const output = path.resolve(values.out, 'hoc-lieu-' + release.version);
+    const zipEntries = {};
     for (const file of release.files) {
         const dest = path.join(output, file.path);
         await mkdir(path.dirname(dest), {recursive: true});
         await copyFile(path.join(root, 'public' + libraryPath + file.path), dest);
+        zipEntries[file.path] = await readFile(dest);
     }
+    await writeFile(output + '.zip', zipSync(zipEntries));
     console.log(output);
+    console.log(output + '.zip');
 }
 console.log(`${release.version} · ${release.resources.length} học liệu · ${release.files.length} tệp nguồn`);

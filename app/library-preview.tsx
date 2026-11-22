@@ -86,6 +86,9 @@ export function LibraryResourceCard({ item, expanded, popup, activeClip, onOpen 
   const cover = !item.upload?.deletedAt && <StudioCover kind={item.kind} chapter={item.chapter} cover={item.cover} arrow />;
 
   return <div className="studio-resource-slot" onPointerEnter={clip ? enter : undefined} onPointerLeave={clip ? leave : undefined}
+    onBlur={event => {
+      if (origin.current === 'manual' && !event.currentTarget.contains(event.relatedTarget)) stop();
+    }}
     onKeyDown={event => {
       if (event.key === 'Escape' && origin.current) {
         event.stopPropagation();
@@ -93,7 +96,7 @@ export function LibraryResourceCard({ item, expanded, popup, activeClip, onOpen 
       }
     }}>
     <button type="button" className="studio-resource" aria-label={`Xem ${item.title}`} aria-expanded={expanded} aria-haspopup={popup}
-      onClick={event => { window.clearTimeout(timer.current); onOpen(event); }}>
+      onClick={event => { stop(); onOpen(event); }}>
       {clip ? <span className="studio-resource-visual">
         {cover}
         <video className="studio-demo-video" data-playing={playback === 'playing'} ref={videoRef}
