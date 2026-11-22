@@ -8,6 +8,7 @@ import {handleStudioPlan} from './studio-plan.mjs';
 import {handleBankRelease} from './bank-release.mjs';
 import {handleAdmin,currentBankSQL} from './admin.mjs';
 import {handleBackup} from './backup-service.mjs';
+import {createStudentEntry} from './student-entry.mjs';
 import {decodeQuestion,publicQuestion,canAutoGrade,canEnterSession,bankFilter,parseNumberSelection,isCourseDocument} from './course-bank.mjs';
 import {resolveQuestionVariant,availableQuestionVariantKeys} from './accepted-variants.mjs';
 type Row = Record<string, any>;
@@ -54,6 +55,7 @@ const readBody = async (request: Request, maxLength = 5000000): Promise<Row> => 
 };
 const authTools=createAuth({env,database,first,must});
 const secureEqual=authTools.equal;
+const studentEntry=createStudentEntry({env,database,first,all,must,equal:secureEqual});
 async function getRoster(s:Row) {
  if(s.roster_snapshot){const snap=JSON.parse(s.roster_snapshot);return (snap.students||[]).sort((a:Row,b:Row)=>a.ordinal-b.ordinal);}
  return all('SELECT id,ordinal,name FROM students WHERE classroom_id=? ORDER BY ordinal',s.classroom_id);
@@ -200,11 +202,12 @@ async function questionsFromBank(body: Row, settings: ExamSettings): Promise<Exa
     });
 }
 
-async function startSession(settings: ExamSettings, questions: ExamQuestion[], classroomId: unknown, auth: StaffAuth, exam?: Row) {
+async function startSession(request: Request, settings: ExamSettings, questions: ExamQuestion[], classroomId: unknown, auth: StaffAuth, exam?: Row) {
     must(typeof classroomId === 'string' && canUseClass(auth,classroomId), 'Lớp không thuộc danh sách giảng dạy của tài khoản.', 403);
     const room = await first('SELECT * FROM classrooms WHERE id=?',classroomId);
     must(room,'Lớp không tồn tại.',404);
     if (!room!.is_sample) await authTools.requireReal(auth);
+    const requiresEntryCode = !room!.is_sample && authTools.publicOrigin(request.url).startsWith('https://');
     const roster = await all('SELECT id,ordinal,name FROM students WHERE classroom_id=? AND archived_at IS NULL ORDER BY ordinal',room!.id);
     must(roster.length > 0,'Lớp chưa có học sinh.');
     must(questions.length > 0 && questions.length <= 100,'Đề cần từ 1 đến 100 câu hỏi.');
@@ -226,9 +229,9 @@ async function startSession(settings: ExamSettings, questions: ExamQuestion[], c
     const alphabet = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
     for (let retry = 0; retry < 4; retry++) {
         const code = Array.from(crypto.getRandomValues(new Uint8Array(6)),byte=>alphabet[byte%alphabet.length]).join('');
-        const statements = [database().prepare(`INSERT INTO sessions(id,code,title,classroom_id,mode,minutes,state,created_at,closes_at,roster_snapshot,scoring_mode,owner_teacher_id)
-            VALUES(?,?,?,${checkedClass},?,?,'open',?,?,?,?,?)`).bind(id,code,settings.title,...args,room!.id,settings.mode,settings.minutes,
-            now,now+settings.minutes*60000,rosterSnapshot,settings.scoring_mode,auth.id),
+        const statements = [database().prepare(`INSERT INTO sessions(id,code,title,classroom_id,mode,minutes,state,created_at,closes_at,roster_snapshot,scoring_mode,owner_teacher_id,requires_entry_code)
+            VALUES(?,?,?,${checkedClass},?,?,'open',?,?,?,?,?,?)`).bind(id,code,settings.title,...args,room!.id,settings.mode,settings.minutes,
+            now,now+settings.minutes*60000,rosterSnapshot,settings.scoring_mode,auth.id,Number(requiresEntryCode)),
             ...questions.map(q=>database().prepare('INSERT INTO session_questions(id,session_id,position,source_id,snapshot) VALUES(?,?,?,?,?)')
                 .bind(crypto.randomUUID(),id,q.position,q.source_id,q.snapshot))];
         try {
@@ -367,7 +370,7 @@ export async function handleApi(request: Request) {
                     String(body.exam_id||''),teacherAuth.role,teacherAuth.id);
                 must(exam,'Đề đã lưu không còn khả dụng.',404);
                 const settings=examSettings({...exam,minutes:body.minutes??exam!.minutes});
-                return await startSession(settings,await savedQuestions(exam!.id),body.classroom_id,teacherAuth,exam!);
+                return await startSession(request,settings,await savedQuestions(exam!.id),body.classroom_id,teacherAuth,exam!);
             }
             if (['teacher/exams/archive','teacher/exams/visibility','teacher/exams/details'].includes(path) && method === 'POST') {
                 await authTools.requireReal(teacherAuth);
@@ -508,14 +511,14 @@ export async function handleApi(request: Request) {
             }
             if (path === 'teacher/sessions' && method === 'POST') {
                 const body=await readBody(request),settings=examSettings(body);
-                return await startSession(settings,await questionsFromBank(body,settings),body.classroom_id,teacherAuth);
+                return await startSession(request,settings,await questionsFromBank(body,settings),body.classroom_id,teacherAuth);
             }
             if (path === 'teacher/sessions/clone' && method === 'POST') {
                 const body=await readBody(request),source=await scopedSession(body.session_id,teacherAuth);
                 const title=typeof body.title==='string'&&body.title.trim()?body.title:source.title;
                 const settings=examSettings({...source,title,minutes:body.minutes===undefined?source.minutes:Number(body.minutes)});
                 const questions=(await all('SELECT position,source_id,snapshot FROM session_questions WHERE session_id=? ORDER BY position',source.id)) as ExamQuestion[];
-                return await startSession(settings,questions,body.classroom_id,teacherAuth);
+                return await startSession(request,settings,questions,body.classroom_id,teacherAuth);
             }
             if (path === 'teacher/extend' && method === 'POST') {
                 const body = await readBody(request), s = await scopedSession(body.id,teacherAuth);
@@ -589,11 +592,27 @@ export async function handleApi(request: Request) {
                 const attempts = await all('SELECT a.id,a.student_id,a.answers,a.submitted_at,a.earned,a.score,a.updated_at,a.last_seen_at,a.save_revision,a.allow_rejoin FROM attempts a WHERE a.session_id=?', s.id);
                 return json({ generated_at: Date.now(), session: { ...s, state: isOpen(s) ? 'open' : 'closed' }, questions: qs, roster, attempts: attempts.map(a => ({ ...a, answers: JSON.parse(a.answers), answered: answeredCount(qs, JSON.parse(a.answers)) })) });
             }
+            if (path === 'teacher/session-entry-codes' && method === 'POST') {
+                await authTools.requireReal(teacherAuth);
+                const b = await readBody(request,2000), s = await scopedSession(b.session_id,teacherAuth);
+                must(s.requires_entry_code && isOpen(s), 'Chỉ phát mã cá nhân cho phiên đang mở có bảo vệ.', 409);
+                const roster = await getRoster(s);
+                const selected = b.ordinal === undefined ? roster : roster.filter((student: Row) => student.ordinal === b.ordinal);
+                must(selected.length, 'Không có STT này trong lớp.', 404);
+                return json(await studentEntry.issueCodes(s.id,selected,s.closes_at,teacherWriteGuard(teacherAuth),Date.now()));
+            }
             if(path==='teacher/device-reset'&&method==='POST'){
                 const b=await readBody(request),a=await first('SELECT * FROM attempts WHERE id=?',b.attempt_id||'');
                 must(a,'Không có bài làm này.',404);const s=await scopedSession(a!.session_id,teacherAuth);
                 must(isOpen(s)&&!a!.submitted_at,'Chỉ đổi thiết bị khi phiên đang mở và bài chưa nộp.',409);
-                const changed=await database().prepare("UPDATE attempts SET token=?,allow_rejoin=1,last_seen_at=0 WHERE id=? AND submitted_at IS NULL AND EXISTS(SELECT 1 FROM sessions WHERE id=? AND state='open' AND closes_at>?)").bind(crypto.randomUUID()+crypto.randomUUID(),a!.id,s.id,Date.now()).run();
+                const replacementToken = crypto.randomUUID()+crypto.randomUUID();
+                if (s.requires_entry_code) {
+                    await authTools.requireReal(teacherAuth);
+                    const student = (await getRoster(s)).find((item: Row) => item.id === a!.student_id);
+                    must(student, 'Học sinh không còn trong danh sách phiên.', 409);
+                    return json(await studentEntry.renewDevice(s,a!,student!.ordinal,teacherWriteGuard(teacherAuth),Date.now(),replacementToken));
+                }
+                const changed=await database().prepare("UPDATE attempts SET token=?,allow_rejoin=1,last_seen_at=0 WHERE id=? AND submitted_at IS NULL AND EXISTS(SELECT 1 FROM sessions WHERE id=? AND state='open' AND closes_at>?)").bind(replacementToken,a!.id,s.id,Date.now()).run();
                 must(changed.meta?.changes,'Phiên vừa đóng. Làm mới để kiểm tra.',409);
                 return json({ok:true});
             }
@@ -611,31 +630,43 @@ export async function handleApi(request: Request) {
             must(s, 'Không tìm thấy mã phiên này.', 404);
             must(isOpen(s!), 'Phiên đã đóng hoặc hết thời gian.', 409);
             if(s!.roster_snapshot)s!.class_label=JSON.parse(s!.roster_snapshot).class_label;
-            return json({ code: s!.code, title: s!.title, class_label: s!.class_label, mode: s!.mode, scoring_mode:s!.scoring_mode, minutes: s!.minutes, closes_at: s!.closes_at });
+            return json({ code: s!.code, title: s!.title, class_label: s!.class_label, mode: s!.mode, scoring_mode:s!.scoring_mode, minutes: s!.minutes, closes_at: s!.closes_at, requires_entry_code: Boolean(s!.requires_entry_code) });
         }
         if ((path === 'public/lookup' || path === 'public/join') && method === 'POST') {
-            const b = await readBody(request), code = String(b.code || '').trim().toUpperCase();
+            const b = await readBody(request,2000), code = String(b.code || '').trim().toUpperCase();
             const s = await first('SELECT * FROM sessions WHERE code=?', code);
             must(s, 'Không tìm thấy mã phiên.', 404);
             must(isOpen(s!), 'Phiên đã đóng hoặc hết thời gian.', 409);
             must(Number.isInteger(b.ordinal) && b.ordinal > 0 && b.ordinal <= 999, 'STT không hợp lệ.');
             const student=(await getRoster(s!)).find((item:Row)=>item.ordinal===b.ordinal);
+            let a = student && (s!.requires_entry_code || path === 'public/join')
+                ? await first('SELECT * FROM attempts WHERE session_id=? AND student_id=?', s!.id,student.id) : null;
+            const existingDevice = Boolean(a && !a.allow_rejoin && typeof b.token === 'string' && await secureEqual(b.token,a.token));
+            const entry = s!.requires_entry_code && !existingDevice
+                ? await studentEntry.authorizeCode(s!.id,b.ordinal,b.entry_code) : null;
             must(student, 'Không có STT này trong lớp.', 404);
             if (path === 'public/lookup')
                 return json({ name: student!.name, ordinal: student!.ordinal });
-            let a = await first('SELECT * FROM attempts WHERE session_id=? AND student_id=?', s!.id, student!.id);
+            const now=Date.now(), guard=studentEntry.guardClaim(entry,now);
             if(a){
                 if(a.allow_rejoin&&!a.submitted_at){
                     const token=crypto.randomUUID()+crypto.randomUUID();
-                    const claimed=await database().prepare('UPDATE attempts SET token=?,allow_rejoin=0,last_seen_at=? WHERE id=? AND token=? AND allow_rejoin=1 AND submitted_at IS NULL').bind(token,Date.now(),a.id,a.token).run();
+                    const statement=database().prepare(`UPDATE attempts SET token=?,allow_rejoin=0,last_seen_at=?
+                        WHERE id=? AND token=? AND allow_rejoin=1 AND submitted_at IS NULL
+                        AND EXISTS(SELECT 1 FROM sessions WHERE id=? AND state='open' AND closes_at>?)${guard.sql}`)
+                        .bind(token,now,a.id,a.token,s!.id,now,...guard.args);
+                    const claimed=await studentEntry.claim(statement,entry,token);
                     must(claimed.meta?.changes,'Thiết bị khác vừa tiếp tục bài. Báo giáo viên nếu cần đổi lại.',409);
                     a=(await first('SELECT * FROM attempts WHERE id=?',a.id))!;
                 }else{
-                    must(b.token&&await secureEqual(String(b.token),a.token),'STT này đã có lượt làm. Tiếp tục trên thiết bị cũ hoặc báo giáo viên cho đổi thiết bị.',409);
+                    must(existingDevice,'STT này đã có lượt làm. Tiếp tục trên thiết bị cũ hoặc báo giáo viên cho đổi thiết bị.',409);
                 }
             }else{
-                const id=crypto.randomUUID(),token=crypto.randomUUID()+crypto.randomUUID(),now=Date.now();
-                const inserted=await database().prepare('INSERT INTO attempts(id,token,session_id,student_id,answers,updated_at,last_seen_at) VALUES(?,?,?,?,?,?,?) ON CONFLICT(session_id,student_id) DO NOTHING').bind(id,token,s!.id,student!.id,'{}',now,now).run();
+                const id=crypto.randomUUID(),token=crypto.randomUUID()+crypto.randomUUID();
+                const statement=database().prepare(`INSERT INTO attempts(id,token,session_id,student_id,answers,updated_at,last_seen_at)
+                    SELECT ?,?,?,?,?,?,? WHERE EXISTS(SELECT 1 FROM sessions WHERE id=? AND state='open' AND closes_at>?)${guard.sql}
+                    ON CONFLICT(session_id,student_id) DO NOTHING`).bind(id,token,s!.id,student!.id,'{}',now,now,s!.id,now,...guard.args);
+                const inserted=await studentEntry.claim(statement,entry,token);
                 must(inserted.meta?.changes,'STT này vừa được dùng ở thiết bị khác. Báo giáo viên nếu cần đổi thiết bị.',409);
                 a=(await first('SELECT * FROM attempts WHERE id=?',id))!;
             }

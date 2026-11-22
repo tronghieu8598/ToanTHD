@@ -12,6 +12,8 @@ import {newStaffPassword} from '../lib/auth.mjs';
 import {courseRowPayload} from '../lib/course-bank.mjs';
 import {bankReleaseChapters} from '../lib/bank-release-chapters.mjs';
 import {readFrozenCourseBank} from '../scripts/course-bank-data.mjs';
+import {rehearsalPlan, runRehearsal, verifyWorkbook} from '../scripts/https-rehearsal.mjs';
+import {createReportWorkbook} from '../lib/client/report-export.mjs';
 import chapter01Overlay from '../data/chapter-variants/generated/12-C01.json' with {type: 'json'};
 import chapter02Overlay from '../data/chapter-variants/generated/12-C02.json' with {type: 'json'};
 import chapter03Overlay from '../data/chapter-variants/generated/12-C03.json' with {type: 'json'};
@@ -27,8 +29,8 @@ import variantManifest from '../data/chapter-variants/manifest.json' with {type:
 const db=new DatabaseSync(':memory:');
 for(const name of readdirSync(new URL('../drizzle/',import.meta.url)).filter(n=>n.endsWith('.sql')).sort())db.exec(readFileSync(new URL('../drizzle/'+name,import.meta.url),'utf8'));
 db.exec(readFileSync(new URL('../data/demo-seed.sql',import.meta.url),'utf8'));
-function statement(sql,values=[]){return {bind(...args){return statement(sql,args);},async first(){return db.prepare(sql).get(...values)??null;},async all(){return {results:db.prepare(sql).all(...values),success:true};},async run(){const r=db.prepare(sql).run(...values);return {success:true,meta:{changes:Number(r.changes)}};}};}
-const env={DB:{prepare:statement,async batch(items){db.exec('BEGIN');try{const result=[];for(const item of items)result.push(await item.run());db.exec('COMMIT');return result;}catch(e){db.exec('ROLLBACK');throw e;}}},AUTH_SECRET:'unit-test-secret-no-user-data',TEACHER_PASSWORD:'test-password',DEMO_MODE:'true'};
+function statement(sql,values=[]){return {bind(...args){return statement(sql,args);},async first(){return db.prepare(sql).get(...values)??null;},async all(){return {results:db.prepare(sql).all(...values),success:true};},run(){const r=db.prepare(sql).run(...values);return {success:true,meta:{changes:Number(r.changes)}};}};}
+const env={DB:{prepare:statement,async batch(items){db.exec('BEGIN');try{const result=items.map(item=>item.run());db.exec('COMMIT');return result;}catch(e){db.exec('ROLLBACK');throw e;}}},AUTH_SECRET:'unit-test-secret-no-user-data',TEACHER_PASSWORD:'test-password',DEMO_MODE:'true'};
 globalThis[Symbol.for('toanthd.test.env')]=env;
 const dir=mkdtempSync(path.join(tmpdir(),'toanthd-api-'));
 let code=ts.transpileModule(readFileSync(new URL('../lib/api.ts',import.meta.url),'utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.ES2022}}).outputText;
@@ -85,6 +87,100 @@ test('a hosted PBKDF2 cap preserves existing teacher passwords and newly generat
   limited.mock.restore();
   syncBuiltinESMExports();
   db.prepare('DELETE FROM teacher_accounts WHERE id=?').run(id);
+ }
+});
+
+test('protected HTTPS rehearsal: 45 students, expiring codes, device transfer, saved drafts and Excel', async t => {
+ const origin = 'https://rehearsal.example.test';
+ const marker = 'R45T26', title = 'Dien tap HTTPS ' + marker, classroom = 'rehearsal-45';
+ env.THD_PUBLIC_ORIGIN = origin;
+ let teacherCookie = '';
+ async function request(route, {body, token, teacher = false, status = 200} = {}) {
+  const response = await handleApi(new Request(origin + '/api/' + route, {
+   method: body ? 'POST' : 'GET',
+   headers: {...(body && {Origin: origin, 'Content-Type': 'application/json'}),
+    ...(teacher && {cookie: teacherCookie}), ...(token && {Authorization: 'Bearer ' + token})},
+   ...(body && {body: JSON.stringify(body)}),
+  }));
+  const data = await response.json();
+  assert.equal(response.status, status, route + ': ' + (data.error ?? data.code ?? ''));
+  return {data, response};
+ }
+ const post = async (route, body, status = 200) => (await request('teacher/' + route, {body, teacher: true, status})).data;
+ try {
+  teacherCookie = (await request('teacher/login', {body: {password: 'test-password'}})).response.headers.get('set-cookie').split(';')[0];
+  db.prepare('INSERT INTO classrooms(id,label,grade,school_year,is_sample) VALUES(?,?,?,?,0)')
+   .run(classroom, '11 ' + title, 11, '2026-2027');
+  const insertStudent = db.prepare('INSERT INTO students(id,classroom_id,ordinal,name) VALUES(?,?,?,?)');
+  for (let ordinal = 1; ordinal <= 45; ordinal++) {
+   insertStudent.run(classroom + '-' + ordinal, classroom, ordinal, 'Dien tap ' + String(ordinal).padStart(2, '0'));
+  }
+  db.prepare("INSERT INTO documents(id,grade,title,edition,is_sample) VALUES('rehearsal-doc',11,'Synthetic rehearsal','test',0)").run();
+  db.prepare("INSERT INTO lessons(id,document_id,chapter,title) VALUES('rehearsal-lesson','rehearsal-doc','I','Synthetic lesson')").run();
+  const question = await post('questions', {lesson_id: 'rehearsal-lesson', source: {
+   original_number: 1, kind: 'mcq', prompt: 'Dien tap HTTPS - 1 + 1 bang bao nhieu?',
+   choices: ['2','3','4','5'].map((text,i) => ({key: 'ABCD'[i], text})), correct: 'A', solution: '2', images: [],
+  }}, 201);
+  const makeSession = name => post('sessions', {title: name, question_ids: [question.id], classroom_id: classroom,
+   minutes: 15, mode: 'online', scoring_mode: 'practice'}, 201);
+  const session = await makeSession(title);
+  const bare = {code: session.code, ordinal: 1};
+  const blocked = await request('public/lookup', {body: bare, status: 403});
+  assert.equal(Object.hasOwn(blocked.data, 'name'), false);
+  await request('teacher/session-entry-codes', {body: {session_id: session.id}, status: 401});
+  const {codes, expires_at} = await post('session-entry-codes', {session_id: session.id});
+  assert.equal(codes.length, 45);
+  assert.ok(expires_at <= Date.now() + 15 * 60_000);
+  const hash = db.prepare('SELECT code_hash FROM student_entry_codes WHERE session_id=? AND ordinal=1').get(session.id).code_hash;
+  assert.match(hash, /^[a-f0-9]{64}$/);
+  assert.notEqual(hash, codes[0].code);
+
+  const plan = rehearsalPlan({origin, marker, code: session.code, codes});
+  const result = await runRehearsal(plan, (url, init) => handleApi(new Request(url, init)));
+  assert.equal(result.submitted, 45);
+  assert.equal(result.score10, 44);
+  assert.equal(result.score0, 1);
+  assert.equal(db.prepare('SELECT COUNT(*) AS n FROM student_entry_codes WHERE session_id=?').get(session.id).n, 0);
+  const detail = (await request('teacher/session?id=' + session.id, {teacher: true})).data;
+  const workbook = await createReportWorkbook(detail, {Excel: await import('exceljs')});
+  const workbookPath = path.join(dir, 'https-rehearsal.xlsx');
+  await workbook.xlsx.writeFile(workbookPath);
+  assert.deepEqual(await verifyWorkbook(plan, workbookPath), {sheets: 6, students: 45, score10: 44, score0: 1});
+  t.diagnostic(JSON.stringify({students: result.submitted, score10: result.score10, score0: result.score0,
+   sheets: 6, recoveredSavedDraft: result.recoveredSavedDraft, replayKeptSubmission: result.replayKeptSubmission}));
+
+  const transfer = await makeSession('Synthetic protected device transfer');
+  const credentials = {code: transfer.code, ordinal: 1};
+  const issue = async () => (await post('session-entry-codes', {session_id: transfer.id, ordinal: 1})).codes[0].code;
+  const expired = await issue();
+  db.prepare('UPDATE student_entry_codes SET expires_at=? WHERE session_id=? AND ordinal=1').run(Date.now()-1, transfer.id);
+  await request('public/lookup', {body: {...credentials, entry_code: expired}, status: 403});
+  const entryCode = await issue();
+  const entry = {...credentials, entry_code: entryCode};
+  const {data: attempt} = await request('public/join', {body: entry, status: 201});
+  await request('public/join', {body: entry, status: 403});
+  await request('public/lookup', {body: {...credentials, token: attempt.token}});
+  await request('public/save', {token: attempt.token, body: {answers: {[question.id]: 'A'}, expected_revision: 0}});
+  const renewed = await post('device-reset', {attempt_id: attempt.id});
+  await request('public/attempt', {token: attempt.token, status: 401});
+  const {data: migrated} = await request('public/join', {body: {...credentials, entry_code: renewed.entry_code}, status: 201});
+  assert.equal(migrated.id, attempt.id);
+  assert.equal(migrated.answers[question.id], 'A');
+  assert.notEqual(migrated.token, attempt.token);
+
+  const guessed = {code: transfer.code, ordinal: 2};
+  for (let n = 0; n < 6; n++) await request('public/lookup', {body: guessed, status: 403});
+  await request('public/lookup', {body: guessed, status: 429});
+ } finally {
+  delete env.THD_PUBLIC_ORIGIN;
+  db.prepare('DELETE FROM attempts WHERE session_id IN (SELECT id FROM sessions WHERE classroom_id=?)').run(classroom);
+  db.prepare('DELETE FROM session_questions WHERE session_id IN (SELECT id FROM sessions WHERE classroom_id=?)').run(classroom);
+  db.prepare('DELETE FROM sessions WHERE classroom_id=?').run(classroom);
+  db.prepare('DELETE FROM students WHERE classroom_id=?').run(classroom);
+  db.prepare('DELETE FROM classrooms WHERE id=?').run(classroom);
+  db.prepare("DELETE FROM questions WHERE lesson_id='rehearsal-lesson'").run();
+  db.prepare("DELETE FROM lessons WHERE id='rehearsal-lesson'").run();
+  db.prepare("DELETE FROM documents WHERE id='rehearsal-doc'").run();
  }
 });
 

@@ -17,6 +17,7 @@ import { StudioNavigation, type NavigationItem } from './studio-navigation';
 import { StudioPlanDialog, StudioToday } from './studio-plan';
 import { useStudioPlan } from './use-studio-plan';
 import { useLibraryUploads } from './library-uploads';
+import { StudentEntryCodePanel, type IssuedEntryCodes } from './student-entry-codes';
 import { chapterRoman, mathChapters, type LibraryResource, type MathGrade, type ResourceKind } from '../lib/client/library-catalog';
 type Any = Record<string, any>;
 type Q = Any & {
@@ -202,6 +203,7 @@ export default function Workspace({ studentOnly = false }: { studentOnly?: boole
     const [variantSource, setVariantSource] = useState<Q | null>(null);
     const [sessionId, setSessionId] = useState(''), [detail, setDetail] = useState<Any | null>(null), [confirmClose, setConfirmClose] = useState(false);
     const [shareSession, setShareSession] = useState<Any | null>(null), [resetDevice, setResetDevice] = useState<Any | null>(null), [scoringMode, setScoringMode] = useState('practice'), [cloneModal, setCloneModal] = useState<Any | null>(null);
+    const [entrySheet, setEntrySheet] = useState<{sessionId?: string; issued?: IssuedEntryCodes} | null>(null);
     const [documentId, setDocumentId] = useState(courseSource), [showArchived, setShowArchived] = useState(false), [editor, setEditor] = useState<Any | null>(null), [historyQ, setHistoryQ] = useState<Any | null>(null), [importKind, setImportKind] = useState<'bank' | 'roster' | null>(null), [publicMeta, setPublicMeta] = useState<Any | null>(null);
     const [bankPage, setBankPage] = useState(1), [bankStatus, setBankStatus] = useState('all'), [bankRows, setBankRows] = useState<Q[]>([]), [questionCache, setQuestionCache] = useState<Q[]>([]), [bankTotal, setBankTotal] = useState(0), [bankLoading, setBankLoading] = useState(false), [bankError, setBankError] = useState(''), [bankGeneration, setBankGeneration] = useState(0), [quickNumbers, setQuickNumbers] = useState('');
     const isTeacher = data?.auth?.role === 'teacher';
@@ -268,6 +270,7 @@ export default function Workspace({ studentOnly = false }: { studentOnly?: boole
             if (e.status !== 401) setError(e.message);
             setAuthorized(false);
             setData(null);
+            setEntrySheet(null);
         } finally {
             if (epoch === viewEpoch.current) setLoading(false);
         }
@@ -323,7 +326,7 @@ export default function Workspace({ studentOnly = false }: { studentOnly?: boole
         } catch (e: any) {
             if (epoch !== viewEpoch.current) return;
             if ([401,403,404].includes(e.status)) {
-                setSessionId(''); setDetail(null); setShareSession(null); setPreview(null); setResetDevice(null); setConfirmClose(false);
+                setSessionId(''); setDetail(null); setShareSession(null); setPreview(null); setResetDevice(null); setEntrySheet(null); setConfirmClose(false);
                 await reload();
             }
             notify(e.message);
@@ -512,7 +515,7 @@ export default function Workspace({ studentOnly = false }: { studentOnly?: boole
     function clearWorkspace() {
         viewEpoch.current++;
         setData(null); clearSelection(); setQuestionCache([]); setBankRows([]); setDetail(null); setSessionId('');
-        setPreview(null); setShareSession(null); setCloneModal(null); setResetDevice(null); setConfirmClose(false);
+        setPreview(null); setShareSession(null); setCloneModal(null); setResetDevice(null); setEntrySheet(null); setConfirmClose(false);
         setEditor(null); setHistoryQ(null); setImportKind(null); setView('home');
         setPlanOpen(false); setLibraryOpenId(null); setFocusLibrary(false); setBankChapter('all');
         setReviewOpen(false); setQuickOpen(false); setBankToolsOpen(false); setReplaceExam(false);
@@ -597,6 +600,20 @@ export default function Workspace({ studentOnly = false }: { studentOnly?: boole
     async function copy(text: string) {
         try { await navigator.clipboard.writeText(text); notify('Đã sao chép.'); }
         catch { notify('Trình duyệt chặn sao chép. Có thể chọn trực tiếp mã hoặc đường dẫn.'); }
+    }
+    async function changeDevice() {
+        if (!resetDevice || busy) return;
+        setBusy(true);
+        try {
+            const result = await api('teacher/device-reset', 'POST', {attempt_id: resetDevice.attempt_id});
+            if (result.entry_code) {
+                setEntrySheet({issued: {codes: [{ordinal: resetDevice.ordinal, code: result.entry_code}], expires_at: result.expires_at}});
+            }
+            setResetDevice(null);
+            await loadDetail(sessionId);
+            notify(result.entry_code ? 'Đã cấp mã cho thiết bị mới.' : 'Đã cho đổi thiết bị. Học sinh quét QR và vào lại cùng STT.');
+        } catch (e: any) { notify(e.message); }
+        finally { setBusy(false); }
     }
     if (studentOnly) return <StudentApp />;
     if (loading) return <main className="loading-screen"><Brand /><p>Đang tải dữ liệu cục bộ…</p></main>;
@@ -950,12 +967,16 @@ export default function Workspace({ studentOnly = false }: { studentOnly?: boole
                             <div>
                                 <span className="eyebrow">MÃ THAM GIA PHIÊN</span>
                                 <button className="code-display" onClick={() => void copy(detail.session.code)} title="Sao chép mã">{detail.session.code}<Copy size={18} /></button>
-                                <p>Học sinh quét QR qua Wi-Fi nội bộ hoặc mở <code>/hoc-sinh?code={detail.session.code}</code>, nhập STT để làm bài.</p>
+                                <p>{detail.session.requires_entry_code
+                                    ? 'Học sinh mở QR, nhập STT và mã cá nhân do giáo viên cấp.'
+                                    : <>Học sinh quét QR hoặc mở <code>/hoc-sinh?code={detail.session.code}</code>, nhập STT để làm bài.</>}</p>
                             </div>
                             <div className="session-control-group">
                                 <div className="toolbar-actions">
                                     <a className="btn primary" href={'/hoc-sinh?code=' + detail.session.code} target="_blank" rel="noreferrer"><GraduationCap size={17} /> Mở màn hình học sinh <ArrowUpRight size={15} /></a>
                                     <button className="btn secondary" onClick={() => setShareSession(detail.session)}><Wifi size={16} /> QR & Kết nối</button>
+                                    {detail.session.requires_entry_code && detail.session.state === 'open' &&
+                                        <button className="btn secondary" onClick={() => setEntrySheet({sessionId: detail.session.id})}><ShieldCheck size={16} /> Cấp mã cá nhân</button>}
                                 </div>
                                 <div className="extend-bar">
                                     <span><ClockPlus size={14} /> Gia hạn thời gian:</span>
@@ -1055,13 +1076,23 @@ export default function Workspace({ studentOnly = false }: { studentOnly?: boole
                 </div>
             </form>
         </Modal>}
-        {resetDevice && <Modal title="Cho học sinh đổi thiết bị?" onClose={() => setResetDevice(null)}>
+        {entrySheet && <Modal title="Mã vào bài cá nhân" onClose={() => setEntrySheet(null)}>
+            <StudentEntryCodePanel initial={entrySheet.issued} onCopy={copy} onIssue={entrySheet.sessionId
+                ? async ordinal => {
+                    const {codes, expires_at} = await api('teacher/session-entry-codes', 'POST', {session_id: entrySheet.sessionId, ordinal});
+                    if (!Array.isArray(codes) || !Number.isFinite(expires_at)) throw new Error('Biên nhận mã cá nhân không hợp lệ.');
+                    return {codes, expires_at};
+                } : undefined} />
+        </Modal>}
+        {resetDevice && <Modal title="Cho học sinh đổi thiết bị?" onClose={() => { if (!busy) setResetDevice(null); }}>
             <div className="modal-content">
                 <p><b>{resetDevice.name} · STT {resetDevice.ordinal}</b></p>
-                <p>Thiết bị cũ sẽ mất quyền lưu/nộp. Học sinh quét lại QR, nhập cùng STT trên thiết bị mới; bài đã lưu và thời gian còn lại giữ nguyên.</p>
+                <p>{detail?.session?.requires_entry_code
+                    ? 'Giáo viên sẽ nhận mã cá nhân mới để gửi riêng cho học sinh. Bài đã lưu và thời gian còn lại được chuyển sang thiết bị mới.'
+                    : 'Thiết bị cũ sẽ mất quyền lưu và nộp. Học sinh quét lại QR, nhập cùng STT trên thiết bị mới để tiếp tục bài.'}</p>
                 <div className="modal-actions">
-                    <button className="btn secondary" onClick={() => setResetDevice(null)}>Hủy</button>
-                    <button className="btn primary" onClick={async () => { try { await api('teacher/device-reset', 'POST', { attempt_id: resetDevice.attempt_id }); setResetDevice(null); await loadDetail(sessionId); notify('Đã cho đổi thiết bị. Học sinh quét QR và vào lại cùng STT.'); } catch (e: any) { notify(e.message); } }}>Cho đổi thiết bị</button>
+                    <button className="btn secondary" disabled={busy} onClick={() => setResetDevice(null)}>Hủy</button>
+                    <button className="btn primary" disabled={busy} onClick={() => void changeDevice()}>Cho đổi thiết bị</button>
                 </div>
             </div>
         </Modal>}
@@ -1133,6 +1164,8 @@ export default function Workspace({ studentOnly = false }: { studentOnly?: boole
 
 function StudentApp() {
     const [code, setCode] = useState(''), [ordinal, setOrdinal] = useState(''), [session, setSession] = useState<Any | null>(null), [name, setName] = useState(''), [attempt, setAttempt] = useState<Any | null>(null), [answers, setAnswers] = useState<Any>({}), [loading, setLoading] = useState(false), [busy, setBusy] = useState(false), [error, setError] = useState(''), [saveStatus, setSaveStatus] = useState('Đã lưu'), [saveError, setSaveError] = useState(false), [confirm, setConfirm] = useState(false), [remaining, setRemaining] = useState(0), [now, setNow] = useState(Date.now()), [blocked, setBlocked] = useState(false), [draftChoice, setDraftChoice] = useState<Any | null>(null), [storageWarning, setStorageWarning] = useState(false);
+    const [entryCode, setEntryCode] = useState('');
+    const entryInput = useRef<HTMLInputElement>(null);
     const answersRef = useRef<Any>({}), syncRef = useRef<any>(null), autoSubmit = useRef(false), offset = useRef(0), submissionWanted = useRef(false), submitting = useRef(false), tokenRef = useRef('');
     const localKey = (c: string, n: string) => 'toanthd_attempt:' + c.trim().toUpperCase() + ':' + String(Number(n));
     function accept(a: Any, recovered?: Any) {
@@ -1195,8 +1228,41 @@ function StudentApp() {
         const timer = setInterval(() => void tick(), 10000), online = () => void tick(); window.addEventListener('online', online);
         return () => { cancelled = true; clearInterval(timer); window.removeEventListener('online', online); };
     }, [attempt?.token, attempt?.submitted_at, !!draftChoice]);
-    async function lookup(e: React.FormEvent) { e.preventDefault(); setBusy(true); setError(''); setName(''); try { const s = await api('public/session?code=' + encodeURIComponent(code.toUpperCase())); setSession(s); const result = await api('public/lookup', 'POST', { code, ordinal: Number(ordinal) }); setName(result.name); } catch (e: any) { setError(e.message); } finally { setBusy(false); } }
-    async function join() { setBusy(true); setError(''); try { const a = await api('public/join', 'POST', { code, ordinal: Number(ordinal), token: storeGet(localKey(code, ordinal)) }); autoSubmit.current = false; accept(a); } catch (e: any) { setError(e.message); } finally { setBusy(false); } }
+    const accessPayload = () => ({code, ordinal: Number(ordinal), token: storeGet(localKey(code, ordinal)), entry_code: entryCode});
+    useEffect(() => {
+        if (session?.requires_entry_code) entryInput.current?.focus();
+    }, [session?.requires_entry_code]);
+    async function lookup(event: React.FormEvent) {
+        event.preventDefault();
+        if (busy) return;
+        setBusy(true);
+        setError('');
+        setName('');
+        try {
+            const current = session ?? await api('public/session?code=' + encodeURIComponent(code));
+            setSession(current);
+            const payload = accessPayload();
+            if (current.requires_entry_code && !payload.token && !entryCode) {
+                entryInput.current?.focus();
+                return;
+            }
+            const result = await api('public/lookup', 'POST', payload);
+            setName(result.name);
+        } catch (e: any) { setError(e.message); }
+        finally { setBusy(false); }
+    }
+    async function join() {
+        if (busy) return;
+        setBusy(true);
+        setError('');
+        try {
+            const a = await api('public/join', 'POST', accessPayload());
+            autoSubmit.current = false;
+            setEntryCode('');
+            accept(a);
+        } catch (e: any) { setError(e.message); }
+        finally { setBusy(false); }
+    }
     function persist() { return syncRef.current?.flush() || Promise.resolve(); }
     function change(q: Q, value: any) { if (blocked || remaining <= 0) return; const next = { ...answersRef.current, [q.id]: value }; answersRef.current = next; setAnswers(next); syncRef.current?.change(next); }
     async function submit(expired = false) {
@@ -1208,8 +1274,14 @@ function StudentApp() {
         finally { submitting.current = false; setBusy(false); }
     }
     async function reloadAttempt() { try { setLoading(true); accept(await api('public/attempt', 'GET', undefined, tokenRef.current)); } catch (e: any) { setError(e.message); } finally { setLoading(false); } }
-    function reset() { syncRef.current?.dispose(); syncRef.current = null; tokenRef.current = ''; setAttempt(null); setSession(null); setName(''); setOrdinal(''); setError(''); setSaveError(false); setSaveStatus('Đã lưu'); setBlocked(false); setDraftChoice(null); storeRemove('toanthd_last_attempt'); autoSubmit.current = false; submissionWanted.current = false; }
+    function reset() { syncRef.current?.dispose(); syncRef.current = null; tokenRef.current = ''; setAttempt(null); setSession(null); setName(''); setOrdinal(''); setEntryCode(''); setError(''); setSaveError(false); setSaveStatus('Đã lưu'); setBlocked(false); setDraftChoice(null); storeRemove('toanthd_last_attempt'); autoSubmit.current = false; submissionWanted.current = false; }
     const completed = attempt ? answeredCount(attempt.questions, answers) : 0;
     const seconds = Math.ceil(remaining / 1000), clock = `${String(Math.floor(seconds / 60)).padStart(2, '0')}:${String(seconds % 60).padStart(2, '0')}`;
-    return <div className="student-shell"><header className="student-header"><Brand /><Pill tone="gray"><GraduationCap size={15} /> Không gian học sinh</Pill></header><main className={'student-main ' + (!attempt ? 'student-lobby' : '')}><div className="student-demo"><Info size={14} /> Kết nối tới máy giáo viên · Giữ trang này khi làm bài</div>{loading ? <Empty title="Đang tiếp tục bài làm…" text="Đọc bài đã lưu trên máy chủ." /> : !attempt ? <><div className="student-welcome"><span className="student-welcome-icon"><GraduationCap size={32} /></span><div className="eyebrow">PHIÊN KIỂM TRA TRÊN LỚP</div><h1>Sẵn sàng làm bài?</h1><p>Nhập mã phiên thầy cung cấp và số thứ tự (STT) của em trong danh sách lớp.</p></div><section className="card join-card"><form onSubmit={lookup}><label>Mã tham gia<input value={code} maxLength={6} autoComplete="off" autoCapitalize="characters" className="code-input" placeholder="VD: ABC234" onChange={e => { setCode(e.target.value.toUpperCase().replace(/\s/g, '')); setName(''); setSession(null); }} required /></label><label>Số thứ tự trong lớp<input value={ordinal} type="number" min="1" max="999" placeholder="VD: 7" onChange={e => { setOrdinal(e.target.value); setName(''); }} required /></label><button className="btn primary wide" disabled={busy}>{busy ? 'Đang tìm…' : <>Kiểm tra tên của em <ArrowRight size={17} /></>}</button></form>{name && session && <div className="student-confirm"><CheckCircle2 size={24} /><div><small>XÁC NHẬN HỌ TÊN</small><b>{name}</b><p>{session.class_label} · STT {ordinal}</p><p>{session.title}</p></div><button className="btn dark wide" disabled={busy} onClick={() => void join()}>Đúng, vào làm bài <ArrowRight size={17} /></button></div>}{error && <p role="alert" className="form-error">{error}</p>}</section><a className="back-teacher" href="/">← Về không gian giáo viên</a></> : attempt.submitted_at ? <section className="card result-card"><div className="result-check"><CheckCircle2 size={44} /></div><Pill>BÀI ĐÃ ĐƯỢC LƯU</Pill><h1>Em đã hoàn thành!</h1><p>{attempt.student.name} · {attempt.session.class_label}</p><div className="result-score"><b>{fmt(attempt.score)}</b><span>/ 10</span></div><p>{attempt.session.title}</p><div className="info-box"><Info size={17} /><p>{attempt.session.scoring_mode === 'exam-1246' ? 'Cấu trúc 12–4–6: trắc nghiệm 0,25; trả lời ngắn 0,5; mỗi câu Đúng/Sai đạt 0/0,1/0,25/0,5/1 điểm theo số ý đúng.' : 'Chấm luyện tập: các câu cùng trọng số; mỗi ý Đúng/Sai bằng 1/4 câu.'} Thầy xem bài của em trong màn hình phiên kiểm tra.</p></div><button className="btn primary" onClick={reset}>Vào phiên khác <ArrowRight size={17} /></button></section> : <><section className="student-title"><div><Pill tone="gray">{attempt.session.class_label} · STT {attempt.student.ordinal}</Pill><h1>{attempt.session.title}</h1><p>{attempt.student.name}</p></div><div className={'countdown ' + (seconds < 60 ? 'urgent' : '')}><Clock size={19} /><b>{clock}</b><small>còn lại</small></div></section><div className="student-progress"><span><b>{completed}/{attempt.questions.length}</b> câu đã trả lời</span><div className="progress-track"><i style={{ width: completed / attempt.questions.length * 100 + '%' }} /></div><button className={'save-status ' + (saveError ? 'error' : '')} onClick={() => void persist().catch(() => { })}>{saveError ? <AlertCircle size={14} /> : <Check size={14} />} {saveStatus}</button></div>{attempt.session.mode === 'paper' && <div className="info-box"><BookOpen size={18} /><p><b>Chế độ tài liệu giấy.</b> Đọc đề trong tài liệu và chọn câu trả lời theo đúng số câu, bài học hiển thị bên dưới.</p></div>}<div className="student-sync-note">{storageWarning && <p className="form-error">Trình duyệt không lưu được bản nháp trên thiết bị. Giữ trang mở và kiểm tra trạng thái đã lưu trên máy chủ.</p>}{blocked && <div className="lan-note"><AlertCircle size={18} /><div><p>{saveStatus}</p><button className="btn secondary" onClick={() => void reloadAttempt()}>Tải lại bài</button><button className="text-btn" onClick={reset}>Vào lại phiên</button></div></div>}{saveError && !blocked && <p role="status">Kết nối chưa ổn định. Giữ trang mở; hệ thống tự thử lưu lại. Hết giờ chỉ chấm phần đã tới máy chủ.</p>}</div><div className="question-jump">{attempt.questions.map((q: Q, i: number) => <a className={answeredCount([q], answers) ? 'answered' : ''} key={q.id} href={'#question-' + i} title={q.lesson_title}>{q.original_number}</a>)}</div>{attempt.questions.map((q: Q, i: number) => <section className="card student-question" id={'question-' + i} key={q.id}><div className="question-top"><b>Câu {q.original_number}</b><Pill tone="gray">{kinds[q.kind]}</Pill><small>{i + 1}/{attempt.questions.length}</small></div><div className="student-source">{q.lesson_title}</div>{attempt.session.mode === 'online' ? <QuestionBody q={q} answer={answers[q.id]} onChange={a => change(q, a)} readOnly={blocked || remaining <= 0} /> : <QuestionBody q={{ ...q, prompt: '', choices: q.kind === 'mcq' ? q.choices.map(c => ({ ...c, text: '' })) : q.kind === 'tf' ? q.choices.map(c => ({ ...c, text: 'Ý ' + c.key })) : [] }} answer={answers[q.id]} onChange={a => change(q, a)} readOnly={blocked || remaining <= 0} />}</section>)}{error && <p className="form-error" role="alert">{error}</p>}<div className="submit-bar"><div><b>{completed}/{attempt.questions.length} câu đã trả lời</b><small>Kiểm tra lại trước khi nộp bài.</small></div><button className="btn primary" disabled={busy || blocked} onClick={() => setConfirm(true)}>{busy ? 'Đang nộp…' : <>Nộp bài <ArrowRight size={18} /></>}</button></div></>}</main><footer className="student-footer">Toán THĐ · Nguyễn Trọng Hiếu · THPT Trịnh Hoài Đức</footer>{draftChoice && <Modal title="Đối chiếu bản nháp trên thiết bị" onClose={() => { }}><div className="modal-content"><p>Máy chủ đã có bản lưu mới hơn trong lúc thiết bị này mất kết nối. Chọn bản muốn tiếp tục; không tự ghi đè bài.</p><p>Bản trên máy chủ: {answeredCount(draftChoice.attempt.questions, draftChoice.attempt.answers)} câu. Bản nháp thiết bị: {answeredCount(draftChoice.attempt.questions, draftChoice.pending.answers)} câu.</p><div className="modal-actions"><button className="btn secondary" onClick={() => { const a = draftChoice.attempt; storeRemove('toanthd_pending:' + a.token); accept(a); }}>Dùng bản trên máy chủ</button><button className="btn primary" onClick={() => { const { attempt: a, pending } = draftChoice; accept(a, pending.answers); }}>Tiếp tục bản nháp thiết bị</button></div></div></Modal>}{confirm && attempt && <Modal title="Nộp bài kiểm tra?" onClose={() => setConfirm(false)}><div className="modal-content"><p>{completed < attempt.questions.length ? `Em còn ${attempt.questions.length - completed} câu chưa trả lời đủ. ` : 'Em đã trả lời tất cả câu. '}Sau khi nộp, em không thể sửa bài.</p><div className="modal-actions"><button className="btn secondary" onClick={() => setConfirm(false)}>Kiểm tra lại</button><button className="btn primary" onClick={() => void submit()}>Xác nhận nộp</button></div></div></Modal>}</div>;
+    return <div className="student-shell"><header className="student-header"><Brand /><Pill tone="gray"><GraduationCap size={15} /> Không gian học sinh</Pill></header><main className={'student-main ' + (!attempt ? 'student-lobby' : '')}><div className="student-demo"><Info size={14} /> Kết nối tới máy giáo viên · Giữ trang này khi làm bài</div>{loading ? <Empty title="Đang tiếp tục bài làm…" text="Đọc bài đã lưu trên máy chủ." /> : !attempt ? <><div className="student-welcome"><span className="student-welcome-icon"><GraduationCap size={32} /></span><div className="eyebrow">PHIÊN KIỂM TRA TRÊN LỚP</div><h1>Sẵn sàng làm bài?</h1><p>Nhập mã phiên thầy cung cấp và số thứ tự (STT) của em trong danh sách lớp.</p></div><section className="card join-card"><form onSubmit={lookup}><label>Mã tham gia<input value={code} maxLength={6} autoComplete="off" autoCapitalize="characters" className="code-input" placeholder="VD: ABC234" onChange={e => { setCode(e.target.value.toUpperCase().replace(/\s/g, '')); setName(''); setEntryCode(''); setSession(null); }} required /></label><label>Số thứ tự trong lớp<input value={ordinal} type="number" min="1" max="999" placeholder="VD: 7" onChange={e => { setOrdinal(e.target.value); setName(''); setEntryCode(''); }} required /></label>
+    {session?.requires_entry_code && <label>Mã cá nhân
+        <input ref={entryInput} value={entryCode} maxLength={10} autoComplete="off" autoCapitalize="characters"
+            spellCheck={false} placeholder="Mã do giáo viên cấp"
+            onChange={event => {setEntryCode(event.target.value.toUpperCase().replace(/[^A-Z0-9]/g, '')); setName('');}} />
+    </label>}
+    <button className="btn primary wide" disabled={busy}>{busy ? 'Đang tìm…' : <>Kiểm tra tên của em <ArrowRight size={17} /></>}</button></form>{name && session && <div className="student-confirm"><CheckCircle2 size={24} /><div><small>XÁC NHẬN HỌ TÊN</small><b>{name}</b><p>{session.class_label} · STT {ordinal}</p><p>{session.title}</p></div><button className="btn dark wide" disabled={busy} onClick={() => void join()}>Đúng, vào làm bài <ArrowRight size={17} /></button></div>}{error && <p role="alert" className="form-error">{error}</p>}</section><a className="back-teacher" href="/">← Về không gian giáo viên</a></> : attempt.submitted_at ? <section className="card result-card"><div className="result-check"><CheckCircle2 size={44} /></div><Pill>BÀI ĐÃ ĐƯỢC LƯU</Pill><h1>Em đã hoàn thành!</h1><p>{attempt.student.name} · {attempt.session.class_label}</p><div className="result-score"><b>{fmt(attempt.score)}</b><span>/ 10</span></div><p>{attempt.session.title}</p><div className="info-box"><Info size={17} /><p>{attempt.session.scoring_mode === 'exam-1246' ? 'Cấu trúc 12–4–6: trắc nghiệm 0,25; trả lời ngắn 0,5; mỗi câu Đúng/Sai đạt 0/0,1/0,25/0,5/1 điểm theo số ý đúng.' : 'Chấm luyện tập: các câu cùng trọng số; mỗi ý Đúng/Sai bằng 1/4 câu.'} Thầy xem bài của em trong màn hình phiên kiểm tra.</p></div><button className="btn primary" onClick={reset}>Vào phiên khác <ArrowRight size={17} /></button></section> : <><section className="student-title"><div><Pill tone="gray">{attempt.session.class_label} · STT {attempt.student.ordinal}</Pill><h1>{attempt.session.title}</h1><p>{attempt.student.name}</p></div><div className={'countdown ' + (seconds < 60 ? 'urgent' : '')}><Clock size={19} /><b>{clock}</b><small>còn lại</small></div></section><div className="student-progress"><span><b>{completed}/{attempt.questions.length}</b> câu đã trả lời</span><div className="progress-track"><i style={{ width: completed / attempt.questions.length * 100 + '%' }} /></div><button className={'save-status ' + (saveError ? 'error' : '')} onClick={() => void persist().catch(() => { })}>{saveError ? <AlertCircle size={14} /> : <Check size={14} />} {saveStatus}</button></div>{attempt.session.mode === 'paper' && <div className="info-box"><BookOpen size={18} /><p><b>Chế độ tài liệu giấy.</b> Đọc đề trong tài liệu và chọn câu trả lời theo đúng số câu, bài học hiển thị bên dưới.</p></div>}<div className="student-sync-note">{storageWarning && <p className="form-error">Trình duyệt không lưu được bản nháp trên thiết bị. Giữ trang mở và kiểm tra trạng thái đã lưu trên máy chủ.</p>}{blocked && <div className="lan-note"><AlertCircle size={18} /><div><p>{saveStatus}</p><button className="btn secondary" onClick={() => void reloadAttempt()}>Tải lại bài</button><button className="text-btn" onClick={reset}>Vào lại phiên</button></div></div>}{saveError && !blocked && <p role="status">Kết nối chưa ổn định. Giữ trang mở; hệ thống tự thử lưu lại. Hết giờ chỉ chấm phần đã tới máy chủ.</p>}</div><div className="question-jump">{attempt.questions.map((q: Q, i: number) => <a className={answeredCount([q], answers) ? 'answered' : ''} key={q.id} href={'#question-' + i} title={q.lesson_title}>{q.original_number}</a>)}</div>{attempt.questions.map((q: Q, i: number) => <section className="card student-question" id={'question-' + i} key={q.id}><div className="question-top"><b>Câu {q.original_number}</b><Pill tone="gray">{kinds[q.kind]}</Pill><small>{i + 1}/{attempt.questions.length}</small></div><div className="student-source">{q.lesson_title}</div>{attempt.session.mode === 'online' ? <QuestionBody q={q} answer={answers[q.id]} onChange={a => change(q, a)} readOnly={blocked || remaining <= 0} /> : <QuestionBody q={{ ...q, prompt: '', choices: q.kind === 'mcq' ? q.choices.map(c => ({ ...c, text: '' })) : q.kind === 'tf' ? q.choices.map(c => ({ ...c, text: 'Ý ' + c.key })) : [] }} answer={answers[q.id]} onChange={a => change(q, a)} readOnly={blocked || remaining <= 0} />}</section>)}{error && <p className="form-error" role="alert">{error}</p>}<div className="submit-bar"><div><b>{completed}/{attempt.questions.length} câu đã trả lời</b><small>Kiểm tra lại trước khi nộp bài.</small></div><button className="btn primary" disabled={busy || blocked} onClick={() => setConfirm(true)}>{busy ? 'Đang nộp…' : <>Nộp bài <ArrowRight size={18} /></>}</button></div></>}</main><footer className="student-footer">Toán THĐ · Nguyễn Trọng Hiếu · THPT Trịnh Hoài Đức</footer>{draftChoice && <Modal title="Đối chiếu bản nháp trên thiết bị" onClose={() => { }}><div className="modal-content"><p>Máy chủ đã có bản lưu mới hơn trong lúc thiết bị này mất kết nối. Chọn bản muốn tiếp tục; không tự ghi đè bài.</p><p>Bản trên máy chủ: {answeredCount(draftChoice.attempt.questions, draftChoice.attempt.answers)} câu. Bản nháp thiết bị: {answeredCount(draftChoice.attempt.questions, draftChoice.pending.answers)} câu.</p><div className="modal-actions"><button className="btn secondary" onClick={() => { const a = draftChoice.attempt; storeRemove('toanthd_pending:' + a.token); accept(a); }}>Dùng bản trên máy chủ</button><button className="btn primary" onClick={() => { const { attempt: a, pending } = draftChoice; accept(a, pending.answers); }}>Tiếp tục bản nháp thiết bị</button></div></div></Modal>}{confirm && attempt && <Modal title="Nộp bài kiểm tra?" onClose={() => setConfirm(false)}><div className="modal-content"><p>{completed < attempt.questions.length ? `Em còn ${attempt.questions.length - completed} câu chưa trả lời đủ. ` : 'Em đã trả lời tất cả câu. '}Sau khi nộp, em không thể sửa bài.</p><div className="modal-actions"><button className="btn secondary" onClick={() => setConfirm(false)}>Kiểm tra lại</button><button className="btn primary" onClick={() => void submit()}>Xác nhận nộp</button></div></div></Modal>}</div>;
 }

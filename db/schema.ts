@@ -64,7 +64,20 @@ export const sessions = sqliteTable("sessions", {
     classroomId: text("classroom_id").notNull().references(() => classrooms.id),
     mode: text("mode").notNull(), scoringMode: text("scoring_mode").notNull().default("practice"), minutes: integer("minutes").notNull(), state: text("state").notNull(),
     rosterSnapshot: text("roster_snapshot"), ownerTeacherId: text("owner_teacher_id").references(() => teacherAccounts.id), createdAt: integer("created_at").notNull(), closesAt: integer("closes_at").notNull(),
+    requiresEntryCode: integer("requires_entry_code").notNull().default(0),
 }, (t) => [index("sessions_teacher_class").on(t.ownerTeacherId,t.classroomId,t.createdAt)]);
+export const studentEntryCodes = sqliteTable("student_entry_codes", {
+    sessionId: text("session_id").notNull().references(() => sessions.id, {onDelete: "cascade"}),
+    ordinal: integer("ordinal").notNull(),
+    codeHash: text("code_hash").notNull(),
+    expiresAt: integer("expires_at").notNull(),
+}, t => [primaryKey({columns: [t.sessionId, t.ordinal]})]);
+export const studentEntryFailures = sqliteTable("student_entry_failures", {
+    sessionId: text("session_id").notNull().references(() => sessions.id, {onDelete: "cascade"}),
+    ordinal: integer("ordinal").notNull(),
+    failureCount: integer("failure_count").notNull(),
+    windowEndsAt: integer("window_ends_at").notNull(),
+}, t => [primaryKey({columns: [t.sessionId, t.ordinal]})]);
 export const sessionQuestions = sqliteTable("session_questions", {
     id: text("id").primaryKey(), sessionId: text("session_id").notNull().references(() => sessions.id),
     position: integer("position").notNull(), sourceId: text("source_id").notNull(), snapshot: text("snapshot").notNull(),
