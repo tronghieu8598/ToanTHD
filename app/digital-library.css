@@ -52,25 +52,28 @@
   position: absolute;
   z-index: 1;
   inset: 14px auto auto 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
+  display: grid;
+  place-items: center;
   min-height: 44px;
   min-width: 44px;
-  padding: 6px 10px;
+  padding: 0;
   border: 1px solid #ffffff4d;
   border-radius: 10px;
   background: #102b23f2;
   color: #fff;
-  font-size: .75rem;
-  font-weight: 750;
 }
 
 .studio-demo-trigger:hover,
 .studio-demo-trigger[aria-pressed='true'] {
   border-color: #c9f241;
   color: #c9f241;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .studio-demo-trigger:not(:focus-visible) {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 @media (max-width: 760px) {

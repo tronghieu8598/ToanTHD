@@ -107,15 +107,14 @@ export function LibraryResourceCard({ item, expanded, popup, activeClip, onOpen 
     </button>
     {clip && <>
       <button type="button" className="studio-demo-trigger" aria-pressed={isActive} aria-busy={playback === 'loading'}
-        aria-label={`Clip giới thiệu ${clip.durationSeconds} giây · ${item.title}`}
+        aria-label={`Clip xem trước · ${item.title}`}
         title={isActive ? 'Dừng clip' : 'Phát clip giới thiệu'}
         onClick={() => {
           window.clearTimeout(timer.current);
           if (origin.current) stop();
           else play('manual');
         }}>
-        {isActive ? <Square size={13} aria-hidden="true" /> : <Play size={14} aria-hidden="true" />}
-        <span aria-hidden="true">{playback === 'failed' ? 'Thử lại' : `${clip.durationSeconds}s`}</span>
+        {isActive ? <Square size={16} aria-hidden="true" /> : <Play size={17} aria-hidden="true" />}
       </button>
       {playback === 'failed' && <span className="sr-only" role="status">Clip chưa phát được.</span>}
     </>}
