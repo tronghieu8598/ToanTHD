@@ -5,8 +5,7 @@ import { Play, Square } from 'lucide-react';
 import { resourceKinds, type LibraryResource } from '../lib/client/library-catalog';
 import { StudioCover } from './studio-cover';
 
-const hoverDelay = 240;
-const hoverPlayback = '(any-hover: hover) and (any-pointer: fine) and (prefers-reduced-motion: no-preference)';
+const hoverDelay = 150;
 
 type Props = {
   item: LibraryResource;
@@ -73,7 +72,7 @@ export function LibraryResourceCard({ item, expanded, popup, activeClip, onOpen 
   }
 
   function enter(event: PointerEvent<HTMLDivElement>) {
-    if (event.pointerType !== 'mouse' || playback === 'failed' || !window.matchMedia(hoverPlayback).matches) return;
+    if (event.pointerType !== 'mouse') return;
     timer.current = window.setTimeout(() => play('hover'), hoverDelay);
   }
 
