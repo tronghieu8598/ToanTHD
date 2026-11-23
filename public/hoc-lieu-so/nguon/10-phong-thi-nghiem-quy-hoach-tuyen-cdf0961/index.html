@@ -52,6 +52,8 @@
     td:first-child,th:first-child{text-align:left}
     tr.hit{background:#ecfeff; font-weight:800}
     .small{font-size:12px;color:var(--muted)}
+    #quickC{overflow-x:auto}
+    #quickC input[type="text"]{min-width:6rem}
   </style>
 </head>
 <body>
@@ -104,8 +106,8 @@
         </div>
         <div class="small">Điều chỉnh nhanh giới hạn x, y. Tự động cập nhật ràng buộc x ≤ xmax, y ≤ ymax.</div>
         <hr style="margin:10px 0;border:none;border-top:1px dashed #e5e7eb">
-        <b>Ràng buộc 1–4 (Streamer):</b>
-        <div id="quickC" class="small" style="margin-top:6px"></div>
+        <b id="quickConstraintsTitle">Ràng buộc 1–4 (Streamer):</b>
+        <div id="quickC" class="small" style="margin-top:6px" role="region" aria-labelledby="quickConstraintsTitle" tabindex="0"></div>
       </div>
     </section>
 
