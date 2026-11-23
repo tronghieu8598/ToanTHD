@@ -12,6 +12,7 @@ const mediaDir = path.join(root, 'public', 'studio');
 const shellFiles = ['index.html', 'library.css', 'library.js'];
 const validSha = /^[a-f0-9]{64}$/;
 const itemId = /^[a-z0-9][a-z0-9-]{0,127}$/;
+const lessonAssetName = /^[a-z0-9][a-z0-9._-]{0,126}\.(?:m?js|txt)$/i;
 const restrictedHost = /(?:^|\.)(?:localhost|local|internal|test|invalid)$/i;
 const sensitiveQuery = /^(?:token|auth|access_token|key|signature|sig|x-amz-.+|x-goog-.+)$/i;
 const combinedBookId = 'all-sgk-offline-hki-bdbc394';
@@ -78,6 +79,46 @@ async function readMedia(permission, source, kind, id) {
     return {name: `${id}-${kind}-${permission.sha256.slice(0, 12)}.${extension}`, bytes};
 }
 
+async function readLessonFile(requested, expectedHash, filename) {
+    const stat = await lstat(requested).catch(error => {
+        if (error.code === 'ENOENT') return undefined;
+        throw error;
+    });
+    check(stat?.isFile() && stat.size > 0 && stat.size <= 2_000_000
+        && await realpath(requested) === requested,
+    `Tệp ${filename} không có trong đúng thư mục hoặc vượt dung lượng.`);
+    const bytes = await readFile(requested);
+    check(bytes.length <= 2_000_000 && sha256(bytes) === expectedHash,
+        `Tệp ${filename} khác phiên bản đã duyệt.`);
+    return bytes;
+}
+
+async function readLesson(permission, original, id) {
+    check(hasFields(permission, ['sha256'], ['assets'])
+        && typeof permission.sha256 === 'string' && validSha.test(permission.sha256),
+    `Thiếu SHA-256 của bài tương tác ${id}.`);
+    check(original.kind === 'lesson' && original.url === `/hoc-lieu-so/nguon/${id}/index.html`,
+        `Học liệu ${id} không có tệp HTML tương tác hợp lệ.`);
+    const approvedAssets = Object.hasOwn(permission, 'assets') ? permission.assets : [];
+    check(Array.isArray(approvedAssets) && approvedAssets.length <= 8 && approvedAssets.every(asset =>
+        hasFields(asset, ['name', 'sha256']) && typeof asset.name === 'string'
+        && lessonAssetName.test(asset.name) && !asset.name.includes('..')
+        && typeof asset.sha256 === 'string' && validSha.test(asset.sha256)),
+    `Danh sách tệp thư viện của ${id} không hợp lệ.`);
+    check(new Set(approvedAssets.map(({name}) => name.toLowerCase())).size === approvedAssets.length,
+        `Tên tệp thư viện của ${id} phải duy nhất.`);
+
+    const folder = path.join(await realpath(root), 'public', 'hoc-lieu-so', 'nguon', id);
+    const bytes = await readLessonFile(path.join(folder, 'index.html'), permission.sha256, `HTML của ${id}`);
+    check(/^\s*(?:<!doctype\s+html\s*>|<html[\s>])/i.test(bytes.toString('utf8', 0, 512)),
+        `Tệp HTML của ${id} không đúng định dạng.`);
+    const assets = await Promise.all(approvedAssets.map(async asset => ({
+        name: asset.name,
+        bytes: await readLessonFile(path.join(folder, 'vendor', asset.name), asset.sha256, `${asset.name} của ${id}`),
+    })));
+    return {id, bytes, assets};
+}
+
 export async function planPublicEdition(approvals) {
     check(hasFields(approvals, ['format', 'approved']) && approvals.format === 'toanthd.public-approvals/1'
         && Array.isArray(approvals.approved), 'Danh sách duyệt công khai sai định dạng.');
@@ -91,24 +132,29 @@ export async function planPublicEdition(approvals) {
     const used = new Set();
     const items = [];
     const media = [];
+    const lessons = [];
     for (const entry of approvals.approved) {
-        check(hasFields(entry, ['id', 'approval', 'official'], ['cover', 'preview'])
+        check(hasFields(entry, ['id', 'approval'], ['official', 'lesson', 'cover', 'preview'])
             && typeof entry.id === 'string' && itemId.test(entry.id) && !used.has(entry.id),
         'Mỗi mục duyệt cần một mã duy nhất và đúng trường dữ liệu.');
         const {id} = entry;
+        const isLesson = Object.hasOwn(entry, 'lesson');
+        check(isLesson !== Object.hasOwn(entry, 'official'),
+            `Mục ${id} cần đúng một nguồn: liên kết chính thức hoặc tệp HTML tương tác.`);
         used.add(id);
         const original = originals.get(id);
         const card = cards[id] ?? original;
         check(original,
             `Mã ${id} chưa có trong danh mục bài được hỗ trợ cho đợt công khai này.`);
         checkApproval(entry.approval, id);
+        if (isLesson) lessons.push(await readLesson(entry.lesson, original, id));
         const publicItem = {
             id,
             title: card.title,
             description: card.description || original.description || '',
             grades: original.grades,
             chapter: card.chapterNumber ?? null,
-            href: officialLink(entry.official, id),
+            href: isLesson ? `lessons/${id}/index.html` : officialLink(entry.official, id),
         };
         for (const kind of ['cover', 'preview']) {
             if (!Object.hasOwn(entry, kind)) continue;
@@ -119,11 +165,11 @@ export async function planPublicEdition(approvals) {
         }
         items.push(publicItem);
     }
-    return {catalog: {chapters: math, items}, media};
+    return {catalog: {chapters: math, items}, media, lessons};
 }
 
 export async function buildPublicEdition({out, approvals = approvalFile, preview = false}) {
-    const {catalog, media} = await planPublicEdition(await readJson(approvals));
+    const {catalog, media, lessons} = await planPublicEdition(await readJson(approvals));
     check(preview || catalog.items.length, 'Chưa có học liệu được duyệt công khai. Dùng --preview để xem giao diện.');
     const destination = path.resolve(out);
     const parent = await realpath(path.dirname(destination));
@@ -137,12 +183,23 @@ export async function buildPublicEdition({out, approvals = approvalFile, preview
     await Promise.all([
         writeFile(path.join(destination, 'catalog.js'), `window.toanThdPublicCatalog = ${JSON.stringify(catalog)};\n`, {flag: 'wx'}),
         ...media.map(file => writeFile(path.join(destination, 'media', file.name), file.bytes, {flag: 'wx'})),
+        ...lessons.map(async ({id, bytes, assets}) => {
+            const folder = path.join(destination, 'lessons', id);
+            await mkdir(folder, {recursive: true});
+            await writeFile(path.join(folder, 'index.html'), bytes, {flag: 'wx'});
+            if (assets.length) {
+                const vendor = path.join(folder, 'vendor');
+                await mkdir(vendor);
+                await Promise.all(assets.map(asset =>
+                    writeFile(path.join(vendor, asset.name), asset.bytes, {flag: 'wx'})));
+            }
+        }),
         ...shellFiles.filter(file => file !== 'index.html')
             .map(file => writeFile(path.join(destination, file), shell.get(file), {flag: 'wx'})),
     ]);
     const index = shell.get('index.html').replace('<!-- ROBOTS -->', preview ? '<meta name="robots" content="noindex">' : '');
     await writeFile(path.join(destination, 'index.html'), index, {flag: 'wx'});
-    return {directory: destination, items: catalog.items.length, media: media.length, preview};
+    return {directory: destination, items: catalog.items.length, media: media.length, lessons: lessons.length, preview};
 }
 
 if (process.argv[1] && pathToFileURL(path.resolve(process.argv[1])).href === import.meta.url) {
