@@ -1,0 +1,33 @@
+{
+  "id": "dc-12-hk2-6D1-q033-v4",
+  "original_number": 33,
+  "kind": "tf",
+  "based_on": "e876176d3712f89f1f8076410d9e2152c37f96ca0d307a891d37dc04a4a06575",
+  "prompt": "Bạn An có một túi gồm một số chiếc kẹo cùng loại, chỉ khác màu, trong đó có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>6</mn></semantics></math> chiếc kẹo sô-cô-la đen, còn lại <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>4</mn></semantics></math> chiếc kẹo sô-cô-la trắng. An lấy ngẫu nhiên 1 chiếc kẹo trong túi để cho Bình, rồi lại lấy ngẫu nhiên tiếp 1 chiếc kẹo nữa trong túi và cũng đưa cho Bình. Xét tính đúng sai của các khẳng định sau",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Xác suất để Bình nhận được 2 chiếc kẹo sô-cô-la đen là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>4</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Xác suất để Bình nhận được 2 chiếc kẹo sô-cô-la trắng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>2</mn><mn>15</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Xác suất để Bình nhận được 2 chiếc kẹo sô-cô-la khác màu nhau là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>37</mn><mn>60</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Xác suất để Bình nhận được chiếc kẹo sô-cô-la đen ở lần thứ nhất, chiếc kẹo sô-cô-la trắng ở lần thứ hai là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>4</mn><mn>15</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": [
+    false,
+    false,
+    false,
+    true
+  ],
+  "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>A</mi></semantics></math> là biến cố ““ An lấy được chiếc kẹo sô-cô-la đen ở lần thứ nhất&thinsp;””.<br>\n\t\tGọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>B</mi></semantics></math> là biến cố ““ An lấy được chiếc kẹo sô-cô-la đen ở lần thứ hai&thinsp;””.\n\t\t<ol class=\"alpha-list\"><li><strong>Sai</strong>.<br>\n\t\t\tXác suất để Bình nhận được 2 chiếc kẹo sô-cô-la đen là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>6</mn><mo>⋅</mo><mn>5</mn></mrow><mrow><mn>10</mn><mo>⋅</mo><mn>9</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>.<br>\n\t\t\tXác suất để Bình nhận được 2 chiếc kẹo sô-cô-la trắng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover><mspace width=\"0.167em\"/><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn><mo>⋅</mo><mn>3</mn></mrow><mrow><mn>10</mn><mo>⋅</mo><mn>9</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>15</mn></mfrac></mrow></semantics></math>.</li><li><strong>Sai</strong>.<br>\n\t\t\tXác suất để Bình nhận được hai chiếc kẹo sô-cô-la khác màu nhau là\n\t\t\t<div class=\"math-display\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>X</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>6</mn><mo>⋅</mo><mn>4</mn></mrow><mrow><mn>10</mn><mo>⋅</mo><mn>9</mn></mrow></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn><mo>⋅</mo><mn>6</mn></mrow><mrow><mn>10</mn><mo>⋅</mo><mn>9</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>8</mn><mn>15</mn></mfrac><mi>.</mi></mrow></semantics></math></div></li><li><strong>Đúng</strong>.<br>\n\t\t\tXác suất để Bình nhận được chiếc kẹo sô-cô-la đen ở lần thứ nhất, chiếc kẹo sô-cô-la trắng ở lần thứ hai là\n\t\t\t<div class=\"math-display\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>Y</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>6</mn><mo>⋅</mo><mn>4</mn></mrow><mrow><mn>10</mn><mo>⋅</mo><mn>9</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>4</mn><mn>15</mn></mfrac><mi>.</mi></mrow></semantics></math></div></li></ol>",
+  "accepted_answers": []
+}

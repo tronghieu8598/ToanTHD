@@ -1,0 +1,134 @@
+{
+  "id": "dc-12-hk2-6D2-q027-v4",
+  "source_fingerprint": "c4bbb84ef8b7bd0b0c533bfab7b813cf89b744ecfb5a915f8baaeb4276ae4cf7",
+  "variants": [
+    {
+      "id": "dc-12-hk2-6D2-q027-v4--bt01",
+      "number": 1,
+      "kind": "tf",
+      "prompt": "Công an kiểm tra một thùng hàng gồm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>100</mn></mrow></semantics></math> hộp sữa Ensure và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>100</mn></mrow></semantics></math> hộp sữa Pediasure. Sau khi kiểm tra, công an có bảng thống kê sau\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td><span class=\"diagonal-label\"><span>Hộp sữa</span><span>Tem chính hãng</span></span></td><td>Có dán tem chính hãng</td><td>Hàng giả</td></tr><tr><td>Sữa Ensure</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>40</mn></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>60</mn></mrow></semantics></math></td></tr><tr><td>Sữa Pediasure</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>20</mn></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>80</mn></mrow></semantics></math></td></tr></tbody></table></div></div>\n\tXét tính đúng sai của các khẳng định sau",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Lấy ngẫu nhiên một hộp trong thùng, xác suất để hộp sữa lấy ra có dán tem chính hãng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>3</mn><mn>10</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Lấy ngẫu nhiên một hộp trong thùng, xác suất để hộp sữa lấy ra là hàng giả bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>7</mn><mn>10</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Lấy ngẫu nhiên hai hộp trong thùng, xác suất để hai hộp sữa lấy ra là hàng giả bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>973</mn><mn>1990</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Giả sử hộp sữa lấy ra có dán tem chính hãng. Xác suất hộp sữa đó là sữa Ensure cao hơn xác suất hộp sữa đó là sữa Pediasure"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "solution": "<ol class=\"alpha-list\"><li><strong>Đúng</strong>. Xác suất lấy được hộp có tem chính hãng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>60</mn></mrow><mrow><mn>200</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>10</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Xác suất lấy được hộp hàng giả là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>140</mn></mrow><mrow><mn>200</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>7</mn><mn>10</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Xác suất lấy được 2 hộp hàng giả là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>140</mn><mn>2</mn></msubsup></mrow><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>200</mn><mn>2</mn></msubsup></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>973</mn><mn>1990</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Khi biết hộp có dán tem chính hãng, xác suất là sữa Ensure bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></mrow></semantics></math> và sữa Pediasure bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac></mrow></semantics></math>.</li></ol>",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-6D2-q027-v4--bt02",
+      "number": 2,
+      "kind": "tf",
+      "prompt": "Công an kiểm tra một thùng hàng gồm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>80</mn></mrow></semantics></math> hộp sữa Ensure và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>80</mn></mrow></semantics></math> hộp sữa Pediasure. Sau khi kiểm tra, công an có bảng thống kê sau\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td><span class=\"diagonal-label\"><span>Hộp sữa</span><span>Tem chính hãng</span></span></td><td>Có dán tem chính hãng</td><td>Hàng giả</td></tr><tr><td>Sữa Ensure</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>25</mn></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>55</mn></mrow></semantics></math></td></tr><tr><td>Sữa Pediasure</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>15</mn></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>65</mn></mrow></semantics></math></td></tr></tbody></table></div></div>\n\tXét tính đúng sai của các khẳng định sau",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Lấy ngẫu nhiên một hộp trong thùng, xác suất để hộp sữa lấy ra có dán tem chính hãng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>4</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Lấy ngẫu nhiên một hộp trong thùng, xác suất để hộp sữa lấy ra là hàng giả bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>3</mn><mn>5</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Lấy ngẫu nhiên hai hộp trong thùng, xác suất để hai hộp sữa lấy ra là hàng giả bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>119</mn><mn>212</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Giả sử hộp sữa lấy ra có dán tem chính hãng. Xác suất hộp sữa đó là sữa Ensure cao hơn xác suất hộp sữa đó là sữa Pediasure"
+        }
+      ],
+      "correct": [
+        true,
+        false,
+        true,
+        true
+      ],
+      "solution": "<ol class=\"alpha-list\"><li><strong>Đúng</strong>. Xác suất lấy được hộp có tem chính hãng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>40</mn></mrow><mrow><mn>160</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>4</mn></mfrac></mrow></semantics></math>.</li><li><strong>Sai</strong>. Xác suất lấy được hộp hàng giả là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>120</mn></mrow><mrow><mn>160</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Xác suất lấy được 2 hộp hàng giả là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>120</mn><mn>2</mn></msubsup></mrow><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>160</mn><mn>2</mn></msubsup></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>119</mn><mn>212</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Khi biết hộp có dán tem chính hãng, xác suất là sữa Ensure bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>5</mn><mn>8</mn></mfrac></mrow></semantics></math> và sữa Pediasure bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>3</mn><mn>8</mn></mfrac></mrow></semantics></math>.</li></ol>",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-6D2-q027-v4--bt03",
+      "number": 3,
+      "kind": "tf",
+      "prompt": "Công an kiểm tra một thùng hàng gồm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>100</mn></mrow></semantics></math> hộp sữa Ensure và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>100</mn></mrow></semantics></math> hộp sữa Pediasure. Sau khi kiểm tra, công an có bảng thống kê sau\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td><span class=\"diagonal-label\"><span>Hộp sữa</span><span>Tem chính hãng</span></span></td><td>Có dán tem chính hãng</td><td>Hàng giả</td></tr><tr><td>Sữa Ensure</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>35</mn></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>65</mn></mrow></semantics></math></td></tr><tr><td>Sữa Pediasure</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>25</mn></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>75</mn></mrow></semantics></math></td></tr></tbody></table></div></div>\n\tXét tính đúng sai của các khẳng định sau",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Lấy ngẫu nhiên một hộp trong thùng, xác suất để hộp sữa lấy ra có dán tem chính hãng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>2</mn><mn>5</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Lấy ngẫu nhiên một hộp trong thùng, xác suất để hộp sữa lấy ra là hàng giả bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>7</mn><mn>10</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Lấy ngẫu nhiên hai hộp trong thùng, xác suất để hai hộp sữa lấy ra là hàng giả bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>973</mn><mn>1990</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Giả sử hộp sữa lấy ra có dán tem chính hãng. Xác suất hộp sữa đó là sữa Ensure cao hơn xác suất hộp sữa đó là sữa Pediasure"
+        }
+      ],
+      "correct": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "solution": "<ol class=\"alpha-list\"><li><strong>Sai</strong>. Xác suất lấy được hộp có tem chính hãng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>60</mn></mrow><mrow><mn>200</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>10</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Xác suất lấy được hộp hàng giả là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>140</mn></mrow><mrow><mn>200</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>7</mn><mn>10</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Xác suất lấy được 2 hộp hàng giả là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>140</mn><mn>2</mn></msubsup></mrow><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>200</mn><mn>2</mn></msubsup></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>973</mn><mn>1990</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Khi biết hộp có dán tem chính hãng, xác suất là sữa Ensure bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>7</mn><mn>12</mn></mfrac></mrow></semantics></math> và sữa Pediasure bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>5</mn><mn>12</mn></mfrac></mrow></semantics></math>.</li></ol>",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-6D2-q027-v4--bt04",
+      "number": 4,
+      "kind": "tf",
+      "prompt": "Công an kiểm tra một thùng hàng gồm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>100</mn></mrow></semantics></math> hộp sữa Ensure và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>100</mn></mrow></semantics></math> hộp sữa Pediasure. Sau khi kiểm tra, công an có bảng thống kê sau\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td><span class=\"diagonal-label\"><span>Hộp sữa</span><span>Tem chính hãng</span></span></td><td>Có dán tem chính hãng</td><td>Hàng giả</td></tr><tr><td>Sữa Ensure</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>20</mn></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>80</mn></mrow></semantics></math></td></tr><tr><td>Sữa Pediasure</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>30</mn></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>70</mn></mrow></semantics></math></td></tr></tbody></table></div></div>\n\tXét tính đúng sai của các khẳng định sau",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Lấy ngẫu nhiên một hộp trong thùng, xác suất để hộp sữa lấy ra có dán tem chính hãng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>4</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Lấy ngẫu nhiên một hộp trong thùng, xác suất để hộp sữa lấy ra là hàng giả bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Lấy ngẫu nhiên hai hộp trong thùng, xác suất để hai hộp sữa lấy ra là hàng giả bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>447</mn><mn>796</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Giả sử hộp sữa lấy ra có dán tem chính hãng. Xác suất hộp sữa đó là sữa Ensure cao hơn xác suất hộp sữa đó là sữa Pediasure"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "solution": "<ol class=\"alpha-list\"><li><strong>Đúng</strong>. Xác suất lấy được hộp có tem chính hãng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>50</mn></mrow><mrow><mn>200</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>4</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Xác suất lấy được hộp hàng giả là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><mn>150</mn></mrow><mrow><mn>200</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Xác suất lấy được 2 hộp hàng giả là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>150</mn><mn>2</mn></msubsup></mrow><mrow><msubsup><mi mathvariant=\"normal\">C</mi><mn>200</mn><mn>2</mn></msubsup></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>447</mn><mn>796</mn></mfrac></mrow></semantics></math>.</li><li><strong>Sai</strong>. Khi biết hộp có dán tem chính hãng, xác suất là sữa Ensure bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>2</mn><mn>5</mn></mfrac></mrow></semantics></math> và sữa Pediasure bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>3</mn><mn>5</mn></mfrac></mrow></semantics></math>.</li></ol>",
+      "accepted_answers": []
+    }
+  ]
+}

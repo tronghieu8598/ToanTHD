@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk2-6D1-q015-v4",
+  "original_number": 15,
+  "kind": "mcq",
+  "based_on": "0ef973f258a3e522cae0a97d399121b74e28c86f2057b5bbf540f3559627009b",
+  "prompt": "Trong kì thi chọn học sinh giỏi lớp <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>9</mn></semantics></math> tỉnh Bình Dương, Nguyễn Khuyến tham gia <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>20</mn></semantics></math> học sinh có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>14</mn></semantics></math> nam và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>6</mn></semantics></math> nữ, có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>12</mn></semantics></math> bạn đạt giải trong đó có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>8</mn></semantics></math> nam. Chọn ngẫu nhiên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>1</mn></semantics></math> bạn trong <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>20</mn></semantics></math> bạn đó. Tính xác suất để học sinh được chọn không đạt giải, biết rằng học sinh đó là nam.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>3</mn><mn>7</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>5</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>7</mn><mn>10</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>3</mn><mn>5</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "A",
+  "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>A</mi></semantics></math> là biến cố ``Học sinh được chọn không đạt giải&#x27;&#x27;; <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>B</mi></semantics></math> là biến cố ``Học sinh được chọn là nam&#x27;&#x27;.<br>\n\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>14</mn><mn>20</mn></mfrac><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>7</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>6</mn><mn>20</mn></mfrac><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>3</mn></mrow></semantics></math>.<br>\n\t\tXác suất để học sinh được chọn không đạt giải, biết rằng học sinh đó là nam là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>3</mn></mrow><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>7</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>7</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}

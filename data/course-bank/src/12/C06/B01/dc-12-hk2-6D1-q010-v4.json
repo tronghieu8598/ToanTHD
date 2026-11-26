@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk2-6D1-q010-v4",
+  "original_number": 10,
+  "kind": "mcq",
+  "based_on": "374d8cdeebdda65db5cb4236487631729a80861dc003a27d497f673631ab7d64",
+  "prompt": "Cho hai biến cố <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>A</mi></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>B</mi></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>6</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>7</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>4</mn></mrow></semantics></math>. Tính <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>.",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>7</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>4</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>58</mn></mrow></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>52</mn></mrow></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Ta có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>4</mn></mrow></semantics></math>.<br>\n\t\tKhi đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⋅</mo><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>⋅</mo><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>7</mn><mo>⋅</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>6</mn><mo>+</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>4</mn><mo>⋅</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>4</mn><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>58</mn></mrow></semantics></math>.",
+  "accepted_answers": []
+}

@@ -1,0 +1,31 @@
+.release-page {
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin: 0 auto;
+    max-width: 61rem;
+    padding: clamp(1rem, 5vw, 4rem);
+    color: #182b27;
+    font-size: 1rem;
+}
+
+.release-page a { color: #0b6150; text-decoration: underline; text-underline-offset: 0.2em; }
+.release-back { display: inline-block; font-weight: 650; margin-bottom: 0.9rem; }
+.release-card { background: #fff; padding: clamp(1rem, 4vw, 2rem); border: 1px solid #b7ceca; border-radius: 0.85rem; }
+.release-card h1 { font-size: clamp(1.65rem, 5vw, 2.3rem); margin: 0 0 0.7rem; line-height: 1.2; }
+.release-card p { margin: 0.75rem 0; line-height: 1.6; }
+.release-file-label { display: block; margin: 1.1rem 0 0.45rem; font-weight: 650; }
+.release-file { display: block; max-width: 100%; font: inherit; }
+.release-actions { margin: 1rem 0; display: flex; align-items: center; flex-wrap: wrap; gap: 0.8rem 1rem; }
+.release-card button { background: #0b6150; border: 1px solid #0b6150; border-radius: 0.48rem; color: #fff; cursor: pointer; font: inherit; font-weight: 650; padding: 0.65rem 1rem; }
+.release-card button.release-secondary { background: #fff; color: #0b6150; }
+.release-card button:disabled { background: #e5eeeb; border-color: #c6d5d0; color: #2f4942; cursor: default; }
+.release-card :is(a, button, input):focus-visible { outline: 3px solid #176d5b; outline-offset: 3px; }
+.release-card p.release-error { color: #892c23; background: #fff2ee; padding: 0.7rem; border-radius: 0.45rem; }
+.release-progress { display: grid; gap: 0.45rem; margin-top: 1rem; }
+.release-progress progress { accent-color: #0b6150; width: 100%; }
+.release-totals { display: flex; flex-wrap: wrap; column-gap: 2rem; row-gap: 0.45rem; padding-left: 1.25rem; }
+.release-receipts { margin-top: 1.35rem; overflow-x: auto; }
+.release-receipts table { width: 100%; font-variant-numeric: tabular-nums; border-collapse: collapse; }
+.release-receipts caption { padding: 0.5rem 0; text-align: left; font-weight: 650; }
+.release-receipts :is(td, th) { padding: 0.55rem; text-align: right; border-bottom: 1px solid #dbe7e4; white-space: nowrap; }
+.release-receipts th:first-child { text-align: left; }

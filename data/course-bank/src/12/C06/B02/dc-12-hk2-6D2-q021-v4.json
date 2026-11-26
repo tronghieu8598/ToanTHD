@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk2-6D2-q021-v4",
+  "original_number": 21,
+  "kind": "mcq",
+  "based_on": "6cd793009e6175c122809f030efd33c4259af5b2ced3ec021ec51e0fa3050b8c",
+  "prompt": "Một hộp có 50 bóng đèn như nhau trong đó có 10 bóng bị hỏng. Lấy ngẫu nhiên hai lần liên tiếp, trong đó mỗi lần lấy ngẫu nhiên một bóng đèn và không hoàn lại. Xác suất để bóng đèn lấy ra lần thứ hai bị hỏng, biết rằng lần thứ nhất đã lấy ra được bóng đèn tốt là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>36</mn><mn>345</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>4</mn><mn>5</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>9</mn><mn>49</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>10</mn><mn>449</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "D",
+  "solution": "Khi biết lần thứ nhất đã lấy dc bóng đèn tốt thì còn <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>39</mn></semantics></math> bóng tốt và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>10</mn></semantics></math> bóng hỏng.<br>\t\t\n\t\tXác suát lần <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>2</mn></semantics></math> được bóng hỏng khi lần đầu dc bóng tốt là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>10</mn><mn>49</mn></mfrac></semantics></math>.",
+  "accepted_answers": []
+}

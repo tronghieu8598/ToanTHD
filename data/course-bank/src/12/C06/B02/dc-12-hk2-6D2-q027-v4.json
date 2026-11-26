@@ -1,0 +1,33 @@
+{
+  "id": "dc-12-hk2-6D2-q027-v4",
+  "original_number": 27,
+  "kind": "tf",
+  "based_on": "c4bbb84ef8b7bd0b0c533bfab7b813cf89b744ecfb5a915f8baaeb4276ae4cf7",
+  "prompt": "Công an kiểm tra một thùng hàng gồm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>100</mn></semantics></math> hộp sữa Ensure và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>100</mn></semantics></math> hộp sữa Pediasure. Sau khi kiểm tra, công an có bảng thống kê sau\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td><span class=\"diagonal-label\"><span>Hộp sữa</span><span>Tem chính hãng</span></span></td><td>Có dán tem chính hãng</td><td>Hàng giả</td></tr><tr><td>Sữa Ensure</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>30</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>70</mn></semantics></math></td></tr><tr><td>Sữa Pediasure</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>20</mn></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>80</mn></semantics></math></td></tr></tbody></table></div></div>\n\tXét tính đúng sai của các khẳng định sau",
+  "choices": [
+    {
+      "key": "a",
+      "text": "Lấy ngẫu nhiên một hộp trong thùng, xác suất để hộp sữa lấy ra có dán tem chính hãng là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>3</mn><mn>10</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "b",
+      "text": "Lấy ngẫu nhiên một hộp trong thùng, xác suất để hộp sữa lấy ra là hàng giả bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>3</mn><mn>10</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "c",
+      "text": "Lấy ngẫu nhiên hai hộp trong thùng, xác suất để hai hộp sữa lấy ra là hàng giả bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>447</mn><mn>796</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "d",
+      "text": "Giả sử hộp sữa lấy ra có dán tem chính hãng. Xác suất hộp sữa đó là sữa Ensure cao hơn xác xuất hộp sữa đó là sữa Pediasure"
+    }
+  ],
+  "correct": [
+    false,
+    false,
+    true,
+    true
+  ],
+  "solution": "<ol class=\"alpha-list\"><li>Sai.<br>\n\t\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>20</mn><mo>+</mo><mn>30</mn></mrow><mrow><mn>20</mn><mo>+</mo><mn>30</mn><mo>+</mo><mn>70</mn><mo>+</mo><mn>80</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>4</mn></mfrac></mrow></semantics></math>.</li><li>Sai.<br>\n\t\t\tTa có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>4</mn></mfrac></mrow></semantics></math>.</li><li>Đúng.<br>\n\t\t\tXác suất hai hộp sữa lấy ra là hàng giả là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><msubsup><mi mathvariant=\"normal\">C</mi><mn>150</mn><mn>2</mn></msubsup><msubsup><mi>C</mi><mn>200</mn><mn>2</mn></msubsup></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>447</mn><mn>796</mn></mfrac></mrow></semantics></math>.</li><li>Đúng.<br>\n\t\t\tXác suất hộp sữa lấy ra là sữa Ensure khi biết hộp sữa có dán tem chính hãng là <div class=\"math-display\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"false\" form=\"prefix\">|</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>30</mn><mrow><mn>30</mn><mo>+</mo><mn>20</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>5</mn></mfrac><mi>.</mi></mrow></semantics></math></div>\n\t\t\tXác suất hộp sữa lấy ra là sữa Pediasure khi biết hộp sữa có dán tem chính hãng là <div class=\"math-display\"><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"block\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"false\" form=\"prefix\">|</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mspace width=\"0.167em\"/><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>20</mn><mrow><mn>30</mn><mo>+</mo><mn>20</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>5</mn></mfrac><mi>.</mi></mrow></semantics></math></div>\n\t\t\tVậy xác suất hộp sữa đó là sữa Ensure cao hơn xác xuất hộp sữa đó là sữa Pediasure.</li></ol>",
+  "accepted_answers": []
+}

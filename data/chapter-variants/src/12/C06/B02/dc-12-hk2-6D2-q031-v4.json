@@ -1,0 +1,134 @@
+{
+  "id": "dc-12-hk2-6D2-q031-v4",
+  "source_fingerprint": "d41f00511a0f8eba323128b0bd7c8b90ff926df305bc9919f400b7819ae03977",
+  "variants": [
+    {
+      "id": "dc-12-hk2-6D2-q031-v4--bt01",
+      "number": 1,
+      "kind": "tf",
+      "prompt": "Có hai chuồng gà, chuồng gà thứ nhất có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>8</mn></mrow></semantics></math> con gà mái và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn></mrow></semantics></math> con gà trống; chuồng thứ hai có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn></mrow></semantics></math> con gà mái và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn></mrow></semantics></math> con gà trống. Bắt một con gà chuồng thứ nhất bỏ vô chuồng thứ hai, rồi từ chuồng thứ hai bắt ra một con. <br>\n\tXét tính đúng sai của các khẳng định sau",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Xác suất chuồng thứ nhất bắt được gà mái là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Xác suất chuồng thứ hai bắt được gà trống là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>19</mn><mn>30</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Giả sử con gà được bắt ra từ chuồng thứ hai là gà trống, xác suất để con gà trống đó là của chuồng thứ hai bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>15</mn><mn>19</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Giả sử con gà được bắt ra từ chuồng thứ hai là gà trống, xác suất để con gà trống đó là của chuồng thứ nhất bỏ sang là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>4</mn><mn>19</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        false,
+        false,
+        false
+      ],
+      "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math> là biến cố “Con gà chuyển từ chuồng 1 sang chuồng 2 là gà trống”, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi></mrow></semantics></math> là biến cố “Con gà bắt ra từ chuồng 2 là gà trống”, và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi></mrow></semantics></math> là biến cố “Con gà bắt ra ở chuồng 2 là gà của chuồng 2 ban đầu”.<ol class=\"alpha-list\"><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>8</mn></mrow><mrow><mn>12</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></mrow></semantics></math>.</li><li><strong>Sai</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>6</mn></mrow><mrow><mn>10</mn></mrow></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn></mrow><mrow><mn>10</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>8</mn><mn>15</mn></mfrac></mrow></semantics></math>.</li><li><strong>Sai</strong>. Trong <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>10</mn></mrow></semantics></math> con gà ở chuồng 2 lúc sau luôn có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn></mrow></semantics></math> con gà trống ban đầu của chuồng 2 nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn></mrow><mrow><mn>10</mn></mrow></mfrac></mrow></semantics></math>, suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mi>B</mi></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>15</mn><mn>16</mn></mfrac></mrow></semantics></math>.</li><li><strong>Sai</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>C</mi><mo accent=\"true\">¯</mo></mover><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mi>B</mi></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>15</mn><mn>16</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>16</mn></mfrac></mrow></semantics></math>.</li></ol>",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-6D2-q031-v4--bt02",
+      "number": 2,
+      "kind": "tf",
+      "prompt": "Có hai chuồng gà, chuồng gà thứ nhất có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>9</mn></mrow></semantics></math> con gà mái và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>6</mn></mrow></semantics></math> con gà trống; chuồng thứ hai có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>3</mn></mrow></semantics></math> con gà mái và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>6</mn></mrow></semantics></math> con gà trống. Bắt một con gà chuồng thứ nhất bỏ vô chuồng thứ hai, rồi từ chuồng thứ hai bắt ra một con. <br>\n\tXét tính đúng sai của các khẳng định sau",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Xác suất chuồng thứ nhất bắt được gà mái là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>3</mn><mn>5</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Xác suất chuồng thứ hai bắt được gà trống là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>16</mn><mn>25</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Giả sử con gà được bắt ra từ chuồng thứ hai là gà trống, xác suất để con gà trống đó là của chuồng thứ hai bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>15</mn><mn>16</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Giả sử con gà được bắt ra từ chuồng thứ hai là gà trống, xác suất để con gà trống đó là của chuồng thứ nhất bỏ sang là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>16</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math> là biến cố “Con gà chuyển từ chuồng 1 sang chuồng 2 là gà trống”, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi></mrow></semantics></math> là biến cố “Con gà bắt ra từ chuồng 2 là gà trống”, và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi></mrow></semantics></math> là biến cố “Con gà bắt ra ở chuồng 2 là gà của chuồng 2 ban đầu”.<ol class=\"alpha-list\"><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>9</mn></mrow><mrow><mn>15</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>5</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>5</mn></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>7</mn></mrow><mrow><mn>10</mn></mrow></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>5</mn></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>6</mn></mrow><mrow><mn>10</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>16</mn><mn>25</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Trong <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>10</mn></mrow></semantics></math> con gà ở chuồng 2 lúc sau luôn có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>6</mn></mrow></semantics></math> con gà trống ban đầu của chuồng 2 nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>6</mn></mrow><mrow><mn>10</mn></mrow></mfrac></mrow></semantics></math>, suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mi>B</mi></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>15</mn><mn>16</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>C</mi><mo accent=\"true\">¯</mo></mover><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mi>B</mi></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>15</mn><mn>16</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>16</mn></mfrac></mrow></semantics></math>.</li></ol>",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-6D2-q031-v4--bt03",
+      "number": 3,
+      "kind": "tf",
+      "prompt": "Có hai chuồng gà, chuồng gà thứ nhất có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>10</mn></mrow></semantics></math> con gà mái và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn></mrow></semantics></math> con gà trống; chuồng thứ hai có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn></mrow></semantics></math> con gà mái và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn></mrow></semantics></math> con gà trống. Bắt một con gà chuồng thứ nhất bỏ vô chuồng thứ hai, rồi từ chuồng thứ hai bắt ra một con. <br>\n\tXét tính đúng sai của các khẳng định sau",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Xác suất chuồng thứ nhất bắt được gà mái là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Xác suất chuồng thứ hai bắt được gà trống là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>13</mn><mn>30</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Giả sử con gà được bắt ra từ chuồng thứ hai là gà trống, xác suất để con gà trống đó là của chuồng thứ hai bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>12</mn><mn>13</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Giả sử con gà được bắt ra từ chuồng thứ hai là gà trống, xác suất để con gà trống đó là của chuồng thứ nhất bỏ sang là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>2</mn><mn>13</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math> là biến cố “Con gà chuyển từ chuồng 1 sang chuồng 2 là gà trống”, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi></mrow></semantics></math> là biến cố “Con gà bắt ra từ chuồng 2 là gà trống”, và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi></mrow></semantics></math> là biến cố “Con gà bắt ra ở chuồng 2 là gà của chuồng 2 ban đầu”.<ol class=\"alpha-list\"><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>10</mn></mrow><mrow><mn>15</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>3</mn></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn></mrow><mrow><mn>10</mn></mrow></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn></mrow><mrow><mn>10</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>13</mn><mn>30</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Trong <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>10</mn></mrow></semantics></math> con gà ở chuồng 2 lúc sau luôn có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn></mrow></semantics></math> con gà trống ban đầu của chuồng 2 nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn></mrow><mrow><mn>10</mn></mrow></mfrac></mrow></semantics></math>, suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mi>B</mi></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>12</mn><mn>13</mn></mfrac></mrow></semantics></math>.</li><li><strong>Sai</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>C</mi><mo accent=\"true\">¯</mo></mover><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mi>B</mi></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>12</mn><mn>13</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>1</mn><mn>13</mn></mfrac></mrow></semantics></math>.</li></ol>",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-6D2-q031-v4--bt04",
+      "number": 4,
+      "kind": "tf",
+      "prompt": "Có hai chuồng gà, chuồng gà thứ nhất có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>7</mn></mrow></semantics></math> con gà mái và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>5</mn></mrow></semantics></math> con gà trống; chuồng thứ hai có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn></mrow></semantics></math> con gà mái và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn></mrow></semantics></math> con gà trống. Bắt một con gà chuồng thứ nhất bỏ vô chuồng thứ hai, rồi từ chuồng thứ hai bắt ra một con. <br>\n\tXét tính đúng sai của các khẳng định sau",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Xác suất chuồng thứ nhất bắt được gà mái là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>7</mn><mn>12</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Xác suất chuồng thứ hai bắt được gà trống là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>53</mn><mn>108</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Giả sử con gà được bắt ra từ chuồng thứ hai là gà trống, xác suất để con gà trống đó là của chuồng thứ hai bằng <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>48</mn><mn>53</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Giả sử con gà được bắt ra từ chuồng thứ hai là gà trống, xác suất để con gà trống đó là của chuồng thứ nhất bỏ sang là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>5</mn><mn>53</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math> là biến cố “Con gà chuyển từ chuồng 1 sang chuồng 2 là gà trống”, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi></mrow></semantics></math> là biến cố “Con gà bắt ra từ chuồng 2 là gà trống”, và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>C</mi></mrow></semantics></math> là biến cố “Con gà bắt ra ở chuồng 2 là gà của chuồng 2 ban đầu”.<ol class=\"alpha-list\"><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>7</mn></mrow><mrow><mn>12</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>7</mn><mn>12</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>12</mn></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>5</mn></mrow><mrow><mn>9</mn></mrow></mfrac><mo>+</mo><mfrac displaystyle=\"true\"><mn>7</mn><mn>12</mn></mfrac><mo>⋅</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn></mrow><mrow><mn>9</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>53</mn><mn>108</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. Trong <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>9</mn></mrow></semantics></math> con gà ở chuồng 2 lúc sau luôn có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>4</mn></mrow></semantics></math> con gà trống ban đầu của chuồng 2 nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mi>C</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>4</mn></mrow><mrow><mn>9</mn></mrow></mfrac></mrow></semantics></math>, suy ra <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>C</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mi>B</mi></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>48</mn><mn>53</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mover><mi>C</mi><mo accent=\"true\">¯</mo></mover><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mi>B</mi></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>1</mn><mo>−</mo><mfrac displaystyle=\"true\"><mn>48</mn><mn>53</mn></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>53</mn></mfrac></mrow></semantics></math>.</li></ol>",
+      "accepted_answers": []
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "id": "dc-12-hk2-6D1-q008-v4",
+  "source_fingerprint": "77ba96b5fb9ee985aa976fe2aeb8efaf9ff373894d892ea11607e28c49fb2904",
+  "variants": [
+    {
+      "id": "dc-12-hk2-6D1-q008-v4--bt01",
+      "number": 1,
+      "kind": "mcq",
+      "prompt": "Cho hai biến cố độc lập <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>2</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn></mrow></semantics></math>. Khi đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> bằng",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>6</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>1</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>4</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "A",
+      "solution": "Do <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow></semantics></math> độc lập nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>2</mn><mo>⋅</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>1</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn></mrow></semantics></math>.<br>Vậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>1</mn><mo>+</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>6</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-6D1-q008-v4--bt02",
+      "number": 2,
+      "kind": "mcq",
+      "prompt": "Cho hai biến cố độc lập <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>4</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>6</mn></mrow></semantics></math>. Khi đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> bằng",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>16</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>76</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>6</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>24</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "B",
+      "solution": "Do <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow></semantics></math> độc lập nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>4</mn><mo>⋅</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>4</mn><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>16</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>6</mn></mrow></semantics></math>.<br>Vậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>16</mn><mo>+</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>6</mn><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>76</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-6D1-q008-v4--bt03",
+      "number": 3,
+      "kind": "mcq",
+      "prompt": "Cho hai biến cố độc lập <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>6</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn></mrow></semantics></math>. Khi đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> bằng",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>3</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>8</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>2</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "C",
+      "solution": "Do <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow></semantics></math> độc lập nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>6</mn><mo>⋅</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>3</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn></mrow></semantics></math>.<br>Vậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>3</mn><mo>+</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>8</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-6D1-q008-v4--bt04",
+      "number": 4,
+      "kind": "mcq",
+      "prompt": "Cho hai biến cố độc lập <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow></semantics></math> với <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn></mrow></semantics></math>, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>4</mn></mrow></semantics></math>. Khi đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math> bằng",
+      "choices": [
+        {
+          "key": "A",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>3</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "B",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>4</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "C",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>2</mn></mrow></semantics></math>"
+        },
+        {
+          "key": "D",
+          "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>7</mn></mrow></semantics></math>"
+        }
+      ],
+      "correct": "D",
+      "solution": "Do <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow></semantics></math> độc lập nên <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>5</mn><mo>⋅</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>6</mn><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>3</mn></mrow></semantics></math> và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>4</mn></mrow></semantics></math>.<br>Vậy <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mover><mi>B</mi><mo accent=\"true\">¯</mo></mover><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>+</mo><mi>P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>3</mn><mo>+</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>4</mn><mo>=</mo><mn>0</mn><mo lspace=\"0em\" rspace=\"0em\">,</mo><mn>7</mn></mrow></semantics></math>.",
+      "accepted_answers": []
+    }
+  ]
+}

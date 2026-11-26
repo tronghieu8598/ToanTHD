@@ -1,0 +1,134 @@
+{
+  "id": "dc-12-hk2-6D1-q030-v4",
+  "source_fingerprint": "b34812c99888fd6f8eecfe1fd22d738188ea675448c1716d89e6175f0f69abe5",
+  "variants": [
+    {
+      "id": "dc-12-hk2-6D1-q030-v4--bt01",
+      "number": 1,
+      "kind": "tf",
+      "prompt": "Một nhà máy thực hiện khảo sát toàn bộ công nhân về sự hài lòng của họ đối với điều kiện làm việc tại phân xưởng. Kết quả khảo sát như sau\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Phân xưởng</td><td>Hài lòng</td><td>Không hài lòng</td></tr><tr><td>Phân xưởng 1</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>42</mn></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>18</mn></mrow></semantics></math></td></tr><tr><td>Phân xưởng 2</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>58</mn></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>32</mn></mrow></semantics></math></td></tr></tbody></table></div></div>\n\tGặp ngẫu nhiên một công nhân của nhà máy. Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math> là biến cố ““ Công nhân đó làm việc tại phân xưởng 1””&thinsp; và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi></mrow></semantics></math> là biến cố ““ Công nhân đó hài lòng với điều kiện làm việc tại phân xưởng””&thinsp;. Xét tính đúng sai của các khẳng định sau",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Xác suất của biến cố <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>2</mn><mn>5</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Xác suất của biến cố <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Xác suất của biến cố <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math> với điều kiện biến cố <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi></mrow></semantics></math> xảy ra là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>21</mn><mn>50</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Xác suất của biến cố <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi></mrow></semantics></math> với điều kiện <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math> không xảy ra là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>29</mn><mn>45</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "solution": "Tổng số công nhân là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>42</mn><mo>+</mo><mn>18</mn><mo>+</mo><mn>58</mn><mo>+</mo><mn>32</mn><mo>=</mo><mn>150</mn></mrow></semantics></math>; Phân xưởng 1 có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>60</mn></mrow></semantics></math>, Phân xưởng 2 có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>90</mn></mrow></semantics></math>; Hài lòng có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>100</mn></mrow></semantics></math>.<ol class=\"alpha-list\"><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>60</mn></mrow><mrow><mn>150</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>5</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>100</mn></mrow><mrow><mn>150</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mi>B</mi></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>42</mn></mrow><mrow><mn>100</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>21</mn><mn>50</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>58</mn></mrow><mrow><mn>90</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>29</mn><mn>45</mn></mfrac></mrow></semantics></math>.</li></ol>",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-6D1-q030-v4--bt02",
+      "number": 2,
+      "kind": "tf",
+      "prompt": "Một nhà máy thực hiện khảo sát toàn bộ công nhân về sự hài lòng của họ đối với điều kiện làm việc tại phân xưởng. Kết quả khảo sát như sau\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Phân xưởng</td><td>Hài lòng</td><td>Không hài lòng</td></tr><tr><td>Phân xưởng 1</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>36</mn></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>14</mn></mrow></semantics></math></td></tr><tr><td>Phân xưởng 2</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>54</mn></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>26</mn></mrow></semantics></math></td></tr></tbody></table></div></div>\n\tGặp ngẫu nhiên một công nhân của nhà máy. Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math> là biến cố ““ Công nhân đó làm việc tại phân xưởng 1””&thinsp; và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi></mrow></semantics></math> là biến cố ““ Công nhân đó hài lòng với điều kiện làm việc tại phân xưởng””&thinsp;. Xét tính đúng sai của các khẳng định sau",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Xác suất của biến cố <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>5</mn><mn>13</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Xác suất của biến cố <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>9</mn><mn>13</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Xác suất của biến cố <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math> với điều kiện biến cố <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi></mrow></semantics></math> xảy ra là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>1</mn><mn>2</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Xác suất của biến cố <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi></mrow></semantics></math> với điều kiện <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math> không xảy ra là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>27</mn><mn>40</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        false,
+        true
+      ],
+      "solution": "Tổng số công nhân là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>36</mn><mo>+</mo><mn>14</mn><mo>+</mo><mn>54</mn><mo>+</mo><mn>26</mn><mo>=</mo><mn>130</mn></mrow></semantics></math>; Phân xưởng 1 có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>50</mn></mrow></semantics></math>, Phân xưởng 2 có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>80</mn></mrow></semantics></math>; Hài lòng có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>90</mn></mrow></semantics></math>.<ol class=\"alpha-list\"><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>50</mn></mrow><mrow><mn>130</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>13</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>90</mn></mrow><mrow><mn>130</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>9</mn><mn>13</mn></mfrac></mrow></semantics></math>.</li><li><strong>Sai</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mi>B</mi></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>36</mn></mrow><mrow><mn>90</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>5</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>54</mn></mrow><mrow><mn>80</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>27</mn><mn>40</mn></mfrac></mrow></semantics></math>.</li></ol>",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-6D1-q030-v4--bt03",
+      "number": 3,
+      "kind": "tf",
+      "prompt": "Một nhà máy thực hiện khảo sát toàn bộ công nhân về sự hài lòng của họ đối với điều kiện làm việc tại phân xưởng. Kết quả khảo sát như sau\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Phân xưởng</td><td>Hài lòng</td><td>Không hài lòng</td></tr><tr><td>Phân xưởng 1</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>45</mn></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>15</mn></mrow></semantics></math></td></tr><tr><td>Phân xưởng 2</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>55</mn></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>25</mn></mrow></semantics></math></td></tr></tbody></table></div></div>\n\tGặp ngẫu nhiên một công nhân của nhà máy. Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math> là biến cố ““ Công nhân đó làm việc tại phân xưởng 1””&thinsp; và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi></mrow></semantics></math> là biến cố ““ Công nhân đó hài lòng với điều kiện làm việc tại phân xưởng””&thinsp;. Xét tính đúng sai của các khẳng định sau",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Xác suất của biến cố <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>3</mn><mn>7</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Xác suất của biến cố <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>9</mn><mn>20</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Xác suất của biến cố <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math> với điều kiện biến cố <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi></mrow></semantics></math> xảy ra là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>9</mn><mn>20</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Xác suất của biến cố <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi></mrow></semantics></math> với điều kiện <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math> không xảy ra là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>11</mn><mn>16</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        false,
+        true,
+        true
+      ],
+      "solution": "Tổng số công nhân là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>45</mn><mo>+</mo><mn>15</mn><mo>+</mo><mn>55</mn><mo>+</mo><mn>25</mn><mo>=</mo><mn>140</mn></mrow></semantics></math>; Phân xưởng 1 có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>60</mn></mrow></semantics></math>, Phân xưởng 2 có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>80</mn></mrow></semantics></math>; Hài lòng có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>100</mn></mrow></semantics></math>.<ol class=\"alpha-list\"><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>60</mn></mrow><mrow><mn>140</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>3</mn><mn>7</mn></mfrac></mrow></semantics></math>.</li><li><strong>Sai</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>100</mn></mrow><mrow><mn>140</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>7</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mi>B</mi></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>45</mn></mrow><mrow><mn>100</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>9</mn><mn>20</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>55</mn></mrow><mrow><mn>80</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>11</mn><mn>16</mn></mfrac></mrow></semantics></math>.</li></ol>",
+      "accepted_answers": []
+    },
+    {
+      "id": "dc-12-hk2-6D1-q030-v4--bt04",
+      "number": 4,
+      "kind": "tf",
+      "prompt": "Một nhà máy thực hiện khảo sát toàn bộ công nhân về sự hài lòng của họ đối với điều kiện làm việc tại phân xưởng. Kết quả khảo sát như sau\n\t<div class=\"tex-center\"><div class=\"table-scroll\"><table class=\"tex-table\"><tbody><tr><td>Phân xưởng</td><td>Hài lòng</td><td>Không hài lòng</td></tr><tr><td>Phân xưởng 1</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>32</mn></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>18</mn></mrow></semantics></math></td></tr><tr><td>Phân xưởng 2</td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>48</mn></mrow></semantics></math></td><td><math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>22</mn></mrow></semantics></math></td></tr></tbody></table></div></div>\n\tGặp ngẫu nhiên một công nhân của nhà máy. Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math> là biến cố ““ Công nhân đó làm việc tại phân xưởng 1””&thinsp; và <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi></mrow></semantics></math> là biến cố ““ Công nhân đó hài lòng với điều kiện làm việc tại phân xưởng””&thinsp;. Xét tính đúng sai của các khẳng định sau",
+      "choices": [
+        {
+          "key": "a",
+          "text": "Xác suất của biến cố <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>5</mn><mn>12</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "b",
+          "text": "Xác suất của biến cố <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi></mrow></semantics></math> là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "c",
+          "text": "Xác suất của biến cố <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math> với điều kiện biến cố <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi></mrow></semantics></math> xảy ra là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>2</mn><mn>5</mn></mfrac></mrow></semantics></math>"
+        },
+        {
+          "key": "d",
+          "text": "Xác suất của biến cố <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>B</mi></mrow></semantics></math> với điều kiện <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi>A</mi></mrow></semantics></math> không xảy ra là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mfrac displaystyle=\"true\"><mn>12</mn><mn>35</mn></mfrac></mrow></semantics></math>"
+        }
+      ],
+      "correct": [
+        true,
+        true,
+        true,
+        false
+      ],
+      "solution": "Tổng số công nhân là <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>32</mn><mo>+</mo><mn>18</mn><mo>+</mo><mn>48</mn><mo>+</mo><mn>22</mn><mo>=</mo><mn>120</mn></mrow></semantics></math>; Phân xưởng 1 có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>50</mn></mrow></semantics></math>, Phân xưởng 2 có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>70</mn></mrow></semantics></math>; Hài lòng có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mn>80</mn></mrow></semantics></math>.<ol class=\"alpha-list\"><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>50</mn></mrow><mrow><mn>120</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>5</mn><mn>12</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>80</mn></mrow><mrow><mn>120</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>3</mn></mfrac></mrow></semantics></math>.</li><li><strong>Đúng</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>A</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mi>B</mi></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>32</mn></mrow><mrow><mn>80</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>2</mn><mn>5</mn></mfrac></mrow></semantics></math>.</li><li><strong>Sai</strong>. <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mspace width=\"0.167em\"/><mo stretchy=\"false\" form=\"prefix\">|</mo><mspace width=\"0.167em\"/><mrow><mover><mi>A</mi><mo accent=\"true\">¯</mo></mover></mrow><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mrow><mn>48</mn></mrow><mrow><mn>70</mn></mrow></mfrac><mo>=</mo><mfrac displaystyle=\"true\"><mn>24</mn><mn>35</mn></mfrac></mrow></semantics></math>.</li></ol>",
+      "accepted_answers": []
+    }
+  ]
+}

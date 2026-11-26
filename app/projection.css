@@ -1,0 +1,23 @@
+.thd-projector {
+    position: fixed;
+    inset: 0;
+    z-index: 1400;
+    background: #ecf0e8;
+    outline: none;
+}
+
+.thd-projector iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.thd-projector-status {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}

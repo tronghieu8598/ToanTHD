@@ -1,0 +1,28 @@
+{
+  "id": "dc-12-hk2-6D2-q020-v4",
+  "original_number": 20,
+  "kind": "mcq",
+  "based_on": "1e0b7eb846168edbfce62b378688e0b3649e8d849f1fc8b599595d542b30a387",
+  "prompt": "Một hộp có 50 bóng đèn như nhau trong đó có 10 bóng bị hỏng. Lấy ngẫu nhiên hai lần liên tiếp, trong đó mỗi lần lấy ngẫu nhiên một bóng đèn và không hoàn lại. Xác suất để cả hai bóng đèn lấy ra đều bị hỏng là",
+  "choices": [
+    {
+      "key": "A",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>36</mn><mn>345</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "B",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>1</mn><mn>5</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "C",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>9</mn><mn>245</mn></mfrac></semantics></math>"
+    },
+    {
+      "key": "D",
+      "text": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mfrac displaystyle=\"true\"><mn>9</mn><mn>449</mn></mfrac></semantics></math>"
+    }
+  ],
+  "correct": "C",
+  "solution": "Gọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>A</mi></semantics></math> là biến cố &quot;lần lấy thứ nhất lấy được bóng đèn bị hỏng&quot;.<br>\n\t\tGọi <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mi>B</mi></semantics></math> là biến cố &quot;lần lấy thứ hai lấy được bóng đèn bị hỏng&quot;.<br>\t\n\t\tTa cần tính <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo>∣</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>, xác suất lấy được bóng đèn bị hỏng ở lần thứ hai khi đã biết lần thứ nhất lấy được bóng đèn bị hỏng.<br>\t\n\t\tTìm <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo>∣</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow></mrow></semantics></math>  khi A xảy ra thì có <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>40</mn></semantics></math> bóng thường, <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mn>9</mn></semantics></math> hỏng.<br> \n\t\tDo đó <math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><semantics><mrow><mi mathvariant=\"normal\">P</mi><mrow><mo stretchy=\"true\" form=\"prefix\">(</mo><mi>B</mi><mo>∣</mo><mi>A</mi><mo stretchy=\"true\" form=\"postfix\">)</mo></mrow><mo>=</mo><mfrac displaystyle=\"true\"><mn>9</mn><mn>49</mn></mfrac></mrow></semantics></math>.",
+  "accepted_answers": []
+}
